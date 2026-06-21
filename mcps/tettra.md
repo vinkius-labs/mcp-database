@@ -33,7 +33,7 @@ Connect your **Tettra** internal knowledge base to any AI agent and bring your c
 - **Product Teams** — maintain robust documentation by verifying outdated pages and suggesting new articles via chat
 
 
-## Available Tools
+## Available Tools (12)
 - **create_wiki_page**: Provide title, content, and category ID.
 
 Creates a new wiki page in a specific category
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tettra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tettra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tettra** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Your AI becomes a dedicated email operations center. No more switching between d
 - **DevOps Engineers** — audit API keys, monitor domain verification, and automate email infrastructure checks
 
 
-## Available Tools
+## Available Tools (10)
 - **send_email**: Returns email ID for tracking delivery status.
 
 Send a transactional email
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `resend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `resend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Resend** tools.
 
 **Configuration:**

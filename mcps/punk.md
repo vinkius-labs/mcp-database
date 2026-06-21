@@ -33,7 +33,7 @@ Access the complete **BrewDog** beer library through the Punk API. This MCP serv
 - **App Developers** — test beer-related data structures and API responses in a conversational environment
 
 
-## Available Tools
+## Available Tools (3)
 - **get_beer**: Get a single beer by ID
 - **list_beers**: Supports pagination and filtering by ABV, IBU, EBC, ingredients, and food pairings.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `punk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `punk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Punk** tools.
 
 **Configuration:**

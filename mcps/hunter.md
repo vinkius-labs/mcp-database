@@ -32,7 +32,7 @@ Connect **Hunter.io** to your AI agent and power your lead generation with verif
 - **Recruiters** — Locate candidate email addresses by name and company for direct outreach.
 
 
-## Available Tools
+## Available Tools (10)
 - **domain_search**: Search emails by domain
 - **list_recipients**: List campaign recipients
 - **email_finder**: Find specific email
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hunter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hunter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hunter** tools.
 
 **Configuration:**

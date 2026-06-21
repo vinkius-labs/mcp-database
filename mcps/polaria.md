@@ -28,7 +28,7 @@ Transform your customer support operations by connecting Polaria directly to you
 Ideal for customer success teams, support agents, and community managers who want to resolve user queries faster and automate repetitive chat tasks.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_contact**: Create a new contact in Polaria
 - **add_chat_message**: Add a message to a conversation
 - **get_contact**: Get details of a specific contact
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `polaria` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `polaria` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Polaria** tools.
 
 **Configuration:**

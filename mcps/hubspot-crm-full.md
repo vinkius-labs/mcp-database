@@ -28,7 +28,7 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **Managers** — Full CRM visibility through conversation
 
 
-## Available Tools
+## Available Tools (16)
 - **hs_associate_objects**: Common association type IDs: Contact→Company=1, Company→Contact=2, Deal→Contact=3, Contact→Deal=4, Deal→Company=5, Company→Deal=6. Use when attaching a contact to a company, linking a deal to a contact, etc.
 
 Create an association between two HubSpot CRM objects
@@ -154,7 +154,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-crm-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-crm-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot CRM (Full)** tools.
 
 **Configuration:**

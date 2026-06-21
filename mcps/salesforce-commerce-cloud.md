@@ -23,7 +23,7 @@ Connect **Salesforce Commerce** to any AI agent.
 - **Product Teams** — Update pricing and status instantly
 
 
-## Available Tools
+## Available Tools (8)
 - **sf_order_items**: Returns product name, quantity, unit price, total price, and description per line item. Use when the user asks "what is in this order?", needs to review order composition, or wants to verify pricing before activation.
 
 Get all line items of a specific Salesforce order — products, quantities, unit prices, and total prices per item
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesforce-commerce-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesforce-commerce-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesforce Commerce Cloud** tools.
 
 **Configuration:**

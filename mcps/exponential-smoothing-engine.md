@@ -13,7 +13,7 @@ Apply Simple Exponential Smoothing (Holt-Winters family) for local deterministic
 When you need to forecast the next value in a time series (like next month's sales), basic averages are too slow to react. Simple Exponential Smoothing (SES) applies an alpha factor to give recent observations exponentially more weight. This engine performs the SES recursive algorithm instantly and deterministically locally, eliminating LLM hallucination and returning a reliable mathematical T+1 forecast.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_exponential_smoothing**: Provide data array and alpha value.
 
 Applies Simple Exponential Smoothing for time-series smoothing and forecasting
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exponential-smoothing-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exponential-smoothing-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Exponential Smoothing Engine** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect to the **ClinicalTrials.gov API v2** — the largest database of clinica
 - **Pharma Professionals** — competitive landscape and pipeline analysis
 
 
-## Available Tools
+## Available Tools (16)
 - **get_api_version**: gov API version and the timestamp of the most recent data update. Useful for verifying data currency and API availability.
 
 Get API version and data timestamp
@@ -145,7 +145,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harvard-clinicaltrials` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harvard-clinicaltrials` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harvard ClinicalTrials** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Integrate your AI with **ContentKing**, the real-time SEO auditing and monitorin
 - **Digital Marketers** — Pull comparative domain health data quickly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_active_alerts**: Get active monitoring alerts for a website
 - **get_issue_details**: Get details for a specific SEO issue
 - **get_portfolio_summary**: Get a high-level health summary across all websites
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contentking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contentking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ContentKing** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your AI assistant to **CommPeak**, the cloud communication platform with
 - **Marketing Teams** — Send targeted SMS messages and track delivery via conversational commands.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_lead**: Add a new lead to a campaign
 - **delete_lead**: Permanently remove a lead from the system
 - **get_campaign_details**: Retrieve detailed information about a specific campaign
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `commpeak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `commpeak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CommPeak** tools.
 
 **Configuration:**

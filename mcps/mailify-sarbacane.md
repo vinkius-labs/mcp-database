@@ -33,7 +33,7 @@ Connect your **Mailify** (Sarbacane) account to any AI agent to automate your pr
 - **Growth Developers** — Integrate Mailify's robust marketing logic into your custom internal dashboards
 
 
-## Available Tools
+## Available Tools (9)
 - **add_contact_to_book**: Requires a list ID and contact data.
 
 Add a new contact to an address book
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailify-sarbacane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailify-sarbacane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailify (Sarbacane)** tools.
 
 **Configuration:**

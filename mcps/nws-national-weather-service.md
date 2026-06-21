@@ -32,7 +32,7 @@ Connect to the **National Weather Service (NWS)** API to retrieve precise meteor
 - **General Users** — get precise, official government weather data through natural conversation.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_active_alerts_by_area**: g., TX, FL, AMZ).
 
 Get active alerts for a specific area
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nws-national-weather-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nws-national-weather-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NWS (National Weather Service)** tools.
 
 **Configuration:**

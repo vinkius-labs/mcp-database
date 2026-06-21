@@ -34,7 +34,7 @@ Connect to the **US Census Bureau TIGER/Line Geocoder** to transform location da
 - **Logistics Teams** — validate US addresses and normalize geographic data for routing and delivery.
 
 
-## Available Tools
+## Available Tools (8)
 - **batch_geocode_address**: Format: Unique ID, Street address, City, State, ZIP
 
 Batch geocode up to 10,000 addresses
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tigerline-geocoder-census` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tigerline-geocoder-census` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TIGER/Line Geocoder (Census)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **LambdaTest** account to any AI agent and manage browser testing t
 - **Test Leads** — monitor cross-browser test coverage and results
 
 
-## Available Tools
+## Available Tools (7)
 - **get_build_details**: Get metadata for a build
 - **get_test_logs**: Retrieve execution logs
 - **get_session_details**: Get metadata for a test run
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lambdatest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lambdatest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LambdaTest** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Cliengo** account to any AI agent and take full control of your c
 - **Ops Teams** — verify chatbot installation status and webhook integration health
 
 
-## Available Tools
+## Available Tools (8)
 - **get_contact_messages**: Retrieve all messages exchanged with a specific contact
 - **get_lead_details**: Get detailed information for a specific contact
 - **get_chat_history**: Get the full message history for a specific conversation
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cliengo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cliengo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cliengo** tools.
 
 **Configuration:**

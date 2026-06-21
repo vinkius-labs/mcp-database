@@ -35,7 +35,7 @@ No more manual toggling between browser tabs to check a candidate's status or fe
 - **HR Operations** — automate the oversight of job postings and user permissions through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **create_ashby_candidate**: Create candidate
 - **get_ashby_application**: Get application details
 - **get_ashby_candidate**: Get candidate details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ashby-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ashby-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ashby** tools.
 
 **Configuration:**

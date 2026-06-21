@@ -38,7 +38,7 @@ No API key required — completely free, no registration.
 - **Book Clubs** — search by topic, author or language to find reading recommendations
 
 
-## Available Tools
+## Available Tools (3)
 - **get_book**: Returns the title, authors (with birth/death years), subjects, bookshelves, languages, summary, download counts and all available formats/URLs (HTML, EPUB, Kindle, PDF, plain text). Common IDs: 1342 (Pride and Prejudice), 84 (Frankenstein), 4300 (Ulysses), 2701 (Moby Dick), 1727 (Romeo and Juliet).
 
 Get detailed info for a specific Gutenberg book
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gutendex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gutendex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gutendex** tools.
 
 **Configuration:**

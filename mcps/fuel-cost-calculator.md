@@ -13,7 +13,7 @@ Calculate trip expenses and compare gasoline vs ethanol costs.
 This MCP server provides tools to estimate the total cost of a journey based on distance, fuel efficiency, and current fuel prices. Use `calculate_trip_cost` to find the monetary expenditure for a specific fuel type, or `compare_fuel_efficiency` to determine if ethanol is more economical than gasoline using the 70% price threshold rule. The `get_trip_summary` tool provides a comprehensive overview of both options in one call.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_trip_cost**: Calculates the total monetary cost for a single journey using a specific fuel type
 - **compare_fuel_efficiency**: Determines which fuel type offers better value based on current market prices
 - **get_trip_summary**: Provides a complete overview of a trip including costs and recommendation
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fuel-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fuel-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fuel Cost Calculator** tools.
 
 **Configuration:**

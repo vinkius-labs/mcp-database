@@ -31,7 +31,7 @@ Connect your AI to **CoinMarketCap**, the world's most-referenced crypto price-t
 - **Analysts** — Pull market data for research and portfolio tracking.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_global_metrics**: Retrieve aggregate market data for the entire cryptocurrency market
 - **get_id_map**: Retrieve a mapping of symbols/names to unique CMC IDs
 - **get_key_info**: Check your API keys usage, remaining credits, and rate limits
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coinmarketcap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coinmarketcap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoinMarketCap** tools.
 
 **Configuration:**

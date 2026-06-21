@@ -35,7 +35,7 @@ Connect your **Datadog** security module to any AI agent and take full control o
 - **Compliance Officers** — audit security filters and detection rule configurations across environments
 
 
-## Available Tools
+## Available Tools (10)
 - **create_detection_rule**: Accepts raw name/message fields, specific Lucene query bindings filtering for malicious activity, and severity levels (info, low, medium, high, critical). Auto-activates upon creation.
 
 Construct a new Cloud SIEM Log Detection Rule
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datadog-cloud-siem` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datadog-cloud-siem` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Datadog Cloud SIEM** tools.
 
 **Configuration:**

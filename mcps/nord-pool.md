@@ -39,7 +39,7 @@ Your AI agent becomes a real-time energy market analyst — no spreadsheets, no 
 - **Research Teams** — automate the extraction of historical auction data for market modeling and forecasting
 
 
-## Available Tools
+## Available Tools (10)
 - **get_auction_flows**: Requires both source and destination area codes. Flows reflect the scheduled energy exchange determined during the day-ahead market coupling process. Optionally filter by delivery date (YYYY-MM-DD).
 
 Retrieve auction flows between two delivery areas
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nord-pool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nord-pool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nord Pool** tools.
 
 **Configuration:**

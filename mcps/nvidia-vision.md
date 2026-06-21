@@ -33,7 +33,7 @@ Connect **NVIDIA Vision** to any AI agent and unlock powerful image understandin
 - **Content Creators** — Generate images and apply style transfers for social media
 
 
-## Available Tools
+## Available Tools (9)
 - **image_captioning**: Generate a detailed caption for an image
 - **detect_objects**: Detect and list all objects in an image
 - **document_qa**: Works with scanned documents, forms, receipts.
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nvidia-vision` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nvidia-vision` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NVIDIA Vision** tools.
 
 **Configuration:**

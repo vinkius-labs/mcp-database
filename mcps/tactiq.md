@@ -35,7 +35,7 @@ No more manual searching for 'who said what' or missing critical meeting follow-
 - **Developers** u2014 integrate Tactiq transcript data into custom workflows via simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_tactiq_status**: Verify Tactiq API connectivity
 - **get_action_items**: Get action items
 - **get_meeting**: Get meeting details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tactiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tactiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tactiq** tools.
 
 **Configuration:**

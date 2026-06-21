@@ -36,7 +36,7 @@ TED is the official publication platform of the European Union for public procur
 - **Public Affairs Analysts** — monitor procurement trends and spending patterns across EU member states
 
 
-## Available Tools
+## Available Tools (6)
 - **search_tenders**: Returns title, country, value, deadline, and contracting authority. Covers all 27 EU member states.
 
 Search EU public tenders
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ted-eu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ted-eu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TED EU** tools.
 
 **Configuration:**

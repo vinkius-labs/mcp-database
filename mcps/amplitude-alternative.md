@@ -33,7 +33,7 @@ Connect your **Amplitude** analytics account to any AI agent to ingest events, q
 - **Growth Engineers** — identify users, manage cohorts, and check experiment variants directly from your development environment.
 
 
-## Available Tools
+## Available Tools (21)
 - **create_annotation**: Annotate charts with important dates
 - **create_category**: Create a new event category (Taxonomy)
 - **create_release**: Create a release to track feature impact
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amplitude-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amplitude-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amplitude** tools.
 
 **Configuration:**

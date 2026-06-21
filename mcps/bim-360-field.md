@@ -33,7 +33,7 @@ Connect your **BIM 360 Field** account to any AI agent and orchestrate your cons
 - **Quality & Safety Managers** — audit safety issues and inspection logs using natural language.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_project**: Get details of a specific project
 - **list_checklists**: List checklists for a project
 - **list_companies**: List companies associated with a project
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bim-360-field` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bim-360-field` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BIM 360 Field** tools.
 
 **Configuration:**

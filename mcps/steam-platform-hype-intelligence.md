@@ -32,7 +32,7 @@ Equip your AI agent with the pulse of the world's largest PC gaming platform via
 - **Analytical Gamers** — track your social connections and wishlist opportunities with precision
 
 
-## Available Tools
+## Available Tools (11)
 - **get_app_details**: Get full store page details for a game
 - **search_all_steam_apps**: Get the full list of apps on Steam
 - **get_app_news**: Get latest news and patch notes for a game
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `steam-platform-hype-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `steam-platform-hype-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Steam Platform & Hype Intelligence** tools.
 
 **Configuration:**

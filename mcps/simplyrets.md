@@ -33,7 +33,7 @@ Connect your **SimplyRETS** account to any AI agent to query live MLS data, expl
 - **Developers** — test and query MLS data feeds through a conversational interface while building real estate apps.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_agents**: List agent information
 - **get_property**: Get details for a specific property listing
 - **list_open_houses**: List open house information
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simplyrets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simplyrets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SimplyRETS** tools.
 
 **Configuration:**

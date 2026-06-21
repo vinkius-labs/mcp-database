@@ -35,7 +35,7 @@ No more jumping between browser tabs to update a deal's status. Your AI acts as 
 - **Operations Teams** — streamline the retrieval of organization metadata and monitor organizational CRM health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_crm_deal**: Create a new deal
 - **create_crm_organization**: Create a new organization
 - **create_crm_contact**: Create a new contact
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onpipeline` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onpipeline` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Onpipeline** tools.
 
 **Configuration:**

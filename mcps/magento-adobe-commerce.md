@@ -34,7 +34,7 @@ Connect your **Magento (Adobe Commerce)** store to any AI agent and take full co
 - **Store Administrators** — manage customer data and category structures efficiently to maintain a high-performance digital storefront
 
 
-## Available Tools
+## Available Tools (10)
 - **mg.search_products**: Magento is an enterprise eCommerce platform used by large retailers.
 
 Search Magento/Adobe Commerce products with pagination
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `magento-adobe-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `magento-adobe-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Magento (Adobe Commerce)** tools.
 
 **Configuration:**

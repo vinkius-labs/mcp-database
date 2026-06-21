@@ -18,7 +18,7 @@ When an AI Agent reads or generates .env files, it needs to parse KEY=VALUE pair
 - **Edge Cases Handled:** Single/double quotes, multiline values, inline comments, empty lines, and whitespace trimming.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_dotenv**: env file content. Pass the raw .env text and receive a clean JSON object with all KEY=VALUE pairs extracted. Handles single quotes, double quotes, multiline values, and inline comments. Essential for config validation before deployment.
 
 Parses .env file content into structured JSON key-value pairs. Handles quotes, multiline values, comments, and empty lines deterministically. Powered by dotenv (35M+ weekly downloads)
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dotenv-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dotenv-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dotenv Parser Engine** tools.
 
 **Configuration:**

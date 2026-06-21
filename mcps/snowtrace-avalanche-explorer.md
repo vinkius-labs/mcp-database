@@ -33,7 +33,7 @@ Connect to the **Snowtrace** explorer and bring real-time Avalanche blockchain d
 - **Crypto Enthusiasts** — monitor your portfolio and track NFT movements using natural language.
 
 
-## Available Tools
+## Available Tools (21)
 - **get_avax_balance_multi**: Get AVAX Balance for Multiple Addresses
 - **get_avax_balance**: Get AVAX Balance for a Single Address
 - **check_verify_status**: Check Verification Status
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snowtrace-avalanche-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snowtrace-avalanche-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Snowtrace (Avalanche Explorer)** tools.
 
 **Configuration:**

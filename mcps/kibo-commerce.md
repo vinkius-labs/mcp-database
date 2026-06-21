@@ -33,7 +33,7 @@ Connect your **Kibo Commerce** account to any AI agent to automate your enterpri
 - **Customer Support** — Retrieve customer details and order history instantly during interactions
 
 
-## Available Tools
+## Available Tools (10)
 - **list_categories**: List all catalog categories
 - **list_customers**: List all customer accounts
 - **get_location_details**: Get details for a specific location
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kibo-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kibo-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kibo Commerce** tools.
 
 **Configuration:**

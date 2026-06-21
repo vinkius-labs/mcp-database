@@ -19,7 +19,7 @@ Students and researchers manage hundreds of references in .bib files. Asking Cla
 - **Citation Ready:** Ask the AI to reformat entries in APA, IEEE, or any style.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_bibtex_bibliography**: bib file with academic references. Provide the absolute file path.
 
 Parse a BibTeX .bib bibliography file into structured JSON. Perfect for students and researchers who want to query their references with AI
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bibtex-bibliography-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bibtex-bibliography-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BibTeX Bibliography Parser** tools.
 
 **Configuration:**

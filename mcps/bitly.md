@@ -34,7 +34,7 @@ Connect your **Bitly** account to any AI agent and orchestrate your link managem
 - **Growth Teams** — automate link creation and metric tracking using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **shorten_url**: Optionally set custom domain and title.
 
 Shorten a URL
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bitly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bitly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bitly** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Cyberimpact** account to any AI agent to streamline your email ma
 - **Support Teams** — verify member details or remove users upon request through a simple chat interface
 
 
-## Available Tools
+## Available Tools (7)
 - **add_group_member**: Add a member to a group
 - **delete_member**: Delete a member
 - **get_member**: Get details for a specific member
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cyberimpact-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cyberimpact-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cyberimpact** tools.
 
 **Configuration:**

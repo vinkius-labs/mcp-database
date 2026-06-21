@@ -34,7 +34,7 @@ Connect to **OpenSanctions** and access the world's largest open sanctions and P
 - **Researchers** — explore sanctions data, PEP databases and entity relationships
 
 
-## Available Tools
+## Available Tools (8)
 - **get_datasets**: Returns dataset names, descriptions, publisher info and entity counts.
 
 Get list of all sanctions datasets available
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opensanctions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opensanctions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenSanctions** tools.
 
 **Configuration:**

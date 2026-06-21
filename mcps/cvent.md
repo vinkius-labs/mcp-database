@@ -32,7 +32,7 @@ Integrate **Cvent**, the world's leading event management platform, directly int
 - **Operations Teams** — Monitor attendee lists and event statuses across large-scale portfolios.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_details**: Resolves account identifiers and organizational settings. Interacts with the account configuration boundary.
 
 Retrieve metadata for your Cvent account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cvent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cvent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cvent** tools.
 
 **Configuration:**

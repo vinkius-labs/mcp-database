@@ -33,7 +33,7 @@ Connect your **PartnerStack** account to any AI agent and take full control of y
 - **Sales Teams** — lookup customer attribution and partner metadata without leaving your workflow.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_partner_customer**: Get details for a specific customer
 - **get_partner**: Get details for a specific partner
 - **list_partner_campaigns**: List all partner campaigns
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `partnerstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `partnerstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PartnerStack** tools.
 
 **Configuration:**

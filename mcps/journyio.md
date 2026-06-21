@@ -13,7 +13,7 @@ Manage SaaS growth, users, and accounts via journy.io API.
 Empower your AI agents with journy.io's SaaS growth platform. This MCP server allows you to list and retrieve users and accounts, track events, manage audience segments, and view growth goals directly through the journy.io API. Ideal for automating customer success and growth marketing workflows.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Use this to understand the status and lifecycle of a specific business customer.
 
 Retrieves details for a specific account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `journyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `journyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **journy.io** tools.
 
 **Configuration:**

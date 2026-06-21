@@ -33,7 +33,7 @@ Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful bo
 - **Nature Enthusiasts** — Learn about the flora around you by simply providing a photo URL.
 
 
-## Available Tools
+## Available Tools (17)
 - **list_diseases**: List identifiable plant diseases
 - **get_quota**: Check current API quota
 - **align_species_name**: Align a species name within a project
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plantnet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plantnet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PlantNET** tools.
 
 **Configuration:**

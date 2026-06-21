@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 - **Easemob Power Users** — integrate your existing communication workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_group_member**: Add group member
 - **create_group**: Create chat group
 - **delete_user**: Delete IM user
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `easemob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `easemob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Easemob / 环信** tools.
 
 **Configuration:**

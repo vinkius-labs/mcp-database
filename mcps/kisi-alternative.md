@@ -36,7 +36,7 @@ No more manual checking of individual door logs or physical keycards. Your AI ac
 - **IT Admins** — verify technical API logs and user assignments to optimize access control through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **get_kisi_lock**: Get lock details
 - **get_kisi_place**: Get place details
 - **get_kisi_user**: Get user details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kisi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kisi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kisi** tools.
 
 **Configuration:**

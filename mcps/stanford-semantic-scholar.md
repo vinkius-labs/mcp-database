@@ -36,7 +36,7 @@ Connect to the **Semantic Scholar Academic Graph API** and unlock the world's la
 - **R&D Teams** — monitor the latest publications in your domain
 
 
-## Available Tools
+## Available Tools (16)
 - **batch_get_authors**: Returns names, affiliations, paper counts, citation counts, and h-indices. Useful for comparing researchers or building collaboration network analyses.
 
 Retrieve multiple author profiles in a single request
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stanford-semantic-scholar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stanford-semantic-scholar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stanford Semantic Scholar** tools.
 
 **Configuration:**

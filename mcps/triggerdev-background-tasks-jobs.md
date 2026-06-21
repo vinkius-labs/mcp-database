@@ -33,7 +33,7 @@ Connect your **Trigger.dev** account to any AI agent to orchestrate complex back
 - **Product Managers** — check the status of critical data processing runs or batch operations.
 
 
-## Available Tools
+## Available Tools (19)
 - **batch_trigger_tasks**: Trigger multiple tasks in a single request
 - **cancel_run**: Cancel an in-progress run
 - **complete_waitpoint**: Complete a waitpoint
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `triggerdev-background-tasks-jobs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `triggerdev-background-tasks-jobs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Trigger.dev (Background Tasks & Jobs)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Imgur** account to any AI agent to automate image hosting, album 
 - **Social Media Managers** — monitor gallery trends and manage community engagement efficiently
 
 
-## Available Tools
+## Available Tools (19)
 - **add_images_to_album**: Add images to an existing album
 - **create_album**: Create a new album
 - **create_comment**: Create a new comment on an item
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `imgur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `imgur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Imgur** tools.
 
 **Configuration:**

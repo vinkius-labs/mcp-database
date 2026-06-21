@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire event ecosystem with **Eventzil
 - **Financial Controllers** — track event revenue and transaction history through simple natural language queries.
 
 
-## Available Tools
+## Available Tools (11)
 - **checkin_attendee**: Check-in an attendee
 - **get_attendee**: Get attendee details
 - **get_event**: Get details for a specific event
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventzilla-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventzilla-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eventzilla** tools.
 
 **Configuration:**

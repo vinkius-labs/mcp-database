@@ -37,7 +37,7 @@ No more jumping between experiment dashboards to check test results. Your AI age
 - **CRO Specialists** — audit active campaigns and identify optimization opportunities through simple chat commands
 
 
-## Available Tools
+## Available Tools (10)
 - **get_vwo_account_info**: Retrieves details about the authenticated VWO account
 - **get_campaign_details**: Retrieves details for a specific VWO campaign
 - **get_feature_flag_details**: Retrieves configuration for a specific VWO feature flag
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vwo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vwo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VWO** tools.
 
 **Configuration:**

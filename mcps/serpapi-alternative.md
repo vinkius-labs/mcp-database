@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire search engine research workflow
 - **Operations Leads** — automate search data querying to orchestrate cross-functional research teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_google_shopping**: Search Google Shopping results
 - **search_baidu**: Search Baidu results
 - **search_bing**: Search Bing organic results
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `serpapi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `serpapi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SerpApi** tools.
 
 **Configuration:**

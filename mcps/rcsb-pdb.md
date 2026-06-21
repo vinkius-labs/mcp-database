@@ -29,7 +29,7 @@ Connect your AI agent to the **RCSB Protein Data Bank** — the world's reposito
 - **Biochemistry Students** — understand protein architecture by exploring real experimental structures with annotations
 
 
-## Available Tools
+## Available Tools (2)
 - **get_pdb_structure**: PDB IDs are 4-character codes like 1HHO, 6LU7, 7BNN.
 
 Get full structural details by PDB ID
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rcsb-pdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rcsb-pdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RCSB PDB** tools.
 
 **Configuration:**

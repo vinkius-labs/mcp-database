@@ -30,7 +30,7 @@ Connect your AI agent to **UniProt** — the Universal Protein Resource — the 
 - **Drug Discovery Teams** — identify therapeutic targets by searching protein functions and disease associations
 
 
-## Available Tools
+## Available Tools (3)
 - **get_uniprot_protein**: Get full protein details by UniProt accession ID
 - **search_uniprot_gene**: Returns all protein isoforms and their functional annotations.
 
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uniprot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uniprot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UniProt** tools.
 
 **Configuration:**

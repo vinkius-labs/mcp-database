@@ -35,7 +35,7 @@ No more manual connection sending in LinkedIn. Your AI acts as a dedicated sales
 - **Founders & Sales Teams** — streamline the ingestion of new leads and monitor organizational growth directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_linkedin_lead**: Add a new lead to a campaign
 - **check_api_health**: Verify The Magic Drip API status
 - **get_campaign_performance**: Retrieve campaign analytics
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `magicdrip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `magicdrip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MagicDrip** tools.
 
 **Configuration:**

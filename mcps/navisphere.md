@@ -34,7 +34,7 @@ Connect your **Navisphere** (C.H. Robinson) account to any AI agent to streamlin
 - **Supply Chain Managers** — Track high-priority shipments and get rate estimates for new lanes in seconds.
 
 
-## Available Tools
+## Available Tools (11)
 - **accept_offer**: Accept a freight offer
 - **create_shipment**: Create a new shipment (Customer API)
 - **get_load_details**: Get details for a specific available load
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `navisphere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `navisphere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Navisphere** tools.
 
 **Configuration:**

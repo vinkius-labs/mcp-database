@@ -35,7 +35,7 @@ No more manual status checking or complex form navigation in the fax dashboard. 
 - **Business Development** — quickly find and assign new international fax numbers through simple AI queries
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_info**: Use this to determine the current identity and account context.
 
 Retrieve current Fax.Plus account details
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `faxplus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `faxplus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fax.Plus** tools.
 
 **Configuration:**

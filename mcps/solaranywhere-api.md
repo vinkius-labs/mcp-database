@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire solar energy research and site 
 - **Operations Leads** — automate solar data querying to orchestrate cross-functional energy teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the SolarAnywhere service is operational
 - **get_solar_irradiance**: Get real-time solar irradiance data for a specific location
 - **get_typical_solar_year**: Get Typical Meteorological Year (TMY) solar data for a location
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `solaranywhere-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `solaranywhere-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SolarAnywhere API** tools.
 
 **Configuration:**

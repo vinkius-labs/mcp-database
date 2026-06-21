@@ -13,7 +13,7 @@ Calculate rental adjustments, notice periods, and eviction indemnities for Europ
 This MCP server provides specialized tools for managing the financial and legal complexities of commercial real estate in Europe. Using `calculate_rent_adjustment`, agents can compute updated rent amounts based on country-specific inflation indices like HICP or ILC. The `calculate_termination_impact` tool determines required notice periods and potential landlord liabilities, such as eviction indemnities in jurisdictions like France. Additionally, `get_lease_reference_data` allows for quick lookups of available indices and standard regulatory parameters by country code.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_rent_adjustment**: Calculates the new rental amount and total percentage increase after applying inflation indices
 - **calculate_termination_impact**: Determines the legal notice period and potential financial liabilities for lease termination
 - **get_lease_reference_data**: Retrieves a summary of default lease parameters and index types for a country
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `european-commercial-lease-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `european-commercial-lease-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **European Commercial Lease Calculator** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect your **Microsoft Clarity** account to any AI agent and unlock behavioral
 - **Growth Engineers** — detect conversion blockers by analyzing rage clicks, dead clicks, and session replay data
 
 
-## Available Tools
+## Available Tools (13)
 - **check_clarity_status**: Verify connectivity
 - **get_dashboard**: Get dashboard metrics
 - **get_heatmap**: Get heatmap data
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `microsoft-clarity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `microsoft-clarity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Microsoft Clarity** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Airbrake** account to any AI agent and manage your entire error m
 - **QA Teams** — monitor error groups across environments and report custom test failures
 
 
-## Available Tools
+## Available Tools (10)
 - **check_airbrake_status**: Verify API connectivity
 - **get_error_group**: Get error group details
 - **get_project**: Get project details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airbrake` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airbrake` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Airbrake** tools.
 
 **Configuration:**

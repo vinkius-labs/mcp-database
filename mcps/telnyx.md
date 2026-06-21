@@ -33,7 +33,7 @@ Connect your **Telnyx** account to any AI agent and manage your voice and messag
 - **Support tech** — investigate SMS delivery failures by retrieving precise message statues in seconds
 
 
-## Available Tools
+## Available Tools (10)
 - **create_messaging_profile**: Creates a new messaging profile
 - **delete_messaging_profile**: This action is irreversible.
 
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telnyx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telnyx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telnyx** tools.
 
 **Configuration:**

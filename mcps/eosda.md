@@ -43,7 +43,7 @@ No more manual satellite data analysis or complex GIS workflows. Your AI acts as
 - **AgriTech Companies** — integrate satellite-based crop data into farm management platforms
 
 
-## Available Tools
+## Available Tools (12)
 - **get_ndmi_timeseries**: NDMI is sensitive to vegetation water content and is used for drought monitoring, irrigation scheduling, and fire risk assessment. Returns NDMI values per satellite overpass date. Essential for water stress detection, irrigation optimization, drought impact assessment, and harvest timing. AI agents should use this when users ask "show me crop water stress trends", "how is the moisture content changing", or need moisture index analysis for irrigation planning.
 
 Get NDMI time series data for crop water stress monitoring
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eosda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eosda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EOSDA** tools.
 
 **Configuration:**

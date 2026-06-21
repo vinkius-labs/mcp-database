@@ -35,7 +35,7 @@ No more manual status checking of individual demo links. Your AI acts as your de
 - **Marketing Leads** — monitor interactive asset popularity and buyer intent signals through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **get_demoboard**: Get DemoBoard details
 - **list_demoboards**: List all DemoBoards
 - **list_demolytics**: List analytics for demos
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `consensus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `consensus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CONSENSUS** tools.
 
 **Configuration:**

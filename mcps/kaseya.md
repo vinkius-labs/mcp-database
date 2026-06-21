@@ -33,7 +33,7 @@ Connect your **Kaseya VSA 10** instance to your AI agent for comprehensive IT ma
 - **Security Teams** — Inspect audit logs and system health indicators effortlessly
 
 
-## Available Tools
+## Available Tools (10)
 - **get_agent_details**: Get detailed information for a specific agent
 - **list_agents**: Use this to check device availability and status.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kaseya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kaseya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kaseya** tools.
 
 **Configuration:**

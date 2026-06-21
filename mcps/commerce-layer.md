@@ -31,7 +31,7 @@ Connect your AI assistant to **Commerce Layer**, the headless commerce API and o
 - **Developers** — Inspect API resources and debug order flows directly from chat.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_order**: Retrieve details of a specific order
 - **get_order_stats**: Calculate basic stats for a set of orders
 - **get_sku**: Retrieve details of a specific SKU
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `commerce-layer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `commerce-layer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Commerce Layer** tools.
 
 **Configuration:**

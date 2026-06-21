@@ -13,7 +13,7 @@ Ticketing and event management with Eventcube.
 The Eventcube MCP server brings your event operations directly into your conversational agent. Query ticket sales, manage attendee lists, and track real-time event capacities seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_event**: Create a new event
 - **create_ticket**: Create a new ticket for an event
 - **create_venue**: Create a new venue profile
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventcube` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventcube` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eventcube** tools.
 
 **Configuration:**

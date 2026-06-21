@@ -32,7 +32,7 @@ Integrate **Courier**, the smart notification infrastructure, directly into your
 - **Customer Support** — Check user profiles and their recent notification history to provide better help.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_message_history**: Resolves event types (SENT, DELIVERED, etc.) and detailed provider logs.
 
 Get the delivery history logs for a message
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `courier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `courier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Courier** tools.
 
 **Configuration:**

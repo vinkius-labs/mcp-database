@@ -13,7 +13,7 @@ Calculate and analyze NRR and GRR metrics across customer cohorts to evaluate su
 This MCP server provides specialized tools for analyzing recurring revenue retention. Use `calculate_retention_metrics` to compute Net Revenue Retention (NRR) and Gross Revenue Retention (GRR) based on starting MRR, expansion, contraction, and churn. You can also use `get_segment_benchmarks` to retrieve performance targets for Enterprise or SMB segments, and `evaluate_cohort_health` to determine if your cohort's NRR meets specific health benchmarks like 'World Class' or 'Healthy'. It is an essential tool for SaaS finance and operations teams monitoring subscription stability.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_retention_metrics**: Calculates NRR and GRR for a cohort
 - **evaluate_cohort_health**: Evaluates cohort health based on NRR
 - **get_segment_benchmarks**: Retrieves performance targets for a segment
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `net-revenue-retention-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `net-revenue-retention-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Net Revenue Retention Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **WebVizio** account to any AI agent and streamline your visual col
 - **Agencies & Clients** — coordinate website reviews and discussion threads directly from the AI assistant.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_webvizio_comment**: Add a comment to a task
 - **create_webvizio_project**: Create a new project
 - **create_webvizio_task**: Create a new feedback task
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webvizio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webvizio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WebVizio** tools.
 
 **Configuration:**

@@ -30,7 +30,7 @@ Connect your AI agent to the **National Library of Medicine's PubMed database** 
 - **Science Writers & Journalists** — find primary sources and peer-reviewed evidence for accurate scientific reporting
 
 
-## Available Tools
+## Available Tools (3)
 - **get_pubmed_article**: Get full details of a PubMed article by its PMID
 - **get_pubmed_citations**: Useful for tracing the impact of a paper and finding follow-up research.
 
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pubmed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pubmed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PubMed** tools.
 
 **Configuration:**

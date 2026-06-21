@@ -13,7 +13,7 @@ Manage product reviews, questions, and ratings via Judge.me API.
 Empower your AI agents with Judge.me's comprehensive product review platform. This MCP server allows you to list and retrieve product reviews, track customer questions and answers, manage coupons, and view shop settings directly through the Judge.me API. Ideal for automating social proof management and customer feedback analysis.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_product**: Essential for providing a summary of a product's performance.
 
 Retrieves details for a specific product
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `judgeme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `judgeme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Judge.me** tools.
 
 **Configuration:**

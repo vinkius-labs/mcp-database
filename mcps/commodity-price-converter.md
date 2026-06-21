@@ -13,7 +13,7 @@ Convert commodity prices across units and currencies instantly.
 This MCP server provides specialized tools for agricultural financial analysis. It allows AI agents to perform complex mass-equivalence conversions between units like saca, arroba, bushel, and tonne, while handling currency shifts between BRL and USD using real-time exchange rates. With `convert_price_units`, you can expand a single price point into a full market overview. Use `calculate_cost_per_hectare` to determine production costs based on land productivity, and `get_historical_market_trends` to analyze seasonal price fluctuations from historical datasets.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_cost_per_hectare**: You need the current market price, its unit type, the yield (productivity) of the land, and the unit of that yield.
 
 Calculates the total production cost in BRL per hectare based on commodity price and land productivity
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `commodity-price-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `commodity-price-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Commodity Price Converter** tools.
 
 **Configuration:**

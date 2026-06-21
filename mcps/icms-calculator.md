@@ -13,7 +13,7 @@ Calculate Brazilian ICMS taxes, including tax substitution (ST), tax differentia
 This MCP server provides specialized tools for calculating complex Brazilian ICMS taxes. It handles the 'inside' calculation method to find grossed-up product values, calculates Tax Substitution (ICMS-ST) using MVA (Added Value Margin), determines the tax differential (DIFAL) for B2C interstate transactions, and retrieves correct interstate rates based on regional movements. Use `calculate_tax_base` for tax-inclusive bases, `calculate_icms_substitution` for ST calculations, `calculate_tax_differential` for DIFAL, and `get_interstate_rate` to identify applicable rates between Brazilian regions.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_tax_differential**: Calculates the DIFAL amount for B2C interstate operations
 - **calculate_icms_substitution**: Calculates the amount of ICMS-ST (Tax Substitution) to be collected
 - **calculate_tax_base**: Calculates the grossed-up product value using the "inside" calculation method
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `icms-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `icms-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ICMS Calculator** tools.
 
 **Configuration:**

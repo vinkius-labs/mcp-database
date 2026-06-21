@@ -33,7 +33,7 @@ Connect your **Kueski Pay** merchant account to any AI agent and manage Mexico's
 - **Developers** — simulate installment pricing dynamically for product pages
 
 
-## Available Tools
+## Available Tools (14)
 - **cancel_order**: This releases the credit hold on the customer's Kueski account.
 
 Cancel a pending or authorized order
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kueski-pay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kueski-pay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kueski Pay** tools.
 
 **Configuration:**

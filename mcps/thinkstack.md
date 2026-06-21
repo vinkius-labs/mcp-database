@@ -33,7 +33,7 @@ Connect your **ThinkStack** account to any AI agent and manage your chatbots, kn
 - **Developers** u2014 manage knowledge sources and test chatbot queries programmatically
 
 
-## Available Tools
+## Available Tools (10)
 - **add_source**: The content will be crawled and indexed automatically.
 
 Add a knowledge source
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thinkstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thinkstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ThinkStack** tools.
 
 **Configuration:**

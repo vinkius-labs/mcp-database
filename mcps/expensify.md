@@ -32,7 +32,7 @@ Connect your **Expensify** account to any AI agent and take full control of your
 - **Employees & Contractors** — instantly log expenses and submit reports through conversational AI
 
 
-## Available Tools
+## Available Tools (12)
 - **create_expense_rules**: Create expense rules for a policy member
 - **create_expense**: Create individual expenses in a user account
 - **create_policy**: Create a new policy under a Team or Corporate plan
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `expensify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `expensify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Expensify** tools.
 
 **Configuration:**

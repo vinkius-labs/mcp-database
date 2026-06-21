@@ -31,7 +31,7 @@ Connect your natural language AI directly to the **Plaid Enterprise** API ecosys
 This MCP instance is strictly hardcoded to **Read-Only**. While it can inspect mass volumes of wealth and ML data, it cannot programmatically execute ACH debits, Wires, or Payments on your behalf, ensuring production-grade safety.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_link_token**: Required to connect bank accounts.
 
 Create a Plaid Link token for account connection
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plaid-enterprise-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plaid-enterprise-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plaid Enterprise Banking** tools.
 
 **Configuration:**

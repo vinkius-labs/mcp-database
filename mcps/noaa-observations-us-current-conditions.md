@@ -20,7 +20,7 @@ Real-time sensor data from thousands of NWS stations.
 - **Radar Network** — NEXRAD radar station status
 
 
-## Available Tools
+## Available Tools (5)
 - **get_stations**: Each station has a 4-character ID (e.g., KJFK, KLAX). US only. Use station IDs with get_latest_observation.
 
 Find nearby NWS weather observation stations by latitude/longitude
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `noaa-observations-us-current-conditions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `noaa-observations-us-current-conditions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NOAA Observations — US Current Conditions** tools.
 
 **Configuration:**

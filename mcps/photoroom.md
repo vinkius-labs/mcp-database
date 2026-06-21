@@ -35,7 +35,7 @@ No more manual editing in graphic design apps. Your AI acts as a dedicated photo
 - **Developers** — integrate real-time image processing and AI enhancements directly within the chat.
 
 
-## Available Tools
+## Available Tools (8)
 - **add_realistic_shadow**: Add an AI shadow to the subject
 - **add_ai_background**: Replace background with AI-generated scene
 - **advanced_image_edit**: Apply multiple AI edits in one request
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `photoroom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `photoroom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Photoroom** tools.
 
 **Configuration:**

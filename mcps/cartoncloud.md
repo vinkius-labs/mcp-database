@@ -35,7 +35,7 @@ Connect your **CartonCloud** account to any AI agent and orchestrate your WMS (W
 - **3PL Operators** — automate routine logistics inquiries and reporting workflows
 
 
-## Available Tools
+## Available Tools (8)
 - **get_sale_order_details**: Get details for a specific sale order
 - **get_product_stock**: Get current stock levels for a specific product
 - **list_consignments**: List transport consignments
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cartoncloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cartoncloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CartonCloud** tools.
 
 **Configuration:**

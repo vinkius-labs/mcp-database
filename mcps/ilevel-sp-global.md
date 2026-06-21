@@ -13,7 +13,7 @@ Manage private equity investments, portfolios, and funds via iLEVEL API.
 Empower your AI agents to interact with your iLEVEL private equity data. This MCP server allows you to list investments, retrieve entity details, manage portfolios, and view fund information directly through the iLEVEL API. Ideal for automating financial reporting and portfolio monitoring.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_investment**: Retrieves details for a specific investment
 - **get_status**: Gets the iLEVEL system status
 - **get_version**: Gets the iLEVEL API version
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ilevel-sp-global` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ilevel-sp-global` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **iLEVEL (S&P Global)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ No more manual navigation through repository interfaces to check upload statuses
 - **Librarians & Archivists** — query public research outputs and manage metadata updates efficiently.
 
 
-## Available Tools
+## Available Tools (20)
 - **complete_file_upload**: Complete a file upload
 - **create_collection**: Create a new collection
 - **create_private_article**: Create a new private article
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `figshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `figshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Figshare** tools.
 
 **Configuration:**

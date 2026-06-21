@@ -13,7 +13,7 @@ Calculate your exact age in years, months, days, hours, minutes, and seconds.
 This MCP server provides high-precision temporal calculations. Use `calculate_current_age` to get a detailed breakdown of elapsed time since birth, including hours and seconds. You can also use `get_upcoming_birthday_info` to find out exactly how many days are left until your next birthday, or `identify_birth_weekday` to determine the day of the week you were born on.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_current_age**: Calculate the current age in years, months, days, hours, minutes, and seconds
 - **identify_birth_weekday**: Identify the day of the week for a specific birth date
 - **get_upcoming_birthday_info**: Calculate information about the next upcoming birthday
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `age-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `age-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Age Calculator** tools.
 
 **Configuration:**

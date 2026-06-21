@@ -28,7 +28,7 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **Managers** — Full CRM visibility through conversation
 
 
-## Available Tools
+## Available Tools (6)
 - **hs_create_ticket**: Subject is required. Optionally provide content (detailed description), hs_pipeline (pipeline ID), hs_pipeline_stage (stage ID), and hs_ticket_priority (HIGH, MEDIUM, LOW). If no pipeline is specified, uses the default support pipeline. Returns the created ticket with its HubSpot ID.
 
 Create a new support ticket in HubSpot Service Hub with subject, description, pipeline stage, and priority
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-service-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-service-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot Service Hub** tools.
 
 **Configuration:**

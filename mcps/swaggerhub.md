@@ -32,7 +32,7 @@ Integrate **SwaggerHub**, the enterprise platform for API design and documentati
 - **Technical Writers** — Examine Swagger endpoints efficiently drafting high-quality structured documentation parsing correct definitions smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_api_details**: Retrieves metadata for a SwaggerHub API definition
 - **get_api_version_spec**: Retrieves a specific version of a SwaggerHub API definition (OpenAPI spec)
 - **get_domain_details**: Retrieves metadata for a SwaggerHub domain
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `swaggerhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `swaggerhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SwaggerHub** tools.
 
 **Configuration:**

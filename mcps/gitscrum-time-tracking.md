@@ -34,7 +34,7 @@ Your agent eliminates the friction of manual time entry and gives you instant vi
 - **Project managers** — monitor budget burn-down and track billable hours across projects
 
 
-## Available Tools
+## Available Tools (28)
 - **budget_alerts**: Get budget threshold alerts
 - **budget_burndown**: Get budget burn-down chart data
 - **budget_consumption**: Get budget consumption breakdown
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gitscrum-time-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gitscrum-time-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GitScrum Time Tracking** tools.
 
 **Configuration:**

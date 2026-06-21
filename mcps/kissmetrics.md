@@ -33,7 +33,7 @@ Connect your **Kissmetrics** account to any AI agent to automate your user behav
 - **Developers** — Integrate server-side event tracking and data retrieval into your development workflow
 
 
-## Available Tools
+## Available Tools (7)
 - **alias_identities**: g., linking a browser ID to an email).
 
 Link two identities together
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kissmetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kissmetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kissmetrics** tools.
 
 **Configuration:**

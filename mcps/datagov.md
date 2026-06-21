@@ -35,7 +35,7 @@ Connect to **Data.gov** and explore the US government's open data catalog throug
 - **Students** — explore real government data for projects and assignments
 
 
-## Available Tools
+## Available Tools (13)
 - **get_dataset**: gov dataset by its ID or name. Returns full description, organization, tags, resource list (downloadable files), metadata dates, license info and data dictionary.
 
 Get detailed info for a specific dataset
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datagov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datagov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Data.gov** tools.
 
 **Configuration:**

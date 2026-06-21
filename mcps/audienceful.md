@@ -32,7 +32,7 @@ Connect your **Audienceful** account to any AI agent and transform how you manag
 - **Growth Engineers** — automate the creation of custom fields and data mapping from your IDE
 
 
-## Available Tools
+## Available Tools (10)
 - **create_custom_field**: Create a new custom field for your audience members
 - **create_person**: You must provide at least an email address.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `audienceful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `audienceful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Audienceful** tools.
 
 **Configuration:**

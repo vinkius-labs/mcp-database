@@ -32,7 +32,7 @@ Connect your **Authorize.net** merchant account to any AI agent and manage your 
 - **Developers** — test payment flows in sandbox and audit transaction metadata through natural language commands
 
 
-## Available Tools
+## Available Tools (10)
 - **create_transaction**: You must provide the transaction type (e.g., authCaptureTransaction) and the request body.
 
 Create a new payment transaction
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `authorizenet-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `authorizenet-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Authorize.net** tools.
 
 **Configuration:**

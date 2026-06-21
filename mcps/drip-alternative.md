@@ -25,7 +25,7 @@ Manage subscribers, campaigns, and events in Drip via your AI Agent.
 Growth marketers, e-commerce managers, and developers who want an intelligent AI Agent to interact with their Drip CRM, update subscribers, and trigger custom events in real-time.
 
 
-## Available Tools
+## Available Tools (12)
 - **apply_tag**: Apply a tag to a subscriber
 - **create_or_update_subscriber**: Pass the email address and optionally any custom fields or tags.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `drip-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `drip-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Drip** tools.
 
 **Configuration:**

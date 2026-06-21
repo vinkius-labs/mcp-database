@@ -33,7 +33,7 @@ Deploy the ultimate scheduling machine by linking your AI agent to **Truto**. In
 - **Platform Architects** — Centralize routing logic manipulating the agent to alter calendar entries strictly using one unified schema rule
 
 
-## Available Tools
+## Available Tools (10)
 - **create_event**: Provide calendar_id, title, and start/end times in ISO format.
 
 Create a new event in a calendar via Truto. The event is written through to the underlying provider (Google/Outlook) in real-time. Provide calendar ID, title, and ISO 8601 start/end times
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `truto-unified-calendar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `truto-unified-calendar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Truto Unified Calendar** tools.
 
 **Configuration:**

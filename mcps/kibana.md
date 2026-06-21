@@ -33,7 +33,7 @@ Connect your **Kibana** instance to any AI agent to streamline your Elastic Stac
 - **Platform Engineers** — automate the provisioning of team-specific spaces and default saved objects.
 
 
-## Available Tools
+## Available Tools (55)
 - **add_case_comment**: Add a comment to a case
 - **bulk_create_saved_objects**: Create multiple saved objects
 - **bulk_get_saved_objects**: Get multiple saved objects
@@ -151,7 +151,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kibana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kibana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kibana** tools.
 
 **Configuration:**

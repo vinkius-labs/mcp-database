@@ -31,7 +31,7 @@ Connect your **Tink** account to any AI agent to manage your open banking data a
 - **Business Owners** — monitor cash flow and initiate transfers via simple text commands.
 
 
-## Available Tools
+## Available Tools (3)
 - **list_accounts**: List user bank accounts
 - **create_payment_request**: Create a payment request
 - **list_transactions**: List transactions for accounts
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tink** tools.
 
 **Configuration:**

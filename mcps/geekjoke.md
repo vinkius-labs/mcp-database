@@ -31,7 +31,7 @@ Connect to the **GeekJoke** API to fetch humorous content specifically tailored 
 - **AI Enthusiasts** — to add personality and humor to their custom AI agents.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_metadata**: Get GeekJoke API metadata
 - **generate_random_joke**: Get a random geeky joke via POST
 - **get_random_joke**: Get a random geeky joke
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geekjoke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geekjoke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GeekJoke** tools.
 
 **Configuration:**

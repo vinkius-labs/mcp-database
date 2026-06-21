@@ -34,7 +34,7 @@ No more manual CLI commands to check if your tunnel is still up. Your AI acts as
 - **Security Teams** — utilize private sharing modes to grant access to internal resources securely.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Get account details and limits
 - **create_share**: ).
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zrok-open-source-tunnel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zrok-open-source-tunnel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **zrok (Open-Source Tunnel)** tools.
 
 **Configuration:**

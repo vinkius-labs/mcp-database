@@ -31,7 +31,7 @@ Connect your **Leadfeeder** tracking system to an AI agent to analyze high-quali
 - **Agency Execs** — extract clean lead directories easily
 
 
-## Available Tools
+## Available Tools (9)
 - **get_account**: Get details for a specific Leadfeeder account
 - **get_custom_feed**: Get details for a specific custom feed filter
 - **get_lead**: Get details for a specific lead
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leadfeeder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leadfeeder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Leadfeeder** tools.
 
 **Configuration:**

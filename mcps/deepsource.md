@@ -38,7 +38,7 @@ No more manual navigation through the DeepSource dashboard. Your AI acts as a de
 - **DevOps Leads** — manage repository activation status, default branches, and DSN rotation across the organization
 
 
-## Available Tools
+## Available Tools (14)
 - **activate_repository**: Once activated, DeepSource will start analyzing the code on each push/PR.
 You must provide the repository ID (obtained from get_repository).
 Use this to enable code quality monitoring for a repository that was previously inactive.
@@ -191,7 +191,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deepsource` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deepsource` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeepSource** tools.
 
 **Configuration:**

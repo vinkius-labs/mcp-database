@@ -35,7 +35,7 @@ No more manual searching through block explorers. Your AI acts as a blockchain a
 - **DeFi Users** — check transaction statuses and wallet balances through simple natural language commands.
 
 
-## Available Tools
+## Available Tools (14)
 - **get_abi**: Get Contract ABI
 - **get_balance_multi**: Get ONE Balance for Multiple Addresses
 - **get_balance**: Get ONE Balance for a Single Address
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harmonyscan-harmony-one-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harmonyscan-harmony-one-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harmonyscan (Harmony One Block Explorer API)** tools.
 
 **Configuration:**

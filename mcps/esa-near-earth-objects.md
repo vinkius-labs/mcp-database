@@ -35,7 +35,7 @@ Your AI agent becomes a planetary defence analyst with direct access to ESA miss
 - **Space Enthusiasts** — explore the asteroid catalog and track objects approaching Earth in near real-time
 
 
-## Available Tools
+## Available Tools (12)
 - **check_esa_neocc_status**: Returns the connection status and service URL. Use this to verify the integration is working correctly.
 
 Verify ESA NEOCC API connectivity
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `esa-near-earth-objects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `esa-near-earth-objects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ESA Near Earth Objects** tools.
 
 **Configuration:**

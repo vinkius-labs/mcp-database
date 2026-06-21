@@ -43,7 +43,7 @@ No more navigating complex LIMS interfaces or manually reconciling test queues. 
 - **Client Relations** — provide cultivators and processors with real-time sample status updates and CoA delivery confirmations
 
 
-## Available Tools
+## Available Tools (12)
 - **list_audit_logs**: Each audit log entry contains the timestamp, performing user, action type (sample created, result modified, CoA issued, workflow completed, user permission changed), affected record ID, previous and new values (for modifications), IP address, and justification comment (if required). Fundamental for regulatory inspections, data integrity investigations, deviation root cause analysis, and FDA 21 CFR Part 11 compliance. AI agents use this to reconstruct event sequences during quality investigations, identify unauthorized changes, and generate audit-ready documentation packages.
 
 List all audit trail entries for laboratory operations and data changes
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pharmware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pharmware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PharmWare** tools.
 
 **Configuration:**

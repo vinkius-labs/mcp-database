@@ -37,7 +37,7 @@ No more navigating complex Quick Stats interfaces to find crop yields or livesto
 - **Commodity Traders** — monitor production volumes, inventory levels and economic indicators for market analysis
 
 
-## Available Tools
+## Available Tools (8)
 - **get_survey_info**: This is useful for understanding what data is available and how frequently it is collected.
 
 Get information about USDA NASS surveys
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `usda-nass` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `usda-nass` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USDA NASS** tools.
 
 **Configuration:**

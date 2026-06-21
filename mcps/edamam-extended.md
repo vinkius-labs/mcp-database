@@ -32,7 +32,7 @@ Integrate **Edamam** into your AI workflows to access world-class nutrition and 
 - **Developers** — integrate robust food data into applications without managing complex databases
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_nutrition**: Get nutrition facts for a recipe
 - **parse_food**: Look up food in the Food Database
 - **search_recipes**: 3 million recipes by keywords, dietary restrictions, and other filters.
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `edamam-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `edamam-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Edamam** tools.
 
 **Configuration:**

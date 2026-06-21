@@ -33,7 +33,7 @@ Connect your AI agent to the **REST Countries** database to retrieve instant, ac
 - **Educators & Students** — explore global facts and regional statistics through an interactive AI assistant
 
 
-## Available Tools
+## Available Tools (12)
 - **get_all_countries**: You MUST specify the fields you need (up to 10) to avoid 400 Bad Request.
 
 Retrieve information about all countries
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rest-countries-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rest-countries-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **REST Countries** tools.
 
 **Configuration:**

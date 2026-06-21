@@ -30,7 +30,7 @@ Connect your **ShipCompliant by Sovos** account to any AI agent and navigate the
 - **eCommerce Teams** — Tax accuracy for online wine sales across all 50 states
 
 
-## Available Tools
+## Available Tools (8)
 - **check_compliance**: Returns compliance status, volume limits, license requirements, and any restrictions. THE most important tool — always check before shipping alcohol.
 
 Check shipping compliance
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shipcompliant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shipcompliant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ShipCompliant** tools.
 
 **Configuration:**

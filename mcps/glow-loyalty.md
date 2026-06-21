@@ -35,7 +35,7 @@ Connect your **Glow Loyalty** (Shopify) account to any AI agent to automate your
 - **Retention Managers** — automate the retrieval of member lists and tier distributions for targeted outreach.
 
 
-## Available Tools
+## Available Tools (12)
 - **gift_points_to_member**: Gift bonus points
 - **adjust_member_points**: Use positive numbers to add, negative to subtract.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glow-loyalty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glow-loyalty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glow Loyalty** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ No more manual searching through the YouTube interface to find an engagement met
 - **Research Teams** — quickly surface relevant video content and verify channel branding through conversation
 
 
-## Available Tools
+## Available Tools (4)
 - **get_video**: Retrieves full metadata, description, and statistics for a specific YouTube video
 - **search_videos**: Returns a list of video metadata including titles and descriptions.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `youtube` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `youtube` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **YouTube** tools.
 
 **Configuration:**

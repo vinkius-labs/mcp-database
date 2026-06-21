@@ -33,7 +33,7 @@ Connect your **Breezy HR** account to any AI agent and streamline your recruitme
 - **Talent Acquisition Leads** — automate the retrieval of recruitment data to orchestrate hiring across multiple companies
 
 
-## Available Tools
+## Available Tools (8)
 - **add_candidate**: Add a new candidate to a position
 - **get_candidate**: Get details for a specific candidate
 - **get_company**: Get details for a specific company
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `breezy-hr-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `breezy-hr-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Breezy HR** tools.
 
 **Configuration:**

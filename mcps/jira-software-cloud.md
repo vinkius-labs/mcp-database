@@ -33,7 +33,7 @@ Connect your **Jira Software Cloud** instance to any AI agent to streamline your
 - **Release Managers** — Track builds and deployments associated with Jira issues in real-time.
 
 
-## Available Tools
+## Available Tools (31)
 - **create_board**: Requires name, type (scrum or kanban), and filterId.
 
 Create a new board
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jira-software-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jira-software-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jira Software Cloud** tools.
 
 **Configuration:**

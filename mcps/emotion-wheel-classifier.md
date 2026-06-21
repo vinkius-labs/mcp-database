@@ -13,7 +13,7 @@ Map raw text descriptions to Plutchik's Wheel of Emotions, identifying intensity
 The Emotion Wheel Classifier connects AI agents to the psychological depth of Plutchik's model. Use `analyze_text_emotion` to transform unstructured text into specific emotional nodes, intensities (Low, Medium, High), and families. You can also use `get_emotion_spectrum` to see how an emotion evolves in strength or `explore_emotional_dyad` to calculate the complex emotions resulting from combining two primary states.
 
 
-## Available Tools
+## Available Tools (3)
 - **explore_emotional_dyad**: Calculate the resulting complex emotion from two primary emotions
 - **get_emotion_spectrum**: Show the progression of a specific emotion
 - **analyze_text_emotion**: Analyze raw text to identify emotion, intensity, and family
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emotion-wheel-classifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emotion-wheel-classifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Emotion Wheel Classifier** tools.
 
 **Configuration:**

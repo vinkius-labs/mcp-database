@@ -34,7 +34,7 @@ Stop digging through logs across scattered pipelines. When a data sync fails, as
 - **DevOps Ops** — audit routing behaviors exploring `list_work_pools` pushing jobs to remote Docker and Kubernetes instances
 
 
-## Available Tools
+## Available Tools (7)
 - **list_flows**: List all engineered Python workflows registered natively on Prefect Cloud
 - **list_deployments**: List all active deployments representing scheduled or triggered physical workflow instances
 - **list_flow_runs**: List recent active, scheduled, or failed flow runs recording actual physical data pipelining limits
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `prefect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `prefect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Prefect** tools.
 
 **Configuration:**

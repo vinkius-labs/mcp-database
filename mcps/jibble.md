@@ -13,7 +13,7 @@ Track time, attendance, and projects via Jibble API.
 Empower your AI agents with Jibble's time tracking and attendance platform. This MCP server allows you to list time entries, retrieve person details, track activities and projects, and view organization information directly through the Jibble API. Ideal for automating workforce management and productivity analysis.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_organization**: Use to verify account-wide configuration.
 
 Retrieves organization details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jibble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jibble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jibble** tools.
 
 **Configuration:**

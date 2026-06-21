@@ -35,7 +35,7 @@ Connect your **Giftbit** account to any AI agent to automate the delivery and tr
 - **Product Teams** — generate embedded reward links on-the-fly for user research incentives.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Verify connectivity
 - **order_email_rewards**: Send rewards via email
 - **create_reward_links**: Generate direct links
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `giftbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `giftbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Giftbit** tools.
 
 **Configuration:**

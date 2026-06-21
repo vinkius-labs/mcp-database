@@ -36,7 +36,7 @@ Connect to **Mapbox** and access world-class location services through natural c
 - **Travelers** — get directions, find nearby places and check elevation data
 
 
-## Available Tools
+## Available Tools (8)
 - **geocode**: Returns the place name, coordinates, address components (street, city, state, postal code, country), place type and bounding box. Use this to find coordinates for use with directions, distance matrix and other tools.
 
 Convert a place name to coordinates
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mapbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mapbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mapbox** tools.
 
 **Configuration:**

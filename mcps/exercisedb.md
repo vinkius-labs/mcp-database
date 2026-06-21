@@ -34,7 +34,7 @@ Connect to **ExerciseDB** and explore a comprehensive exercise database through 
 - **App Developers** — integrate exercise data with instructions and animations into fitness apps
 
 
-## Available Tools
+## Available Tools (9)
 - **get_all_exercises**: Returns exercise names, body parts, target muscles, equipment needed, GIF URLs and step-by-step instructions. Supports limit and offset parameters for pagination.
 
 Get all exercises with pagination
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exercisedb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exercisedb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ExerciseDB** tools.
 
 **Configuration:**

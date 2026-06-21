@@ -33,7 +33,7 @@ Connect your **ComplyAdvantage** account to any AI agent to streamline your Anti
 - **Risk & Legal Teams** — automate the gathering of search details and audit trails for regulatory reporting.
 
 
-## Available Tools
+## Available Tools (14)
 - **acknowledge_monitor**: Acknowledge changes to a monitored search
 - **create_comment**: Create a comment on a search or entity
 - **create_search**: ) with optional fuzziness and filters.
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `complyadvantage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `complyadvantage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ComplyAdvantage** tools.
 
 **Configuration:**

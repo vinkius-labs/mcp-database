@@ -34,7 +34,7 @@ Connect your **Kentico Xperience** project to any AI agent and take full control
 - **System Administrators** — monitor user accounts and manage system-level objects and roles across your entire Kentico instance
 
 
-## Available Tools
+## Available Tools (10)
 - **create_system_object**: Create a new Kentico system object
 - **delete_system_object**: Delete a Kentico system object
 - **get_site_document**: Get a document from the Kentico Xperience CMS
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kentico-cms-dxp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kentico-cms-dxp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kentico (CMS & DXP)** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual testing in the Flowise UI for every prediction. Your AI acts as y
 - **Product Managers** — monitor chatflow performance and review captured leads through simple AI commands
 
 
-## Available Tools
+## Available Tools (12)
 - **get_chatflow_details**: Get details for a specific chatflow
 - **get_server_version**: Get Flowise server version
 - **list_ai_assistants**: List OpenAI-style assistants
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flowiseai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flowiseai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FlowiseAI** tools.
 
 **Configuration:**

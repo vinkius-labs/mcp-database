@@ -35,7 +35,7 @@ Connect the **U.S. Congress API** to your AI agent and access comprehensive legi
 - **Civic Tech Developers** — build apps that make legislative data accessible to citizens
 
 
-## Available Tools
+## Available Tools (8)
 - **get_bill_details**: Get full details for a specific legislative bill
 - **list_congress_amendments**: List legislative amendments
 - **list_congress_bills**: gov database.
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-congress` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-congress` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **U.S. Congress** tools.
 
 **Configuration:**

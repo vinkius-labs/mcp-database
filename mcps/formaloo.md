@@ -35,7 +35,7 @@ Your AI acts as a data architect, helping you query submissions and organize boa
 - **Developers** — manage API keys and inspect blueprint metadata directly from the coding environment.
 
 
-## Available Tools
+## Available Tools (14)
 - **list_access_type_descriptions**: Get Access Type Description List
 - **list_active_packages**: Get Business Addon Packages List
 - **list_addons**: Get Addon List
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `formaloo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `formaloo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Formaloo** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Chaport** account to any AI agent and take full control of your c
 - **Business Owners** — audit support team activity and customer engagement levels
 
 
-## Available Tools
+## Available Tools (8)
 - **get_chat_history**: Retrieve the message history and events for a specific chat
 - **get_my_agent_profile**: Retrieve information about the authenticated agent
 - **get_visitor_last_chat**: Retrieve the last chat session for a specific visitor
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chaport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chaport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chaport** tools.
 
 **Configuration:**

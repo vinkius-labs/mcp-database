@@ -33,7 +33,7 @@ Connect your **Maestra.ai** account to any AI agent to automate your media proce
 - **Localization Teams** — Automate the workflow of translating and re-voicing global media assets efficiently
 
 
-## Available Tools
+## Available Tools (8)
 - **export_transcription_results**: Get an export link for a processed file
 - **list_maestra_files**: List all audio and video files in your Maestra account
 - **list_account_folders**: List all folders in your account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `maestra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `maestra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Maestra** tools.
 
 **Configuration:**

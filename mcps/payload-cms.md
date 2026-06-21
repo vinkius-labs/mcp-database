@@ -32,7 +32,7 @@ Connect your generative environments explicitly to the **Payload CMS Local REST 
 - **Frontend Teams** — isolate singleton configuration outputs validating the state API globally in dynamic response testing
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_document**: Provision a highly-available JSON Payload writing Rows into Payload
 - **wipe_cms_document**: Irreversibly vaporize explicit App nodes dropping live Document rows
 - **get_single_document**: Inspect deep internal arrays mitigating specific Row mappings
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `payload-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `payload-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Payload CMS** tools.
 
 **Configuration:**

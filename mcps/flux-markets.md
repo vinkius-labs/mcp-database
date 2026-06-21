@@ -33,7 +33,7 @@ Connect your **Flux Markets** (Onyx) account to any AI agent to monitor energy m
 - **Risk Managers** — monitor daily settlement prices and market snapshots to manage exposure.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_account_info**: Get account and API usage details
 - **get_cot_data**: Get Commitment of Traders (COT) data
 - **get_historical_tickers**: Get historical energy prices
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flux-markets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flux-markets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flux Markets** tools.
 
 **Configuration:**

@@ -28,7 +28,7 @@ Connect to the exact datasets used by Wall Street and the Federal Reserve to mon
 - **Journalists** — Fact-check employment cycles instantly
 
 
-## Available Tools
+## Available Tools (2)
 - **get_nonfarm_payrolls**: Key metric for forecasting Federal Reserve interest rate movements.
 
 Get Total Nonfarm Payroll employment (CES0000000001)
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bls-jobs-nonfarm-payrolls-wages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bls-jobs-nonfarm-payrolls-wages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BLS Jobs — Nonfarm Payrolls & Wages** tools.
 
 **Configuration:**

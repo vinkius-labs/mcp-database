@@ -18,7 +18,7 @@ LLMs struggle with YAML. Because YAML relies strictly on whitespace indentation,
 - **Bi-directional:** Seamlessly swap between `yaml2json` and `json2yaml` for DevOps and CI/CD agentic workflows.
 
 
-## Available Tools
+## Available Tools (1)
 - **convert_yaml**: Pass the source string and the desired direction. The engine handles complex nested structures, arrays, and multiline values deterministically.
 
 Converts massive YAML files to JSON and vice-versa, preventing indentation hallucinations by the LLM
@@ -73,7 +73,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `yamljson-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `yamljson-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **YAML/JSON Converter** tools.
 
 **Configuration:**

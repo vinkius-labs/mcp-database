@@ -33,7 +33,7 @@ Connect your **MightyCall** account to any AI agent to streamline your business 
 - **Developers** — integrate real-time telephony data and call intelligence into custom business dashboards
 
 
-## Available Tools
+## Available Tools (6)
 - **create_contact**: Create a new contact
 - **list_calls**: List all recent calls
 - **list_contacts**: List all contacts
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mightycall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mightycall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MightyCall** tools.
 
 **Configuration:**

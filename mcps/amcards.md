@@ -35,7 +35,7 @@ No more manual logging into mailing portals to send thank-you notes. Your AI act
 - **Real Estate Agents** — orchestrate long-term high-fidelity drip campaigns to maintain top-of-mind awareness through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **check_api_health**: com service API.
 
 Verify AMcards API connectivity
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amcards` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amcards` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AMcards** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Azure DevOps** account to any AI agent and simplify how you manag
 - **Product Owners** — get instant bird's-eye views of work item progress and project health via the AI assistant.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_builds**: List recent builds
 - **list_pipelines**: List CI/CD pipelines
 - **list_projects**: List Azure DevOps projects
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `azure-devops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `azure-devops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Azure DevOps** tools.
 
 **Configuration:**

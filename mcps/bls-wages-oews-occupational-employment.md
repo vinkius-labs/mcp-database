@@ -18,7 +18,7 @@ If you need to know exactly how much a 'registered nurse in Texas' or a 'softwar
 - **State Comparisons** — Compare geographic locations for job offers.
 
 
-## Available Tools
+## Available Tools (1)
 - **query_bls**: Use this instead of specific endpoints if you intimately know the underlying numerical code. Up to 50 concurrent lookbacks allowed.
 
 Generic BLS v2 api timeseries query. Requires explicit BLS Series IDs
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bls-wages-oews-occupational-employment` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bls-wages-oews-occupational-employment` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BLS Wages — OEWS Occupational Employment** tools.
 
 **Configuration:**

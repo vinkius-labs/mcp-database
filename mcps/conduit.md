@@ -31,7 +31,7 @@ Connect your AI agent seamlessly with **Conduit**, the modern data integration a
 - **System Administrators** — Request aggregate tracking reports validating if crucial operational data streams function continuously overnight.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_run_status**: Returns detailed status, timing, and error information.
 
 Retrieve the current status of a specific workflow run
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `conduit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `conduit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Conduit** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual status checking or template searching. Your AI acts as a dedicate
 - **Support Coordinators** — streamline the retrieval of person metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (13)
 - **create_form_engagement**: Send a form to a client (Engagement)
 - **create_person**: g., co-client, child, beneficiary) within an existing account.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `precisefp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `precisefp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PreciseFP** tools.
 
 **Configuration:**

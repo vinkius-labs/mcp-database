@@ -36,7 +36,7 @@ Connect your **Helicone** account to any AI agent and take full control of your 
 - **DevOps/SREs** — ensure the availability and reliability of your AI gateway and proxy layers
 
 
-## Available Tools
+## Available Tools (10)
 - **query_costs**: Perform structural extraction of properties driving active Account logic
 - **query_feedback**: Inspect deep internal arrays mitigating specific Plan Math
 - **query_latency**: Provision a highly-available JSON Payload generating hard Customer bindings
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `helicone-llm-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `helicone-llm-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Helicone (LLM Observability)** tools.
 
 **Configuration:**

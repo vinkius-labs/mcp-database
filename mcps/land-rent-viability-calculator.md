@@ -13,7 +13,7 @@ Calculate the economic viability of agricultural land leasing.
 This MCP server provides specialized tools to determine if agricultural land leases are financially sustainable. By analyzing production costs, expected yields, and market prices, you can use `calculate_costs` to find total expenses, `evaluate_profitability` to assess net margins, and `identify_thresholds` to discover the minimum productivity and price required for a break-even point.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_costs**: Calculate total production cost including land rent
 - **evaluate_profitability**: Evaluate the profitability of the land lease
 - **identify_thresholds**: Identify the minimum productivity and price required for viability
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `land-rent-viability-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `land-rent-viability-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Land Rent Viability Calculator** tools.
 
 **Configuration:**

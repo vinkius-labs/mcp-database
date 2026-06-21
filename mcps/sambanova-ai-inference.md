@@ -32,7 +32,7 @@ Connect to **SambaNova Cloud** to run the world's fastest open-source models dir
 - **Data Scientists** — generating embeddings for large-scale knowledge bases at scale.
 
 
-## Available Tools
+## Available Tools (3)
 - **create_chat_completion**: Compatible with OpenAI Chat Completions API.
 
 Create a chat completion using SambaNova models
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sambanova-ai-inference` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sambanova-ai-inference` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SambaNova (AI Inference)** tools.
 
 **Configuration:**

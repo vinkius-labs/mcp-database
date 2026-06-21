@@ -34,7 +34,7 @@ Stop managing financial syncs blindly and asking accountants to pull limits. Let
 - **Founders & Admins** — query team members (`list_members`) or verify immediately if a virtual card (`list_cards`) has enough cap for a high-value purchase without logging in
 
 
-## Available Tools
+## Available Tools (9)
 - **get_payment_details**: Get detailed information about a specific payment
 - **get_supplier_details**: Get detailed information about a specific supplier
 - **list_budgets**: List all budgets and their spending status
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spendesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spendesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spendesk** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ When an AI Agent accesses an API like Zendesk or Gmail to read an email, it ofte
 - **Smart Formatting:** Preserves spatial layout, lists, and links so the LLM still understands the structure of the original email.
 
 
-## Available Tools
+## Available Tools (1)
 - **extract_text**: Pass the raw HTML and receive a clean plain-text string without any markup.
 
 Strips raw HTML into clean Plain Text instantly. Reduces token usage by 95% when agents need to read heavy HTML emails or webpages
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `html-to-text-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `html-to-text-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HTML to Text Extractor** tools.
 
 **Configuration:**

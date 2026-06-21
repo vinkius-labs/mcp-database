@@ -22,7 +22,7 @@ The **definitive Mega-Server** for EU statistical intelligence.
 ### No API Key Required
 
 
-## Available Tools
+## Available Tools (26)
 - **search_datasets**: Returns matching dataset codes and names. Use this to find the right dataset code before querying data.
 
 Search Eurostat dataset catalog by keyword
@@ -189,7 +189,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eurostat-full-access-eu-statistical-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eurostat-full-access-eu-statistical-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eurostat Full Access — EU Statistical Intelligence** tools.
 
 **Configuration:**

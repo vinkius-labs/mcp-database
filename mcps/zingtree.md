@@ -33,7 +33,7 @@ Connect your **Zingtree** account to any AI agent to streamline your interactive
 - **Operations Teams** — Automate the retrieval of form data and session reports for audit or analysis
 
 
-## Available Tools
+## Available Tools (8)
 - **get_session_form_data**: Get all form data entered during a session
 - **search_all_trees**: Search for text within all decision trees
 - **get_clean_session_path**: Get a clean linear path for a user session
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zingtree` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zingtree` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zingtree** tools.
 
 **Configuration:**

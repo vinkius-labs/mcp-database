@@ -34,7 +34,7 @@ Connect your **Ghost** publication to any AI agent to automate your content mana
 - **Editorial Leads** — get a real-time overview of the static pages and subscription tiers active on the site.
 
 
-## Available Tools
+## Available Tools (11)
 - **verify_api_connection**: Check connection
 - **get_post_by_slug**: Get post details
 - **get_author_details**: Get author profile
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ghost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ghost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ghost** tools.
 
 **Configuration:**

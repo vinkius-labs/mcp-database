@@ -34,7 +34,7 @@ Connect **Cartesia** to your AI agent to unlock high-performance voice synthesis
 - **Product Teams** — build conversational AI agents that sound human and respond with sub-second latency.
 
 
-## Available Tools
+## Available Tools (20)
 - **get_voice**: Get details for a specific voice
 - **list_agent_calls**: List calls and transcripts for a specific agent
 - **update_voice**: Update voice metadata
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cartesia-voice-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cartesia-voice-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cartesia (Voice AI)** tools.
 
 **Configuration:**

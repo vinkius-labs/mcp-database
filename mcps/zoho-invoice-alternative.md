@@ -34,7 +34,7 @@ Connect your **Zoho Invoice** account to any AI agent and simplify how you manag
 - **Accountants** — retrieve transaction histories and verify customer metadata via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_zoho_invoice_status**: Returns a status indicator and organization metadata to confirm valid credentials.
 
 Verify Zoho Invoice API connectivity
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-invoice-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-invoice-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Invoice** tools.
 
 **Configuration:**

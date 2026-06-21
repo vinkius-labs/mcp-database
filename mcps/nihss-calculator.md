@@ -13,7 +13,7 @@ Calculate NIH Stroke Scale scores and assess stroke severity instantly.
 The NIHSS Calculator is a clinical decision support tool that allows healthcare professionals to quantify neurological impairment following an acute stroke. By using the `calculate_nihss` tool, users can input individual scores for eleven neurological components--including consciousness level, gaze, facial palsy, and motor function--to receive an immediate total score and severity classification. Additionally, the `get_scoring_guide` tool provides detailed scoring ranges for each component, while `evaluate_urgency` offers standardized clinical instructions based on the patient's neurological state. This MCP server acts as a bridge between clinical assessment data and AI agents in clients like Cursor, VS Code, Claude Desktop, and Windsurf.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_nihss**: Calculate the NIHSS score and severity
 - **evaluate_urgency**: Evaluate clinical urgency based on NIHSS score
 - **get_scoring_guide**: Retrieve the scoring guide for NIHSS components
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nihss-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nihss-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NIHSS Calculator** tools.
 
 **Configuration:**

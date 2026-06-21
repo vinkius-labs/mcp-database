@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire meteorological research and wea
 - **Operations Leads** — automate weather data querying to orchestrate cross-functional logistics teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the MeteoSource service is operational
 - **get_point_forecast**: Get weather forecast for a specific place_id
 - **get_nearest_weather_place**: Find the nearest monitored place by latitude and longitude
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meteosource` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meteosource` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MeteoSource** tools.
 
 **Configuration:**

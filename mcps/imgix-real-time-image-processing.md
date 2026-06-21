@@ -34,7 +34,7 @@ Connect your **imgix** account to any AI agent and take full control of your rea
 - **Digital Asset Managers** — audit asset libraries and organize origin storage connections across multiple imgix projects
 
 
-## Available Tools
+## Available Tools (10)
 - **list_sources**: List all Imgix sources. Imgix is an image CDN that optimizes, resizes, and transforms images in real-time via URL parameters
 - **get_source**: Get details of an Imgix source. Returns name, domain, deployment type, and status
 - **create_source**: Create a new Imgix source. Connects your origin (S3, GCS, web folder) to Imgix CDN
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `imgix-real-time-image-processing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `imgix-real-time-image-processing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **imgix (Real-time Image Processing)** tools.
 
 **Configuration:**

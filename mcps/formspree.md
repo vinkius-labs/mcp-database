@@ -34,7 +34,7 @@ No more manual exporting of CSVs to check your latest leads. Your AI acts as a d
 - **Customer Support** — check recent form inquiries to respond to users faster and more efficiently.
 
 
-## Available Tools
+## Available Tools (2)
 - **list_submissions**: Get submissions for a specific form
 - **submit_form**: Does not require API key authentication.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `formspree` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `formspree` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Formspree** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Cloud Assess** account to any AI agent and take full control of y
 - **Compliance Officers** — verify assessment outcomes and form records for audit preparation
 
 
-## Available Tools
+## Available Tools (8)
 - **get_student_details**: Get detailed information for a specific student
 - **list_assessment_records**: List individual assessment results and evidence records
 - **list_training_assessors**: List all internal assessors and trainers
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloud-assess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloud-assess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloud Assess** tools.
 
 **Configuration:**

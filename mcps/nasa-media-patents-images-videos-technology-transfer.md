@@ -23,7 +23,7 @@ Two powerful resources in one server.
 - From memory foam to water purification
 
 
-## Available Tools
+## Available Tools (4)
 - **search_media**: Covers every mission: Apollo, Space Shuttle, ISS, Hubble, Webb, Mars rovers, and more. Filter by media type and year range.
 
 Search NASA's image and video library — 140,000+ assets
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-media-patents-images-videos-technology-transfer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-media-patents-images-videos-technology-transfer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA Media & Patents — Images, Videos & Technology Transfer** tools.
 
 **Configuration:**

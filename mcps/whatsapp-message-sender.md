@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to drop status updates,
 - **Absolute Containment:** Because this is strictly a sending tool using the official Meta Cloud API, the agent cannot read your WhatsApp inbox, cannot snoop on replies, and cannot alter your Business Manager settings. It is a secure, pure one-way megaphone.
 
 
-## Available Tools
+## Available Tools (1)
 - **send_whatsapp_message**: Provide the destination phone number in E.164 format WITHOUT the plus sign (e.g., 5511999999999 for Brazil) in the "to" parameter, and the text in the "body" parameter. Note: Sending to users outside of the 24-hour service window requires pre-approved templates on the Meta API, otherwise it may fail.
 
 Send a text message directly to a WhatsApp number using the Meta Cloud API
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `whatsapp-message-sender` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `whatsapp-message-sender` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WhatsApp Message Sender** tools.
 
 **Configuration:**

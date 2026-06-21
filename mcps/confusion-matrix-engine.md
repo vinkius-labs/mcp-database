@@ -13,7 +13,7 @@ Deterministically calculate True Positives, FP, Precision, Recall, F1-Score, and
 Language models are probabilistic text generators, not calculators. When asked to evaluate classification arrays to produce F1-Scores or Precision/Recall metrics, they frequently hallucinate decimals and fail edge cases. The Confusion Matrix Engine offloads this critical Data Science task to a deterministic, local JavaScript runtime. It accepts arrays of actual vs. predicted labels and instantly computes mathematically perfect True Positives, True Negatives, False Positives, False Negatives, and overall Accuracy.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_confusion_matrix**: Provide arrays of labels.
 
 Calculates exact confusion matrix and accuracy from actual and predicted arrays
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `confusion-matrix-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `confusion-matrix-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Confusion Matrix Engine** tools.
 
 **Configuration:**

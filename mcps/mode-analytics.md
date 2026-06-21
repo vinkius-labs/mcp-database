@@ -33,7 +33,7 @@ Connect your **Mode Analytics** workspace to any AI agent and take full control 
 - **Growth Teams** — trigger updated data runs for specific campaigns directly from your chat interface.
 
 
-## Available Tools
+## Available Tools (10)
 - **run_mode_report**: Trigger a new run for a report
 - **get_mode_account**: Get authenticated account details
 - **get_mode_report_run**: Get details for a report run
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mode-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mode-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mode Analytics** tools.
 
 **Configuration:**

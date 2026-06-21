@@ -32,7 +32,7 @@ Inject precision quality assurance workflows directly bounding LLM models via th
 - **DevOps Admins** — verify explicit pipeline health tracking CI loop states explicitly monitoring unreviewed elements globally reliably securely
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: List all projects on Percy (BrowserStack). Percy is the leading visual regression testing platform that captures snapshots and detects pixel-level UI differences across builds. Uses JSON:API format. Returns project names, slugs, and browser configs
 - **get_project_details**: Get full details of a Percy project including name, slug, default branch, auto-approve enabled, browser targets, and build count
 - **list_builds**: List builds for a Percy project. Each build contains snapshots from a test run. Returns build IDs, states (processing/finished/failed), branch names, commit SHAs, and snapshot counts
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `percy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `percy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Percy** tools.
 
 **Configuration:**

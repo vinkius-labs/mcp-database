@@ -34,7 +34,7 @@ No digging into terminal CURL outputs required to diagnose your search latency s
 - **Sysadmins** — evaluate any lingering alias structures dynamically across test and production environments
 
 
-## Available Tools
+## Available Tools (6)
 - **get_cluster_health**: Checks the operational health status of the Typesense cluster
 - **get_cluster_metrics**: Retrieves performance and usage metrics for the Typesense cluster
 - **list_collection_aliases**: Lists all collection aliases (virtual names mapping to real collections)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `typesense-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `typesense-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Typesense Cloud** tools.
 
 **Configuration:**

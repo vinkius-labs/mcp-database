@@ -35,7 +35,7 @@ No more jumping between the Lokalise web console and your codebase. Your AI acts
 - **Localization Teams** — automate bulk uploads, generate export bundles, and manage translation orders programmatically
 
 
-## Available Tools
+## Available Tools (13)
 - **add_translation**: Add translations to one or more keys
 - **create_key**: Create translation keys in a Lokalise project
 - **create_project**: Create a new Lokalise project
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lokalise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lokalise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lokalise** tools.
 
 **Configuration:**

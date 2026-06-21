@@ -13,7 +13,7 @@ Calculate precise financial monetary corrections with compound or simple interes
 Legal settlements and judicial debts often require years of monetary correction. Trusting an LLM to compute compound interest across 60 months will inevitably lead to hallucinated cents—or worse, thousands of dollars in errors. This engine processes exact simple and compound interest math local. By securely managing the principal amount and rates natively, it provides litigation agents with unimpeachable financial calculations ready for the courtroom.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_monetary_correction**: Calculates exact financial updates using simple or compound interest over a number of periods
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `monetary-correction-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `monetary-correction-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Monetary Correction Engine** tools.
 
 **Configuration:**

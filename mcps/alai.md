@@ -35,7 +35,7 @@ No more manual creation of individual marketing posts or missing critical genera
 - **Developers** — integrate high-speed Alai marketing data into custom CRM and social media pipelines through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_getalai_status**: Verify connectivity
 - **create_asset**: Create an asset
 - **create_campaign**: Create a campaign
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alai** tools.
 
 **Configuration:**

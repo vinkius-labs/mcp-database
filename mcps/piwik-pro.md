@@ -33,7 +33,7 @@ Connect your **Piwik PRO Analytics Suite** to any AI agent and take full control
 - **Marketing Managers** — monitor high-level dashboard metadata and application lists through simple chat commands.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_piwik_apps**: List all websites/apps in Piwik PRO
 - **list_piwik_dashboards**: List Piwik PRO dashboards
 - **list_piwik_goals**: List goals for a specific app
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `piwik-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `piwik-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Piwik PRO** tools.
 
 **Configuration:**

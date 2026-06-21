@@ -13,7 +13,7 @@ Generate comprehensive travel preparation checklists for pets, covering document
 The Pet Travel Checklist Generator helps pet owners prepare for domestic or international journeys. By using tools like `check_documentation_requirements`, `get_carrier_guidelines`, `get_vaccination_requirements`, and `estimate_prep_timeline`, you can instantly retrieve essential information regarding legal papers, IATA-compliant carriers, required immunizations, and necessary adaptation periods based on your pet's species and transport mode.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_documentation_requirements**: Identifies the specific legal and identification papers required for a successful journey
 - **estimate_prep_timeline**: Calculates how many days of preparation/adaptation are needed before departure
 - **get_vaccination_requirements**: Provides a checklist of required immunizations and health screenings
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-travel-checklist-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-travel-checklist-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Travel Checklist Generator** tools.
 
 **Configuration:**

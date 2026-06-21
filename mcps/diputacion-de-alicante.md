@@ -32,7 +32,7 @@ Connect your AI agent to the **Diputación de Alicante Open Data** portal to ret
 - **Tourism & Event Planners** — access official festival calendars and beach quality data for regional planning
 
 
-## Available Tools
+## Available Tools (19)
 - **get_mayors**: Get Mayors (Historical) dataset
 - **get_moors_and_christians_festivals**: Get Moors and Christians Festivals dataset
 - **get_municipal_budgets**: Get Municipal Budgets dataset
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `diputacion-de-alicante` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `diputacion-de-alicante` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Diputación de Alicante** tools.
 
 **Configuration:**

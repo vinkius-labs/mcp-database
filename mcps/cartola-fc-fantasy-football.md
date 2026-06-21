@@ -32,7 +32,7 @@ Transform your AI agent into a professional Cartola FC strategist with this dedi
 - **Community Managers** — automate the retrieval of league rankings and highlights for your fantasy group
 
 
-## Available Tools
+## Available Tools (12)
 - **list_top_average_players**: List players with the highest season averages
 - **list_cheap_players**: List players with low prices (Bargains)
 - **list_players_by_club**: List all players from a specific club
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cartola-fc-fantasy-football` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cartola-fc-fantasy-football` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cartola FC (Fantasy Football)** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **R2R (Rag to Riches)** deployment to an AI agent, bringing your RA
 - **Backend Developers** — Audit engine responses and fine-tune semantic retrieval limits easily.
 
 
-## Available Tools
+## Available Tools (6)
 - **search**: Performs a vector search across ingested documents
 - **rag_query**: Executes a RAG (Retrieval-Augmented Generation) query
 - **list_documents**: Lists all ingested documents in the R2R system
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `r2r` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `r2r` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **R2R** tools.
 
 **Configuration:**

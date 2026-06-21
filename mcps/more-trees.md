@@ -22,7 +22,7 @@ Connect your **More Trees** account to any AI agent and manage reforestation ope
 - **Certificates** — Download digital planting certificates
 
 
-## Available Tools
+## Available Tools (11)
 - **check_moretrees_status**: Verify API connectivity
 - **get_account**: Get account info
 - **get_certificate**: Get planting certificate
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `more-trees` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `more-trees` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **More Trees** tools.
 
 **Configuration:**

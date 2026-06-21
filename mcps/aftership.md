@@ -28,7 +28,7 @@ Connect **AfterShip** tracking platform to any AI agent and track packages from 
 3. Start tracking packages from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (9)
 - **create_tracking**: Requires at least the tracking number. Optionally specify the courier slug, title, customer emails, SMS phone numbers, order ID, and custom fields.
 
 Create a new package tracking
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aftership` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aftership` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AfterShip** tools.
 
 **Configuration:**

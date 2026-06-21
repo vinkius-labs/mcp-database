@@ -33,7 +33,7 @@ Directly empower your intelligent agents with the **Clip API**, the undisputed c
 - **E-Commerce Architects** — hard-sync inventory SKUs marrying Clip catalogs identically with dynamic web-stocks bypassing heavy manual imports saving thousands of clicks.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_product_to_catalog**: Add a new item to the Clip Point of Sale catalog
 - **cancel_payment_link**: Void an active payment link
 - **create_payment_link**: Generate a Clip payment link to charge customers via card
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clip-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clip-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clip API** tools.
 
 **Configuration:**

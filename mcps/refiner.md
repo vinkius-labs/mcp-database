@@ -34,7 +34,7 @@ Connect your **Refiner** customer feedback account to any AI agent and simplify 
 - **Customer Success** — monitor individual user feedback and verify identity traits via the AI assistant.
 
 
-## Available Tools
+## Available Tools (8)
 - **list_refiner_contacts**: List product contacts
 - **get_refiner_contact**: Get contact details
 - **identify_refiner_user**: Identify or update user
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `refiner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `refiner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Refiner** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your AI agent directly to the **Playground AI** compute clusters. Elimin
 - **Creative Directors** — apply instantaneous upscaling or outpainting adjustments natively while discussing the copy.
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_image**: Triggers immediate billing execution per inference step.
 
 Generate images from a text prompt using Playground AI. Playground offers multiple AI models including Playground v3 and SDXL variants for creative image generation. Instructions: Pass prompt, model name, width, height (multiples of 64)
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `playground-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `playground-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Playground AI** tools.
 
 **Configuration:**

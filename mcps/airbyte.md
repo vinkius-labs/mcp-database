@@ -33,7 +33,7 @@ Connect your **Airbyte** data integration instance to your AI agent to unlock co
 - **Data Analysts** — get a high-level summary of all active data sources pumping into the main data lake
 
 
-## Available Tools
+## Available Tools (7)
 - **list_sources**: List all Airbyte sources
 - **get_source**: Get details of a specific Airbyte source
 - **list_destinations**: List all Airbyte destinations
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airbyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airbyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Airbyte** tools.
 
 **Configuration:**

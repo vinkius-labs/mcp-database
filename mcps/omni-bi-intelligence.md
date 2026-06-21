@@ -35,7 +35,7 @@ Connect your **Omni BI** (omni.co) account to your AI agent and gain deep insigh
 - **Operations Teams** — automate the retrieval of data exports and model metadata for reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **export_query_results**: Export data to file
 - **get_dashboard_details**: Get specific dashboard info
 - **get_field_details**: Get specific field info
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `omni-bi-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `omni-bi-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Omni BI Intelligence** tools.
 
 **Configuration:**

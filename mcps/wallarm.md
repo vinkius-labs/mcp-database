@@ -38,7 +38,7 @@ No more manual digging through security consoles to find attack patterns. Your A
 - **SRE & Platform Teams** — monitor the health of security edge nodes and manage global access rules efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **create_ip_acl_rule**: list_type must be "white" or "black".
 
 Adds an IP or CIDR range to the global allowlist or denylist
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wallarm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wallarm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wallarm** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ No more manual browsing through massive asset libraries. Your AI agent becomes y
 - **Creative Operations** — find specific media files by technical metadata and manage asset lifecycles efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_media_asset**: This action is irreversible and removes the asset from all collections.
 
 Permanently removes an asset from the Acquia DAM
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `widen-acquia-dam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `widen-acquia-dam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Widen (Acquia DAM)** tools.
 
 **Configuration:**

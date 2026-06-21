@@ -35,7 +35,7 @@ No more jumping between dashboards to find which node is spiking. Your AI acts a
 - **System Administrators** — manage large-scale node environments by querying spaces and rooms via simple conversation.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_alarms**: Get current status of all configured alarms
 - **get_all_metrics**: Get all metrics for scraping
 - **list_charts**: ).
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `netdata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `netdata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Netdata** tools.
 
 **Configuration:**

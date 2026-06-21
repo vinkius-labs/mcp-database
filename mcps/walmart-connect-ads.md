@@ -30,7 +30,7 @@ Built for **Advertising Agencies**, **Growth Managers**, and **E-Commerce Advert
 > **Prerequisite:** You must be an approved Walmart Connect Partner Network (WCPN) partner with valid API credentials (Consumer ID, Private Key) issued during onboarding.
 
 
-## Available Tools
+## Available Tools (8)
 - **ads_add_keywords**: Each keyword needs a text, match type (exact, phrase, or broad), and a bid amount in dollars. Send keywords as a JSON array string, e.g. [{"keyword":"laptop stand","matchType":"broad","bid":1.50}].
 
 Add new keywords to a Sponsored Search ad group
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `walmart-connect-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `walmart-connect-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Walmart Connect Ads** tools.
 
 **Configuration:**

@@ -21,7 +21,7 @@ The **USDA FoodData Central MCP Server** provides access to the most authoritati
 Free API key required (instant registration). The definitive source for nutrition research, dietary analysis, and health applications.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_usda_food_details**: Get detailed nutritional information for a specific food by its USDA FDC ID
 - **search_usda_foods**: S. Department of Agriculture food database containing 300,000+ foods. Returns calories, protein, fat, carbs, fiber, and sugar per serving. Covers foundation foods, branded products, and survey data.
 
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `usda-fooddata-central` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `usda-fooddata-central` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USDA FoodData Central** tools.
 
 **Configuration:**

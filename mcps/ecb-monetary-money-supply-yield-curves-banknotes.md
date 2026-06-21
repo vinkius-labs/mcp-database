@@ -19,7 +19,7 @@ Eurozone monetary data.
 - **Banknotes** — Euro notes in circulation
 
 
-## Available Tools
+## Available Tools (4)
 - **get_monetary_aggregate**: M1 = notes, coins + overnight deposits. M2 = M1 + deposits up to 2 years. M3 = M2 + repos + money market funds + debt securities up to 2 years. M3 is the ECB's primary monetary aggregate for policy analysis.
 
 Get eurozone monetary aggregates — M1, M2, M3 money supply
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ecb-monetary-money-supply-yield-curves-banknotes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ecb-monetary-money-supply-yield-curves-banknotes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ECB Monetary — Money Supply, Yield Curves & Banknotes** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Checks if a room's dimensions meet ergonomic and architectural standards for vis
 **Room Proportion Checker**: Does your space feel right? Many rooms fail basic ergonomic or proportional tests, leading to a feeling of discomfort or imbalance. This service evaluates the structural harmony and compliance of any given room volume (Width x Length x Height) against established architectural standards. It calculates multiple indices to determine if the proportions are visually pleasing and functional for human use.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_axis_balance_ratio**: Higher scores mean more harmonious proportions.
 
 Calculate the axis balance ratio for a room based on width, length, and height
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `room-proportion-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `room-proportion-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Room Proportion Checker** tools.
 
 **Configuration:**

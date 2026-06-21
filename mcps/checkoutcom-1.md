@@ -33,7 +33,7 @@ Connect your **Checkout.com** account to any AI agent and take full control of y
 - **Customer support** — look up payment details and history to resolve billing inquiries faster
 
 
-## Available Tools
+## Available Tools (10)
 - **capture_payment**: /captures` locking an authorized transaction converting it to native settled limits.
 
 Retrieve the exact structural matching verifying Capture processing
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `checkoutcom-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `checkoutcom-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Checkout.com** tools.
 
 **Configuration:**

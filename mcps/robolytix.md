@@ -35,7 +35,7 @@ No more manual status checking or bot log hunting. Your AI acts as a dedicated R
 - **Business Analysts** — streamline the retrieval of process metadata and monitor organizational automation health directly within the chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_process**: Get details for a specific process
 - **get_run_messages**: Get all messages from a process run
 - **get_run**: Get details for a specific process run
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `robolytix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `robolytix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Robolytix** tools.
 
 **Configuration:**

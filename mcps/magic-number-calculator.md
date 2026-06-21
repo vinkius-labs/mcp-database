@@ -13,7 +13,7 @@ Calculate and analyze Go-To-Market efficiency using the Magic Number ratio.
 The Magic Number Calculator is a specialized tool for evaluating Go-To-Market (GTM) efficiency. By comparing your Net New ARR from the current quarter against your Sales and Marketing (S&M) spend from the previous quarter, it calculates the Magic Number ratio to determine if your growth engine is inefficient, healthy, or excellent. Use `calculate_magic_number` to get the raw ratio, `get_efficiency_rating` to categorize performance tiers, and `evaluate_gtm_health_summary` for a comprehensive diagnostic of your business scaling efficiency.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_magic_number**: Calculate the Magic Number ratio
 - **evaluate_gtm_health_summary**: Provide a holistic diagnostic of the GTM engine
 - **get_efficiency_rating**: 5, 0.75, 1.0).
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `magic-number-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `magic-number-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Magic Number Calculator** tools.
 
 **Configuration:**

@@ -41,7 +41,7 @@ UtilityAPI eliminates the need to integrate with each utility company individual
 - **Property Managers** — monitor utility costs across portfolios and identify anomalies in billing or consumption
 
 
-## Available Tools
+## Available Tools (12)
 - **activate_historical_collection**: Send an array of meter_uids (from list_meters) to begin backfilling historical data. Once activated, the system will start collecting all available historical data for those meters. Use this after a new customer authorization to ensure you get their complete usage history, not just future data. Data collection may take time depending on the utility and data availability.
 
 Activate historical data collection for specific utility meters
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `utilityapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `utilityapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UtilityAPI** tools.
 
 **Configuration:**

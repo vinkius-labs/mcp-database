@@ -32,7 +32,7 @@ The web is hostile to AI agents. DocBreach brings a crowbar. Discover, read, and
 - **AI Agents** — Extract API endpoints from OpenAPI specifications and map entire documentation sites for comprehensive context.
 
 
-## Available Tools
+## Available Tools (5)
 - **docs_search**: Always provide the "site" parameter when searching within a known domain. Example: docs.search({ query: "authentication headers", site: "docs.stripe.com" })
 
 Search for specific topics within a documentation site
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docbreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docbreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DocBreach** tools.
 
 **Configuration:**

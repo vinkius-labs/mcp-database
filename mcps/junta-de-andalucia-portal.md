@@ -33,7 +33,7 @@ Connect to the **Junta de Andalucía Open Data Portal** to query and analyze pub
 - **Citizens & Journalists** — explore government transparency records and public statistics through simple conversation.
 
 
-## Available Tools
+## Available Tools (6)
 - **search_datastore**: Search for data within a specific resource
 - **list_groups**: List all groups (categories)
 - **list_organizations**: List all publishing organizations
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `junta-de-andalucia-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `junta-de-andalucia-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Junta de Andalucía (Portal)** tools.
 
 **Configuration:**

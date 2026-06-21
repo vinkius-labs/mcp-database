@@ -35,7 +35,7 @@ Connect **Style3D** to your AI agent and manage your entire digital fashion pipe
 - **Production Managers** — track project status and asset pipelines from any AI agent
 
 
-## Available Tools
+## Available Tools (9)
 - **get_fabric**: Get details of a specific fabric
 - **get_garment**: Get details of a specific garment
 - **get_project**: Get details of a specific project
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `style3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `style3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Style3D** tools.
 
 **Configuration:**

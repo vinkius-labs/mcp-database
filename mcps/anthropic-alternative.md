@@ -34,7 +34,7 @@ No more switching between API tools to interact with Claude. Your AI acts as an 
 - **Product Teams** — review model outputs, track token usage and manage batch processing jobs via conversation
 
 
-## Available Tools
+## Available Tools (6)
 - **cancel_batch_message**: Requests that have already been completed cannot be cancelled. Provide the batch ID. This is useful if you submitted a large batch by mistake and want to stop further processing to save costs.
 
 Cancel an in-progress batch message request
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `anthropic-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `anthropic-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Anthropic** tools.
 
 **Configuration:**

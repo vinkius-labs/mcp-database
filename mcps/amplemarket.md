@@ -38,7 +38,7 @@ Furthermore, the Amplemarket integration allows your AI agent to orchestrate out
 - **RevOps Specialists** — Verify API integrations and inspect JSON lead profiles using simple commands in your chat interface.
 
 
-## Available Tools
+## Available Tools (8)
 - **search_people**: Search for B2B contacts
 - **find_person**: Find specific person
 - **list_lead_lists**: List lead lists
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amplemarket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amplemarket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amplemarket** tools.
 
 **Configuration:**

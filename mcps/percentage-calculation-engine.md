@@ -18,7 +18,7 @@ LLMs frequently fail when applying layered financial math, such as calculating a
 - **Absolute Determinism:** No stochastics. Just native mathematical evaluation executed at the edge.
 
 
-## Available Tools
+## Available Tools (2)
 - **calculate_increase_by**: Increases or decreases a value by X percent deterministically (use negative percent for discount)
 - **calculate_percent_of**: Pass the base value and the percentage to compute. Essential for discount calculations, tax rates, and financial reports.
 
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `percentage-calculation-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `percentage-calculation-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Percentage Calculation Engine** tools.
 
 **Configuration:**

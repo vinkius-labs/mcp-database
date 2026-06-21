@@ -33,7 +33,7 @@ Connect your **Tyk** instance to any AI agent to streamline your API management 
 - **Security Teams** — Audit existing policies and keys to ensure compliance with organizational access standards.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_api_definition**: Requires TYK_DASHBOARD_TOKEN.
 
 Create a new API definition
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tyk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tyk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tyk** tools.
 
 **Configuration:**

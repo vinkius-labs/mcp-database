@@ -33,7 +33,7 @@ Connect your **OneSpan Sign** account to any AI agent to streamline your digital
 - **HR Professionals** — manage onboarding documents and employee agreements efficiently through AI-driven commands.
 
 
-## Available Tools
+## Available Tools (5)
 - **configure_callback**: Configure or receive event notifications
 - **create_package**: Create a new transaction package
 - **download_documents_zip**: Download all signed documents in a zip file
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onespan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onespan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OneSpan** tools.
 
 **Configuration:**

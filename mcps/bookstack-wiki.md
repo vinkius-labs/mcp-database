@@ -34,7 +34,7 @@ Connect your **BookStack** instance to any AI agent and turn your documentation 
 - **Support Teams** — quickly find and export help articles for customers
 
 
-## Available Tools
+## Available Tools (32)
 - **create_attachment**: Create a new attachment link
 - **create_book**: Create a new book
 - **create_chapter**: Create a new chapter
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bookstack-wiki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bookstack-wiki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BookStack (Wiki)** tools.
 
 **Configuration:**

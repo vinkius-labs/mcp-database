@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (7)
 - **odoo_create_contact**: partner record. Set is_company=true to create a company/organization, or false (default) for an individual person. For individuals, you can optionally set parent_id to link them to an existing company. Returns the created partner with its new ID.
 
 Create a new contact (person) or company in Odoo with name, email, phone, and optional parent company
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-erp-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-erp-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo ERP (Full)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **DrChrono** EHR account to any AI agent to streamline medical prac
 - **Healthcare Developers** — interact with the DrChrono API directly from the code editor to verify data structures.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_appointment**: Schedule a new appointment
 - **create_clinical_note**: Create a clinical note
 - **create_patient**: Create a new patient
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `drchrono` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `drchrono` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DrChrono** tools.
 
 **Configuration:**

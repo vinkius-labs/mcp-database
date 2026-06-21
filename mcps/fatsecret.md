@@ -22,7 +22,7 @@ The **FatSecret MCP Server** connects your AI agent to one of the world's most p
 Free developer plan available. OAuth 2.0 client credentials authentication.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_fatsecret_food_details**: g. 1 cup, 100g, 1 oz).
 
 Get detailed nutritional information for a specific food item with all serving sizes
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fatsecret` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fatsecret` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FatSecret** tools.
 
 **Configuration:**

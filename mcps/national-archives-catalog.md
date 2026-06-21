@@ -33,7 +33,7 @@ Connect to the **National Archives Catalog (NARA)** and explore the history of t
 - **Genealogists** — search through millions of records and transcriptions to find family history data and archival links.
 
 
-## Available Tools
+## Available Tools (40)
 - **create_comment**: Add a new comment to a record
 - **create_tag**: Add a new tag to a record
 - **create_transcription**: Add a new transcription
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `national-archives-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `national-archives-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **National Archives Catalog** tools.
 
 **Configuration:**

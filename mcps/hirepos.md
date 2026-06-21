@@ -34,7 +34,7 @@ Connect your **HirePOS** account to any AI agent and manage your equipment renta
 - **Finance Teams** — review invoices, track payments, and audit rental revenue through AI
 
 
-## Available Tools
+## Available Tools (17)
 - **check_item_availability**: Check item availability
 - **check_hirepos_status**: Verify connectivity
 - **create_customer**: Create a customer
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hirepos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hirepos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HirePOS** tools.
 
 **Configuration:**

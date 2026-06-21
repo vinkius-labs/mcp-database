@@ -22,7 +22,7 @@ U.S. Census economic data.
 Requires a free API key from the Census Bureau.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_income_by_state**: Median income is the single most-used economic indicator from the Census — it determines federal funding, cost-of-living adjustments, and market opportunity analysis.
 
 Get median household income and poverty rates for all states
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-census-income-median-income-poverty-economy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-census-income-median-income-poverty-economy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **U.S. Census Income — Median Income, Poverty & Economy** tools.
 
 **Configuration:**

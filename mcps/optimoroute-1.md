@@ -33,7 +33,7 @@ Connect your **OptimoRoute** account to any AI agent and take full control of yo
 - **Operations Teams** — audit delivery performance and stop sequences during the work day.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_order**: Create a new delivery order
 - **delete_order**: Delete a delivery order
 - **get_analytics**: Get delivery performance analytics
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `optimoroute-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `optimoroute-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OptimoRoute** tools.
 
 **Configuration:**

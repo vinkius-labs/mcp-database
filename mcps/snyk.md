@@ -34,7 +34,7 @@ Stop digging through the Snyk UI just to see why a container build failed. Find 
 - **SysAdmins** — pull quick organizational billing usage limits dynamically and audit user integrations from pure text instructions
 
 
-## Available Tools
+## Available Tools (9)
 - **get_billing_info**: Retrieves billing details for an organization
 - **get_issue_details**: Retrieves details for a specific security issue
 - **get_project_details**: Retrieves details for a specific project
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snyk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snyk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Snyk** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Mattermost** workspace to any AI agent and manage team collaborat
 - **Community Managers** — manage large open-source communities
 
 
-## Available Tools
+## Available Tools (12)
 - **create_new_channel**: Create a channel
 - **post_message**: Send chat message
 - **get_server_config**: Check server settings
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mattermost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mattermost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mattermost** tools.
 
 **Configuration:**

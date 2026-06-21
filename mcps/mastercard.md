@@ -40,7 +40,7 @@ Your AI acts as a payment infrastructure assistant — no more navigating comple
 - **E-commerce Operators** — identify card types before checkout to optimize payment routing, detect prepaid/commercial cards, and reduce cross-border processing fees
 
 
-## Available Tools
+## Available Tools (12)
 - **bin_lookup**: Returns comprehensive card information including: issuer bank name, card type (credit/debit/prepaid/commercial), card category (Standard/Gold/Platinum/World/World Elite), issuing country, currency, and special flags (healthcare, payroll, purchasing). Use this to identify unknown cards, validate card ranges before transactions, determine cross-border fees, or understand the cardholder profile. The accountNumberPrefix parameter must be 6-8 numeric digits. Optional parameters (currencyCode, paymentType, merchantCategoryCode) provide more precise results for specific transaction contexts.
 
 Identify card issuer, type, and details from the first 6-8 digits of a payment card number
@@ -145,7 +145,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mastercard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mastercard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mastercard** tools.
 
 **Configuration:**

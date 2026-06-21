@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire literary research with **Open L
 - **Librarians** — automate catalog querying to orchestrate cross-functional literary projects smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_author**: Get author details by key
 - **get_author_works**: Get works by a specific author
 - **get_book_by_isbn**: Get book details by ISBN
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Library** tools.
 
 **Configuration:**

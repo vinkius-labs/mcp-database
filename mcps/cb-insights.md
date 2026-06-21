@@ -34,7 +34,7 @@ Connect your **CB Insights** enterprise account to any AI agent and take full co
 - **Founders & Entrepreneurs** — research investors, understand competitive dynamics, and prepare for fundraising rounds with comprehensive data
 
 
-## Available Tools
+## Available Tools (13)
 - **chat_cbi**: CB Insights AI chat
 - **check_cbi_status**: Verify connectivity
 - **get_deal**: Get deal details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cb-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cb-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CB Insights** tools.
 
 **Configuration:**

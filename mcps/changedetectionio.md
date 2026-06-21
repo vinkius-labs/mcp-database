@@ -33,7 +33,7 @@ Connect your **ChangeDetection.io** instance to any AI agent to automate web mon
 - **SEO Specialists** — keep an eye on SERP changes or competitor landing page modifications
 
 
-## Available Tools
+## Available Tools (14)
 - **create_tag**: Create a new tag
 - **create_watch**: Create a new watch
 - **delete_watch**: Delete a watch
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `changedetectionio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `changedetectionio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChangeDetection.io** tools.
 
 **Configuration:**

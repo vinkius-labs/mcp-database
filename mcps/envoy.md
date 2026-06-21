@@ -36,7 +36,7 @@ Connect your **Envoy** workplace account to any AI agent and take full control o
 - **Security Teams** — audit office capacity and verify employee presence through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **list_locations**: List all office locations managed in Envoy
 - **list_visitors**: List all visitors checked in or expected at an Envoy location
 - **pre_register_visitor**: Pre-register a visitor in Envoy
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `envoy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `envoy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Envoy** tools.
 
 **Configuration:**

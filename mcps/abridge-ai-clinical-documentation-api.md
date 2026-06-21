@@ -31,7 +31,7 @@ Integrate **Abridge** into your clinical workflow to convert patient-provider co
 - **Health Tech Developers** — Integrate clinical documentation capabilities into custom EHR or telehealth platforms.
 
 
-## Available Tools
+## Available Tools (3)
 - **create_recording**: Create a new recording session or upload audio
 - **get_clinical_notes**: Returns structured data including summary, HPI, physical exam, and assessment plan.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `abridge-ai-clinical-documentation-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `abridge-ai-clinical-documentation-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Abridge (AI Clinical Documentation API)** tools.
 
 **Configuration:**

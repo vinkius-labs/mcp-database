@@ -33,7 +33,7 @@ Connect to the **Boba Network** (L2) through Bobascan's API. This MCP server all
 - **DeFi Users** — check wallet balances and transaction statuses through natural language.
 
 
-## Available Tools
+## Available Tools (25)
 - **get_abi**: Get Contract ABI for Verified Source Codes
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_block_reward**: Get Block Rewards by BlockNo
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bobascan-boba-l2-network-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bobascan-boba-l2-network-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bobascan (Boba L2 Network Block Explorer API)** tools.
 
 **Configuration:**

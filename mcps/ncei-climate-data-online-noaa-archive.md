@@ -33,7 +33,7 @@ Connect your AI agent to the **NCEI Climate Data Online** archive and explore de
 - **Developers** — integrate reliable, government-backed climate data into applications using natural language queries
 
 
-## Available Tools
+## Available Tools (10)
 - **list_datacategories**: List general types of data used to group similar data types
 - **get_data**: Annual/Monthly data limited to 10-year range; other data limited to 1-year range.
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ncei-climate-data-online-noaa-archive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ncei-climate-data-online-noaa-archive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NCEI Climate Data Online (NOAA Archive)** tools.
 
 **Configuration:**

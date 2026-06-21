@@ -32,7 +32,7 @@ Integrate **DROPBOY**, the advanced logistics and delivery management platform, 
 - **Supply Chain Teams** — Research specific delivery details and organizational logistics metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dropboy_account_metadata**: Retrieve metadata and limits for your DROPBOY account
 - **get_driver_profile**: Get full profile and route history for a specific driver
 - **get_order_details**: Get detailed information and real-time status for a specific order
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dropboy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dropboy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DROPBOY** tools.
 
 **Configuration:**

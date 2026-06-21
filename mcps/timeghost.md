@@ -36,7 +36,7 @@ No more manual timesheet entries or missing project budget gaps. Your AI acts as
 - **HR & Payroll Admins** — verify technical time logs and workspace assignments to optimize resource allocation through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **list_timeghost_clients**: List clients
 - **get_timeghost_project**: Get details for a specific project
 - **get_timeghost_task**: Get details for a specific task
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `timeghost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `timeghost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **timeghost** tools.
 
 **Configuration:**

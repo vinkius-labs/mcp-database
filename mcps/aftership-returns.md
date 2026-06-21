@@ -34,7 +34,7 @@ Connect your **AfterShip Returns** account to your AI agent to unlock profession
 - **Logistics Specialists** — audit return shipping costs and label generation success rates
 
 
-## Available Tools
+## Available Tools (4)
 - **list_returns**: Retrieve pending or historical customer return requests and their processing statuses
 - **get_return_details**: Retrieve the granular items, return reasons, and current logistics status for a specific RMA
 - **approve_return**: This allows the customer to ship the item back.
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aftership-returns` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aftership-returns` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AfterShip Returns** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the **YesNo.wtf** API to bring a touch of randomness and visual flair
 - **Content Creators** — generate quick visual reactions based on random or forced logic.
 
 
-## Available Tools
+## Available Tools (1)
 - **get_decision**: Can optionally force a specific answer.
 
 Get a random yes/no/maybe decision with a GIF
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `yesno` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `yesno` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **YesNo** tools.
 
 **Configuration:**

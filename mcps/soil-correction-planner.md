@@ -13,7 +13,7 @@ Plan a 3-year soil amendment program for lime, gypsum, and micronutrients.
 The Soil Correction Planner helps farmers transition their soil from acidic or nutrient-deficient states to optimal levels for specific crops. Using tools like `get_lime_sequence`, `get_gypsum_sequence`, and `get_micronutrient_sequence`, you can calculate precise annual dosages of lime, gypsum, and micronutrients. The system also provides financial forecasting via `calculate_total_program_cost` to manage your 3-year investment effectively.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_gypsum_sequence**: Calculate gypsum application doses for a 3-year period
 - **get_lime_sequence**: Calculate lime application doses for a 3-year period
 - **get_micronutrient_sequence**: Calculate micronutrient requirements for a crop
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `soil-correction-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `soil-correction-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Soil Correction Planner** tools.
 
 **Configuration:**

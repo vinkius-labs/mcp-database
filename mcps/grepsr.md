@@ -34,7 +34,7 @@ Connect your **Grepsr** account to any AI agent and take full control of your ma
 - **Operations Teams** — retrieve the latest scraped datasets and verify delivery integration status synchronously
 
 
-## Available Tools
+## Available Tools (12)
 - **create_webhook**: Configure a new webhook URL for a report
 - **get_me**: Get details for the current Grepsr account
 - **get_latest_data**: Retrieve the most recent scraped dataset for a report
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grepsr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grepsr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Grepsr** tools.
 
 **Configuration:**

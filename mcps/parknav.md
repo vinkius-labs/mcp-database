@@ -34,7 +34,7 @@ Parknav uses deep learning and IoT sensors to provide real-time and predictive d
 - **Fleet & Delivery** — Optimize routes based on real-time loading zone availability
 
 
-## Available Tools
+## Available Tools (8)
 - **optimize_parking_route**: Optimize a route to include the best parking options
 - **predict_availability**: Essential for planning trips in advance.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `parknav` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `parknav` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Parknav** tools.
 
 **Configuration:**

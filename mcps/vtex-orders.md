@@ -34,7 +34,7 @@ Connect your **VTEX** Order Management System (OMS) to any AI agent and take ful
 - **Operations Managers** — Monitor order flow, identify bottlenecks, and audit fulfillment performance across sellers.
 
 
-## Available Tools
+## Available Tools (6)
 - **cancel_order**: Cancel an order
 - **get_order**: Get full details of a specific order
 - **register_invoice**: Register a tax invoice and tracking number
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vtex-orders` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vtex-orders` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VTEX Orders** tools.
 
 **Configuration:**

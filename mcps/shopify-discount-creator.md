@@ -21,7 +21,7 @@ Your AI agent gains the immediate ability to act as a real-time sales closer. If
 - **Absolute Containment:** Because this is strictly a "Push-only" creation tool scoped only to discounts, the agent cannot read your orders, cannot delete products, and cannot access customer data. It only generates codes. A completely secure, one-way funnel.
 
 
-## Available Tools
+## Available Tools (1)
 - **create_shopify_discount**: Provide the desired code name (e.g. VIP_10) and the percentage amount to discount (e.g. 10 for 10% off). Send the resulting code directly to the customer.
 
 Generates a new percentage-based discount code in Shopify on the fly
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shopify-discount-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shopify-discount-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shopify Discount Creator** tools.
 
 **Configuration:**

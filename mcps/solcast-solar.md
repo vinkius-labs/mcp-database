@@ -41,7 +41,7 @@ Your AI becomes a solar analyst, helping you forecast PV output, understand sola
 - **EV Owners with Solar** — optimize charging schedules based on expected solar generation
 
 
-## Available Tools
+## Available Tools (11)
 - **get_detailed_pv_forecast**: Use when you know your system's exact configuration for maximum forecast accuracy.
 
 USE WHEN:
@@ -312,7 +312,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `solcast-solar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `solcast-solar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Solcast Solar** tools.
 
 **Configuration:**

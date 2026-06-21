@@ -35,7 +35,7 @@ Connect your **GoCardless** merchant account to any AI agent to automate your di
 - **Operations Leads** — automate the retrieval of failed payment logs and mandate status reports seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **create_new_payment**: Initiate a collection
 - **get_account_details**: Get account identity
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gocardless` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gocardless` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoCardless** tools.
 
 **Configuration:**

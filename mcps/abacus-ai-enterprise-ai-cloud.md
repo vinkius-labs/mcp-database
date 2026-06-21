@@ -33,7 +33,7 @@ Connect your **Abacus AI** enterprise account to any AI agent to orchestrate com
 - **AI Product Managers** — monitor project progress and verify model metrics through simple natural language queries.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_project**: Create a new project
 - **describe_model**: Returns the status and details of a model
 - **train_model**: Starts a training job for a model
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `abacus-ai-enterprise-ai-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `abacus-ai-enterprise-ai-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Abacus AI (Enterprise AI Cloud)** tools.
 
 **Configuration:**

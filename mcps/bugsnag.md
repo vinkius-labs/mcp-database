@@ -34,7 +34,7 @@ Connect your **BugSnag** account to any AI agent and orchestrate your error moni
 - **Product Managers** — retrieve high-level error statistics using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_error**: Get details of a specific error group
 - **get_event**: Get details of a specific error event
 - **get_project**: Get details of a specific project
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bugsnag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bugsnag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BugSnag** tools.
 
 **Configuration:**

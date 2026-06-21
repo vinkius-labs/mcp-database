@@ -33,7 +33,7 @@ Connect your AI agent to **Tenor** to bring visual expression to your workflows.
 - **Developers** — Integrate visual search capabilities into your AI-driven applications and chat interfaces.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_autocomplete**: Retrieve autocomplete suggestions for a partial search term
 - **list_categories**: Retrieve a list of GIF categories
 - **get_featured_gifs**: Retrieve the current global featured GIFs
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tenor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tenor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tenor** tools.
 
 **Configuration:**

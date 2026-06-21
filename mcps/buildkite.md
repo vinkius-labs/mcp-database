@@ -34,7 +34,7 @@ No more context-switching to the terminal or web console. Your AI agent becomes 
 - **Tech Leads** — get a clean summary of the team's build failure rates before merging to production
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_build**: Cancel a running build
 - **create_build**: Trigger a new build for a pipeline
 - **get_access_token_info**: Retrieve information about the current API token
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buildkite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buildkite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buildkite** tools.
 
 **Configuration:**

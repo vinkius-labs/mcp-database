@@ -34,7 +34,7 @@ Connect your **IPGeolocation.io** account to any AI agent and take full control 
 - **Data Engineers** — enrich server logs and visitor datasets with precise geolocation and astronomical metadata efficiently
 
 
-## Available Tools
+## Available Tools (3)
 - **get_location**: Retrieve comprehensive geolocation data for an IP address
 - **get_timezone**: Get precise local time and timezone information
 - **get_astronomy**: Retrieve astronomy data like sunrise and moon phases
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ipgeolocation-ip-intelligence-time` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ipgeolocation-ip-intelligence-time` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IPGeolocation (IP Intelligence & Time)** tools.
 
 **Configuration:**

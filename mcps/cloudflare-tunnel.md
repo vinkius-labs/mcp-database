@@ -33,7 +33,7 @@ Connect your **Cloudflare** account to any AI agent to take full control of your
 - **System Administrators** — automate the cleanup of stale connections and monitor the status of remote connectors across multiple accounts.
 
 
-## Available Tools
+## Available Tools (17)
 - **cleanup_connections**: If no client_id is provided, all connectors are removed.
 
 Clean up Cloudflare Tunnel connections
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudflare-tunnel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudflare-tunnel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudflare Tunnel** tools.
 
 **Configuration:**

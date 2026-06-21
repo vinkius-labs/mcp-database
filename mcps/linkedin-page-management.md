@@ -34,7 +34,7 @@ Connect your **LinkedIn Company Page** to any AI agent to automate your social m
 - **Marketing Developers** — Integrate social publishing and engagement tracking into your custom internal dashboards
 
 
-## Available Tools
+## Available Tools (7)
 - **list_post_comments**: List all comments on a specific post
 - **create_post_comment**: Add a comment to a post as the organization
 - **create_page_post**: Create a new post on a Company Page
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linkedin-page-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linkedin-page-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LinkedIn Page Management** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the **Unpaywall** database to instantly find legal, open-access versi
 - **Data Scientists** — automate the collection of open-access research data and papers for analysis
 
 
-## Available Tools
+## Available Tools (1)
 - **get_article_oa_status**: Retrieve Open Access status and locations for a specific DOI
 
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unpaywall-open-access-papers` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unpaywall-open-access-papers` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unpaywall (Open Access Papers)** tools.
 
 **Configuration:**

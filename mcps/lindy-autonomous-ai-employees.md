@@ -34,7 +34,7 @@ Connect your **Lindy.ai** account to any AI agent and take full control of your 
 - **Founders & Leaders** — audit AI integrations and monitor the performance of your automated workforce across different team boundaries efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_run**: Cancel a running execution dispatching hard stops interrupting trapped context loops
 - **get_run**: Get specific state for a Run blocking on Human input or External APIs
 - **get_lindy**: Get configuration mappings including standard tools and prompts for a specific Lindy
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lindy-autonomous-ai-employees` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lindy-autonomous-ai-employees` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lindy (Autonomous AI Employees)** tools.
 
 **Configuration:**

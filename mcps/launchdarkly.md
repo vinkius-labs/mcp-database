@@ -31,7 +31,7 @@ Connect your **LaunchDarkly** platform to any AI agent to monitor experiments an
 - **Fullstack Devs** — check if your newly pushed feature flag is live
 
 
-## Available Tools
+## Available Tools (9)
 - **get_environment**: Get details regarding an environment
 - **get_feature_flag**: Get in-depth specifics for a feature flag
 - **get_metric**: Get details for a specific metric
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `launchdarkly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `launchdarkly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LaunchDarkly** tools.
 
 **Configuration:**

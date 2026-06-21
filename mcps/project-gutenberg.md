@@ -33,7 +33,7 @@ Equip your AI agent with the largest library of free public domain books through
 - **Digital Humanists** — retrieve structured metadata for large-scale literary analysis.
 
 
-## Available Tools
+## Available Tools (3)
 - **search_author**: Search for books by author
 - **get_book_details**: Get details for a specific Gutenberg book
 - **search_gutenberg_books**: Search for books on Project Gutenberg
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `project-gutenberg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `project-gutenberg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Project Gutenberg** tools.
 
 **Configuration:**

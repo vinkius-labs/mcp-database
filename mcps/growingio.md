@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your product analytics and user behavioral 
 - **GrowingIO Power Users** — integrate your existing analytics workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_event**: Get event details
 - **get_funnel**: Get conversion funnel details
 - **get_metrics**: Query project metrics
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `growingio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `growingio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GrowingIO** tools.
 
 **Configuration:**

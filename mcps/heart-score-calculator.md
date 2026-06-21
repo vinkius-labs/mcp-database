@@ -24,7 +24,7 @@ The initial assessment of chest pain patients is complex. Determining if symptom
 **The Advantage:** The system provides deterministic, guideline-backed clinical decision support. Instead of generic advice, it outputs specific next steps--which tests to order, and where the patient should be managed--allowing clinicians to focus immediately on high-priority care.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_heart_score**: History and ECG scores are optional and default to 0 if not provided.
 
 Calculate the total HEART score for acute myocardial infarction risk assessment
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heart-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heart-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heart Score Calculator** tools.
 
 **Configuration:**

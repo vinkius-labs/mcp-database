@@ -19,7 +19,7 @@ Grant your AI agent (like Claude or Cursor) absolute visual acquisition dominanc
 - **Vault Cartography** — Interrogate your structural asset lockers applying `list_collections` and `get_license_history`.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_audio_details**: Get metadata for a specific audio track
 - **get_image_details**: Get metadata for a specific image
 - **get_license_history**: Retrieve the history of licensed assets
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shutterstock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shutterstock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shutterstock** tools.
 
 **Configuration:**

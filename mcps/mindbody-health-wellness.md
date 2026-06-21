@@ -34,7 +34,7 @@ Connect your AI agent to **MINDBODY**, the world's leading technology platform f
 - **Support Teams** — lookup client membership status and purchase history to assist with inquiries
 
 
-## Available Tools
+## Available Tools (10)
 - **get_class_visits**: Retrieve the list of clients attending a specific class
 - **get_client_details**: Get comprehensive information for a specific client
 - **get_client_purchases**: Retrieve the purchase history for a specific client
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mindbody-health-wellness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mindbody-health-wellness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MINDBODY Health & Wellness** tools.
 
 **Configuration:**

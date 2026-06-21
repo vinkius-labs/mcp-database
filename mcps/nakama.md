@@ -34,7 +34,7 @@ Connect your **Nakama** server to any AI agent to manage your game's backend inf
 - **Backend Engineers** — debug storage objects and verify RPC functions through simple natural language queries.
 
 
-## Available Tools
+## Available Tools (31)
 - **add_friends**: Add friends or send invites
 - **add_group_members**: Add members to a group
 - **authenticate_device**: Authenticate using a device ID
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nakama` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nakama` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nakama** tools.
 
 **Configuration:**

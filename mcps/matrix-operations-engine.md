@@ -21,7 +21,7 @@ This MCP brings deterministic linear algebra to your AI using `ml-matrix`. The A
 - **Air-Gapped Privacy:** Your sensitive weight matrices or embeddings never leave your machine.
 
 
-## Available Tools
+## Available Tools (1)
 - **matrix_operations**: Perform deterministic exact matrix math: multiply, add, subtract, determinant, inverse, transpose. Never hallucinate matrix math
 
 
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `matrix-operations-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `matrix-operations-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Matrix Operations Engine** tools.
 
 **Configuration:**

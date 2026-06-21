@@ -34,7 +34,7 @@ Connect your AI agent to the **Library of Congress** (LOC) and explore the vast 
 - **Data Scientists** — Utilize OCR services and metadata for large-scale historical text analysis.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_collection_items**: List items within a specific collection
 - **list_collections**: List all digital collections
 - **search_format**: g., maps, photos, audio).
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `library-of-congress` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `library-of-congress` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Library of Congress** tools.
 
 **Configuration:**

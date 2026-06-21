@@ -35,7 +35,7 @@ No more navigating the Sanity Studio to find documents or run GROQ queries. Your
 - **Editors** — search for content by keyword, review document details and manage media assets
 
 
-## Available Tools
+## Available Tools (11)
 - **create_dataset**: Provide the dataset name (e.g. "staging", "development"). The dataset will be empty and ready for content. Dataset names must be lowercase alphanumeric.
 
 Create a new Sanity dataset
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sanity-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sanity-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sanity** tools.
 
 **Configuration:**

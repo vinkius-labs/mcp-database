@@ -13,7 +13,7 @@ Manage employee lifecycle, HCM, payroll, and time via UKG Ready.
 The UKG Ready MCP Server connects AI agents to the unified UKG Ready HCM suite, enabling full management of employees, applicants, schedules, timesheets, payroll, and organizational data for mid-sized organizations.
 
 
-## Available Tools
+## Available Tools (4)
 - **applicants**: List job applicants
 - **employees**: List employees in UKG Ready
 - **payroll**: List payroll history for employees
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ukg-ready` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ukg-ready` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UKG Ready** tools.
 
 **Configuration:**

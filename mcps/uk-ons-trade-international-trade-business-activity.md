@@ -18,7 +18,7 @@ UK trade and business data.
 - **Traffic Activity** — Experimental real-time indicator
 
 
-## Available Tools
+## Available Tools (3)
 - **get_trade**: Dataset: trade. Monthly data on UK trade in goods: imports, exports, trade balance by partner country and commodity. Non-seasonally adjusted. Values in £ million.
 
 Get UK trade in goods data — country by commodity, imports and exports
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uk-ons-trade-international-trade-business-activity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uk-ons-trade-international-trade-business-activity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UK ONS Trade — International Trade & Business Activity** tools.
 
 **Configuration:**

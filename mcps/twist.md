@@ -34,7 +34,7 @@ No more switching contexts and scrambling to find important threads on standard 
 - **Remote employees** — query your PM's 1-on-1 direct messages to catch up without an actual video-call
 
 
-## Available Tools
+## Available Tools (10)
 - **create_comment**: Provide the thread_id and your message.
 
 Posts a reply to an existing thread
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `twist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `twist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Twist** tools.
 
 **Configuration:**

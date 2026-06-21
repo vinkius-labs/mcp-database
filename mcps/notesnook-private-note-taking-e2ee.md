@@ -35,7 +35,7 @@ Connect your **Notesnook** account to any AI agent and take full control of your
 - **Researchers** — retrieve rapid summaries of favorited notes and audit large collections of encrypted information efficiently
 
 
-## Available Tools
+## Available Tools (12)
 - **sync_items**: Yields encrypted binary objects based on the last sync timestamp boundaries.
 
 Trigger a full sync with the Notesnook server resolving vault state
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `notesnook-private-note-taking-e2ee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `notesnook-private-note-taking-e2ee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Notesnook (Private Note Taking & E2EE)** tools.
 
 **Configuration:**

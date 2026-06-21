@@ -34,7 +34,7 @@ Empower your AI agent to manage your development workflow on **Gitee**, the lead
 - **DevOps Teams** — integrate Gitee repository data into your automated workflows and AI-driven insights.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_user**: Get authenticated user profile
 - **list_pull_requests**: List pull requests
 - **list_repo_commits**: List repository commits
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gitee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gitee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gitee** tools.
 
 **Configuration:**

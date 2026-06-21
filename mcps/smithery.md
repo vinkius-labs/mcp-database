@@ -36,7 +36,7 @@ Connect AI agents to the Smithery Registry for comprehensive MCP server discover
 Essential for **AI application developers**, **agent architects**, **platform engineers**, **MCP server publishers**, and **enterprise AI teams** building with the Model Context Protocol. Let AI agents discover relevant MCP servers, review their capabilities, create managed connections, and monitor usage analytics. Perfect for teams integrating multiple MCP servers who want to streamline server discovery, eliminate manual OAuth configuration, and enable AI-driven MCP ecosystem management.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_connection**: Smithery handles OAuth, tokens, and sessions automatically. Requires the server namespace and connection configuration (mcpUrl, optional headers, metadata). Returns the connection ID, status, and server info. Use this to integrate MCP servers into your applications without managing authentication complexity.
 
 Create a new connection to an MCP server via Smithery Connect
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smithery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smithery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Smithery** tools.
 
 **Configuration:**

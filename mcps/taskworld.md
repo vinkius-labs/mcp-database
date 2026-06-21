@@ -33,7 +33,7 @@ Integrate **Taskworld** with your AI workflow to streamline project management a
 - **Team Leads** — Orchestrate workflows and assign tasks to team members through simple conversation.
 
 
-## Available Tools
+## Available Tools (12)
 - **list_comments**: Get all comments on a task
 - **complete_task**: Mark a task as finished
 - **create_comment**: Post a new comment to a task or project
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `taskworld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `taskworld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Taskworld** tools.
 
 **Configuration:**

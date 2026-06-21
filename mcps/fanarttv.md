@@ -34,7 +34,7 @@ Connect to **Fanart.tv** and access the world's largest fan-created artwork data
 - **Designers** — discover fan-created artwork for movies, shows and music artists
 
 
-## Available Tools
+## Available Tools (8)
 - **get_album_art**: Returns album art including: CD art, album covers, disc backgrounds and spine images.
 
 Get artwork for a music album by MusicBrainz ID
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fanarttv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fanarttv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fanart.tv** tools.
 
 **Configuration:**

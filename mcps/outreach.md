@@ -32,7 +32,7 @@ Connect **Outreach** to your AI agent and manage your enterprise sales engagemen
 - **Revenue Operations** — Pull engagement data for reporting, forecasting, and process optimization.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_outreach_prospect**: Get details for a specific prospect
 - **get_outreach_sequence_stats**: Get engagement metrics for a sequence
 - **list_outreach_accounts**: List company accounts
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `outreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `outreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Outreach** tools.
 
 **Configuration:**

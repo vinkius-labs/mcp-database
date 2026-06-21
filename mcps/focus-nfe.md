@@ -30,7 +30,7 @@ Connect **Focus NFe** to any AI agent and automate your Brazilian fiscal documen
 - **Small Businesses** — Manage invoices directly through chat
 
 
-## Available Tools
+## Available Tools (5)
 - **cancel_document**: Cancel an authorized invoice
 - **consult_document**: Consult the status and details of an invoice
 - **download_xml**: Download the authorized XML document
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `focus-nfe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `focus-nfe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Focus NFe** tools.
 
 **Configuration:**

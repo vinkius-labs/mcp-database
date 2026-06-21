@@ -28,7 +28,7 @@ The **Apptoto MCP Server** connects your AI agent to your appointment scheduling
 - **Sales Teams** — Track appointments and follow up with leads directly from your AI workspace.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_event**: Create a new appointment event
 - **get_account_check**: Verify Apptoto account connection
 - **get_contact**: Get details for a specific contact
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apptoto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apptoto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apptoto** tools.
 
 **Configuration:**

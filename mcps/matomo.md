@@ -27,7 +27,7 @@ Connect your **Matomo** analytics instance to any AI agent and gain deep insight
 3. Start querying your web analytics from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_goals**: Get the list of goals
 - **get_live_last_visits**: Get last visits in real-time
 - **get_site_details**: Get details for a specific website
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `matomo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `matomo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Matomo** tools.
 
 **Configuration:**

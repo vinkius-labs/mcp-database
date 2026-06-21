@@ -31,7 +31,7 @@ Combine **LeadDyno** affiliate logic with your everyday AI tools. Automatically 
 - **Brand Executives** — compile specific influencer performance without dashboards
 
 
-## Available Tools
+## Available Tools (9)
 - **create_affiliate**: Create a new affiliate in LeadDyno
 - **create_lead**: Record a new lead in LeadDyno
 - **create_purchase**: Record a new purchase in LeadDyno
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leaddyno` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leaddyno` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LeadDyno** tools.
 
 **Configuration:**

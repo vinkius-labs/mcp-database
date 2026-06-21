@@ -35,7 +35,7 @@ No need to leave the code editor to see how a model is defined. Read schema stru
 - **DevOps** — wipe orphaned elements or test environment components natively without touching the UI
 
 
-## Available Tools
+## Available Tools (10)
 - **count_model_entities**: Quickly count the number of live items stored within a specific model
 - **create_visual_block**: Create new content entries or visual blocks inside a Builder model
 - **wipe_visual_block**: Permanently delete a specific content entry from Builder.io
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `builder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `builder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Builder** tools.
 
 **Configuration:**

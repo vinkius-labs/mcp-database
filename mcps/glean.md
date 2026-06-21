@@ -37,7 +37,7 @@ Connect your **Glean** enterprise account to any AI agent and take full control 
 - **Leadership Teams** — audit organizational knowledge and verify AI-generated answers in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **get_answer**: Enumerate explicitly attached structured rules exporting active Billing
 - **autocomplete**: Retrieve explicit Cloud logging tracing explicit Vault limits
 - **chat_completion**: Dispatch an automated validation check routing explicit Gateway history
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glean** tools.
 
 **Configuration:**

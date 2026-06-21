@@ -34,7 +34,7 @@ Don't let rogue automation jobs fail silently. Allow a conversational agent to v
 - **Automation Architechs** — let Claude list the structural skeleton linking your Agents logic avoiding manual checks on multiple pages completely
 
 
-## Available Tools
+## Available Tools (6)
 - **get_integration_details**: Retrieves details for a specific integration
 - **list_ai_agents**: Lists configured AI agents in the UnifyApps environment
 - **list_active_connections**: Lists active account connections
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unifyapps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unifyapps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UnifyApps** tools.
 
 **Configuration:**

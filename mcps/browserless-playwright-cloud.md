@@ -32,7 +32,7 @@ Grant your AI agent the absolute power of an untethered, scalable **Browserless 
 - **Security Researchers** — proxy malicious URL queries entirely through isolated cloud environments avoiding all local machine contamination.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_html_content**: Get raw HTML content using Playwright Cloud (Browserless)
 - **send_custom_payload**: Send custom JSON payload to any Browserless REST endpoint
 - **run_custom_function**: Execute custom JS function inside remote Playwright browser
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `browserless-playwright-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `browserless-playwright-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Browserless (Playwright Cloud)** tools.
 
 **Configuration:**

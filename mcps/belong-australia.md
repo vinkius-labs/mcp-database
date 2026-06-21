@@ -33,7 +33,7 @@ Connect your **Belong Australia** account to any AI agent and manage your teleco
 - **Business Users** — retrieve invoice summaries for expense reporting directly from their workflow.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_balance**: Check current account balance
 - **get_invoice_pdf**: Retrieve a specific invoice PDF link
 - **get_order_details**: Get details of a specific order
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `belong-australia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `belong-australia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Belong Australia** tools.
 
 **Configuration:**

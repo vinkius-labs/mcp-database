@@ -34,7 +34,7 @@ No manual searches inside cluttered visual portals. Your AI agent digs up the ex
 - **Automated Workflows** — empower scripts mapping vast amounts of raw image IDs checking against current catalog taxonomies
 
 
-## Available Tools
+## Available Tools (10)
 - **list_collections**: List all media collections
 - **list_smart_filters**: List configured smart filters
 - **list_tags**: List all asset tags
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bynder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bynder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bynder** tools.
 
 **Configuration:**

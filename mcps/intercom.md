@@ -32,7 +32,7 @@ Connect **Intercom** to your AI agent and manage your customer communications an
 - **Sales Teams** — Pull contact and company data from Intercom to enrich leads and inform outreach strategies.
 
 
-## Available Tools
+## Available Tools (15)
 - **create_contact**: Pass role (user/lead), email, and optional name. Returns the new contact ID.
 
 Create a new contact/lead in Intercom
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `intercom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `intercom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Intercom** tools.
 
 **Configuration:**

@@ -39,7 +39,7 @@ Connect to the **GDELT Project API** — the world's largest open platform for m
 - **Policy Analysts** — understand how issues are covered across different countries and languages
 
 
-## Available Tools
+## Available Tools (16)
 - **get_geo_data**: Each point includes coordinates, location name, and article metadata. Use modes: "PointData" for individual points, "PointHeat" for heatmap data.
 
 Get geographic point data for news events
@@ -150,7 +150,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stanford-gdelt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stanford-gdelt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stanford GDELT** tools.
 
 **Configuration:**

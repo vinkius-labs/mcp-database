@@ -13,7 +13,7 @@ Manage location tracking, trips, and geofences via HyperTrack API.
 Empower your AI agents to manage your logistics and field operations with HyperTrack. This MCP server allows you to list tracked devices, monitor active trips, manage geofences, track field workers, and view order statuses directly through the HyperTrack API. Ideal for automating last-mile delivery and field service management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_device**: Retrieves details for a specific device
 - **get_geofence**: Retrieves details for a specific geofence
 - **get_order**: Retrieves details for a specific order
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hypertrack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hypertrack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HyperTrack** tools.
 
 **Configuration:**

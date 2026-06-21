@@ -35,7 +35,7 @@ No more manual toggling between messaging portals or managing multiple protocol 
 - **Marketing Leads** — automate the dispatch of omnichannel campaigns and monitor credit usage through simple AI queries
 
 
-## Available Tools
+## Available Tools (13)
 - **check_balance**: Check balance
 - **check_authkey_status**: Verify connectivity
 - **get_email_status**: Get email status
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `authkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `authkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Authkey** tools.
 
 **Configuration:**

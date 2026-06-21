@@ -33,7 +33,7 @@ Connect your **Mailjet** account to any AI agent to automate your transactional 
 - **Operations Teams** — Automate the synchronization of contact data and audit delivery performance effortlessly
 
 
-## Available Tools
+## Available Tools (8)
 - **add_contact_to_list**: Requires list ID and contact ID/Email.
 
 Subscribe a contact to a specific list
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailjet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailjet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailjet** tools.
 
 **Configuration:**

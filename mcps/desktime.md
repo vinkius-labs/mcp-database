@@ -35,7 +35,7 @@ No more manual logging or digging through productivity charts in the dashboard. 
 - **HR & Ops Leads** — automate employee data retrieval and monitor company-wide time utilization through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **mark_task_completed**: Complete a task
 - **create_project**: Add new project
 - **create_new_task**: Add task to project
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `desktime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `desktime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeskTime** tools.
 
 **Configuration:**

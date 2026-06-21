@@ -34,7 +34,7 @@ Connect AI agents to TrueFoundry's dual-architecture matrix encompassing both an
 Essential for **Platform Operations teams**, **AI Engineers**, and **Software Architects** desiring an integrated hub that strips out the N-by-M fragmentation of multiple LLM pipelines and multiple MCP tool servers into a single secure plane.
 
 
-## Available Tools
+## Available Tools (8)
 - **truefoundry_deploy_mcp_server**: Spawn a new backend container logical process using TrueFoundry service mesh
 - **truefoundry_generate_embeddings**: Calculate semantic vectors securely using the unifed abstraction
 - **truefoundry_get_deployment_status**: Emit detailed metric states on the orchestration matrix bounds
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `truefoundry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `truefoundry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TrueFoundry** tools.
 
 **Configuration:**

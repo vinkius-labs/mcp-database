@@ -21,7 +21,7 @@ The **ultimate UK ONS Mega-Server** — 20 tools across 4 domains.
 ### No API Key Required
 
 
-## Available Tools
+## Available Tools (20)
 - **search_datasets**: Returns matching dataset IDs, titles, and descriptions. Use this to find the right dataset before querying data.
 
 Search ONS datasets by keyword — explore 337+ available datasets
@@ -150,7 +150,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uk-ons-full-complete-statistical-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uk-ons-full-complete-statistical-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UK ONS Full — Complete Statistical Intelligence** tools.
 
 **Configuration:**

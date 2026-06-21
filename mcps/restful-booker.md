@@ -33,7 +33,7 @@ Connect to the **Restful Booker** API to manage hotel reservations. This server 
 - **Hospitality Tech Teams** — prototyping AI-driven booking assistants and management tools
 
 
-## Available Tools
+## Available Tools (8)
 - **create_booking**: Create a new booking
 - **create_token**: Create a new auth token
 - **delete_booking**: Requires auth token.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `restful-booker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `restful-booker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Restful Booker** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **BOSSDesk** ITSM account to any AI agent and orchestrate your IT s
 - **System Administrators** — verify asset metadata and office locations using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_ticket_note**: Add a comment or note to a ticket
 - **create_ticket**: Create a new support ticket
 - **get_asset**: Get details of a specific asset
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bossdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bossdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BOSSDesk** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ No more navigating the Omie dashboard for every data lookup. Your AI acts as a d
 - **Operations Staff** — check inventory levels, create clients, and manage product catalog efficiently
 
 
-## Available Tools
+## Available Tools (16)
 - **create_client**: You must provide at minimum the business name (razao_social)
 and CNPJ/CPF. Optional fields include trade name, address, contacts, email, phone, payment terms, and credit limits.
 The response includes the newly created client code which can be used for future references.
@@ -198,7 +198,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `omie-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `omie-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Omie ERP** tools.
 
 **Configuration:**

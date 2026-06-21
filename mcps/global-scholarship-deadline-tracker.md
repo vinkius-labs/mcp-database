@@ -13,7 +13,7 @@ Instantly calculate urgency and generate comprehensive document checklists for g
 **Problem:** Tracking deadlines across multiple international scholarship programs (like Fulbright, Erasmus+, and DAAD) is complex. Each program has unique rules, varying document requirements, and non-standardized timelines. Missing a single deadline can mean losing the opportunity.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_deadline_calendar**: Returns events sorted by earliest deadline first, with days remaining calculated from today.
 
 Calculate deadline urgency and generate sorted calendar
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `global-scholarship-deadline-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `global-scholarship-deadline-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Global Scholarship Deadline Tracker** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ When an AI Agent needs to export nested API data to a CSV spreadsheet or rebuild
 - **Lossless:** Preserves arrays, nulls, and complex nested structures perfectly.
 
 
-## Available Tools
+## Available Tools (1)
 - **transform_dot_object**: g. {"user.name": "John", "user.address.city": "NYC"}) for spreadsheet exports, or unflatten a flat dictionary back into a nested JSON structure for API payloads.
 
 Flattens deeply nested JSON objects into single-level dot-notation keys, or reconstructs nested objects from flat dictionaries. Essential for CSV exports and API integrations
@@ -62,7 +62,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dot-object-transformer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dot-object-transformer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dot Object Transformer** tools.
 
 **Configuration:**

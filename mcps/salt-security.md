@@ -28,7 +28,7 @@ Connect your AI directly with **Salt Security** to proactively defend your Appli
 5. Ask the AI: "Are there any known threat actors exploiting our APIs right now?"
 
 
-## Available Tools
+## Available Tools (10)
 - **block_attacker**: Issues a command to block a specific attacker
 - **get_attackers**: Lists known threat actors profiled by Salt
 - **get_attacks**: Lists detected malicious API attacks
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salt-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salt-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salt Security** tools.
 
 **Configuration:**

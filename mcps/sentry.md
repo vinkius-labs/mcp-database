@@ -32,7 +32,7 @@ Equip your favorite LLM interface with direct, real-time investigative access ov
 - **Technical Founders** — casually ask the chatbot for a summary of high-priority bugs open today across all startup projects before the daily standup
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_issue**: This action is irreversible.
 
 Permanently deletes an issue
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sentry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sentry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sentry** tools.
 
 **Configuration:**

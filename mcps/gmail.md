@@ -32,7 +32,7 @@ Connect your **Gmail** enterprise or personal account to any AI agent and bring 
 - **Operations** — instantly parse huge influxes of updates to find isolated context files and act upon them immediately
 
 
-## Available Tools
+## Available Tools (30)
 - **batch_delete_messages**: This is NOT reversible — messages cannot be recovered. Use trash instead for safe deletion.
 
 Permanently delete multiple messages
@@ -177,7 +177,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gmail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gmail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gmail** tools.
 
 **Configuration:**

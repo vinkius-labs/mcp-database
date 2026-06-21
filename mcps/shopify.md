@@ -33,7 +33,7 @@ Connect your **Shopify** store to any AI agent and run your entire ecommerce ope
 - **Marketing Teams** — manage products and discounts through AI workflows
 
 
-## Available Tools
+## Available Tools (23)
 - **list_products**: Use limit to control results.
 
 List all products in the Shopify store
@@ -166,7 +166,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shopify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shopify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shopify** tools.
 
 **Configuration:**

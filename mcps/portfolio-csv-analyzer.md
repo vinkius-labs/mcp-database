@@ -22,7 +22,7 @@ This MCP acts as your local AI data scientist. It uses a high-speed streaming CS
 - **Assistant Ready:** Ask the AI: 'Based on this broker export schema, what columns are available for calculating my P&L?'
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_portfolio_csv**: Provide the absolute file path.
 
 Parse massive CSV exports from brokers (DEGIRO, XTB, Trading212) locally. Streams the file to prevent RAM crashes and returns column schemas and sample data
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `portfolio-csv-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `portfolio-csv-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Portfolio CSV Analyzer** tools.
 
 **Configuration:**

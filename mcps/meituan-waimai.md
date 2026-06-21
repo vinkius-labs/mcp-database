@@ -38,7 +38,7 @@ Your AI agent becomes your restaurant operations manager, handling order confirm
 - **Customer Service** — Track order status, investigate refund claims, and resolve delivery issues quickly
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_order**: Requires a cancellation reason explaining why the order is being cancelled (e.g., "restaurant closed", "item out of stock", "unable to prepare"). The order must be in a cancellable state (not already completed or delivered). Use carefully as cancellations impact merchant ratings and customer experience.
 
 Cancel a Meituan delivery order with a reason
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meituan-waimai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meituan-waimai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meituan Waimai** tools.
 
 **Configuration:**

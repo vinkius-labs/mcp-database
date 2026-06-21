@@ -13,7 +13,7 @@ Calculate essential contingency reserves for architectural and construction proj
 This MCP server provides a specialized calculation engine for determining financial buffers in construction and architecture projects. As project uncertainty decreases through the design, construction documents, and construction phases, the required contingency reserves also shift. Using tools like `calculate_contingency_amounts`, `get_phase_percentage_bounds`, and `analyze_budget_impact`, you can precisely quantify risks related to design, site conditions, and market volatility. This allows project managers to maintain accurate budget projections throughout the entire project lifecycle.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_phase_percentage_bounds**: Get the minimum and maximum contingency percentage limits for a specific phase
 - **analyze_budget_impact**: Analyze the total financial impact of adding contingency reserves
 - **calculate_contingency_amounts**: Calculate specific contingency amounts for each risk category
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contingency-budget-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contingency-budget-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contingency Budget Calculator** tools.
 
 **Configuration:**

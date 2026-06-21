@@ -18,7 +18,7 @@ When an Orchestration AI Agent needs to schedule a task in Redis, set an API tim
 - **Bidirectional Support:** Can also convert raw milliseconds back into a human-readable string.
 
 
-## Available Tools
+## Available Tools (1)
 - **convert_time**: Also works in reverse: pass a raw millisecond number as a string to get the human-readable equivalent.
 
 Converts human-readable time strings (e.g. "2 days", "10h") to exact milliseconds. Essential for AI Agents scheduling DevOps tasks or setting API timeouts
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `time-ms-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `time-ms-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Time MS Converter** tools.
 
 **Configuration:**

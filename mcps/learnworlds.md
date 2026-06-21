@@ -35,7 +35,7 @@ No more manual logging into the school dashboard for quick student or course che
 - **Developers** — integrate real-time LMS data and student intelligence directly within the chat.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_student**: Create a new student
 - **enroll_student**: Enroll a student in a product
 - **get_course_contents**: Get course contents
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `learnworlds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `learnworlds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LearnWorlds** tools.
 
 **Configuration:**

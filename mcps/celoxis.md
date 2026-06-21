@@ -34,7 +34,7 @@ Connect your **Celoxis** enterprise platform to any AI agent and take full contr
 - **Executive Operations** — Ask the model to pull broad Strategic global Portfolios ensuring the pipeline moves correctly around distinct delivery phases.
 
 
-## Available Tools
+## Available Tools (12)
 - **list_projects**: List all top-level project portfolio items in Celoxis. Returns physical IDs, names, status, and timeline data
 - **get_project**: Get an explicit Celoxis project and its complete intrinsic properties structure by ID
 - **list_tasks**: List comprehensive Work Breakdown Structure (WBS) tasks representing concrete deliverables within active projects
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `celoxis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `celoxis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Celoxis** tools.
 
 **Configuration:**

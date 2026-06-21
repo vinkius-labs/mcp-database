@@ -35,7 +35,7 @@ No more manual toggling between security scanners or digging through fragmented 
 - **CISOs & IT Leads** — automate the oversight of organization-wide security posture through simple AI queries
 
 
-## Available Tools
+## Available Tools (9)
 - **get_application**: Get details of the current application
 - **get_running_tests**: List all currently running tests
 - **get_test_result**: Get full test result (JSON)
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `beagle-security-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `beagle-security-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Beagle Security** tools.
 
 **Configuration:**

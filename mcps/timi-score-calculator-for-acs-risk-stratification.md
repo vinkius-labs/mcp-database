@@ -22,7 +22,7 @@ The initial presentation of Acute Coronary Syndrome (ACS), encompassing STEMI or
 **Advantage:** By automating this complex scoring cascade, the tool provides instant, evidence-based recommendations--a vital bridge connecting raw patient data to high-stakes clinical decisions.
 
 
-## Available Tools
+## Available Tools (3)
 - **derive_adverse_event_risk**: Translate a TIMI risk score into an estimated 14-day adverse cardiac event probability
 - **recommend_management_strategy**: Recommend initial clinical management strategy based on risk category and MI type per ACC/AHA guidelines
 - **calculate_timi_score**: Calculate TIMI risk scores for STEMI and NSTEMI presentation criteria based on clinical variables
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `timi-score-calculator-for-acs-risk-stratification` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `timi-score-calculator-for-acs-risk-stratification` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TIMI Score Calculator for ACS Risk Stratification** tools.
 
 **Configuration:**

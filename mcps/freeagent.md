@@ -35,7 +35,7 @@ Connect your **FreeAgent** account to any AI agent to automate your accounting a
 - **Accountants & Bookkeepers** — automate the retrieval of transaction history and contact metadata for faster reconciliation.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_company_details**: Get company metadata
 - **get_contact_details**: Get contact metadata
 - **get_invoice_details**: Get invoice metadata
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freeagent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freeagent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FreeAgent** tools.
 
 **Configuration:**

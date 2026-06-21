@@ -13,7 +13,7 @@ Evaluate the quality and cohesion of clustering algorithms (like K-Means) with m
 Determining whether a clustering algorithm like K-Means actually grouped data effectively is impossible for a text-based LLM. The Silhouette Score is a complex computational metric that measures the distance between data points within the same cluster versus points in neighboring clusters. This engine executes the heavy geometric Euclidean distance calculations in native V8 JavaScript, giving agents the ability to autonomously determine the optimal number of clusters (`k`).
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_silhouette_score**: Provide 2D array data and cluster labels.
 
 Calculates the Silhouette score for clustering evaluation
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `silhouette-score-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `silhouette-score-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Silhouette Score Engine** tools.
 
 **Configuration:**

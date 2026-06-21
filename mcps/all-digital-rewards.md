@@ -34,7 +34,7 @@ Connect your **All Digital Rewards (RewardSTACK™)** account to your AI agent t
 - **Customer Success** — provide instant rewards for customer referrals or milestones using simple commands
 
 
-## Available Tools
+## Available Tools (10)
 - **list_programs**: List incentive programs
 - **get_program_details**: Get program metadata
 - **list_participants**: List reward participants
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `all-digital-rewards` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `all-digital-rewards` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **All Digital Rewards** tools.
 
 **Configuration:**

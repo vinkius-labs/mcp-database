@@ -34,7 +34,7 @@ No more jumping between different admin dashboards to check player stats or fix 
 - **QA Engineers** — automate user creation and achievement unlocking for rapid testing cycles
 
 
-## Available Tools
+## Available Tools (12)
 - **ban_user**: Ban a user
 - **create_order**: Create a purchase order
 - **create_user**: Create a new user in a namespace
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accelbyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accelbyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AccelByte** tools.
 
 **Configuration:**

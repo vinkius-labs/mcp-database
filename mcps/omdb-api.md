@@ -41,7 +41,7 @@ The OMDb API is a simple, lightweight alternative to larger databases — perfec
 - **Data Analysts** — batch-process multiple IMDb IDs at once for franchise analysis or comparative studies
 
 
-## Available Tools
+## Available Tools (12)
 - **get_by_imdb_id**: g., "tt0468569" for The Dark Knight). Returns: Title, Year, Rated (content rating), Released (date), Runtime, Genre, Director, Writer, Actors, Plot, Language, Country, Awards, Ratings (IMDb, Rotten Tomatoes, Metacritic), Metascore, imdbRating, imdbVotes, imdbID, Type (movie/series/episode), DVD release date, BoxOffice gross, Production studio, and Website. Use this when you have an IMDb ID and need complete movie/series information. This is the most accurate method — IMDb IDs are unique and unambiguous. Optional plot parameter: "short" (brief synopsis) or "full" (complete plot summary).
 
 Get complete details for a movie or TV series using its IMDb ID
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `omdb-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `omdb-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OMDb API** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect to **PunkAPI** and explore BrewDog's DIY Dog beer catalog through natura
 - **Restaurants** — find beers that pair well with specific menu items
 
 
-## Available Tools
+## Available Tools (8)
 - **get_all_beers**: Supports searching by name, ABV range, IBU range, EBC (color), malts, hops, yeast, food pairing and brewing date range. Returns beer names, descriptions, ABV, IBU, ingredients and food pairing suggestions. Pagination supported with page and per_page parameters.
 
 Search BrewDog beers with filters
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `punkapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `punkapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PunkAPI** tools.
 
 **Configuration:**

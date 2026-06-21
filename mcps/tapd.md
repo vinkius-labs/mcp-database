@@ -35,7 +35,7 @@ Empower your AI agent to orchestrate your agile development lifecycle with **TAP
 - **Agile Coaches** — oversee multiple team workflows and organizational structures through a unified AI interface.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_bug**: Create a new TAPD bug
 - **create_story**: Create a new TAPD story
 - **create_task**: Create a new TAPD task
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tapd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tapd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TAPD** tools.
 
 **Configuration:**

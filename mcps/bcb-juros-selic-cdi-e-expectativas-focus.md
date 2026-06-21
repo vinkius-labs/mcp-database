@@ -19,7 +19,7 @@ Brazilian interest rates.
 - **Focus Expectations** — Market forecasts
 
 
-## Available Tools
+## Available Tools (4)
 - **get_selic_meta**: A Selic é a taxa básica da economia brasileira e referência para todas as demais taxas de juros do país. Série SGS: 432.
 
 Obter a meta da taxa Selic definida pelo COPOM
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bcb-juros-selic-cdi-e-expectativas-focus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bcb-juros-selic-cdi-e-expectativas-focus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BCB Juros — Selic, CDI e Expectativas Focus** tools.
 
 **Configuration:**

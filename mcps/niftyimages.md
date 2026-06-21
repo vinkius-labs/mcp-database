@@ -34,7 +34,7 @@ Connect your **NiftyImages** account to your AI agent and take control of your d
 - **Marketing Analysts** — retrieve real-time engagement metrics for dynamic content reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_datastore_record**: Add record to data store
 - **delete_datastore_record**: Delete record from data store
 - **get_image_stats**: Get image performance stats
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `niftyimages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `niftyimages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NiftyImages** tools.
 
 **Configuration:**

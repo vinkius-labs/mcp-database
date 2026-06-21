@@ -34,7 +34,7 @@ Connect your AI agents to **BrioHR**, the all-in-one HR software designed to sim
 - **Operations Managers** — monitor department headcount and active recruitment efforts smoothly
 
 
-## Available Tools
+## Available Tools (10)
 - **get_employee_details**: Get detailed profile for a specific employee
 - **get_payroll_summary**: Get payroll overview for a specific month
 - **get_who_is_away**: List employees who are currently away or scheduled for leave
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `briohr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `briohr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BrioHR** tools.
 
 **Configuration:**

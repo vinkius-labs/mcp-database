@@ -19,7 +19,7 @@ LLMs cannot reliably calculate SLAs or business delivery times. If you ask an AI
 - **Absolute Determinism:** Eliminates the hallucination of non-existent business days, bringing enterprise reliability to AI agents.
 
 
-## Available Tools
+## Available Tools (2)
 - **add_business_days**: Pass a starting date and the number of days to add (use negative values to subtract). The engine skips weekends and Brazilian holidays automatically.
 
 Adds or subtracts X Brazilian business days from a given date
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `br-business-days-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `br-business-days-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BR Business Days Calculator** tools.
 
 **Configuration:**

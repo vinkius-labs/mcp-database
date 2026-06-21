@@ -34,7 +34,7 @@ Connect your AI agents to **Heybox** (小黑盒), the leading PC gaming communit
 - **Gaming Enthusiasts** — automate the retrieval of personal match stats and news updates
 
 
-## Available Tools
+## Available Tools (10)
 - **get_heybox_app_status**: Get Heybox task and app status
 - **get_game_info**: Retrieve detailed information for a game
 - **get_market_prices**: g., CS2, PUBG skins).
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heybox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heybox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heybox** tools.
 
 **Configuration:**

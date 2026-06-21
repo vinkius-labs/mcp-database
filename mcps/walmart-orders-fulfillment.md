@@ -29,7 +29,7 @@ Take complete command over your fulfillment pipeline and order tracking natively
 Specifically built for **Logistics Operators**, **Fulfillment Centers**, and **E-Commerce Distributors**.
 
 
-## Available Tools
+## Available Tools (8)
 - **wm_acknowledge_order**: Update explicit bounds acknowledging the purchase physically moving explicitly to the processing limit natively
 - **wm_cancel_order**: Cleanly correctly restrict bounds cancelling explicit PO variables securely safely isolating native arrays
 - **wm_download_shipping_labels**: Poll safely logical label arrays generating WFS structural explicit bounds securely
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `walmart-orders-fulfillment` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `walmart-orders-fulfillment` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Walmart Orders & Fulfillment** tools.
 
 **Configuration:**

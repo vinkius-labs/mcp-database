@@ -33,7 +33,7 @@ Connect your **Lamha** account to any AI agent and manage HR operations through 
 - **Payroll** — access compensation data and reports
 
 
-## Available Tools
+## Available Tools (8)
 - **cancel_order**: Cancel an existing order
 - **check_city_coverage**: Check delivery coverage for a city
 - **create_order**: Create a new logistics order
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lamha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lamha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lamha** tools.
 
 **Configuration:**

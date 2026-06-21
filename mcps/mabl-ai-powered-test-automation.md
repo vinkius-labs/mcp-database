@@ -34,7 +34,7 @@ Connect your **Mabl** account to any AI agent and take full control of your AI-p
 - **DevOps Teams** — audit CI/CD test results and monitor environment health across multiple Mabl projects efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **mb.list_apps**: Use this to lookup application details.
 
 List all applications on Mabl. Mabl is an AI-powered E2E testing platform for web, mobile, and API testing with self-healing tests
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mabl-ai-powered-test-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mabl-ai-powered-test-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mabl (AI-Powered Test Automation)** tools.
 
 **Configuration:**

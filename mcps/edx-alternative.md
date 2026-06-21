@@ -33,7 +33,7 @@ Connect your **Open edX** platform to any AI agent to streamline course administ
 - **Developers** — inspect course block structures and user preferences while building integrations or custom themes.
 
 
-## Available Tools
+## Available Tools (10)
 - **enroll_in_course**: Enroll in an Open edX course
 - **get_course_blocks**: Get Open edX course blocks
 - **get_course_details**: Get Open edX course details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `edx-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `edx-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **edX** tools.
 
 **Configuration:**

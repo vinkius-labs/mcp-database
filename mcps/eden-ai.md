@@ -32,7 +32,7 @@ Integrate **Eden AI**, the unified AI API platform, directly into your AI workfl
 - **Operations Teams** — Audit credit balances and organizational usage metadata instantly.
 
 
-## Available Tools
+## Available Tools (6)
 - **chat_completion**: Specify a provider/model (e.g., openai/gpt-4o) or use @edenai for smart routing.
 
 Generate a chat completion using Eden AI multi-provider routing
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eden-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eden-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eden AI** tools.
 
 **Configuration:**

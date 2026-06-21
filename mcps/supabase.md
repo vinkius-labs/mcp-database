@@ -32,7 +32,7 @@ Integrate the comprehensive backend infrastructure of **Supabase** straight into
 - **Full-Stack Engineers** — Seamlessly query backend storage or resolve user authorization bugs directly tracking the root dependencies visually connected inside the IDE/CLI environment.
 
 
-## Available Tools
+## Available Tools (13)
 - **delete_auth_user**: Requires service_role key. This action is irreversible.
 
 Delete an authenticated user permanently
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `supabase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `supabase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Supabase** tools.
 
 **Configuration:**

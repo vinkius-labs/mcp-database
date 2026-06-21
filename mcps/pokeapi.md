@@ -29,7 +29,7 @@ Connect **PokéAPI**, the definitive Pokémon database, to any AI agent and expl
 3. Start exploring Pokémon data from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (20)
 - **get_ability**: Get detailed ability information
 - **get_berry**: Get detailed berry information
 - **get_evolution_chain**: ).
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pokeapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pokeapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PokéAPI** tools.
 
 **Configuration:**

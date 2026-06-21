@@ -35,7 +35,7 @@ Connect your **NMKR Studio** account to your AI agent and manage your Cardano NF
 - **Project Managers** — monitor sub-customers and revenue sharing arrangements directly from your workspace.
 
 
-## Available Tools
+## Available Tools (10)
 - **validate_nft_metadata**: Validate NFT metadata
 - **get_mint_coupon_balance**: Check minting coupon balance
 - **get_nft_details**: Get specific NFT metadata
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nmkr-cardano` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nmkr-cardano` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NMKR Cardano** tools.
 
 **Configuration:**

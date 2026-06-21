@@ -34,7 +34,7 @@ Connect your **Scribe** organization to any AI agent and access your process doc
 - **Operations Leads** — monitor documentation activity across teams.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_scribe_status**: Verify Scribe API connectivity
 - **get_documentation_stats**: Get documentation statistics
 - **get_team_documents**: Useful for auditing team documentation.
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scribe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scribe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scribe** tools.
 
 **Configuration:**

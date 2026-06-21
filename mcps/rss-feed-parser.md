@@ -22,7 +22,7 @@ RSS and Atom feeds are the web's native content API. This MCP parses them into c
 - **Podcast Ready:** Enclosure extraction for audio/video URLs, durations, and file sizes.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_rss_feed**: Pass the raw XML string and receive a structured JSON with feed metadata and up to 20 items. This is essential for content marketing agents monitoring blogs, news aggregators, and podcast feeds. Never try to parse XML manually — use this engine for deterministic extraction.
 
 Parses RSS 2.0 and Atom feed XML into structured JSON objects. Extracts title, description, items with links, dates, categories, and content snippets
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rss-feed-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rss-feed-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RSS Feed Parser** tools.
 
 **Configuration:**

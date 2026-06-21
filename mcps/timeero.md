@@ -36,7 +36,7 @@ No more manual status updates or missing GPS gaps. Your AI acts as your dedicate
 - **HR & Payroll Admins** — verify technical time logs and user assignments to optimize resource allocation through simple AI queries
 
 
-## Available Tools
+## Available Tools (11)
 - **get_timeero_job**: Get details for a specific job
 - **get_timeero_schedule**: Get details for a specific schedule
 - **get_timeero_task**: Get details for a specific task
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `timeero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `timeero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Timeero** tools.
 
 **Configuration:**

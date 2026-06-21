@@ -30,7 +30,7 @@ Connect your **Google Forms** infrastructure to a conversational AI assistant. Y
 - **Event Coordinators** — retrieve exact answers and confirmations from attendees using targeted IDs over text
 
 
-## Available Tools
+## Available Tools (2)
 - **get_form_metadata**: Get metadata and structure of a Google Form
 - **get_form_responses**: Get all responses for a Google Form
 
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-forms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-forms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Forms** tools.
 
 **Configuration:**

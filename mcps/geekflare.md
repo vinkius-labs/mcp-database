@@ -35,7 +35,7 @@ Connect your **Geekflare** account to any AI agent and simplify how you monitor 
 - **IT Managers** — verify DNS records and monitor domain ownership details via the AI assistant.
 
 
-## Available Tools
+## Available Tools (7)
 - **check_broken_links**: Identify broken links on a page
 - **get_dns_records**: Retrieve DNS records
 - **run_lighthouse_audit**: Run Lighthouse SEO/Performance audit
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geekflare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geekflare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Geekflare** tools.
 
 **Configuration:**

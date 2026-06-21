@@ -32,7 +32,7 @@ Integrate **Cin7 Core** (formerly **DEAR Systems**), the advanced cloud-based in
 - **Sales & Purchasing Reps** — Research customer and supplier details during planning sessions.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_product_details**: Resolves detailed attributes such as dimensions, weight, supplier info, and tax rules for the given product GUID.
 
 Get detailed information for a specific product by ID
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cin7-core` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cin7-core` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cin7 Core** tools.
 
 **Configuration:**

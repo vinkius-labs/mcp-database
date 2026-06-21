@@ -33,7 +33,7 @@ Connect your **Webflow** account to any AI agent and simplify how you manage you
 - **Store Owners** — monitor e-commerce orders and customer growth directly from the workspace.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_collection_item**: Create a new CMS item
 - **get_site_details**: Get details for a specific site
 - **list_site_assets**: List uploaded site assets
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webflow-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webflow-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Webflow** tools.
 
 **Configuration:**

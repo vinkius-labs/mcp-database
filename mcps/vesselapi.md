@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire maritime research and vessel au
 - **Operations Leads** — automate maritime data querying to orchestrate cross-functional logistics teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the VesselAPI is operational
 - **get_vessel_position**: Get the latest AIS position for a vessel
 - **get_vessel_schedules**: Get upcoming port calls and schedules for a vessel
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vesselapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vesselapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VesselAPI** tools.
 
 **Configuration:**

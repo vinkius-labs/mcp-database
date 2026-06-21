@@ -33,7 +33,7 @@ Connect your **Typebot** account to any AI agent and simplify how you build, man
 - **Product Managers** — get instant bird's-eye views of bot performance and organization folders via the AI assistant.
 
 
-## Available Tools
+## Available Tools (8)
 - **delete_typebot**: Permanently delete a typebot
 - **get_typebot_details**: Essential for reviewing the bot logic.
 
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `typebot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `typebot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Typebot** tools.
 
 **Configuration:**

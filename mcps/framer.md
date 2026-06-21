@@ -32,7 +32,7 @@ Connect **Framer** to your AI agent and manage your website CMS content and publ
 - **Developers** — Programmatically sync CMS data from headless APIs, databases, or spreadsheets into Framer.
 
 
-## Available Tools
+## Available Tools (8)
 - **list_projects**: List all Framer projects
 - **get_project**: Get project details
 - **list_collections**: List CMS collections
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `framer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `framer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Framer** tools.
 
 **Configuration:**

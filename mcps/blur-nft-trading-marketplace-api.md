@@ -32,7 +32,7 @@ Connect to **Blur**, the leading NFT marketplace for pro traders, and manage you
 - **Web3 Developers** — Test marketplace interactions and query NFT data straight from your code editor.
 
 
-## Available Tools
+## Available Tools (5)
 - **create_ask**: Create a listing (ask) on Blur
 - **create_bid**: Create a bid on Blur
 - **get_asset**: Get metadata and current listings for a specific NFT
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blur-nft-trading-marketplace-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blur-nft-trading-marketplace-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blur (NFT Trading Marketplace API)** tools.
 
 **Configuration:**

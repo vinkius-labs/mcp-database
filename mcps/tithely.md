@@ -33,7 +33,7 @@ Connect your **Tithe.ly** account to any AI agent to streamline your ministry's 
 - **Ministry Leads** — get instant reports on organization owners and active payment types.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_payment_category**: Create a new payment category
 - **create_transaction**: Process a new transaction
 - **login**: Authenticate and retrieve account details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tithely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tithely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tithe.ly** tools.
 
 **Configuration:**

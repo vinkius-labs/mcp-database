@@ -35,7 +35,7 @@ No more manual listening to call recordings or digging through individual lead t
 - **Developers** — integrate high-speed AI voice intelligence and booking data into custom business workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **create_aireceptionist_booking**: Create a booking
 - **create_aireceptionist_conversation**: Create a new conversation
 - **get_aireceptionist_analytics**: Get performance analytics
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ai-receptionist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ai-receptionist` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AI Receptionist** tools.
 
 **Configuration:**

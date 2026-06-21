@@ -34,7 +34,7 @@ Connect your **InvoiceXpress** account to any AI agent and take full control of 
 - **Accounting & Ops Teams** — audit fiscal documents and ensure VAT compliance across the entire invoicing system
 
 
-## Available Tools
+## Available Tools (16)
 - **list_clients**: Listar todos os clientes registados no InvoiceXpress
 - **get_client**: Obter detalhes completos de um cliente pelo seu ID
 - **find_client**: Pesquisar um cliente pelo nome empresarial
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `invoicexpress-online-invoicing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `invoicexpress-online-invoicing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **InvoiceXpress (Online Invoicing)** tools.
 
 **Configuration:**

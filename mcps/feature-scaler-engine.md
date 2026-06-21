@@ -22,7 +22,7 @@ This MCP brings deterministic Feature Scaling to your AI using `simple-statistic
 - **Data Privacy:** Your sensitive training data stays entirely on your machine.
 
 
-## Available Tools
+## Available Tools (1)
 - **scale_features**: Deterministically Standardize (Z-Score) or MinMax Scale numeric columns offline
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `feature-scaler-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `feature-scaler-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Feature Scaler Engine** tools.
 
 **Configuration:**

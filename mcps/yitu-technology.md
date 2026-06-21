@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your enterprise-grade visual intelligence a
 - **Yitu Power Users** — integrate your existing facial recognition workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (12)
 - **detect_active_liveness**: Returns per-action pass/fail.
 
 Active liveness detection with action verification
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `yitu-technology` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `yitu-technology` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Yitu Technology / 依图科技** tools.
 
 **Configuration:**

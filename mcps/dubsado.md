@@ -35,7 +35,7 @@ No more manual project tracking or digging through CRM menus. Your AI acts as yo
 - **Operations Leads** — automate deal registration and manage client contracts through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **apply_workflow**: Apply a workflow to a project
 - **create_invoice**: Create a new invoice
 - **create_project**: Create a new project
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dubsado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dubsado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dubsado** tools.
 
 **Configuration:**

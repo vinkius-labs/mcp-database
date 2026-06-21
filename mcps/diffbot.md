@@ -36,7 +36,7 @@ Connect your **Diffbot** account to any AI agent and take full control of your a
 - **Developers** — test and debug web extraction pipelines and custom Diffbot rules through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **analyze_page**: Diffbot uses ML to determine if the page is an article, product, image, video, event, list, or job, and returns the appropriate structured JSON. Excellent generalized entry point.
 
 Automatically classify and extract page data using Diffbot Analyze API
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `diffbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `diffbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Diffbot** tools.
 
 **Configuration:**

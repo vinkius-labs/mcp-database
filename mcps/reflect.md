@@ -32,7 +32,7 @@ Connect your **Reflect** account securely to your AI agent via their developer A
 - **Knowledge Workers** — Transform your AI into a personalized knowledge broker that understands your private context and highlights instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **append_daily_note**: Optionally specify a list/heading name.
 
 Appends Markdown text to today's daily note
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `reflect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `reflect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Reflect** tools.
 
 **Configuration:**

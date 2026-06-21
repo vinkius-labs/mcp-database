@@ -13,7 +13,7 @@ Decompose chord notation into notes, inversions, and harmonic roles.
 The Chord Constructor MCP server is a powerful musical engine that allows AI agents to analyze complex chord structures. By using tools like `parse_chord_string`, you can break down any notation into its constituent intervals and roots. The server also provides advanced music theory capabilities, such as calculating all possible inversions with `get_chord_inversions`, generating specific textures via `generate_voicings` (supporting both closed and open styles), and identifying the functional role of a chord in a key using `determine_harmonic_role`. This makes it an essential tool for music composition, theory analysis, and automated arrangement tasks.
 
 
-## Available Tools
+## Available Tools (4)
 - **determine_harmonic_role**: Identifies the functional role of a chord within a specific musical key
 - **generate_voicings**: Returns both voicings.
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chord-constructor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chord-constructor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chord Constructor** tools.
 
 **Configuration:**

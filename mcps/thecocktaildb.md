@@ -23,7 +23,7 @@ The **TheCocktailDB MCP Server** transforms your AI agent into a knowledgeable b
 Zero authentication required. Perfect for bartending assistants, hospitality chatbots, and cocktail discovery apps.
 
 
-## Available Tools
+## Available Tools (5)
 - **browse_cocktail_category**: Browse cocktails by category (Cocktail, Shot, Ordinary Drink, etc.)
 - **find_cocktails_by_ingredient**: g. Vodka, Gin, Rum, Tequila, Whiskey, Bourbon, Champagne, Kahlua) and get all cocktails that use it.
 
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thecocktaildb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thecocktaildb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TheCocktailDB** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Factored Quality** account to any AI agent and take full control 
 - **Supply Chain Leaders** — track supplier performance and compliance status across your global network
 
 
-## Available Tools
+## Available Tools (12)
 - **create_booking**: Book a new quality control service
 - **get_audit**: Get details for a specific audit
 - **get_booking**: Get details for a specific booking
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `factored-quality` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `factored-quality` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Factored Quality** tools.
 
 **Configuration:**

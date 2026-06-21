@@ -13,7 +13,7 @@ Calculate optimal daily water intake for dogs and cats based on weight, food typ
 The Pet Water Intake Calculator helps pet owners ensure their animals stay hydrated by calculating precise supplemental water needs. By analyzing species (dog or cat), weight, food moisture content (dry, wet, or raw), and ambient temperature, the server provides actionable hydration targets. Use `calculate_daily_intake` to find specific milliliter requirements, `check_dehydration_indicators` to identify physical warning signs like lethargy or skin elasticity changes, and `get_food_moisture_profile` to understand how different diets impact hydration needs.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_daily_intake**: Calculates the total volume of supplemental water (in ml) a pet needs daily
 - **check_dehydration_indicators**: Identifies physical warning signs of dehydration
 - **get_food_moisture_profile**: Provides moisture content information for each food type
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-water-intake-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-water-intake-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Water Intake Calculator** tools.
 
 **Configuration:**

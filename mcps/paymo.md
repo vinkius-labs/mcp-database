@@ -32,7 +32,7 @@ Bring the **Paymo Project Platform** directly into your generative spaces explic
 - **Consultant Contractors** — apply semantic AI pipelines actively posting your time entries tracking isolated assignments daily directly passing a text command
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: Identify bounded routing spaces inside the Headless Paymo Platform
 - **get_project_details**: Inspect deep internal arrays mitigating specific Project bindings
 - **list_tasks**: Retrieve explicit Cloud logging tracing explicit Project Tasks
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paymo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paymo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paymo** tools.
 
 **Configuration:**

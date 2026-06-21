@@ -33,7 +33,7 @@ Connect your **Allnodes** account to any AI agent to automate your blockchain in
 - **DevOps Engineers** — Automate server provisioning and SSH key management for Web3 stacks.
 
 
-## Available Tools
+## Available Tools (20)
 - **add_ssh_key**: Add a new SSH Key
 - **get_delegation**: Get a specific delegation
 - **get_delegations**: Get all delegations
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `allnodes-staking-and-web3-hosting-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `allnodes-staking-and-web3-hosting-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Allnodes (Staking and Web3 Hosting API)** tools.
 
 **Configuration:**

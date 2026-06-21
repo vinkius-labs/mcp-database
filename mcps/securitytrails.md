@@ -36,7 +36,7 @@ Connect your **SecurityTrails** account to any AI agent and empower your OSINT, 
 - **System Administrators** — audit their own external attack surface and verify DNS propagation
 
 
-## Available Tools
+## Available Tools (10)
 - **get_api_usage**: Check current SecurityTrails API quota usage
 - **get_associated_domains**: Great for expanding the scope of an investigation.
 
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `securitytrails` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `securitytrails` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SecurityTrails** tools.
 
 **Configuration:**

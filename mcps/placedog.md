@@ -33,7 +33,7 @@ No more searching through stock photo sites for simple placeholders. Your AI act
 - **Content Managers** — create visual guides for layout planning using temporary dog images
 
 
-## Available Tools
+## Available Tools (1)
 - **get_dog_image**: Get a dog placeholder image
 
 
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `placedog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `placedog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PlaceDog** tools.
 
 **Configuration:**

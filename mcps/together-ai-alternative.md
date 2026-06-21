@@ -34,7 +34,7 @@ Connect **Together AI** to your AI agent to leverage the world's fastest inferen
 - **Product Teams** — prototype and scale AI features using a unified, high-performance API
 
 
-## Available Tools
+## Available Tools (27)
 - **create_audio_speech**: Text-to-Speech (TTS) generation
 - **create_audio_transcription**: Transcriptions (STT) from audio file
 - **cancel_batch**: Cancel a running batch job
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `together-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `together-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Together AI** tools.
 
 **Configuration:**

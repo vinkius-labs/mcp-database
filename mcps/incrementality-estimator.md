@@ -21,7 +21,7 @@ The marketing industry often uses standard Return on Ad Spend (ROAS), which calc
 **The Advantage:** You move beyond simple reporting to quantify the exact monetary value of your intervention, ensuring budget allocation decisions are based on proven lift, not inflated metrics.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_baseline_metrics**: Required before any lift calculation can begin.
 
 Calculate baseline conversion rates for control and exposed groups
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `incrementality-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `incrementality-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Incrementality Estimator** tools.
 
 **Configuration:**

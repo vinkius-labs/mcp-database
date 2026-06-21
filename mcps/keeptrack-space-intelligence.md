@@ -33,7 +33,7 @@ Equip your AI agent with real-time orbital intelligence through the **KeepTrack*
 - **Data Scientists** — access a reliable source of structured orbital metadata.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_recent_space_launches**: Get most recent space launches
 - **get_satellite_details**: Get details for a specific satellite
 - **search_satellites**: Search for satellites by name
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `keeptrack-space-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `keeptrack-space-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **KeepTrack Space Intelligence** tools.
 
 **Configuration:**

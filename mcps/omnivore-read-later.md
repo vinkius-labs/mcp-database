@@ -32,7 +32,7 @@ Connect your **Omnivore** account to any AI agent to organize your reading list 
 - **Knowledge Workers** — maintain a seamless flow between reading and acting on information
 
 
-## Available Tools
+## Available Tools (4)
 - **get_article**: Get full content of a specific article
 - **get_me**: Get current Omnivore user details
 - **save_url**: Save a URL to Omnivore library
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `omnivore-read-later` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `omnivore-read-later` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Omnivore (Read-Later)** tools.
 
 **Configuration:**

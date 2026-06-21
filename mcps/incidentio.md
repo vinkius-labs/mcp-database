@@ -13,7 +13,7 @@ Manage incidents, roles, and on-call schedules via Incident.io API.
 Empower your AI agents to manage your incident response lifecycle with Incident.io. This MCP server allows you to list and retrieve incidents, manage roles and types, track custom fields, and view on-call schedules directly through the Incident.io API. Ideal for automating SRE workflows and incident coordination.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_incident**: Retrieves details for a specific incident
 - **list_catalog_types**: Lists all defined catalog types
 - **list_custom_fields**: Lists all defined custom fields
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `incidentio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `incidentio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Incident.io** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect **Tomorrow.io** to your AI agent to leverage the world's most accurate w
 - **Developers** — Build weather-aware applications using simple natural language queries instead of complex API calls.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_alerts**: List all active weather alerts based on your insights and locations
 - **list_events**: Retrieve specific weather events for a location based on insight categories
 - **get_forecast_weather**: Retrieve hourly or daily weather forecasts
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tomorrowio-plus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tomorrowio-plus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tomorrow.io** tools.
 
 **Configuration:**

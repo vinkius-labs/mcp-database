@@ -34,7 +34,7 @@ Connect your **Cardly** account to any AI agent and orchestrate your personalize
 - **Business Owners** — monitor gifting campaigns and verify artwork using natural language.
 
 
-## Available Tools
+## Available Tools (9)
 - **add_contact_to_list**: Add a new contact to a specific list
 - **find_contact**: Search for a contact in a list by email
 - **get_account_info**: Retrieve core account information
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cardly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cardly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cardly** tools.
 
 **Configuration:**

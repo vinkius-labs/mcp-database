@@ -13,7 +13,7 @@ Calculate real-world USD costs and economic efficiency of virtual currency bundl
 This MCP server provides specialized tools to bridge the gap between premium game currencies and real-world monetary value. It allows users to calculate the actual USD cost of items priced in gems, compare the efficiency of different currency bundles, estimate total expenditure for gacha pulls, and determine the implicit savings when upgrading to larger bundles. Use `get_item_usd_value` to find item costs, `check_bundle_efficiency` to rank bundles, `estimate_gach_expenditure` for loot box budgeting, and `calculate_savings_percentage` to see upgrade benefits.
 
 
-## Available Tools
+## Available Tools (4)
 - **estimate_gacha_expenditure**: Calculates the USD cost for performing gacha pulls
 - **get_item_usd_value**: Calculates the actual monetary cost in USD for an item priced in gems
 - **calculate_savings_percentage**: Determines the implicit discount percentage when upgrading bundles
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `virtual-currency-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `virtual-currency-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Virtual Currency Converter** tools.
 
 **Configuration:**

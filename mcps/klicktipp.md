@@ -26,7 +26,7 @@ Connect your **KlickTipp** account to any AI agent and simplify your email marke
 3. Start managing your marketing automation from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_contact**: Get details for a specific contact
 - **list_fields**: List custom fields
 - **list_subscription_processes**: List opt-in processes
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `klicktipp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `klicktipp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **KlickTipp** tools.
 
 **Configuration:**

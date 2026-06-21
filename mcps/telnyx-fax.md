@@ -33,7 +33,7 @@ Connect your **Telnyx** account to any AI agent and send, receive, and manage fa
 - **Developers** u2014 integrate fax capabilities into automated pipelines via simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_fax**: Cancel a fax
 - **check_telnyx_status**: Verify Telnyx API connectivity
 - **get_fax_application**: Get fax application details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telnyx-fax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telnyx-fax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telnyx Fax** tools.
 
 **Configuration:**

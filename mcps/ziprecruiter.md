@@ -33,7 +33,7 @@ Connect your **ZipRecruiter** API to any AI agent to streamline your job search 
 - **Career Coaches** — help clients find relevant roles based on specific salary and location criteria
 
 
-## Available Tools
+## Available Tools (1)
 - **ziprecruiter_search_jobs**: Search for jobs on ZipRecruiter
 
 
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ziprecruiter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ziprecruiter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZipRecruiter** tools.
 
 **Configuration:**

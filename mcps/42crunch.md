@@ -32,7 +32,7 @@ Connect your **42Crunch** account to any AI agent to continuously test, audit, a
 - **Backend Developers** — quickly import a new spec iteration, trigger a scan, and compare the security grade evolution without context switching
 
 
-## Available Tools
+## Available Tools (10)
 - **get_audit_report**: Download the static security audit report for an API
 - **delete_api**: Delete an API definition from the platform
 - **get_api**: Get detailed metadata and score for a specific API
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `42crunch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `42crunch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **42Crunch** tools.
 
 **Configuration:**

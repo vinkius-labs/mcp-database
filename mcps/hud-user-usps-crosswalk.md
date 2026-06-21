@@ -13,7 +13,7 @@ Map ZIP codes to Census geographies via HUD User USPS Crosswalk API.
 Empower your AI agents to navigate US geography with precision. This MCP server connects to the HUD User Data API to provide crosswalks between USPS ZIP codes and Census Bureau geographies including Tracts, Counties, CBSAs, and Congressional Districts. Essential for urban planning, demographics analysis, and real estate data processing.
 
 
-## Available Tools
+## Available Tools (10)
 - **cbsa_to_zip**: Maps CBSAs to ZIP codes
 - **cbsadiv_to_zip**: Maps CBSA Divisions to ZIP codes
 - **cd_to_zip**: Maps Congressional Districts to ZIP codes
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hud-user-usps-crosswalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hud-user-usps-crosswalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HUD User (USPS Crosswalk)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **YoneTeam (Satin Alma)** account to any AI agent and streamline yo
 - **Operations Leads** — automate the creation of purchasing requests and track order progress without leaving the workspace.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_demand**: Create a new purchasing demand
 - **get_me**: Get account information
 - **get_offer_details**: Get details of a specific offer
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `yoneteam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `yoneteam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **YoneTeam** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Manage hundreds of lead generation funnels automatically by prompting the LLM in
 - **Marketing Agencies** — list hundreds of client specific domains spanning dynamic sub-accounts cleanly auditing deployment checks effortlessly
 
 
-## Available Tools
+## Available Tools (4)
 - **domains**: List custom domains configured in the account
 - **leads**: List leads/submissions for a specific landing page
 - **pages**: List landing pages in Unbounce
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unbounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unbounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unbounce** tools.
 
 **Configuration:**

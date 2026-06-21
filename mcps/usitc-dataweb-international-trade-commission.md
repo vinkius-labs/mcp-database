@@ -32,7 +32,7 @@ Connect to the **USITC DataWeb** to retrieve official US international trade dat
 - **Policy Researchers** — audit trade balances and historical data using official government sources.
 
 
-## Available Tools
+## Available Tools (4)
 - **list_metadata_fields**: List fields available for a specific table
 - **list_metadata_tables**: List available data tables
 - **list_metadata_values**: g., a list of all valid country codes).
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `usitc-dataweb-international-trade-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `usitc-dataweb-international-trade-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USITC DataWeb (International Trade Commission)** tools.
 
 **Configuration:**

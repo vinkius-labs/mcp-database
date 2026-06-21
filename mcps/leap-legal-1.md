@@ -33,7 +33,7 @@ Connect your **LEAP Legal Software** account to any AI agent to streamline your 
 - **Firm Administrators** — Get instant visibility into the firm's matters and organizational data
 
 
-## Available Tools
+## Available Tools (10)
 - **list_cards**: List all cards (contacts/organizations)
 - **create_new_card**: Requires a JSON body with card details.
 
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leap-legal-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leap-legal-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LEAP Legal** tools.
 
 **Configuration:**

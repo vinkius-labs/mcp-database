@@ -32,7 +32,7 @@ Integrate **Evvnt**, the leading event marketing and distribution platform, dire
 - **Operations Teams** — Monitor syndication activity and organizational account metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_evvnt_account_metadata**: Retrieve metadata and limits for your Evvnt account
 - **get_event_distribution_reports**: Get distribution and performance reports for a specific event
 - **get_event_detailed_data**: Get detailed settings and distribution information for a specific event
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `evvnt-marketing-distribution` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `evvnt-marketing-distribution` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Evvnt Marketing & Distribution** tools.
 
 **Configuration:**

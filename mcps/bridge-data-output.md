@@ -34,7 +34,7 @@ Connect your **Bridge Interactive (Zillow Group)** account to any AI agent and o
 - **Investment Teams** — monitor specific areas and price ranges for new opportunities.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dataset_metadata**: Get schema metadata for a specific dataset
 - **get_property**: Get details of a specific property
 - **list_data_systems**: List all available real estate data systems (MLSs)
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bridge-data-output` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bridge-data-output` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bridge Data Output** tools.
 
 **Configuration:**

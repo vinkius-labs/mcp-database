@@ -33,7 +33,7 @@ Connect your **Coveralls** account to any AI agent to streamline your CI/CD work
 - **QA Leads** — analyze coverage regressions and manage build thresholds to ensure code reliability
 
 
-## Available Tools
+## Available Tools (10)
 - **close_parallel_build**: Close a parallel build on Coveralls
 - **create_repo**: Requires personal API token.
 
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coveralls-code-coverage-analytics-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coveralls-code-coverage-analytics-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coveralls (Code Coverage Analytics API)** tools.
 
 **Configuration:**

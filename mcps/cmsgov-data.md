@@ -35,7 +35,7 @@ Your AI agent gains direct access to the same data used by researchers, journali
 - **Policy Professionals** — access open datasets on healthcare spending, utilization, and outcomes
 
 
-## Available Tools
+## Available Tools (8)
 - **get_dataset_metadata**: Returns the dataset title, full description, publication date, last modification date, and publisher information. Use the dataset ID obtained from list_datasets.
 
 Get detailed metadata for a specific CMS dataset
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cmsgov-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cmsgov-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CMS.gov Data** tools.
 
 **Configuration:**

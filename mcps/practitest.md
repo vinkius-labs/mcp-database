@@ -34,7 +34,7 @@ Forget moving between dashboard views trying to identify where a trace broke dow
 - **Software Developers** — dive into reported Issues parsing exact test execution failures natively before diving into code
 
 
-## Available Tools
+## Available Tools (10)
 - **list_tests**: List all test cases in a PractiTest project. PractiTest is an end-to-end test management platform with traceability from requirements to defects. Returns test names, IDs, statuses, custom fields, and traceability links. Uses JSON:API format
 - **get_test**: Get full details of a PractiTest test case including name, description, preconditions, steps, expected results, custom fields, and requirement links
 - **list_sets**: List all test sets in a PractiTest project. Test sets group test instances for execution. Returns set names, statuses, planned/actual dates, and assigned testers
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `practitest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `practitest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PractiTest** tools.
 
 **Configuration:**

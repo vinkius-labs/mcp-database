@@ -35,7 +35,7 @@ No more manual ticket shuffling or digging through agent lists in the portal. Yo
 - **Operations Leads** — verify system health and manage webhook configurations through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_customer_profile**: Add new customer
 - **get_connection_status**: Check API health
 - **get_agent_info**: Get agent details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dixa-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dixa-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dixa** tools.
 
 **Configuration:**

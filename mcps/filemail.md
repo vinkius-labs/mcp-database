@@ -35,7 +35,7 @@ No more manual status checking or complex transfer management through fragmented
 - **Support Teams** — quickly verify if a customer has received a specific transfer and provide direct download links
 
 
-## Available Tools
+## Available Tools (10)
 - **complete_transfer**: Finalize a file transfer
 - **delete_transfer**: Delete a transfer
 - **get_configuration**: Get account configuration
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `filemail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `filemail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Filemail** tools.
 
 **Configuration:**

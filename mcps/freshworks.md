@@ -36,7 +36,7 @@ Connect your **Freshworks** account to any AI agent and take full control of you
 - **Operations Teams** — audit company organizational structures and verify contact records across the platform
 
 
-## Available Tools
+## Available Tools (9)
 - **list_tickets**: List all helpdesk tickets
 - **get_ticket**: Get ticket details
 - **list_helpdesk_contacts**: List helpdesk contacts
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freshworks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freshworks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Freshworks** tools.
 
 **Configuration:**

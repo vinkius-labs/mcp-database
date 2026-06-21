@@ -13,7 +13,7 @@ Stop hallucinating Base64 translations. Instantly decode complex JWT tokens into
 Decode Base64 strings and JWT tokens with exact binary precision using native Node buffers. Never let an LLM guess an expiration date again.
 
 
-## Available Tools
+## Available Tools (2)
 - **decode_base64_string**: Pass the raw JWT string and receive the parsed JSON without any signature verification.
 
 Decodes any Base64 string deterministically into UTF-8 text
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jwt-base64-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jwt-base64-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JWT & Base64 Decoder** tools.
 
 **Configuration:**

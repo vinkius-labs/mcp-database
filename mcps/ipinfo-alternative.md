@@ -34,7 +34,7 @@ Connect **IPinfo** to your AI agent to perform deep IP intelligence lookups. Whe
 - **DevOps Engineers** — Verify network ranges and hosted domains for infrastructure management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_asn**: You can provide just the number or the AS prefix (e.g., 15169 or AS15169).
 
 Retrieve details about an Autonomous System (ASN)
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ipinfo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ipinfo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IPinfo** tools.
 
 **Configuration:**

@@ -23,7 +23,7 @@ Our MCP provides a clear mechanism to bridge this financial intelligence gap by 
 The result is not just a number; it's an actionable blueprint for financial health. You can immediately determine if your marketing spend supports profitable growth by systematically modeling unit economics from initial margins to long-term viability.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_contribution_margin**: Calculate contribution margin from revenue and variable costs
 - **rate_health**: Rate unit economics health based on payback period
 - **calculate_payback_period**: Calculate customer acquisition cost payback period
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unit-economics-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unit-economics-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unit Economics Calculator** tools.
 
 **Configuration:**

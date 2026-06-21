@@ -33,7 +33,7 @@ Connect your **Greenhouse Recruiting** account to any AI agent and take control 
 - **HR Operations** — manage office and department lists and verify user access levels synchronously
 
 
-## Available Tools
+## Available Tools (12)
 - **create_candidate**: Create a new candidate profile
 - **get_application**: Get details for a specific application
 - **get_candidate**: Get details for a specific candidate
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `greenhouse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `greenhouse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Greenhouse** tools.
 
 **Configuration:**

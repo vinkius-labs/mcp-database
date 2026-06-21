@@ -34,7 +34,7 @@ Connect your **Alation** instance to your AI agent to unlock enterprise-grade da
 - **Business Intelligence Leads** — retrieve saved queries and monitor data asset endorsements
 
 
-## Available Tools
+## Available Tools (10)
 - **search_catalog**: Search for data assets
 - **list_data_sources**: List catalog data sources
 - **list_schemas**: List schemas in data source
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alation** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **ClickHouse** cluster to any AI agent and take full control of you
 - **Product Teams** — quickly verify analytical data and vector distributions during the prototyping phase
 
 
-## Available Tools
+## Available Tools (7)
 - **list_databases**: Identify bounded logical arrays managing top-level ClickHouse schemas
 - **list_tables**: Retrieve the exact structural matching verifying table limits inside a database
 - **describe_table**: Perform structural extraction of properties driving active column schemas
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clickhouse-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clickhouse-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClickHouse (Vector Search)** tools.
 
 **Configuration:**

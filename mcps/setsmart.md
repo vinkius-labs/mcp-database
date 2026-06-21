@@ -35,7 +35,7 @@ No more wrestling with multiple messaging tabs to reach your customers. Your AI 
 - **Operations Teams** — streamline the retrieval of contact metadata and monitor communication webhooks directly within the chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_tag_to_contact**: Add a tag to a contact
 - **create_contact**: Create a new contact
 - **delete_contact**: Delete a contact
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `setsmart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `setsmart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SetSmart** tools.
 
 **Configuration:**

@@ -39,7 +39,7 @@ No more navigating the GA4 dashboard for every report. Your AI acts as a dedicat
 - **Support Teams** — lookup user activity by userId to investigate specific customer journeys and troubleshoot issues
 
 
-## Available Tools
+## Available Tools (12)
 - **batch_run_reports**: Provide property_id and an array of report configurations. Each report can have different metrics, 
 dimensions, and date ranges. This is efficient for dashboard loading or comparative analysis.
 The reports parameter should be a JSON array of report objects with metrics, dimensions, and dateRanges.
@@ -172,7 +172,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Analytics** tools.
 
 **Configuration:**

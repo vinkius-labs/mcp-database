@@ -33,7 +33,7 @@ Connect to the **USGS Water Services** to retrieve comprehensive hydrological da
 - **Outdoor Enthusiasts** — check real-time river conditions for fishing, boating, or safety before heading out
 
 
-## Available Tools
+## Available Tools (5)
 - **get_daily_values**: You MUST provide at least one major filter.
 
 Retrieve historical summarized daily data (mean, median, max, min)
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `usgs-water-services` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `usgs-water-services` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USGS Water Services** tools.
 
 **Configuration:**

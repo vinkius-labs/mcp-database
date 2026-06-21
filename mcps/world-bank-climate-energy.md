@@ -26,7 +26,7 @@ Turn your AI into a climate change researcher by connecting it directly to the W
 Environmental scientists, ESG compliance officers, energy analysts, and journalists.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_co2_emissions**: Get CO2 emissions (metric tons per capita)
 - **get_renewable_energy**: Get renewable energy consumption (% of total)
 - **get_electricity_access**: Get access to electricity (% of population)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `world-bank-climate-energy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `world-bank-climate-energy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **World Bank Climate & Energy** tools.
 
 **Configuration:**

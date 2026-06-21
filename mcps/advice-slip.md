@@ -33,7 +33,7 @@ Equip your AI agent with a source of wisdom through the **Advice Slip** MCP serv
 - **Educators** — source snippets of practical wisdom for students and presentations.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_advice_by_id**: Get advice by its ID
 - **get_random_advice**: Get a random piece of advice
 - **search_advice**: Search for advice by keyword
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `advice-slip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `advice-slip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Advice Slip** tools.
 
 **Configuration:**

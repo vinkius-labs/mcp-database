@@ -36,7 +36,7 @@ No more manual status updates or missing project gaps. Your AI acts as your dedi
 - **DevOps Leads** — verify technical issue logs and team assignments to optimize resource allocation through simple AI queries
 
 
-## Available Tools
+## Available Tools (11)
 - **create_linear_comment**: Add a comment to an issue
 - **create_linear_issue**: Create a new issue
 - **get_linear_issue**: Get details for a specific issue
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linear-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linear-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Linear** tools.
 
 **Configuration:**

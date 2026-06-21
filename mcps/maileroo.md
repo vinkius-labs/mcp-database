@@ -32,7 +32,7 @@ Connect your **Maileroo** account to any AI agent and manage transactional email
 - **Product Teams** — manage email templates and verification
 
 
-## Available Tools
+## Available Tools (6)
 - **get_domain_details**: Get details for a specific domain
 - **list_sending_activity**: List recent sending activity
 - **list_sending_domains**: List sending domains
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `maileroo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `maileroo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Maileroo** tools.
 
 **Configuration:**

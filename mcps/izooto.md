@@ -35,7 +35,7 @@ No more manual logging into the dashboard for basic campaign checks. Your AI act
 - **E-commerce Owners** â€” streamline the retrieval of promotional campaign stats and monitor customer reach directly within the chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_izooto_status**: Verify iZooto API connectivity
 - **create_segment**: Create an audience segment
 - **get_notification**: Get notification details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `izooto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `izooto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **iZooto** tools.
 
 **Configuration:**

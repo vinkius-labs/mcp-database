@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire corporate intelligence and lega
 - **Operations Leads** — automate corporate data querying to orchestrate cross-functional strategy teams smoothly.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_case_details**: Get full details for a specific legal case
 - **get_company_dossier**: Get detailed information for a company
 - **list_sources**: List available data sources in LexisNexis
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lexisnexis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lexisnexis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LexisNexis** tools.
 
 **Configuration:**

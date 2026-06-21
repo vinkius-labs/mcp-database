@@ -32,7 +32,7 @@ Connect your **Chanty** workspace to any AI agent and command your team's commun
 - **HR & Ops** — seamlessly onboard new members to the workspace and specific rooms with one command
 
 
-## Available Tools
+## Available Tools (10)
 - **create_conversation**: Bootstrap an entirely empty structural chat Room dynamically
 - **delete_conversation**: Irreversibly vaporize explicit Channel spaces terminating histories
 - **delete_message**: Obliterate mapped HTTP bounds removing specific Texts
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chanty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chanty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chanty** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Cohere** platform account to any AI agent and take full control o
 - **Engineers** — audit tokenization and model availability for complex NLP application boundaries
 
 
-## Available Tools
+## Available Tools (5)
 - **generate_embeddings**: Generate dense vector embeddings from text using Cohere models
 - **rerank_documents**: Rerank documents by semantic relevance to a query
 - **chat_completion**: Generate conversational text responses using Cohere chat models
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cohere-ai-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cohere-ai-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cohere (AI Platform)** tools.
 
 **Configuration:**

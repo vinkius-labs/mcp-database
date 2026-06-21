@@ -33,7 +33,7 @@ Connect your **Factor (now Cofactr)** supply chain account to any AI agent and t
 - **Operations Teams** — automate follow-ups and supply chain updates through natural language queries
 
 
-## Available Tools
+## Available Tools (11)
 - **create_purchase_order**: Create a new purchase order
 - **get_item**: Get details for a specific part or component
 - **get_me**: Get current API user profile
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `factor-cofactr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `factor-cofactr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Factor (Cofactr)** tools.
 
 **Configuration:**

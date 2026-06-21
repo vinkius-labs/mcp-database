@@ -32,7 +32,7 @@ Integrate **Design Pickle**, the world's leading unlimited graphic design servic
 - **Small Business Owners** — Manage their design queue and access delivered assets effortlessly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_metadata**: Retrieve metadata and settings for your Design Pickle account
 - **get_brand_profile_details**: Get full details for a specific brand profile
 - **get_production_queue_status**: Check the current status of your production queue
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `design-pickle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `design-pickle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Design Pickle** tools.
 
 **Configuration:**

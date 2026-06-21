@@ -13,7 +13,7 @@ Manage events, attendees, and invoices via idloom.events API.
 Empower your AI agents to manage your events ecosystem with idloom.events. This MCP server allows you to list and retrieve events, manage attendees, track invoices, and view transactions directly through the idloom API. Ideal for automating event logistics and registration workflows.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_attendee**: Retrieves details for a specific attendee
 - **get_event**: Retrieves details for a specific event
 - **list_attendees**: Lists all attendees
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `idloom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `idloom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **idloom** tools.
 
 **Configuration:**

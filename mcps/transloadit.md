@@ -33,7 +33,7 @@ Transform your AI agent into a full-scale media orchestration engine by connecti
 - **Technical Leaders** — Verify the overall usage of external media APIs auditing operational expenses explicitly by requested month
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_assembly**: This action is final.
 
 Aborts a running Transloadit assembly
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `transloadit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `transloadit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Transloadit** tools.
 
 **Configuration:**

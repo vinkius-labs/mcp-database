@@ -33,7 +33,7 @@ Connect your **Snapchat Ads** account to any AI agent to automate your server-si
 - **Operations Teams** — streamline the retrieval of integration guidelines and monitor marketing data flow directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_capi_health**: Verify CAPI status
 - **get_capi_integration_guidelines**: Get best practices for hashing
 - **list_supported_conversion_events**: List valid event types
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snapchat-conversions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snapchat-conversions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Snapchat Conversions** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Nango** account to any AI agent and take full control of your pro
 - **Integration Leads** — monitor the performance of your automated data pipeline and manage OAuth connections efficiently to maintain high-reliability standards
 
 
-## Available Tools
+## Available Tools (7)
 - **list_integrations**: List integration logic configurations available in Nango
 - **get_integration**: Retrieve explicit parameters mapping a single target Nango integration
 - **list_connections**: List instantiated OAuth or credential connections authenticated via Nango
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nango-unified-api-integration-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nango-unified-api-integration-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nango (Unified API & Integration Platform)** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ No more manual posting across different tabs. Your AI acts as your dedicated soc
 - **Content Creators** — schedule threads and posts across all platforms without leaving your creative workspace
 
 
-## Available Tools
+## Available Tools (10)
 - **create_media_upload**: Requires the file size in bytes and the correct MIME type (e.g., image/jpeg or video/mp4).
 
 Generate a media upload URL
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hootsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hootsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hootsuite** tools.
 
 **Configuration:**

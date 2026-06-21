@@ -32,7 +32,7 @@ Connect to **arXiv**, the premier open-access archive for millions of scholarly 
 - **Students** — Quickly find relevant sources and paper summaries for study and projects.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_atom_feed**: Combine multiple categories with a plus sign (+).
 
 Get the daily Atom feed for a specific arXiv category
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arxiv-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arxiv-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **arXiv** tools.
 
 **Configuration:**

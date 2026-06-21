@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your local retail and hospitality operation
 - **Douyin Power Users** — integrate your existing merchant workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_order_detail**: Get order details
 - **get_product_detail**: Get product metadata
 - **get_product_stock**: Get product inventory
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `douyin-local-life-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `douyin-local-life-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Douyin Local Life API / 抖音生活服务** tools.
 
 **Configuration:**

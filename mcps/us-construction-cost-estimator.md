@@ -13,7 +13,7 @@ Calculate construction costs per square foot across major US cities using region
 This MCP server provides a precise estimation engine for construction projects in the United States. By connecting AI agents to localized economic data, it allows for detailed cost projections based on city-specific base rates, structural material multipliers (such as `material_multiplier_fetch` results), and building usage intensity. Use `city_base_index_lookup` to find baseline rates, or run a complete calculation with `estimate_total_burden` by providing the city, square footage, material type, and usage category.
 
 
-## Available Tools
+## Available Tools (4)
 - **city_base_index_lookup**: Lookup the baseline construction rate for a specific US city
 - **estimate_total_burden**: Calculate the total estimated construction cost for a project
 - **material_multiplier_fetch**: g., wood, steel, concrete).
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-construction-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-construction-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Construction Cost Estimator** tools.
 
 **Configuration:**

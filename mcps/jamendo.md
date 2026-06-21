@@ -35,7 +35,7 @@ No more manual searching for royalty-free or independent music. Your AI acts as 
 - **Music Enthusiasts** — explore new independent artists and similar tracks through simple chat commands.
 
 
-## Available Tools
+## Available Tools (25)
 - **get_album_reviews**: Browse and filter community album reviews
 - **get_album_tracks**: Retrieve tracks belonging to specific albums
 - **search_albums**: Search and filter albums
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jamendo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jamendo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jamendo** tools.
 
 **Configuration:**

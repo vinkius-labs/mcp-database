@@ -35,7 +35,7 @@ Connect your **CM.com** account to any AI agent and control your omnichannel com
 - **Marketing Teams** — send bulk SMS campaigns and check delivery through conversational AI
 
 
-## Available Tools
+## Available Tools (11)
 - **get_balance**: com account.
 
 Check account balance
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cmcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cmcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CM.com** tools.
 
 **Configuration:**

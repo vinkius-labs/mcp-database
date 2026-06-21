@@ -32,7 +32,7 @@ Connect your AI agent directly to **Lattice HR**. With this server, your LLM can
 - **Engineering Managers** — read feedback forms right in the IDE
 
 
-## Available Tools
+## Available Tools (9)
 - **get_feedback**: Get details about a specific feedback entry
 - **get_goal**: Get targeted details for a specific goal
 - **get_review**: Get details regarding a specific review cycle
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lattice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lattice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lattice** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to **Patchstack**, the leading security platform for WordP
 - **Security Researchers** — query the latest vulnerability data and technical threat details via AI
 
 
-## Available Tools
+## Available Tools (9)
 - **get_autoupdate_settings**: Retrieve settings for automatic updates of vulnerable components
 - **get_component_vulnerabilities**: Retrieve all known vulnerabilities for a specific component
 - **get_latest_alerts**: Retrieve the latest security alerts and triggered rules
@@ -94,7 +94,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `patchstack-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `patchstack-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Patchstack Security** tools.
 
 **Configuration:**

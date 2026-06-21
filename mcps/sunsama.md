@@ -32,7 +32,7 @@ Integrate the mindful focus of the **Sunsama** daily planner directly into your 
 - **Project Managers** — Consolidate activities safely tracking team deliverables and personal timelines without bloated secondary interfaces.
 
 
-## Available Tools
+## Available Tools (8)
 - **list_tasks**: You can filter by date.
 
 Lists all tasks in Sunsama
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sunsama` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sunsama` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sunsama** tools.
 
 **Configuration:**

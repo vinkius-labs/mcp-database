@@ -33,7 +33,7 @@ Connect your **FlightAware AeroAPI** account to any AI agent to access global av
 - **Travelers & Concierges** — Stay updated on flight schedules and airport weather conditions
 
 
-## Available Tools
+## Available Tools (8)
 - **get_aircraft**: Get information about a specific aircraft
 - **get_operator_flights**: Get current and scheduled flights for an operator
 - **get_operator**: Get details about a specific operator (airline)
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flightaware-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flightaware-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FlightAware** tools.
 
 **Configuration:**

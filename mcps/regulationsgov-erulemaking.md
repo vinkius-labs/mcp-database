@@ -28,7 +28,7 @@ Connect your AI agent to the **Regulations.gov** database to navigate the US fed
 Stay informed about government transparency and regulatory updates without manually browsing complex government portals. Your AI acts as a specialized regulatory analyst.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_comment**: Get details for a specific comment
 - **get_docket**: Get details for a specific docket
 - **get_document**: Get details for a specific document
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `regulationsgov-erulemaking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `regulationsgov-erulemaking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Regulations.gov (eRulemaking)** tools.
 
 **Configuration:**

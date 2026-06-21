@@ -26,7 +26,7 @@ Connect **Internet Archive Search** to any AI agent and perform advanced searche
 - **Faceted Search** — Analyze search results by category distributions
 
 
-## Available Tools
+## Available Tools (12)
 - **faceted_search**: The facets parameter uses JSON faceting syntax (e.g., "mediatype:{type:terms,field:mediatype}"). Use this to understand the composition of search results by categories like media type, collection, or creator.
 
 Search with faceted results for category analysis
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `internet-archive-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `internet-archive-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Internet Archive Search** tools.
 
 **Configuration:**

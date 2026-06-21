@@ -32,7 +32,7 @@ Connect your AI agent to the **Kava Network** through this comprehensive explore
 - **Node Operators** — Monitor validator status and network health through natural language queries.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_info**: Get basic information for a Kava account
 - **get_account_reward_slash**: Get rewards and slashes for an account
 - **get_account_token**: Get token balances for an account
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kava-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kava-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kava Explorer** tools.
 
 **Configuration:**

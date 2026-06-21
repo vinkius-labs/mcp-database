@@ -32,7 +32,7 @@ Integrate **CrowdTangle**, the public insights tool from Meta, directly into you
 - **Researchers** — Analyze public discourse and link sharing patterns across social platforms.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_details**: Touches dashboard settings, API rate limits, and workspace configuration boundaries.
 
 Retrieve metadata for your CrowdTangle account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crowdtangle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crowdtangle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CrowdTangle** tools.
 
 **Configuration:**

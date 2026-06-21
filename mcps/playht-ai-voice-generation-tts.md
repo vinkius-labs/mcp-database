@@ -32,7 +32,7 @@ Connect your **Play.ht** account to any AI agent to generate high-quality, human
 - **Accessibility Teams** — Quickly convert written documentation into clear, audible speech.
 
 
-## Available Tools
+## Available Tools (3)
 - **convert_tts**: Convert text to speech instantly
 - **get_tts_status**: Get conversion status for a TTS request
 - **get_voices**: Get available Play.ht voices
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `playht-ai-voice-generation-tts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `playht-ai-voice-generation-tts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Play.ht (AI Voice Generation & TTS)** tools.
 
 **Configuration:**

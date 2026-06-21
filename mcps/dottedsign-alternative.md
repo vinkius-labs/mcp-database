@@ -35,7 +35,7 @@ No more manual tracking of pending contracts. Your AI acts as a digital legal as
 - **HR Departments** — streamline onboarding by sending and tracking employee handbooks and NDAs.
 
 
-## Available Tools
+## Available Tools (25)
 - **update_me**: Update current member info
 - **archive_task**: Archive a DottedSign task
 - **create_file_mission**: Create a file mission
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dottedsign-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dottedsign-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DottedSign** tools.
 
 **Configuration:**

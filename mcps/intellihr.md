@@ -13,7 +13,7 @@ Manage employee directory, jobs, and organization data via intelliHR API.
 Connect your AI agents to intelliHR, the strategic people management platform. This MCP server allows you to list and retrieve employee profiles, track job assignments, manage positions and business entities, and view organization data directly through the intelliHR API. Ideal for automating HR operations and employee data analysis.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_person**: Retrieves details for a specific person
 - **list_business_entities**: Lists all legal business entities
 - **list_jobs**: Lists all jobs/positions currently assigned
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `intellihr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `intellihr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **intelliHR** tools.
 
 **Configuration:**

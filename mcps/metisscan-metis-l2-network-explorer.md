@@ -33,7 +33,7 @@ Connect your AI agent to the **Metis L2** ecosystem through Metisscan. Gain real
 - **Crypto Power Users** — Track wallet activities and monitor network congestion through natural language.
 
 
-## Available Tools
+## Available Tools (26)
 - **eth_block_number**: Get the most recent block number (RPC)
 - **eth_call**: Execute a message call (RPC)
 - **eth_estimate_gas**: Estimate gas for a transaction (RPC)
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `metisscan-metis-l2-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `metisscan-metis-l2-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Metisscan (Metis L2 Network Explorer)** tools.
 
 **Configuration:**

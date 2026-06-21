@@ -35,7 +35,7 @@ Stop manually checking court websites for updates. Your AI agent now serves as a
 - **Corporate Legal Teams** — Monitor litigation trends and receive real-time alerts on cases affecting your organization.
 
 
-## Available Tools
+## Available Tools (13)
 - **ask_docket**: Ask natural language questions about a specific docket (VIDA AI)
 - **match_case**: Find cases using partial information (VIDA AI)
 - **get_cause_of_action**: Identify causes of action and relevant statutes (VIDA AI)
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docket-alarm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docket-alarm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Docket Alarm** tools.
 
 **Configuration:**

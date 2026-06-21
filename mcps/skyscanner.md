@@ -33,7 +33,7 @@ Connect to **Skyscanner** and explore flight prices worldwide through natural co
 - **Flexible Travelers** — find cheapest days to fly with date browsing
 
 
-## Available Tools
+## Available Tools (6)
 - **autosuggest_places**: Useful for finding the correct place IDs to use in flight searches. Returns place names, IATA codes and types.
 
 Search for places (airports, cities) by name
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `skyscanner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `skyscanner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Skyscanner** tools.
 
 **Configuration:**

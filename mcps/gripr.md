@@ -35,7 +35,7 @@ No more manual time logging or complex navigation through fragmented project lis
 - **Field Supervisors** — quickly access compliance forms and manage team assignments across multiple construction sites
 
 
-## Available Tools
+## Available Tools (11)
 - **create_customer**: Create a new customer
 - **create_project**: Create a new project
 - **create_task**: Create a new task
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gripr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gripr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gripr** tools.
 
 **Configuration:**

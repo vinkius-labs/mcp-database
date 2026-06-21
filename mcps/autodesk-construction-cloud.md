@@ -32,7 +32,7 @@ Connect your **Autodesk Construction Cloud (ACC)** environment to any AI agent a
 - **Field Engineers** — quickly check asset details and update issue statuses from any device
 
 
-## Available Tools
+## Available Tools (10)
 - **create_issue**: Create a new issue in a project
 - **get_asset_details**: Get details for a specific asset
 - **get_issue_details**: Get complete details for a specific issue
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `autodesk-construction-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `autodesk-construction-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Autodesk Construction Cloud** tools.
 
 **Configuration:**

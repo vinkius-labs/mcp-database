@@ -32,7 +32,7 @@ Empower your local Vinkius terminal intelligence with the **Glama.ai** infrastru
 - **Asymmetric Operations Managers** — Extrapolate metric attributes retrieving hosted proxies mapping logic cleanly limiting execution friction.
 
 
-## Available Tools
+## Available Tools (8)
 - **glama_get_gateway_model_details**: g. "anthropic/claude-3-5-sonnet") to fetch the specific configurations exposed by the Glama unified API proxy.
 
 Investigate granular attributes (prices, context window, parameters) of a specific proxied Gateway Model
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glama` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glama` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glama** tools.
 
 **Configuration:**

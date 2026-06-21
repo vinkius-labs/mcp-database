@@ -13,7 +13,7 @@ Mathematically slice massive text blocks into token-safe chunks without ever tru
 Feeding an entire 200-page litigation brief to a language model instantly exhausts context limits and causes massive logic drift. But artificially cutting strings precisely at 4,000 characters severs crucial legal arguments mid-sentence, destroying structural meaning. This local slicing engine acts as an intelligent buffer: it strictly adheres to a maximum character chunk limit but dynamically searches backwards for the nearest paragraph or sentence boundary (a period or newline) before slicing. This secures the integrity of your legal arguments across distributed LLM workflows.
 
 
-## Available Tools
+## Available Tools (1)
 - **chunk_legal_document**: Mathematically slices massive text blocks into token-safe chunks without truncating sentences
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `document-paginator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `document-paginator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Document Paginator Engine** tools.
 
 **Configuration:**

@@ -43,7 +43,7 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 - **Content Creators** — generate 3D assets and renders for videos and social media
 
 
-## Available Tools
+## Available Tools (12)
 - **generate_ai_texturing**: Can repaint or restyle existing 3D models with new materials, colors, and surface details. Generates complete PBR texture sets (albedo, normal, metallic, roughness) from descriptions like "rusty metal", "polished wood", or "cartoon stone". Essential for material iteration, style transfers on 3D assets, and adding surface details to generated models. AI agents should reference this when users ask "add rusty metal texture to this model", "restyle this character with cartoon textures", or need AI-powered material generation on existing 3D meshes.
 
 Apply AI-powered PBR texturing to existing 3D models using text or image prompts
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `3d-ai-studio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `3d-ai-studio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **3D AI Studio** tools.
 
 **Configuration:**

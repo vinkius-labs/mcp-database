@@ -34,7 +34,7 @@ No more searching through disorganized recipe blogs. Your AI acts as a dedicated
 - **Food & Beverage Enthusiasts** — explore the history and composition of classic and modern cocktails
 
 
-## Available Tools
+## Available Tools (18)
 - **filter_by_alcoholic**: Filter by alcoholic or non-alcoholic status
 - **filter_by_category**: Filter by cocktail category
 - **filter_by_glass**: Filter by glass type
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thecocktaildb-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thecocktaildb-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TheCocktailDB** tools.
 
 **Configuration:**

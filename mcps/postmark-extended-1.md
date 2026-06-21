@@ -33,7 +33,7 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 - **Support Teams** — Automate personalized follow-ups or notification emails through AI-driven workflows.
 
 
-## Available Tools
+## Available Tools (72)
 - **activate_bounce**: Reactivate a bounced email address
 - **add_domain**: Add a domain (Account level)
 - **archive_message_stream**: Archive a message stream
@@ -168,7 +168,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `postmark-extended-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `postmark-extended-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Postmark** tools.
 
 **Configuration:**

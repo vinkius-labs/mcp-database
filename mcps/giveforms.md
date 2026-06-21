@@ -34,7 +34,7 @@ Connect your **GiveForms** account to any AI agent to automate your donation dat
 - **Donor Relations Managers** — verify an individual donor's total contributions and campaign involvement seamlessly.
 
 
-## Available Tools
+## Available Tools (8)
 - **verify_api_connection**: Check connection
 - **find_donations_by_email**: Search donor by email
 - **find_donations_by_name**: Search donor by name
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `giveforms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `giveforms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GiveForms** tools.
 
 **Configuration:**

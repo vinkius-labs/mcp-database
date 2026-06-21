@@ -27,7 +27,7 @@ The **AppsFlyer Pull API MCP Server** provides your AI agent with direct access 
 - **Growth Marketers** — Monitor daily performance and geographic trends to optimize spend and targeting.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_account_check**: Verify AppsFlyer account connection
 - **get_daily_report**: Get aggregate daily performance report
 - **get_geo_report**: Get aggregate performance report by geography
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `appsflyer-pull-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `appsflyer-pull-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AppsFlyer (Pull API)** tools.
 
 **Configuration:**

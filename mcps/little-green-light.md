@@ -33,7 +33,7 @@ Connect your **Little Green Light** account to any AI agent to automate your don
 - **Philanthropy Tech Teams** — Integrate donor management logic and gift tracking into your custom internal dashboards
 
 
-## Available Tools
+## Available Tools (9)
 - **list_fundraising_appeals**: List active fundraising appeals
 - **list_fundraising_campaigns**: List fundraising campaigns
 - **list_donor_constituents**: List donor constituents
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `little-green-light` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `little-green-light` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Little Green Light** tools.
 
 **Configuration:**

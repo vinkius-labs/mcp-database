@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to drop critical alerts
 - **Absolute Containment:** Because it's just a webhook, the agent cannot read your DMs, cannot snoop on other channels, and cannot cause chaos. It is the purest, safest way to give your AI a megaphone in the corporate world.
 
 
-## Available Tools
+## Available Tools (1)
 - **send_slack_message**: Provide the fallback text in the "text" parameter. Optionally, provide rich UI elements via the "blocksJson" array.
 
 Send a notification or message to a Slack channel via Webhook
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `slack-webhook-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `slack-webhook-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Slack Webhook Notifier** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Loops.so** account to any AI agent to streamline your email marke
 - **Growth Teams** — automate lead ingestion and manage suppression lists through conversational commands
 
 
-## Available Tools
+## Available Tools (24)
 - **check_api_key**: Check if the Loops API key is valid
 - **check_suppression**: Check suppression status for a contact
 - **create_campaign**: Create a new campaign (Alpha)
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `loopsso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `loopsso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Loops.so** tools.
 
 **Configuration:**

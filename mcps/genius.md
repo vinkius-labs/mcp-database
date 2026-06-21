@@ -34,7 +34,7 @@ Connect to **Genius** and access the world's largest lyrics database through nat
 - **Content Creators** — access song info, lyrics and annotations for content creation
 
 
-## Available Tools
+## Available Tools (7)
 - **get_album**: Returns album name, artist, cover art, release date and track list. Use the album ID from song results or search.
 
 Get album details including track list and artist
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `genius` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `genius` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Genius** tools.
 
 **Configuration:**

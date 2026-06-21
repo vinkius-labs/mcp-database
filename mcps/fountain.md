@@ -29,7 +29,7 @@ Connect your **Fountain** account to any AI agent to automate your high-volume h
 3. Start managing your frontline recruitment directly from your AI agent
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_details**: Get organization attributes
 - **get_applicant**: Get applicant details
 - **get_opening_details**: Get opening metadata
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fountain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fountain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fountain** tools.
 
 **Configuration:**

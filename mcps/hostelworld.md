@@ -34,7 +34,7 @@ Connect **Hostelworld** to your AI agent and explore budget accommodation worldw
 - **Digital Nomads** — discover long-stay affordable accommodation in new destinations
 
 
-## Available Tools
+## Available Tools (8)
 - **get_property_availability**: Check availability and pricing for a property
 - **get_property_details**: Get detailed information about a specific property
 - **get_property_images**: Get images for a property
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hostelworld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hostelworld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hostelworld** tools.
 
 **Configuration:**

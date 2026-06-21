@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire global event and holiday resear
 - **Operations Leads** — automate holiday data querying to orchestrate cross-functional global teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_holidays**: Get public holidays for a country and year
 - **get_next_workday**: Get the date after a number of workdays from a start date
 - **get_workdays_count**: Count the number of workdays between two dates
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `holiday-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `holiday-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Holiday API** tools.
 
 **Configuration:**

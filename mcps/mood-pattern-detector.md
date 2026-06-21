@@ -13,7 +13,7 @@ Identify recurring emotional trends and correlations between mood fluctuations a
 The Mood Pattern Detector analyzes historical mood logs to uncover cyclical patterns and the impact of external factors. Use `analyze_weekly_cycle` to find days associated with specific moods, `evaluate_activity_impact` to measure how variables like exercise or sleep influence your emotional state, and `identify_mood_anomalies` to flag significant deviations from your baseline mood.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_weekly_cycle**: Determine if specific days of the week are associated with better or worse moods
 - **evaluate_activity_impact**: Measure how a specific recorded variable influences mood levels
 - **identify_mood_anomalies**: Flag specific dates where the mood was significantly different from the norm
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mood-pattern-detector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mood-pattern-detector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mood Pattern Detector** tools.
 
 **Configuration:**

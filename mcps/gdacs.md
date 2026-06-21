@@ -37,7 +37,7 @@ Connect to **GDACS** (Global Disaster Alert and Coordination System) and monitor
 - **Insurance Professionals** — assess catastrophe risk and estimate potential losses
 
 
-## Available Tools
+## Available Tools (12)
 - **get_alert_detail**: Get details for a specific alert
 - **get_alerts**: Alerts are color-coded: red (high impact), orange (medium impact), green (low impact). Supports filtering by event type and time period.
 
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gdacs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gdacs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GDACS** tools.
 
 **Configuration:**

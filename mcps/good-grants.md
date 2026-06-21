@@ -35,7 +35,7 @@ Connect your **Good Grants** account to any AI agent and simplify how you coordi
 - **Reviewers & Evaluators** — verify assigned applications and retrieve review history via the AI assistant.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_new_application**: Register a new application
 - **get_application_details**: Get details for a specific application
 - **list_applications**: List Good Grants applications
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `good-grants` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `good-grants` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Good Grants** tools.
 
 **Configuration:**

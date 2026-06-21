@@ -35,7 +35,7 @@ No more manual editing in document processors for repetitive tasks. Your AI acts
 - **Developers** — integrate real-time document generation and credit tracking directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_webhook**: Add new notification
 - **delete_pdf_template**: Remove a template
 - **generate_pdf**: Create PDF from template
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thepdfmaker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thepdfmaker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ThePDFMaker** tools.
 
 **Configuration:**

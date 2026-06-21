@@ -33,7 +33,7 @@ Connect your **MaestroQA** account to any AI agent to automate your customer ser
 - **Operations Teams** — Automate the synchronization of CSAT data and maintain accurate quality reporting effortlessly
 
 
-## Available Tools
+## Available Tools (7)
 - **list_qa_agents**: List all agents tracked in MaestroQA
 - **get_export_download_links**: Retrieve links for a requested export
 - **get_ticket_qa_details**: Get QA details for a specific ticket
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `maestroqa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `maestroqa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MaestroQA** tools.
 
 **Configuration:**

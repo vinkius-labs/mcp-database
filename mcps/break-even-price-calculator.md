@@ -13,7 +13,7 @@ Calculate commodity break-even prices, margin targets, and productivity requirem
 This MCP server provides essential tools for commodity profitability analysis. Use `calculate_price_targets` to determine the minimum price needed to cover costs and set strategic profit margins (10%, 20%, 30%). With `evaluate_market_position`, you can compare current market prices against your break-even point to identify profit or loss. If market prices are unfavorable, `calculate_yield_requirement` calculates exactly how much additional yield per hectare is needed to maintain profitability.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_price_targets**: Calculates the essential price points required for cost recovery and predefined profitability margins
 - **calculate_yield_requirement**: Determines how much additional productivity is required to reach the break-bag target at current market prices
 - **evaluate_market_position**: Compares the current market price against the break-even point to determine financial health
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `break-even-price-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `break-even-price-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Break-even Price Calculator** tools.
 
 **Configuration:**

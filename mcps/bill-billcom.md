@@ -33,7 +33,7 @@ Connect your **BILL (formerly Bill.com)** account to any AI agent and orchestrat
 - **Operations Teams** — verify business contact information and account structures using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_bill**: Get specific bill details
 - **get_customer**: Get specific customer details
 - **get_invoice**: Get specific invoice details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bill-billcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bill-billcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BILL (Bill.com)** tools.
 
 **Configuration:**

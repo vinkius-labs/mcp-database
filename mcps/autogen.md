@@ -35,7 +35,7 @@ Your primary agent can now command and debug secondary swarms of specialized age
 - **Researchers** — easily extract deep LLM-to-LLM conversational histories across experimental boundaries for grading
 
 
-## Available Tools
+## Available Tools (10)
 - **create_agent**: Define a new customized AutoGen agent
 - **create_message**: Send a user message to initiate or continue an AutoGen session
 - **list_skills**: List Python skill functions available to AutoGen agents
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `autogen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `autogen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AutoGen** tools.
 
 **Configuration:**

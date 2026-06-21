@@ -13,7 +13,7 @@ Determine precise lunar mansions (Nakshatras) and their astrological attributes.
 The Vedic Nakshatra Calculator provides precise astronomical computations to identify the Moon's position within the 27 lunar mansions. By using tools like `get_nakshatra_details`, you can uncover the ruling deity, symbol, and guna (quality) of a specific moment in time based on birth coordinates. The server also allows for raw data retrieval via `calculate_lunar_position` to understand ecliptic longitude and ayanamsa adjustments, or viewing the full zodiac inventory with `list_all_constellations`.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_lunar_position**: Provides the raw astronomical longitude used for astrological computations
 - **get_nakshatra_details**: Identifies the specific Nakshatra and all its associated attributes for a given moment in time
 - **list_all_constellations**: Provides a complete inventory of all 27 Nakshatras and their primary identifiers
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vedic-nakshatra-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vedic-nakshatra-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vedic Nakshatra Calculator** tools.
 
 **Configuration:**

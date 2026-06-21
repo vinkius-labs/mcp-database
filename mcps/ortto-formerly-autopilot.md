@@ -32,7 +32,7 @@ Connect your **Ortto** account to any AI agent and unify your customer data and 
 - **Marketing Engineers** — automate the creation of activities and data mapping from your IDE
 
 
-## Available Tools
+## Available Tools (10)
 - **create_activity**: Create a custom activity for a person
 - **create_person**: Add a new person to Ortto
 - **delete_person**: Permanently archive/delete a person
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ortto-formerly-autopilot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ortto-formerly-autopilot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ortto (formerly Autopilot)** tools.
 
 **Configuration:**

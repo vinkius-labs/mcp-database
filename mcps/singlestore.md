@@ -19,7 +19,7 @@ Grant your AI agent (like Claude or Cursor) absolute read-and-write sovereignty 
 - **Workspace & Billing Administration** — Survey your server clusters with `list_workspaces`, list databases with `list_databases`, and audit billing usage via `get_billing_usage`.
 
 
-## Available Tools
+## Available Tools (6)
 - **execute_sql**: Use read-only SQL statements whenever possible.
 
 Executes a SQL query on a SingleStore database
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `singlestore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `singlestore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SingleStore** tools.
 
 **Configuration:**

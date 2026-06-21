@@ -22,7 +22,7 @@ This MCP parses SQL into a complete Abstract Syntax Tree — every table, column
 - **Table & Column Extraction:** List every table and column referenced in a query — essential for data governance.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_sql**: This is essential for security agents checking for SQL injection, DevOps agents auditing query performance, or any workflow that needs to understand SQL without executing it. Supported dialects: MySQL, PostgreSQL, MariaDB, SQLite, BigQuery, Snowflake, Hive, FlinkSQL, Noql, TransactSQL.
 
 Parses SQL queries into an AST and extracts tables, columns, and WHERE clauses. Supports 15+ dialects (MySQL, PostgreSQL, BigQuery, Snowflake, etc.)
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sql-parser-ast-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sql-parser-ast-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SQL Parser AST Engine** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual checking of Steam profiles for playtimes or friend status. Your A
 - **Developers** — integrate high-speed Steam Web API data into custom gaming dashboards through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **get_global_achievements**: Get global achievement percentages
 - **get_friend_list**: Get friend list for a Steam user
 - **get_game_news**: Get news for a specific game
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `steam-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `steam-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Steam** tools.
 
 **Configuration:**

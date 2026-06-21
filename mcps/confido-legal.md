@@ -35,7 +35,7 @@ No more manual entry into split-payment spreadsheets. Your AI acts as your dedic
 - **Legal Tech Developers** — automate billing workflows and monitor transaction histories through simple AI queries
 
 
-## Available Tools
+## Available Tools (8)
 - **create_client**: Create a new client
 - **create_payment_link**: Can split between trust and operating amounts.
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `confido-legal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `confido-legal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Confido Legal** tools.
 
 **Configuration:**

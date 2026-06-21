@@ -32,7 +32,7 @@ Connect **PagBank (PagSeguro)** to any AI agent and unlock Brazil's leading paym
 - **Developers** — Integrate PagBank payments into AI workflows without complex SDKs
 
 
-## Available Tools
+## Available Tools (9)
 - **get_balance**: Get the current account balance
 - **create_boleto_payment**: Generate a Boleto payment
 - **cancel_transaction**: If amount is provided, performs partial cancellation.
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pagbank-pagseguro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pagbank-pagseguro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PagBank PagSeguro** tools.
 
 **Configuration:**

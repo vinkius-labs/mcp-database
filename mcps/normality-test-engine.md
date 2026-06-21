@@ -22,7 +22,7 @@ This MCP uses `simple-statistics` to compute exact Skewness and Kurtosis coeffic
 - **Data Privacy:** Your research data stays entirely on your local machine.
 
 
-## Available Tools
+## Available Tools (1)
 - **test_normality**: Perform an exact deterministic Jarque-Bera normality test on numeric data without LLM math hallucinations
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `normality-test-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `normality-test-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Normality Test Engine** tools.
 
 **Configuration:**

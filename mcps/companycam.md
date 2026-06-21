@@ -31,7 +31,7 @@ Connect your AI assistant to **CompanyCam**, the photo-first documentation platf
 - **Office Staff** — Pull project photos for proposals or customer reports directly from chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_project**: Create a new project in CompanyCam
 - **get_current_user**: Retrieve details of the authenticated user
 - **get_photo_details**: Retrieve details of a specific photo
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `companycam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `companycam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CompanyCam** tools.
 
 **Configuration:**

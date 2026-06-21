@@ -36,7 +36,7 @@ Connect your **Forecast.app** account to any AI agent and take full control of y
 - **Developers** — test and debug resource management integrations and verify task schemas through the chat interface
 
 
-## Available Tools
+## Available Tools (6)
 - **list_projects**: List projects
 - **get_project**: Get project details
 - **list_tasks**: List tasks
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `forecast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `forecast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Forecast** tools.
 
 **Configuration:**

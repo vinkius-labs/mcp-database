@@ -31,7 +31,7 @@ Connect your **Recurly** subscription billing and management platform securely t
 - **Software Developers** — Interact safely with Recurly limits, list the ID structures of catalog plans, and test provisioning logic endpoints directly from the code editor.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_subscription**: This action is irreversible.
 
 Cancels an active subscription
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `recurly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `recurly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Recurly** tools.
 
 **Configuration:**

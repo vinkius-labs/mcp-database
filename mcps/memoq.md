@@ -33,7 +33,7 @@ Connect your **MemoQ** server to any AI agent to streamline your localization an
 - **Language Engineers** — automate the maintenance of TMs and TBs by updating entries via AI-driven workflows.
 
 
-## Available Tools
+## Available Tools (17)
 - **create_tb_entry**: Create a new entry in a Termbase
 - **create_tm_entry**: Create a new entry in a TM
 - **delete_tb_entry**: Delete an entry from a Termbase
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `memoq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `memoq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MemoQ** tools.
 
 **Configuration:**

@@ -28,7 +28,7 @@ Connect your conversational assistant natively to **Salesbricks**, the fastest w
 5. Ask the AI: "Enumerate my latest software subscription plans currently assigned to active users in my platform."
 
 
-## Available Tools
+## Available Tools (10)
 - **create_customer**: Specify company name and email.
 
 Creates a new customer in Salesbricks
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesbricks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesbricks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesbricks** tools.
 
 **Configuration:**

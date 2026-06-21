@@ -33,7 +33,7 @@ Connect your **Last.fm** account to any AI agent and take control of your music 
 - **Curators** — explore tags and user profiles to discover new trends and genres.
 
 
-## Available Tools
+## Available Tools (5)
 - **update_now_playing**: fm that a user has started listening to a track. Requires session key.
 
 Update Now Playing status on Last.fm
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lastfm-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lastfm-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Last.fm** tools.
 
 **Configuration:**

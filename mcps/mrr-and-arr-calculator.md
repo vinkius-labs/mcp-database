@@ -19,7 +19,7 @@ The MRR and ARR Calculator solves this by providing granular tracking for every 
 **Advantage:** Instead of a single gross number, you get a full financial picture: how fast are you growing (Net New MRR), and what is the true value of your customer base? This allows for precise forecasting and strategic decision-making.
 
 
-## Available Tools
+## Available Tools (5)
 - **calculate_arr**: Calculate Annual Recurring Revenue from MRR
 - **calculate_churn_impact**: Calculate the impact of customer churn on revenue
 - **get_metrics_summary**: Get a comprehensive SaaS metrics summary
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mrr-and-arr-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mrr-and-arr-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MRR and ARR Calculator** tools.
 
 **Configuration:**

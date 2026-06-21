@@ -32,7 +32,7 @@ Connect the **Bored API** to your AI agent and never run out of things to do. Wh
 - **Developers** — testing agent capabilities with a clean, structured data source for suggestions.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_activity_by_key**: Get a specific activity by its unique key
 - **find_activity**: Find an activity based on specific criteria
 - **get_random_activity**: Get a random activity
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bored` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bored` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bored** tools.
 
 **Configuration:**

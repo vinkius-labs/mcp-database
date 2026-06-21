@@ -32,7 +32,7 @@ Connect your AI to **Runway ML**, the pioneer in applied AI research shaping the
 - **Social Content Creators** — Generate eye-catching B-roll quickly using high-grade diffusion models exactly tailored directly from prompt instructions.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_task**: This action is irreversible.
 
 Cancels a running generation task
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `runway-ml` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `runway-ml` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Runway ML** tools.
 
 **Configuration:**

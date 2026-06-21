@@ -13,7 +13,7 @@ AI-powered talent acquisition API for parsing, matching, and reasoning.
 Empower your AI agents with HrFlow.ai's advanced talent acquisition capabilities. This MCP server allows you to parse resumes, search profiles and jobs with semantic filters, score candidates against job descriptions, and ask natural language questions about profiles. Ideal for automating recruitment workflows with AI-driven insights.
 
 
-## Available Tools
+## Available Tools (10)
 - **ask_profile**: Asks a natural language question about a specific profile
 - **list_boards**: Lists job boards
 - **list_jobs**: Lists jobs stored in HrFlow boards
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hrflowai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hrflowai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HrFlow.ai** tools.
 
 **Configuration:**

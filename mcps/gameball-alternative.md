@@ -33,7 +33,7 @@ Connect your **Gameball** account to any AI agent to orchestrate your loyalty an
 - **Support Teams** — handle point refunds and balance inquiries directly within the chat interface.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_or_update_customer**: This API is idempotent.
 
 Create or update a Gameball customer profile
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gameball-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gameball-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gameball** tools.
 
 **Configuration:**

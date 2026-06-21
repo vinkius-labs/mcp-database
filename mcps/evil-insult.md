@@ -31,7 +31,7 @@ Add a touch of "evil" humor to your workflows. This MCP server connects to the *
 - **Anyone** — Who needs a quick, sharp comeback provided by an AI.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_insult**: You can optionally specify a language code.
 
 Generate an evil insult
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `evil-insult` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `evil-insult` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Evil Insult** tools.
 
 **Configuration:**

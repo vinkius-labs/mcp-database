@@ -35,7 +35,7 @@ No more manual status checking of individual lead records or digging through com
 - **Growth Marketers** — automate lead enrichment and personalized content generation through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_autobound_status**: Verify connectivity
 - **enrich_bulk**: Bulk enrich contacts
 - **enrich_company**: Enrich a company
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `autobound` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `autobound` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Autobound** tools.
 
 **Configuration:**

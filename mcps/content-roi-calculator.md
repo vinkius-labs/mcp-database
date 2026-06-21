@@ -13,7 +13,7 @@ Calculate production costs, attributed revenue, and profitability metrics for co
 This MCP server provides specialized tools to quantify the financial impact of organic content. Use `calculate_total_cost` to aggregate production expenses from writers, designers, and SEO specialists. You can then use `calculate_attributed_revenue` to estimate revenue based on traffic volume, conversion rates, and customer LTV. Finally, apply `calculate_roi_summary` to determine your ROI percentage, cost per visit, and the payback period in months for each content piece.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_attributed_revenue**: Calculate estimated revenue from organic traffic
 - **calculate_roi_summary**: Calculate ROI and payback period for content
 - **calculate_total_cost**: Calculate the total production cost of content
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `content-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `content-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Content ROI Calculator** tools.
 
 **Configuration:**

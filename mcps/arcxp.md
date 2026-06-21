@@ -34,7 +34,7 @@ No more wrestling with complex ANS JSON schemas or slow CMS interfaces. Your AI 
 - **Digital publishers** — accelerate content velocity by letting AI structure, tag, and publish straight to your ArcXP tenant
 
 
-## Available Tools
+## Available Tools (10)
 - **create_ans_content**: The payload_json MUST strictly comply with the requested Arc Native Schema (ANS) version.
 
 Create new content in the Arc XP Content CMS
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arcxp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arcxp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ArcXP** tools.
 
 **Configuration:**

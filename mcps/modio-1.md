@@ -33,7 +33,7 @@ Connect your **mod.io** account to any AI agent and take full control of game mo
 - **Gaming Communities** — discover new content and manage personal mod collections through simple AI commands.
 
 
-## Available Tools
+## Available Tools (35)
 - **add_mod_comment**: Add a comment to a mod
 - **add_mod_dependencies**: Add dependencies to a mod
 - **add_mod_metadata**: Add metadata key-value pairs to a mod
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `modio-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `modio-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Modio** tools.
 
 **Configuration:**

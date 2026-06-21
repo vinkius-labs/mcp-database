@@ -32,7 +32,7 @@ Connect **Carta** to your AI agent and manage your company's equity operations, 
 - **CFOs & Legal Teams** — Pull 409A valuations and compliance data instantly for audits and fundraising diligence.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_companies**: List all companies
 - **list_valuations**: List 409A valuations
 - **get_company**: Get company details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `carta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `carta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Carta** tools.
 
 **Configuration:**

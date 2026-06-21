@@ -36,7 +36,7 @@ Connect your **Gallabox** account to any AI agent to automate your WhatsApp Busi
 - **Customer Success Ops** — monitor conversation histories and verify contact metadata seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **get_contact_details**: Get contact metadata
 - **get_chat_details**: Get thread metadata
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gallabox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gallabox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gallabox** tools.
 
 **Configuration:**

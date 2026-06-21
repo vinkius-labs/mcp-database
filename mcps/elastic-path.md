@@ -33,7 +33,7 @@ Connect your **Elastic Path** commerce engine to any AI agent to streamline your
 - **Support Teams** — retrieve account and purchase details instantly to resolve customer inquiries faster.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_token**: Authenticate and create an OAuth2 token
 - **get_account**: Read a specific account
 - **get_countries**: Get geographies/countries for a scope
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elastic-path` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elastic-path` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elastic Path** tools.
 
 **Configuration:**

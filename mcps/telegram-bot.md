@@ -33,7 +33,7 @@ Connect any **Telegram Bot** to your AI agent and automate messaging, broadcasti
 - **Support Teams** — manage customer chats and forward important messages between departments
 
 
-## Available Tools
+## Available Tools (13)
 - **delete_message**: Delete a message from Telegram
 - **forward_message**: Forward a message in Telegram
 - **get_chat_admins**: Get list of chat administrators
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telegram-bot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telegram-bot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telegram Bot** tools.
 
 **Configuration:**

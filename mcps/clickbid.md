@@ -32,7 +32,7 @@ The ClickBid integration empowers your AI agent to natively manage your charity 
 - **Developers** — Hook custom interfaces or external CRMs to your active ClickBid database.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_clickbid_item**: Get auction item details
 - **list_clickbid_bidders**: List all registered bidders
 - **list_clickbid_donations**: List event donations
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clickbid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clickbid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClickBid** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Freshcaller** (now Freshdesk Contact Center) account to any AI ag
 - **Sales Teams** — track outbound call history and verify durations for lead engagement reporting.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_call_details**: Get call metadata
 - **get_export_status**: Check export job
 - **get_call_recording**: Get recording link
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freshcaller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freshcaller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Freshcaller** tools.
 
 **Configuration:**

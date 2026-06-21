@@ -32,7 +32,7 @@ Connect your **Avaza** account to any AI agent and manage your entire profession
 - **Team Leads** — coordinate task assignments and check team availability through natural language commands
 
 
-## Available Tools
+## Available Tools (11)
 - **create_project**: Create a new project
 - **create_task**: Create a new task in a project
 - **create_timesheet**: Create a new timesheet entry
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `avaza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `avaza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Avaza** tools.
 
 **Configuration:**

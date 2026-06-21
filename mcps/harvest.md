@@ -36,7 +36,7 @@ No more manual exporting of time reports. Your AI assistant acts as a dedicated 
 - **Freelancers & Small Agencies** — manage your entire billing cycle and time tracking without leaving your communication flow.
 
 
-## Available Tools
+## Available Tools (11)
 - **delete_client**: Permanently delete a client
 - **create_client**: Create a new client in Harvest
 - **create_invoice**: Create a new invoice for a client
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harvest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harvest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harvest** tools.
 
 **Configuration:**

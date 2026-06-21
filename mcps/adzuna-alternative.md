@@ -33,7 +33,7 @@ Connect the **Adzuna** labor market engine to your AI agent to transform how you
 - **Data Analysts & Economists** — Extract labor market trends and regional economic indicators directly into your workflow.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_categories**: List employment sectors (categories)
 - **get_geodata**: Get regional job vacancy data
 - **get_histogram**: Get salary histogram data
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adzuna-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adzuna-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adzuna** tools.
 
 **Configuration:**

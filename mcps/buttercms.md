@@ -33,7 +33,7 @@ No manual database lookups mapping specific Markdown texts. Your AI agent explor
 - **Content Writers** — run rapid scans identifying if an article covering a target keyword already lives stored inside the official knowledge base
 
 
-## Available Tools
+## Available Tools (10)
 - **search_blog_posts**: Perform structural extraction of properties driving active Keywords
 - **search_collection_field**: Identify precise active arrays spanning filtered Collections
 - **get_page_layout**: Retrieve the exact structural matching verifying explicit UI routing
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buttercms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buttercms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ButterCMS** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Bridge the gap between your daily work and high-level strategy. Your AI assistan
 - **Strategy Officers** — maintain a real-time overview of organizational alignment and goal attainment.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_key_result**: Get details for a specific key result
 - **get_my_profile**: Get information about the current authenticated user
 - **get_objective**: Get details for a specific OKR objective
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `quantive-gtmhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `quantive-gtmhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Quantive (Gtmhub)** tools.
 
 **Configuration:**

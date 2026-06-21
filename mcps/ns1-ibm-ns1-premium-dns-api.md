@@ -33,7 +33,7 @@ Connect your **IBM NS1** account to any AI agent and take full control of your g
 - **Infrastructure Teams** — automate the provisioning of new zones and records as part of CI/CD workflows.
 
 
-## Available Tools
+## Available Tools (15)
 - **create_data_source**: Create a new data source
 - **create_monitoring_job**: Create a new monitoring job
 - **create_record**: Create a new DNS record
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ns1-ibm-ns1-premium-dns-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ns1-ibm-ns1-premium-dns-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NS1 (IBM NS1 Premium DNS API)** tools.
 
 **Configuration:**

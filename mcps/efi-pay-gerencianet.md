@@ -32,7 +32,7 @@ The **Efí Pay MCP Server** connects your AI agent directly to one of Brazil's l
 - **Financial Controllers** — extract statements and daily balances dynamically to aid reconciliation.
 
 
-## Available Tools
+## Available Tools (8)
 - **efi_create_boleto**: Gerar um banco slip tradicional brasileiro (Boleto)
 - **efi_create_pix_charge**: Emitir cobrança imediata via Pix (Cob)
 - **efi_get_balance**: Consultar o resuldado / Saldo atual da conta digital (Efí Pay)
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `efi-pay-gerencianet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `efi-pay-gerencianet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Efí Pay (Gerencianet)** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Manage virtual and hybrid events via Hubilo API.
 Empower your AI agents to manage your virtual event strategy with Hubilo. This MCP server provides access to the Hubilo API to list events, manage attendees, track orders, view agenda sessions, and analyze booth performance. Perfect for event organizers and marketing teams.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_booth_analytics**: Retrieves analytics data for exhibitor booths
 - **get_event_details**: Retrieves details for a specific event
 - **get_organizer_profile**: Gets details about the event organizer
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubilo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubilo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hubilo** tools.
 
 **Configuration:**

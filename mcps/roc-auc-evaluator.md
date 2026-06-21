@@ -13,7 +13,7 @@ Compute the exact Area Under the ROC Curve for binary classification predictions
 The Area Under the Receiver Operating Characteristic Curve (ROC AUC) is a vital metric for evaluating binary classification models. Because it involves sorting probabilities and integrating the area under a curve iteratively, Large Language Models are mathematically incapable of calculating exact AUC scores from raw arrays. The ROC AUC Evaluator offloads this task to local Node.js processes, instantly returning mathematically rigorous AUC metrics using the exact trapezoidal rule.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_roc_auc**: Calculates the exact Area Under the ROC Curve (AUC) for binary classification
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `roc-auc-evaluator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `roc-auc-evaluator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ROC AUC Evaluator** tools.
 
 **Configuration:**

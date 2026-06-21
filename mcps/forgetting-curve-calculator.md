@@ -13,7 +13,7 @@ Predict memory decay and schedule learning reinforcements using the Ebbinghaus F
 The Forgetting Curve Calculator is a mathematical engine designed to help learners master long-term retention. Based on the principles of the Ebbinghaus Forgetting Curve, this MCP server provides tools to track how information decays over time and when you should intervene with review sessions. Use `get_current_retention` to see your current memory strength, `predict_decay_thresholds` to identify upcoming critical drop-off points (70%, 50%, and 20%), and `estimate_maintenance_effort` to plan the number of future reviews needed for long-term stability. It acts as a bridge between your learning data and AI agents like Cursor, Claude Desktop, and Windsurf, allowing you to automate your study scheduling.
 
 
-## Available Tools
+## Available Tools (3)
 - **estimate_maintenance_effort**: Estimate required future reviews for long-term stability
 - **get_current_retention**: Calculate current memory retention percentage
 - **predict_decay_thresholds**: Predict when memory will drop below critical thresholds
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `forgetting-curve-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `forgetting-curve-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Forgetting Curve Calculator** tools.
 
 **Configuration:**

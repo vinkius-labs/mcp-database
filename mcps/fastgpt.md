@@ -36,7 +36,7 @@ Connect your AI workflows to **FastGPT**, the powerful open-source platform for 
 - **System Integrators** — build complex AI workflows that require dynamic knowledge base management
 
 
-## Available Tools
+## Available Tools (12)
 - **chat_completions**: Supports chatId for context tracking, streaming, and detailed intermediate steps.
 
 Send a message to a FastGPT application
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fastgpt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fastgpt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FastGPT** tools.
 
 **Configuration:**

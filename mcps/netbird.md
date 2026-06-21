@@ -35,7 +35,7 @@ No more manual dashboard navigation to manage peer access or user onboarding. Yo
 - **Security Teams** — monitor active users and manage security settings like password changes and account blocks instantly.
 
 
-## Available Tools
+## Available Tools (89)
 - **accept_user_invite**: Accept invite and set password (unauthenticated)
 - **approve_user**: Approve a pending user
 - **change_user_password**: Change user password (embedded IdP only)
@@ -187,7 +187,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `netbird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `netbird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NetBird** tools.
 
 **Configuration:**

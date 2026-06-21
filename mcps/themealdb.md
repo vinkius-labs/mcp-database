@@ -23,7 +23,7 @@ The **TheMealDB MCP Server** gives your AI agent instant access to an internatio
 Zero authentication required. Perfect for meal planning assistants, cooking chatbots, food blogs, and recipe recommendation engines.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_meal_details**: Get complete details of a specific meal by its TheMealDB ID
 - **get_meals_by_cuisine**: Available areas: American, British, Canadian, Chinese, Croatian, Dutch, Egyptian, Filipino, French, Greek, Indian, Irish, Italian, Jamaican, Japanese, Kenyan, Malaysian, Mexican, Moroccan, Polish, Portuguese, Russian, Spanish, Thai, Tunisian, Turkish, Vietnamese.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `themealdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `themealdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TheMealDB** tools.
 
 **Configuration:**

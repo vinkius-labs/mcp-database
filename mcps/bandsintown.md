@@ -33,7 +33,7 @@ Connect to **Bandsintown** and discover live music events worldwide through natu
 - **Event Planners** — research venue lineups and artist touring patterns
 
 
-## Available Tools
+## Available Tools (7)
 - **get_artist**: Get info for a specific artist
 - **get_artist_by_facebook_id**: Get artist info by Facebook page ID
 - **get_artist_by_id**: Get artist info by Bandsintown ID
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bandsintown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bandsintown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bandsintown** tools.
 
 **Configuration:**

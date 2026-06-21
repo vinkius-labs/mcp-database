@@ -34,7 +34,7 @@ Connect your AI agents to **Baidu Huiyan** (百度慧眼), Asia's leading macro-
 - **Logistics Teams** — monitor crowd congestion patterns for route optimization
 
 
-## Available Tools
+## Available Tools (10)
 - **geocode_address**: Convert a street address to latitude/longitude coordinates
 - **get_area_profile**: Get demographic and behavioral profile of a geographic area
 - **get_migration_city_rank**: Direction: "in" or "out".
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `baidu-huiyan-lbs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `baidu-huiyan-lbs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Baidu Huiyan LBS** tools.
 
 **Configuration:**

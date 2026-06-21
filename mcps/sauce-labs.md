@@ -34,7 +34,7 @@ Your AI agent will be able to pinpoint specific build failures, analyze error tr
 - **Developers** — verify available browser/OS configurations on the fly when adding a new matrix variable to a test suite
 
 
-## Available Tools
+## Available Tools (11)
 - **get_activity**: Retrieves current account activity levels
 - **get_build_jobs**: Lists all individual jobs within a specific build
 - **get_build**: Retrieves details for a specific build
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sauce-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sauce-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sauce Labs** tools.
 
 **Configuration:**

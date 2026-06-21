@@ -27,7 +27,7 @@ Digitize business processes with BPMN workflows, electronic forms, and approval 
 - Developers integrating BPM into their AI-driven applications.
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_request**: Cancel an active process request
 - **create_request**: Start a new process request in Zeev
 - **delegate_task**: Delegate a task to another user
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zeev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zeev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zeev** tools.
 
 **Configuration:**

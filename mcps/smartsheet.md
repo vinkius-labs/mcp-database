@@ -34,7 +34,7 @@ Stop manually hunting down the ID of a specific project table just to wire up yo
 - **Team Leaders** — have the bot read specific spreadsheets to generate weekly summary drafts completely autonomously
 
 
-## Available Tools
+## Available Tools (6)
 - **list_sheets**: Lists all sheets available in Smartsheet
 - **get_sheet_details**: Retrieves details for a specific sheet
 - **list_workspaces**: Lists all workspaces in Smartsheet
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smartsheet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smartsheet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Smartsheet** tools.
 
 **Configuration:**

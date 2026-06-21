@@ -35,7 +35,7 @@ No more jumping between dashboards to check if a user has submitted their ID. Yo
 - **Developers** — test and inspect verification flows and account updates straight from the terminal or IDE
 
 
-## Available Tools
+## Available Tools (27)
 - **approve_inquiry**: Approve an Inquiry
 - **create_account**: Create an Account
 - **create_inquiry**: Create an Inquiry
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `persona` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `persona` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Persona** tools.
 
 **Configuration:**

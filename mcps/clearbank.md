@@ -29,7 +29,7 @@ The **ClearBank MCP Server** wraps incredibly defensive digital signatures (RSA-
 - **Treasury Automation** — Have the Agent review your high-volume clearing state.
 
 
-## Available Tools
+## Available Tools (8)
 - **clearbank_create_account**: Provision a new virtual UK Account
 - **clearbank_create_chaps_payment**: Can only be done during BofE operating hours.
 
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clearbank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clearbank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClearBank** tools.
 
 **Configuration:**

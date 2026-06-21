@@ -22,7 +22,7 @@ Mustache templates are logic-less by design: no loops-within-loops, no condition
 - **8M+ Downloads:** Battle-tested by enterprise teams worldwide.
 
 
-## Available Tools
+## Available Tools (1)
 - **render_mustache**: Pass a Mustache template (using {{variable}}, {{#section}}...{{/section}}, {{^inverted}}...{{/inverted}}) and a JSON data object. The engine renders the template deterministically. Use this instead of manually concatenating strings, which leads to escaping errors.
 
 Renders Mustache logic-less templates with JSON data. Same spec across JS/Python/Go/Ruby/Rust. Ideal for generating emails, notifications, invoices, and standardized documents
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mustache-template-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mustache-template-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mustache Template Engine** tools.
 
 **Configuration:**

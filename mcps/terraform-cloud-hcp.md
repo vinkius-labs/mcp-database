@@ -33,7 +33,7 @@ Connect your **Terraform Cloud (HCP)** account to any AI agent to orchestrate yo
 - **SRE Teams** — troubleshoot failed runs and manage workspace locks during incident response.
 
 
-## Available Tools
+## Available Tools (42)
 - **add_team_user**: Add a user to a team
 - **add_team_workspace_access**: Grant a team access to a workspace
 - **apply_run**: Apply a planned run
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `terraform-cloud-hcp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `terraform-cloud-hcp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Terraform Cloud (HCP)** tools.
 
 **Configuration:**

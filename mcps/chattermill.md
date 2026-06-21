@@ -36,7 +36,7 @@ Connect your **Chattermill** account to any AI agent and take full control of yo
 - **Operations Teams** — verify data source connectivity and audit feedback ingestion pipelines
 
 
-## Available Tools
+## Available Tools (11)
 - **submit_feedback_response**: Requires the project_key plus comment text. Optionally supply score, data_source, and data_type keys from their respective list endpoints.
 
 Submit a new feedback response to a Chattermill project
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chattermill` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chattermill` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chattermill** tools.
 
 **Configuration:**

@@ -25,7 +25,7 @@ Build intelligent chatbots for WhatsApp, Messenger, and web that engage customer
 Customer Support teams managing tickets, Marketing teams triggering proactive messages, and Sales professionals following up on leads via WhatsApp.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contact**: Create or update a Blip contact
 - **delete_contact**: Delete a Blip contact
 - **get_contact**: Get a Blip contact by ID
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blip** tools.
 
 **Configuration:**

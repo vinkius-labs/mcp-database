@@ -32,7 +32,7 @@ Integrate **Dropbox Sign** (formerly HelloSign), the intuitive e-signature platf
 - **Sales Operations** — Research specific request details and signer history to accelerate deals instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dropbox_sign_account_metadata**: Retrieve metadata and usage limits for your Dropbox Sign account
 - **quick_signature_volume_audit**: Retrieve a high-level summary of signature request activity and completion rates
 - **get_signature_request_details**: Get detailed information and signature status for a specific request
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dropbox-sign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dropbox-sign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dropbox Sign** tools.
 
 **Configuration:**

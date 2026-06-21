@@ -18,7 +18,7 @@ Using real user data in staging environments or passing production PII to an LLM
 - **Zero-API Security:** Never leak your testing intentions to external "fake data" SaaS APIs. The PRNG (Pseudo-Random Number Generator) runs completely locked inside your infrastructure.
 
 
-## Available Tools
+## Available Tools (3)
 - **generate_fake_addresses**: Provide a count and optionally a numeric seed to guarantee deterministic reproducible outputs.
 
 Deterministically generates random addresses based on a seed
@@ -82,7 +82,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-faker-data-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-faker-data-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Faker Data Engine** tools.
 
 **Configuration:**

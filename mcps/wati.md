@@ -37,7 +37,7 @@ No more manual logging into the Wati dashboard to reply to a single message. You
 - **Account Managers** — lookup customer profiles and maintain active communication within the 24-hour window
 
 
-## Available Tools
+## Available Tools (7)
 - **get_whatsapp_contact_details**: Retrieves profile details for a specific WhatsApp contact by phone number
 - **get_whatsapp_chat_history**: Provide the contact’s phone number.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wati` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wati` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wati** tools.
 
 **Configuration:**

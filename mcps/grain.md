@@ -38,7 +38,7 @@ Connect your **Grain.com** account to any AI agent and take full control of your
 - **Operations Teams** — monitor team knowledge distribution and verify workspace member directories through the chat interface
 
 
-## Available Tools
+## Available Tools (12)
 - **list_recordings**: List all meeting recordings in the Grain workspace
 - **get_recording**: Retrieve full details of a specific meeting recording
 - **list_highlights**: List all highlights (curated clips) from a recording
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Grain** tools.
 
 **Configuration:**

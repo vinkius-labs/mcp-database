@@ -32,7 +32,7 @@ Integrate **Determ** (formerly **Mediatoolkit**), the powerful media monitoring 
 - **Social Media Specialists** — Track social listening queries and mention details during planning sessions.
 
 
-## Available Tools
+## Available Tools (10)
 - **search_mentions_by_keyword**: Search for specific keywords within the mentions of a monitoring query
 - **get_account_metadata**: Retrieve settings and limits for your Determ account
 - **get_mention_details**: Get full content and technical metadata for a specific media mention
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `determ` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `determ` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Determ** tools.
 
 **Configuration:**

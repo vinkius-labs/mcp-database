@@ -33,7 +33,7 @@ Connect to the official **Datos.gob.es** API to explore Spain's vast repository 
 - **Policy Researchers** — track public sector transparency and data availability across different Spanish regions.
 
 
-## Available Tools
+## Available Tools (22)
 - **get_country_spain**: Get country-level information for Spain
 - **get_dataset**: Get a specific dataset by its URI identifier
 - **get_province**: g., Madrid).
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datosgobes-catalogo-nacional` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datosgobes-catalogo-nacional` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Datos.gob.es (Catálogo Nacional)** tools.
 
 **Configuration:**

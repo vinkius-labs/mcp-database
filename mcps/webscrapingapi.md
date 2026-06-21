@@ -38,7 +38,7 @@ No more manual selector debugging or proxy management. Your AI agent becomes you
 - **SEO Specialists** — track SERP rankings and analyze search snippets from multiple engines and regions
 
 
-## Available Tools
+## Available Tools (10)
 - **custom_api_scrape**: g. country, session, wait_for).
 
 Execute a scrape using advanced custom parameters
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webscrapingapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webscrapingapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WebScrapingAPI** tools.
 
 **Configuration:**

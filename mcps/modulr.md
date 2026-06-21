@@ -29,7 +29,7 @@ The **Modulr MCP Server** wraps incredibly defensive digital signatures (HMAC SH
 - **Payment Reconciliations** — Have the Agent review your physical transactional ledger.
 
 
-## Available Tools
+## Available Tools (7)
 - **modulr_create_account**: g. GBP or EUR).
 
 Instantiate a UK/EU Account under a specific Customer
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `modulr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `modulr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Modulr** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your AI agent to **TaskForce** to natively manage your CRM workflow, cus
 - **Developers** — Connect your TaskForce database with external custom tools.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_taskforce_case**: Create a new case
 - **create_taskforce_lead**: Create a new lead
 - **get_taskforce_customer**: Get customer details
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `taskforce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `taskforce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TaskForce** tools.
 
 **Configuration:**

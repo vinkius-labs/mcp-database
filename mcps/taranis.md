@@ -42,7 +42,7 @@ No more manual field scouting or delayed threat identification. Your AI acts as 
 - **Ag Retailers** — identify treatment opportunities, plan product applications, and demonstrate ROI with before/after imagery
 
 
-## Available Tools
+## Available Tools (12)
 - **get_fields**: Returns field names, IDs, boundaries (GeoJSON polygons), area in hectares/acres, crop type, planting dates, and monitoring status. Essential for farm management overview and selecting target fields for threat detection.
 
 List all agricultural fields monitored by Taranis for a farm
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `taranis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `taranis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Taranis** tools.
 
 **Configuration:**

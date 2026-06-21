@@ -35,7 +35,7 @@ Connect your **OfficeRnD Flex** account to your AI agent and streamline your cow
 - **Office Admins** — automate the retrieval of member lists and invoice data for daily reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_booking_details**: Get specific booking details
 - **get_member_details**: Get specific member info
 - **list_bookings**: List resource bookings
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `officernd-flex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `officernd-flex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OfficeRnD Flex** tools.
 
 **Configuration:**

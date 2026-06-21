@@ -38,7 +38,7 @@ No more manual navigation through complex banking dashboards to verify a payment
 - **Customer Support** — quickly lookup transaction details and payment histories to provide rapid assistance
 
 
-## Available Tools
+## Available Tools (9)
 - **create_payment_order**: Provide the payment token, amount, currency, and order description.
 
 Creates a new payment order in Worldpay
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `worldpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `worldpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Worldpay** tools.
 
 **Configuration:**

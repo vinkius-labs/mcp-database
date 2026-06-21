@@ -35,7 +35,7 @@ No more manual scrolling through endless articles. Your AI acts as your dedicate
 - **Busy Professionals** — automate the process of marking articles as read and summarizing daily highlights through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **subscribe_to_feed**: Follow a new news source
 - **get_article_details**: Get full content of an article
 - **get_feed_metadata**: Get metadata for a specific feed
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `feedly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `feedly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Feedly** tools.
 
 **Configuration:**

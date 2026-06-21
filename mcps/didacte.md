@@ -32,7 +32,7 @@ Integrate **Didacte** (by **Workleap**), the powerful and user-friendly learning
 - **Hiring & Onboarding Teams** — Monitor progress of new hire training plans and certifications instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_metadata**: Retrieve metadata and usage limits for your Didacte organization
 - **get_course_details**: Get detailed settings and information for a specific course
 - **get_user_learning_profile**: Get full profile and summary for a specific user
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `didacte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `didacte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Didacte** tools.
 
 **Configuration:**

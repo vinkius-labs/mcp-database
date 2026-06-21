@@ -33,7 +33,7 @@ Empower your AI agent with the primary source for US corporate intelligence thro
 - **Academic Researchers** — access raw financial data for corporate governance and economic studies.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_company_concept**: g., Assets, Liabilities).
 
 Get a specific financial concept for a company
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sec-edgar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sec-edgar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SEC EDGAR** tools.
 
 **Configuration:**

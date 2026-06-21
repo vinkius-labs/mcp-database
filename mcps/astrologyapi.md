@@ -33,7 +33,7 @@ Empower your AI agent to orchestrate your celestial insights and astrological da
 - **Astrology Power Users** — integrate your existing spiritual data projects into your AI-driven daily routine to streamline your spiritual growth.
 
 
-## Available Tools
+## Available Tools (8)
 - **check_sade_sati**: Check Sade Sati status
 - **get_ashtakvarga_score**: Calculate ashtakvarga points
 - **get_basic_panchang**: Get daily panchang
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `astrologyapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `astrologyapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AstrologyAPI** tools.
 
 **Configuration:**

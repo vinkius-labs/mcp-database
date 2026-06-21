@@ -33,7 +33,7 @@ Connect your **Duo Security** instance to your AI agent to streamline identity m
 - **DevOps Engineers** — integrate identity checks and account provisioning into automated workflows
 
 
-## Available Tools
+## Available Tools (18)
 - **auth_status**: Poll for the status of an asynchronous authentication request
 - **auth**: Perform second-factor authentication
 - **bulk_create_users**: Create up to 100 users in one request
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `duo-security-two-factor-authentication-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `duo-security-two-factor-authentication-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Duo Security (Two-Factor Authentication API)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to the **Senado Federal** Open Data API to monitor the Brazilian legisla
 - **Civic Tech Developers** — integrate official government data into applications with ease.
 
 
-## Available Tools
+## Available Tools (21)
 - **get_comissao_composicao**: Get current members of a committee
 - **get_comissao**: Get detailed information about a specific committee
 - **get_legislatura_atual**: Get details of the current legislature
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `senado-federal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `senado-federal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Senado Federal** tools.
 
 **Configuration:**

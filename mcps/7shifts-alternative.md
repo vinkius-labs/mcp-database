@@ -31,7 +31,7 @@ Connect your **7shifts** restaurant management account to any AI agent and simpl
 - **Business Owners** — get instant bird's-eye views of active shifts and team structure via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_employee**: Create a new employee
 - **create_shift**: Create a new shift
 - **get_account_info**: Get my profile
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `7shifts-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `7shifts-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **7shifts** tools.
 
 **Configuration:**

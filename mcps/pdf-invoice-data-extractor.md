@@ -22,7 +22,7 @@ This MCP acts as a secure, local document processor. Because 90% of modern invoi
 - **Accountant Ready:** Ask the AI: 'Extract the supplier name and total tax amount from this invoice and format it for my ERP.'
 
 
-## Available Tools
+## Available Tools (1)
 - **extract_pdf_invoice_data**: It extracts the raw text directly.
 
 Extract pure text from a digital PDF invoice entirely offline. Use this so the AI can extract NIF, totals, and suppliers without uploading sensitive tax documents to the cloud
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pdf-invoice-data-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pdf-invoice-data-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PDF Invoice Data Extractor** tools.
 
 **Configuration:**

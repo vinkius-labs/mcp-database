@@ -19,7 +19,7 @@ Grant your AI agent (like Claude or Cursor) absolute administrative dominion ove
 - **Community & Vendor Auditing** — Interrogate the platform using `list_users` and `get_user` to investigate behavioral profiles, while constantly scanning aggregated `list_reviews` to maintain healthy interactions.
 
 
-## Available Tools
+## Available Tools (9)
 - **approve_listing**: Approves a pending listing
 - **get_listing**: Retrieves details for a specific listing
 - **get_transaction**: Retrieves details for a specific transaction
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sharetribe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sharetribe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sharetribe** tools.
 
 **Configuration:**

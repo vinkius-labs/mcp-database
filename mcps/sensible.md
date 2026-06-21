@@ -31,7 +31,7 @@ Connect **Sensible** to your AI agent to seamlessly extract structured data from
 - **Data Analysts** — Convert unstructured document repositories into clean, structured datasets.
 
 
-## Available Tools
+## Available Tools (37)
 - **classify_async**: Classify a document into one of the document types asynchronously
 - **classify_sync**: Classify a document into one of the document types synchronously
 - **create_configuration**: Create a new configuration for a document type
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sensible` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sensible` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sensible** tools.
 
 **Configuration:**

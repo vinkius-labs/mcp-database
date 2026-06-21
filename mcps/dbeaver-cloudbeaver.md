@@ -33,7 +33,7 @@ Connect your **CloudBeaver** (DBeaver Cloud) instance to any AI agent to streaml
 - **Data Engineers** — check available drivers and export capabilities for data pipelines
 
 
-## Available Tools
+## Available Tools (19)
 - **add_connections_access**: Grants users or teams access to specific connections
 - **auth_login**: Authenticates a session using a provider and credentials
 - **configure_server**: Updates the main server configuration
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dbeaver-cloudbeaver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dbeaver-cloudbeaver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DBeaver (CloudBeaver)** tools.
 
 **Configuration:**

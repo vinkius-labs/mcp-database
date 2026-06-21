@@ -18,7 +18,7 @@ Surgically extract fields from complex API responses using JSONPath Plus (8M+ we
 - **Token Efficient:** Extract only the 3 fields you need from a 5,000-token payload.
 
 
-## Available Tools
+## Available Tools (1)
 - **query_json**: Pass the raw JSON string and a JSONPath expression like "$.orders[0].total_price" or "$.users[*].email". Returns all matching values.
 
 Queries and extracts specific values from massive JSON payloads using JSONPath expressions. Eliminates the need to send entire API responses to the LLM context window
@@ -62,7 +62,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `json-path-query-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `json-path-query-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSON Path Query Engine** tools.
 
 **Configuration:**

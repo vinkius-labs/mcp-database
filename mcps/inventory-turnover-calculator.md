@@ -13,7 +13,7 @@ Calculate inventory turnover ratio, DSI, and compare performance against industr
 The Inventory Turnover Calculator provides essential metrics for managing stock efficiency. Use `calculate_turnover_metrics` to compute your turnover ratio, Days Sales of Inventory (DSI), and daily inventory value based on annual COGS and average inventory value. You can also use `get_industry_benchmarks` to see target ranges for Retail, Manufacturing, and Distribution sectors, and `analyze_sector_efficiency` to evaluate how your current performance compares to these industry standards.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_sector_efficiency**: Evaluate sector efficiency
 - **calculate_turnover_metrics**: Calculate inventory turnover metrics
 - **get_industry_benchmarks**: Retrieve industry benchmark ranges
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inventory-turnover-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inventory-turnover-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Inventory Turnover Calculator** tools.
 
 **Configuration:**

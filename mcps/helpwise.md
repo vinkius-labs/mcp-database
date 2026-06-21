@@ -33,7 +33,7 @@ Connect your **Helpwise** account to any AI agent and manage your shared inboxes
 - **Operations Managers** — audit communication history and manage contact databases through AI
 
 
-## Available Tools
+## Available Tools (7)
 - **create_contact**: Create a new contact
 - **get_conversation_details**: Get details for a specific conversation
 - **list_contacts**: List Helpwise contacts
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `helpwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `helpwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Helpwise** tools.
 
 **Configuration:**

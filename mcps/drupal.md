@@ -36,7 +36,7 @@ Connect your **Drupal** site to any AI agent and take full control of your headl
 - **Ops Teams** — audit registered users and monitor managed file storage in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_node**: Provision a highly-available JSON Payload writing Rows into Drupal entities
 - **wipe_cms_node**: Irreversibly vaporize explicit App nodes dropping live Document entities
 - **get_file_metadata**: Retrieve the exact structural matching verifying File storage
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `drupal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `drupal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Drupal** tools.
 
 **Configuration:**

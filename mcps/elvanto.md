@@ -26,7 +26,7 @@ Connect your **Elvanto** account to any AI agent to manage your church database 
 3. Start managing your directory from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (46)
 - **add_group_person**: Add a person to a group, or change their position
 - **add_person_to_flow_step**: Adds a person to a specified People Flow Step
 - **create_calendar_event**: Create a new calendar event
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elvanto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elvanto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elvanto** tools.
 
 **Configuration:**

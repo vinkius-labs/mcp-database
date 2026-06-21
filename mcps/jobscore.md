@@ -13,7 +13,7 @@ Manage jobs, candidates, and hiring teams via JobScore ATS API.
 Empower your AI agents with JobScore's comprehensive applicant tracking system. This MCP server allows you to list and retrieve job postings, track candidates, manage hiring teams and departments, and view hiring sources directly through the JobScore API. Ideal for automating recruitment workflows and talent acquisition.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_candidate**: Returns contact history, resume highlights (if available), and current application status. Use this before an interview or when evaluating an applicant.
 
 Retrieves details for a specific candidate
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jobscore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jobscore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JobScore** tools.
 
 **Configuration:**

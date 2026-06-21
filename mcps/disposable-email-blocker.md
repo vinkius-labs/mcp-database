@@ -18,7 +18,7 @@ When a Martech AI Agent reads a form submission from a user with the email `ceo@
 - **Reputation Shield:** Allows Marketing Agents to definitively reject low-quality leads before inserting them into a CRM like Salesforce or HubSpot.
 
 
-## Available Tools
+## Available Tools (1)
 - **check_disposable**: Pass the full email address and the engine checks the domain against a curated offline database of disposable email providers. Returns whether the email is disposable or legitimate.
 
 Checks if an email belongs to a disposable or temporary email provider. Protects Sender Reputation for Martech AI Agents
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `disposable-email-blocker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `disposable-email-blocker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Disposable Email Blocker** tools.
 
 **Configuration:**

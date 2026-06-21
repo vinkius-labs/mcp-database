@@ -13,7 +13,7 @@ Discover your Chinese zodiac animal, element, and astrological compatibility.
 The Chinese Zodiac Calculator connects AI agents to the ancient wisdom of the 12-year zodiac cycle. Using tools like `get_zodiac_details`, `check_compatibility`, and `get_animal_profile`, you can uncover the specific animal, element (Wood, Fire, Earth, Metal, or Water), and polarity (Yin/Yang) associated with any birth year. It also provides deep insights into personality traits and how different signs interact through astrological harmony or clashes.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_animal_profile**: s. Monkey, Rat, etc.) to see its characteristics.
 
 Get detailed profile for a specific zodiac animal
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chinese-zodiac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chinese-zodiac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chinese Zodiac Calculator** tools.
 
 **Configuration:**

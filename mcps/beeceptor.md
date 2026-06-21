@@ -33,7 +33,7 @@ Connect **Beeceptor** to your AI agent to build, manage, and monitor mock APIs a
 - **Backend Developers** — debug webhooks and third-party callbacks by inspecting payloads in real-time.
 
 
-## Available Tools
+## Available Tools (29)
 - **add_certificate**: Add mTLS certificate
 - **bulk_replace_rules**: Bulk replace mock rules
 - **create_rule**: Create mock rule
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `beeceptor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `beeceptor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Beeceptor** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Facebook Pages** account to any AI agent and take full control of
 - **Marketing Teams** — pull insights and manage page content directly from your AI-powered workflow
 
 
-## Available Tools
+## Available Tools (12)
 - **delete_post**: Delete a post from the Facebook Page
 - **get_me**: Get current token identity info (Page info)
 - **get_page_info**: Get basic info for the Facebook Page
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `facebook-pages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `facebook-pages` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Facebook Pages** tools.
 
 **Configuration:**

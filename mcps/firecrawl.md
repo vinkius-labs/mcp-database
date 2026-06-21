@@ -32,7 +32,7 @@ Connect your AI agent to **Firecrawl** — the most popular web scraping API bui
 - **Data Engineers** — build pipelines that convert web content into structured data
 
 
-## Available Tools
+## Available Tools (4)
 - **crawl_site**: Each page is scraped and converted to Markdown. Returns a job ID to track progress.
 
 Crawl an entire website and extract content from multiple pages. Returns a job ID for async tracking
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `firecrawl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `firecrawl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Firecrawl** tools.
 
 **Configuration:**

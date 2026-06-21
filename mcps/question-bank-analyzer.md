@@ -13,7 +13,7 @@ Analyze study performance by identifying critical topics and exam board focus ar
 The Question Bank Analyzer is a specialized performance engine that evaluates your learning efficiency. By using tools like `analyze_topic_performance`, you can identify subjects where your accuracy falls below the 50% critical threshold. The server also allows you to track progress over time with `track_mock_evolution` and align your study plan with specific exam boards using `fetch_board_focus`. Finally, use `calculate_priority_gaps` to find high-priority topics that are both critical for you and highly relevant to your target examiner.
 
 
-## Available Tools
+## Available Tools (4)
 - **analyze_topic_performance**: Analyze accuracy rates across different subjects
 - **calculate_priority_gaps**: Find high-priority study areas by cross-referencing bad performance with board importance
 - **fetch_board_focus**: g., CESPE, FGV) and returns its focus areas.
@@ -82,7 +82,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `question-bank-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `question-bank-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Question Bank Analyzer** tools.
 
 **Configuration:**

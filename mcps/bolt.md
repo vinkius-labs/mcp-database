@@ -34,7 +34,7 @@ Connect your **Bolt Merchant** account to any AI agent and orchestrate your chec
 - **Developers** — verify API integrations and order token generation using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **capture_transaction**: Capture a previously authorized transaction
 - **create_order_token**: Create an order token to initiate checkout
 - **get_account_details**: Get current account details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bolt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bolt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bolt** tools.
 
 **Configuration:**

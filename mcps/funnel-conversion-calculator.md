@@ -20,7 +20,7 @@ Connect this Funnel Conversion Calculator to any AI agent. The funnel is a criti
 The bridge this provides is direct: It connects raw marketing data volume into actionable financial projections, telling your team exactly how much more money a 1% improvement at the Consideration stage could generate.
 
 
-## Available Tools
+## Available Tools (3)
 - **identify_bottleneck**: Returns the bottleneck stage name, relative loss percentage, and improvement leverage calculation.
 
 Identify the funnel stage with the highest relative drop-off rate
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `funnel-conversion-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `funnel-conversion-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Funnel Conversion Calculator** tools.
 
 **Configuration:**

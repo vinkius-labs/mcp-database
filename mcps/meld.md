@@ -27,7 +27,7 @@ Connect your **Meld** account to any AI agent and take full control of your digi
 3. Start managing your digital assets from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_info**: Get account information
 - **get_asset**: Get details for a specific asset
 - **get_exchange_rates**: Get real-time exchange rates
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meld` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meld** tools.
 
 **Configuration:**

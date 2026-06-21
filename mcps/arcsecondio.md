@@ -28,7 +28,7 @@ The **Arcsecond.io MCP Server** provides a unified natural language interface to
 - **Data Scientists** — Integrate astronomical data retrieval into automated research and analysis workflows.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_account_check**: Verify Arcsecond account connection
 - **get_object**: Get details for a specific astronomical object
 - **list_datasets**: List datasets available for an observatory
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arcsecondio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arcsecondio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Arcsecond.io** tools.
 
 **Configuration:**

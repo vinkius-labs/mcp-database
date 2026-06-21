@@ -29,7 +29,7 @@ Connect your **Acuity Scheduling** (by Squarespace) account to any AI agent and 
 - **Health Coaches** — Client scheduling with intake forms and availability
 
 
-## Available Tools
+## Available Tools (9)
 - **check_availability_dates**: Requires Appointment Type ID.
 
 Check which dates have available booking slots for a specific service and month
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `acuity-scheduling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `acuity-scheduling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Acuity Scheduling** tools.
 
 **Configuration:**

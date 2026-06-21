@@ -34,7 +34,7 @@ This integration uses Bitstamp's latest V2 API with high-security HMAC-SHA256 si
 - **Crypto Enthusiasts** — stay informed about market movements without leaving your workspace
 
 
-## Available Tools
+## Available Tools (7)
 - **cancel_order**: Cancel an open order
 - **get_balance**: Get account balances for all currencies
 - **get_open_orders**: Get all currently open orders
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bitstamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bitstamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bitstamp** tools.
 
 **Configuration:**

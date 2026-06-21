@@ -33,7 +33,7 @@ Mercado Livre is the largest e-commerce ecosystem in Latin America.
 - **Digital Marketers** — Quickly publish new campaigns and listings directly from chat
 
 
-## Available Tools
+## Available Tools (9)
 - **get_domain_attributes**: Get required attributes for a category/domain
 - **get_categories**: List top-level categories of Mercado Livre Brasil
 - **create_item**: Create a new listing
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mercado-livre-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mercado-livre-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mercado Livre Catalog** tools.
 
 **Configuration:**

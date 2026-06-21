@@ -33,7 +33,7 @@ Connect your **FusionAuth** instance to any AI agent to streamline identity mana
 - **Security Teams** — inspect user profiles and application access levels to ensure compliance and rapid incident response.
 
 
-## Available Tools
+## Available Tools (50)
 - **add_group_member**: Add a User to a Group
 - **create_api_key**: Create a new API Key
 - **create_application_role**: Create a new Application Role
@@ -152,7 +152,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fusionauth-enterprise-identity-auth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fusionauth-enterprise-identity-auth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FusionAuth (Enterprise Identity & Auth)** tools.
 
 **Configuration:**

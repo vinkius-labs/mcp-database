@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely troubleshoot application errors, 
 - **Plug & Play Troubleshooting:** Instantly gives your agent the eyes and ears it needs to debug production issues autonomously.
 
 
-## Available Tools
+## Available Tools (1)
 - **query_logs**: Do NOT include the table name in your query operations. The engine automatically prepends the authorized table name. Just provide the KQL operations (e.g., "| where TimeGenerated > ago(1h) | limit 10").
 
 Execute a Kusto (KQL) query against the configured Log Analytics table
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `azure-log-analytics-workspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `azure-log-analytics-workspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Azure Log Analytics Workspace** tools.
 
 **Configuration:**

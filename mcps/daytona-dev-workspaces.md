@@ -33,7 +33,7 @@ Connect your **Daytona** account to any AI agent to orchestrate cloud-based deve
 - **QA Teams** — Quickly recover sandboxes from error states or fork existing environments for debugging.
 
 
-## Available Tools
+## Available Tools (28)
 - **activate_snapshot**: Activate a snapshot
 - **archive_sandbox**: Archive a sandbox
 - **create_api_key**: Create a new Daytona API key
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `daytona-dev-workspaces` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `daytona-dev-workspaces` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Daytona (Dev Workspaces)** tools.
 
 **Configuration:**

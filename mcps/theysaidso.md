@@ -32,7 +32,7 @@ Connect the **TheySaidSo** API to your AI agent to enrich your conversations wit
 - **Writers & Editors** — verify famous sayings and find attribution for specific themes or authors
 
 
-## Available Tools
+## Available Tools (4)
 - **list_qod_categories**: List all available categories for the Quote of the Day
 - **get_quote_of_the_day**: The same quote is returned for the full calendar day.
 
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `theysaidso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `theysaidso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TheySaidSo** tools.
 
 **Configuration:**

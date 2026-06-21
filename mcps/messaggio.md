@@ -22,7 +22,7 @@ Messaggio is a high-performance multi-channel messaging platform, and this MCP s
 This integration is perfect for customer support teams needing reliable notification systems, marketing departments running multi-platform campaigns, and operations teams automating transactional alerts. By connecting Messaggio to an AI agent, you eliminate the complexity of managing separate APIs for each messaging app and allow your assistant to handle the failover logic and delivery optimization programmatically.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_messaggio_status**: Verify connectivity
 - **get_message_status**: Get message status
 - **get_sender**: Get sender details
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `messaggio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `messaggio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Messaggio** tools.
 
 **Configuration:**

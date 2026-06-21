@@ -33,7 +33,7 @@ Connect to the official **OpenFEC** API and bring transparency to federal electi
 - **Civic Tech Developers** — integrate official government data into applications with ease.
 
 
-## Available Tools
+## Available Tools (21)
 - **get_candidate_history**: Get the history of a candidate filings and designations
 - **get_candidate**: Get detailed information for a specific candidate by ID
 - **get_candidate_totals**: Get aggregated financial totals for a specific candidate
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openfec-federal-election-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openfec-federal-election-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenFEC (Federal Election Commission)** tools.
 
 **Configuration:**

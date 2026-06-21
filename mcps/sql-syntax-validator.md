@@ -18,7 +18,7 @@ AI Agents are great at writing SQL, but terrible reviewers. They often forget co
 - **Dialect Support:** Supports MySQL, PostgreSQL, MariaDB, and BigQuery syntax.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_sql**: Pass the raw SQL string and optionally the dialect (mysql, postgresql, mariadb, bigquery). The engine checks for syntax errors offline, preventing runtime crashes.
 
 Validates an SQL query by parsing its Abstract Syntax Tree (AST) offline before execution
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sql-syntax-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sql-syntax-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SQL Syntax Validator** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Estimate financial liabilities and settlement ranges for US residential and comm
 This MCP server provides specialized tools to calculate the financial impact of breaking a lease in the United States. Using `calculate_gross_loss`, you can determine total unpaid rent. With `get_state_mitigation_duty`, agents can retrieve state-specific legal obligations regarding a landlord's duty to mitigate damages. Finally, `estimate_lease_break_settlement` provides a calculated range for a reasonable settlement, accounting for re-letting costs and mitigation factors.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_gross_loss**: Calculate total uncollected rent
 - **get_state_mitigation_duty**: Retrieve state-specific legal mitigation obligations
 - **estimate_lease_break_settlement**: Estimate the reasonable settlement range for a lease break
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-lease-break-penalty-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-lease-break-penalty-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Lease Break Penalty Calculator** tools.
 
 **Configuration:**

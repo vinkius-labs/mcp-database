@@ -32,7 +32,7 @@ Connect your **Logflare** account to any AI agent to monitor, analyze, and manag
 - **Backend Developers** — ingest custom application logs during testing or debugging phases to monitor flow in real-time.
 
 
-## Available Tools
+## Available Tools (5)
 - **ingest_logs_by_id**: Requires ingest scope.
 
 Ingest log events into a Logflare source by UUID
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `logflare-log-management-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `logflare-log-management-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Logflare (Log Management Analytics)** tools.
 
 **Configuration:**

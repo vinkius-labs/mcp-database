@@ -32,7 +32,7 @@ Connect **LMNT** to your AI agent to generate high-quality, lifelike speech with
 - **Accessibility Teams** — creating responsive tools for users with visual impairments.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_voice**: Create a new voice (Instant Cloning)
 - **delete_voice**: Delete a voice by ID
 - **generate_speech**: Returns a base64 encoded audio stream.
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lmnt-ultra-low-latency-speech-synthesis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lmnt-ultra-low-latency-speech-synthesis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LMNT (Ultra-low Latency Speech Synthesis)** tools.
 
 **Configuration:**

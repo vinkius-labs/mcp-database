@@ -33,7 +33,7 @@ Connect **TheRundown** to any AI agent to retrieve the most accurate real-time s
 - **Developers** — Integrate sports data into your workflow or build sports-aware AI assistants without leaving your IDE.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_event_odds**: Retrieve the latest odds for a specific event
 - **get_event**: Retrieve detailed information for a specific event
 - **list_events_by_sport**: You can optionally include scores or all_periods.
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `therundown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `therundown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TheRundown** tools.
 
 **Configuration:**

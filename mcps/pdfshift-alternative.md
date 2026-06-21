@@ -33,7 +33,7 @@ Connect **PDFShift** to your AI agent to transform web content into professional
 - **Operations** — Convert internal HTML dashboards into shareable PDF reports for stakeholders.
 
 
-## Available Tools
+## Available Tools (15)
 - **convert_to_jpeg**: Convert URL or HTML to JPEG
 - **convert_to_pdf**: Use filename parameter to get a JSON response with an S3 URL instead of raw binary.
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pdfshift-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pdfshift-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PDFShift** tools.
 
 **Configuration:**

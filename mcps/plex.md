@@ -37,7 +37,7 @@ Connect to your **Plex Media Server** and manage your entire media library throu
 - **Family Managers** — see what family members are watching and manage playlists
 
 
-## Available Tools
+## Available Tools (15)
 - **get_all_episodes**: Useful for getting the complete episode list for a series.
 
 Get all episodes of a TV show
@@ -148,7 +148,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plex** tools.
 
 **Configuration:**

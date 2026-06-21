@@ -34,7 +34,7 @@ No more jumping between dashboards to check a customer's entitlement or manually
 - **Developers** — test billing flows and report usage for metered features straight from the terminal or IDE.
 
 
-## Available Tools
+## Available Tools (12)
 - **rest_cancel_subscription**: Cancel a subscription via REST API
 - **rest_create_customer**: Create a new customer via REST API
 - **rest_create_subscription**: Create a subscription via REST API
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stigg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stigg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stigg** tools.
 
 **Configuration:**

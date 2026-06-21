@@ -27,7 +27,7 @@ Connect your **QuickReply.ai** account to any AI agent and simplify your WhatsAp
 3. Start managing your WhatsApp automation from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (11)
 - **create_contact**: Create a new contact
 - **get_broadcast**: Get details for a specific broadcast
 - **get_template**: Get details for a specific message template
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `quickreplyai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `quickreplyai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QuickReply.ai** tools.
 
 **Configuration:**

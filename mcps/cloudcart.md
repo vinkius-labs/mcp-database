@@ -35,7 +35,7 @@ Connect your **CloudCart** account to any AI agent and take full control of your
 - **Marketing Teams** — verify product metadata and brand associations across the catalog
 
 
-## Available Tools
+## Available Tools (8)
 - **get_abandoned_carts**: Retrieve a list of abandoned shopping carts
 - **get_order_store_details**: Get detailed information for a specific order
 - **get_product_store_details**: Get detailed information for a specific product
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudcart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudcart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CloudCart** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **MailSlurp** account to any AI agent to automate your email testin
 - **Product Teams** — Monitor and audit automated communication paths and email delivery results effortlessly
 
 
-## Available Tools
+## Available Tools (8)
 - **create_random_inbox**: Create a new random email address
 - **delete_specific_inbox**: Delete an inbox and its emails
 - **list_inbox_emails**: List emails received by an inbox
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailslurp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailslurp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MailSlurp** tools.
 
 **Configuration:**

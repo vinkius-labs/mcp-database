@@ -34,7 +34,7 @@ Equip your AI agent with the power of the world's most comprehensive collaborati
 - **Researchers** — retrieve structured linguistic data for academic or professional projects.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_word_definition**: Get the definition of a word
 - **get_word_summary**: Get a short summary of a word or topic
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wiktionary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wiktionary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wiktionary** tools.
 
 **Configuration:**

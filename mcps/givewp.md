@@ -35,7 +35,7 @@ Connect your **GiveWP** (WordPress plugin) account to any AI agent to automate y
 - **Marketing Analysts** — automate the retrieval of donation statistics for weekly fundraising reports.
 
 
-## Available Tools
+## Available Tools (9)
 - **verify_api_connection**: Check connection
 - **find_donor_history**: Search by donor
 - **get_form_performance**: Get form stats
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `givewp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `givewp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GiveWP** tools.
 
 **Configuration:**

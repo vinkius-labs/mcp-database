@@ -32,7 +32,7 @@ Connect your AI agent to **ACRCloud**, the world-leading automatic content recog
 - **Music Enthusiasts** — explore discographies and find streaming links for your favorite tracks
 
 
-## Available Tools
+## Available Tools (5)
 - **get_track_by_isrc**: Retrieve detailed metadata for a track using its ISRC code
 - **identify_music_from_url**: Identify a song from an audio file URL (e.g., mp3, wav)
 - **search_albums**: Search for music albums by title or artist
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `acrcloud-music-recognition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `acrcloud-music-recognition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ACRCloud Music Recognition** tools.
 
 **Configuration:**

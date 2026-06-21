@@ -32,7 +32,7 @@ Connect your AI agent to **Vadoo AI** to natively generate multimedia content, c
 - **Developers** — Hook multimedia generation endpoints directly into your pipelines.
 
 
-## Available Tools
+## Available Tools (6)
 - **vadooai_check_generation_status**: Check video generation status
 - **vadooai_check_video_status**: Get details of a completed video
 - **vadooai_create_clips**: Create short clips from video
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vadoo-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vadoo-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vadoo AI** tools.
 
 **Configuration:**

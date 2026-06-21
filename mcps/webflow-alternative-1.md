@@ -33,7 +33,7 @@ Connect your **Webflow** account to any AI agent to automate your web design and
 - **SEO Specialists** — Audit and update page metadata across multiple sites efficiently.
 
 
-## Available Tools
+## Available Tools (19)
 - **list_assets**: ) uploaded to a specific site.
 
 List assets for a site
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webflow-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webflow-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Webflow** tools.
 
 **Configuration:**

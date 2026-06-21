@@ -33,7 +33,7 @@ Connect your **PhantomBuster** account to any AI agent and take full control of 
 - **Data Engineers** — audit Phantom configurations and results during integration development.
 
 
-## Available Tools
+## Available Tools (10)
 - **abort_phantom**: Stop a running Phantom
 - **get_phantombuster_account**: Get account settings and usage info
 - **get_phantom_setup**: Get configuration arguments for a Phantom
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `phantombuster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `phantombuster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PhantomBuster** tools.
 
 **Configuration:**

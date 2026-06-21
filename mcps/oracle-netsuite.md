@@ -38,7 +38,7 @@ Connect your **Oracle NetSuite** account to any AI agent and manage your unified
 - **NetSuite Administrators** — execute SuiteQL queries and audit record configurations rapidly
 
 
-## Available Tools
+## Available Tools (9)
 - **execute_suiteql**: SuiteQL supports SELECT, JOIN, WHERE, GROUP BY, ORDER BY, and aggregate functions. Example: SELECT id, companyname FROM customer WHERE isinactive = 'F' ORDER BY companyname
 
 Execute a SuiteQL query
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oracle-netsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oracle-netsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Oracle NetSuite** tools.
 
 **Configuration:**

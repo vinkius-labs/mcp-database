@@ -30,7 +30,7 @@ Connect your LLMs directly to **Netease Yunxin** (网易云信), the prominent I
 - **Gaming Companies** — Integrate autonomous room administration for massively multiplayer rooms using Yunxin chat functionality
 
 
-## Available Tools
+## Available Tools (11)
 - **block_im_user**: Block an IM User network
 - **create_chatroom**: Create a massive chatroom
 - **create_im_user**: Create an IM User
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `netease-yunxin-im` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `netease-yunxin-im` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Netease Yunxin IM** tools.
 
 **Configuration:**

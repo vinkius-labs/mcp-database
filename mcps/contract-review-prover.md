@@ -23,7 +23,7 @@ AI models summarize contracts instead of analyzing them. This tool forces clause
 **This tool provides structured analytical support. It is NOT legal advice. Always consult qualified legal counsel for binding decisions.**
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_contract_review**: You must: (1) score EVERY material clause 1-5 for risk with exposure and countermeasure, (2) check 10 standard protections (liability cap, indemnification, IP, confidentiality, termination, force majeure, data protection, non-compete, warranty, dispute resolution) — each PRESENT or MISSING, (3) analyze governing law, dispute venue, arbitration rules, cross-border enforceability, (4) calculate worst-case financial exposure with actual numbers — scenario × probability × impact, (5) map negotiation leverage for BOTH parties — switching costs, alternatives, time pressure, BATNA. If rejected, your review is a summary, not a risk analysis.
 
 Structured reflection tool for rigorous contract analysis with clause-level risk quantification. Catches High-Risk Clauses (uncapped liability, unlimited indemnification without countermeasure), Missing Protections (absent liability cap, no IP clause, no data protection — 10 standard protections unchecked), Jurisdiction Conflicts (governing law mismatches, unfavorable arbitration venue, cross-border enforcement gaps), Financial Exposure ("minimal risk" instead of "$2M+ uncapped consequential damages"), and Leverage Blindness (no BATNA, no switching cost analysis, no counterparty leverage mapped). Call once per contract review. Analytical framework, not legal advice
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contract-review-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contract-review-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contract Review Prover** tools.
 
 **Configuration:**

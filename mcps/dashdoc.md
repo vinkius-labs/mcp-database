@@ -32,7 +32,7 @@ Integrate **Dashdoc**, the leading transport management system (TMS), directly i
 - **Supply Chain Teams** — Monitor transport orders and partner contacts during logistics planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_new_address**: Persists site metadata including name, city, and postal code, returning the newly generated system ID for the address.
 
 Add a new address to your Dashdoc address book
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dashdoc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dashdoc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dashdoc** tools.
 
 **Configuration:**

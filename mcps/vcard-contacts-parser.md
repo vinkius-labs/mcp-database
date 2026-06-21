@@ -22,7 +22,7 @@ This MCP is a dedicated contact intelligence engine. It runs 100% local on your 
 - **Assistant Ready:** Ask your AI: 'Find the phone number for the CTO of Vinkius in my contacts.'
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_kindle_clippings**: Paste the raw text content from the "My Clippings.txt" file found on a Kindle device.
 
 Parse Amazon Kindle "My Clippings.txt" exports into structured JSON. Extracts highlights, notes, and bookmarks grouped by book
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vcard-contacts-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vcard-contacts-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **vCard Contacts Parser** tools.
 
 **Configuration:**

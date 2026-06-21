@@ -32,7 +32,7 @@ Integrate **Dryfta**, the all-in-one event management platform, directly into yo
 - **Operations Teams** — Research specific attendee details and exhibitor assignments instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dryfta_account_metadata**: Retrieve metadata and limits for your Dryfta account
 - **get_attendee_details**: Get detailed profile and registration status for a specific attendee
 - **quick_event_enrollment_audit**: Retrieve a high-level summary of attendee registration volumes
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dryfta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dryfta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dryfta** tools.
 
 **Configuration:**

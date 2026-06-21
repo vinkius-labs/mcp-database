@@ -32,7 +32,7 @@ Plug the sheer matching scale of Google Cloud's **Vertex AI Vector Search** dire
 - **Backend Architects** — verify the infrastructure configuration, shards, and node counts tied to critical vector databases deployed organization-wide.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_index_details**: Retrieves metadata and configuration for a specific vector index
 - **list_deployed_indexes**: Lists all indexes deployed to a specific endpoint
 - **list_index_endpoints**: Lists all index endpoints in the project
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vertex-ai-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vertex-ai-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vertex AI Vector Search** tools.
 
 **Configuration:**

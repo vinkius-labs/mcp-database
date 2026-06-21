@@ -32,7 +32,7 @@ Integrate **EX.CO**, the leading video experience platform, directly into your A
 - **Operations Teams** — Monitor interactive content performance and organizational EX.CO metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_ex_co_account_metadata**: Retrieve metadata and limits for your EX.CO account
 - **get_video_analytics_summary**: Get a high-level summary of video performance and engagement
 - **get_content_detailed_intelligence**: Get detailed settings and performance data for a specific content item
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exco-video-experience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exco-video-experience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EX.CO Video Experience** tools.
 
 **Configuration:**

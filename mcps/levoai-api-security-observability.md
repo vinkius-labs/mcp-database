@@ -34,7 +34,7 @@ Connect your **Levo.ai** account to any AI agent and take full control of your A
 - **Compliance Officers** — automate the auditing of regulated data flows and report on global API security posture across different environments
 
 
-## Available Tools
+## Available Tools (10)
 - **list_applications**: List all API applications (services) tracked by Levo.ai
 - **list_catalog_endpoints**: Identifies REST, GraphQL, gRPC, and SOAP endpoints — including undocumented shadow and zombie APIs mapped dynamically.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `levoai-api-security-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `levoai-api-security-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Levo.ai (API Security & Observability)** tools.
 
 **Configuration:**

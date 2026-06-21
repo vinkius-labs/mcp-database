@@ -35,7 +35,7 @@ Equip your AI agent with the most comprehensive US state-level legislative intel
 - **Legal Professionals** — verify the current status and versions of state-level legislation.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_bill_details**: Get bill details
 - **get_committee_details**: Get committee details
 - **get_legislator_details**: Get legislator details
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openstates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openstates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenStates** tools.
 
 **Configuration:**

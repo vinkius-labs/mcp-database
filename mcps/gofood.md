@@ -36,7 +36,7 @@ No more juggling between multiple dashboards to check order status or update men
 - **Operations Teams** — monitor promo campaigns, handle order lifecycle management, and track payment transactions from a single conversational interface
 
 
-## Available Tools
+## Available Tools (12)
 - **accept_order**: Accept a pending GoFood order
 - **cancel_order**: Cancel a GoFood order
 - **create_promo**: Create a new promo for a GoFood outlet
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gofood` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gofood` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoFood** tools.
 
 **Configuration:**

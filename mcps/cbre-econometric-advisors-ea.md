@@ -35,7 +35,7 @@ Connect your **CBRE Econometric Advisors (EA)** licensed subscription to any AI 
 - **Asset Managers** — verify vacancy rates and rent growth dynamics for portfolio strategy
 
 
-## Available Tools
+## Available Tools (8)
 - **get_market_cap_rates**: Retrieve cap rates and NOI metrics for a market sector
 - **get_market_forecasts**: Retrieve historical and forecast data for a market
 - **get_macroeconomic_data**: Get macro indicators (population, employment, income) for a market
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cbre-econometric-advisors-ea` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cbre-econometric-advisors-ea` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CBRE Econometric Advisors (EA)** tools.
 
 **Configuration:**

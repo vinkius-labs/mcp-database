@@ -34,7 +34,7 @@ Connect your **Flow** account to any AI agent and automate your project manageme
 - **Marketing Agencies** — manage client projects and task lists through simple AI commands to stay organized and productive.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_task_comment**: Post a comment
 - **create_task**: Create a new task
 - **get_project**: Get project details
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flow** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the **Research Organization Registry (ROR)**, the community-led regis
 - **Policy Analysts** — Aggregate research output data by accurately identifying parent and child organizations.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_organization**: Accepts full URL, domain+ID, or ID only.
 
 Retrieve a single ROR organization record
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ror-api-research-organization-registry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ror-api-research-organization-registry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ROR API (Research Organization Registry)** tools.
 
 **Configuration:**

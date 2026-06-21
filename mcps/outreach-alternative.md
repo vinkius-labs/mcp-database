@@ -35,7 +35,7 @@ No more manual status checking in the CRM. Your AI acts as a dedicated sales ope
 - **Growth Marketers** — streamline the retrieval of account metadata and monitor pipeline health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_to_sequence**: Enroll prospect in sequence
 - **create_prospect**: Add new prospect
 - **get_user_info**: Get account profile
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `outreach-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `outreach-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Outreach** tools.
 
 **Configuration:**

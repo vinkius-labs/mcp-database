@@ -33,7 +33,7 @@ Connect your **Logto** authentication platform to any AI agent and take full con
 - **Support Teams** — Inspect user metadata and account statuses to resolve identity-related tickets faster.
 
 
-## Available Tools
+## Available Tools (23)
 - **bind_mfa_verification**: Bind a new MFA factor (TOTP, WebAuthn)
 - **create_organization**: Create a new organization
 - **create_resource**: Create a new API resource
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `logto-auth-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `logto-auth-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Logto (Auth Platform)** tools.
 
 **Configuration:**

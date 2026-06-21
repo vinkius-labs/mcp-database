@@ -34,7 +34,7 @@ Transform your team’s engagement and performance with **15Five**, the holistic
 - **Operations Teams** — automate data retrieval for performance reporting and organizational health monitoring
 
 
-## Available Tools
+## Available Tools (6)
 - **list_users**: Use this to find the identifier for a person.
 
 List all active employees and users in the 15Five organization
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `15five` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `15five` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **15Five** tools.
 
 **Configuration:**

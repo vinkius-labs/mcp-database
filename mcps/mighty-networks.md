@@ -33,7 +33,7 @@ Connect your **Mighty Networks** community to any AI agent and manage your audie
 - **Marketers** — track community engagement metrics
 
 
-## Available Tools
+## Available Tools (12)
 - **invite_member**: Add member to network
 - **create_space_post**: Publish content to space
 - **create_new_space**: Add new community/course
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mighty-networks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mighty-networks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mighty Networks** tools.
 
 **Configuration:**

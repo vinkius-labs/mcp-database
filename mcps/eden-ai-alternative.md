@@ -33,7 +33,7 @@ Connect **Eden AI** to your AI agent and unlock the power of over 100 leading AI
 - **Data Scientists** — generate embeddings across various providers to find the best fit for RAG or semantic search applications
 
 
-## Available Tools
+## Available Tools (13)
 - **check_credits**: Check current Eden AI credit balance
 - **list_files**: List all files uploaded to Eden AI
 - **chat_completions**: Use @edenai for smart routing or specify provider/model.
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eden-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eden-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eden AI** tools.
 
 **Configuration:**

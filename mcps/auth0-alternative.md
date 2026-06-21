@@ -37,7 +37,7 @@ No more wrestling with hundred browser tabs. Your AI acts as a dedicated identit
 - **Product Managers** — monitor user growth, check organization membership and review application registrations
 
 
-## Available Tools
+## Available Tools (13)
 - **create_user**: Requires the connection (e.g. "Username-Password-Authentication" for default DB connection) and email. Optionally set a password and username. Returns the created user with their user_id.
 
 Create a new user in Auth0
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `auth0-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `auth0-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Auth0** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate US Federal post-judgment interest accrual based on 28 U.S.C. § 1961 a
 This MCP server provides precise calculations for US Federal post-judgment interest as mandated by 28 U.S.C. § 1961. By using weekly Treasury Bill rates, the server allows AI agents to determine exactly how much interest has accumulated on a court judgment between a specific judgment date and a target payment date. Use `rate_lookup` to find the annual rate for any given week, `interest_accrual_calc` to compute total interest and updated balance, or `interest_scenario_comparison` to evaluate the cost difference between early and late payments.
 
 
-## Available Tools
+## Available Tools (3)
 - **interest_accrual_calc**: Calculate total interest and balance for a judgment
 - **rate_lookup**: Look up the annual interest rate for a specific date
 - **interest_scenario_comparison**: Compare interest costs between two payment dates
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-post-judgment-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-post-judgment-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Post-Judgment Interest Calculator** tools.
 
 **Configuration:**

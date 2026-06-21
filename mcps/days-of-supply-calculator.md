@@ -13,7 +13,7 @@ Monitor inventory health by calculating stock coverage and identifying supply ri
 This MCP server provides specialized tools for inventory management. Use `get_sku_supply_metrics` to analyze individual items, `get_category_health_summary` to assess group performance, and `calculate_financial_exposure_by_tier` to identify capital tied up in overstock or at risk of stockout.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_category_health_summary**: Provides an aggregated view of inventory health for a specific group of items
 - **calculate_financial_exposure_by_tier**: Calculates the total monetary value of inventory held within different coverage levels
 - **get_sku_supply_metrics**: Calculates the specific supply duration and risk status for a single item
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `days-of-supply-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `days-of-supply-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Days of Supply Calculator** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Uniphore is a leading Conversation AI platform used by sales, support, and succe
 - **Operations** -- Search past meetings for specific topics or compliance keywords
 
 
-## Available Tools
+## Available Tools (8)
 - **get_action_items**: Get action items extracted from a meeting
 - **get_meeting_analytics**: Get conversation analytics and insights for a meeting
 - **get_meeting**: Get details of a specific meeting
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uniphore-conversation-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uniphore-conversation-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Uniphore Conversation AI** tools.
 
 **Configuration:**

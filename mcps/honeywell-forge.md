@@ -11,7 +11,7 @@ Connect Honeywell Forge to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (11)
 - **acknowledge_alarm**: Acknowledgment does not resolve or clear the underlying condition—it simply records that a human has reviewed the alarm and is aware of it. This updates the alarm state from "unacknowledged" to "acknowledged" in the Forge audit log, which is important for compliance and incident-tracking workflows. Provide the exact alarm ID as returned by get_alarms. Use this during incident response to track which alarms have been seen by the operations team.
 
 Acknowledge an active alarm in Honeywell Forge
@@ -72,7 +72,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `honeywell-forge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `honeywell-forge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Honeywell Forge** tools.
 
 **Configuration:**

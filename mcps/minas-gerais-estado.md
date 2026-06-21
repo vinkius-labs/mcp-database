@@ -32,7 +32,7 @@ Connect to the **Minas Gerais State Open Data Portal** to explore a vast reposit
 - **Developers** — integrate official state data into applications without manual portal navigation
 
 
-## Available Tools
+## Available Tools (10)
 - **list_groups**: List all groups (categories)
 - **get_group**: Get details and datasets of a group
 - **list_organizations**: List all organizations
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `minas-gerais-estado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `minas-gerais-estado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Minas Gerais (Estado)** tools.
 
 **Configuration:**

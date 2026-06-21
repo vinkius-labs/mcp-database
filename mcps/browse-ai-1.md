@@ -37,7 +37,7 @@ No more manual downloads or periodic checks. Your AI agent serves as your pipeli
 - **Developers** — verify robot configurations, monitor credit usage, and inspect JSON payloads rapidly
 
 
-## Available Tools
+## Available Tools (10)
 - **run_bulk_task**: Each set typically contains a different "originUrl". All extractions run concurrently on Browse AI infrastructure.
 
 Run a Browse AI robot in bulk mode across multiple URLs
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `browse-ai-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `browse-ai-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Browse AI** tools.
 
 **Configuration:**

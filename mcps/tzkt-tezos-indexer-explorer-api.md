@@ -33,7 +33,7 @@ Connect to the **TzKT API**, the most advanced indexer for the Tezos blockchain.
 - **DeFi Users** — Monitor wallet activity and track specific operation hashes without leaving the chat interface.
 
 
-## Available Tools
+## Available Tools (25)
 - **get_account_balance_history**: Get historical balance changes for an account
 - **get_account_report**: Generate a JSON report of account activity
 - **get_account**: Get detailed information for a specific account
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tzkt-tezos-indexer-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tzkt-tezos-indexer-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TzKT (Tezos Indexer & Explorer API)** tools.
 
 **Configuration:**

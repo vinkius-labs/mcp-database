@@ -32,7 +32,7 @@ Connect your conversational assistant directly into **RudderStack**, the leading
 - **Enterprise Administrators** — Dynamically assess overall flow operations safely locally organically properly strictly properly optimally correctly seamlessly perfectly strictly cleanly simply gracefully organically purely natively gracefully.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_destination**: Retrieves details for a specific data destination
 - **get_source**: Retrieves details for a specific data source
 - **list_audiences**: Lists all defined user audiences
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rudderstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rudderstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RudderStack** tools.
 
 **Configuration:**

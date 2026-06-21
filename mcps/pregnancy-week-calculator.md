@@ -13,7 +13,7 @@ Track your pregnancy progress, from gestational age to weekly fetal milestones.
 This MCP server provides essential tools for tracking pregnancy. Use `calculate_gestation` to find out how many weeks pregnant you are based on your last menstrual period or conception date. You can also use `get_due_date` to estimate your baby's arrival, `get_pregnancy_stage` to identify your current trimester, and `get_weekly_milestone` to learn about fetal development each week.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_current_gestation**: Calculate current gestational age
 - **get_estimated_due_date**: Get the estimated due date
 - **get_pregnancy_stage**: Get the current pregnancy stage
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pregnancy-week-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pregnancy-week-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pregnancy Week Calculator** tools.
 
 **Configuration:**

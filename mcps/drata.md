@@ -36,7 +36,7 @@ Connect your **Drata** account to any AI agent and take full control of your con
 - **Developers** — test and debug continuous compliance integrations through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **drata_get_control**: Returns passing/failing status, which automated tests provide evidence for this control, the explicit auditor language defining the risk logic, and any manual evidence uploads. Use to investigate why a control is failing, what evidence supports it, or to prepare for auditor questions about a specific requirement.
 
 Get detailed status of a specific Drata control — pass/fail state, automated test evidence, and auditor-facing risk language
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `drata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `drata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Drata** tools.
 
 **Configuration:**

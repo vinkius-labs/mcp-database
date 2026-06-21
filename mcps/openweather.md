@@ -39,7 +39,7 @@ No more checking weather apps — just ask your AI.
 - **Researchers** — access historical weather data and air quality trends
 
 
-## Available Tools
+## Available Tools (11)
 - **geocode**: Returns the top 5 matching locations with their coordinates, country codes and state names. Use these coordinates with other weather tools.
 
 Convert a city name to coordinates
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenWeather** tools.
 
 **Configuration:**

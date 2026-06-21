@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire global communication strategy w
 - **Business Owners** — automate omnichannel querying to orchestrate your data-driven communication strategy smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_balance**: Get current MessageBird account balance
 - **get_contact**: Get details for a specific contact
 - **get_group**: Get details for a specific group
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `messagebird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `messagebird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MessageBird** tools.
 
 **Configuration:**

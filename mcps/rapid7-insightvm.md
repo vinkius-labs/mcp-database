@@ -33,7 +33,7 @@ Connect your **Rapid7 InsightVM** (formerly Nexpose) platform directly to your A
 - **Network Engineers** — Evaluate site configurations directly when provisioning new subnets to ensure full scanning scope coverage.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_asset**: Retrieves detailed information for a specific asset
 - **get_asset_vulnerabilities**: Lists all vulnerabilities found on a specific asset
 - **get_scan**: Retrieves execution status and results for a specific scan
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rapid7-insightvm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rapid7-insightvm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rapid7 InsightVM** tools.
 
 **Configuration:**

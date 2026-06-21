@@ -32,7 +32,7 @@ Connect your AI to **Sinch**, the global cloud communications platform for SMS m
 - **Developers** — Automate SMS workflows and integrate messaging into pipelines.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_sms_batch**: This action is irreversible for the remaining messages.
 
 Cancels a pending SMS batch
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sinch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sinch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sinch** tools.
 
 **Configuration:**

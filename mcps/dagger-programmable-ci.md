@@ -33,7 +33,7 @@ Connect to the **Dagger Engine** to orchestrate your delivery pipelines using a 
 - **SREs** — Inspect engine states and orchestrate infrastructure tasks using programmable CI logic.
 
 
-## Available Tools
+## Available Tools (10)
 - **execute_graphql_query**: You can chain fields to create a Directed Acyclic Graph (DAG) of operations.
 
 Execute a raw GraphQL query against the Dagger engine
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dagger-programmable-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dagger-programmable-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dagger (Programmable CI)** tools.
 
 **Configuration:**

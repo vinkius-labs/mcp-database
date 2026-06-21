@@ -21,7 +21,7 @@ Your AI agent gains the immediate ability to close deals inside a conversation. 
 - **Absolute Containment:** Because this is strictly a "Push-only" creation tool, the agent cannot read your Stripe dashboard, cannot issue refunds, and cannot see your bank account details. It only generates links. A completely secure, one-way funnel.
 
 
-## Available Tools
+## Available Tools (1)
 - **create_stripe_payment_link**: Provide the product name, the amount in cents (e.g. 5000 for $50.00), and the currency code (e.g. "usd" or "brl"). Send the resulting checkoutUrl directly to the customer.
 
 Generates a unique Stripe Checkout Session URL for a custom amount
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stripe-payment-link-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stripe-payment-link-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stripe Payment Link Creator** tools.
 
 **Configuration:**

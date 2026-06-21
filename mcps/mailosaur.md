@@ -34,7 +34,7 @@ Connect your **Mailosaur** account to any AI agent to automate your email and SM
 - **Operations Teams** — Monitor automated communication flows and audit incoming messages effortlessly
 
 
-## Available Tools
+## Available Tools (8)
 - **create_virtual_server**: Create a new virtual server/inbox
 - **clear_server_inbox**: Delete all messages in a server
 - **delete_specific_message**: Permanently remove a message
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailosaur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailosaur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailosaur** tools.
 
 **Configuration:**

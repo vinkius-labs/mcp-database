@@ -35,7 +35,7 @@ No more jumping between project boards and financial reports. Your AI acts as a 
 - **Operations Teams** — streamline the retrieval of time logs and monitor financial billing directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_task**: Add new task
 - **get_api_status**: Check connection
 - **get_org_settings**: Get organization info
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `productiveio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `productiveio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Productive.io** tools.
 
 **Configuration:**

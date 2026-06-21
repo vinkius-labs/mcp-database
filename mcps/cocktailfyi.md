@@ -28,7 +28,7 @@ Connect **CocktailFyi**, the comprehensive cocktail database, to any AI agent an
 3. Start exploring cocktails from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (12)
 - **get_cocktail**: Get detailed cocktail information
 - **get_cocktails_by_category**: Get cocktails filtered by category
 - **get_ingredient**: Get detailed ingredient information
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cocktailfyi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cocktailfyi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CocktailFyi** tools.
 
 **Configuration:**

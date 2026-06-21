@@ -31,7 +31,7 @@ Integrate your AI with **UPYUN** (又拍云), one of the most prominent Cloud an
 - **Content Administrators** — Check what is currently inside specific UPYUN directories via natural language
 
 
-## Available Tools
+## Available Tools (5)
 - **create_text_file**: Create and upload a text file directly to UPYUN
 - **delete_file**: Delete a file from UPYUN
 - **get_file_info**: Get metadata about an UPYUN file
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `upyun-developer-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `upyun-developer-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UPYUN Developer Platform** tools.
 
 **Configuration:**

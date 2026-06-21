@@ -34,7 +34,7 @@ Connect your **Tingg (Cellulant)** payments account to any AI agent and simplify
 - **Product Teams** — automate payment requests and trigger user notifications via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Tingg API connectivity
 - **create_checkout_request**: Initiate a new payment request
 - **get_account_performance_metrics**: Retrieve performance stats
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tingg-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tingg-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tingg Insights** tools.
 
 **Configuration:**

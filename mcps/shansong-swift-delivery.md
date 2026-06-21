@@ -30,7 +30,7 @@ Equip your AI Agents with the **Shansong (闪送)** infrastructure logic, bringi
 - **Office Coordinators** — Empower internal company slackbots to dispatch official documents point-to-point instantly
 
 
-## Available Tools
+## Available Tools (10)
 - **add_tip**: Add a tip to encourage driver pickup
 - **calculate_fee**: Calculate delivery fee dynamically
 - **cancel_order**: Cancel a delivery dispatch
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shansong-swift-delivery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shansong-swift-delivery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shansong Swift Delivery** tools.
 
 **Configuration:**

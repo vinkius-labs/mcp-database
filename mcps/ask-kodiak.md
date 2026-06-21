@@ -28,7 +28,7 @@ The **Ask Kodiak MCP Server** brings deep commercial insurance intelligence dire
 - **Insurtech Developers** — Integrate commercial insurance data retrieval into your automated underwriting workflows.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_account_check**: Verify Ask Kodiak account connection
 - **get_company_products**: List all products offered by a specific company
 - **get_product**: Get full appetite and details for an insurance product
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ask-kodiak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ask-kodiak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ask Kodiak** tools.
 
 **Configuration:**

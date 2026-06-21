@@ -25,7 +25,7 @@ The **definitive Mega-Server** for weather and climate intelligence. Why install
 Power users, data scientists, multi-disciplinary analysts, and anyone building the most capable weather-aware AI agent imaginable.
 
 
-## Available Tools
+## Available Tools (15)
 - **get_weather_forecast**: Get weather forecast for any location (up to 16 days)
 - **get_climate_projection**: Get IPCC climate projections (2015–2100)
 - **get_ensemble_forecast**: Get probabilistic multi-model ensemble forecast
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-meteo-full-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-meteo-full-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open-Meteo Full Access** tools.
 
 **Configuration:**

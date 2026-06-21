@@ -34,7 +34,7 @@ Connect your **Loom** account to any AI agent and take full control of your asyn
 - **Remote Leaders** — manage team video updates and monitor viewership analytics to ensure critical information is being consumed effectively
 
 
-## Available Tools
+## Available Tools (8)
 - **list_videos**: List all Loom videos
 - **get_video**: Get video details
 - **delete_video**: This action cannot be undone.
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `loom-async-video-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `loom-async-video-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Loom (Async Video Messaging)** tools.
 
 **Configuration:**

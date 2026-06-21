@@ -19,7 +19,7 @@ LLMs only know the dollar exchange rate from their last training data cutoff. Th
 - **Zero Friction:** No authentication required. Just connect the MCP and your AI instantly understands 30+ global fiat currencies.
 
 
-## Available Tools
+## Available Tools (2)
 - **convert_currency**: It uses the European Central Bank reference rates. Accepts 3-letter ISO currency codes (e.g., USD, EUR, BRL, JPY).
 
 Converts an amount from one currency to another using exact real-time or historical exchange rates
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `real-time-currency-exchange` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `real-time-currency-exchange` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Real-Time Currency Exchange** tools.
 
 **Configuration:**

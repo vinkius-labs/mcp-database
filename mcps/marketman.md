@@ -21,7 +21,7 @@ Connect your **MarketMan** account to any AI agent — the restaurant inventory 
 - **Count Sheets** — Inventory counts with variance tracking
 
 
-## Available Tools
+## Available Tools (8)
 - **list_inventory**: "Are we low on anything?"
 
 List inventory items
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `marketman` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `marketman` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MarketMan** tools.
 
 **Configuration:**

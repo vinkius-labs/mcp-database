@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire football intelligence workflow 
 - **Operations Leads** — automate sports data querying to orchestrate cross-functional content teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_last_league_match**: Get information about the most recent match in a league
 - **get_league_matches**: Get all matches for a specific league and season
 - **get_match_details**: Get full details for a specific match ID
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openligadb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openligadb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenLigaDB** tools.
 
 **Configuration:**

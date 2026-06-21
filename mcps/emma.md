@@ -34,7 +34,7 @@ Connect your **Emma** (myemma.com) account to your AI agent and take full contro
 - **Support Teams** — verify a customer's subscription status and mailing history during assistance.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_mailings**: List sent and scheduled mailings
 - **list_members**: List mailing list members
 - **list_webhooks**: List active webhooks
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emma` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emma` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Emma** tools.
 
 **Configuration:**

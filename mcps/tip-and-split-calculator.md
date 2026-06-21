@@ -13,7 +13,7 @@ Calculate tip amounts, split bills among groups, and round totals for easy payme
 This MCP server provides specialized tools to manage restaurant billing. Use `calculate_tip_details` to determine the tip amount and final total based on a subtotal and percentage. Use `split_bill_share` to divide a bill among multiple people, ensuring everyone knows their individual share. Finally, use `format_practical_payment` to round amounts to practical increments like nickels, dimes, or dollars for easier physical or digital settlement.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_tip_details**: Calculate tip amount and final total
 - **format_practical_payment**: g., nickels, dimes).
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tip-and-split-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tip-and-split-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tip and Split Calculator** tools.
 
 **Configuration:**

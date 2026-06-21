@@ -30,7 +30,7 @@ The **Banco Inter MCP Server** transforms your AI agent into a secure, fully aut
 - **Corporate Administrators** — Monitor daily income seamlessly during chat sessions with AI models without security compromises.
 
 
-## Available Tools
+## Available Tools (8)
 - **inter_create_boleto**: Gerar um Boleto de Cobrança Bancário (Banco Inter)
 - **inter_create_pix_billing**: Obrigatório incluir cpfCnpj e valor.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `banco-inter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `banco-inter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Banco Inter** tools.
 
 **Configuration:**

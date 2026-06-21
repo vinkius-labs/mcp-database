@@ -34,7 +34,7 @@ Empower your AI agent to access normalized financial data from various accountin
 - **Business Owners** — monitor your company's financial health and commerce orders through simple natural language queries.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_balance_sheet**: Get balance sheet report
 - **list_bank_transactions**: List bank transactions
 - **get_cash_flow**: Get cash flow statement
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `railz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `railz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Railz** tools.
 
 **Configuration:**

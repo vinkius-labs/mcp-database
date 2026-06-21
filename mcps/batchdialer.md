@@ -33,7 +33,7 @@ Connect your **BatchDialer** account to any AI agent and take full control of yo
 - **Ops Teams** — monitor phone number health and call logs to optimize outbound strategy.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_lead**: Add a new lead/contact
 - **get_call_details**: Get details of a specific call
 - **get_campaign**: Get specific campaign details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `batchdialer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `batchdialer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BatchDialer** tools.
 
 **Configuration:**

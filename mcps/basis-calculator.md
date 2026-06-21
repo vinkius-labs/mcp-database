@@ -13,7 +13,7 @@ Calculate and analyze commodity basis by comparing local physical prices against
 The Basis Calculator MCP server provides AI agents with specialized tools to determine market parity for commodities. Using `calculate_current_basis`, agents can compute the absolute basis value and identify if a market is Above or Below Parity. The server also includes `get_historical_averages` to benchmark current prices against historical regional data, and `get_seasonality_trend` to predict basis movements during Harvest or Off-season periods.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_current_basis**: Positive is Above Parity, negative is Below Parity.
 
 Determine the absolute basis value and its market classification based on current pricing
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `basis-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `basis-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Basis Calculator** tools.
 
 **Configuration:**

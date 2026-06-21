@@ -32,7 +32,7 @@ Integrate **Discourse**, the open-source platform for community discussion, dire
 - **Content Strategists** — Monitor trending topics and category engagement to inform community planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_site_configuration**: Retrieve general settings and metadata for the Discourse instance
 - **get_topic_details**: Get the full content and post list for a specific topic
 - **get_user_profile**: Get detailed profile information for a specific user by username
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `discourse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `discourse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Discourse** tools.
 
 **Configuration:**

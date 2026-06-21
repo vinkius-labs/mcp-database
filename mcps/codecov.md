@@ -35,7 +35,7 @@ Connect your **Codecov** account to any AI agent and take full control of your t
 - **Quality Assurance** — verify test completeness and monitor coverage flags across platforms
 
 
-## Available Tools
+## Available Tools (8)
 - **get_commit_coverage_totals**: Retrieve aggregate coverage totals for a specific commit SHA
 - **get_my_codecov_profile**: Retrieve information about the authenticated user
 - **get_repository_coverage_details**: Get detailed coverage information for a specific repository
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `codecov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `codecov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Codecov** tools.
 
 **Configuration:**

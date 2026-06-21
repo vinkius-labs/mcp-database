@@ -35,7 +35,7 @@ No more manual status checking or digging through donation tables in the portal.
 - **Operations Leads** — monitor webhook activity and verify API health through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_recurring_plan**: Cancel a recurring donation
 - **check_api_health**: Verify Donorbox API connectivity
 - **create_new_donor**: Requires first name, last name, and email.
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `donorbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `donorbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Donorbox** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual toggling between social apps or missing important mentions in the
 - **Researchers** — analyze trending feeds and search for influence patterns through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_post**: Post to Bluesky
 - **follow_user**: Follow an account
 - **get_user_posts**: List user posts
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bluesky-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bluesky-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bluesky Social** tools.
 
 **Configuration:**

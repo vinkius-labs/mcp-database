@@ -27,7 +27,7 @@ Connect your **Middesk** account to automate Business Identity (KYB) and complia
 3. Start verifying businesses directly from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (9)
 - **autocomplete_identity**: Autocomplete business identity
 - **create_business**: Requires legal name.
 
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `middesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `middesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Middesk** tools.
 
 **Configuration:**

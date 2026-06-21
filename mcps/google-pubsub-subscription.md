@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely operate as a highly scalable back
 - **Plug & Play Worker:** Instantly turns your AI into an asynchronous background worker capable of chewing through millions of queued tasks.
 
 
-## Available Tools
+## Available Tools (2)
 - **acknowledge_messages**: Acknowledge messages to remove them from the Pub/Sub Subscription
 - **pull_messages**: You MUST acknowledge the messages using their ackIds after you process them, otherwise they will be redelivered.
 
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-pubsub-subscription` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-pubsub-subscription` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Pub/Sub Subscription** tools.
 
 **Configuration:**

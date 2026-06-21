@@ -28,7 +28,7 @@ Connect **TarotAPI** to any AI agent and access the complete 78-card tarot deck 
 3. Start reading tarot from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (6)
 - **get_api_info**: Get TarotAPI information
 - **get_card**: Includes full meanings (upright and reversed), keywords, fortune telling interpretations, description, and card image. Use short names like "ar01" (The Magician), "swac" (Ace of Cups), "wa02" (Two of Wands), etc.
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tarotapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tarotapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TarotAPI** tools.
 
 **Configuration:**

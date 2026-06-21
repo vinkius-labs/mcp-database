@@ -28,7 +28,7 @@ The **Attio MCP Server** brings powerful CRM capabilities directly to your AI ag
 - **Growth Marketers** — Programmatically assert records from new leads and enrich CRM data using AI-assisted tools.
 
 
-## Available Tools
+## Available Tools (9)
 - **assert_record**: Upsert a record (update if exists, create otherwise)
 - **create_record**: Create a new record in an object
 - **get_account_check**: Verify Attio account connection
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `attio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `attio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Attio** tools.
 
 **Configuration:**

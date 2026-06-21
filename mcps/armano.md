@@ -35,7 +35,7 @@ No more manual checking of individual employee cards or missing leave requests. 
 - **Developers** — integrate high-speed Armano HR data into custom internal tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **list_employees**: List all employees
 - **list_leaves**: List all leave requests
 - **list_projects**: List all projects
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `armano` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `armano` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Armano** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to **Arbiscan** to query the Arbitrum L2 network in real-t
 - **Security Researchers** — Quickly audit transaction history and internal calls for suspicious activity.
 
 
-## Available Tools
+## Available Tools (16)
 - **get_abi**: Get Contract ABI for Verified Source Codes
 - **get_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_balance**: Get Ether Balance for a Single Address
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arbiscan-arbitrum-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arbiscan-arbitrum-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Arbiscan (Arbitrum Explorer)** tools.
 
 **Configuration:**

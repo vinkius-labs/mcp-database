@@ -33,7 +33,7 @@ Connect your AI agent exclusively to your **Trend Micro Vision One** security in
 - **Threat Hunters** — Instantly recall the list of untrusted, blacklisted URLs intercepting external phishing campaigns or lateral movement attempts
 
 
-## Available Tools
+## Available Tools (8)
 - **get_vision_one_account**: Retrieves Trend Micro account and connectivity status
 - **get_alert_details**: Retrieves details for a specific workbench alert
 - **list_security_alerts**: Lists security alerts from the Trend Micro Vision One workbench
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trend-micro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trend-micro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Trend Micro** tools.
 
 **Configuration:**

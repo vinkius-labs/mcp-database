@@ -32,7 +32,7 @@ Connect to **Estated** to retrieve deep property insights across the United Stat
 - **Developers** — Integrate reliable property data into workflows without complex API implementations.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_property_combined_address**: Get property data using a single combined address string
 - **get_property_fips_apn**: Get property data using FIPS code and APN
 - **get_property_parsed_address**: Get property data using detailed parsed address components
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `estated` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `estated` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Estated** tools.
 
 **Configuration:**

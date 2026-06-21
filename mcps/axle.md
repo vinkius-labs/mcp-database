@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire logistics operation with **Axle
 - **Operations Leads** — identify shipment bottlenecks and optimize dispatch workflows directly from chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_check**: Verify Axle connection and system health
 - **get_driver_availability**: Check a driver remaining hours of service (HOS)
 - **get_driver**: Get specific profile details for a driver
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `axle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `axle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Axle** tools.
 
 **Configuration:**

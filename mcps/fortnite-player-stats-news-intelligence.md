@@ -32,7 +32,7 @@ Equip your AI agent with professional-grade player intelligence for the world's 
 - **Competitive Gamers** — monitor your own performance trends and stay updated on the latest meta-shifting news
 
 
-## Available Tools
+## Available Tools (11)
 - **check_creator_code**: Check if a Support-A-Creator code is active
 - **get_aes_keys**: Get encryption keys for Fortnite game files
 - **get_battle_royale_news**: Get current Battle Royale news and updates
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fortnite-player-stats-news-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fortnite-player-stats-news-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fortnite Player Stats & News Intelligence** tools.
 
 **Configuration:**

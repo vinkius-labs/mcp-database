@@ -34,7 +34,7 @@ Connect your **DecileHub** account to any AI agent and take full control of your
 - **Fund Administrators** — access filings, compliance reports, and company-level allocation data through conversational AI
 
 
-## Available Tools
+## Available Tools (12)
 - **check_decilehub_status**: Verify connectivity
 - **get_company**: Get company details
 - **get_filing_report**: Get filing report
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `decilehub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `decilehub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DecileHub** tools.
 
 **Configuration:**

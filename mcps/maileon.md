@@ -33,7 +33,7 @@ Connect your **Maileon** account to any AI agent to automate your professional e
 - **Developers** — Integrate Maileon's advanced mailing logic and reporting into your custom internal tools
 
 
-## Available Tools
+## Available Tools (9)
 - **list_account_contacts**: Use optional params for filtering.
 
 List all contacts in the Maileon account
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `maileon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `maileon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Maileon** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual entry of paper business cards. Your AI acts as your dedicated net
 - **Marketing Teams** — track profile engagement and click-through rates across digital assets through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **get_analytics_summary**: Get overall usage analytics
 - **get_click_analytics**: Get detailed click analytics
 - **create_lead**: Manually create a new lead
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cnnect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cnnect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cnnect** tools.
 
 **Configuration:**

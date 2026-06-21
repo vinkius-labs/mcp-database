@@ -36,7 +36,7 @@ Connect your **FastSpring** account to any AI agent and take full control of you
 - **Developers** — test and debug commerce integrations and verify subscription proration logic through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_subscription**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **charge_managed_subscription**: Enumerate explicitly attached structured rules exporting active Billing
 - **get_account_details**: Perform structural extraction of properties driving active Account logic
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fastspring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fastspring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FastSpring** tools.
 
 **Configuration:**

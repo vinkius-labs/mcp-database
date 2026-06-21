@@ -33,7 +33,7 @@ Connect to **Akash Network**, the world's first decentralized open-source cloud,
 - **Web3 Developers** — Build and host dApps on a truly decentralized cloud with automated resource management.
 
 
-## Available Tools
+## Available Tools (13)
 - **add_deposit**: Add USD funds to a deployment escrow
 - **close_deployment**: Close a deployment
 - **create_deployment**: 50 USD).
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `akash-network-decentralized-gpu-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `akash-network-decentralized-gpu-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Akash Network (Decentralized GPU & Cloud API)** tools.
 
 **Configuration:**

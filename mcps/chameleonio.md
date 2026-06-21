@@ -35,7 +35,7 @@ Connect your **Chameleon.io** account to any AI agent and take full control of y
 - **Developers** — verify event tracking and user identification data during integration
 
 
-## Available Tools
+## Available Tools (8)
 - **delete_chameleon_user**: Permanently delete a user and their data from Chameleon
 - **get_experience_details**: Get details for a specific experience
 - **identify_chameleon_user**: Identify or update a user in Chameleon
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chameleonio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chameleonio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chameleon.io** tools.
 
 **Configuration:**

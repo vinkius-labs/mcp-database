@@ -37,7 +37,7 @@ No more clicking through the Polar dashboard to check subscriptions or create di
 - **Marketing** — create promotional discounts, track checkout conversion and review webhook integrations
 
 
-## Available Tools
+## Available Tools (10)
 - **create_checkout**: Requires the product ID. Optionally associate with an existing customer and apply a discount. Returns the checkout session with its URL that you can redirect customers to for payment.
 
 Create a new checkout session in Polar
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `polar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `polar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Polar** tools.
 
 **Configuration:**

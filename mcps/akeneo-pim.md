@@ -34,7 +34,7 @@ Connect your **Akeneo PIM** instance to your AI agent to unlock professional pro
 - **Data Engineers** — verify API integration and inspect product JSON responses on the fly
 
 
-## Available Tools
+## Available Tools (10)
 - **list_products**: Supports cursor-based pagination.
 
 List PIM products
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `akeneo-pim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `akeneo-pim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Akeneo PIM** tools.
 
 **Configuration:**

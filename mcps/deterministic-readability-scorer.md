@@ -19,7 +19,7 @@ AI models perceive text as 'tokens', not as phonetic syllables or strict sentenc
 - **Zero-Dependency Architecture:** Pure Javascript runtime execution means absolute processing speed with no external bloated packages.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_flesch_kincaid**: Provide the full text string.
 
 Analyzes text readability using the deterministic Flesch-Kincaid algorithm
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-readability-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-readability-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Readability Scorer** tools.
 
 **Configuration:**

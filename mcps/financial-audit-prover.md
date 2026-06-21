@@ -45,7 +45,7 @@ The engine catches IFRS leakage by detecting international standard terminology 
 - **IRS Internal Revenue Code** — Title 26 tax compliance where applicable
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_financial_audit**: Financial reporting is not opinion — it is codified standards, traceable evidence, and mathematical reconciliation. You must: (1) cite the specific US GAAP basis — ASC topic-subtopic-section-paragraph. "GAAP requires" is not a citation. "ASC 606-10-25-27 point-in-time recognition criteria" is, (2) provide an AUDIT TRAIL — trace every material number to source documents. GL account, journal entry reference, invoice/contract/confirmation reference, reconciliation to trial balance, financial statement line item, (3) demonstrate CROSS-CHECKS — the financial statements must reconcile internally. Total assets = total liabilities + equity. Net income flows to retained earnings. Cash flow statement reconciles to cash change. Show actual numbers, (4) assess MATERIALITY — quantitative threshold (5% pre-tax income per SAB 99 benchmark) AND qualitative factors (trend masking, covenant impact, compensation effect, unlawful activity concealment). Both dimensions are mandatory, (5) identify all required DISCLOSURES — specific ASC footnote topics, Reg S-K narrative items, Reg S-X presentation rules, SOX certifications. If rejected, your financial analysis has a structural deficiency.
 
 Structured reflection tool for US financial reasoning — forces audit-grade analysis grounded in US GAAP (FASB ASC codification), PCAOB standards, SEC regulations, and SOX requirements. Catches GAAP Violation (applying revenue recognition without citing ASC 606-10-25-27 vs 25-31 — "per GAAP" is not a reference. The specific ASC paragraph that governs your treatment is the reference. IFRS is not US GAAP), Trail Broken ("per the records" without tracing to source documents — GL entry, invoice number, bank confirmation, contract date. Per PCAOB AS 2810, every material assertion requires sufficient appropriate audit evidence), Crosscheck Failed (financial statements that do not reconcile internally — assets ≠ liabilities + equity, net income does not flow to retained earnings, cash flow does not reconcile to cash balance change. If the B/S does not balance, nothing is reliable), Materiality Ignored ("immaterial" without quantitative threshold per SAB 99 (5% pre-tax income is the benchmark, not a rule) AND qualitative assessment — does it mask a trend? Affect covenant compliance? Involve management compensation?), and Disclosure Missing (accounting treatment without identifying required footnotes — ASC 235 policies, ASC 275 risks, ASC 450 contingencies, ASC 855 subsequent events, Reg S-K Item 303 MD&A, SOX 302/404 certifications). Call once per financial analysis or audit issue
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `financial-audit-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `financial-audit-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Financial Audit Prover** tools.
 
 **Configuration:**

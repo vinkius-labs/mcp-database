@@ -35,7 +35,7 @@ Connect your **Freshdesk** instance to any AI agent to automate your customer se
 - **Agents & Technicians** — automate the retrieval of ticket threads and requester profiles while focused on resolution.
 
 
-## Available Tools
+## Available Tools (12)
 - **list_helpdesk_agents**: List support agents
 - **create_ticket**: Open a new ticket
 - **check_freshdesk_status**: Verify helpdesk status
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freshdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freshdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Freshdesk** tools.
 
 **Configuration:**

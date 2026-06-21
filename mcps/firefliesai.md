@@ -35,7 +35,7 @@ Connect your **Fireflies.ai** account to any AI agent and unlock the power of me
 - **Executive Assistants** — automate the organization and renaming of meeting transcripts through simple AI commands.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_to_live_meeting**: Invite Fireflies to a live meeting
 - **create_ask_fred_thread**: Ask a question to AskFred
 - **delete_transcript**: Delete a transcript
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `firefliesai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `firefliesai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fireflies.ai** tools.
 
 **Configuration:**

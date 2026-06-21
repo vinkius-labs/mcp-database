@@ -21,7 +21,7 @@ Complete US coastal data from NOAA's Center for Operational Oceanographic Produc
 - **Sea Level Trends** — Decades of sea level rise data
 
 
-## Available Tools
+## Available Tools (6)
 - **get_water_levels**: Data in meters relative to station datum. Provide a CO-OPS station ID (e.g., 8518750 for The Battery, NYC; 9414290 for San Francisco).
 
 Get observed water levels (tides) at a US coastal station
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `noaa-marine-tides-currents-coastal-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `noaa-marine-tides-currents-coastal-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NOAA Marine — Tides, Currents & Coastal Data** tools.
 
 **Configuration:**

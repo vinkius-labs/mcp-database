@@ -36,7 +36,7 @@ Equip your AI agent with the most comprehensive music intelligence available via
 - **Songwriters & Musicians** — audit existing lyrics for inspiration and reference in their own creative process.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_artist_albums**: Get artist albums
 - **get_artist_details**: Get artist metadata
 - **get_track_lyrics**: Get track lyrics
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `musixmatch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `musixmatch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Musixmatch** tools.
 
 **Configuration:**

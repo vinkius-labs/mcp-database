@@ -24,7 +24,7 @@ The **definitive Mega-Server** for U.S. energy intelligence. Why install 6 serve
 Power users, energy consultants, and AI agents that need cross-commodity U.S. energy intelligence in a single integration.
 
 
-## Available Tools
+## Available Tools (34)
 - **get_coal_production**: Get coal production by state, mine type, and rank
 - **get_mine_production**: Source: EIA-7A and MSHA-7000-2.
 
@@ -185,7 +185,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eia-full-access-us-energy-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eia-full-access-us-energy-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EIA Full Access — U.S. Energy Intelligence** tools.
 
 **Configuration:**

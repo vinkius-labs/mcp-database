@@ -33,7 +33,7 @@ Bring your overarching **TestRail** quality assurance orchestration directly to 
 - **Automation Engineers** — analyze the properties of 'Test Cases' to rapidly convert them into code-based e2e automated tests
 
 
-## Available Tools
+## Available Tools (10)
 - **get_test_case_details**: Retrieves full details for a specific test case
 - **get_test_project_details**: Retrieves details for a specific TestRail project
 - **get_test_run_details**: Retrieves details for a specific test run
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `testrail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `testrail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TestRail** tools.
 
 **Configuration:**

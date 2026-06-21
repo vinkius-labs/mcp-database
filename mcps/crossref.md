@@ -30,7 +30,7 @@ Give your AI agent direct access to the **world's largest registry of scholarly 
 - **Data Analysts** — explore the scholarly landscape with citation metrics and publisher data for bibliometric analysis
 
 
-## Available Tools
+## Available Tools (3)
 - **get_crossref_doi**: g. 10.1038/nature12373) and get complete metadata: title, all authors, journal, year, type, citation count, and abstract.
 
 Look up any scholarly work by its DOI
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crossref` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crossref` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CrossRef** tools.
 
 **Configuration:**

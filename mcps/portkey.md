@@ -35,7 +35,7 @@ Connect AI agents to the Portkey AI Gateway for enterprise-grade observability a
 Essential for **AI platform engineers**, **LLM ops teams**, **FinOps analysts**, **AI governance officers**, and **engineering managers** using multiple LLM providers. Let AI agents monitor gateway health, identify cost spikes, enforce budget policies, and optimize routing. Perfect for organizations spending $10k+/month on LLMs who need granular visibility into usage, latency, and model performance across the enterprise.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_policy**: Requires policy name, budget limit (USD or token count), and optionally the target users or virtual keys to restrict. Returns the created policy details. Use this to enforce cost controls on specific teams or projects using the gateway.
 
 Create a new budget or usage policy for AI gateway access
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `portkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `portkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Portkey** tools.
 
 **Configuration:**

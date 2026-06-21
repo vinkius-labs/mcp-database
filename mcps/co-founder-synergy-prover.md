@@ -41,7 +41,7 @@ All pass     → SYNERGY_PROVEN
 ```
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_co_founder_synergy**: Think like a YC partner evaluating a founding team — the #1 cause of startup death is co-founder conflict, and it is always structural. You must: (1) secure the CAP TABLE — 4-year vesting, 1-year cliff, monthly vesting after cliff, forfeiture terms, acceleration clauses. "We trust each other" is not a cap table strategy. Trust is necessary AND insufficient — legal structure protects both parties WHEN trust is tested, not IF, (2) separate SKILLS with MUTUALLY EXCLUSIVE ACCOUNTABILITY — who builds, who sells. Not "we complement each other" — specific daily activities. CTO writes code daily. CEO runs customer calls daily. If both "manage," nobody is accountable for output, (3) break DEADLOCKS — name the CEO with strategic tie-breaker authority. Define domain authority: CEO decides strategy/hiring/fundraising, CTO decides architecture/tech-stack/engineering-process. Escalation protocol: if disagreement persists after 48h, CEO decides. "We always agree" is a fantasy — disagreement is inevitable and healthy IF there is a resolution mechanism, (4) justify EQUITY — calculate based on measurable contributions: time invested (full-time from when?), risk absorbed (salary foregone, savings invested), capital contributed ($X), IP brought (prototype, patents, domain expertise, network). "50/50 to be fair" is politeness, not a rationale — it creates resentment when one founder contributes more, (5) prove VELOCITY — show shipping evidence. MVP launched by week X. First Y paying users by week Z. Weekly deploys. Customer interviews per week. Pivots based on data. "Stealth mode" is death — you learn nothing without shipping. "Perfecting the plan" is procrastination. If rejected, the partnership has a fatal structural flaw.
 
 Structured reflection tool for YC-partner-level co-founder dynamics evaluation. Forces the agent to validate partnership structure with legal protections, mutually exclusive accountability, conflict resolution mechanisms, contribution-based equity, and shipping velocity. Catches Cliff Blindness (no vesting cliff — trusting handshakes instead of 4-year/1-year-cliff equity protection with forfeiture terms), Skill Overlap (two CEOs, no builder — "we both manage" means nobody is accountable), Deadlock Design (50/50 equity without tie-breaker authority — "we always agree" is a fantasy that kills startups), Equity Politeness (splitting 50/50 "to be fair" instead of calculating based on time, risk, capital, and IP contribution), and Velocity Absence ("stealth mode," perfecting the plan — no shipped product, no users, no data). Call once per founder team evaluation or partnership structure decision
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `co-founder-synergy-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `co-founder-synergy-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Co-Founder Synergy Prover** tools.
 
 **Configuration:**

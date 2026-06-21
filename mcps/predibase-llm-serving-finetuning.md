@@ -33,7 +33,7 @@ Connect your **Predibase** account to any AI agent to manage high-performance LL
 - **Developers** — integrate high-performance LLM capabilities into apps with structured JSON output
 
 
-## Available Tools
+## Available Tools (7)
 - **chat_completion**: Create a chat completion (OpenAI compatible)
 - **classify**: Batch classification for one or more inputs
 - **completion**: Create a completion (OpenAI compatible)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `predibase-llm-serving-finetuning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `predibase-llm-serving-finetuning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Predibase (LLM Serving & Finetuning)** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ No more manual navigation through the WorkOS dashboard to check a directory sync
 - **Support Teams** — quickly lookup organization details and user rosters to provide rapid technical assistance
 
 
-## Available Tools
+## Available Tools (10)
 - **create_workos_organization**: Provide the name and a list of authorized domains.
 
 Creates a new organization record
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `workos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `workos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WorkOS** tools.
 
 **Configuration:**

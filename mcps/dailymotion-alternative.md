@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire video ecosystem on **Dailymotio
 - **Operations Leads** — automate video querying to orchestrate cross-functional content teams smoothly.
 
 
-## Available Tools
+## Available Tools (9)
 - **delete_video**: Delete a video from Dailymotion
 - **get_me**: Get authenticated user info from Dailymotion
 - **get_video**: Get details for a specific video
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dailymotion-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dailymotion-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dailymotion** tools.
 
 **Configuration:**

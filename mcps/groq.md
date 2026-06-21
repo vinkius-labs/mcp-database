@@ -36,7 +36,7 @@ Connect your **Groq** account to any AI agent and take full control of your high
 - **Data Scientists** — evaluate different open-source model performances on Groq's LPU architecture through natural conversation
 
 
-## Available Tools
+## Available Tools (8)
 - **chat_completion**: Supports Llama, Mixtral, Gemma models.
 
 Generate a chat completion with ultra-fast inference
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `groq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `groq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Groq** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual status checking or digging through student lists in the portal. Y
 - **Operations Leads** — automate user provisioning and training assignments through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_new_learner**: Add learner to EdApp
 - **remove_learner**: Delete learner
 - **get_lesson_attempts_log**: Check lesson interactions
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `edapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `edapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EdApp** tools.
 
 **Configuration:**

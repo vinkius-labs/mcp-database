@@ -21,7 +21,7 @@ By leveraging a single, secure Incoming Webhook URL, your AI can instantly break
 - **Rich Data Delivery:** Stop settling for plain text. The agent can construct complex Discord Embeds with colors, tables, and images, delivering beautifully formatted intelligence directly to where your community lives.
 
 
-## Available Tools
+## Available Tools (1)
 - **send_discord_message**: Provide the text in the "content" parameter. Optionally, you can spoof the bot username or provide rich embeds as a JSON array.
 
 Send a notification or message to a Discord channel via Webhook
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `discord-webhook-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `discord-webhook-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Discord Webhook Notifier** tools.
 
 **Configuration:**

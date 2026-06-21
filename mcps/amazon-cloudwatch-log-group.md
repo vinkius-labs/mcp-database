@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely troubleshoot application errors, 
 - **Plug & Play Troubleshooting:** Instantly gives your agent the eyes and ears it needs to debug production issues autonomously.
 
 
-## Available Tools
+## Available Tools (1)
 - **filter_log_events**: The LogGroupName is already strictly configured.
 
 Search and filter log events in the configured CloudWatch Log Group
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazon-cloudwatch-log-group` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazon-cloudwatch-log-group` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazon CloudWatch Log Group** tools.
 
 **Configuration:**

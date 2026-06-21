@@ -13,7 +13,7 @@ Quantify emotional fluctuations, mood amplitude, and longitudinal stability.
 This MCP server provides specialized tools to analyze emotional patterns over time. Use `calculate_instability_index` to quantify the frequency of mood swings, or `calculate_mood_amplitude` to identify the extremes between peak and valley states. You can also use `compare_weekly_volatility` to track changes in stability week-over-week, or `get_comprehensive_emotional_report` for a high-level summary of emotional metrics.
 
 
-## Available Tools
+## Available Tools (4)
 - **compare_weekly_volatility**: Returns delta and trend.
 
 Determine if emotional instability is worsening or improving by comparing two consecutive weeks
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emotional-variability-score` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emotional-variability-score` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Emotional Variability Score** tools.
 
 **Configuration:**

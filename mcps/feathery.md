@@ -35,7 +35,7 @@ Connect your **Feathery.io** account to any AI agent and take full control of yo
 - **Marketing Engineers** — audit API connector health and verify lead data flow directly from your AI-powered workflow
 
 
-## Available Tools
+## Available Tools (11)
 - **get_account_info**: Get Feathery account details
 - **get_form_details**: Get details for a specific form
 - **get_form_session**: Retrieve the current state/session of a specific form for a user
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `feathery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `feathery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Feathery** tools.
 
 **Configuration:**

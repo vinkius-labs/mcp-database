@@ -13,7 +13,7 @@ Estimate solar panel requirements, installation area, and financial payback.
 This MCP server provides specialized tools to calculate the technical and financial feasibility of solar energy installations. Use `calculate_panels_needed` to determine how many panels are required based on your monthly energy consumption and local irradiation levels in Brazil. You can also use `calculate_area_needed` to find the total surface area needed for the installation, or `calculate_financial_payback` to estimate the break-even period in years based on your initial investment and expected monthly savings.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_financial_payback**: Estimate the solar system financial payback period
 - **calculate_area_needed**: Calculate the required solar panel installation area
 - **calculate_panels_needed**: Determine the number of solar panels required
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `solar-panel-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `solar-panel-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Solar Panel Estimator** tools.
 
 **Configuration:**

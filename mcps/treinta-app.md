@@ -32,7 +32,7 @@ Connect your **Treinta SMB** store operator account directly to Vurb allowing Cl
 - **SMB Tech Enthusiasts** — Bridging Latin American retail solutions with localized GPT autonomous prompts.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_client**: Register a new active client
 - **create_product**: Add a new store inventory product
 - **create_transaction**: Create a new business transaction
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `treinta-app` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `treinta-app` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Treinta App** tools.
 
 **Configuration:**

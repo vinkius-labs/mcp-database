@@ -13,7 +13,7 @@ Calculate US R&D tax credits using Regular and ASC methodologies.
 This MCP server provides specialized tools to calculate United States federal R&D tax credits. It supports both the Regular Research Credit method, which calculates credit based on expenses exceeding a base amount, and the Alternative Simplified Credit (ASC) method, which uses an average of prior years' qualified research expenses. Use `calculate_regular_method_credit` for threshold-based calculations, `calculate_asc_method_credit` for historical average-based calculations, or `recommend_optimal_tax_strategy` to automatically identify the most beneficial approach for your business.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_asc_method_credit**: Determines the specific tax credit amount generated using the Alternative Simplified Credit methodology
 - **recommend_optimal_tax_strategy**: Compares both methodologies to identify which approach provides the highest tax savings
 - **calculate_regular_method_credit**: Returns zero if expenses do not exceed base.
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rd-tax-credit-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rd-tax-credit-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **R&D Tax Credit Calculator** tools.
 
 **Configuration:**

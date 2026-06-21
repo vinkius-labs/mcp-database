@@ -34,7 +34,7 @@ Connect your **Klaviyo** account to any AI agent and take full control of your e
 - **Business Owners** — get rapid summaries of recent campaign performances and customer base growth across multiple Klaviyo accounts
 
 
-## Available Tools
+## Available Tools (10)
 - **list_profiles**: This tool is used to browse your customer base and obtain profile IDs, email addresses, and names. Use this as a starting point to find specific customers before performing detailed audits or adding them to lists.
 
 List Klaviyo profiles (contacts)
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `klaviyo-marketing-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `klaviyo-marketing-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Klaviyo (Marketing Automation)** tools.
 
 **Configuration:**

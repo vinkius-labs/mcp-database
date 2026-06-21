@@ -33,7 +33,7 @@ Connect your **Bitwarden** organization to any AI agent to audit security logs, 
 - **Compliance Officers** — retrieve collections and access structures for security reporting
 
 
-## Available Tools
+## Available Tools (5)
 - **list_collections**: List organization collections
 - **list_events**: List organization event logs
 - **list_groups**: List organization groups
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bitwarden` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bitwarden` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bitwarden** tools.
 
 **Configuration:**

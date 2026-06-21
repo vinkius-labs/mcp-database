@@ -18,7 +18,7 @@ Scheduling and task orchestration often require translating complex cron express
 - **Zero-Dependency Core:** Built purely on native JavaScript temporal loops. No bloated dependencies, just pure architectural performance.
 
 
-## Available Tools
+## Available Tools (3)
 - **cron_to_text**: Translates a standard Cron Expression into a human-readable format
 - **calculate_next_execution**: Calculates the exact next execution date of a Cron Expression
 - **text_to_cron**: The output will be a valid cron syntax.
@@ -75,7 +75,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-cron-schedule-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-cron-schedule-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Cron Schedule Engine** tools.
 
 **Configuration:**

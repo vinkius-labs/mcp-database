@@ -35,7 +35,7 @@ Connect your **Midjourney** account to any AI agent and take full control of sta
 - **Marketing Teams** — produce photorealistic assets and cinematic backgrounds directly from your workspace terminal for high-speed design workflows
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_image**: Always retrieve the returning Job ID to poll `get_job` tracking its process till completion.
 
 Generate images from a text prompt using Midjourney generative models
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `midjourney-ai-generative-image-arts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `midjourney-ai-generative-image-arts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Midjourney AI (Generative Image Arts)** tools.
 
 **Configuration:**

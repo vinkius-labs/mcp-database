@@ -33,7 +33,7 @@ Connect **Volcengine Speech Synthesis** (ByteDance's TTS platform) to any AI age
 - **Developers** — Integrate TikTok-quality TTS into applications
 
 
-## Available Tools
+## Available Tools (5)
 - **get_audio_formats**: Use MP3 for web delivery, WAV for editing, OGG Opus for efficient streaming, or PCM for raw processing.
 
 List supported audio output formats
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `volcengine-speech-synthesis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `volcengine-speech-synthesis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Volcengine Speech Synthesis** tools.
 
 **Configuration:**

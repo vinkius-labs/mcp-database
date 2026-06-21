@@ -18,7 +18,7 @@ When Marketing AI Agents publish blog posts or e-commerce products, they need to
 - **SEO Perfection:** Ensures all slugs are lowercase, safely hyphenated, and perfectly formatted for Google and CMS platforms.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_slug**: Pass the raw title or text and receive a properly transliterated, lowercase, hyphenated slug safe for any URL. Handles international characters like accents and CJK.
 
 Transliterates complex international text into 100% SEO-friendly URL slugs. Prevents AI hallucination of invalid characters in CMS routing
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `url-slug-generator-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `url-slug-generator-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **URL Slug Generator** tools.
 
 **Configuration:**

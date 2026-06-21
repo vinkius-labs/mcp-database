@@ -32,7 +32,7 @@ Integrate **Atlassian Crowd**, the single sign-on and identity management applic
 - **DevOps Engineers** — Provision and manage application-specific user accounts via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_new_user**: Provision a new user account in Crowd
 - **get_group_details**: Get details for a specific group
 - **get_user_details**: Get full profile and attributes for a specific user
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `atlassian-crowd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `atlassian-crowd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Atlassian Crowd** tools.
 
 **Configuration:**

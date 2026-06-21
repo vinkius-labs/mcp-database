@@ -35,7 +35,7 @@ No more manual stock checks or order hunting. Your AI acts as a dedicated logist
 - **Customer Success Teams** — streamline the retrieval of shipment metadata and coordinate order fulfillments directly within the chat.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_order**: Get order details
 - **get_product**: Get product details
 - **list_orders**: List all orders
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shippingbo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shippingbo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ShippingBo** tools.
 
 **Configuration:**

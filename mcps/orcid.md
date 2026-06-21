@@ -33,7 +33,7 @@ Connect to the **ORCID** (Open Researcher and Contributor ID) registry to identi
 - **Data Scientists** — search and analyze researcher metadata for bibliometric studies and mapping scientific networks
 
 
-## Available Tools
+## Available Tools (13)
 - **create_item**: Requires Member API access and appropriate scopes.
 
 Add a new item to a section (Member API only)
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `orcid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `orcid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ORCID** tools.
 
 **Configuration:**

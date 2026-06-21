@@ -32,7 +32,7 @@ Integrate **Datanyze**, the leader in technographics and B2B intelligence, direc
 - **Business Analysts** — Gather data on market competitors and traffic trends via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_domain_contacts**: Resolves individual profiles including job titles, departments, and professional social links for identified decision-makers.
 
 List key decision-makers and contact profiles for a domain
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datanyze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datanyze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Datanyze** tools.
 
 **Configuration:**

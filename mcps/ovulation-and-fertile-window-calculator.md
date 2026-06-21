@@ -13,7 +13,7 @@ Predict ovulation dates, fertile windows, and peak conception days based on your
 This MCP server provides precise biological predictions for reproductive health tracking. By using tools like `estimate_ovulation_date`, `get_fertile_window_range`, and `identify_peak_fertility_days`, users can accurately estimate their ovulation day, the span of their fertile window, and the specific days with the highest probability of conception based on their last period start date and average cycle length.
 
 
-## Available Tools
+## Available Tools (3)
 - **estimate_ovulation_date**: Estimates the ovulation date and next period
 - **get_fertile_window_range**: Identifies the fertile window range
 - **identify_peak_fertility_days**: Identifies peak fertility days
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ovulation-and-fertile-window-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ovulation-and-fertile-window-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ovulation and Fertile Window Calculator** tools.
 
 **Configuration:**

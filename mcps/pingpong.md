@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your cross-border financial operations with
 - **Business Owners** — get real-time insights into organization-wide sales performance and cash liquidity.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_payout**: Create a new payout
 - **get_account_details**: Get account information
 - **get_balance**: Get account balance
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pingpong` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pingpong` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PingPong** tools.
 
 **Configuration:**

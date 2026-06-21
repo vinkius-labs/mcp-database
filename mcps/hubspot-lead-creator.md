@@ -21,7 +21,7 @@ Your AI agent gains the immediate ability to act as an inbound sales development
 - **Absolute Containment:** Because this is strictly a "Push-only" creation tool, the agent cannot read your CRM, cannot export your customer list, and cannot delete deals. It only drops leads in. A completely secure, one-way funnel.
 
 
-## Available Tools
+## Available Tools (1)
 - **create_hubspot_lead**: The "email" field is required. You can also provide firstname, lastname, phone, and company.
 
 Creates a new Contact (Lead) directly in HubSpot CRM
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-lead-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-lead-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot Lead Creator** tools.
 
 **Configuration:**

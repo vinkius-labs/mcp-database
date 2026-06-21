@@ -33,7 +33,7 @@ Connect your **Scale AI** account to any AI agent to orchestrate large-scale dat
 - **AI Researchers** — quickly spin up RLHF or annotation projects to validate new model datasets.
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_task**: Optionally clears the unique_id to reuse it.
 
 Cancel a pending task
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scale-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scale-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scale AI** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Estimate monthly public pension benefits and replacement rates for the UK, Germa
 The European Pension Estimator MCP server provides precise approximations of future retirement income across key European social security systems. By using tools like `calculate_monthly_benefit`, `get_scheme_details`, and `assess_contribution_gap`, users can simulate how different contribution years, salaries, and retirement ages impact their monthly pension amount and replacement rate in the UK, Germany, France, and Spain.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_scheme_details**: Get fundamental characteristics of a specific country's pension scheme
 - **assess_contribution_gap**: Assess the benefit increase from working additional years
 - **calculate_monthly_benefit**: Calculate the estimated monthly pension benefit
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `european-pension-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `european-pension-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **European Pension Estimator** tools.
 
 **Configuration:**

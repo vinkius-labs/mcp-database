@@ -13,7 +13,7 @@ Adjust baking recipes for high altitudes by correcting leavening, liquids, and o
 Baking at higher elevations requires specific recipe modifications due to decreased atmospheric pressure. This MCP server provides precise calculations to help bakers maintain success by using tools like `adjust_leavening` to prevent dough collapse, `adjust_liquid_volume` to counteract evaporation, and `adjust_oven_conditions` to stabilize structure through temperature and time adjustments.
 
 
-## Available Tools
+## Available Tools (3)
 - **adjust_leavening**: Adjust leavening agent for altitude
 - **adjust_liquid_volume**: Adjust liquid volume for altitude
 - **adjust_oven_conditions**: Adjust oven temperature and time for altitude
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `altitude-baking-adjuster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `altitude-baking-adjuster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Altitude Baking Adjuster** tools.
 
 **Configuration:**

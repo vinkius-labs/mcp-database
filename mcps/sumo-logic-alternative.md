@@ -35,7 +35,7 @@ No more switching between dashboards to find that one error log. Your AI acts as
 - **SREs** — monitor system metrics and manage data ingestion sources through simple natural language commands
 
 
-## Available Tools
+## Available Tools (19)
 - **create_hosted_collector**: Create a new Hosted Collector
 - **create_search_job**: Returns a SEARCH_JOB_ID which must be polled for status.
 
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sumo-logic-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sumo-logic-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sumo Logic** tools.
 
 **Configuration:**

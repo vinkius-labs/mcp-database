@@ -32,7 +32,7 @@ Connect to the **Smithsonian Open Access** repository and bring millions of muse
 - **Developers & Creatives** — integrate authentic historical and scientific data into applications and digital experiences
 
 
-## Available Tools
+## Available Tools (3)
 - **search_category**: Search within specific categories or units
 - **get_content**: Retrieve a specific museum record by its unique identifier
 - **search_records**: Search for museum records across all Smithsonian units
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smithsonian-open-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smithsonian-open-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Smithsonian Open Access** tools.
 
 **Configuration:**

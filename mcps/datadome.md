@@ -32,7 +32,7 @@ Integrate **DataDome**, the leading bot protection and fraud prevention solution
 - **Fraud Analysts** — Gather structured data on recent bot activities and threat types for reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_bot_traffic_summary**: Returns a summary of traffic from "Good Bots" (e.g., search engines) versus "Bad Bots" (e.g., scrapers, scrapers) and their impact on total traffic.
 
 Get a summary of bot traffic categorized by type
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datadome` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datadome` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DataDome** tools.
 
 **Configuration:**

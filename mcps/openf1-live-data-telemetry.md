@@ -32,7 +32,7 @@ Transform your AI agent into a professional Formula 1 data analyst with **OpenF1
 - **Professional Fans** — monitor team radio and race control messages straight from your workflow to never miss a steward decision
 
 
-## Available Tools
+## Available Tools (15)
 - **list_drivers**: List F1 drivers for a session
 - **get_starting_grid**: Get the initial race starting grid
 - **get_driver_intervals**: Get intervals and gaps between drivers
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openf1-live-data-telemetry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openf1-live-data-telemetry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenF1 Live Data & Telemetry** tools.
 
 **Configuration:**

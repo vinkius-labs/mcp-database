@@ -33,7 +33,7 @@ Connect your **Polygon.io** account to any AI agent to retrieve institutional-gr
 - **Developers** — Test market data queries and inspect ticker types directly from your coding environment.
 
 
-## Available Tools
+## Available Tools (21)
 - **get_crypto_trades**: Retrieve tick-level trade data for crypto pairs
 - **get_custom_bars**: Retrieve aggregated historical OHLC and volume data for a stock
 - **get_dividends**: Retrieve historical dividends for stocks
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `polygonio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `polygonio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Polygon.io** tools.
 
 **Configuration:**

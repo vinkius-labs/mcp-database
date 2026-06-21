@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire visual research and emoji audit
 - **Operations Leads** — automate visual data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the Open Emoji API is operational
 - **get_emojis_by_category**: Get all emojis belonging to a specific category
 - **list_all_emojis**: List all available emojis in the database
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-emoji-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-emoji-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Emoji API** tools.
 
 **Configuration:**

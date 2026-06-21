@@ -17,7 +17,7 @@ Are you struggling to prove the true value of your marketing spend? Many teams c
 **The Advantage:** Stop guessing your marketing performance. Gain deterministic, auditable financial insights that show exactly which campaigns deliver the highest true profit relative to their total investment.
 
 
-## Available Tools
+## Available Tools (3)
 - **compute_rois_metrics_comparative**: Compute ROI metrics and compare performance across multiple campaigns
 - **query_marketing_investment_total**: Calculate total marketing investment for a campaign within a date range
 - **calculate_attributed_revenue**: Calculate attributed gross revenue for a campaign using an attribution model
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `marketing-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `marketing-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Marketing ROI Calculator** tools.
 
 **Configuration:**

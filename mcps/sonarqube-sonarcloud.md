@@ -33,7 +33,7 @@ Connect your self-hosted **SonarQube** instances or **SonarCloud** dashboards di
 - **Tech Leads** — gather project duplication ratios (`get_duplications`) or test coverage blindly mapping whole folders textually
 
 
-## Available Tools
+## Available Tools (10)
 - **get_component_tree**: Get the component tree (files/directories) of a SonarQube project with metrics
 - **get_duplications**: Get code duplication blocks for a file in SonarQube
 - **get_hotspots**: Get security hotspots for a SonarQube project
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sonarqube-sonarcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sonarqube-sonarcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SonarQube & SonarCloud** tools.
 
 **Configuration:**

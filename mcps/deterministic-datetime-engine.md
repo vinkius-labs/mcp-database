@@ -19,7 +19,7 @@ Language Models are infamously bad at calendar math. If you ask an AI to "Add 45
 - **Privacy First (Local):** Executes completely locally. Zero API latency.
 
 
-## Available Tools
+## Available Tools (3)
 - **add_business_days**: Adds or subtracts a specific number of business days (skipping weekends) from a given date
 - **calculate_date_difference**: Calculates the exact mathematical difference between two dates in days, months, and years
 - **check_leap_year**: Checks if a specific year is a leap year using the exact Gregorian calendar algorithm
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-datetime-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-datetime-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Datetime Engine** tools.
 
 **Configuration:**

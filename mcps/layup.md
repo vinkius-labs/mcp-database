@@ -32,7 +32,7 @@ Connect your **Layup** operational account to any AI agent and manage lay-by e-c
 - **Developers** — audit tracking and debugging logs directly from within your IDE
 
 
-## Available Tools
+## Available Tools (9)
 - **cancel_order**: Void an existing Layup order
 - **create_deposit**: Register a new lay-by deposit manually
 - **create_order**: Initialize a new lay-by order
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `layup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `layup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Layup** tools.
 
 **Configuration:**

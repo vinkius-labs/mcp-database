@@ -13,7 +13,7 @@ Stop LLMs from skipping website content. Convert massive HTML files into clean M
 Turn massive HTML DOMs into clean Markdown using `Turndown`, ensuring no tags or links are lost due to LLM summarization.
 
 
-## Available Tools
+## Available Tools (1)
 - **convert_html_to_markdown**: Pass the HTML string and receive properly formatted Markdown with headings, links, lists, and code blocks preserved.
 
 Converts raw HTML strings into clean Markdown deterministically without LLM truncation or data loss
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `html-to-markdown-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `html-to-markdown-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HTML to Markdown Converter** tools.
 
 **Configuration:**

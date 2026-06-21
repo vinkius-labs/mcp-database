@@ -13,7 +13,7 @@ Calculate precise end dates by adding calendar or business days, accounting for 
 The Deadline Calculator MCP server provides specialized tools to determine exact completion dates. Use `calendar_deadline_tool` to calculate end dates by adding uninterrupted calendar days, or use `business_deadline_tool` to compute deadlines that skip weekends and regional holidays in the US, UK, Germany, or France. You can also use `holiday_registry_tool` to retrieve a list of recognized holidays for a specific region and year to verify your calculations.
 
 
-## Available Tools
+## Available Tools (3)
 - **business_deadline_tool**: Calculate a deadline by adding business days to a start date
 - **calendar_deadline_tool**: Calculate a deadline by adding calendar days to a start date
 - **holiday_registry_tool**: Fetch the holiday registry for a specific region and year
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deadline-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deadline-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deadline Calculator** tools.
 
 **Configuration:**

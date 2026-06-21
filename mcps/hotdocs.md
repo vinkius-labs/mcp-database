@@ -37,7 +37,7 @@ No more repetitive clicking through the HotDocs web interface. Your AI acts as a
 - **Operations & Compliance** — batch-generate standardized documents and audit interview completeness across teams
 
 
-## Available Tools
+## Available Tools (14)
 - **complete_assembly**: This processes all collected answers and assembles the final documents based on the template configuration.
 After calling this, the assembled documents become available for download via list_documents and get_document_content.
 You must have already created a work item, created a version/session, and provided answers (via interview or update_answers).
@@ -185,7 +185,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hotdocs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hotdocs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HotDocs** tools.
 
 **Configuration:**

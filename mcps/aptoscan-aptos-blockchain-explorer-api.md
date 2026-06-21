@@ -33,7 +33,7 @@ Connect to the **Aptoscan API** to inspect the Aptos blockchain in real-time. Th
 - **Crypto Enthusiasts** — Monitor wallet balances and NFT collections through natural conversation.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_balance**: Get the current balance of the specified account
 - **get_account_modules**: Get all Move modules published under the specified account
 - **get_account_resources**: Get all resources owned by the specified account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aptoscan-aptos-blockchain-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aptoscan-aptos-blockchain-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aptoscan (Aptos Blockchain Explorer API)** tools.
 
 **Configuration:**

@@ -50,7 +50,7 @@ Customer Discovery Prover validates discovery rigor through 5 Decision Pivots:
 - **Semantic traps detect hand-waving.** Phrases like 'busy professionals,' 'the market needs,' 'would you pay for,' 'SMBs,' and 'strong interest' trigger automatic rejection. Name the person. Cite the conversation. Show the commitment.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_customer_discovery**: Think like a YC partner reviewing a pitch — "How do you know?" is the only question that matters. You must: (1) ground the PERSONA in real interview data — named people, specific roles, observed behaviors. "Busy professionals" is a demographic, not a persona. "Sarah, VP Eng at a 200-person fintech, spends 8h/week manually reconciling data" is a persona, (2) evidence the PROBLEM with specific conversations — who said what, how often it happens, what it costs them, what they do today to work around it. "The market needs X" is not evidence, (3) apply THE MOM TEST — ask about past behavior ("when did you last encounter this?"), never about future intentions ("would you pay for this?"). Seek falsification ("what would make this NOT useful?"). Extract commitment ("can you introduce me to your team lead?"), (4) separate SEGMENTS — different buyer groups have different pains, budgets, and buying processes. "Enterprise" is not a segment. "Head of Data at Series B fintechs with 50-200 employees using Snowflake" is a segment, (5) test WTP with COMMITMENT signals — deposits, LOIs, pilot dates with specific dates, referrals. "They said they would pay" is verbal interest, not willingness-to-pay. Money or time committed is WTP. If rejected, your discovery is assumption-based, not evidence-based.
 
 Structured reflection tool for customer discovery grounded in real interviews, not invented personas. Forces the agent to evidence every claim with named interviews, apply The Mom Test methodology, separate buyer segments with distinct pains, and test willingness-to-pay with commitment signals. Catches Invented Personas ("busy professionals aged 25-45" — demographics are not personas. A persona needs a name, a role, a company context, observed behaviors, and interview quotes), Assumed Problems ("the market needs X" without citing specific conversations where someone described the pain, its frequency, and what they currently spend solving it), Biased Validation ("would you pay for this?" — leading questions produce false positives. The Mom Test: ask about past behavior, never about future intentions), Conflated Segments (treating "SMBs" as one group when a 5-person agency and a 200-person SaaS company have different pains, budgets, and buying processes), and Untested WTP ("they said they would pay" — verbal interest is not willingness-to-pay. Commitment signals: deposits, LOIs, pilot dates, referrals). Call once per customer persona, segment analysis, or product-market fit evaluation
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `customer-discovery-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `customer-discovery-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Customer Discovery Prover** tools.
 
 **Configuration:**

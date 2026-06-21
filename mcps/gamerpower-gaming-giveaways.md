@@ -32,7 +32,7 @@ Never miss a free game again with **GamerPower**. This server connects your AI a
 - **Bargain Hunters** — perform deep audits of current market freebies to maximize your digital library value
 
 
-## Available Tools
+## Available Tools (11)
 - **list_active_giveaways**: List all currently active gaming giveaways
 - **list_beta_giveaways**: List giveaways for beta keys and early access
 - **list_console_giveaways**: List giveaways for PlayStation, Xbox, and Switch
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gamerpower-gaming-giveaways` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gamerpower-gaming-giveaways` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GamerPower Gaming Giveaways** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ No more jumping between tabs to check CTR or adjust daily caps. Your AI acts as 
 - **Growth Engineers** — integrate real-time ad performance data into development workflows for faster iteration
 
 
-## Available Tools
+## Available Tools (10)
 - **list_allowed_accounts**: List allowed Taboola accounts
 - **list_campaign_items**: List items (ads) in a campaign
 - **create_campaign**: Create a new Taboola campaign
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `taboola` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `taboola` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Taboola** tools.
 
 **Configuration:**

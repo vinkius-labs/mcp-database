@@ -33,7 +33,7 @@ Connect your **Colossyan** account to any AI agent to streamline your synthetic 
 - **Content Creators** — automate the technical side of video rendering and asset management directly from a chat interface.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_actor**: Create an instant avatar from an image or video link
 - **delete_job**: Delete a video generation job
 - **delete_video**: Delete a generated video
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `colossyan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `colossyan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Colossyan** tools.
 
 **Configuration:**

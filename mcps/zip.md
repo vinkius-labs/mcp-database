@@ -34,7 +34,7 @@ Connect your **Zip** (formerly Quadpay) merchant account to any AI agent to auto
 - **Developers** — Integrate BNPL checkout logic and status monitoring into your custom applications
 
 
-## Available Tools
+## Available Tools (8)
 - **authorize_zip_order**: Typically used in US gateway integrations.
 
 Authorize a payment order
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zip** tools.
 
 **Configuration:**

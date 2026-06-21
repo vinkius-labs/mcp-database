@@ -34,7 +34,7 @@ No more scraping websites or building custom integrations. Your AI acts as a ded
 - **Personal Shoppers** — automate the process of finding the best-rated electronics available near you today.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_also_viewed_products**: Get recommended or also-viewed products for a SKU
 - **get_category_by_id**: Get detailed child categories for a given category ID
 - **get_open_box_products**: Can be optionally filtered by category ID.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `best-buy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `best-buy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Best Buy** tools.
 
 **Configuration:**

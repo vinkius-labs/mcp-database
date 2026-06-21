@@ -32,7 +32,7 @@ Bring the full power of synthetic enterprise video generation directly into your
 - **Localization Teams** — Rapidly inspect voice definitions natively scaling video catalogs commanding dynamic `dub_video` requests effortlessly.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_avatar_video**: Returns a video ID.
 
 Creates an AI avatar video from a script
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `synthesia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `synthesia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Synthesia** tools.
 
 **Configuration:**

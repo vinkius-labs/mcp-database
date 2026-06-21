@@ -32,7 +32,7 @@ Connect your **Instatus** account to any AI agent to streamline your incident co
 - **Product Managers** — monitor service uptime and review incident response history directly through AI-generated reports
 
 
-## Available Tools
+## Available Tools (28)
 - **add_metric_datapoint**: Add a datapoint to a metric
 - **add_metric_datapoints_bulk**: Add multiple datapoints to a metric
 - **add_metric**: Add a new metric
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `instatus-status-pages-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `instatus-status-pages-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Instatus (Status Pages API)** tools.
 
 **Configuration:**

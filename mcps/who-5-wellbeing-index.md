@@ -13,7 +13,7 @@ Calculate the WHO-5 Well-Being Index score and identify potential wellbeing risk
 This MCP server provides specialized tools to quantify psychological well-being using the World Health Organization's WHO-5 scale. Use `calculate_wellbeing_assessment` to input five responses (0-5) and receive a normalized score from 0 to 100, along with a wellbeing classification and risk assessment. You can also use `fetch_scale_instructions` to understand the numeric mapping for each response or `validate_assessment_range` to verify if a specific score falls within the standard valid bounds.
 
 
-## Available Tools
+## Available Tools (3)
 - **validate_assessment_range**: Verifies if a score is within the 0-100 range
 - **calculate_wellbeing_assessment**: Calculates the WHO-5 Well-Being Index score
 - **fetch_scale_instructions**: Provides context for the WHO-5 scale
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `who-5-wellbeing-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `who-5-wellbeing-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WHO-5 Wellbeing Index** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your automotive research and transportation
 - **Transportation Advocates** — stay updated with official safety ratings and consumer feedback trends.
 
 
-## Available Tools
+## Available Tools (8)
 - **decode_vin_details**: Decode Vehicle Identification Number
 - **find_wmi_info**: Lookup WMI from VIN
 - **get_manufacturer_info**: Get manufacturer details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dot-transportation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dot-transportation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DOT Transportation / 美国交通部** tools.
 
 **Configuration:**

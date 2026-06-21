@@ -32,7 +32,7 @@ Connect to the **PokéAPI** through this MCP server to explore the vast world of
 - **Data Enthusiasts** — explore the structured relationships of the Pokémon world through natural language.
 
 
-## Available Tools
+## Available Tools (49)
 - **get_berry_firmness**: Get berry firmness details
 - **get_berry_flavor**: Get berry flavor details
 - **get_berry**: Get berry details
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `poke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `poke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Poké** tools.
 
 **Configuration:**

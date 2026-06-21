@@ -32,7 +32,7 @@ Connect your **Octoparse** framework to your AI agent and turn cloud-based web s
 - **Business Analysts** — fetch the competitive pricing matrices scraped overnight and ask the AI to summarize price drops directly in the conversation.
 
 
-## Available Tools
+## Available Tools (10)
 - **clear_task_data**: Done to purge testing footprints before production crawls.
 
 Delete all securely stored data for an Octoparse task
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `octoparse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `octoparse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Octoparse** tools.
 
 **Configuration:**

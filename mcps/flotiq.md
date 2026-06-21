@@ -36,7 +36,7 @@ Connect your **Flotiq** account to any AI agent and take full control of your AP
 - **Digital Marketers** — search across global content and manage media libraries through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_object**: Provision a highly-available JSON Payload writing models natively
 - **wipe_cms_object**: Irreversibly vaporize explicit App nodes dropping live Database bytes
 - **get_content_details**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flotiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flotiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flotiq** tools.
 
 **Configuration:**

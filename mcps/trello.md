@@ -35,7 +35,7 @@ No more wrestling with hundreds of open browser tabs to find out who is assigned
 - **Operations & Agency Leads** — automate client workspace querying and smoothly transition cards across completion stages
 
 
-## Available Tools
+## Available Tools (16)
 - **add_checklist**: You can then add check items to it via the Trello UI.
 
 Add a new checklist to a Trello card
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trello` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trello` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Trello** tools.
 
 **Configuration:**

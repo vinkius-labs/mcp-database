@@ -27,7 +27,7 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 - **RevOps** — Full CRM visibility and reporting
 
 
-## Available Tools
+## Available Tools (7)
 - **pd_create_lead**: Create a lead
 - **pd_delete_lead**: Delete a lead
 - **pd_get_lead**: Get lead details
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipedrive-leads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipedrive-leads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipedrive Leads** tools.
 
 **Configuration:**

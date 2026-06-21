@@ -22,7 +22,7 @@ This MCP uses a high-performance XML parser to ingest your health export locally
 - **Assistant Ready:** Turn Claude into your private longevity doctor.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_health_export**: Provide the absolute file path to the export.xml.
 
 Parse Apple Health or Google Fit XML export files safely. It aggregates data to prevent AI context overflow
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `health-xml-export-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `health-xml-export-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Health XML Export Parser** tools.
 
 **Configuration:**

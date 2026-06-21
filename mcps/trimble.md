@@ -33,7 +33,7 @@ Connect your AI agent exclusively to your **Trimble PC*MILER** logistics infrast
 - **Dispatch Analysts** — Investigate delivery reach by requesting an active 'time shed' (isochrone) boundary estimating limits for rush transit manually
 
 
-## Available Tools
+## Available Tools (10)
 - **calculate_driving_isochrone**: Provide center coordinates and time in minutes.
 
 Calculates the reachable area within a specific time limit from a center point
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trimble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trimble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Trimble** tools.
 
 **Configuration:**

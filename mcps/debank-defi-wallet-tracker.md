@@ -35,7 +35,7 @@ No more manually checking multiple block explorers or DeFi dashboards. Your AI a
 - **Crypto Researchers** — aggregate data on protocol growth, token distribution, and historical pricing via simple prompts.
 
 
-## Available Tools
+## Available Tools (24)
 - **explain_tx**: Explain Tx
 - **get_account_units**: Get API account units usage
 - **get_chain**: Get chain information
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `debank-defi-wallet-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `debank-defi-wallet-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeBank (DeFi Wallet Tracker)** tools.
 
 **Configuration:**

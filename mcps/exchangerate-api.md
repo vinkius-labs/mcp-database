@@ -35,7 +35,7 @@ Equip your AI agent with real-time financial intelligence via **ExchangeRate-API
 - **Investment Teams** — stay updated on global currency fluctuations for organizational planning.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_enriched_currency_data**: g., flag, full name).
 
 Get enriched currency information
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exchangerate-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exchangerate-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ExchangeRate-API** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ Connect your **SAP S/4HANA** system to any AI agent and manage core ERP operatio
 - **SAP Consultants** — accelerate data retrieval and configuration audits across client landscapes
 
 
-## Available Tools
+## Available Tools (9)
 - **list_business_partners**: Use OData $filter syntax for filtering — e.g. BusinessPartnerCategory eq '2' for organizations.
 
 List SAP business partners
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sap-s4hana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sap-s4hana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SAP S/4HANA** tools.
 
 **Configuration:**

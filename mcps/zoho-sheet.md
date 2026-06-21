@@ -29,7 +29,7 @@ Give your AI agents programmatic control over your cloud data arrays by connecti
 Essential for data analysts, operations teams, and administrative staff who require intelligent automation for spreadsheet data entry and reporting.
 
 
-## Available Tools
+## Available Tools (13)
 - **add_row**: Add a data row
 - **create_workbook**: Create a workbook
 - **create_worksheet**: Create a worksheet
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-sheet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-sheet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Sheet** tools.
 
 **Configuration:**

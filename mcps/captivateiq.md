@@ -34,7 +34,7 @@ Connect your **CaptivateIQ** account to any AI agent and orchestrate your incent
 - **Revenue Leaders** — retrieve high-level payout summaries and plan details using natural language.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_status**: Retrieve core account/integration information
 - **get_employee_details**: Get details of a specific employee
 - **list_employees**: List all employee records and plan designations
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `captivateiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `captivateiq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CaptivateIQ** tools.
 
 **Configuration:**

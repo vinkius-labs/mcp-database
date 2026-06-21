@@ -22,7 +22,7 @@ Forward-looking energy intelligence from the world's most respected energy agenc
 Energy strategists, government planners, investment analysts, climate modelers, and anyone who needs the official U.S. government view on where energy markets are heading.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_short_term_outlook**: Published monthly by EIA. Data range: 1974 to 2027.
 
 Get STEO: 18-month U.S. energy price and supply projections
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eia-energy-outlook-forecasts-projections` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eia-energy-outlook-forecasts-projections` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EIA Energy Outlook — Forecasts & Projections** tools.
 
 **Configuration:**

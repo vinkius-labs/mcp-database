@@ -28,7 +28,7 @@ The **ARGUS Cloud MCP Server** provides a high-level natural language interface 
 - **Investment Officers** — Monitor portfolio health and get alerts on significant valuation changes or system notifications.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_account_check**: Verify ARGUS account connection
 - **get_asset**: Get details for a specific asset
 - **get_portfolio**: Get details for a specific portfolio
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `argus-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `argus-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ARGUS Cloud** tools.
 
 **Configuration:**

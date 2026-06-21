@@ -35,7 +35,7 @@ No more manual license checking or spreadsheet coupon tracking. Your AI acts as 
 - **Support Teams** — streamline the retrieval of license metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_coupon**: Requires code, discount type, and amount.
 
 Create a new coupon
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `payhip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `payhip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Payhip** tools.
 
 **Configuration:**

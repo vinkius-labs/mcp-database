@@ -38,7 +38,7 @@ No more manual logging into the Zendesk dashboard to check a ticket's status. Yo
 - **Developers** — test API responses and verify ticket metadata for custom support integrations
 
 
-## Available Tools
+## Available Tools (9)
 - **list_macros**: Lists all available support macros (canned responses)
 - **list_tickets**: Lists all support tickets in the Zendesk account
 - **get_ticket**: Retrieves comprehensive details for a specific support ticket
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zendesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zendesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zendesk** tools.
 
 **Configuration:**

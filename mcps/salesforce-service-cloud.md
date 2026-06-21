@@ -24,7 +24,7 @@ Connect **Salesforce Service Cloud** to any AI agent.
 - **Success Teams** — Look up case history for any customer
 
 
-## Available Tools
+## Available Tools (8)
 - **sf_add_case_comment**: Set isPublished to true if the comment should be visible to the customer (e.g., in a customer portal). Default is internal-only. Use to log agent responses, internal notes, or resolution steps on a support case.
 
 Add a comment to a Salesforce case — internal note or customer-visible response
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesforce-service-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesforce-service-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesforce Service Cloud** tools.
 
 **Configuration:**

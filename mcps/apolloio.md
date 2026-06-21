@@ -32,7 +32,7 @@ The **Apollo.io MCP Server** provides direct access to one of the world's larges
 - **Recruiters** — Search the Apollo database for specific professional profiles and talent pools.
 
 
-## Available Tools
+## Available Tools (8)
 - **search_contacts**: Search Apollo contacts
 - **search_organizations**: Search organizations
 - **get_contact**: Get contact by ID
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apolloio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apolloio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apollo.io** tools.
 
 **Configuration:**

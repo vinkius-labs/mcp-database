@@ -36,7 +36,7 @@ Your AI becomes a dedicated logistics coordinator, eliminating manual order entr
 - **Customer Support** — instantly pull tracking information and shipment status to respond to delivery inquiries within seconds
 
 
-## Available Tools
+## Available Tools (14)
 - **cancel_shipment**: Once cancelled, the shipment cannot be reactivated and a new one must be created if needed.
 
 Cancel an active shipment order
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moova` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moova` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moova** tools.
 
 **Configuration:**

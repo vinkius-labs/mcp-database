@@ -20,7 +20,7 @@ SEC company lookup.
 ### Zero Auth
 
 
-## Available Tools
+## Available Tools (3)
 - **lookup_ticker**: g., AAPL, MSFT, TSLA) to the SEC CIK number needed for all EDGAR queries. Returns company name, CIK, and ticker. The CIK is the unique identifier SEC uses for all public companies.
 
 Look up a company by stock ticker — get CIK, name, and ID
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sec-edgar-companies-ticker-lookup-company-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sec-edgar-companies-ticker-lookup-company-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SEC EDGAR Companies — Ticker Lookup & Company Search** tools.
 
 **Configuration:**

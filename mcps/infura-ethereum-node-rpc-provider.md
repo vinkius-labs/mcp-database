@@ -34,7 +34,7 @@ Connect your **Infura** account to any AI agent to interact with the Ethereum bl
 - **Crypto Enthusiasts** — monitor wallet balances and network congestion levels using simple natural language commands.
 
 
-## Available Tools
+## Available Tools (20)
 - **eth_blockNumber**: Get the number of the most recent block
 - **eth_call**: Execute a new message call immediately
 - **eth_chainId**: Get the chain ID
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `infura-ethereum-node-rpc-provider` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `infura-ethereum-node-rpc-provider` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Infura (Ethereum Node RPC Provider)** tools.
 
 **Configuration:**

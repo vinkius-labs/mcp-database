@@ -19,7 +19,7 @@ LLMs often struggle to construct long, structurally sound Markdown elements. Gen
 - **Privacy First:** Since it's a local utility, your proprietary internal documentation never leaves your infrastructure.
 
 
-## Available Tools
+## Available Tools (2)
 - **generate_table_from_json**: It will automatically extract headers and format rows.
 
 Converts a JSON array of objects into a beautifully formatted Markdown table
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `markdown-utilities-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `markdown-utilities-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Markdown Utilities Engine** tools.
 
 **Configuration:**

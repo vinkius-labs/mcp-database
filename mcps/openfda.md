@@ -22,7 +22,7 @@ The **openFDA MCP Server** provides direct, zero-auth access to the United State
 Ideal for healthcare researchers, compliance officers, and public safety analysts requiring deep programmatic data scraping without the overhead of API key management.
 
 
-## Available Tools
+## Available Tools (3)
 - **query_drug_events**: g., patient.drug.medicinalproduct:"ASPIRIN", patient.reaction.reactionmeddrapt:"HEADACHE"). The dataset contains reports of adverse events, medication errors, and product quality complaints. Max limit is 100.
 
 Query the openFDA Drug Adverse Events database using Lucene syntax
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **openFDA** tools.
 
 **Configuration:**

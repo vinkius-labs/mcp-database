@@ -32,7 +32,7 @@ Connect your **Qovery** infrastructure to any AI agent and bring DevOps executio
 - **Engineering Leads** — check if the latest mission-critical app is properly scaled and healthy across multiple availability zones
 
 
-## Available Tools
+## Available Tools (10)
 - **deploy_application**: Triggers an immediate deployment of a specific Git commit SHA
 - **get_application**: Retrieves details for a specific Qovery application
 - **get_environment**: Retrieves details for a specific Qovery environment
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qovery** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual report exports or multiple dashboard logins. Your AI acts as a de
 - **Accountants** — streamline the monitoring of ledger accounts and monitor client business health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_sales_invoice**: Get details for a specific sales invoice
 - **list_bank_accounts**: List business bank accounts
 - **list_businesses**: List accessible businesses
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sage-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sage-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sage Accounting** tools.
 
 **Configuration:**

@@ -22,7 +22,7 @@ This MCP brings deterministic statistical computation to your AI. It delegates t
 - **Automated Interpretation:** Automatically tells the AI whether to reject the null hypothesis at alpha=0.05.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_t_test**: Perform exact deterministic Student's t-tests (independent, paired, one-sample) to calculate statistical significance without LLM hallucinations
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `t-test-statistics-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `t-test-statistics-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **T-Test Statistics Engine** tools.
 
 **Configuration:**

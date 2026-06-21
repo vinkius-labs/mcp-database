@@ -35,7 +35,7 @@ No more manual toggling between storefront tabs or digging through complex order
 - **Marketing Leads** — automate the analysis of customer purchase patterns and catalog growth through simple AI queries
 
 
-## Available Tools
+## Available Tools (9)
 - **get_customer_details**: Get details for a customer
 - **get_order_details**: Get details for an order
 - **get_product_details**: Get metadata for a product
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bigcommerce-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bigcommerce-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BigCommerce** tools.
 
 **Configuration:**

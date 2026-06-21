@@ -35,7 +35,7 @@ No more manual following up for reviews or missing critical negative feedback. Y
 - **Developers** â€” integrate high-speed OneLocal review data into custom dashboards and reporting tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_onelocal_status**: Verify OneLocal API connectivity
 - **get_campaign**: Get campaign details
 - **get_location**: Get location details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onelocal-localreviews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onelocal-localreviews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OneLocal LocalReviews** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Equip your AI agent with **Shumei** (数美), China's premier risk assessment an
 - **Backend Developers** — Prototyping safety wrappers on user-uploaded images and avatars
 
 
-## Available Tools
+## Available Tools (4)
 - **check_audio_risk**: Predict risk associated with an audio clip
 - **check_device_risk**: Determine if a specific device ID or IP is fraudulent or using a VPN
 - **check_image_risk**: Scan an image for NSFW or restricted content
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shumei-anti-fraud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shumei-anti-fraud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shumei Anti-Fraud** tools.
 
 **Configuration:**

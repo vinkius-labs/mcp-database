@@ -32,7 +32,7 @@ Connect to the **SAMHSA Treatment Locator** and empower your AI agent to find cr
 - **Social Workers** — find and inspect facility details directly from their workflow tools to assist clients faster.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_facility**: Get detailed information for a specific facility
 - **list_services**: List available service codes used for filtering
 - **search_facilities**: Search for treatment facilities based on location and filters
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `samhsa-treatment-locator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `samhsa-treatment-locator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SAMHSA Treatment Locator** tools.
 
 **Configuration:**

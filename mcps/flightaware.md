@@ -41,7 +41,7 @@ No more navigating flight tracking websites or manually parsing aviation data fe
 - **Flight Dispatchers** — verify filed routes, check weather at destination airports, and review historical performance data
 
 
-## Available Tools
+## Available Tools (12)
 - **get_aircraft_info**: g., "N12345" for US-registered, "G-EUUU" for UK). Returns aircraft type (manufacturer and model), registration country, owner/operator information, registration status, year built, engine type (jet, turboprop, piston), number of engines, and category (airline, business jet, private, cargo, military). Critical for aviation enthusiasts, fleet tracking, aircraft utilization analysis, and private aviation monitoring. AI agents should reference this when users ask "tell me about aircraft N12345", "who owns this tail number", or need aircraft specifications to contextualize flight data.
 
 Get registration details and specifications for a specific aircraft
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flightaware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flightaware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FlightAware** tools.
 
 **Configuration:**

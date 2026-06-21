@@ -33,7 +33,7 @@ Connect your AI agents to **BIMobject**, the world's leading BIM content platfor
 - **AEC Software Developers** — integrate BIM content discovery into custom construction applications
 
 
-## Available Tools
+## Available Tools (10)
 - **get_brand_details**: Get details for a specific brand
 - **get_me**: Get current user profile
 - **get_product_files**: List files available for a product
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bimobject` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bimobject` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BIMobject** tools.
 
 **Configuration:**

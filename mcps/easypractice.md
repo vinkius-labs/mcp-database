@@ -32,7 +32,7 @@ Integrate **EasyPractice**, the leading clinic management platform for therapist
 - **Operations Teams** — Monitor billing statuses and organizational metadata across the clinic instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_easypractice_account_metadata**: Retrieve metadata and usage limits for your EasyPractice account
 - **get_appointment_details**: Get detailed information for a specific appointment
 - **get_client_details**: Get detailed profile and appointment history for a specific client
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `easypractice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `easypractice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EasyPractice** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **BalenaCloud** account to any AI agent to orchestrate your IoT inf
 - **Product Owners** — get high-level overviews of fleet health and organization-wide project statuses.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_api_keys**: List Balena API keys
 - **create_device_env_var**: Create a device environment variable
 - **create_device_tag**: Create a device tag
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `balena` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `balena` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Balena** tools.
 
 **Configuration:**

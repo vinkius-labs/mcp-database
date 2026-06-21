@@ -42,7 +42,7 @@ Your AI becomes a smart home assistant, helping you manage lighting, climate, an
 - **Home Automation Enthusiasts** — integrate Alexa devices into broader automation workflows
 
 
-## Available Tools
+## Available Tools (16)
 - **adjust_brightness**: Positive values increase brightness, negative values decrease it.
 
 Adjust the brightness of an Alexa-connected light relatively
@@ -171,7 +171,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alexa-smart-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alexa-smart-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alexa Smart Home** tools.
 
 **Configuration:**

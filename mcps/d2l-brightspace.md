@@ -33,7 +33,7 @@ Connect your **D2L Brightspace** environment to any AI agent to streamline learn
 - **Academic Researchers** — Extract course data and assessment metrics for analysis through natural language queries.
 
 
-## Available Tools
+## Available Tools (33)
 - **copy_course**: Initiate a course copy job
 - **create_course**: Create a course offering
 - **create_enrollment**: Enroll a user in an org unit
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `d2l-brightspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `d2l-brightspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **D2L Brightspace** tools.
 
 **Configuration:**

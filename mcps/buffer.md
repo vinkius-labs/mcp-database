@@ -35,7 +35,7 @@ No more switching tabs to copy-paste generated tweets. Your AI is now officially
 - **Marketing Teams** — pull a summary of last week's sent posts' engagement directly into your strategy session chats
 
 
-## Available Tools
+## Available Tools (10)
 - **list_profiles**: List all connected social profiles
 - **get_config**: Get supported services configuration
 - **get_profile**: Get social profile details
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buffer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buffer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buffer** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Snowflake** account to any AI agent to automate your data cloud o
 - **Data Scientists** — streamline the exploration of large datasets and track session contexts directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_sql**: Cancel a running SQL statement
 - **describe_table**: Get table schema details
 - **execute_sql**: Returns the first partition of results or a handle for long-running queries.
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snowflake-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snowflake-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Snowflake** tools.
 
 **Configuration:**

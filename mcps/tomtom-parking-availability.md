@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire urban mobility and parking audi
 - **Operations Leads** — automate mobility data querying to orchestrate cross-functional logistics teams smoothly.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_api_status**: Check if the TomTom Parking service is operational
 - **get_parking_details**: Get full details and availability metadata for a specific parking ID
 - **search_parking_spots**: Search for parking spots near a specific location
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tomtom-parking-availability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tomtom-parking-availability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TomTom Parking Availability** tools.
 
 **Configuration:**

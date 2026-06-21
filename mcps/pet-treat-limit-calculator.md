@@ -13,7 +13,7 @@ Calculate the maximum number of treats your pet can have without exceeding 10% o
 The Pet Treat Limit Calculator helps pet owners maintain their pets' health by ensuring treats do not exceed the recommended ten percent threshold of their daily caloric requirement. Using tools like `calculate_treat_limit`, `get_calories_per_unit`, and `validate_calorie_input`, you can precisely determine how many biscuits, jerky pieces, or dental sticks are safe for your pet based on their specific daily energy needs.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_treat_limit**: Determines how many units of a specific treat type can be given without exceeding the safety threshold
 - **get_calories_per_unit**: Retrieves the calorie content for a single item within a specific treat category
 - **validate_calorie_input**: Verifies that a proposed daily calorie value is within a biologically plausible range
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-treat-limit-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-treat-limit-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Treat Limit Calculator** tools.
 
 **Configuration:**

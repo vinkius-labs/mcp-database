@@ -33,7 +33,7 @@ Connect your **Optimizely** account to any AI agent and take full control of you
 - **Data Scientists** — retrieve experiment metadata and event definitions for analysis tasks.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_experiment**: Get details for a specific experiment
 - **get_feature_flag**: Get details for a specific feature flag
 - **get_project**: Get details for a specific project
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `optimizely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `optimizely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Optimizely** tools.
 
 **Configuration:**

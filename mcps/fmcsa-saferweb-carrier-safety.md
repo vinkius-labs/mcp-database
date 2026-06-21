@@ -33,7 +33,7 @@ Connect your AI agent to the **Federal Motor Carrier Safety Administration (FMCS
 - **Safety Auditors** — Quickly pull snapshot data for reporting and risk assessment without manual web searching.
 
 
-## Available Tools
+## Available Tools (1)
 - **get_company_snapshot**: Returns parsed text data containing identification, operations, inspections, crashes, and safety rating.
 
 Get a concise electronic record of a carrier’s identification and safety record
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fmcsa-saferweb-carrier-safety` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fmcsa-saferweb-carrier-safety` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FMCSA SaferWeb (Carrier Safety)** tools.
 
 **Configuration:**

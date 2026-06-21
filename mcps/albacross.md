@@ -34,7 +34,7 @@ Connect your **Albacross** account to your AI agent to unlock professional B2B l
 - **Operations Specialists** — monitor workflow health and ensure identified leads are syncing correctly to your sales stack
 
 
-## Available Tools
+## Available Tools (8)
 - **identify_company_by_ip**: Identify company by IP
 - **list_segments**: List lead segments
 - **list_leads**: List identified companies
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `albacross` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `albacross` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Albacross** tools.
 
 **Configuration:**

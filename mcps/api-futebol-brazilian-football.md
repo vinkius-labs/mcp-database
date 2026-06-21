@@ -32,7 +32,7 @@ Equip your AI agent with the most comprehensive intelligence on Brazilian footba
 - **Professional Fans** — track your favorite team's journey through State Leagues and National Cups with micro-metric accuracy
 
 
-## Available Tools
+## Available Tools (12)
 - **get_cup_brackets**: Get the phases and brackets for a cup competition
 - **list_championships**: List all available football championships in Brazil
 - **get_live_matches**: Get real-time scores for matches currently in-play
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `api-futebol-brazilian-football` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `api-futebol-brazilian-football` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **API-Futebol (Brazilian Football)** tools.
 
 **Configuration:**

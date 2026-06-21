@@ -32,7 +32,7 @@ Integrate **Covalent**, the unified API for blockchain data, directly into your 
 - **Data Analysts** — Retrieve structured on-chain data for research and reporting via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_token_balances**: Resolves contract addresses, ticker symbols, token decimals, and current balances (formatted and raw) for the specified wallet and chain.
 
 Get token balances for a wallet address on a specific chain
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `covalent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `covalent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Covalent** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Convert RPE (Borg 6-20 and CR10) to estimated heart rate and training zones.
 The Perceived Exertion Converter bridges the gap between subjective effort and objective physiological metrics. Using the `convert_borg_6_20_scale` and `convert_cr10_scale` tools, athletes can translate their Rate of Perceived Exertion (RPE) into estimated heart rate, percentage of maximum capacity, and specific training zones like Aerobic or Threshold. This is ideal for training without a continuous heart rate monitor. Additionally, use `get_training_guidance` to receive qualitative intensity descriptions and practical coaching advice based on your effort level.
 
 
-## Available Tools
+## Available Tools (3)
 - **convert_cr10_scale**: Converts CR10 scale RPE to physiological metrics
 - **get_training_guidance**: Provides qualitative training descriptions and practical advice
 - **convert_borg_6_20_scale**: Converts Borg 6-20 scale RPE to physiological metrics
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `perceived-exertion-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `perceived-exertion-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Perceived Exertion Converter** tools.
 
 **Configuration:**

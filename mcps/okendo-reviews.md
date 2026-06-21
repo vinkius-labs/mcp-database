@@ -35,7 +35,7 @@ Connect your **Okendo** account to your AI agent and gain deep insights into you
 - **Customer Support** — monitor product-level feedback and questions to improve service and documentation.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_aggregate_ratings**: Get store aggregate ratings
 - **get_okendo_product_details**: Get product review info
 - **get_question_details**: Get specific question details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `okendo-reviews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `okendo-reviews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Okendo Reviews** tools.
 
 **Configuration:**

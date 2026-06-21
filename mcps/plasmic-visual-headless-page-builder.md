@@ -34,7 +34,7 @@ No more switching between the Plasmic Studio and your terminal to check project 
 - **Designers** — keep track of project versions and page inventories via your preferred AI assistant.
 
 
-## Available Tools
+## Available Tools (9)
 - **count_cms_items**: Count items in a Plasmic CMS database table
 - **create_cms_item**: Create a new item in a Plasmic CMS database table
 - **delete_cms_item**: Delete an item from a Plasmic CMS database table
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plasmic-visual-headless-page-builder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plasmic-visual-headless-page-builder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plasmic (Visual Headless Page Builder)** tools.
 
 **Configuration:**

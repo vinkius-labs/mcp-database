@@ -35,7 +35,7 @@ Connect your **Document360** portal to any AI agent and take full control of you
 - **Developers** — test and debug knowledge base integrations and verify documentation schemas directly from the IDE
 
 
-## Available Tools
+## Available Tools (7)
 - **list_projects**: List project versions
 - **list_categories**: List categories in a version
 - **list_articles**: List articles in a category
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `document360` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `document360` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Document360** tools.
 
 **Configuration:**

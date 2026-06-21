@@ -33,7 +33,7 @@ Connect **Inworld AI** to your agent to unlock advanced multimodal capabilities.
 - **AI Engineers** — Build sophisticated agentic workflows that require advanced routing and multimodal interaction.
 
 
-## Available Tools
+## Available Tools (19)
 - **chat_completions**: Generate chat completions via LLM Router
 - **clone_voice**: Clone a voice from audio samples
 - **create_realtime_call**: Create a WebRTC realtime call
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inworld-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inworld-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Inworld AI** tools.
 
 **Configuration:**

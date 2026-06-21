@@ -32,7 +32,7 @@ Integrate **Microsoft Dynamics 365 Finance & Operations**, the comprehensive ERP
 - **Operations Teams** — Research specific order details and organizational ERP metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_d365_fo_metadata**: Retrieve metadata for the current authenticated environment
 - **get_inventory_on_hand**: Retrieve real-time inventory on-hand quantities across all warehouses
 - **quick_finance_health_audit**: Retrieve a high-level summary of recent orders and inventory (mock logic)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dynamics-365-finance-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dynamics-365-finance-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dynamics 365 Finance & Operations** tools.
 
 **Configuration:**

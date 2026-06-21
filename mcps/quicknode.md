@@ -32,7 +32,7 @@ Connect your **QuickNode** account to any AI agent to orchestrate Web3 infrastru
 - **DevOps Teams** — Monitor and update infrastructure configurations, webhooks, and streams on the fly.
 
 
-## Available Tools
+## Available Tools (18)
 - **create_kv_list**: Create a new KV Store list
 - **create_kv_set**: Create a KV Store key-value pair
 - **create_stream**: Create a new QuickNode stream
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `quicknode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `quicknode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QuickNode** tools.
 
 **Configuration:**

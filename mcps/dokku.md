@@ -36,7 +36,7 @@ Connect your **Dokku** instance to any AI agent and take full control of your se
 - **Full-stack Developers** — trigger restarts, scale web processes, and run migrations directly from the chat
 
 
-## Available Tools
+## Available Tools (10)
 - **create_app**: Performs the structural network allocations setting up reverse-proxy hooks (Nginx/Traefik) preceding the actual codebase transfer.
 
 Provision a root App boundary wrapper on the Dokku VM
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dokku` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dokku` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dokku** tools.
 
 **Configuration:**

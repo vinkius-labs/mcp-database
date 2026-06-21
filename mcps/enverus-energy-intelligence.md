@@ -32,7 +32,7 @@ Integrate **Enverus**, the leading energy SaaS company, directly into your AI wo
 - **Operations Teams** — Research drilling permits and organizational energy metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_enverus_api_metadata**: Retrieve metadata and authorization status for your Enverus API connection
 - **get_energy_market_intelligence_summary**: Retrieve a high-level summary of current energy market trends
 - **quick_energy_asset_audit**: Retrieve a high-level summary of rig and well counts
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `enverus-energy-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `enverus-energy-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Enverus Energy Intelligence** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Statuspage (Atlassian)** account to any AI agent to monitor and m
 - **Product Owners** — ensure branding and domains are correctly configured across all status environments.
 
 
-## Available Tools
+## Available Tools (16)
 - **create_page_access_user**: Add a page access user
 - **delete_page_access_user_components**: Remove components for page access user
 - **delete_page_access_user_metrics**: Delete metrics for page access user
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `statuspage-atlassian` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `statuspage-atlassian` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Statuspage (Atlassian)** tools.
 
 **Configuration:**

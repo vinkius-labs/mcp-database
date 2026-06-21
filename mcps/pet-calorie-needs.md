@@ -13,7 +13,7 @@ Calculate precise daily energy requirements (RER and MER) for pets based on weig
 This MCP server provides veterinary-standard calculations for a pet's nutritional needs. Using the `calculate_rer` tool, you can determine the Resting Energy Requirement based on metabolic weight. By applying lifestyle multipliers via `calculate_mer`, you can find the Maintenance Energy Requirement (MER) for various states like neutered, intact, or athletic. Use `list_lifestyle_factors` to see all available activity and physiological multipliers.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_mer**: Calculate the Maintenance Energy Requirement (MER) for a pet
 - **calculate_rer**: 75 to find the baseline calories needed at rest.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-calorie-needs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-calorie-needs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Calorie Needs** tools.
 
 **Configuration:**

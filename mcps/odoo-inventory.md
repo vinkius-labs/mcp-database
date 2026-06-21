@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (9)
 - **odoo_product_stock**: quant records for the given product ID, showing quantity and reserved quantity at each internal location. Use when the user needs to know WHERE stock is located, not just the total — e.g., "how much of Product X is in Warehouse A vs Warehouse B?"
 
 Get detailed stock levels for a specific product broken down by warehouse location
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-inventory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-inventory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo Inventory** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to the **Ticketmaster** ecosystem to discover live enterta
 - **Developers** — Integrate live event data and ticketing capabilities into custom workflows or applications.
 
 
-## Available Tools
+## Available Tools (22)
 - **add_billing**: Add billing to a cart (Partner API)
 - **add_shipping**: Add shipping to a cart (Partner API)
 - **commit_purchase**: Commit a ticket purchase (Partner API)
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ticketmaster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ticketmaster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ticketmaster** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 - **Support Teams** — Access contact and account data seamlessly
 
 
-## Available Tools
+## Available Tools (10)
 - **zoho_create_deal**: Deal_Name is required. Stages: Qualification, Needs Analysis, Value Proposition, Proposal/Price Quote, Negotiation/Review, Closed Won, Closed Lost. Pipeline lets you assign to a specific sales pipeline (if multiple exist). Closing_Date is YYYY-MM-DD.
 
 Create a new deal/opportunity in Zoho CRM with name, stage, amount, pipeline, and closing date
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-crm-sales` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-crm-sales` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho CRM Sales** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect to **Riot Games API** and access League of Legends player data through n
 - **Content Creators** — access player data, live games and champion info for content
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_by_puuid**: Returns game name, tag line and account metadata.
 
 Get player account details by PUUID
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `riot-games` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `riot-games` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Riot Games** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to **DefiLlama**, the leading aggregator for decentralized
 - **Portfolio Managers** — track market trends and yield opportunities across multiple chains instantly
 
 
-## Available Tools
+## Available Tools (19)
 - **get_all_bridges**: Get all bridges
 - **get_all_chains_tvl**: Get current TVL for all chains
 - **get_all_pools**: Get current APY and TVL for all pools
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `defillama-defi-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `defillama-defi-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DefiLlama (DeFi Analytics)** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Immediately generate structured, guided therapeutic exercises (5-4-3-2-1, body s
 **Struggling to stay present when emotions are overwhelming?** When anxiety or stress hits, the mind can become trapped in worry loops. These scripts provide immediate, actionable guidance to systematically pull your focus back to your physical reality. Our system works by synthesizing three core therapeutic methods: 1) **Sensory Grounding** using `generate_sensory_exercise`, which guides you through identifying five things you see, four things you feel, etc., anchoring you in the moment. 2) **Body Scan Meditation** via `get_body_scan_segments`, directing attention systematically across your body to promote physical awareness and relaxation. 3) **Cognitive Anchoring** using `determine_anchoring_script`, which creates personalized scripts tailored to specific emotions (like anxiety or sadness) through breathing, mantras, or visualization. The result is a complete, self-contained guide that requires no external data, making it perfect for use anywhere.
 
 
-## Available Tools
+## Available Tools (3)
 - **determine_anchoring_script**: Generate an emotion-specific cognitive anchoring script
 - **get_body_scan_segments**: Generate a guided body scan meditation script
 - **generate_sensory_exercise**: Generate a guided 5-4-3-2-1 sensory grounding exercise
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grounding-exercise-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grounding-exercise-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Grounding Exercise Generator** tools.
 
 **Configuration:**

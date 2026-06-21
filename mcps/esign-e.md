@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your digital agreement lifecycle with **eSi
 - **Enterprise Leaders** — get real-time insights into organization-wide document execution and compliance status.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_docs**: Add documents to flow
 - **add_signers**: Add signers to flow
 - **create_sign_flow**: Create a new sign flow
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `esign-e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `esign-e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **eSign (e签宝)** tools.
 
 **Configuration:**

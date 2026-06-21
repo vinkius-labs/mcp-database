@@ -13,7 +13,7 @@ Manage learners, courses, and results via Innform LMS API.
 Empower your AI agents to manage your training platform with Innform. This MCP server allows you to list learners, track course completion, manage learning pathways, and view results directly through the Innform API. Ideal for automating corporate training and employee development.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_learner**: Retrieves details for a specific learner
 - **get_me**: Gets current authenticated user info
 - **list_courses**: Lists all courses
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `innform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `innform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Innform** tools.
 
 **Configuration:**

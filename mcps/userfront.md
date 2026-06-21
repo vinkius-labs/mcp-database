@@ -33,7 +33,7 @@ Connect your **Userfront** workspace to your AI agent to streamline identity man
 - **Customer Support** — Instantly find user records, update emails, or reset statuses to resolve tickets faster.
 
 
-## Available Tools
+## Available Tools (40)
 - **create_api_key**: Create a new API key
 - **create_child_tenant**: Create a child tenant
 - **create_custom_jwt**: Create a custom JWT access token for a user
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `userfront` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `userfront` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Userfront** tools.
 
 **Configuration:**

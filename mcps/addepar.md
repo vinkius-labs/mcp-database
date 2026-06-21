@@ -34,7 +34,7 @@ Connect your **Addepar** account to your AI agent to unlock enterprise-grade inv
 - **Family Offices** — track complex ownership structures and performance trends effortlessly
 
 
-## Available Tools
+## Available Tools (5)
 - **list_entities**: List clients and accounts
 - **get_entity_details**: Get details for an entity
 - **get_portfolio_analytics**: Get portfolio performance data
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `addepar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `addepar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Addepar** tools.
 
 **Configuration:**

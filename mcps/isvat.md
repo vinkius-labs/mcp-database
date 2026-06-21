@@ -33,7 +33,7 @@ Empower your AI agent to orchestrate your entire European VAT validation workflo
 - **Operations Leads** — automate VAT data querying to orchestrate cross-functional global teams smoothly.
 
 
-## Available Tools
+## Available Tools (3)
 - **validate_multiple_vat**: Verify multiple European VAT numbers
 - **check_api_status**: Check if the isvat API is operational
 - **validate_eu_vat**: Verify if a European VAT number is valid
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `isvat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `isvat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **isvat** tools.
 
 **Configuration:**

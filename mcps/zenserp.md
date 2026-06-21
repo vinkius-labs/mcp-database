@@ -38,7 +38,7 @@ No more manual search scraping or proxy management. Your AI agent becomes your g
 - **Content Marketers** — find relevant images, videos, and news stories to inform content strategy and distribution
 
 
-## Available Tools
+## Available Tools (10)
 - **search_bing**: Retrieves organic search results from Microsoft Bing
 - **search_duckduckgo**: Retrieves organic search results from DuckDuckGo
 - **search_images**: Retrieves image search results from Google
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zenserp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zenserp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zenserp** tools.
 
 **Configuration:**

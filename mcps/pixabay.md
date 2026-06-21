@@ -32,7 +32,7 @@ Connect the **Pixabay** massive media library natively to your AI agent. Access 
 - **Designers** — discover curated vector SVGs mapping directly to specific project themes and vertical canvas sizes.
 
 
-## Available Tools
+## Available Tools (10)
 - **search_images**: Search Pixabay free stock images. Over 4.5M photos, illustrations, vectors. Returns IDs, preview URLs, page URL, tags, dimensions, downloads, and likes. Pixabay license allows free commercial use. Instructions: Pass query, page, per_page (max 200), image_type (all/photo/illustration/vector)
 - **search_illustrations**: Search Pixabay illustrations. Drawings, digital art, and clipart
 - **search_vectors**: Search Pixabay vector graphics. Scalable SVG art, icons, and infographics
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pixabay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pixabay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pixabay** tools.
 
 **Configuration:**

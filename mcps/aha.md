@@ -34,7 +34,7 @@ Connect your **Aha!** account to your AI agent to unlock professional product ma
 - **Engineering Leads** — quickly look up feature technical metadata and release schedules using simple commands
 
 
-## Available Tools
+## Available Tools (5)
 - **list_features**: List product features
 - **get_feature**: Get feature details
 - **list_ideas**: List product ideas
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aha!** tools.
 
 **Configuration:**

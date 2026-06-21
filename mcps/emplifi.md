@@ -32,7 +32,7 @@ Integrate **Emplifi**, the unified customer experience (CX) platform, directly i
 - **Operations Teams** — Monitor social listening trends and organizational CX metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_emplifi_account_metadata**: Retrieve metadata and limits for your Emplifi account
 - **get_influencer_performance_stats**: Get performance metrics for a specific influencer/creator
 - **get_social_post_metrics**: Get engagement and performance metrics for a specific social post
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emplifi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emplifi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Emplifi** tools.
 
 **Configuration:**

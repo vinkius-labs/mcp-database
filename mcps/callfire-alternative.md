@@ -33,7 +33,7 @@ Connect your **CallFire** account to any AI agent and manage your voice and SMS 
 - **Customer Support** — quickly search for calls and messages by contact ID for case investigation
 
 
-## Available Tools
+## Available Tools (10)
 - **get_call**: Get a specific call
 - **get_campaign**: Get a specific broadcast campaign
 - **get_contact**: Get a specific contact
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `callfire-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `callfire-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CallFire** tools.
 
 **Configuration:**

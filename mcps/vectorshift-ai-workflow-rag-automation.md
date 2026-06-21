@@ -32,7 +32,7 @@ Connect your **VectorShift** account to any AI agent and take full control of yo
 - **Product Teams** — quickly query internal knowledge bases to retrieve technical or product documentation via AI
 
 
-## Available Tools
+## Available Tools (29)
 - **bulk_run_pipeline**: Execute multiple instances of a pipeline in parallel
 - **create_chatbot**: Create a new chatbot
 - **create_knowledge_base**: Create a new knowledge base
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vectorshift-ai-workflow-rag-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vectorshift-ai-workflow-rag-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VectorShift (AI Workflow & RAG Automation)** tools.
 
 **Configuration:**

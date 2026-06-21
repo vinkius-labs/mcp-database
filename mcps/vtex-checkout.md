@@ -34,7 +34,7 @@ Connect your **VTEX** e-commerce checkout API to any AI agent and streamline you
 - **Operations Teams** — Validate shipping costs and coupon rules across different regions and postal codes.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_address**: Add a new address to a client profile
 - **get_client_profile**: Get client profile details
 - **add_coupon**: Apply a coupon to a shopping cart
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vtex-checkout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vtex-checkout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VTEX Checkout** tools.
 
 **Configuration:**

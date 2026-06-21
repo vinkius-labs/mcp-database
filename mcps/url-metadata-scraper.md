@@ -18,7 +18,7 @@ When an AI Agent needs to summarize a link for a social media post, loading the 
 - **Social Ready:** Perfect for agents building marketing dashboards or Twitter threads.
 
 
-## Available Tools
+## Available Tools (1)
 - **scrape_url**: Pass the full URL and receive structured metadata without loading a headless browser. Useful for link previews, SEO audits, and social sharing validation.
 
 Extracts OpenGraph and SEO metadata (Title, Description, Image) from a URL instantly without loading a full headless browser
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `url-metadata-scraper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `url-metadata-scraper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **URL Metadata Scraper** tools.
 
 **Configuration:**

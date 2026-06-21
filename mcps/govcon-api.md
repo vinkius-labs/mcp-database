@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire business development and govern
 - **Operations Leads** — automate procurement data querying to orchestrate cross-functional business teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the GovCon service is operational
 - **get_procurement_details**: Get full details for a specific government opportunity by ID
 - **list_government_agencies**: List all government agencies registered in the GovCon database
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `govcon-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `govcon-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GovCon API** tools.
 
 **Configuration:**

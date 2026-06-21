@@ -22,7 +22,7 @@ This MCP uses the `yaml` package (30M+ downloads) — the only JavaScript YAML l
 - **Zero Hallucination:** AI-generated YAML is validated against the actual spec, not guessed.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_yaml**: Pass the content and direction ("yaml-to-json" or "json-to-yaml"). This engine uses the yaml package (30M+ weekly downloads) which is more robust than js-yaml and passes the official YAML test suite.
 
 Converts YAML to JSON and vice versa. Supports YAML 1.1/1.2 with comment preservation. Essential for Kubernetes, GitHub Actions, Docker Compose, and Ansible configs
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `yaml-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `yaml-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **YAML Parser Engine** tools.
 
 **Configuration:**

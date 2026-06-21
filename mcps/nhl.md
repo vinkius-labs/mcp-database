@@ -33,7 +33,7 @@ Connect your AI agent to the pulse of the **National Hockey League**. This serve
 - **Developers** — integrate live sports data into your workflow or build hockey-themed tools with ease.
 
 
-## Available Tools
+## Available Tools (47)
 - **get_awards**: Get NHL awards
 - **get_conferences**: Get NHL conferences
 - **get_current_schedule**: Get the NHL schedule for the current day
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nhl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nhl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NHL** tools.
 
 **Configuration:**

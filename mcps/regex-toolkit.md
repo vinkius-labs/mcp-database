@@ -19,7 +19,7 @@ Parsing unstructured text to find contact information is a classic LLM vulnerabi
 - **Privacy First (Local):** Your data never leaves your infrastructure. The regex engine compiles and executes entirely locally.
 
 
-## Available Tools
+## Available Tools (3)
 - **mask_sensitive_data**: Redacts sensitive PII (emails, phones, URLs) from a text blob by replacing them with [REDACTED] tags
 - **validate_pattern**: Validates if a single string perfectly matches an email, URL, or phone format
 - **extract_pattern**: Extracts all unique emails, URLs, or phone numbers from a large body of text
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `regex-toolkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `regex-toolkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Regex Toolkit** tools.
 
 **Configuration:**

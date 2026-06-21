@@ -33,7 +33,7 @@ Connect your **Duffel** account to any AI agent to transform it into a powerful 
 - **Developers & Builders** — Integrate travel booking capabilities into custom agents or internal tools with ease.
 
 
-## Available Tools
+## Available Tools (29)
 - **book_stay**: Book a stay
 - **cancel_order**: Cancel a flight order
 - **change_order**: Request a change to an existing order
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `duffel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `duffel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Duffel** tools.
 
 **Configuration:**

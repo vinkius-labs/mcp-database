@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire event research and demand audit
 - **Operations Leads** — automate event data querying to orchestrate cross-functional outreach teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the PredictHQ service is operational
 - **get_event_details**: Get full metadata and ranking for a specific event ID
 - **list_event_categories**: List common event categories supported by PredictHQ
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `predicthq-event-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `predicthq-event-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PredictHQ Event Intelligence** tools.
 
 **Configuration:**

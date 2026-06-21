@@ -34,7 +34,7 @@ Eliminate messy folder trees and manual downloads. Let the AI serve links to the
 - **Software engineers** — verify asset CDN URLs validating collection permissions programmatic rules
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_asset**: Inject a new digital asset (image, document, etc.) into a Brandfolder
 - **wipe_media_asset**: Permanently delete a digital asset from Brandfolder
 - **get_asset_details**: ` logic.
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brandfolder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brandfolder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Brandfolder** tools.
 
 **Configuration:**

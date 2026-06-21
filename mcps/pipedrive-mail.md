@@ -27,7 +27,7 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 - **RevOps** — Full CRM visibility and reporting
 
 
-## Available Tools
+## Available Tools (4)
 - **pd_deal_mail**: Get emails linked to a deal
 - **pd_get_mail_messages**: Get messages in a thread
 - **pd_get_mail_thread**: Get email thread details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipedrive-mail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipedrive-mail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipedrive Mail** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **CustomerGauge**, the leading B2B Experience Management platform, dir
 - **Experience Analysts** — Gather structured data on revenue impact and B2B engagement for reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_nps**: Resolves quantitative satisfaction scores. Interacts with the sentiment aggregation engine.
 
 Get the Net Promoter Score (NPS) for a specific account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `customergauge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `customergauge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CustomerGauge** tools.
 
 **Configuration:**

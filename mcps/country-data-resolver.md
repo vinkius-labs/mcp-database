@@ -18,7 +18,7 @@ When a CRM agent processes international contacts, it cannot guess that 'MK' is 
 - **4 Languages:** Country names in EN, PT, ES, and FR for multilingual CRM workflows.
 
 
-## Available Tools
+## Available Tools (1)
 - **resolve_country**: Pass the alpha-2 code (e.g. "BR", "DE", "JP") and optionally a language for the name (en, pt, es, fr). Never guess country names for obscure codes.
 
 Resolves ISO country codes to full country names in 4 languages, plus alpha-3 and numeric codes. Essential for CRM and Martech agents handling international data
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `country-data-resolver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `country-data-resolver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Country Data Resolver** tools.
 
 **Configuration:**

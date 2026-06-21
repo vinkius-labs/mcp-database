@@ -24,7 +24,7 @@ Connect **Salesforce Chatter** to any AI agent.
 - **All Users** — Internal comms through your AI assistant
 
 
-## Available Tools
+## Available Tools (5)
 - **sf_comment_on_post**: Requires the feed element ID.
 
 Comment on a Chatter post
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesforce-chatter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesforce-chatter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesforce Chatter** tools.
 
 **Configuration:**

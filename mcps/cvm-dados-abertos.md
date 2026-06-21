@@ -33,7 +33,7 @@ Connect your AI agent to the **CVM (Comissão de Valores Mobiliários)** Open Da
 - **Compliance Officers** — verify organizational data and thematic groupings for regulatory reporting.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_groups**: g., "Fundos de Investimento", "Companhias").
 
 List thematic groups
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cvm-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cvm-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CVM Dados Abertos** tools.
 
 **Configuration:**

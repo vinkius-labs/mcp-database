@@ -33,7 +33,7 @@ Connect your AI agent to the **CardanoScan API** to explore the Cardano blockcha
 - **Stake Pool Delegators** — Check pool performance and metadata to make informed staking decisions.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_address**: Get detailed information about a specific Cardano address
 - **get_asset**: Get information about a specific native asset
 - **get_block**: Get information about a specific block by its hash or number
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cardanoscan-cardano-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cardanoscan-cardano-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CardanoScan (Cardano Block Explorer API)** tools.
 
 **Configuration:**

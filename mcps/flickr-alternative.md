@@ -33,7 +33,7 @@ Connect to the **Flickr** API to search one of the world's largest photo librari
 - **Developers** — Test API connectivity and parameter passing using the built-in `test_echo` utility.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_person_info**: Get information about a user
 - **get_photo_info**: Get detailed metadata for a photo
 - **list_photosets**: Returns the albums (photosets) belonging to a user
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flickr-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flickr-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flickr** tools.
 
 **Configuration:**

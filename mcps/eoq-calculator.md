@@ -13,7 +13,7 @@ Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ
 The EOQ Calculator helps businesses minimize total inventory costs by finding the ideal balance between ordering expenses and holding costs. Using the `calculate_eoq_metrics` tool, you can determine your optimal order quantity, frequency of orders per year, and the average days between replenishment cycles. Additionally, use `calculate_reorder_point` to identify exactly when a new order should be placed based on lead time, and `analyze_cost_efficiency` to get a detailed breakdown of annual ordering versus holding costs. This tool is essential for supply chain managers looking to prevent stockouts while reducing unnecessary storage expenditures.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_cost_efficiency**: Provides a granular breakdown of inventory costs to verify the balance between ordering and holding expenses
 - **calculate_eoq_metrics**: Calculates the primary optimization metrics including optimal quantity and replenishment frequency
 - **calculate_reorder_point**: Determines the specific inventory threshold that triggers a new purchase order
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eoq-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eoq-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EOQ Calculator** tools.
 
 **Configuration:**

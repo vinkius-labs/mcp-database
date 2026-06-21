@@ -33,7 +33,7 @@ Connect your AI agent to **Dub.co** (formerly Dub.sh), the modern link managemen
 - **Product Managers** — audit link routing and analyze user flow via geographic data
 
 
-## Available Tools
+## Available Tools (10)
 - **create_short_link**: Create a new short link
 - **delete_short_link**: Permanently delete a short link
 - **get_workspace_analytics**: Retrieve aggregate analytics for the authenticated workspace
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dubco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dubco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dub.co** tools.
 
 **Configuration:**

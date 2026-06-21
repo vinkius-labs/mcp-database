@@ -25,7 +25,7 @@ Grant your AI agent (like Claude or Cursor) absolute administrative dominion ove
 3. Engage your agent pragmatically: "List all recent orders, analyze their total value, and tell me if we are low on the latest collection products!"
 
 
-## Available Tools
+## Available Tools (7)
 - **list_products**: Lists all products in the Shopline store
 - **get_product_details**: Retrieves details for a specific product
 - **list_orders**: Lists all store orders
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shopline` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shopline` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shopline** tools.
 
 **Configuration:**

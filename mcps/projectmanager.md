@@ -27,7 +27,7 @@ Connect your **ProjectManager.com** account to any AI agent and simplify your pr
 3. Start managing your projects from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (11)
 - **create_project**: Create a new project
 - **create_project_task**: Add a new task
 - **get_project_details**: Get details for a specific project
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `projectmanager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `projectmanager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ProjectManager** tools.
 
 **Configuration:**

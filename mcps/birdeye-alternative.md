@@ -35,7 +35,7 @@ No more manual logging into individual review sites or missing critical feedback
 - **Multi-Location Owners** — monitor reputation performance across all branches and coordinate surveys through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **customer_checkin**: Trigger a review request (Check-in)
 - **create_customer**: Add a new customer profile
 - **get_customer_details**: Get full customer profile
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `birdeye-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `birdeye-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Birdeye** tools.
 
 **Configuration:**

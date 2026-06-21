@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire mobile communication strategy o
 - **Operations Managers** — automate messaging workflows to orchestrate customer engagement smoothly.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_messages**: Get message history for a specific conversation
 - **get_page_info**: Get basic information about the connected Facebook Page
 - **get_page_settings**: Get settings for the Facebook Page
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `messenger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `messenger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Messenger** tools.
 
 **Configuration:**

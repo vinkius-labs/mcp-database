@@ -13,7 +13,7 @@ Analyze the economic efficiency of gaming Battle Passes by calculating ROI and b
 This MCP server provides a suite of analytical tools to evaluate the profitability of gaming Battle Passes. By using `total_pass_value`, you can aggregate the market value of all rewards. Use `calculate_investment_return` to determine your ROI percentage, and `find_break_even_tier` to identify exactly when your investment pays off. Additionally, `estimate_session_break_even` helps predict how many gaming sessions are required to reach your target tier based on your progression rate.
 
 
-## Available Tools
+## Available Tools (4)
 - **find_break_even_tier**: Identify the tier at which the cumulative reward value exceeds the pass cost
 - **calculate_investment_return**: Calculate the ROI and profitability of a battle pass purchase
 - **estimate_session_break_even**: Estimate how many gameplay sessions are needed to reach a specific tier
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `battle-pass-value-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `battle-pass-value-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Battle Pass Value Calculator** tools.
 
 **Configuration:**

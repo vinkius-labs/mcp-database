@@ -31,7 +31,7 @@ Interface directly with the colossal **NetEase BUFF163 Marketplace** through nat
 - **Market Historians** — compile the macro economic behavior charting how specific digital events crush or pump virtual currencies accurately
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_order**: Cancel an open buy or sell order
 - **create_buy_order**: Place a buy order for an item
 - **get_buy_orders**: List active buy orders for a specific item
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `netease-buff` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `netease-buff` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NetEase BUFF** tools.
 
 **Configuration:**

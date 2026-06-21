@@ -32,7 +32,7 @@ Connect your **Spocket** account to any AI agent to streamline your dropshipping
 - **Developers** — integrate Spocket data into custom workflows or dashboards without building complex integrations.
 
 
-## Available Tools
+## Available Tools (5)
 - **create_order**: Create a new order in Spocket
 - **get_inventory**: Check stock levels for a Spocket product
 - **get_order**: Get Spocket order status
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spocket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spocket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spocket** tools.
 
 **Configuration:**

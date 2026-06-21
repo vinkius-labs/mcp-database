@@ -32,7 +32,7 @@ Integrate **Crowdin**, the leading localization management platform, directly in
 - **Content Strategists** — Explore glossaries and supported languages during internationalization planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_supported_languages**: Resolves language codes, human-readable names, and locale identifiers.
 
 List all languages supported by Crowdin
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crowdin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crowdin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Crowdin** tools.
 
 **Configuration:**

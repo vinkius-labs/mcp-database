@@ -34,7 +34,7 @@ Connect your **Buzzsprout** account to any AI agent and orchestrate your podcast
 - **Developers** — integrate podcast management steps into their environment using natural language.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_episode**: Create a new podcast episode
 - **delete_episode**: Delete an episode permanently
 - **get_account_info**: Retrieve core account/podcast settings
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buzzsprout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buzzsprout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buzzsprout** tools.
 
 **Configuration:**

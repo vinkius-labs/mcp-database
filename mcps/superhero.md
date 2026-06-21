@@ -34,7 +34,7 @@ Connect to the **SuperHero API** and bring the multiverse to your AI agent. Acce
 - **Comic Book Enthusiasts** — Compare stats and histories across different universes and publishers instantly.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_appearance**: Get physical appearance statistics for a specific character
 - **get_biography**: Get biographical data for a specific character
 - **get_character**: Get all information for a specific character by ID
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `superhero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `superhero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SuperHero** tools.
 
 **Configuration:**

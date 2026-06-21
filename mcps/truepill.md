@@ -33,7 +33,7 @@ Connect your **Truepill** account to any AI agent to streamline pharmacy and pat
 - **Developers** — test and interact with the Truepill API directly from the code editor to verify patient data structures.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_patient**: Returns a patient_token.
 
 Create a new patient record
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `truepill` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `truepill` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Truepill** tools.
 
 **Configuration:**

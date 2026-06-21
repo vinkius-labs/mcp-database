@@ -13,7 +13,7 @@ Exact deterministic unigram, bigram, and trigram counting over huge texts. Save 
 Counting the most frequent 2-word or 3-word phrases (N-Grams) in a 100-page document is an expensive and inaccurate task for an LLM. Due to token limits, LLMs will approximate the counts or miss phrases entirely. The N-Gram Frequency Engine processes the text directly in native V8 JavaScript, delivering mathematically perfect frequency counts for bigrams, trigrams, and custom N-Grams in milliseconds.
 
 
-## Available Tools
+## Available Tools (1)
 - **extract_ngram_frequencies**: Extracts the top most frequent N-Grams (e.g. bigrams, trigrams) from a text deterministically
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `n-gram-frequency-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `n-gram-frequency-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **N-Gram Frequency Engine** tools.
 
 **Configuration:**

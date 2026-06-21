@@ -33,7 +33,7 @@ Connect your **Workable** account to any AI agent to manage your entire recruitm
 - **Talent Acquisition Leads** — automate reporting on hiring stages and recruiter workloads
 
 
-## Available Tools
+## Available Tools (7)
 - **list_candidates**: List candidates in Workable
 - **create_candidate**: Create a new candidate in Workable
 - **get_candidate**: Get details for a specific candidate
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `workable-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `workable-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Workable** tools.
 
 **Configuration:**

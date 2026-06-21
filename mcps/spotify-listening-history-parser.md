@@ -19,7 +19,7 @@ Spotify lets you request your full listening history via Privacy settings. The r
 - **100% Local.** Your music taste stays private.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_spotify_history**: The file is usually a JSON array of listening events.
 
 Parse a Spotify listening history JSON export (from Spotify Privacy or Google Takeout) and aggregate top artists, tracks, and total listening hours
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spotify-listening-history-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spotify-listening-history-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spotify Listening History Parser** tools.
 
 **Configuration:**

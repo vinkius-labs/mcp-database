@@ -22,7 +22,7 @@ This MCP generates mathematically valid UUIDs using the official `uuid` package 
 - **RFC 9562 Compliant:** Every UUID passes validation with correct version and variant bits.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_uuid**: v4: random (most common). v5: deterministic from name+namespace (same input = same UUID). v7: time-ordered (ideal for database primary keys — sortable by creation time). Always use this instead of inventing IDs manually.
 
 Generates UUIDs v4 (random), v5 (name-based SHA-1), and v7 (time-ordered) conforming to RFC 9562
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uuid-generator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uuid-generator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UUID Generator Engine** tools.
 
 **Configuration:**

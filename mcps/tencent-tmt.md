@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your global content and multilingual commun
 - **Tencent Cloud Power Users** — integrate your existing TMT workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_tmt_status**: Check TMT API status
 - **detect_language**: Detect language of text
 - **translate_en_to_zh**: Translate English to Chinese
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tencent-tmt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tencent-tmt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tencent TMT / 腾讯机器翻译** tools.
 
 **Configuration:**

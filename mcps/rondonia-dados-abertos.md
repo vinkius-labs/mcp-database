@@ -33,7 +33,7 @@ Connect to the **Rondônia Dados Abertos** portal and the Transparency API to ex
 - **Data Analysts** — fetch structured metadata from the CKAN catalog to integrate into larger data pipelines.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_dataset**: Get details for a specific dataset
 - **list_contratos**: Consult state contracts
 - **list_convenios**: Consult state covenants (convênios)
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rondonia-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rondonia-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rondônia Dados Abertos** tools.
 
 **Configuration:**

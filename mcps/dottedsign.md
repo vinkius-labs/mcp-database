@@ -13,7 +13,7 @@ E-signature and document management with DottedSign.
 The DottedSign MCP server empowers your AI agent to manage electronic signatures, retrieve document templates, and orchestrate signing tasks entirely from the conversational interface.
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_task**: Cancel an active signing task
 - **create_task_from_template**: Create a new signing task from a template
 - **create_task**: Create a new signing task
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dottedsign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dottedsign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DottedSign** tools.
 
 **Configuration:**

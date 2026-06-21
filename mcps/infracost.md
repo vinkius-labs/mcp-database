@@ -33,7 +33,7 @@ Connect **Infracost** to your AI agent to bring financial visibility and governa
 - **Engineering Managers** — set budget thresholds and receive automated summaries of cost impacts for proposed infrastructure changes.
 
 
-## Available Tools
+## Available Tools (13)
 - **list_guardrails**: List all guardrails for an organization
 - **query_pricing**: Provide a valid GraphQL query string.
 
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `infracost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `infracost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Infracost** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect **Adobe Acrobat Sign** to your AI agent to streamline your digital signa
 - **HR Departments** — manage employee onboarding documents and library templates directly through an AI assistant.
 
 
-## Available Tools
+## Available Tools (13)
 - **create_agreement**: Create a new agreement
 - **create_library_document**: Create a library document
 - **create_transient_document**: g., creating an agreement). Available for 7 days.
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adobe-sign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adobe-sign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adobe Sign** tools.
 
 **Configuration:**

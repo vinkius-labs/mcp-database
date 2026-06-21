@@ -35,7 +35,7 @@ Connect your **GetFeedback** account to any AI agent to automate your customer f
 - **Marketing Analysts** — automate the retrieval of survey data for weekly reporting and brand health tracking.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_limits**: Verify connectivity
 - **verify_api_connection**: Check connection
 - **get_my_identity**: Get user identity
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `getfeedback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `getfeedback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GetFeedback** tools.
 
 **Configuration:**

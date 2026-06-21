@@ -41,7 +41,7 @@ No more navigating multiple TfL apps or manually checking arrival boards. Your A
 - **Drivers** — monitor road status, disruptions, and ULEZ compliance before driving in London
 
 
-## Available Tools
+## Available Tools (12)
 - **get_arrivals**: g., 940GZZLUSCL for Oxford Circus Underground, or 490007653 for a bus stop). Returns predicted arrival times, line names, destination stations, time to station in minutes, vehicle IDs, expected arrival timestamps, and service types (tube, bus, dlr, elizabeth-line, overground, tram, river, cable-car). Essential for real-time arrival awareness, passenger waiting time estimation, trip timing, and connection coordination across the entire London transport network. AI agents should reference this when users ask "when is the next Northern Line train at Bank", "show upcoming buses at stop 490007653", or need real-time arrival predictions for any TfL stop point. Stop IDs can be found using search_stop_point.
 
 Get real-time arrival predictions for a specific TfL stop point
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tfl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tfl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TfL** tools.
 
 **Configuration:**

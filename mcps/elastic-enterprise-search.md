@@ -35,7 +35,7 @@ Connect your **Elastic Enterprise Search** deployment to any AI agent and take f
 - **Ops Teams** — verify engine health and manage document indexing pipelines in real-time
 
 
-## Available Tools
+## Available Tools (6)
 - **list_engines**: List engines
 - **get_engine**: Get engine
 - **search**: Search documents within an engine
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elastic-enterprise-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elastic-enterprise-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elastic Enterprise Search** tools.
 
 **Configuration:**

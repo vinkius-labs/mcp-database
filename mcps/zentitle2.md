@@ -33,7 +33,7 @@ Connect your **Zentitle2** licensing account to any AI agent and simplify how yo
 - **Product Operations** — monitor product distribution and customer adoption directly from the workspace.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_activation_code**: Generate a new activation code
 - **create_customer**: Create a new customer in Zentitle2
 - **create_entitlement**: Provision a new entitlement
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zentitle2` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zentitle2` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zentitle2** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Hudu** instance to any AI agent and manage your IT documentation 
 - **Support Engineers** — quickly retrieve client passwords, asset details, and troubleshooting procedures during incidents
 
 
-## Available Tools
+## Available Tools (12)
 - **get_article**: Get details for a specific article
 - **get_asset**: Get details for a specific asset
 - **get_company**: Get details for a specific company
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hudu-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hudu-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hudu** tools.
 
 **Configuration:**

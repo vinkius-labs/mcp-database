@@ -34,7 +34,7 @@ Connect your **Freshsuccess** (Freshdesk Customer Success) account to any AI age
 - **Account Executives** — get a real-time overview of customer adoption before renewal conversations.
 
 
-## Available Tools
+## Available Tools (11)
 - **check_api_status**: Verify API connection
 - **get_account_health**: Get account metadata
 - **get_user_health**: Get user metadata
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freshsuccess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freshsuccess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Freshsuccess** tools.
 
 **Configuration:**

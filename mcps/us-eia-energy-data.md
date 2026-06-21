@@ -32,7 +32,7 @@ Integrate the **U.S. Energy Information Administration (EIA)**, the official sou
 - **Operations Teams** — Gather official U.S. energy metadata and historical series data instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_eia_api_metadata**: Retrieve metadata for the current EIA API connection
 - **quick_us_energy_audit**: S. energy health.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-eia-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-eia-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **U.S. EIA Energy Data** tools.
 
 **Configuration:**

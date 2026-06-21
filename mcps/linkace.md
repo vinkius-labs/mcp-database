@@ -33,7 +33,7 @@ Connect your **LinkAce** instance to any AI agent to automate your personal know
 - **Power Users** — Automate the curation of your personal bookmark manager directly from your productivity tools
 
 
-## Available Tools
+## Available Tools (9)
 - **create_new_bookmark**: Requires at least a URL.
 
 Add a new link to your archive
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linkace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linkace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LinkAce** tools.
 
 **Configuration:**

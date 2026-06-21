@@ -36,7 +36,7 @@ Connect your **Fireworks AI** account to any AI agent and take full control of y
 - **Data Scientists** — evaluate different LLM and image models through natural conversation
 
 
-## Available Tools
+## Available Tools (6)
 - **embed**: Generate embeddings using Fireworks AI
 - **list_models**: List Fireworks AI models
 - **image**: Generate an image using Fireworks AI
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fireworks-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fireworks-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fireworks AI** tools.
 
 **Configuration:**

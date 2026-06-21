@@ -32,7 +32,7 @@ Integrate **Cornerstone OnDemand**, the leading human capital management and lea
 - **Department Heads** — Review team performance goals and active job openings.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_course_details**: Touches content metadata and availability rule boundaries.
 
 Get details for a specific training course
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cornerstone-ondemand` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cornerstone-ondemand` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cornerstone OnDemand** tools.
 
 **Configuration:**

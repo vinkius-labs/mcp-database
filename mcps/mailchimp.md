@@ -30,7 +30,7 @@ Equip any AI agent with robust Mailchimp marketing capabilities. Integrate your 
 - **Content Marketers** — trace campaign statuses quickly when jumping between different platforms constantly
 
 
-## Available Tools
+## Available Tools (14)
 - **add_member**: Pass status (subscribed, unsubscribed, cleaned, pending, transactional).
 
 Add a new contact to a Mailchimp audience
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailchimp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailchimp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailchimp** tools.
 
 **Configuration:**

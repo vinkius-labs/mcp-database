@@ -13,7 +13,7 @@ Calculate exact Levenshtein, Jaro-Winkler, and Dice distances for fuzzy text mat
 When deduplicating lists of names or correcting misspellings (e.g. 'John Smith' vs 'Jon Smyth'), semantic embeddings are overkill and LLM prompting is unpredictable. This engine provides the academic gold-standard string distances: Levenshtein (edit distance), Jaro-Winkler (prefix-heavy similarity), and Dice coefficient. Computed strictly in local JS, it gives agents a mathematical foundation for entity resolution.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_fuzzy_distance**: Calculates deterministic Levenshtein, Jaro-Winkler, and Dice string distances between two texts
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fuzzy-string-distance-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fuzzy-string-distance-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fuzzy String Distance Engine** tools.
 
 **Configuration:**

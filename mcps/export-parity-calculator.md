@@ -13,7 +13,7 @@ Calculate the net farm-gate price for grain exports by accounting for logistics 
 This MCP server provides tools to determine the profitability of exporting commodities like grains. By using `get_transportation_rate`, you can find the cost per kilometer for different transport modes. The `calculate_farm_gate_parity` tool computes the final net price at the farm after subtracting freight, port fees, and export taxes from the international FOB price. Finally, use `analyze_market_opportunity` to compare this parity price against domestic market prices to decide whether to export or sell locally.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_farm_gate_parity**: Calculate the net price received at the farm after logistics costs
 - **analyze_market_opportunity**: Analyze if export or domestic market is more profitable
 - **get_transportation_rate**: Get the transport rate per km for a specific mode
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `export-parity-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `export-parity-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Export Parity Calculator** tools.
 
 **Configuration:**

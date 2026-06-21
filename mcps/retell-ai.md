@@ -31,7 +31,7 @@ Connect your conversational assistant directly to **Retell AI**, a powerful plat
 - **Workflow Orchestrators** — Chain natural language instructions to dynamically assess previous call transcripts and adjust an active agent's system prompt accordingly.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_agent**: Creates a new AI voice agent
 - **create_llm**: Configures a Retell-hosted LLM
 - **create_phone_call**: Provide a JSON payload with "from_number" and "to_number".
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `retell-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `retell-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Retell AI** tools.
 
 **Configuration:**

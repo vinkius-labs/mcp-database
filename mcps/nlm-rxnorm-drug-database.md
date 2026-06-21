@@ -33,7 +33,7 @@ Connect your AI agent to the **National Library of Medicine (NLM) RxNorm** datab
 - **Data Scientists** — Map disparate drug datasets to a common RxNorm standard for analysis.
 
 
-## Available Tools
+## Available Tools (21)
 - **find_related_ndcs**: Find NDCs related by concept, drug, or NDC product
 - **find_rxcui_by_id**: Search for an identifier and return associated RxCUIs
 - **find_rxcui_by_string**: Search for a drug by name from any vocabulary in RxNorm
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nlm-rxnorm-drug-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nlm-rxnorm-drug-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NLM RxNorm (Drug Database)** tools.
 
 **Configuration:**

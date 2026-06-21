@@ -20,7 +20,7 @@ Connect **Beds24** to any AI agent — the ultra-flexible European channel manag
 - **Rooms** — Room types, capacity, and channel mappings
 
 
-## Available Tools
+## Available Tools (8)
 - **list_properties**: List properties
 - **get_property**: Get property details
 - **list_bookings**: List bookings
@@ -94,7 +94,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `beds24` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `beds24` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Beds24** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Klevu** account to any AI agent and take full control of your e-c
 - **Data Analysts** — monitor trending products and search performance to identify market opportunities and catalog gaps
 
 
-## Available Tools
+## Available Tools (10)
 - **search_autocomplete**: Fetch search autocomplete suggestions as the user types
 - **search_category**: Retrieve products for a specific category page (Smart Category Merchandising)
 - **search_filtered**: g., color, size, brand) applied to narrow down the result set.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `klevu-e-commerce-ai-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `klevu-e-commerce-ai-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Klevu (E-commerce AI Search)** tools.
 
 **Configuration:**

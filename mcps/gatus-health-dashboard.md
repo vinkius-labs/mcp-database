@@ -34,7 +34,7 @@ No more manual dashboard checking. Your AI acts as a 24/7 SRE assistant, providi
 - **Product Owners** — get high-level status reports on system availability during incidents.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_endpoint_health**: Get health status and recent results for a specific endpoint
 - **get_endpoint_stats**: Get performance statistics for a specific endpoint
 - **list_endpoints**: Get all monitored endpoints and their current status
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gatus-health-dashboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gatus-health-dashboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gatus (Health Dashboard)** tools.
 
 **Configuration:**

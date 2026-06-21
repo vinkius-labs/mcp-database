@@ -33,7 +33,7 @@ Connect your **Cosmic** headless CMS to any AI agent to manage your content infr
 - **Product Teams** — Automate content updates and maintain consistency across multiple buckets.
 
 
-## Available Tools
+## Available Tools (21)
 - **batch_objects**: Perform batch operations on Objects (Max 25)
 - **create_media**: Create/Upload Media
 - **create_object**: Create a new Object
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cosmic-headless-cms-content-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cosmic-headless-cms-content-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cosmic (Headless CMS & Content API)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire maritime logistics and containe
 - **Operations Leads** — automate maritime data querying to orchestrate cross-functional shipping teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the SafeCube service is operational
 - **get_shipment_events**: Get a list of tracking events for a specific shipment ID
 - **get_container_tracking**: Get real-time tracking data for a specific maritime container
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `safecube-container-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `safecube-container-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SafeCube Container Tracking** tools.
 
 **Configuration:**

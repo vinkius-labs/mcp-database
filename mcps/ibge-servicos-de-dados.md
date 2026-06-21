@@ -34,7 +34,7 @@ Connect to the **IBGE (Brazilian Institute of Geography and Statistics)** data s
 - **Researchers** — access demographic trends and census data through natural language queries
 
 
-## Available Tools
+## Available Tools (8)
 - **get_agregados**: Obtém o conjunto de agregados do IBGE
 - **get_nome_geografico**: Obtém um nome geográfico do BNGB
 - **get_calendario**: Obtém o calendário de divulgações de uma pesquisa
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibge-servicos-de-dados` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibge-servicos-de-dados` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBGE Serviços de Dados** tools.
 
 **Configuration:**

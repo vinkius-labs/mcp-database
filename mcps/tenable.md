@@ -33,7 +33,7 @@ Connect your **Tenable** (Tenable.io) environment to any AI agent and bring your
 - **IT Administrators** — audit scanner health and check if host tags actually match the logical network topologies
 
 
-## Available Tools
+## Available Tools (10)
 - **get_asset_details**: Retrieves detailed metadata, networking, and risk profile for a specific asset
 - **get_asset_vulnerabilities**: Retrieves explicit security findings (Workbench) for a specific asset
 - **get_scan_results**: Retrieves runtime analytics and vulnerability summaries for a specific scan
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tenable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tenable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tenable** tools.
 
 **Configuration:**

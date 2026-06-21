@@ -35,7 +35,7 @@ No more manual note-taking or scrubbing through hours of recordings to find a de
 - **Operations Leads** — automate the documentation of team syncs and manage meeting access across the organization
 
 
-## Available Tools
+## Available Tools (12)
 - **add_to_live_meeting**: Invite bot to live call
 - **ask_fred**: Ask AI about a meeting
 - **delete_transcript**: Delete a meeting record
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `firefliesai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `firefliesai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fireflies.ai** tools.
 
 **Configuration:**

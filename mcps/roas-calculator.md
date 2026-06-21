@@ -23,7 +23,7 @@ Our MCP provides a structured mechanism to bridge this financial intelligence ga
 The result is not just a number; it's an actionable blueprint for financial health. By systematically linking what was spent (`calculate_roas`), what *should* have been achieved (`get_target_benchmark`), and the minimum sustainable performance level (`calculate_break_even_roas`), you can immediately determine if your marketing spend supports profitable growth.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_break_even_roas**: Calculate the minimum ROAS needed to break even given a contribution margin
 - **calculate_roas**: Provide mediaSpend and sourceRevenue for the calculation.
 
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `roas-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `roas-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ROAS Calculator** tools.
 
 **Configuration:**

@@ -30,7 +30,7 @@ Connect your **Commerce7** winery to any AI agent and run your entire direct-to-
 - **Marketing Teams** — Customer segments, coupon performance, and collection merchandising
 
 
-## Available Tools
+## Available Tools (12)
 - **search_customers**: Returns customer profile, lifetime value, wine club status, order history, and tasting room visits. Essential for DTC relationship management.
 
 Search wine customers
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `commerce7` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `commerce7` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Commerce7** tools.
 
 **Configuration:**

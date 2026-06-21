@@ -42,7 +42,7 @@ No more climbing silos to check fill levels or guessing when to order more grain
 - **Agricultural Consultants** — provide data-driven feed management recommendations to clients
 
 
-## Available Tools
+## Available Tools (12)
 - **create_delivery_order**: Accepts delivery quantity (tonnes), preferred delivery date, supplier information, and any special instructions. Returns order confirmation with order ID, estimated delivery date, and tracking information. Essential for proactive inventory replenishment, automated ordering based on predictions, and supply chain management. AI agents should use this when users ask "order 20 tonnes of wheat for silo 3", "schedule a delivery for silo 5 next week", or need to place delivery orders based on low stock predictions.
 
 Create a new grain delivery order for a specific silo
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grainsure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grainsure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GrainSure** tools.
 
 **Configuration:**

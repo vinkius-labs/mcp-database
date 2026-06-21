@@ -36,7 +36,7 @@ No more manual checking of monitoring dashboards for performance updates. Your A
 - **E-commerce Owners** — monitor site uptime and performance trends to ensure consistent conversion rates.
 
 
-## Available Tools
+## Available Tools (11)
 - **check_broken_links**: List detected 404 errors and broken links for a property
 - **check_page_errors**: Scan a page for JS errors and heavy assets
 - **check_speed_desktop**: Returns scores and asset details.
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hexometer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hexometer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hexometer** tools.
 
 **Configuration:**

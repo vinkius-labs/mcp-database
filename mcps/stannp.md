@@ -27,7 +27,7 @@ Connect your **Stannp** account to any AI agent and simplify your direct mail ma
 3. Start managing your direct mail from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (11)
 - **create_postcard**: Create and send a postcard
 - **create_recipient**: Create a new mailing recipient
 - **get_campaign**: Get details for a direct mail campaign
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stannp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stannp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stannp** tools.
 
 **Configuration:**

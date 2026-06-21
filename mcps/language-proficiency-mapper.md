@@ -13,7 +13,7 @@ Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check 
 **Need to prove language skill for travel or study?** 🌍 Getting accepted to a university or securing a visa requires more than just passing an exam; it demands proof of a specific, standardized proficiency level. The complexity lies in translating diverse scoring systems--like IELTS' band scores versus TOEFL' raw points--into one common standard. This tool solves that gap by providing reliable CEFR mapping and cross-border requirement checks.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_cross_exam_equivalency**: Useful for understanding how one score compares to other major exams.
 
 Get equivalent proficiency levels across different language exams for a given CEFR level
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `language-proficiency-mapper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `language-proficiency-mapper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Language Proficiency Mapper** tools.
 
 **Configuration:**

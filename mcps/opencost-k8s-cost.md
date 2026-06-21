@@ -33,7 +33,7 @@ Connect your **OpenCost** instance to any AI agent to gain real-time visibility 
 - **Engineering Managers** — Get quick summaries of project-based costs to stay within budget during development cycles.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_allocation**: Query costs and resources allocated to Kubernetes workloads
 - **get_assets**: Retrieve backing cost data broken down by individual assets
 - **get_cloud_cost**: Retrieve cloud cost data directly from cloud provider billing reports
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opencost-k8s-cost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opencost-k8s-cost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenCost (K8s Cost)** tools.
 
 **Configuration:**

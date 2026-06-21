@@ -35,7 +35,7 @@ No more manual status checking or missed quotes. Your AI acts as a dedicated pro
 - **Production Teams** — streamline the retrieval of order metadata and monitor job statuses directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_customer**: Add a new customer
 - **create_order**: Pass data as a JSON string.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `printavo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `printavo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Printavo** tools.
 
 **Configuration:**

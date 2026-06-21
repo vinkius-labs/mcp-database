@@ -13,7 +13,7 @@ Comprehensive billing and subscription management platform.
 The Zoho Billing MCP server integrates your financial operations with your AI agent. Retrieve invoice statuses, list customer subscriptions, and track payments seamlessly from the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_events**: List recent audit events/triggers
 - **list_credit_notes**: List all credit notes
 - **list_customers**: List all customers
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Billing** tools.
 
 **Configuration:**

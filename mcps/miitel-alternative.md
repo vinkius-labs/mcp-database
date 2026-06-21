@@ -32,7 +32,7 @@ Connect your **MiiTel** account to any AI agent to streamline your voice intelli
 - **Support Teams** — centralize external telephony records into the MiiTel ecosystem for a unified view of customer interactions.
 
 
-## Available Tools
+## Available Tools (4)
 - **create_call_record**: Create a call record via Incoming Webhook
 - **create_meeting_record**: Create a meeting record via Incoming Webhook
 - **create_queue**: Create a new CSV generation queue
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `miitel-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `miitel-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MiiTel** tools.
 
 **Configuration:**

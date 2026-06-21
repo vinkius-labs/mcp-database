@@ -32,7 +32,7 @@ Integrate **EmailListVerify**, the powerful bulk email verification platform, di
 - **Operations Teams** — Monitor credit balances and organizational verification metadata instantly.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_emaillistverify_metadata**: Retrieve metadata and settings for your EmailListVerify account
 - **get_remaining_credits**: Retrieve the number of remaining verification credits in your account
 - **get_verification_job_status**: invalid addresses.
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emaillistverify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emaillistverify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EmailListVerify** tools.
 
 **Configuration:**

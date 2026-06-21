@@ -36,7 +36,7 @@ Connect to **Censys** and explore the world's largest internet scanning platform
 - **Threat Hunters** — track certificate usage, find related infrastructure and identify suspicious hosts
 
 
-## Available Tools
+## Available Tools (9)
 - **aggregate_hosts**: Groups results by a specified field (e.g. "services.port", "location.country", "autonomous_system.name") and returns bucket counts. Useful for understanding the distribution of services, countries or ASNs matching a query.
 
 Aggregate host search results by a specific field
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `censys` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `censys` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Censys** tools.
 
 **Configuration:**

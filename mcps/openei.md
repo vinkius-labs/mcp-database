@@ -37,7 +37,7 @@ Access the **National Utility Rate Database** through **OpenEI** — the most co
 - **Researchers** — access comprehensive US electricity rate data for academic and policy analysis.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_commercial_rates**: Use lat/lon or address to identify the location. Returns all available commercial tariffs including general service, large power, and time-of-use rates. Essential for commercial solar installations, demand response analysis, and business energy cost modeling.
 
 Get commercial electricity rates for a location
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openei` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openei` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenEI** tools.
 
 **Configuration:**

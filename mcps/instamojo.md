@@ -13,7 +13,7 @@ Manage payments, refunds, and payouts via Instamojo API.
 Empower your AI agents to manage your Indian payment ecosystem with Instamojo. This MCP server allows you to list and retrieve payments, manage payment requests, track refunds, view payouts, and monitor disputes directly through the Instamojo API. Ideal for automating e-commerce operations and financial monitoring in India.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_payment**: Retrieves details for a specific payment
 - **get_payment_request**: Retrieves details for a specific payment request
 - **get_refund**: Retrieves details for a specific refund
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `instamojo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `instamojo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Instamojo** tools.
 
 **Configuration:**

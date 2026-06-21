@@ -34,7 +34,7 @@ Connect your **ByteNite** account to any AI agent and orchestrate your video enc
 - **Developers** — integrate distributed encoding steps into their CI/CD or media pipelines using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_encoding_job**: Start a new video encoding job
 - **get_account_info**: Retrieve core account/profile statistics
 - **get_app**: Get details of a specific app
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bytenite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bytenite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ByteNite** tools.
 
 **Configuration:**

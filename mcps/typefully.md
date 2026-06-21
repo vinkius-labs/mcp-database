@@ -34,7 +34,7 @@ Connect your **Typefully** account to any AI agent and simplify how you draft, s
 - **Social Media Teams** — coordinate draft reviews and optimize publishing times via the AI assistant.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_draft**: Create a new content draft
 - **delete_draft**: Remove a draft
 - **get_draft_details**: Get details for a draft
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `typefully` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `typefully` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Typefully** tools.
 
 **Configuration:**

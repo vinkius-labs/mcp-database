@@ -36,7 +36,7 @@ No more switching between API tools to interact with Mistral. Your AI acts as an
 - **Content Teams** — review model outputs, moderate user-generated content and manage batch processing jobs via conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_batch**: Provide the batch ID. This is useful if you submitted a large batch by mistake and want to stop further processing.
 
 Cancel a running batch job
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mistral-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mistral-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mistral AI** tools.
 
 **Configuration:**

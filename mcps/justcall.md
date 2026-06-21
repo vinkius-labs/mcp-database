@@ -13,7 +13,7 @@ Manage phone calls, SMS, and recordings via JustCall API.
 Empower your AI agents with JustCall's cloud phone system. This MCP server allows you to list and retrieve phone calls, track SMS/MMS messages, manage contacts, and access call recordings directly through the JustCall API. Ideal for automating communication workflows and sales engagement.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_call**: Includes timestamps, participants, and associated notes. Use this for deep investigation of a specific communication event.
 
 Retrieves details for a specific call
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `justcall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `justcall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JustCall** tools.
 
 **Configuration:**

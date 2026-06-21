@@ -33,7 +33,7 @@ Connect to the **AQICN (World Air Quality Index)** project and bring real-time e
 - **Travelers & Expats** — Verify the air quality of your destination before you arrive or monitor your current city.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_city_feed**: Get real-time Air Quality Index for a specific city
 - **get_ip_feed**: Get real-time Air Quality Index based on IP location
 - **get_map_bounds**: Get all stations within a specific map bounding box
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aqicn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aqicn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AQICN** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual checking of individual tag locations or missing critical asset mo
 - **Growth Leads** — integrate high-speed smart tag data into custom inventory pipelines through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_kitetags_status**: Verify connectivity
 - **create_group**: Create a group
 - **create_tag**: Create a tag
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kitetags` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kitetags` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kitetags** tools.
 
 **Configuration:**

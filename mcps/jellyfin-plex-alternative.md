@@ -33,7 +33,7 @@ Connect your **Jellyfin** media server to any AI agent and take full control of 
 - **Developers** — test Jellyfin API interactions and metadata retrieval through natural language
 
 
-## Available Tools
+## Available Tools (12)
 - **authenticate_by_name**: Authenticate a user by name and password
 - **get_current_user**: Get information about the currently logged-in user
 - **get_item**: Get detailed information about a specific item
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jellyfin-plex-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jellyfin-plex-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jellyfin (Plex Alternative)** tools.
 
 **Configuration:**

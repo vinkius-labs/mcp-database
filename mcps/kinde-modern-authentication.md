@@ -31,7 +31,7 @@ Connect your **Kinde** authentication environment to any AI agent to streamline 
 - **DevOps Engineers** — automate the provisioning of organizations and roles through simple prompts
 
 
-## Available Tools
+## Available Tools (8)
 - **create_organization**: Create a new organization
 - **create_user**: Provide user details in the data payload.
 
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kinde-modern-authentication` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kinde-modern-authentication` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kinde (Modern Authentication)** tools.
 
 **Configuration:**

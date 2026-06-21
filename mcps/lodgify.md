@@ -21,7 +21,7 @@ Connect **Lodgify** to any AI agent — vacation rental management + booking web
 - **Channels** — OTA sync status
 
 
-## Available Tools
+## Available Tools (8)
 - **list_properties**: List vacation rental properties
 - **get_property**: Get property details
 - **list_bookings**: List bookings
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lodgify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lodgify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lodgify** tools.
 
 **Configuration:**

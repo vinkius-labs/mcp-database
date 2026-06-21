@@ -33,7 +33,7 @@ Connect your AI agent to the **KEGG** (Kyoto Encyclopedia of Genes and Genomes) 
 - **Data Scientists** — integrate high-quality biological metadata into analysis pipelines directly from the chat interface.
 
 
-## Available Tools
+## Available Tools (7)
 - **kegg_conv**: Converts KEGG identifiers to/from outside identifiers
 - **kegg_ddi**: Finds adverse drug-drug interactions
 - **kegg_find**: Finds entries matching a query keyword or chemical data
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kegg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kegg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **KEGG** tools.
 
 **Configuration:**

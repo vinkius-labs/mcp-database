@@ -42,7 +42,7 @@ No more navigating multiple CTA apps or manually checking train and bus times. Y
 - **Mobility Apps** — integrate real-time CTA data into journey planning and transit tracking applications
 
 
-## Available Tools
+## Available Tools (11)
 - **get_bus_predictions**: Returns predicted arrival times in minutes and seconds, route IDs, destination descriptions, vehicle IDs, block IDs, trip designators, and whether buses are scheduled or real-time tracked. Based on real-time vehicle tracking and schedule adherence. Essential for real-time bus arrival awareness, passenger waiting time estimation, trip timing, and connection coordination. AI agents should use this when users ask "when is the next 22 Clark bus at stop 1234", "show predictions for this stop", or need real-time arrival data for a specific CTA bus stop. Stop IDs can be found using get_bus_stops.
 
 Get next bus arrival predictions for a specific CTA bus stop
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CTA** tools.
 
 **Configuration:**

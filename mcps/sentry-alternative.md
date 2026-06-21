@@ -36,7 +36,7 @@ Stop context-switching to the Sentry dashboard every time an alert fires. Your A
 - **Developers** — search for specific errors, inspect event breadcrumbs and verify which release introduced a regression
 
 
-## Available Tools
+## Available Tools (15)
 - **list_alert_rules**: Each rule defines conditions (e.g. "issue created more than X times in 5 minutes"), actions (Slack, email, PagerDuty) and target channels/users.
 
 List alert rules in a Sentry organization
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sentry-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sentry-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sentry** tools.
 
 **Configuration:**

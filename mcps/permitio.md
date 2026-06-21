@@ -33,7 +33,7 @@ Connect your **Permit.io** account to any AI agent to manage your application's 
 - **Product Managers** — Define new feature permissions and roles as part of the product requirements workflow.
 
 
-## Available Tools
+## Available Tools (18)
 - **assign_permissions_to_role**: Assign permissions to a role
 - **assign_role_to_user**: Assign a role to a user in a tenant
 - **authzen_access_evaluation**: AuthZen Access Evaluation
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `permitio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `permitio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Permit.io** tools.
 
 **Configuration:**

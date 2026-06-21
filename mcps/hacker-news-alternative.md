@@ -33,7 +33,7 @@ Connect to the **Hacker News** API to browse the pulse of the developer communit
 - **Tech Enthusiasts** — never miss a viral post or a significant 'Show HN' launch
 
 
-## Available Tools
+## Available Tools (10)
 - **get_ask_stories**: Get up to 200 latest Ask HN stories
 - **get_best_stories**: Get up to 500 best stories
 - **get_item**: Get details for a specific Hacker News item
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hacker-news-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hacker-news-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hacker News** tools.
 
 **Configuration:**

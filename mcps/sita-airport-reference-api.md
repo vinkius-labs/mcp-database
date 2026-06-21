@@ -31,7 +31,7 @@ Access the **SITA Airport Reference API** through natural conversation with your
 - **Airport Operations** — programmatic access to reference data for planning and analytics
 
 
-## Available Tools
+## Available Tools (3)
 - **get_airport_reference_details**: Use the 3-letter IATA code (e.g., "LHR", "JFK", "GRU").
 
 Get full reference metadata for a specific airport by code (IATA)
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sita-airport-reference-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sita-airport-reference-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SITA Airport Reference API** tools.
 
 **Configuration:**

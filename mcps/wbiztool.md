@@ -35,7 +35,7 @@ No more manual typing of customer messages or missing critical read receipts. Yo
 - **Developers** — integrate high-speed Wbiztool messaging data into custom CRM and alert systems through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_wbiztool_status**: Verify connectivity
 - **create_contact**: Create a contact
 - **get_contact**: Get contact details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wbiztool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wbiztool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wbiztool** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ No more manual logging into WordPress to check an order status. Your AI agent be
 - **Customer Support** — quickly lookup order details and customer billing history to provide rapid assistance
 
 
-## Available Tools
+## Available Tools (10)
 - **list_store_products**: Lists WooCommerce products with pagination
 - **update_order_status**: Statuses: pending, processing, on-hold, completed, cancelled, refunded, failed.
 
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `woocommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `woocommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WooCommerce** tools.
 
 **Configuration:**

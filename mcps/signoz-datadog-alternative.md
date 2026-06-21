@@ -32,7 +32,7 @@ Connect your **SigNoz** instance to any AI agent to streamline your observabilit
 - **Platform Teams** — manage observability configurations across multiple environments via simple chat commands.
 
 
-## Available Tools
+## Available Tools (5)
 - **create_rule**: g., alert, alert_type, condition, thresholds).
 
 Create a new alert rule
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `signoz-datadog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `signoz-datadog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SigNoz (Datadog Alternative)** tools.
 
 **Configuration:**

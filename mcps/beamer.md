@@ -33,7 +33,7 @@ Connect your **Beamer** account to any AI agent and streamline your product comm
 - **Marketing Teams** — retrieve analytics on announcement performance for reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_post**: Create a new Beamer post
 - **delete_post**: Delete a Beamer post
 - **get_analytics**: Retrieve Beamer analytics data
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `beamer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `beamer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Beamer** tools.
 
 **Configuration:**

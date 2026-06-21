@@ -33,7 +33,7 @@ Connect your **LeadsRx** account to your AI agent and gain deep insights into yo
 - **Growth Teams** — verify the success of new marketing initiatives and track conversions in real-time.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_conversion**: Add a new conversion event
 - **get_campaign_results**: Get attribution results for a campaign
 - **get_conversion_details**: Get specific conversion info
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leadsrx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leadsrx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LeadsRx** tools.
 
 **Configuration:**

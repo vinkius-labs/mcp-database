@@ -33,7 +33,7 @@ Connect your **Vultr** account to any AI agent to manage your cloud infrastructu
 - **Developers** — browse and deploy marketplace applications or manage API keys for automated workflows.
 
 
-## Available Tools
+## Available Tools (19)
 - **get_bare_metal_ipv6**: Get IPv6 info for a bare metal instance
 - **halt_bare_metal**: Halt a bare metal instance
 - **reboot_bare_metal**: Reboot a bare metal instance
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vultr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vultr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vultr** tools.
 
 **Configuration:**

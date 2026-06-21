@@ -35,7 +35,7 @@ No more manual checking of individual job statuses or missing 3D viewer links. Y
 - **Operations Leads** â€” automate the management of 3D product portfolios through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_imagine_status**: Verify Imagine API connectivity
 - **create_render_job**: The job runs asynchronously; check status with get_job_status.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `imagineio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `imagineio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Imagine.io** tools.
 
 **Configuration:**

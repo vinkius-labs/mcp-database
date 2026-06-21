@@ -35,7 +35,7 @@ No more manual spreadsheet updates or jumping between tabs to find property owne
 - **Real Estate Agents** — fetch ownership info and historical sales data to prepare for client meetings faster
 
 
-## Available Tools
+## Available Tools (16)
 - **get_airbnb_listings**: Get Airbnb performance metrics
 - **get_city_investment_performance**: Get city investment performance
 - **get_full_property_profile**: Get full property profile
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mashvisor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mashvisor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mashvisor** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Equip your AI agent with the most accessible NBA intelligence via **BallDontLie*
 - **Content Creators** — retrieve historical game data and player metadata for sports commentary and media production.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_game_details**: Get game details
 - **get_player_details**: Get player details
 - **get_team_details**: Get team details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `balldontlie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `balldontlie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BallDontLie** tools.
 
 **Configuration:**

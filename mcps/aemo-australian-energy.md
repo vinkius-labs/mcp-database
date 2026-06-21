@@ -45,7 +45,7 @@ Your AI becomes an Australian energy analyst, helping you understand the grid, t
 - **Policy Makers** — track Australia's energy transition progress and state-by-state renewable adoption
 
 
-## Available Tools
+## Available Tools (12)
 - **list_facilities**: Filter by fuel technology, status, network, or facility code.
 
 List energy facilities and generation units
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aemo-australian-energy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aemo-australian-energy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AEMO Australian Energy** tools.
 
 **Configuration:**

@@ -19,7 +19,7 @@ LLMs are notoriously bad at arithmetic, frequently struggling with floating-poin
 - **Native Speed:** Executes entirely within the edge V8 isolate with no external API latency.
 
 
-## Available Tools
+## Available Tools (2)
 - **calculate_expression**: Safely evaluates complex mathematical expressions (e.g. "1.2 * (2 + 4.5)") deterministically using mathjs
 - **round_value**: Pass the expression as a string (e.g. "2^8 + sqrt(144)") and the engine computes the exact result using mathjs.
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `math-evaluation-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `math-evaluation-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Math Evaluation Engine** tools.
 
 **Configuration:**

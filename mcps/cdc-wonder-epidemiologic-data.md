@@ -33,7 +33,7 @@ Connect to the **CDC WONDER** (Wide-ranging Online Data for Epidemiologic Resear
 - **Data Scientists** — fetch structured JSON epidemiologic data for integration into larger analytical workflows
 
 
-## Available Tools
+## Available Tools (1)
 - **query_wonder_database**: g., D76 for Mortality). Provide the database ID and a JSON object of parameters (B_, M_, V_, F_, O_ prefixes).
 
 Query CDC WONDER epidemiologic databases
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cdc-wonder-epidemiologic-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cdc-wonder-epidemiologic-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CDC WONDER (Epidemiologic Data)** tools.
 
 **Configuration:**

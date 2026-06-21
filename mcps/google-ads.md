@@ -36,7 +36,7 @@ Stop wrestling with complex reporting dashboards. Your AI agent acts as your ded
 - **Agency Leads** — monitor performance across multiple client accounts and generate fast executive summaries
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_summary**: Get an overview of the account performance
 - **get_ad_performance**: Get performance metrics for ads in an ad group
 - **get_change_status**: Check recent changes in the account
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Ads** tools.
 
 **Configuration:**

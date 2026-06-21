@@ -22,7 +22,7 @@ This MCP validates OpenAPI/Swagger specifications against the official JSON Sche
 - **Quality Gate:** Use as a CI/CD gate — reject code generation from invalid specs.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_openapi**: Pass the spec as a JSON string. The engine validates against the official OpenAPI JSON Schemas and returns all errors with paths. Supports Swagger 2.0, OpenAPI 3.0, 3.1, and 3.2.
 
 Validates OpenAPI/Swagger specifications (2.0, 3.0.x, 3.1.x, 3.2.x) offline. Returns version, validity, and detailed error list
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openapi-validator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openapi-validator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenAPI Validator Engine** tools.
 
 **Configuration:**

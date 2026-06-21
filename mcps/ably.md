@@ -33,7 +33,7 @@ Connect your **Ably** account to any AI agent to orchestrate real-time communica
 - **Product Engineers** — Test push notification payloads and presence logic during feature development.
 
 
-## Available Tools
+## Available Tools (14)
 - **batch_presence**: Get presence for multiple channels
 - **batch_publish**: Publish messages to multiple channels at once
 - **batch_push_publish**: Publish batch push notifications
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ably` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ably` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ably** tools.
 
 **Configuration:**

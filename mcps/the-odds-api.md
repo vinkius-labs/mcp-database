@@ -34,7 +34,7 @@ Equip your AI agent with real-time sports market intelligence via **The Odds API
 - **App Developers** — integrate dynamic sports data into custom applications.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_odds**: Get odds for a specific sport
 - **get_scores**: Get live and past scores
 - **list_sports**: List all available sports
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `the-odds-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `the-odds-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **The Odds API** tools.
 
 **Configuration:**

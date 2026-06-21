@@ -13,7 +13,7 @@ Access real-time and historical financial market data via Intrinio API.
 Empower your AI agents with Intrinio's comprehensive financial data. This MCP server allows you to retrieve real-time and historical stock prices, access financial statements, search for companies, and track earnings releases and IPO calendars directly through the Intrinio API. Ideal for financial analysis, portfolio monitoring, and market research.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_company**: g., "AAPL") or ID. Returns headquarters address, employee counts, and business descriptions. Useful for providing a profile overview of a company.
 
 Retrieves details for a specific company
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `intrinio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `intrinio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Intrinio** tools.
 
 **Configuration:**

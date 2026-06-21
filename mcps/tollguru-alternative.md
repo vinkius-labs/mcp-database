@@ -35,7 +35,7 @@ Equip your AI agent with the most accurate toll intelligence available via **Tol
 - **Financial Controllers** — monitor corporate travel expenses and verify individual toll receipts.
 
 
-## Available Tools
+## Available Tools (6)
 - **calculate_tolls_by_address**: Supports multiple vehicle types.
 
 Calculate tolls and fuel costs between two addresses
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tollguru-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tollguru-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TollGuru** tools.
 
 **Configuration:**

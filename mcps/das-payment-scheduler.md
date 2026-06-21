@@ -13,7 +13,7 @@ Automated annual calendar generator for Brazilian Simples Nacional tax payments,
 The DAS Payment Scheduler is a specialized tool for Brazilian entrepreneurs to manage their Simples Nacional tax obligations. It automatically calculates the exact payment deadlines by checking if the standard 20th of the month falls on a weekend or a national holiday, shifting the date forward to the next business day when necessary. Using `generate_annual_schedule`, you can view your entire year's payment plan at once. If you are unsure why a specific date changed, use `inspect_holiday_impact` to see the reason for the shift. Additionally, the `identify_overdue_periods` tool helps you stay on top of your taxes by alerting you to any months where the deadline has already passed.
 
 
-## Available Tools
+## Available Tools (3)
 - **generate_annual_schedule**: Generates a yearly schedule of DAS payments
 - **inspect_holiday_impact**: Inspects if a specific payment date was moved due to holidays or weekends
 - **identify_overdue_periods**: Identifies which months have passed their DAS payment deadline
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `das-payment-scheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `das-payment-scheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DAS Payment Scheduler** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to the **GSA Per Diem Rates** server to instantly retrieve federal trave
 - **Travel Coordinators** — Quickly calculate travel budgets for employees across different US regions.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_conus_lodging**: Get CONUS lodging rates for a specific year
 - **get_mie_breakdown**: Get M&IE breakdown rates for a specific year
 - **get_rates_by_city**: Get per diem rates for a specific city and state
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gsa-per-diem-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gsa-per-diem-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GSA Per Diem Rates** tools.
 
 **Configuration:**

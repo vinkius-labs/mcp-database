@@ -32,7 +32,7 @@ Connect your **Apify** workspace to your AI agent and seamlessly direct full-sta
 - **AI Developers** — augment your agent's real-time capabilities by feeding it massive structured site data freshly scraped via headless browsers
 
 
-## Available Tools
+## Available Tools (10)
 - **abort_run**: Any data already scraped and pushed to the dataset is preserved. The run status changes to ABORTED. Use this to stop runaway scrapes or when sufficient data has been collected. Graceful shutdown depends on the actor implementation.
 
 Abort an active Apify actor run
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apify** tools.
 
 **Configuration:**

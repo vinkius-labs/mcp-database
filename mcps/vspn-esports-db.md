@@ -34,7 +34,7 @@ Stop manually refreshing league standings pages. Your AI now monitors tournament
 - **Esports Journalists** — compile post-match summaries with accurate KDA and team performance data instantly
 
 
-## Available Tools
+## Available Tools (10)
 - **get_match_detail**: Retrieve comprehensive data on a single match
 - **get_match_stream**: Get live streaming URLs for a match
 - **get_matches**: List matches within a tournament
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vspn-esports-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vspn-esports-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VSPN Esports DB** tools.
 
 **Configuration:**

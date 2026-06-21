@@ -38,7 +38,7 @@ No more manual navigation through complex agile boards to check a sprint status.
 - **Development Teams** — lookup task details and team member IDs for faster collaboration
 
 
-## Available Tools
+## Available Tools (6)
 - **list_projects**: Lists all agile projects in the Yodiz account
 - **list_user_stories**: Provide the numeric project ID.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `yodiz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `yodiz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Yodiz** tools.
 
 **Configuration:**

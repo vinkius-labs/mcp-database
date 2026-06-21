@@ -31,7 +31,7 @@ Connect your AI agent to **LangSmith** — the observability platform from the L
 - **DevOps** — set up alerts for error rates, latency spikes, and cost anomalies in AI workloads
 
 
-## Available Tools
+## Available Tools (3)
 - **langsmith_get_run**: Useful for debugging specific LLM calls or agent actions.
 
 Get detailed information about a specific run/trace by its ID
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `langsmith` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `langsmith` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LangSmith** tools.
 
 **Configuration:**

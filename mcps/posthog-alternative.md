@@ -36,7 +36,7 @@ Stop switching between PostHog dashboards to check flag status or review event d
 - **Data Analysts** — browse recent events, review person profiles and cohort membership for analysis
 
 
-## Available Tools
+## Available Tools (13)
 - **create_annotation**: Annotations appear on insights graphs and help correlate metric changes with deployments, launches or incidents. Requires the content text. Optionally set a date_marker (ISO 8601 date).
 
 Create a new annotation in PostHog
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `posthog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `posthog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PostHog** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to the **EPA ECHO (Enforcement and Compliance History Online)** database
 - **Legal Professionals** — retrieve official enforcement records and effluent charts for litigation or due diligence.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_detailed_facility_report**: Get a comprehensive report for a single facility across all available environmental program records
 - **get_effluent_chart**: Get dynamic charts and tables of permitted effluent limits, releases, and violations for CWA wastewater discharge permits
 - **search_air_facilities**: Search for stationary sources regulated under the Clean Air Act (CAA)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epa-echo-enforcement-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epa-echo-enforcement-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EPA ECHO (Enforcement & Compliance)** tools.
 
 **Configuration:**

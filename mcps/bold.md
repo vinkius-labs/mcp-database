@@ -36,7 +36,7 @@ Your AI becomes a dedicated payment operations assistant, eliminating context sw
 - **Finance Teams** — query settlement reports and refund histories programmatically for reconciliation
 
 
-## Available Tools
+## Available Tools (14)
 - **create_online_payment**: Requires card tokenization details, the amount in COP, and payer information for Colombian anti-fraud compliance.
 
 Process an online card payment
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bold` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bold` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bold** tools.
 
 **Configuration:**

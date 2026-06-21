@@ -33,7 +33,7 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 - **Software Developers** — quickly retrieve SSH configs and agent logs to debug environment issues without context switching.
 
 
-## Available Tools
+## Available Tools (84)
 - **get_agent_debug_magicsock**: Get Tailscale magicsock debug info (local agent API)
 - **get_agent_debug_manifest**: Get the startup manifest from the server (local agent API)
 - **get_agent_external_auth**: Get external authentication tokens for the agent
@@ -182,7 +182,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coder-remote-dev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coder-remote-dev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coder (Remote Dev)** tools.
 
 **Configuration:**

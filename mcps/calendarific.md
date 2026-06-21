@@ -34,7 +34,7 @@ Connect your **Calendarific** account to any AI agent and orchestrate your globa
 - **Developers** — integrate holiday checking logic into their applications using natural language.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_account_info**: Check the status of the integration
 - **list_supported_countries**: List all supported countries and their ISO codes
 - **list_holidays_by_location**: List holidays for a specific state or region
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calendarific` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calendarific` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Calendarific** tools.
 
 **Configuration:**

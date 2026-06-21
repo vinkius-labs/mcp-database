@@ -35,7 +35,7 @@ Connect your **Hotjar** account to any AI agent and access user experience analy
 - **Growth Teams** — analyze feedback trends, optimize page engagement, and identify usability issues through AI
 
 
-## Available Tools
+## Available Tools (15)
 - **check_hotjar_status**: Verify connectivity
 - **get_feedback_widget**: Get feedback widget details
 - **get_heatmap**: Get heatmap details
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hotjar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hotjar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hotjar** tools.
 
 **Configuration:**

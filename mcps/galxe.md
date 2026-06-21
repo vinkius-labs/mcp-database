@@ -33,7 +33,7 @@ Connect your **Galxe** account to any AI agent to streamline your Web3 growth an
 - **Web3 Developers** — automate the synchronization of eligible users for custom credentials directly from their workflow.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_credential_eligibility**: Check user eligibility for a specific credential
 - **check_quest_eligibility**: Check user eligibility for a Galxe quest
 - **get_quest**: Get Galxe quest details
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `galxe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `galxe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Galxe** tools.
 
 **Configuration:**

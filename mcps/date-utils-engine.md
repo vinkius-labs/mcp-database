@@ -19,7 +19,7 @@ LLMs suffer from 'calendar blindness'. Because they lack a continuous clock and 
 - **Zero Latency:** Executes as native V8 javascript local. Does not rely on external calendar APIs.
 
 
-## Available Tools
+## Available Tools (4)
 - **add_days**: Pass the base ISO date and the number of days (negative to subtract). Receives the exact resulting date.
 
 Adds or subtracts a specific number of calendar days from a date deterministically
@@ -94,7 +94,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `date-utils-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `date-utils-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Date Utils Engine** tools.
 
 **Configuration:**

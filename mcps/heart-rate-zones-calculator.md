@@ -13,7 +13,7 @@ Calculate precise physiological training zones using Simple % and Karvonen (HRR)
 This MCP server provides a precision fitness utility for calculating five distinct heart rate training zones. It supports two primary calculation methodologies: the Simple Percentage method, which uses your maximum heart rate as a baseline, and the Karvonen (Heart Rate Reserve) method, which incorporates your resting heart rate for a more personalized intensity range. The server also includes advanced estimation models like Tanaka and Gulati to predict your maximum heart rate based on age and gender. Use `estimate_max_hr` to find your predicted ceiling, then apply `calculate_simple_zones` or `calculate_karvonen_zones` to define your training boundaries.
 
 
-## Available Tools
+## Available Tools (3)
 - **estimate_max_hr**: Estimate maximum heart rate based on age and gender
 - **calculate_karvonen_zones**: Calculate training zones using the Karvonen (HRR) method
 - **calculate_simple_zones**: Calculate training zones using simple percentage of MaxHR
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heart-rate-zones-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heart-rate-zones-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heart Rate Zones Calculator** tools.
 
 **Configuration:**

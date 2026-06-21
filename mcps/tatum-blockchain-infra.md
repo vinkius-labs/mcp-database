@@ -33,7 +33,7 @@ Connect your **Tatum** account to any AI agent to streamline blockchain infrastr
 - **Ops Teams** — Automate webhook management for blockchain event monitoring
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_subscription**: Cancel a webhook subscription
 - **create_subscription**: ).
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tatum-blockchain-infra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tatum-blockchain-infra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tatum (Blockchain Infra)** tools.
 
 **Configuration:**

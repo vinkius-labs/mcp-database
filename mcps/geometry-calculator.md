@@ -19,7 +19,7 @@ Spatial reasoning and geometric calculations are frequent stumbling blocks for L
 - **Zero Hallucination:** Replaces LLM probabilistic guessing with absolute mathematical certainty.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_2d_area**: For circle: {"radius": x}. For rectangle: {"width": x, "height": y}. For triangle: {"base": x, "height": y}.
 
 Calculates the exact area of 2D shapes (circle, rectangle, triangle)
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geometry-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geometry-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Geometry Calculator** tools.
 
 **Configuration:**

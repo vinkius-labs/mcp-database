@@ -34,7 +34,7 @@ Connect **Favqs** to your AI agent to access a world of inspiration and wisdom. 
 - **Personal Development Enthusiasts** — Maintain a curated list of quotes that resonate with your goals.
 
 
-## Available Tools
+## Available Tools (28)
 - **add_quote**: Add a new quote (User Session Required)
 - **clearvote_quote**: Clear vote on a quote (User Session Required)
 - **create_session**: Create a user session to obtain a User-Token
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `favqs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `favqs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Favqs** tools.
 
 **Configuration:**

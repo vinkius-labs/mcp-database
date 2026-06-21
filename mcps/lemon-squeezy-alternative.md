@@ -34,7 +34,7 @@ Connect your **Lemon Squeezy** store to any AI agent and manage digital sales th
 - **Creators** — sell digital products and track customers
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_info**: Get account profile
 - **get_order**: Get order details
 - **get_product**: Get product details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lemon-squeezy-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lemon-squeezy-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lemon Squeezy** tools.
 
 **Configuration:**

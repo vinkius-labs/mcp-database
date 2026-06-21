@@ -39,7 +39,7 @@ The Wayback Machine is a non-profit service preserving internet history — no a
 - **Cybersecurity** — investigate phishing sites, track domain changes, and discover subdomain footprints
 
 
-## Available Tools
+## Available Tools (10)
 - **get_captures_by_mime_type**: Common types: "text/html" (web pages), "image/jpeg" (JPEG images), "application/pdf" (PDFs), "text/css" (stylesheets). Use this to find specific resource types in the archive.
 
 Get captures filtered by MIME type
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `internet-archive-wayback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `internet-archive-wayback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Internet Archive Wayback** tools.
 
 **Configuration:**

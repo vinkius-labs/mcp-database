@@ -34,7 +34,7 @@ Connect your **Clarifai** account to any AI agent and take full control of your 
 - **Product Teams** — quickly verify AI output and vision logic during the prototyping phase
 
 
-## Available Tools
+## Available Tools (6)
 - **list_apps**: Identify bounded Clarifai apps managing global compute limits
 - **list_models**: Perform structural extraction of computer vision parameters driving AI features
 - **predict_model**: /models/{model_id}/outputs` parsing exactly what the AI limit evaluated bounding image classifications.
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clarifai-vision-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clarifai-vision-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clarifai (Vision AI)** tools.
 
 **Configuration:**

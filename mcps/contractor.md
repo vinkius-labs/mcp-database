@@ -35,7 +35,7 @@ No more manual status checking or digging through fragmented job logs. Your AI a
 - **Business Owners** — monitor invoice pipelines and manage client relationships through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_client**: Create a new client or lead
 - **create_estimate**: Create a new estimate
 - **get_account_info**: Get account settings
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contractor+** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Temporal Cloud** (or self-hosted) cluster to any AI agent and bri
 - **Site Reliability Engineers (SREs)** — query complex visibility logs during incident responses
 
 
-## Available Tools
+## Available Tools (7)
 - **get_workflow_history**: Retrieves the event history for a workflow execution
 - **get_namespace_details**: Retrieves information about the current namespace
 - **get_workflow_details**: Retrieves details for a specific workflow execution
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `temporal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `temporal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Temporal** tools.
 
 **Configuration:**

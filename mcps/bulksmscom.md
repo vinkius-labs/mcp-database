@@ -35,7 +35,7 @@ No more manual message tracking or digging through complex delivery reports. You
 - **Operations Leads** — track credit utilization and manage contact groups through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_bulksms_status**: Verify connectivity
 - **create_contact**: Create a contact
 - **delete_message**: Delete a message
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bulksmscom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bulksmscom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BulkSMS.com** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect **Strava Social** to any AI agent and explore the social side of Strava 
 - **New City Explorers** — discover popular cycling/running segments when traveling to new cities
 
 
-## Available Tools
+## Available Tools (10)
 - **list_activities**: Activities are sorted by most recent first. Optional filters: "before" (epoch timestamp, defaults to now), "after" (epoch timestamp for date range), "page" and "per_page" (pagination, max 200 per page, max 2000 total). Each activity includes: name, type, distance, moving_time, elevation, kudos_count, comment_count, start_date, and basic stats. Use this to get the activity feed, analyze recent workouts, or review training history. Epoch timestamps can be generated from dates.
 
 List the authenticated athlete's activities with optional date filtering and pagination
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `strava-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `strava-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Strava Social** tools.
 
 **Configuration:**

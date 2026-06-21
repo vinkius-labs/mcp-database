@@ -35,7 +35,7 @@ Connect your **Chargeblast** account to any AI agent and take full control of yo
 - **Platforms & Resellers** — manage multiple merchant enrollments and their alert statuses
 
 
-## Available Tools
+## Available Tools (8)
 - **request_dispute_credit**: Request a credit for a specific dispute alert
 - **get_dispute_alert_details**: Get details for a specific dispute alert
 - **list_dispute_alerts**: List all chargeback alerts from your account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chargeblast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chargeblast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chargeblast** tools.
 
 **Configuration:**

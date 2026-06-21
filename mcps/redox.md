@@ -33,7 +33,7 @@ Integrate your **Redox** environment with any AI agent to streamline healthcare 
 - **Digital Health Startups** — Accelerate the development of AI-driven medical assistants by providing them with real-time access to clinical data.
 
 
-## Available Tools
+## Available Tools (4)
 - **create_observation**: Save vitals or observations (Writeback)
 - **post_data_model**: Send a Redox Data Model API event
 - **search_condition**: g., problem-list-item) associated with a specific patient ID.
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `redox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `redox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Redox** tools.
 
 **Configuration:**

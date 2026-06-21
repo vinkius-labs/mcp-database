@@ -21,7 +21,7 @@ The deepest state-level energy dataset in the world, covering 1960 to present.
 State energy offices, regional planners, utility regulators, academic researchers, and ESG analysts needing state-level energy and emissions data.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_state_energy_data**: Data from 1960 to present. The definitive source for state-level energy analysis.
 
 Get comprehensive state-level energy data (SEDS): production, consumption, prices, expenditures
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eia-state-energy-us-regional-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eia-state-energy-us-regional-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EIA State Energy — U.S. Regional Energy Data** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to the **Ensembl** REST API to perform advanced genomic research and bio
 - **Data Scientists** — automate the retrieval of genomic alignments and metadata for large-scale biological analysis
 
 
-## Available Tools
+## Available Tools (27)
 - **get_alignment**: Retrieves genomic alignments for a specific region
 - **get_archive_bulk**: Retrieve the latest version for a set of identifiers
 - **get_archive_id**: Returns the latest version of a given identifier
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ensembl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ensembl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ensembl** tools.
 
 **Configuration:**

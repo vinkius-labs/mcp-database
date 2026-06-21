@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your public health research and content syn
 - **Public Health Advocates** — stay updated with the latest published resources and recommendations.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_media_details**: Get media item info
 - **get_recent_health_media**: Get latest media items
 - **get_syndication_html**: Get embed code for media
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cdc-public-health` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cdc-public-health` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CDC Public Health / 美国疾控中心** tools.
 
 **Configuration:**

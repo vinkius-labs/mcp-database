@@ -34,7 +34,7 @@ Connect your **Linnworks** account to any AI agent and take full control of your
 - **Operations Teams** — audit supplier data and sales channel integrations to ensure seamless multichannel growth and logistics compliance
 
 
-## Available Tools
+## Available Tools (10)
 - **list_open_orders**: Pass limit to control pagination. Returns order details including order IDs, customer info, shipping, and item lines.
 
 Get Linnworks open orders including lines and customer info
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linnworks-e-commerce-ops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linnworks-e-commerce-ops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Linnworks (E-commerce Ops)** tools.
 
 **Configuration:**

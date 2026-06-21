@@ -33,7 +33,7 @@ Integrate your **Zoho WorkDrive** cloud storage into your AI workflows to stream
 - **Business Administrators** — monitor team activity, manage file permissions, and ensure document security efficiently.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_folder**: Create a new folder
 - **create_share_link**: Create a new share link
 - **delete_file**: Delete a file or folder
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-workdrive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-workdrive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho WorkDrive** tools.
 
 **Configuration:**

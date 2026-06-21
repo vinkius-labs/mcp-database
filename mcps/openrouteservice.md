@@ -35,7 +35,7 @@ Unlock the full power of **OpenRouteService** from a single conversation. Calcul
 - **Field service managers** — plan technician routes solving vehicle routing problems with capacity and time window constraints
 
 
-## Available Tools
+## Available Tools (10)
 - **calculate_directions**: Identify precise active arrays spanning native Road network points
 - **get_elevation_line**: Provision a highly-available JSON Payload parsing accessible Altitude lines
 - **search_country_boundary**: country` fetching strings rigidly ignoring maps spanning outside target ISO boundaries.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openrouteservice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openrouteservice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenRouteService** tools.
 
 **Configuration:**

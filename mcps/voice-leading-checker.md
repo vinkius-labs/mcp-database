@@ -13,7 +13,7 @@ Analyze musical voice-leading integrity between chord voicings using classical h
 The Voice Leading Checker is an analytical engine designed to evaluate the movement of musical notes across four distinct melodic ranges: Bass, Tenor, Alto, and Soprano (SATB). By using tools like `analyze_voice_conduction`, `check_voice_hierarchy`, and `evaluate_smoothness`, AI agents can detect harmonic errors such as parallel fifths, parallel octaves, voice crossing, and excessive melodic leaps. This MCP server provides direct access to precise musical analysis, returning violation details, quality scores, and suggested alternative voicings to ensure smooth and correct harmonic transitions.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_voice_conduction**: Analytes the conduction between two chord voicings
 - **check_voice_hierarchy**: Validates that voices are in correct ascending order
 - **evaluate_smoothness**: Evaluates the smoothness of a musical transition
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `voice-leading-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `voice-leading-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Voice Leading Checker** tools.
 
 **Configuration:**

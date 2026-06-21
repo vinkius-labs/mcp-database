@@ -24,7 +24,7 @@ The most powerful Salesforce integration — **raw SOQL access** to any data in 
 - **Analysts** — Ad-hoc queries through conversation
 
 
-## Available Tools
+## Available Tools (6)
 - **sf_get_dashboard**: Each component includes its type, header, data values, and the source report. Dashboards provide pre-built visual summaries. Get the dashboard ID from sf_list_dashboards. Use when the user asks "show me the sales dashboard" or wants a visual summary of specific metrics.
 
 Get all component data from a specific Salesforce dashboard — charts, metrics, and tables with their underlying data
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesforce-analytics-soql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesforce-analytics-soql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesforce Analytics & SOQL** tools.
 
 **Configuration:**

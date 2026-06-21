@@ -35,7 +35,7 @@ Connect your **New Relic** account to your AI agent and gain full visibility int
 - **Product Managers** — track SLOs and high-level performance indicators through natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_apm_summary**: Get APM golden metrics
 - **get_dashboard**: Get dashboard configuration
 - **get_entity_details**: Get specific entity metadata
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `new-relic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `new-relic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **New Relic** tools.
 
 **Configuration:**

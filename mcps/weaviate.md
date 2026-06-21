@@ -37,7 +37,7 @@ No more manual JSON querying in complex database consoles. Your AI agent becomes
 - **SRE & DevOps** — monitor the operational status of Weaviate nodes and manage instance configurations
 
 
-## Available Tools
+## Available Tools (7)
 - **get_class_schema**: Retrieves the schema definition for a specific class (collection)
 - **get_instance_metadata**: Retrieves metadata about the Weaviate instance
 - **get_cluster_nodes**: Retrieves operational information about the Weaviate cluster nodes
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `weaviate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `weaviate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Weaviate** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ No exporting CSVs or navigating XML trees manually. When a customer complains ab
 - **Support Teams** — track physical delivery addresses mapping direct customer disputes without accessing the admin panel
 
 
-## Available Tools
+## Available Tools (10)
 - **list_products**: Use the `limit` parameter string to bound results (e.g., `0,20`). Native XML responses are parsed and converted to structured arrays.
 
 List PrestaShop products with full details, retrieving items from the open-source eCommerce catalog
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `prestashop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `prestashop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PrestaShop** tools.
 
 **Configuration:**

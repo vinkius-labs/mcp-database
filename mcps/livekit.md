@@ -30,7 +30,7 @@ Connect your **LiveKit** infrastructure to any AI agent to orchestrate real-time
 No more manual dashboard navigation to check who is in a room or to force-mute a noisy participant. Your AI acts as a real-time session administrator.
 
 
-## Available Tools
+## Available Tools (41)
 - **create_dispatch**: Explicitly trigger a named agent to join a specific room
 - **create_ingress**: Provision an ingress point (RTMP, WHIP, or URL pull)
 - **create_room**: Create a room with specific settings
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `livekit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `livekit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LiveKit** tools.
 
 **Configuration:**

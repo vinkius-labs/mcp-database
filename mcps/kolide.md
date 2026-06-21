@@ -28,7 +28,7 @@ Connect your AI agent to **Kolide** to get full visibility into your organizatio
 4. Start auditing your fleet via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **list_kolide_devices**: Use this to audit fleet security posture and identify individual device IDs.
 
 List all devices in the fleet
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kolide` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kolide` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kolide** tools.
 
 **Configuration:**

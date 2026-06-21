@@ -34,7 +34,7 @@ Connect your **Monday.com** account to any AI agent and take full control of you
 - **Operations Managers** — manage organizational workspaces and retrieve rapid project summaries to maintain team alignment efficiently
 
 
-## Available Tools
+## Available Tools (13)
 - **get_me**: Get current user profile
 - **archive_item**: Can be unarchived later from the board settings.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mondaycom-work-management-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mondaycom-work-management-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Monday.com (Work Management & CRM)** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ When generating exercises, note that video and thumbnail URLs are temporary pre-
 - **Health App Developers** — Query a centralized database of fitness data without maintaining your own schema
 
 
-## Available Tools
+## Available Tools (12)
 - **generate_meal_plan**: Generate a daily meal plan reaching a specific calorie target
 - **generate_program**: g. "hypertrophy", "weight_loss", "strength").
 
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ymove-fitness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ymove-fitness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **YMovE Fitness** tools.
 
 **Configuration:**

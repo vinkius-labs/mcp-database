@@ -13,7 +13,7 @@ Estimate administrative and tribunal costs for ICC, LCIA, SCC, and VIAC arbitrat
 This MCP server provides a specialized estimation engine for calculating the complex multi-layered costs associated with major European arbitration institutions. By using tools like `get_icc_estimate`, `get_lcia_estimate`, `get_scc_estimate`, and `get_viac_estimate`, users can instantly determine administrative fees, arbitrator compensation, and required advances on costs based on the dispute value and tribunal size. It automates the lookup of fee schedules from ICC, LCIA, SCC, and VIAC to provide accurate financial projections for legal proceedings.
 
 
-## Available Tools
+## Available Tools (4)
 - **lcia_estimate**: Calculate LCIA arbitration cost estimate
 - **scc_estimate**: Calculate SCC arbitration cost estimate
 - **viac_estimate**: Calculate VIAC arbitration cost estimate
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `european-arbitration-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `european-arbitration-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **European Arbitration Cost Calculator** tools.
 
 **Configuration:**

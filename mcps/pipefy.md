@@ -39,7 +39,7 @@ No more navigating the Pipefy dashboard for every workflow action. Your AI acts 
 - **Process Owners** — clone cards for recurring processes and manage field values as requests evolve
 
 
-## Available Tools
+## Available Tools (14)
 - **clone_card**: You must provide the card_id of the card to clone.
 The new card is created in the same pipe as the original, starting at the first phase.
 This is useful for creating similar requests, repeating processes, or using an existing card 
@@ -193,7 +193,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipefy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipefy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipefy** tools.
 
 **Configuration:**

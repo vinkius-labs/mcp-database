@@ -22,7 +22,7 @@ This MCP uses `node-object-hash` to generate mathematically consistent SHA-256 f
 - **Zero Hallucination:** Agents can't reliably compare large strings. Hashing gives them a tiny, mathematically absolute proof of equality.
 
 
-## Available Tools
+## Available Tools (1)
 - **hash_json_object**: Generate a deterministic SHA-256 fingerprint of any JSON object. Sorts keys automatically. Essential for deduplication and cache invalidation
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `object-hash-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `object-hash-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Object Hash Engine** tools.
 
 **Configuration:**

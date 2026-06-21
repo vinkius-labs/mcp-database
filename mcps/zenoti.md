@@ -32,7 +32,7 @@ Connect your **Zenoti** organization to any AI agent and manage your spa, salon,
 - **Front Desk** — Instant guest lookup, appointment details, and loyalty info
 
 
-## Available Tools
+## Available Tools (14)
 - **list_centers**: Includes name, address, timezone, and operating hours. Essential for multi-location spa chains like Massage Envy.
 
 List spa/salon locations
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zenoti` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zenoti` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zenoti** tools.
 
 **Configuration:**

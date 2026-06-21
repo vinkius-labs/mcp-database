@@ -33,7 +33,7 @@ Connect your **iLovePDF** account to any AI agent and process PDF documents thro
 - **Operations** — batch process documents without manual tools
 
 
-## Available Tools
+## Available Tools (6)
 - **get_pdf_download_link**: Get the processed PDF download link
 - **get_task_status**: Check the status of a PDF task
 - **list_pdf_tasks**: List recent PDF processing tasks
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ilovepdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ilovepdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **iLovePDF** tools.
 
 **Configuration:**

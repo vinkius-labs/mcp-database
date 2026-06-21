@@ -32,7 +32,7 @@ Link your **Amplience** headless CMS to any intelligent AI agent to completely r
 - **Content Marketers** — command your agent to create a brand new draft for a promotional blog post, pre-populating fields utilizing your CRM's specific SEO guidelines.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_content_item**: Create a new structured content item adhering to a schema inside a folder
 - **delete_content_item**: Requires version validation before deletion.
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amplience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amplience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amplience** tools.
 
 **Configuration:**

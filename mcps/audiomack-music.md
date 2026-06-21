@@ -35,7 +35,7 @@ This integration uses Audiomack's REST API with secure OAuth 1.0a signing for al
 - **Music Researchers** — analyze trends and artist growth across different genres
 
 
-## Available Tools
+## Available Tools (6)
 - **get_authenticated_account**: Retrieve information about the authenticated Audiomack account
 - **get_album_details**: Get detailed information for a specific album
 - **get_artist_details**: Get comprehensive information for a specific artist
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `audiomack-music` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `audiomack-music` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Audiomack Music** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ When an AI Agent attempts to calculate an invoice discount or sum up a shopping 
 - **Billing Shield:** Ensures that all Agent-driven financial payloads (Stripe, Xero, Shopify) are mathematically perfect before transmission.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_currency**: Pass the base amount, the operation (add, subtract, multiply, divide, format), and the second value. The engine uses integer-based math to avoid floating-point rounding errors.
 
 Performs strict integer-based financial mathematics. Prevents floating-point hallucination when agents calculate invoices, taxes, and cart totals
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `currency-math-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `currency-math-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Currency Math Engine** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual status checking or spreadsheet time logging. Your AI acts as a de
 - **Operations Teams** — streamline the logging of hours and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_my_organization_profile**: Get authenticated organization profile
 - **get_project_details**: Get details for a specific project
 - **get_sales_details**: Get details for a specific sales opportunity
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simplicate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simplicate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Simplicate** tools.
 
 **Configuration:**

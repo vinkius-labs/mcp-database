@@ -18,7 +18,7 @@ When a Martech AI Agent drafts an SMS campaign via Twilio or Zenvia, the LLM wil
 - **Unicode Transliteration:** Converts complex accents and symbols into safe 7-bit ASCII (GSM-7) to guarantee maximum character limits per message segment.
 
 
-## Available Tools
+## Available Tools (1)
 - **sanitize_gsm7**: Pass the draft text and the engine will strip emojis and transliterate Unicode to pure 7-bit ASCII, guaranteeing GSM-7 encoding and maximum 160-character segments.
 
 Strips emojis and complex Unicode to guarantee 100% GSM-7 compatibility. Prevents Twilio from charging 3x for multi-part SMS messages
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sms-gsm-7-sanitizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sms-gsm-7-sanitizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SMS GSM-7 Sanitizer** tools.
 
 **Configuration:**

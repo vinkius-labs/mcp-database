@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your software development lifecycle with **
 - **DevOps Engineers** — integrate project management data into your automated pipelines and AI-driven insights.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_work_item**: Create a work item
 - **get_project**: Get project details
 - **get_wiki_page**: Get wiki page content
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pingcode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pingcode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PingCode** tools.
 
 **Configuration:**

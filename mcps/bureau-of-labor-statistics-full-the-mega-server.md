@@ -31,7 +31,7 @@ The **ultimate U.S. BLS Mega-Server** gives your agent omnipotent access to the 
 - **Hedge Funds** — Full economic picture modeling
 
 
-## Available Tools
+## Available Tools (5)
 - **get_cpi_inflation**: S. Consumer Price Index baseline. Identifies macroeconomic price shifts and consumer buying power anomalies.
 
 Get Consumer Price Index (CPI-U) data for inflation tracking
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bureau-of-labor-statistics-full-the-mega-server` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bureau-of-labor-statistics-full-the-mega-server` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bureau of Labor Statistics Full — The Mega Server** tools.
 
 **Configuration:**

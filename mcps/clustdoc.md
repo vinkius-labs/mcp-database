@@ -35,7 +35,7 @@ Connect your **Clustdoc** account to any AI agent and take full control of your 
 - **Ops Teams** — verify workflow configurations and monitor team member activity
 
 
-## Available Tools
+## Available Tools (8)
 - **launch_new_onboarding**: Launch a new onboarding application for a client
 - **get_application_status_details**: Get detailed status and progress for a specific client dossier
 - **get_my_clustdoc_profile**: Retrieve information about the authenticated user
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clustdoc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clustdoc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clustdoc** tools.
 
 **Configuration:**

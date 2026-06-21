@@ -32,7 +32,7 @@ Connect your **Obsidian Publish** environment to your AI agent and construct an 
 - **Developers** — fetch specific code snippets and technical architectures housed in your digital garden natively within the IDE.
 
 
-## Available Tools
+## Available Tools (5)
 - **list_files**: List all explicitly published raw file paths across the Obsidian workspace
 - **get_file**: Retrieve exact textual file content and binary assets
 - **site_info**: Identify global configuration and styling mapping the site
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `obsidian-publish` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `obsidian-publish` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Obsidian Publish** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ When a DevOps agent writes .gitignore rules or CI pipeline includes, it cannot g
 - **All Patterns:** Supports `*`, `**`, `?`, `[abc]`, `{a,b}`, and negation `!`.
 
 
-## Available Tools
+## Available Tools (1)
 - **test_glob**: gitignore rules, CI include/exclude patterns, or deploy filters. Pass the glob pattern (e.g. "src/**/*.ts") and the file path to test (e.g. "src/utils/helper.ts"). The engine returns a boolean match result using the exact same algorithm used by npm and git.
 
 Tests whether a file path matches a glob pattern using minimatch (130M+ weekly downloads). Essential for .gitignore, CI pipeline, and deploy rule validation
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glob-pattern-tester` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glob-pattern-tester` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glob Pattern Tester** tools.
 
 **Configuration:**

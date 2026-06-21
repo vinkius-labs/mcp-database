@@ -35,7 +35,7 @@ Your AI becomes a dedicated retail operations assistant — no more navigating m
 - **E-commerce Operators** — sync product catalogs and manage variant pricing across sales channels
 
 
-## Available Tools
+## Available Tools (15)
 - **create_client**: The client can then be associated with future invoices and sales documents. For Chilean tax compliance, include the RUT and business activity (giro) when available.
 
 Register a new client in the system
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bsale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bsale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bsale** tools.
 
 **Configuration:**

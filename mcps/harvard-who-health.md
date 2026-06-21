@@ -33,7 +33,7 @@ Connect to the **WHO Global Health Observatory (GHO) API** — the world's most 
 - **Global Health Students** — coursework and thesis research
 
 
-## Available Tools
+## Available Tools (16)
 - **compare_countries**: Provide a comma-separated list of ISO 3-letter country codes. Returns the most recent 10 years of data for each country.
 
 Compare a health indicator across countries
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harvard-who-health` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harvard-who-health` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harvard WHO Health** tools.
 
 **Configuration:**

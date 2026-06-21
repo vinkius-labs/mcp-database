@@ -35,7 +35,7 @@ No more manual data entry from invoices or forms. Your AI acts as a dedicated do
 - **Developers** — integrate real-time document parsing and structured data retrieval directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_mailbox**: Create a new mailbox
 - **get_parsed_document_result**: Retrieve the result of a parsed document
 - **get_mailbox**: Get details for a specific mailbox
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `parsio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `parsio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Parsio** tools.
 
 **Configuration:**

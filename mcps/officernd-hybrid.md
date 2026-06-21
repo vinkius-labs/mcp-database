@@ -26,7 +26,7 @@ Connect your **OfficeRnD Hybrid** account to empower your AI agents with office 
 3. Start managing your hybrid workspace from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_booking**: Cancel an existing booking
 - **create_booking**: Create a new booking
 - **get_booking**: Get a specific booking
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `officernd-hybrid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `officernd-hybrid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OfficeRnD Hybrid** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Acelle Mail** self-hosted or cloud account to any AI agent and si
 - **Email Outreach Specialists** — monitor campaign statuses and manage audience segments via the AI assistant.
 
 
-## Available Tools
+## Available Tools (7)
 - **add_acelle_subscriber**: Add a subscriber
 - **create_acelle_list**: Create a new list
 - **get_acelle_campaign**: Get campaign details
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `acelle-mail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `acelle-mail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Acelle Mail** tools.
 
 **Configuration:**

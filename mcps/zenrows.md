@@ -38,7 +38,7 @@ No more manual proxy rotation or CAPTCHA solving. Your AI agent becomes your web
 - **SEO Specialists** — analyze rendered page content and verify technical SEO data across complex dynamic websites
 
 
-## Available Tools
+## Available Tools (10)
 - **scrape_geo**: g. "us", "gb") for localized content.
 
 Scrape using a proxy from a specific country
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zenrows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zenrows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZenRows** tools.
 
 **Configuration:**

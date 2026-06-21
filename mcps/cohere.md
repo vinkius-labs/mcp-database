@@ -35,7 +35,7 @@ No more switching between API tools to interact with Cohere. Your AI acts as an 
 - **Search Teams** — rerank documents by relevance, tokenize text and generate embeddings for search index building
 
 
-## Available Tools
+## Available Tools (6)
 - **chat**: Requires the model ID (e.g. "command-r-plus", "command-r", "command-r7b") and messages array in JSON format. Each message must have a "role" ("user", "assistant", "system" or "tool") and "content" (text or array of content blocks). Optionally set max_tokens, temperature (0-1), p (nucleus sampling 0-1) and tools array for function calling. Returns the model's response with text, citations and tool calls.
 
 Send a chat message to a Cohere model
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cohere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cohere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cohere** tools.
 
 **Configuration:**

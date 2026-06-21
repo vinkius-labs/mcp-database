@@ -34,7 +34,7 @@ Connect your **Mailtrap** account to any AI agent and manage email testing and d
 - **Operations** — monitor production transactional delivery
 
 
-## Available Tools
+## Available Tools (12)
 - **clear_sandbox_inbox**: Delete all emails in inbox
 - **delete_sandbox_message**: Delete captured email
 - **get_domain_status**: Get domain details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailtrap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailtrap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailtrap** tools.
 
 **Configuration:**

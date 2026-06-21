@@ -29,7 +29,7 @@ Connect your AI agent to **The Movie Database (TMDB)** to access a world of cine
 No more manual searching through browser tabs to find release dates or cast lists. Your AI acts as a dedicated film buff and database researcher.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_account_details**: Get TMDB account details
 - **get_configuration**: Get TMDB API configuration
 - **discover_movies**: Discover movies by filters
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tmdb-the-movie-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tmdb-the-movie-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TMDB (The Movie Database)** tools.
 
 **Configuration:**

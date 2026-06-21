@@ -13,7 +13,7 @@ Calculate and validate income declarations for regulatory compliance.
 The DECORE Simulator is a specialized financial engine designed to help users verify the compliance of their income declarations. By using tools like `calculate_total_monthly_revenue`, `validate_income_compliance`, and `compute_taxable_burden`, you can accurately aggregate different revenue streams--including Pro-labore, Profit Distribution, and Autonomous income--and determine if they fall within safe regulatory thresholds or require additional documentation.
 
 
-## Available Tools
+## Available Tools (3)
 - **validate_income_compliance**: Validate if income amounts are within regulatory boundaries
 - **calculate_total_monthly_revenue**: Calculate total monthly revenue and its composition
 - **compute_taxable_burden**: Calculate the portion of total income subject to tax
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `decore-simulator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `decore-simulator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DECORE Simulator** tools.
 
 **Configuration:**

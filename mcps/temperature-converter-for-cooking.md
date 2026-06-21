@@ -13,7 +13,7 @@ Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scal
 This MCP server provides precise temperature conversions for cooking environments. It allows AI agents to convert between Celsius, Fahrenheit, and the European Gas oven scale (1-9). Beyond simple unit conversion, it also classifies the heat intensity as Low, Medium, High, or Very High based on the resulting temperature. Use tools like `fahrenheit_from_celsius`, `celsius_from_fahrenheit`, and `oven_settings_from_gas` to get accurate cooking instructions.
 
 
-## Available Tools
+## Available Tools (3)
 - **celsius_from_fahrenheit**: Convert Fahrenheit to Celsius
 - **fahrenheit_from_celsius**: Convert Celsius to Fahrenheit
 - **oven_settings_from_gas**: Get oven settings from gas knob position
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `temperature-converter-for-cooking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `temperature-converter-for-cooking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Temperature Converter for Cooking** tools.
 
 **Configuration:**

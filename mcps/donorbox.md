@@ -32,7 +32,7 @@ Integrate **Donorbox**, the powerful and easy-to-use donation software, directly
 - **Finance Teams** — Monitor donation amounts and campaign success rates across the organization instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_donorbox_account_metadata**: Retrieve metadata for the current authenticated user
 - **get_campaign_details**: Get detailed settings and progress for a specific campaign
 - **quick_campaign_performance_audit**: Retrieve a high-level summary of all campaign success rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `donorbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `donorbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Donorbox** tools.
 
 **Configuration:**

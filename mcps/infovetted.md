@@ -33,7 +33,7 @@ Connect your **InfoVetted** account to any AI agent and manage background checks
 - **Staffing Agencies** — manage high-volume screening workflows through AI
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_active_vetting**: Cancel a background check
 - **check_api_connectivity**: Verify InfoVetted API status
 - **create_screening_contact**: Add a new individual for screening
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `infovetted` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `infovetted` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **InfoVetted** tools.
 
 **Configuration:**

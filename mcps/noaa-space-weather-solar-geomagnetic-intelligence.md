@@ -24,7 +24,7 @@ Real-time space weather from NOAA's Space Weather Prediction Center.
 Aurora hunters, satellite operators, HF radio operators, power grid managers, airline operators (polar routes), and space enthusiasts.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_planetary_k_index**: Kp ranges 0-9. Values ≥5 indicate geomagnetic storms with visible aurora at lower latitudes. Updated every 3 hours. Essential for aurora hunters, satellite operators, and power grid managers.
 
 Get the NOAA Planetary K-index — geomagnetic activity and aurora probability
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `noaa-space-weather-solar-geomagnetic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `noaa-space-weather-solar-geomagnetic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NOAA Space Weather — Solar & Geomagnetic Intelligence** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ Connect your **Metricool** account to any AI agent and take full control of your
 3. Start managing your social strategy from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_ads_performance**: Get performance for ads
 - **get_facebook_analytics**: Get Facebook analytics
 - **get_instagram_analytics**: Get Instagram analytics
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `metricool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `metricool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Metricool** tools.
 
 **Configuration:**

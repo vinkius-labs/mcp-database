@@ -13,7 +13,7 @@ Quantify combat outcomes and attribute influence through large-scale simulations
 The Combat Balance Checker is an analytical engine designed for game designers to quantify the outcome of turn-based combat. By running 1,000 randomized iterations per request, it provides statistically significant data on win rates, damage metrics, and turn duration. Use `simulate_combat` to compare two profiles, `analyze_influence` to identify which stat (like SPD or ATK) most heavily dictates the victory margin, and `audit_balance` to check if a matchup meets professional stability standards.
 
 
-## Available Tools
+## Available Tools (3)
 - **audit_balance**: Audit combat balance
 - **analyze_influence**: ) for a given matchup.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `combat-balance-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `combat-balance-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Combat Balance Checker** tools.
 
 **Configuration:**

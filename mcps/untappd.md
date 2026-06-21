@@ -33,7 +33,7 @@ Connect your **Untappd** account to any AI agent to explore the world of craft b
 - **Data Analysts** — gather brewery and beer metadata for personal research or trend tracking
 
 
-## Available Tools
+## Available Tools (30)
 - **accept_friend**: Accept a friend request
 - **add_checkin**: Check-in to a beer
 - **add_comment**: Add a comment to a checkin
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `untappd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `untappd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Untappd** tools.
 
 **Configuration:**

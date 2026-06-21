@@ -34,7 +34,7 @@ Connect your **Context7** account to any AI agent and provide it with the most u
 - **Rapid Prototypers** — instantly retrieve boilerplates and component examples for new frameworks and libraries
 
 
-## Available Tools
+## Available Tools (2)
 - **resolve_library**: g. react) into deterministic paths (e.g. /facebook/react/18.2.0) needed for deep documentation fetching.
 
 Find the correct exact library ID and latest version matching a framework or library search query
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `context7` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `context7` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Context7** tools.
 
 **Configuration:**

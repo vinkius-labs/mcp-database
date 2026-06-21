@@ -35,7 +35,7 @@ Connect your **Mattermost** instance to any AI agent and take full control of yo
 - **Engineering Leads** — coordinate team updates and search for historical technical discussions across multiple Mattermost channels efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **create_post**: Dispatch an automated Markdown payload explicitly into a Channel
 - **delete_post**: Changes the internal `delete_at` marker implicitly wiping visibility synchronously across all active UI clients leaving no front-end trace replacing caching bounds.
 
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mattermost-secure-team-collaboration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mattermost-secure-team-collaboration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mattermost (Secure Team Collaboration)** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual texting or switching between telephony tools. Your AI acts as a d
 - **Developers** — integrate multi-channel communication capabilities into custom AI-driven business workflows.
 
 
-## Available Tools
+## Available Tools (11)
 - **conference_mute**: Mute or unmute a participant
 - **create_audio_from_tts**: Create audio from text
 - **create_lead**: Create a new lead
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesquared** tools.
 
 **Configuration:**

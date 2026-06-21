@@ -34,7 +34,7 @@ Connect your **Front** account to any AI agent to automate your customer communi
 - **Account Managers** — get a real-time overview of client communications and send quick follow-ups via simple AI commands.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_status**: Verify connection
 - **get_conversation_details**: Get conversation metadata
 - **get_inbox_details**: Get inbox metadata
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `front` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `front` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Front** tools.
 
 **Configuration:**

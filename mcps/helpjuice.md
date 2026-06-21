@@ -36,7 +36,7 @@ No more manual navigating through complex CMS folders. Your AI assistant acts as
 - **Content Creators** — automate the creation of draft articles and monitor engagement stats.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_article**: Requires a name/title. Pass body fields as a JSON string in "body_json".
 
 Create a new article in the knowledge base
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `helpjuice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `helpjuice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Helpjuice** tools.
 
 **Configuration:**

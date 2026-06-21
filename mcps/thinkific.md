@@ -34,7 +34,7 @@ Connect your **Thinkific** LMS account to any AI agent and simplify how you mana
 - **Academy Administrators** — monitor enrollment growth and manage user profiles via the AI assistant.
 
 
-## Available Tools
+## Available Tools (10)
 - **enroll_user**: Enroll a user in a product
 - **create_user**: Requires email, first name, and last name.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thinkific` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thinkific` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Thinkific** tools.
 
 **Configuration:**

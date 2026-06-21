@@ -32,7 +32,7 @@ Connect your **Nuvei** merchant account to your AI agent and manage your global 
 - **E-commerce Engineers** — tokenize payments and simulate order testing securely without leaving the code editor.
 
 
-## Available Tools
+## Available Tools (10)
 - **capture_payment**: If amount is omitted, captures the full authorized total.
 
 Capture a previously authorized card payment
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nuvei` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nuvei` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nuvei** tools.
 
 **Configuration:**

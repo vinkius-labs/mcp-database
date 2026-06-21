@@ -26,7 +26,7 @@ The **definitive Mega-Server** for U.S. economic intelligence. Why install 5 ser
 Power users, macro analysts, and AI agents that need comprehensive U.S. economic intelligence without managing multiple integrations.
 
 
-## Available Tools
+## Available Tools (19)
 - **search_series**: Returns matching series with title, frequency, units, popularity. Use order_by=popularity to find the most-used series.
 
 Search 816,000+ economic time series by keyword
@@ -164,7 +164,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fred-full-access-us-economic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fred-full-access-us-economic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FRED Full Access — U.S. Economic Intelligence** tools.
 
 **Configuration:**

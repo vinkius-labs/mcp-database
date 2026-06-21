@@ -31,7 +31,7 @@ Stay informed about the **U.S. Office of Personnel Management (OPM)** operating 
 - **DC Residents & Commuters** — stay updated on potential traffic and transit impacts caused by government-wide closures.
 
 
-## Available Tools
+## Available Tools (1)
 - **get_operating_status**: Get current OPM operating status for Washington, DC
 
 
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opm-operating-status` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opm-operating-status` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OPM Operating Status** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **WhatsApp Business Platform** (via Meta Cloud API) to any AI agent
 - **Developers** — integrate real-time WhatsApp messaging into custom AI-driven business workflows.
 
 
-## Available Tools
+## Available Tools (5)
 - **send_whatsapp_reaction**: React to a WhatsApp message
 - **get_whatsapp_media_details**: Get media details
 - **list_whatsapp_templates**: List message templates
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wsla-whatsapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wsla-whatsapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WSLA (WhatsApp)** tools.
 
 **Configuration:**

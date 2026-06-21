@@ -13,7 +13,7 @@ Calculate the legal and operational impact of Force Majeure events on contract o
 This MCP server provides tools to assess how Force Majeure events affect contractual duties. Using `calculate_suspension_period`, you can determine when obligations are expected to resume based on event start dates and estimated durations. The `determine_notice_deadline` tool identifies the critical window for formal notification, accounting for differences between US Common Law and EU Civil Law jurisdictions. Finally, `evaluate_termination_trigger` helps identify if an event's duration has reached the threshold required to exercise termination rights for Service, Supply, or Construction contracts.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_suspension_period**: Determines the exact date when the suspension of contractual obligations is expected to end
 - **determine_notice_deadline**: Identifies the final date by which the affected party must formally notify the counterparty
 - **evaluate_termination_trigger**: Determines if the prolonged nature of the event has reached the threshold for termination
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `force-majeure-impact-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `force-majeure-impact-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Force Majeure Impact Calculator** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ Manage your Slite knowledge base, notes, and AI insights with AI agents.
 - Operations teams keeping the internal knowledge base verified and up-to-date.
 
 
-## Available Tools
+## Available Tools (12)
 - **ask_slite_ai**: Ask a question to Slite AI
 - **create_note**: Create a new note in Slite
 - **flag_outdated**: Flag a document as needing review
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `slite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `slite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Slite** tools.
 
 **Configuration:**

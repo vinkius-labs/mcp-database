@@ -35,7 +35,7 @@ No more manual status checking or complex store management through different tab
 - **Growth Marketers** — track subscriber lists and campaign performance across multiple products without leaving your workspace
 
 
-## Available Tools
+## Available Tools (8)
 - **create_offer_code**: Create a new discount code
 - **get_product_details**: Get details for a product
 - **get_sale_details**: Get details for a specific sale
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gumroad-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gumroad-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gumroad** tools.
 
 **Configuration:**

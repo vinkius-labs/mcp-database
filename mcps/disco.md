@@ -32,7 +32,7 @@ Integrate **DISCO**, the leading legal technology platform, directly into your A
 - **Attorneys & Paralegals** — Research document metadata and matter details during case planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_disco_account_metadata**: Retrieve metadata and usage limits for your DISCO account
 - **get_document_metadata**: Get the full technical metadata for a specific document
 - **get_matter_details**: Get detailed settings and information for a specific legal matter
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `disco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `disco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DISCO** tools.
 
 **Configuration:**

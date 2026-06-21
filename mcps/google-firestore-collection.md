@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely manage structured data, store cha
 - **Plug & Play Database:** Instantly gives your agent a scalable NoSQL database to store structured memories and application state.
 
 
-## Available Tools
+## Available Tools (3)
 - **delete_document**: Delete a document from the Google Firestore collection
 - **get_document**: Read a document from the configured Google Firestore collection
 - **set_document**: If the document exists, fields are updated.
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-firestore-collection` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-firestore-collection` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Firestore Collection** tools.
 
 **Configuration:**

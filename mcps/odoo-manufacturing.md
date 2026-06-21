@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (7)
 - **odoo_create_manufacturing_order**: production record in "draft" state. Requires a product.product ID and desired quantity. Odoo will auto-select the default BOM if bomId is not specified. Once confirmed, the system will check component availability and create work orders if the BOM has routing operations. Use when the user wants to schedule new production, replenish stock via manufacturing, or create a custom production run.
 
 Create a new manufacturing order to produce a specific product quantity, optionally with a specific Bill of Materials
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-manufacturing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-manufacturing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo Manufacturing** tools.
 
 **Configuration:**

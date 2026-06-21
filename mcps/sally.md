@@ -34,7 +34,7 @@ Connect your **Sally** instance to any AI agent and take full control of your AP
 - **Operations Teams** — monitor project velocity and timesheet data without switching tools.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_comment**: Comments are visible to all project members.
 
 Add a comment to a task
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sally` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sally` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sally** tools.
 
 **Configuration:**

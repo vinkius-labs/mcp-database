@@ -36,7 +36,7 @@ No more manual status updates or missing profitability gaps. Your AI acts as you
 - **Operations Managers** — verify technical time logs and team assignments to optimize resource allocation through simple AI queries
 
 
-## Available Tools
+## Available Tools (13)
 - **list_cor_clients**: List customer clients
 - **create_cor_project**: Create a new project
 - **get_cor_project**: Get details for a specific project
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **COR** tools.
 
 **Configuration:**

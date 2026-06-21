@@ -33,7 +33,7 @@ Connect to the **Cerebras Inference** platform to leverage the world's fastest A
 - **Product Teams** — integrate high-performance LLMs into production environments where latency is a critical factor.
 
 
-## Available Tools
+## Available Tools (15)
 - **cancel_batch**: Cancel a batch job
 - **upload_file**: Upload a JSONL file for Batch processing
 - **create_chat_completion**: Generate conversational responses using a structured message format
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cerebras-inference` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cerebras-inference` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cerebras Inference** tools.
 
 **Configuration:**

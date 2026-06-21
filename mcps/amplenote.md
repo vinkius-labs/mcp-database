@@ -32,7 +32,7 @@ Connect your **Amplenote** account to any AI agent to fuse your personal knowled
 - **Developers in Flow** — quickly dump meeting minutes or architecture concepts securely into Amplenote through your IDE agent without breaking deep work.
 
 
-## Available Tools
+## Available Tools (12)
 - **list_notes**: Use as the primary way to browse the entire knowledge base.
 
 List all notes in the Amplenote workspace
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amplenote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amplenote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amplenote** tools.
 
 **Configuration:**

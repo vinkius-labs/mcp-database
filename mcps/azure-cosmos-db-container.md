@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely manage structured data, store cha
 - **Plug & Play Database:** Instantly gives your agent a scalable NoSQL database to store structured memories and application state.
 
 
-## Available Tools
+## Available Tools (4)
 - **create_document**: Make sure to provide the ID and Partition Key properties inside the documentJson if required.
 
 Create a new document in the Cosmos DB Container
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `azure-cosmos-db-container` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `azure-cosmos-db-container` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Azure Cosmos DB Container** tools.
 
 **Configuration:**

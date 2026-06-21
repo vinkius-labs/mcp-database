@@ -21,7 +21,7 @@ The **EPA AirNow MCP Server** connects your AI agent to the beating heart of env
 Ideal for health-conscious applications, community dashboards, outdoor adventure planners, and risk assessment workflows tailored to individuals with sensitivities like asthma.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_current_aqi_by_latlon**: Get real-time Air Quality Index observation using geographic coordinates
 - **get_current_aqi_by_zip**: Requires a 5-digit US ZIP Code.
 
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epa-airnow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epa-airnow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EPA AirNow** tools.
 
 **Configuration:**

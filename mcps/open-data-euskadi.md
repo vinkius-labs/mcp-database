@@ -33,7 +33,7 @@ Connect to the **Open Data Euskadi** ecosystem and interact with the Basque Gove
 - **Developers** — integrate official Basque government data and news feeds directly into your AI-driven workflows
 
 
-## Available Tools
+## Available Tools (2)
 - **execute_sparql_query**: Execute a SPARQL query against Open Data Euskadi
 - **search_euskadi_content**: Search the Euskadi.eus content catalog
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-data-euskadi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-data-euskadi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Data Euskadi** tools.
 
 **Configuration:**

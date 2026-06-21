@@ -24,7 +24,7 @@ This MCP server acts as a bridge between astrological data and actionable insigh
 By connecting this server via Vinkius Edge, any AI agent in Cursor, Claude Desktop, or VS Code can instantly perform complex astrological calculations for you. Get precise, data-driven insights into your elemental strengths and gaps without manual tallying.
 
 
-## Available Tools
+## Available Tools (3)
 - **evaluate_elemental_profile**: Evaluate the elemental profile based on a distribution
 - **calculate_elemental_weights**: Calculate the distribution of elements across astrological signs
 - **lookup_sign_element**: Lookup the elemental classification of a zodiac sign
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elemental-profile-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elemental-profile-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elemental Profile Calculator** tools.
 
 **Configuration:**

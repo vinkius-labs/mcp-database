@@ -32,7 +32,7 @@ Connect your **Tenderly** account to any AI agent to streamline your Ethereum de
 - **Web3 DevOps** — monitor production contracts and manage private testing environments seamlessly.
 
 
-## Available Tools
+## Available Tools (4)
 - **create_alert**: Expression types include method_call, state_change, tx_value, emitted_log, eth_balance.
 
 Create an alert on Tenderly
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tenderly-ethereum-dev-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tenderly-ethereum-dev-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tenderly (Ethereum Dev Platform)** tools.
 
 **Configuration:**

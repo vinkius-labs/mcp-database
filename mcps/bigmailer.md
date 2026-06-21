@@ -34,7 +34,7 @@ Connect your **BigMailer** account to any AI agent and orchestrate your email ma
 - **Growth Managers** — automate list management and brand auditing using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_contact**: Add or update a contact in a brand
 - **get_brand_properties**: List custom properties for a brand
 - **get_brand**: Get specific brand details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bigmailer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bigmailer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BigMailer** tools.
 
 **Configuration:**

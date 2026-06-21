@@ -32,7 +32,7 @@ Connect your **RisingWave** streaming database to any AI agent and take full con
 - **Analytics Teams** — explore available data sources and sinks to build real-time dashboards
 
 
-## Available Tools
+## Available Tools (6)
 - **execute_sql**: Execute a SQL statement on RisingWave
 - **ingest_events**: Body can be a single JSON object or an array of objects.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `risingwave-streaming-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `risingwave-streaming-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RisingWave (Streaming Database)** tools.
 
 **Configuration:**

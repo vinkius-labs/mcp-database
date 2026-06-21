@@ -27,7 +27,7 @@ The **Apperio MCP Server** provides a powerful natural language interface to you
 - **Finance Teams** — Easily track and approve legal invoices to ensure timely payments and budget compliance.
 
 
-## Available Tools
+## Available Tools (10)
 - **approve_invoice**: Approve a legal invoice
 - **get_account_check**: Verify Apperio account connection
 - **get_invoice_approval_workflow**: Get the approval workflow path for an invoice
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apperio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apperio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apperio** tools.
 
 **Configuration:**

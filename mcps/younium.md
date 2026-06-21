@@ -38,7 +38,7 @@ No more manual navigation through complex ERP dashboards to check a subscription
 - **Product Managers** — browse the billable product catalog and verify charge plan configurations without manual navigation
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_subscription**: Provide the subscription and version IDs plus the effective date.
 
 Immediately terminates a specific subscription version
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `younium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `younium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Younium** tools.
 
 **Configuration:**

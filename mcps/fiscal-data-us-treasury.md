@@ -32,7 +32,7 @@ Connect directly to the **U.S. Department of the Treasury's Fiscal Data API** to
 - **Policy Researchers** — track government spending and debt metrics through natural language queries.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_mts_table_1**: Get Monthly Treasury Statement (MTS) Table 1
 - **get_mts_table_9**: Get Monthly Treasury Statement (MTS) Table 9
 - **get_rates_of_exchange**: Get Treasury Reporting Rates of Exchange
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fiscal-data-us-treasury` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fiscal-data-us-treasury` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fiscal Data (U.S. Treasury)** tools.
 
 **Configuration:**

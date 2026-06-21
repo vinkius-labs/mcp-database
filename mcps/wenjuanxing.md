@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your data collection and research with **We
 - **Wenjuanxing Power Users** — integrate your existing research workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_survey**: Create a new questionnaire
 - **get_account_info**: Get user account metadata
 - **get_report**: Get survey summary report
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wenjuanxing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wenjuanxing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wenjuanxing / 问卷星** tools.
 
 **Configuration:**

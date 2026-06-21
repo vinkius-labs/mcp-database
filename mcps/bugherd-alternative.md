@@ -25,7 +25,7 @@ Manage BugHerd projects, tasks, and comments through AI Agents.
 Ideal for development and QA teams looking to interact with BugHerd tickets directly via Cursor, Claude, or any MCP-enabled agent. Turn your AI into a full-fledged QA assistant.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_comment**: Add a comment to a BugHerd task
 - **create_project**: Create a new project in BugHerd
 - **create_task**: Create a new task in a BugHerd project
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bugherd-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bugherd-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BugHerd** tools.
 
 **Configuration:**

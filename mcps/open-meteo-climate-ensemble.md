@@ -21,7 +21,7 @@ Give your AI a window into **the climate future** with IPCC-grade projections an
 ESG analysts, climate scientists, policymakers, insurance actuaries, real estate developers assessing long-term risk, and sustainability consultants.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_climate_projection**: Uses CMIP6 climate models for long-term climate analysis.
 
 Get IPCC climate change projections (2015–2100)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-meteo-climate-ensemble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-meteo-climate-ensemble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open-Meteo Climate & Ensemble** tools.
 
 **Configuration:**

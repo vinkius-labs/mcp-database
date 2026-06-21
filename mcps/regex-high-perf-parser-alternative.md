@@ -13,7 +13,7 @@ Stop LLM hallucination when extracting entities. Run pure Regex across massive t
 When asked to find 'all IPv4 addresses' or 'all order IDs' in a 10,000-line log file, LLMs will frequently drop results or truncate the response due to context limits. The Regex High-Perf Parser executes standard V8 Regular Expressions strictly on the local runtime, returning a complete, deterministic JSON array of every single match found. Zero dropped entities, zero hallucinations.
 
 
-## Available Tools
+## Available Tools (1)
 - **regex_parser_extract**: You provide the text and the regex, and this tool returns an exact array of matches.
 
 Extracts exact string matches from a large text using Regular Expressions (Regex)
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `regex-high-perf-parser-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `regex-high-perf-parser-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Regex High-Perf Parser** tools.
 
 **Configuration:**

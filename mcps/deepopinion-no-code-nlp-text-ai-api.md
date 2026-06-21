@@ -31,7 +31,7 @@ Connect your **DeepOpinion** account to any AI agent to leverage powerful no-cod
 - **Developers** — integrate sophisticated text AI capabilities into workflows using simple natural language commands
 
 
-## Available Tools
+## Available Tools (3)
 - **list_models**: List all models available in your DeepOpinion account
 - **predict_batch**: Run predictions on multiple texts at once
 - **predict**: Run a prediction using a specific model
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deepopinion-no-code-nlp-text-ai-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deepopinion-no-code-nlp-text-ai-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeepOpinion (No-code NLP & Text AI API)** tools.
 
 **Configuration:**

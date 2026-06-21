@@ -33,7 +33,7 @@ Connect your **Zoho Invoice** account to any AI agent to streamline your busines
 - **Developers** — Integrate professional invoicing data and billing automation into your custom workflows
 
 
-## Available Tools
+## Available Tools (7)
 - **list_invoice_contacts**: List all contacts (customers)
 - **create_new_invoice**: Requires a JSON body with invoice details.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-invoice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-invoice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Invoice** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire global research workflow with *
 - **Operations Leads** — automate global data querying to orchestrate cross-functional international teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_all_countries**: Get a list of all countries in the world
 - **get_countries_by_currency**: List countries that use a specific currency
 - **get_countries_by_language**: List countries that speak a specific language
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rest-countries` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rest-countries` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **REST Countries** tools.
 
 **Configuration:**

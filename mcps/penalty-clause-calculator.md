@@ -13,7 +13,7 @@ Calculate contractual penalties, legal ceilings, and estimated judicial reductio
 The Penalty Clause Calculator is a specialized tool for determining the financial impact of contract breaches. It calculates the raw penalty amount using contract value, penalty rate, and delay days via `calculate_raw_penalty`. It also identifies legal maximums for specific jurisdictions like the USA or EU member states using `get_jurisdiction_ceiling`. Finally, it determines the legally recoverable amount after applying jurisdictional caps and estimating potential judicial reductions with `calculate_enforceable_penalty`.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_enforceable_penalty**: Determines the final penalty amount after applying legal caps
 - **get_jurisdiction_ceiling**: g., USA, DE, FR).
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `penalty-clause-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `penalty-clause-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Penalty Clause Calculator** tools.
 
 **Configuration:**

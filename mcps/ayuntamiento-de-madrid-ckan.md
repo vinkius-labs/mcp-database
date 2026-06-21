@@ -33,7 +33,7 @@ Connect to the official **Open Data portal of the Madrid City Council** and expl
 - **Citizens & Researchers** — explore public information about Madrid's services, environment, and economy through simple questions.
 
 
-## Available Tools
+## Available Tools (8)
 - **madrid_get_package**: Get full metadata for a specific dataset
 - **madrid_get_resource**: Get metadata for a specific file/resource
 - **madrid_list_groups**: List all categories/groups
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ayuntamiento-de-madrid-ckan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ayuntamiento-de-madrid-ckan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ayuntamiento de Madrid (CKAN)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Tolstoy** interactive video account to any AI agent and simplify 
 - **E-commerce Owners** — track the revenue impact of your shoppable interactive videos via the AI assistant.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_video_analytics**: Get performance metrics
 - **list_folders**: List video folders
 - **list_interactive_projects**: List interactive video projects
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tolstoy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tolstoy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tolstoy** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Adtraction** affiliate account to your AI agent to unlock profess
 - **Marketing Operations** — audit channel statuses and sync transaction data with internal reporting tools
 
 
-## Available Tools
+## Available Tools (5)
 - **list_programs**: List affiliate programs
 - **get_program_details**: Get program metadata
 - **list_transactions**: List affiliate transactions
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adtraction` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adtraction` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adtraction** tools.
 
 **Configuration:**

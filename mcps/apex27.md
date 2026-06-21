@@ -34,7 +34,7 @@ Connect your **Apex27** real estate management account to any AI agent and simpl
 - **Operations Teams** — track work orders and manage the contact directory via the AI assistant.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_contact**: Add a new contact to Apex27
 - **record_offer**: Record a new offer on a property
 - **schedule_viewing**: Schedule a new property viewing
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apex27` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apex27` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apex27** tools.
 
 **Configuration:**

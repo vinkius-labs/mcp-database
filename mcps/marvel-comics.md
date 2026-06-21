@@ -35,7 +35,7 @@ No more navigating the Marvel website or wikis to find character bios or comic d
 - **Researchers** — explore Marvel's publication history, creator credits and event timelines
 
 
-## Available Tools
+## Available Tools (10)
 - **get_character**: Returns the character name, description, thumbnail image URL, comics appearances, series, events and related creators. Use list_characters to find character IDs by name first.
 
 Get a Marvel character by ID
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `marvel-comics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `marvel-comics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Marvel Comics** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your entire HR and recruitment stack to any AI agent using **Kombo**. Th
 - **L&D Managers** — monitor course catalogs and user progress across learning platforms.
 
 
-## Available Tools
+## Available Tools (21)
 - **put_assessment_order_result**: Write back results for an assessment order
 - **put_assessment_packages**: Define available assessment/background check packages
 - **get_ats_applications**: Retrieve job applications from the ATS
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kombo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kombo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kombo** tools.
 
 **Configuration:**

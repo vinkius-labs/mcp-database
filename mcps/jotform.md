@@ -13,7 +13,7 @@ Manage forms, submissions, and reports via JotForm API.
 Empower your AI agents with JotForm's powerful online form builder. This MCP server allows you to list and retrieve forms, track submissions, manage reports and folders, and view account usage directly through the JotForm API. Ideal for automating data collection and form management workflows.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Use to verify account status or identity.
 
 Retrieves details about your JotForm account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jotform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jotform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JotForm** tools.
 
 **Configuration:**

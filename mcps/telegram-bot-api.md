@@ -32,7 +32,7 @@ Transform your local conversational window into a powerful global messaging dire
 - **DevOps Engineers** — Construct rapid push-notification alerts pushing build failure pictures (`send_photo_by_url`) straight to dedicated on-call Telegram groups effortlessly.
 
 
-## Available Tools
+## Available Tools (14)
 - **delete_chat_message**: Bots can delete their own messages or those of users in groups they manage.
 
 Permanently deletes a message from a chat
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telegram-bot-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telegram-bot-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telegram Bot API** tools.
 
 **Configuration:**

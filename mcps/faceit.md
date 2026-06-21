@@ -34,7 +34,7 @@ Connect to **Faceit** and access the world's largest competitive gaming platform
 - **Content Creators** — access player data, match results and tournament info for content
 
 
-## Available Tools
+## Available Tools (12)
 - **get_games**: Returns game IDs, names, icons and player counts.
 
 Get all supported games on Faceit
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `faceit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `faceit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Faceit** tools.
 
 **Configuration:**

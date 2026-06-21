@@ -38,7 +38,7 @@ Give your AI agent the ability to extract structured data from any website with 
 - **Data engineers** — extract structured web data at scale for market research, lead generation, or content indexing
 
 
-## Available Tools
+## Available Tools (10)
 - **scrape_universal**: oxylabs.io/v1/queries` endpoint mapping `source=universal`. Dynamically extracts raw remote HTML safely avoiding proxy blocks. Use `js_render=true` explicitly if the target SPA strictly requires client rendering.
 
 Scrape any arbitrary HTML website using Oxylabs Universal Scraper API
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oxylabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oxylabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Oxylabs** tools.
 
 **Configuration:**

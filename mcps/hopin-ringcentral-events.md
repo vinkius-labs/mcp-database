@@ -13,7 +13,7 @@ Connect and manage RingCentral Events (formerly Hopin) webinars and virtual even
 Empower your AI agents to manage your virtual events ecosystem. This MCP server provides access to RingCentral Events (Hopin) API to list events, manage registrations, track schedules, speakers, and sessions. Ideal for automating event logistics and attendee management.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_registration**: Registers a user for an event
 - **get_event**: Retrieves details for a specific event
 - **list_events**: Lists events in your RingCentral Events (Hopin) organization
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hopin-ringcentral-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hopin-ringcentral-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hopin (RingCentral Events)** tools.
 
 **Configuration:**

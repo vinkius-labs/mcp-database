@@ -36,7 +36,7 @@ No more manual configuration in the web dashboard for every run. Your AI assista
 - **Product Researchers** — use AI to analyze competitor tech stacks and news through automated workflows.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_workflow_results**: Retrieve the output data from a completed workflow execution
 - **get_execution_logs**: Retrieve the execution logs for a specific workflow
 - **get_account_usage**: Retrieve current plan usage and automation credits
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hexomatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hexomatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hexomatic** tools.
 
 **Configuration:**

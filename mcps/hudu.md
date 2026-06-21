@@ -13,7 +13,7 @@ Manage IT documentation, assets, and passwords via Hudu API.
 Empower your AI agents to interact with your Hudu IT documentation. This MCP server allows you to list companies, retrieve asset details, manage contacts, view knowledge base articles, and access stored passwords directly through the Hudu API. Ideal for automating MSP workflows and IT management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_company**: Retrieves details for a specific company
 - **list_activity_logs**: Lists activity logs
 - **list_articles**: Lists knowledge base articles
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hudu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hudu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hudu** tools.
 
 **Configuration:**

@@ -22,7 +22,7 @@ This MCP uses `wink-tokenizer` (inspired by Python's spaCy) to perform determini
 - **Deterministic NLP:** Math-based parsing, not LLM probability guessing.
 
 
-## Available Tools
+## Available Tools (1)
 - **natural_tokenizer**: Tokenize natural language text into exact words, numbers, emails, URLs, emojis, and hashtags
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `natural-tokenizer-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `natural-tokenizer-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Natural Tokenizer Engine** tools.
 
 **Configuration:**

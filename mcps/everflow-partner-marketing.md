@@ -32,7 +32,7 @@ Integrate **Everflow**, the comprehensive partner marketing platform, directly i
 - **Operations Teams** — Monitor creative usage and organizational network metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_everflow_network_metadata**: Retrieve metadata and limits for your Everflow network
 - **get_affiliate_detailed_profile**: Get detailed profile and performance summary for a specific affiliate
 - **get_offer_detailed_data**: Get detailed settings and tracking information for a specific offer
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `everflow-partner-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `everflow-partner-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Everflow Partner Marketing** tools.
 
 **Configuration:**

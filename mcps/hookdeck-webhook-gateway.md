@@ -35,7 +35,7 @@ No more jumping between dashboards to pause a failing webhook or check a source 
 - **Support Engineers** — check source configurations and connection statuses to troubleshoot client integration issues.
 
 
-## Available Tools
+## Available Tools (75)
 - **bulk_cancel_events**: Bulk cancel events
 - **bulk_retry_events**: Bulk retry events based on a query
 - **bulk_retry_requests**: Bulk retry rejected requests
@@ -177,7 +177,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hookdeck-webhook-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hookdeck-webhook-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hookdeck (Webhook Gateway)** tools.
 
 **Configuration:**

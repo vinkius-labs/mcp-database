@@ -34,7 +34,7 @@ Connect your **Appointlet** scheduling workspace to any AI agent to streamline b
 - **Account Managers** — review historical tracking data and client responses to prep for follow-ups
 
 
-## Available Tools
+## Available Tools (10)
 - **list_scheduling_pages**: Each page has a unique booking URL.
 
 List all scheduling pages in the Appointlet organization
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `appointlet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `appointlet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Appointlet** tools.
 
 **Configuration:**

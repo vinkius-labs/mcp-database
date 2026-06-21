@@ -32,7 +32,7 @@ Integrate **crowd.dev** (now part of the Linux Foundation as the **LFX Community
 - **Marketing Teams** — Explore organization-level data to understand community composition.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_community_member**: Touches identity management and profile initialization boundaries.
 
 Register a new member in the community
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crowddev-lfx-cdp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crowddev-lfx-cdp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **crowd.dev (LFX CDP)** tools.
 
 **Configuration:**

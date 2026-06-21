@@ -32,7 +32,7 @@ Integrate **Elastic Email**, the powerful email marketing and delivery platform,
 - **Operations Teams** — Monitor credit balances and organizational marketing metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_elastic_email_metadata**: Retrieve metadata and usage limits for your Elastic Email account
 - **get_campaign_performance**: Get detailed performance metrics for a specific email campaign
 - **get_contact_profile**: Get full profile and history for a specific contact by email
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elastic-email` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elastic-email` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elastic Email** tools.
 
 **Configuration:**

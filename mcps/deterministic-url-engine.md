@@ -19,7 +19,7 @@ When LLMs try to manipulate URLs manually, they often produce broken links. Inje
 - **Zero-Dependency Architecture:** Pure Javascript runtime execution means absolute processing speed with no bloated packages.
 
 
-## Available Tools
+## Available Tools (3)
 - **extract_query**: Safely extracts a specific query string parameter value from a URL without regex errors
 - **inject_query**: Provide the new params as a JSON string.
 
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-url-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-url-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic URL Engine** tools.
 
 **Configuration:**

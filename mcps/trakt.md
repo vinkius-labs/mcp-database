@@ -34,7 +34,7 @@ Connect to **Trakt** and explore the world's most popular TV and movie tracking 
 - **Recommendation Engines** — build watchlists and discover related content programmatically
 
 
-## Available Tools
+## Available Tools (18)
 - **get_calendar**: Scope can be "my" (user's watched shows) or "all" (all shows). Returns episodes with air dates, times and show info.
 
 Get upcoming episode calendar
@@ -152,7 +152,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trakt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trakt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Trakt** tools.
 
 **Configuration:**

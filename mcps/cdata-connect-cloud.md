@@ -31,7 +31,7 @@ Command explicit telemetry matrices querying directly against native schemas usi
 Targeting highly restrictive logic limits explicitly for **Data Engineers**, **API Architects**, and **Integration Platform Leads** extracting unified data matrices securely.
 
 
-## Available Tools
+## Available Tools (8)
 - **cdata_create_connection**: Configure natively a brand new backend data source proxy utilizing CData logic
 - **cdata_execute_query**: Execute native proxy query routing seamlessly into the downstream DB parsing values cleanly
 - **cdata_get_schema_metadata**: Evaluate the complete backend graph exposing every available interaction limit mapped natively
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cdata-connect-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cdata-connect-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CData Connect Cloud** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual following up on missing files or digging through student/client f
 - **Real Estate & HR Leads** — monitor incoming tenant or employee applications and retrieve finalized PDFs through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **create_application**: Pass data as a JSON string.
 
 Create a new application
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clustdoc-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clustdoc-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clustdoc** tools.
 
 **Configuration:**

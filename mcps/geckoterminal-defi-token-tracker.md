@@ -33,7 +33,7 @@ Connect **GeckoTerminal** to your AI agent to monitor the decentralized finance 
 - **Web3 Developers** — verify pool addresses and token metadata without leaving your coding environment.
 
 
-## Available Tools
+## Available Tools (17)
 - **get_multiple_pools**: Get details for multiple pools
 - **get_multiple_tokens**: Get details for multiple tokens
 - **get_network**: Get details for a specific network
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geckoterminal-defi-token-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geckoterminal-defi-token-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GeckoTerminal (DeFi Token Tracker)** tools.
 
 **Configuration:**

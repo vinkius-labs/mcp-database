@@ -32,7 +32,7 @@ Connect your **Wati** account to any AI agent to streamline your WhatsApp Busine
 - **Sales Ops** — automate lead follow-ups by sending structured templates to new contacts
 
 
-## Available Tools
+## Available Tools (4)
 - **assign_operator**: Assign a specific operator to a chat
 - **get_chatbots**: Retrieve a list of existing chatbots
 - **get_contacts**: Retrieve a list of contacts from Wati
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wati-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wati-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wati** tools.
 
 **Configuration:**

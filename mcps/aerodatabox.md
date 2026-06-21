@@ -32,7 +32,7 @@ Connect **AeroDataBox** to your AI agent to fetch comprehensive global aviation 
 - **Data Analysts** — Gather historical flight data and airport delay statistics without manual exports.
 
 
-## Available Tools
+## Available Tools (23)
 - **get_global_delays**: Get current global delays
 - **get_alert_subscription**: Get details of a specific flight alert subscription
 - **convert_alert_subscription**: Convert an old subscription to the credit-based system
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aerodatabox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aerodatabox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AeroDataBox** tools.
 
 **Configuration:**

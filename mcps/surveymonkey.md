@@ -33,7 +33,7 @@ Connect your **SurveyMonkey** account to any AI agent to streamline your market 
 - **Marketing Teams** — automate the creation and distribution of campaign surveys.
 
 
-## Available Tools
+## Available Tools (17)
 - **create_survey_collector**: g., Web Link, Email).
 
 Create a new collector
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `surveymonkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `surveymonkey` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SurveyMonkey** tools.
 
 **Configuration:**

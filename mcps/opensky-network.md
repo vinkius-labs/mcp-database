@@ -32,7 +32,7 @@ OpenSky Network is the largest open-source air traffic data platform, providing 
 - **Data Analysts** -- Access historical flight data for trend analysis and research
 
 
-## Available Tools
+## Available Tools (8)
 - **get_all_states**: Optionally filter by specific ICAO24 code.
 
 Get the states of all aircraft currently tracked by OpenSky
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opensky-network` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opensky-network` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenSky Network** tools.
 
 **Configuration:**

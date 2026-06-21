@@ -28,7 +28,7 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **Managers** — Full CRM visibility through conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **hs_create_company**: The name is required. Providing the website domain (e.g., "acme.com") helps HubSpot auto-enrich the company with public data. Industry should match HubSpot industry categories. Returns the created company with its new HubSpot ID.
 
 Create a new company record in HubSpot CRM with name, domain, industry, and phone
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot CRM** tools.
 
 **Configuration:**

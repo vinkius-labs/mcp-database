@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire productivity ecosystem with **T
 - **Operations Leads** — automate task querying to orchestrate cross-functional team productivity smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **close_task**: Complete a task
 - **create_task**: Create a new task
 - **delete_task**: Delete a task
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `todoist-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `todoist-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Todoist** tools.
 
 **Configuration:**

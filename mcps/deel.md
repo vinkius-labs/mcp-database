@@ -32,7 +32,7 @@ Integrate **Deel**, the all-in-one global people platform, directly into your AI
 - **Operations Leaders** — Track time-off and expenses across international entities effortlessly.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_contracts**: Returns contract metadata including legal type (e.g., fixed, PAYG, milestone), current status, and high-level compensation structures.
 
 List all contracts
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deel** tools.
 
 **Configuration:**

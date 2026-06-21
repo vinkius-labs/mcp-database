@@ -13,7 +13,7 @@ Manage email campaigns, contact lists, and newsletters via UseINBOX API.
 Empower your AI agents to manage your email marketing with UseINBOX. This MCP server allows you to list and retrieve campaigns, manage contact lists and subscribers, view newsletters, and track campaign reports directly through the UseINBOX API. Ideal for automating marketing operations and audience engagement.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Gets your UseINBOX account details
 - **get_campaign_report**: Retrieves the performance report for a specific campaign
 - **list_automations**: Lists all marketing automations
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inbox-useinboxcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inbox-useinboxcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Inbox (useinbox.com)** tools.
 
 **Configuration:**

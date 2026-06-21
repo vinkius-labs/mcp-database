@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire entertainment research and humo
 - **Operations Leads** — automate entertainment data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the JokeAPI service is operational
 - **get_jokes_by_category**: Get jokes from a specific category (e.g., Programming, Misc, Pun)
 - **get_random_joke**: Get a random joke from any category
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jokeapi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jokeapi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JokeAPI** tools.
 
 **Configuration:**

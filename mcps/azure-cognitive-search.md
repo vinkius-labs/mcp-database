@@ -32,7 +32,7 @@ Connect your **Azure Cognitive Search** endpoints to any AI agent and bring the 
 - **Machine Learning Ops** — compare index schema changes and experiment iteratively with retrieval techniques
 
 
-## Available Tools
+## Available Tools (7)
 - **list_indexes**: List Azure Search indexes
 - **get_index**: Get Azure Cognitive Search index details
 - **search_documents**: Execute lexical full-text queries against Azure cognitive indexes
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `azure-cognitive-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `azure-cognitive-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Azure Cognitive Search** tools.
 
 **Configuration:**

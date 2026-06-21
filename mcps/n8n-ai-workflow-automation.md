@@ -35,7 +35,7 @@ Connect your **n8n** instance to any AI agent and take full control of your node
 - **IT Operations Teams** — monitor automation health and audit credential mappings across multiple n8n instances efficiently
 
 
-## Available Tools
+## Available Tools (7)
 - **list_instance_users**: List collaborators on the n8n instance
 - **list_workflows**: List n8n automation workflows
 - **list_stored_credentials**: List metadata for saved credentials
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `n8n-ai-workflow-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `n8n-ai-workflow-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **n8n (AI Workflow Automation)** tools.
 
 **Configuration:**

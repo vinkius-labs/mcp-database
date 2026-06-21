@@ -33,7 +33,7 @@ Equip your AI agent with the industry standard for website technology profiling 
 - **Market Analysts** — track the adoption trends of specific SaaS and web technologies.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_domain_company_info**: Uses the Company API.
 
 Get company information for a domain
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `builtwith-tech-lookup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `builtwith-tech-lookup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BuiltWith Tech Lookup** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect to the **National Park Service (NPS)** API through your AI agent and exp
 - **Educators & Students** — retrieve authoritative metadata and lesson plans for research or curriculum development.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_alerts**: List park alerts and closures
 - **list_articles**: List park articles
 - **list_campgrounds**: List park campgrounds
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `national-park-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `national-park-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **National Park Service** tools.
 
 **Configuration:**

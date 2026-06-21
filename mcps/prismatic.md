@@ -32,7 +32,7 @@ Connect your **Prismatic** environment to any AI agent to streamline your embedd
 - **Support Teams** — Investigate execution logs to resolve customer issues faster using AI-assisted log analysis.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_customer**: Create a new Prismatic customer
 - **create_instance**: Create a new integration instance
 - **list_customers**: Fetch all Prismatic customers
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `prismatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `prismatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Prismatic** tools.
 
 **Configuration:**

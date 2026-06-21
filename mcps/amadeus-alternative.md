@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire travel planning workflow with *
 - **Operations Leads** — automate travel logistics querying to orchestrate cross-functional teams smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_direct_destinations**: Get direct destinations from an airport
 - **get_flight_dates**: Get cheapest flight dates
 - **get_flight_destinations**: Get flight destinations from an origin
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amadeus-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amadeus-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amadeus** tools.
 
 **Configuration:**

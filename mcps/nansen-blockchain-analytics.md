@@ -33,7 +33,7 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **Developers** — integrate on-chain labels and balance data into their development workflow.
 
 
-## Available Tools
+## Available Tools (48)
 - **agent_expert**: Deep multi-step analysis and synthesis
 - **agent_fast**: Low-latency streamed answers for simple research questions
 - **perp_leaderboard**: Most profitable Hyperliquid traders
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nansen-blockchain-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nansen-blockchain-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nansen (Blockchain Analytics)** tools.
 
 **Configuration:**

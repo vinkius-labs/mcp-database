@@ -27,7 +27,7 @@ Automate document collection and client onboarding with Superdocu and AI agents.
 - Real estate and financial services streamlining client documentation.
 
 
-## Available Tools
+## Available Tools (12)
 - **approve_request**: Approve a document request
 - **create_contact**: Create a new contact
 - **create_request**: Create a new document request
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `superdocu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `superdocu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Superdocu** tools.
 
 **Configuration:**

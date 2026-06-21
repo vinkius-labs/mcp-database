@@ -32,7 +32,7 @@ Connect your **Qase** workspace to any AI agent and integrate test management de
 - **Product Managers** — get instant summaries of test run coverage and milestone completion metrics
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: Lists all projects in Qase
 - **get_project**: Retrieves details for a specific project
 - **list_cases**: Lists test cases in a project
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qase** tools.
 
 **Configuration:**

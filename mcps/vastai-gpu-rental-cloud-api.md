@@ -34,7 +34,7 @@ No more manual searching through web consoles. Your AI can now find the best pri
 - **DevOps Engineers** — automate the lifecycle of GPU-accelerated containers and monitor cloud infrastructure costs.
 
 
-## Available Tools
+## Available Tools (4)
 - **delete_instance**: Delete/Terminate an instance on Vast.ai
 - **list_instances**: List your rented instances on Vast.ai
 - **rent_instance**: Rent a GPU instance on Vast.ai
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vastai-gpu-rental-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vastai-gpu-rental-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vast.ai (GPU Rental Cloud API)** tools.
 
 **Configuration:**

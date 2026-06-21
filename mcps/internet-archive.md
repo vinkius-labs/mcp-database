@@ -42,7 +42,7 @@ The Internet Archive is a non-profit library providing universal access to all k
 - **Software Developers** — access classic software, abandonware, and historical computing materials
 
 
-## Available Tools
+## Available Tools (10)
 - **search_by_collection**: Common collections: "prelinger" (Prelinger Archives), "fedflix" (Federal government films), "gutenberg" (Project Gutenberg ebooks), "opensource_movies" (community films), "netlabels" (netlabel music), "softwarelibrary" (classic software), "tv" (TV news archive), "pubmed" (medical journal articles), "nasa" (NASA images and videos), "americanlibraries" (library collections). Returns items within that collection with their identifiers, titles, and metadata. Use this to browse or search within curated collections.
 
 Search for items in a specific Internet Archive collection
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `internet-archive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `internet-archive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Internet Archive** tools.
 
 **Configuration:**

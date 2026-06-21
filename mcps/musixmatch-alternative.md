@@ -33,7 +33,7 @@ Connect your **Musixmatch** developer account to any AI agent and unlock deep ac
 - **Data Analysts** — track music trends and popular artists across different regions globally.
 
 
-## Available Tools
+## Available Tools (21)
 - **get_chart_artists**: Get the list of top artists of a given country
 - **get_chart_tracks**: Get the list of top tracks of a given country
 - **get_album**: Get album metadata
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `musixmatch-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `musixmatch-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Musixmatch** tools.
 
 **Configuration:**

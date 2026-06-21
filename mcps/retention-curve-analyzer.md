@@ -13,7 +13,7 @@ Analyze cohort retention curves to identify stability versus churn and compare a
 The Retention Curve Analyzer is a specialized tool for product managers and growth engineers. It helps you understand user engagement by analyzing retention sequences to determine if your curve is `analyze_retention_trend` (flattening) or `classify_curve_pattern` (declining). By using `verify_benchmark_compliance`, you can compare your actual D1, D7, D30, and D90 metrics against hardcoded industry standards for SaaS, Mobile Gaming, and E-commerce. This allows you to identify 'Smiling Curves' that signify healthy long-term retention versus 'Declining Curves' that indicate high churn risk.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_retention_trend**: Determines if a retention sequence is flattening or declining
 - **classify_curve_pattern**: Classifies the retention curve pattern
 - **verify_benchmark_compliance**: Compares cohort metrics against industry benchmarks
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `retention-curve-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `retention-curve-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Retention Curve Analyzer** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Empower your AI agent to orchestrate your entire multilingual workflow with **De
 - **Operations Leads** — automate translation data querying to orchestrate cross-functional global teams smoothly.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_account_glossaries**: List configured translation glossaries
 - **get_glossary_dictionary**: Get term mapping entries for a specific glossary ID
 - **get_source_languages**: List all supported source languages for translation
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deepl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deepl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeepL** tools.
 
 **Configuration:**

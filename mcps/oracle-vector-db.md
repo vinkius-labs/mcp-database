@@ -34,7 +34,7 @@ Bring your **Oracle Database 23ai** vector capabilities directly into your AI ag
 - **DBAs** — inspect vector indexes, table stats, and schema configurations through conversation
 
 
-## Available Tools
+## Available Tools (7)
 - **list_tables**: List accessible tables in the current Oracle schema
 - **describe_table**: Describe table columns and explicit data types including VECTORs
 - **execute_sql_query**: WARNING: Output payload size is inherently limited, restrict rows fetched (FETCH FIRST 100 ROWS ONLY) to ensure stability.
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oracle-vector-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oracle-vector-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Oracle Vector DB** tools.
 
 **Configuration:**

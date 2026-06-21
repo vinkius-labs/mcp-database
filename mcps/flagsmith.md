@@ -33,7 +33,7 @@ Connect your **Flagsmith** account to any AI agent to control feature releases a
 - **DevOps & SREs** — automate environment creation and manage segment overrides through simple natural language commands.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_environment**: Requires FLAGSMITH_API_KEY.
 
 Create a new environment within a project
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flagsmith` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flagsmith` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flagsmith** tools.
 
 **Configuration:**

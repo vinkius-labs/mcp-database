@@ -34,7 +34,7 @@ Connect your **Blackboard Learn** environment to any AI agent to streamline educ
 - **Students & Researchers** — query course details and calendar deadlines directly from their workspace.
 
 
-## Available Tools
+## Available Tools (20)
 - **create_calendar_item**: Create a calendar item
 - **create_course_announcement**: Create a course announcement
 - **create_meeting**: Create a new attendance meeting
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blackboard-learn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blackboard-learn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blackboard Learn** tools.
 
 **Configuration:**

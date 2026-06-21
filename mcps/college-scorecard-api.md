@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire higher education research workf
 - **Operations Leads** — automate education data querying to orchestrate cross-functional outreach teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_college_details**: Get full details for a specific college by ID
 - **get_fields_of_study**: Get details for specific programs or fields of study
 - **list_colleges_by_city**: List schools in a specific city
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `college-scorecard-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `college-scorecard-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **College Scorecard API** tools.
 
 **Configuration:**

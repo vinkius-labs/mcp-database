@@ -33,7 +33,7 @@ Connect your **Pipeline CRM** account to any AI agent and take full control of y
 - **Account Executives** — verify company details and upcoming calendar events directly from your chat interface.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_pipeline_account**: Get account settings and info
 - **get_pipeline_deal**: Get details for a specific deal
 - **get_pipeline_person**: Get details for a specific person
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipeline-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipeline-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipeline CRM** tools.
 
 **Configuration:**

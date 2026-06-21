@@ -35,7 +35,7 @@ No more clicking through the Baserow UI to find a record or update a field value
 - **Data Analysts** — explore data schemas, run filtered queries and export row data for analysis
 
 
-## Available Tools
+## Available Tools (10)
 - **create_row**: Requires the table ID and a JSON object with field_name: value pairs matching the table schema. Use list_fields to discover available field names. Returns the created row with its ID and all field values.
 
 Create a new row in a Baserow table
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `baserow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `baserow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Baserow** tools.
 
 **Configuration:**

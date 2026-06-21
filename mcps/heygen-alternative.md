@@ -35,7 +35,7 @@ No more manual editing or complex timeline management for simple avatar videos. 
 - **Educational Designers** — convert text lessons into engaging avatar-led videos without filming or recording
 
 
-## Available Tools
+## Available Tools (12)
 - **remove_video_record**: Delete video
 - **create_from_template**: Use template for video
 - **generate_ai_video**: Create avatar video
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heygen-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heygen-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HeyGen** tools.
 
 **Configuration:**

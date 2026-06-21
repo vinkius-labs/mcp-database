@@ -42,7 +42,7 @@ Your AI becomes a transactional legal assistant, helping you draft clauses, revi
 - **Law Students** — practice contract drafting and learn market-standard clause positions
 
 
-## Available Tools
+## Available Tools (13)
 - **analyze_spellbook_contract**: USE WHEN:
 - User wants to review a contract for risks
 - User needs to identify issues in a contract
@@ -202,7 +202,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spellbook-legal-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spellbook-legal-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spellbook Legal AI** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ AI Agents write text beautifully in Markdown. But when they need to send that te
 - **GitHub Flavored:** Supports GitHub Flavored Markdown (GFM) including tables, task lists, and strict line breaks.
 
 
-## Available Tools
+## Available Tools (1)
 - **compile_markdown**: Pass the raw Markdown and receive valid HTML output. Supports headings, lists, code blocks, links, and tables.
 
 Compiles raw Markdown into clean, minified HTML perfectly. Saves AI context and prevents broken HTML tags
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `markdown-html-compiler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `markdown-html-compiler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Markdown HTML Compiler** tools.
 
 **Configuration:**

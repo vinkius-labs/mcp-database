@@ -13,7 +13,7 @@ Calculate optimal price points using Cost-Plus, Value-Based, and Competitive met
 This MCP server provides a strategic pricing engine to evaluate market entry and adjustment strategies. Use `calculate_cost_plus_price` to ensure cost recovery and target margins, `calculate_value_based_price` to capture customer-perceived value, and `calculate_competitive_price` to position your product against market averages. Additionally, use `predict_mrr_impact` to project the gross and net Monthly Recurring Revenue (MRR) impact of your pricing decisions.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_cost_plus_price**: Determines a minimum viable price to ensure cost recovery and target profit margins
 - **calculate_competitive_price**: Determines a price point based on market positioning relative to competitors
 - **predict_mrr_impact**: Projects the financial outcome of a specific pricing decision on monthly revenue
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pricing-strategy-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pricing-strategy-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pricing Strategy Calculator** tools.
 
 **Configuration:**

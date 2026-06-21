@@ -22,7 +22,7 @@ The **Nutritionix MCP Server** gives your AI agent access to the industry's most
 Requires app_id and app_key from Nutritionix. The gold standard for NLP food tracking used by major fitness and health apps.
 
 
-## Available Tools
+## Available Tools (2)
 - **analyze_food_nutrition**: g. "3 slices of pizza and a coke", "1 cup of brown rice", "grilled salmon 200g") and get instant, precise nutritional breakdown including calories, protein, fat, carbs, fiber, sugar, sodium, and cholesterol. The most advanced NLP food parsing engine available.
 
 Analyze nutritional content of any food using natural language — powered by Nutritionix NLP
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nutritionix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nutritionix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nutritionix** tools.
 
 **Configuration:**

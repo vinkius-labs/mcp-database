@@ -37,7 +37,7 @@ This tool is essential for toxicologists, environmental scientists, and regulato
 - **Researchers** — retrieve identifiers and synonyms for chemical lists
 
 
-## Available Tools
+## Available Tools (10)
 - **get_bioactivity_summary**: Retrieve a summary of high-throughput screening results from ToxCast/Tox21 assays
 - **get_chemical_details**: Get comprehensive metadata and identification details for a specific chemical using its DTXSID
 - **get_chemical_lists**: Identify which chemical lists (regulatory, research, or commercial) this chemical belongs to
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epa-computational-toxicology` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epa-computational-toxicology` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EPA Computational Toxicology** tools.
 
 **Configuration:**

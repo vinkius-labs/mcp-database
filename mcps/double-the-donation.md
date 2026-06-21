@@ -35,7 +35,7 @@ No more manual employer lookups or missing out on corporate gift matches. Your A
 - **Software Providers** — automate the provisioning of 360MatchPro accounts for your nonprofit clients through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_organization**: Provision a new 360MatchPro account
 - **get_account_settings**: Get account settings
 - **get_company**: Get company matching gift details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `double-the-donation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `double-the-donation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Double the Donation** tools.
 
 **Configuration:**

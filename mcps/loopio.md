@@ -33,7 +33,7 @@ Connect your **Loopio** RFP management platform to your AI agent to transform pr
 - **Security & Compliance** — query existing security questionnaire responses to ensure consistency across vendor assessments without reinventing the wheel.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_submission**: Requires a project name. Optionally accepts a description, company name, due date, project type, and owner ID. The project will be created in "Not Started" status and ready for team collaboration.
 
 Create a new RFP project/submission in Loopio
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `loopio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `loopio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Loopio** tools.
 
 **Configuration:**

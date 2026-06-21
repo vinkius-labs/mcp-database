@@ -32,7 +32,7 @@ Bring **PayFit Global Payroll** into your automated AI workflows natively. Provi
 - **Corporate Administrators** — build compliance workflows isolating departments strictly running explicit checks on mapped lists
 
 
-## Available Tools
+## Available Tools (7)
 - **get_company**: Get overview information about the PayFit company account
 - **list_collaborators**: List all collaborators (employees) in the company
 - **get_collaborator_details**: Get detailed information about a specific collaborator
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `payfit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `payfit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PayFit** tools.
 
 **Configuration:**

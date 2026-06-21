@@ -35,7 +35,7 @@ Connect your **Craft.do** account to any AI agent and take full control of your 
 - **Power Users** — integrate their personal knowledge base and daily journals into automated AI workflows
 
 
-## Available Tools
+## Available Tools (10)
 - **list_documents**: Identify bounded routing spaces inside the Craft workspace
 - **get_document**: Retrieve explicit UX logging tracing explicit Document IDs limitlessly
 - **create_document**: Provision a highly-available JSON Payload generating new Document rows
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `craft-docs-notes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `craft-docs-notes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Craft (Docs & Notes)** tools.
 
 **Configuration:**

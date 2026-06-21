@@ -13,7 +13,7 @@ Calculate precise US payroll tax liabilities, including FICA, Medicare, FUTA, an
 This MCP server provides tools to calculate various United States payroll tax obligations. Use `calculate_employee_withholdings` to determine employee-side deductions like Social Security and Medicare. Use `calculate_employer_liabilities` to find employer costs including FUTA and state-specific SUTA based on the provided state code. Finally, use `get_payroll_summary` for a high-level comparison of net pay versus total company cost.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_employee_withholdings**: Calculate employee-side tax withholdings
 - **calculate_employer_liabilities**: Calculate employer-side tax liabilities
 - **get_payroll_summary**: Get a high-level payroll summary
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-payroll-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-payroll-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Payroll Tax Calculator** tools.
 
 **Configuration:**

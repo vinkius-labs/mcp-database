@@ -32,7 +32,7 @@ Bring the **Paddle Billing API** directly into your AI workflows. Acting as your
 - **SaaS Developers** — test billing configurations and checkout limits directly during product lifecycle testing
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_subscription**: Can be set to effective immediately or at the end of the current billing period.
 
 Cancel an active subscription
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paddle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paddle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paddle** tools.
 
 **Configuration:**

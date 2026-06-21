@@ -32,7 +32,7 @@ Connect your **Planable** workspaces directly to your AI agent to radically stre
 - **Community Teams** — monitor scheduled outputs mapped onto federated social accounts easily.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_workspaces**: List Planable workspaces. Returns workspace IDs, names, and member counts. Planable is a social collaboration platform for content planning and approval
 - **list_pages**: List social pages (connected accounts) in a Planable workspace. Returns page IDs, platform types, and display names
 - **list_posts**: List posts in a Planable workspace by status. Returns post IDs, content previews, scheduled times, and approval status. Instructions: status = draft|pending_approval|approved|scheduled|published
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `planable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `planable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Planable** tools.
 
 **Configuration:**

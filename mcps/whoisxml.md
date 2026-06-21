@@ -32,7 +32,7 @@ Connect the **WhoisXML API** to your AI agent to perform deep network reconnaiss
 - **Marketers & Sales** — Verify lead lists and research company domain ownership for better outreach.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_domain_availability**: Check if a domain name is available for registration
 - **get_ip_geolocation**: Get location data for an IP address
 - **get_whois_record**: Get parsed and raw WHOIS data for a domain
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `whoisxml` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `whoisxml` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WhoisXML** tools.
 
 **Configuration:**

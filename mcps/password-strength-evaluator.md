@@ -18,7 +18,7 @@ When a Security Operations (SecOps) AI Agent audits a database of plain-text pas
 - **Crack Time Estimation:** Returns the precise estimated time an attacker would need to crack the password via local fast hashing.
 
 
-## Available Tools
+## Available Tools (1)
 - **evaluate_password**: Pass the raw password string and receive a score (0-4), estimated crack time, and specific weakness feedback. Use the score to enforce minimum security policies.
 
 Algorithmsically evaluates password strength and estimates offline crack time. Essential for SecOps agents auditing user credentials
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `password-strength-evaluator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `password-strength-evaluator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Password Strength Evaluator** tools.
 
 **Configuration:**

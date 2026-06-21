@@ -42,7 +42,7 @@ Your AI becomes a smart home assistant, helping you manage lighting, climate, me
 - **Security-Conscious Users** — monitor sensors, cameras, and alarm states remotely
 
 
-## Available Tools
+## Available Tools (15)
 - **get_api_status**: Use this as a connectivity test before making other API calls.
 
 Check if the Home Assistant API is running
@@ -169,7 +169,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `home-assistant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `home-assistant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Home Assistant** tools.
 
 **Configuration:**

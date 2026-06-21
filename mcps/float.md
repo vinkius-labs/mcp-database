@@ -35,7 +35,7 @@ Connect your **Float** account to any AI agent and automate your resource manage
 - **Agency Directors** — automate the retrieval of logged time reports and client lists for better operational visibility.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_allocation**: Schedule a task
 - **get_logged_time**: Get actual hours
 - **get_person**: Get person details
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `float` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `float` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Float** tools.
 
 **Configuration:**

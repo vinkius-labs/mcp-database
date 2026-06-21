@@ -31,7 +31,7 @@ Access the **Lyrics.ovh** database to bring music context into your AI conversat
 - **Developers** — integrate music data into your coding workflows or creative projects.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_lyrics**: Retrieve the lyrics for a specific artist and song title
 - **suggest_songs**: Find song suggestions based on a search term
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lyricsovh` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lyricsovh` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lyrics.ovh** tools.
 
 **Configuration:**

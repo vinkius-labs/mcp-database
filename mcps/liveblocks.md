@@ -33,7 +33,7 @@ Connect your **Liveblocks** account to any AI agent to orchestrate multiplayer e
 - **DevOps Engineers** — automate the provisioning of collaborative environments and manage access rules programmatically.
 
 
-## Available Tools
+## Available Tools (18)
 - **authorize_user**: Obtain an access token for a client to enter a room
 - **broadcast_event**: Broadcast a JSON event to a room
 - **create_room**: Create a new room
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `liveblocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `liveblocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Liveblocks** tools.
 
 **Configuration:**

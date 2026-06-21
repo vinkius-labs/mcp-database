@@ -13,7 +13,7 @@ Calculate BMR, TDEE, and personalized weight loss plans with precision.
 This MCP server provides a specialized toolkit for metabolic planning. Use `compute_bmr` to find your basal metabolic rate, `compute_tdee` to determine daily maintenance calories based on activity, and `calculate_weight_loss_plan` to establish a sustainable caloric deficit. You can also use `estimate_attainment_timeline` to predict how many weeks it will take to reach your target weight.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_weight_loss_plan**: Calculate Weight Loss Plan
 - **compute_bmr**: Calculate Basal Metabolic and Metabolic Rate (BMR)
 - **compute_tdee**: Calculate Total Daily Energy Expenditure (TDEE)
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calorie-deficit-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calorie-deficit-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Calorie Deficit Calculator** tools.
 
 **Configuration:**

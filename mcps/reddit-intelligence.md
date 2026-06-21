@@ -37,7 +37,7 @@ Connect any AI agent to Reddit's live public data and transform community conver
 - **Growth Hackers** — identify the subreddits where your ideal customers spend time and what problems they discuss most
 
 
-## Available Tools
+## Available Tools (9)
 - **get_post_comments**: Invaluable for sentiment analysis, understanding community reactions, identifying objections, and surfacing authentic user opinions about products, brands, or topics. Extract the post ID from the permalink URL (the alphanumeric segment after /comments/).
 
 Get comments from a Reddit post for sentiment and opinion analysis
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `reddit-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `reddit-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Reddit Intelligence** tools.
 
 **Configuration:**

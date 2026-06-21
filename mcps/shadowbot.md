@@ -35,7 +35,7 @@ Connect your AI agents to **ShadowBot** (影刀RPA), the leading Robotic Process
 - **Business Analysts** — retrieve execution reports and success metrics via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **get_robot_details**: Get detailed information for a specific robot
 - **get_task_details**: Retrieve the status and results of a ShadowBot task
 - **list_apps**: List all RPA applications in your ShadowBot account
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shadowbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shadowbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ShadowBot** tools.
 
 **Configuration:**

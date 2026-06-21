@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire art history research and collec
 - **Operations Leads** — automate art data querying to orchestrate cross-functional educational teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the Harvard Art Museums API is operational
 - **get_object_details**: Get full details for a specific art object by ID
 - **list_museum_galleries**: List all galleries within the Harvard Art Museums
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harvard-art-museums` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harvard-art-museums` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harvard Art Museums** tools.
 
 **Configuration:**

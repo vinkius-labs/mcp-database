@@ -32,7 +32,7 @@ Connect your **Upstash Redis** serverless database securely to your conversation
 - **System Architects** — Audit temporal key lifespans testing new eviction behaviors immediately as they write operational code logic.
 
 
-## Available Tools
+## Available Tools (7)
 - **delete**: Provide a comma-separated list of keys.
 
 Deletes one or more keys from Redis
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `upstash-redis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `upstash-redis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Upstash Redis** tools.
 
 **Configuration:**

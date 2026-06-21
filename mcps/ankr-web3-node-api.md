@@ -35,7 +35,7 @@ No more manual JSON-RPC requests or complex Postman setups. Your AI acts as a bl
 - **Data Analysts** — retrieve real-time blockchain metrics and block data for reporting and monitoring.
 
 
-## Available Tools
+## Available Tools (32)
 - **ankr_getAccountBalance**: Retrieves all token balances for a wallet
 - **ankr_getBlocks**: Retrieves full info for a range of blocks
 - **ankr_getInteractions**: Lists all blockchains a wallet has interacted with
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ankr-web3-node-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ankr-web3-node-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ankr (Web3 Node API)** tools.
 
 **Configuration:**

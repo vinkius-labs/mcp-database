@@ -32,7 +32,7 @@ Connect your **Close CRM** account to any AI agent to streamline your sales work
 - **Founders & Executives** — get a quick overview of the sales pipeline and key opportunities without digging through CRM menus.
 
 
-## Available Tools
+## Available Tools (26)
 - **activity_report**: Generate an Activity Report
 - **bulk_email**: Initiate a mass email to a filtered list of leads
 - **create_contact**: Create a new Contact
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `close-crm-inside-sales-crm-automation-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `close-crm-inside-sales-crm-automation-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Close CRM (Inside Sales CRM & Automation API)** tools.
 
 **Configuration:**

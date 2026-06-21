@@ -33,7 +33,7 @@ Connect **Archbee** to your AI agent to streamline your technical documentation 
 - **Technical Writers** — Manage document lifecycles and publish updates to different environments seamlessly.
 
 
-## Available Tools
+## Available Tools (19)
 - **clone_space**: Create a duplicate of an existing space
 - **create_space_group**: Organize spaces into a new group
 - **create_space**: Create a new documentation space
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `archbee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `archbee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Archbee** tools.
 
 **Configuration:**

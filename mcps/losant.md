@@ -35,7 +35,7 @@ No more navigating complex dashboards to check a sensor value or trigger a maint
 - **Operations Managers** — monitor fleet health and trigger manual overrides or reports through simple voice or text commands.
 
 
-## Available Tools
+## Available Tools (38)
 - **clone_application**: Clone a Losant application
 - **create_application**: Create a new Losant application
 - **create_data_table**: Create a new data table
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `losant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `losant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Losant** tools.
 
 **Configuration:**

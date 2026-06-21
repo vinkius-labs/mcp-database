@@ -35,7 +35,7 @@ Connect your **FullStory** account to any AI agent to automate your digital expe
 - **Privacy Officers** — automate the deletion of user records for compliance audits via simple AI commands.
 
 
-## Available Tools
+## Available Tools (11)
 - **delete_user**: Permanently removes privacy-sensitive telemetry, custom property links, and session aggregations inside FullStory.
 
 Erase a user profile and their associated session history
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fullstory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fullstory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FullStory** tools.
 
 **Configuration:**

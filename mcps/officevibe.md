@@ -34,7 +34,7 @@ Connect your **Officevibe** (by Workleap) account to your AI agent and gain deep
 - **Culture Officers** — automate the retrieval of NPS and engagement data for internal culture reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_engagement_metrics**: g., Recognition, Relationship with Manager).
 
 Get granular engagement metrics
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `officevibe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `officevibe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Officevibe** tools.
 
 **Configuration:**

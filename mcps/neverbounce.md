@@ -34,7 +34,7 @@ Connect your **NeverBounce** account to your AI agent and ensure your email list
 - **Developers** — integrate real-time email verification into your workflows through natural language commands.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_email**: Verify a single email address
 - **create_job_from_input**: Create a bulk job from raw input
 - **create_job_from_url**: Create a bulk job from a remote CSV URL
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `neverbounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `neverbounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NeverBounce** tools.
 
 **Configuration:**

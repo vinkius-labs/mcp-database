@@ -33,7 +33,7 @@ Connect your AI agent to **Duffel**, the modern infrastructure for travel. This 
 - **Travel Enthusiasts** — research flight options and track reservation statuses without leaving the chat
 
 
-## Available Tools
+## Available Tools (8)
 - **create_flight_offer_request**: Provide passengers as a JSON array string.
 
 Search for flight offers by specifying origin, destination, and passengers
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `duffel-flights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `duffel-flights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Duffel Flights** tools.
 
 **Configuration:**

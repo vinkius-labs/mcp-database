@@ -34,7 +34,7 @@ Connect your **Nue.io** account to your AI agent and streamline your quote-to-re
 - **Finance Managers** — automate the retrieval of revenue workflow data and integration statuses.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_current_user**: Get current user metadata
 - **get_organization_info**: Get organization metadata
 - **get_product_details**: Get specific product metadata
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nueio-revenue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nueio-revenue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nue.io Revenue** tools.
 
 **Configuration:**

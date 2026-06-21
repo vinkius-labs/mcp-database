@@ -35,7 +35,7 @@ No more juggling multiple delivery tabs to coordinate your fleet. Your AI acts a
 - **Customer Support Teams** — streamline the retrieval of delivery status and monitor fulfillment directly within the chat.
 
 
-## Available Tools
+## Available Tools (9)
 - **assign_driver**: Assign an order to a driver
 - **create_order**: Provide orderNumber, customer details, and restaurant info.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shipday` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shipday` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shipday** tools.
 
 **Configuration:**

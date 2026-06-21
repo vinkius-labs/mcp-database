@@ -31,7 +31,7 @@ Connect **Mercado Livre Orders** to any AI agent and take full control of your o
 - **Logistics Teams** — Register invoices and update tracking codes in bulk via AI
 
 
-## Available Tools
+## Available Tools (7)
 - **cancel_order**: Requires a valid reason.
 
 Cancel a sale
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mercado-livre-orders` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mercado-livre-orders` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mercado Livre Orders** tools.
 
 **Configuration:**

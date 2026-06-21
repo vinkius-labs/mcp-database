@@ -31,7 +31,7 @@ Connect **DexScreener** to any AI agent and get instant access to real-time DEX 
 - **DeFi Users** — Find the best liquidity pools and check token prices before swapping
 
 
-## Available Tools
+## Available Tools (7)
 - **get_multiple_tokens**: Useful for batch checking prices, comparing multiple tokens, or building portfolio snapshots. All tokens must be on the same chain.
 
 Get data for multiple tokens at once (up to 30)
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dexscreener` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dexscreener` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DexScreener** tools.
 
 **Configuration:**

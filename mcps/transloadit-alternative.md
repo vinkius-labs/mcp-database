@@ -13,7 +13,7 @@ Versatile file uploading and processing API.
 The Transloadit MCP server allows your AI agent to orchestrate complex file processing pipelines. Trigger encodings, convert documents, resize images, and monitor assembly statuses right from your conversation.
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_assembly**: Stop a currently running assembly
 - **create_assembly**: Start a new file processing assembly
 - **create_template**: Create a new processing template
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `transloadit-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `transloadit-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Transloadit** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Mozscape** account to any AI agent to perform deep SEO analysis a
 - **Growth Engineers** — integrate SEO data into development workflows for programmatic analysis
 
 
-## Available Tools
+## Available Tools (24)
 - **fetch_brand_authority**: Get Brand Authority score for a site
 - **fetch_distributions**: Get link distribution data
 - **fetch_histories**: Get daily or monthly metric histories
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mozscape` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mozscape` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mozscape** tools.
 
 **Configuration:**

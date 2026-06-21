@@ -35,7 +35,7 @@ Connect your AI agent to the **GlobalGiving** global marketplace to automate non
 - **Nonprofit Enthusiasts** — automate the discovery of new projects and verify the status of current crowdfunding goals.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **get_charity_details**: Get org metadata
 - **get_project_details**: Get project metadata
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `globalgiving` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `globalgiving` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GlobalGiving** tools.
 
 **Configuration:**

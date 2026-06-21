@@ -35,7 +35,7 @@ No more manual report entry or digging through complex data tables. Your AI acts
 - **Data Analysts** — automate the extraction of operational data for custom reporting and BI integration
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Grid API connectivity
 - **create_new_operational_record**: g., a new inspection report) into a specific worksheet.
 
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Grid** tools.
 
 **Configuration:**

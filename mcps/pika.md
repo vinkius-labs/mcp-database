@@ -33,7 +33,7 @@ Connect your **Pika 2.2** fal.ai endpoint to your AI agent and construct a massi
 - **Film Tinkerers** — orchestrate fully automated movie storyboards rendering exact camera pans and lip-sync dubs completely inside your IDE workflow.
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_video_from_text**: 2 foundation node.
 
 Generate a video from a text prompt using Pika Labs 2.2 via fal.ai. Pika creates cinematic AI videos with smooth motion. Returns request_id for async polling. Instructions: Pass prompt. Poll get_job_status for completion
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pika` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pika` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pika** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Generate flawless, sequentially accurate Bates numbering arrays for massive e-Di
 Indexing massive troves of legal evidence in e-Discovery requires absolute numbering perfection. If you ask a language model to generate document IDs from 001 to 5000, it will eventually lose context and skip numbers, instantly invalidating your evidentiary exhibit list. This engine utilizes strict V8 array generation logic to output mathematically flawless Bates numbering. By supplying your prefix and padding requirements, your agent effortlessly receives an immutable array of indexed identifiers, ready for trial presentation.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_bates_numbers**: Deterministically generates flawless sequential Bates numbering arrays for legal documentation
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bates-numbering-generator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bates-numbering-generator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bates Numbering Generator Engine** tools.
 
 **Configuration:**

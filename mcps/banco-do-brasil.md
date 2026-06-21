@@ -32,7 +32,7 @@ Connect your **Banco do Brasil** account to any AI agent and perform essential b
 - **Business Owners** — Monitor account activity and pay suppliers automatically
 
 
-## Available Tools
+## Available Tools (9)
 - **get_accounts**: Usually returns one active account.
 
 Get list of checking accounts
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `banco-do-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `banco-do-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Banco do Brasil** tools.
 
 **Configuration:**

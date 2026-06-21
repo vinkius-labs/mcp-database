@@ -35,7 +35,7 @@ Connect to **Namecheap** and manage your domain portfolio through natural conver
 - **Sysadmins** — configure DNS records, verify nameserver settings and monitor domain status
 
 
-## Available Tools
+## Available Tools (10)
 - **check_domain_availability**: Returns whether the domain is available, premium status and pricing info.
 
 Check if a domain name is available for registration
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `namecheap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `namecheap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Namecheap** tools.
 
 **Configuration:**

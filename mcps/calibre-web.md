@@ -32,7 +32,7 @@ Connect your **Calibre-Web** instance to any AI agent and interact with your dig
 - **Kobo Users** — automate the retrieval of sync metadata for your e-reader devices
 
 
-## Available Tools
+## Available Tools (3)
 - **sync_kobo_library**: Requires Kobo Token.
 
 Sync Kobo library
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calibre-web` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calibre-web` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Calibre-Web** tools.
 
 **Configuration:**

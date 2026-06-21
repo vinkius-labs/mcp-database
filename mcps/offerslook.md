@@ -34,7 +34,7 @@ Connect your **Offerslook** network account to your AI agent and streamline your
 - **Marketing Analysts** — automate the retrieval of performance reports and partner data for analysis.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_advertiser_details**: Get specific advertiser details
 - **get_affiliate_details**: Get specific affiliate details
 - **get_offer_details**: Get specific offer info
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `offerslook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `offerslook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Offerslook** tools.
 
 **Configuration:**

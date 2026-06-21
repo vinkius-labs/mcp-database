@@ -33,7 +33,7 @@ Connect your **Wizehire** hiring platform to any AI agent to streamline your rec
 - **Business Owners** — streamline the recruitment process and update candidate stages efficiently.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Wizehire API connectivity
 - **create_new_candidate**: Requires name and email.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wizehire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wizehire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wizehire** tools.
 
 **Configuration:**

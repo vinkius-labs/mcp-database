@@ -34,7 +34,7 @@ No more manual link generation or checking dashboards to see if a client opened 
 - **Operations** — automate the creation of secure document links for clients or partners directly from your workflow
 
 
-## Available Tools
+## Available Tools (6)
 - **create_link**: Create a new shareable link for a specific document
 - **delete_link**: Permanently remove a shareable link
 - **get_link_views**: Retrieve a list of views and engagement data for a specific link
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `papermark-docsend-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `papermark-docsend-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Papermark (Docsend Alternative)** tools.
 
 **Configuration:**

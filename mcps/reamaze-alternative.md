@@ -32,7 +32,7 @@ Connect your **Reamaze** account to any AI agent to streamline your customer sup
 - **Content Strategists** — draft and update help articles directly through AI assistance.
 
 
-## Available Tools
+## Available Tools (34)
 - **create_article**: Create a new Help Article
 - **create_contact_note**: Attach a note to a contact
 - **create_contact**: Create a new contact
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `reamaze-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `reamaze-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Reamaze** tools.
 
 **Configuration:**

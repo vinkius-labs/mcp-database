@@ -34,7 +34,7 @@ Empower your AI agent with the definitive source for UK law through the **UK Leg
 - **Students & Academics** — access the primary source of UK law for constitutional and legal studies.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_legislation_by_year**: List UK legislation for a specific year
 - **get_table_of_contents**: Get the table of contents for UK legislation
 - **get_legislation**: Get specific UK legislation details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uk-legislation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uk-legislation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UK Legislation** tools.
 
 **Configuration:**

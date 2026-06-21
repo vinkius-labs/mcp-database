@@ -18,7 +18,7 @@ If an AI Agent needs to update just 3 fields in a 5,000-line JSON configuration 
 - **RFC 7396 Compliant:** Uses official industry standards for JSON merging, ensuring zero data corruption during the patch.
 
 
-## Available Tools
+## Available Tools (1)
 - **apply_patch**: Pass the original and the patch as JSON strings. The engine applies deep merging deterministically.
 
 Applies an RFC 7396 JSON Merge Patch deterministically. Allows LLMs to update massive JSON files by only sending the delta patch
@@ -73,7 +73,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `json-merge-patch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `json-merge-patch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSON Merge Patch** tools.
 
 **Configuration:**

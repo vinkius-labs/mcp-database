@@ -33,7 +33,7 @@ Connect your **SpyFu** account to any AI agent and perform deep SEO and PPC comp
 - **Content Strategists** — identify high-value keywords and organic opportunities based on competitor performance.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_ad_history**: View the history of Google Ads run by a competitor
 - **get_domain_competitors**: Identify the top organic and paid competitors for a given domain
 - **get_domain_overview**: Retrieve high-level SEO and PPC metrics for a specific domain
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spyfu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spyfu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SpyFu** tools.
 
 **Configuration:**

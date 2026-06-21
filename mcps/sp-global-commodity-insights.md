@@ -45,7 +45,7 @@ Your AI becomes a commodity analyst, helping you track prices, understand market
 - **Sustainability Teams** — track carbon credits, battery metals, and energy transition benchmarks for ESG reporting
 
 
-## Available Tools
+## Available Tools (12)
 - **get_agriculture_prices**: USE WHEN:
 - User asks about agriculture commodity prices
 - User needs wheat, corn, soybean, or other crop prices
@@ -362,7 +362,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sp-global-commodity-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sp-global-commodity-insights` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **S&P Global Commodity Insights** tools.
 
 **Configuration:**

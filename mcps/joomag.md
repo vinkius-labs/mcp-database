@@ -13,7 +13,7 @@ Manage digital publications, issues, and analytics via Joomag API.
 Empower your AI agents with Joomag's digital publishing platform. This MCP server allows you to list and retrieve publications, manage issues and collections, track marketing campaigns, and view audience analytics directly through the Joomag API. Ideal for automating content distribution and engagement tracking.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Useful for system health checks or verifying access.
 
 Retrieves Joomag account details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `joomag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `joomag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Joomag** tools.
 
 **Configuration:**

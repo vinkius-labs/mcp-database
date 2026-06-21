@@ -33,7 +33,7 @@ Connect **Kraken.io** to your AI agent to automate image processing. Reduce page
 - **Designers** — quickly generate web-ready versions of high-resolution assets through natural conversation
 
 
-## Available Tools
+## Available Tools (3)
 - **get_user_status**: io account.
 
 Get Kraken.io user status and quota
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `krakenio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `krakenio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kraken.io** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to the **Inep Open Data Portal** (Instituto Nacional de Estudos e Pesqui
 - **Public Policy Analysts** — monitor educational indicators and IDEB results across different regions of Brazil.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_group**: Get group details
 - **get_organization**: Get organization details
 - **get_package**: Get dataset details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inep-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inep-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Inep Dados Abertos** tools.
 
 **Configuration:**

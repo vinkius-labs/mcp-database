@@ -36,7 +36,7 @@ No more manual exporting of vulnerability reports. Your AI assistant acts as a d
 - **CISOs** — maintain a high-level overview of the organization's attack surface and risk scores.
 
 
-## Available Tools
+## Available Tools (11)
 - **add_target**: Add a new target for security monitoring
 - **get_issue**: Get detailed information about a specific security issue
 - **get_security_risk**: Get overall security risk scores and trends
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `halo-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `halo-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Halo Security** tools.
 
 **Configuration:**

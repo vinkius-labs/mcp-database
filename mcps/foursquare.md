@@ -36,7 +36,7 @@ Connect your **Foursquare** account to any AI agent and take full control of you
 - **Marketing Researchers** — monitor foot traffic trends and user tips for specific store locations in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **autocomplete_venues**: Provision a highly-available JSON Payload generating fast typeaheads
 - **list_venue_categories**: Enumerate explicitly attached structured rules exporting active Taxonomy
 - **get_place_photos**: Retrieve explicit Cloud logging tracing explicit Media URL limits
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `foursquare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `foursquare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Foursquare** tools.
 
 **Configuration:**

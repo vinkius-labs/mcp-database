@@ -35,7 +35,7 @@ No more manual document formatting or complex rendering pipelines. Your AI acts 
 - **Marketing Professionals** — scale the production of dynamic certificates and visual collateral through simple AI queries
 
 
-## Available Tools
+## Available Tools (8)
 - **generate_pdf_from_html**: Convert HTML or URL to PDF
 - **generate_image_from_html**: Convert HTML or URL to Image
 - **generate_pdf_from_template**: g. invoice1, packing_slip1) with JSON data.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docamatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docamatic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Docamatic** tools.
 
 **Configuration:**

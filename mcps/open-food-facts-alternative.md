@@ -32,7 +32,7 @@ Connect to **Open Food Facts**, the collaborative, free, and open database of fo
 - **Sustainability Advocates** — evaluate the environmental impact of products through the integrated Eco-Score metrics.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_product**: Retrieve detailed information about a specific product by its barcode
 - **search_products**: Search for products using keywords and filters
 
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-food-facts-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-food-facts-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Food Facts** tools.
 
 **Configuration:**

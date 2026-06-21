@@ -32,7 +32,7 @@ Integrate **DataDive**, the advanced toolset for Amazon sellers, directly into y
 - **Inventory Managers** — Monitor stock levels and plan restocks without complex reporting tools.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_details**: Returns metadata such as account tier, connected marketplace integrations, and subscription status.
 
 Retrieve metadata for your DataDive account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datadive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datadive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DataDive** tools.
 
 **Configuration:**

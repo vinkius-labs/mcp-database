@@ -33,7 +33,7 @@ Connect your **Keen.io** project to any AI agent to automate data collection and
 - **Developers** — Integrate event streaming checks and project status monitoring into your development workflow
 
 
-## Available Tools
+## Available Tools (10)
 - **average_property**: Calculate average of a property
 - **list_collections**: List all event collections
 - **count_events**: Count total events in a collection
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `keen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `keen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Keen** tools.
 
 **Configuration:**

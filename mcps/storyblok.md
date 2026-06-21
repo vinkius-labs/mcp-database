@@ -32,7 +32,7 @@ Integrate the powerful headless CMS capabilities of **Storyblok** directly into 
 - **Agile Editors** — Systematically push localized iterations refining textual tone across multiple active platform drafts efficiently bypassing slow structural validations.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_content_story**: Provide a name, slug, and content JSON.
 
 Creates a new story in a Storyblok space
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `storyblok` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `storyblok` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Storyblok** tools.
 
 **Configuration:**

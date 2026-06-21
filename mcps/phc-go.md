@@ -32,7 +32,7 @@ Connect your **PHC GO** enterprise ecosystem to your AI agent and manage operati
 - **Developers & SysOps** — programmatically query the PHC API layer to inspect product metrics, schemas, and endpoints during rapid feature development.
 
 
-## Available Tools
+## Available Tools (16)
 - **list_customers**: Listar todas as entidades/clientes registados no PHC GO
 - **get_customer_details**: Obter detalhes completos de um cliente/entidade pelo ID
 - **search_customers**: Pesquisar clientes por nome, NIF ou código
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `phc-go` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `phc-go` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PHC GO** tools.
 
 **Configuration:**

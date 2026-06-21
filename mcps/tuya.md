@@ -33,7 +33,7 @@ No more jumping between mobile apps to check if a sensor is online or to toggle 
 - **Facility Managers** — monitor and control distributed hardware across different locations using simple text commands.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_device**: Query Tuya device details
 - **send_commands**: g., switch_led: true).
 
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tuya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tuya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tuya** tools.
 
 **Configuration:**

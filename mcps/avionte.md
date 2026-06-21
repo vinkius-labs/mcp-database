@@ -35,7 +35,7 @@ Your AI acts as a dedicated recruiting coordinator, providing instant access to 
 - **Account Managers** — retrieve company tags and department structures to better serve client staffing needs.
 
 
-## Available Tools
+## Available Tools (16)
 - **get_all_talent_tags**: Get all tags associated with a talent
 - **get_available_talent_statuses**: List all available talent statuses
 - **get_company_po_by_po_id**: Retrieve a specific purchase order
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `avionte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `avionte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Avionte** tools.
 
 **Configuration:**

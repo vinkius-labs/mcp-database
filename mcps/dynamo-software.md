@@ -32,7 +32,7 @@ Integrate **Dynamo Software**, the industry-leading platform for alternative inv
 - **Portfolio Managers** — Monitor asset counts and organizational investment metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dynamo_account_metadata**: Retrieve metadata and usage limits for your Dynamo Software account
 - **get_fund_details**: Get detailed settings and information for a specific investment fund
 - **quick_portfolio_valuation_audit**: Retrieve a high-level summary of portfolio valuations and activity
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dynamo-software` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dynamo-software` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dynamo Software** tools.
 
 **Configuration:**

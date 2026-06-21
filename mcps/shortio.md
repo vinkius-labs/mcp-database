@@ -27,7 +27,7 @@ Connect your **Short.io** account to any AI agent and simplify your branded link
 3. Start managing your branded links from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (11)
 - **create_bulk_links**: Create multiple shortened links at once
 - **delete_link**: Delete a shortened link
 - **get_domain**: Get details for a custom domain
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shortio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shortio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Short.io** tools.
 
 **Configuration:**

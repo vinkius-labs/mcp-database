@@ -33,7 +33,7 @@ Connect to the **Nookipedia API** and bring the entire world of Animal Crossing 
 - **Developers & Fans** — build tools or simply chat about your favorite villagers with a knowledgeable AI assistant
 
 
-## Available Tools
+## Available Tools (15)
 - **get_nh_art**: Retrieve New Horizons artworks
 - **get_nh_bugs**: Retrieve New Horizons bugs
 - **get_nh_clothing**: Retrieve New Horizons clothing
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nookipedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nookipedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nookipedia** tools.
 
 **Configuration:**

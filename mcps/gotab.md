@@ -34,7 +34,7 @@ Your AI acts as your digital front-of-house manager, capable of instantly checki
 - **F&B Directors** — monitor order flow and menu availability across multiple locations from a unified chat interface
 
 
-## Available Tools
+## Available Tools (12)
 - **get_item**: Get details for a specific item
 - **get_location**: Get details for a specific location
 - **get_menu**: Get details for a specific menu
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gotab` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gotab` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoTab** tools.
 
 **Configuration:**

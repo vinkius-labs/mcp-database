@@ -21,7 +21,7 @@ Your AI agent gains the immediate ability to act as a senior SEO analyst. Feed i
 - **Absolute Containment:** Because this is strictly a metadata-only update tool, the agent cannot modify your post content, cannot delete pages, and cannot read your private drafts. It only touches the SEO fields. A completely secure, surgical operation.
 
 
-## Available Tools
+## Available Tools (1)
 - **update_wordpress_seo**: Provide the numeric post ID, the optimized SEO title, the compelling meta description, and a focus keyword. Works automatically with both Yoast SEO and RankMath plugins. IMPORTANT: WordPress REST API silently ignores Yoast SEO keys unless the user adds a snippet to their functions.php to register them. If you suspect the update didn't work, tell the user to add the "register_meta" snippet for Yoast.
 
 Updates the SEO metadata (title, description, focus keyword) of an existing WordPress post for Yoast SEO and RankMath
@@ -71,7 +71,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wordpress-seo-metadata-updater` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wordpress-seo-metadata-updater` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WordPress SEO Metadata Updater** tools.
 
 **Configuration:**

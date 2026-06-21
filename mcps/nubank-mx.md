@@ -34,7 +34,7 @@ Connect your **Nubank Mexico** account to any AI agent and take control of your 
 - **Financial Advisors** — query client portfolio and spending data programmatically
 
 
-## Available Tools
+## Available Tools (14)
 - **create_transfer**: Transfers are processed in real-time during banking hours.
 
 Send a SPEI transfer
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nubank-mx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nubank-mx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nubank MX** tools.
 
 **Configuration:**

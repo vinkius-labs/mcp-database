@@ -32,7 +32,7 @@ Integrate **DoubleTick**, the official WhatsApp Business API-powered marketing a
 - **Customer Support** — Research specific contact details and previous message history to assist customers instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_doubletick_account_metadata**: Retrieve metadata and limits for your DoubleTick account
 - **get_contact_details**: Get detailed profile and conversation status for a specific contact
 - **quick_whatsapp_volume_audit**: Retrieve a high-level summary of messaging activity and success rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `doubletick` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `doubletick` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DoubleTick** tools.
 
 **Configuration:**

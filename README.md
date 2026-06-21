@@ -1,10 +1,10 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. As the world's largest open-source database of Model Context Protocol (MCP) servers, this initiative is dedicated to providing unprecedented transparency, accessibility, and highly structured data for the entire AI ecosystem. This repository contains automatically updated, production-ready documentation for **5,033** MCP servers.
+Welcome to the **Vinkius Open Data Initiative**, the world's largest open-source database of Model Context Protocol (MCP) servers.
 
-This dataset is meticulously sourced from the Vinkius MCP Catalog—a curated, enterprise-grade marketplace of production-ready MCP servers available on Vinkius. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, REST APIs, enterprise systems, rich data sources, and external AI services. Each entry is rigorously indexed with metadata including the server name, comprehensive descriptions, categorical taxonomy, specific tool support, provider intelligence, and related capabilities. Vinkius actively curates and maintains these MCP listings to guarantee they meet the highest standards for production AI agent deployments.
+This repository contains automatically updated, production-ready documentation for **5,033 unique MCP servers**.
 
-The dataset is programmatically generated from MCP servers published and maintained directly within the Vinkius platform. Data is extracted and synchronized from the Vinkius catalog, accurately reflecting the metadata exposed by each MCP listing at the exact moment of extraction. By sharing this data, Vinkius is setting a new industry standard for open ecosystem collaboration.
+This dataset is programmatically synchronized from the [Vinkius MCP Catalog](https://vinkius.com) — providing structured metadata, tool details, and configuration instructions for AI agent integrations.
 
 > **Explore the catalog at [vinkius.com](https://vinkius.com) and connect to the Vinkius Cloud at [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect) to run any of these tools instantly in Claude, Cursor, or your custom agents.**
 

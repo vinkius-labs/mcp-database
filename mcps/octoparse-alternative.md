@@ -35,7 +35,7 @@ No more manual exporting of CSV results for basic checks. Your AI acts as a dedi
 - **Developers** — integrate real-time web scraping and data retrieval directly within the chat.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_new_data**: Get new (non-exported) data from a task
 - **get_task_data**: Get extracted data from a task by offset
 - **get_task_status**: Get status of a scraping task
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `octoparse-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `octoparse-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Octoparse** tools.
 
 **Configuration:**

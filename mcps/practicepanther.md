@@ -43,7 +43,7 @@ Your AI becomes a legal practice assistant, helping you track matters, log time,
 - **Law Students** — practice case management and time tracking workflows
 
 
-## Available Tools
+## Available Tools (18)
 - **create_practicepanther_contact**: USE WHEN:
 - User wants to add a new client
 - User needs to create a new contact record
@@ -244,7 +244,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `practicepanther` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `practicepanther` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PracticePanther** tools.
 
 **Configuration:**

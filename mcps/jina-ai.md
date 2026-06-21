@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire web intelligence and informatio
 - **Operations Leads** — automate web intelligence querying to orchestrate cross-functional research teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_fact**: Check the factuality of a statement
 - **get_embeddings**: Get vector embeddings for a list of strings
 - **read_url**: Read a URL and return cleaned content for LLMs
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jina-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jina-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jina AI** tools.
 
 **Configuration:**

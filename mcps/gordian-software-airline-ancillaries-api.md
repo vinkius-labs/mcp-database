@@ -33,7 +33,7 @@ Connect to **Gordian Software** to manage airline ancillaries within your AI age
 - **Developers** — Integrate complex airline ancillary workflows into custom travel applications using simple AI commands.
 
 
-## Available Tools
+## Available Tools (17)
 - **add_to_basket**: Add products to the basket
 - **cancel_trip**: Execute the cancellation of a trip
 - **check_basket**: Re-validate items in the basket
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gordian-software-airline-ancillaries-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gordian-software-airline-ancillaries-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gordian Software (Airline Ancillaries API)** tools.
 
 **Configuration:**

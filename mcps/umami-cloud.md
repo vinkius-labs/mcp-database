@@ -13,7 +13,7 @@ Privacy-focused web analytics alternative to Google Analytics.
 The Umami Cloud MCP Server connects AI agents to the Umami Analytics API. It allows agents to retrieve real-time and historical website statistics, fetch pageviews, analyze active users, and export events dynamically while preserving end-user privacy.
 
 
-## Available Tools
+## Available Tools (2)
 - **users**: Get the number of active users on a website
 - **websites**: Get specific metrics (urls, browsers, os, devices) for a website
 
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `umami-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `umami-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Umami Cloud** tools.
 
 **Configuration:**

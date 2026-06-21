@@ -13,7 +13,7 @@ Analyze daily mood logs to identify emotional trends and weekly patterns.
 The Mood Tracker MCP connects AI agents to your longitudinal mood data. Use `get_weekly_summary` to track if your emotional state is improving or declining over time. You can use `identify_difficulty_peaks` to pinpoint specific dates with low scores and `analyze_weekday_patterns` to discover if certain days of the week consistently impact your well-being.
 
 
-## Available Tools
+## Available Tools (3)
 - **identify_difficulty_peaks**: Identify days with particularly low mood scores
 - **analyze_weekday_patterns**: Analyze patterns by day of the week
 - **get_weekly_summary**: Get a summary of the mood for a specific week
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mood-tracker-mcp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mood-tracker-mcp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mood Tracker MCP** tools.
 
 **Configuration:**

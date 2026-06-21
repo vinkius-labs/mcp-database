@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely operate as a highly scalable back
 - **Plug & Play Worker:** Instantly turns your AI into an asynchronous background worker capable of chewing through millions of queued tasks.
 
 
-## Available Tools
+## Available Tools (3)
 - **delete_message**: Delete a message from the SQS queue
 - **receive_messages**: Receive messages from the SQS queue
 - **send_message**: Send a message to the SQS queue
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazon-sqs-queue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazon-sqs-queue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazon SQS Queue** tools.
 
 **Configuration:**

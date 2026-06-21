@@ -34,7 +34,7 @@ Connect your **Chili Piper** account to any AI agent and turn inbound leads into
 - **Marketing Teams** — verify that Concierge rules are correctly mapping leads to the right account executives
 
 
-## Available Tools
+## Available Tools (10)
 - **list_routes**: Identify bounded logical arrays managing top-level unified Concierge rules in Chili Piper
 - **get_route_details**: Perform structural extraction of properties driving active Router mapping
 - **list_queues**: Identify precise active arrays spanning native Round-Robin grouping
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chili-piper-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chili-piper-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chili Piper** tools.
 
 **Configuration:**

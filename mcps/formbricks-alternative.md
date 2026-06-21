@@ -26,7 +26,7 @@ Connect your **Formbricks** environment to any AI agent and simplify your feedba
 3. Start managing your feedback resources from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **create_survey**: Create a new survey
 - **delete_survey**: Delete a survey
 - **get_person**: Get details for a specific person
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `formbricks-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `formbricks-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Formbricks** tools.
 
 **Configuration:**

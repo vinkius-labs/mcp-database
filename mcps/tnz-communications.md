@@ -32,7 +32,7 @@ Empower your AI agent with access to the **TNZ Group** messaging gateway to auto
 - **Customer Support** — Monitor and respond to incoming SMS replies without leaving your workspace.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify TNZ API connectivity
 - **create_tnz_contact**: Add a new contact to TNZ
 - **get_account_balance**: Check account credit balance
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tnz-communications` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tnz-communications` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TNZ Communications** tools.
 
 **Configuration:**

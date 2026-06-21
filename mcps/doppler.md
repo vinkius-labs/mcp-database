@@ -35,7 +35,7 @@ No more clicking through the Doppler dashboard to check a secret value or audit 
 - **Security Teams** — track who modified which secrets, when and in which environment, enabling full audit trail review via conversation
 
 
-## Available Tools
+## Available Tools (12)
 - **change_secrets**: Provide project_slug, config_name and a JSON object mapping secret names to values. For example: {"DATABASE_URL":"postgres://...","API_KEY":"sk-..."}. Existing secrets not included are not modified.
 
 Add or update secrets in a Doppler config
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `doppler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `doppler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Doppler** tools.
 
 **Configuration:**

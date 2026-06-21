@@ -36,7 +36,7 @@ Connect your **Gerrit Code Review** instance to any AI agent and take full contr
 - **SRE Teams** — monitor project states and verify organizational group permissions through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **query_changes**: Uses syntax: "status:open", "owner:self", "project:myproj". Returns subjects, numbers, statuses, owners, projects, patches.
 
 Query changes (code reviews) on Gerrit
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gerrit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gerrit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gerrit** tools.
 
 **Configuration:**

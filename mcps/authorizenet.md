@@ -34,7 +34,7 @@ Your AI agent eliminates the clunky Merchant Interface, managing daily financial
 - **Financial Ops** — track unresolved unsettled holds systematically prior to batch processing
 
 
-## Available Tools
+## Available Tools (10)
 - **add_payment_profile**: Add a payment card to an existing CIM customer profile
 - **auth_capture_transaction**: Perform an Authorize.net authorization and capture transaction
 - **auth_only_transaction**: Place a temporary authorization hold on a credit card
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `authorizenet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `authorizenet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Authorize.net** tools.
 
 **Configuration:**

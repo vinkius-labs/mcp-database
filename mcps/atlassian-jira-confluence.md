@@ -34,7 +34,7 @@ Transform your **Atlassian Jira** and **Confluence** instance into a conversatio
 - **Customer Support** — quickly query Confluence for troubleshooting guides and documentation before replying to customer inquiries.
 
 
-## Available Tools
+## Available Tools (9)
 - **list_projects**: Useful for discovering project keys needed for querying specific domains or boards.
 
 List all Jira projects
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `atlassian-jira-confluence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `atlassian-jira-confluence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Atlassian (Jira & Confluence)** tools.
 
 **Configuration:**

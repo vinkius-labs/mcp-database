@@ -33,7 +33,7 @@ Connect your **Certn** account to any AI agent to streamline your background scr
 - **Compliance Officers** — Quickly access background check reports and verify identity documentation for audit purposes.
 
 
-## Available Tools
+## Available Tools (18)
 - **add_hr_packages**: Add checks to an existing HR application
 - **create_pm_property**: Create a new property
 - **get_hr_applicant**: Retrieve details/status of a specific HR application
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `certn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `certn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Certn** tools.
 
 **Configuration:**

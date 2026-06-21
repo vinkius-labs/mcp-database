@@ -33,7 +33,7 @@ Connect your **UniOne** email delivery account to any AI agent and simplify how 
 - **Product Teams** — automate the creation of notification templates and track user engagement metrics.
 
 
-## Available Tools
+## Available Tools (12)
 - **delete_template**: Delete a template
 - **delete_webhook**: Delete a webhook
 - **get_template**: Get template details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unione` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unione` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UniOne** tools.
 
 **Configuration:**

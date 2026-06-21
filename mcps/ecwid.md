@@ -37,7 +37,7 @@ Connect your **Ecwid by Lightspeed** store to any AI agent and take full control
 - **Developers** — test and debug e-commerce API parameters and verify product schemas through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **search_products**: Returns product IDs, names, prices, SKUs, inventory, and images.
 
 Search Ecwid products
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ecwid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ecwid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ecwid** tools.
 
 **Configuration:**

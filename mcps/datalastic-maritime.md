@@ -33,7 +33,7 @@ Equip your AI agent with real-time global maritime intelligence through the **Da
 - **Port Operations Teams** — quickly find port codes and technical data for global terminals.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_port_details**: Get specific details and coordinates for a maritime port
 - **get_vessel_history**: Get historical AIS track and location data for a vessel
 - **get_vessel_pro_specs**: Get advanced technical specifications for a vessel
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datalastic-maritime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datalastic-maritime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Datalastic Maritime** tools.
 
 **Configuration:**

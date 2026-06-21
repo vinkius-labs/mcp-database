@@ -35,7 +35,7 @@ No more manual copy-pasting or complex web scraping scripts. Your AI acts as you
 - **Growth Marketers** — automate lead enrichment and competitive analysis through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **analyze_page_type**: Auto-detect page type
 - **enhance_company_profile**: Enrich company data
 - **enhance_person_profile**: Enrich person data
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `diffbot-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `diffbot-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Diffbot** tools.
 
 **Configuration:**

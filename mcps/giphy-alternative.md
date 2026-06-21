@@ -35,7 +35,7 @@ No more manual searching through web interfaces to find the perfect GIF. Your AI
 - **Content Curators** — monitor cultural trends and discover new media assets without leaving your workspace
 
 
-## Available Tools
+## Available Tools (10)
 - **get_gif_details**: Get a specific GIF by ID
 - **get_random_gif**: Get a random GIF
 - **get_random_sticker**: Get a random sticker
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `giphy-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `giphy-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Giphy** tools.
 
 **Configuration:**

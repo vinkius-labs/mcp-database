@@ -13,7 +13,7 @@ Balance skewed datasets instantly by generating mathematically sound synthetic m
 Training predictive models on heavily imbalanced data—like fraud detection or rare disease diagnosis—always leads to skewed, biased results. You cannot rely on language models to hallucinate new data points correctly. This engine leverages the Synthetic Minority Over-sampling Technique (SMOTE), utilizing K-Nearest Neighbors to intelligently interpolate and generate realistic, statistically valid synthetic vectors. Equip your AI agents with the ability to correct dataset imbalances dynamically before training begins.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_smote**: Generates synthetic minority oversampling (SMOTE) data points deterministically
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smote-oversampling-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smote-oversampling-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SMOTE Oversampling Engine** tools.
 
 **Configuration:**

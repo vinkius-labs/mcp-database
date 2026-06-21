@@ -33,7 +33,7 @@ Connect **Meshy** to your AI agent to bridge the gap between 2D concepts and 3D 
 - **Creative Agencies** — Rapidly visualize 3D concepts for clients starting from just a text description or a sketch.
 
 
-## Available Tools
+## Available Tools (17)
 - **create_text_to_image**: Create Text to Image task
 - **delete_text_to_3d_task**: Delete a Text to 3D task
 - **get_balance**: Get account balance
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meshy-3d-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meshy-3d-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meshy (3D AI)** tools.
 
 **Configuration:**

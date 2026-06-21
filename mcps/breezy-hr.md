@@ -32,7 +32,7 @@ Connect your **Breezy HR** account to any AI agent and orchestrate your hiring a
 - **Talent Ops** — monitor hiring pipelines and task templates using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_candidate**: Add a candidate to a position
 - **create_position**: Create a new job position
 - **get_candidate**: Get specific candidate details
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `breezy-hr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `breezy-hr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Breezy HR** tools.
 
 **Configuration:**

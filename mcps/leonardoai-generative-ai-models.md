@@ -34,7 +34,7 @@ Connect your **Leonardo.ai** account to any AI agent and take full control of st
 - **Creative Directors** — audit generation histories and monitor team credit usage to ensure optimized AI resource allocation
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_image**: Returns a Generation ID used to poll for the output.
 
 Generate images from a text prompt using Leonardo.ai
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leonardoai-generative-ai-models` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leonardoai-generative-ai-models` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Leonardo.ai (Generative AI & Models)** tools.
 
 **Configuration:**

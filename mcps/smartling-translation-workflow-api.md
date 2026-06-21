@@ -33,7 +33,7 @@ Connect your **Smartling** account to any AI agent to orchestrate complex transl
 - **Content Teams** — ensure translators have the right context by attaching visual references to strings.
 
 
-## Available Tools
+## Available Tools (7)
 - **add_content_to_job**: Add content to an existing translation job
 - **create_job**: Create a new translation job in a project
 - **download_translated_file**: Download a translated file
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smartling-translation-workflow-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smartling-translation-workflow-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Smartling (Translation Workflow API)** tools.
 
 **Configuration:**

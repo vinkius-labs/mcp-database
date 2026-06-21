@@ -21,7 +21,7 @@ Full access to the ONS dataset catalog with discovery and query tools.
 - **Query** — Flexible observations with dimension filters
 
 
-## Available Tools
+## Available Tools (6)
 - **search_datasets**: Returns matching dataset IDs, titles, and descriptions. Use this to find the right dataset before querying data.
 
 Search ONS datasets by keyword — explore 337+ available datasets
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uk-ons-discovery-search-337-statistical-datasets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uk-ons-discovery-search-337-statistical-datasets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UK ONS Discovery — Search 337+ Statistical Datasets** tools.
 
 **Configuration:**

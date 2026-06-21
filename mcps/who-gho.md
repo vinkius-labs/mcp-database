@@ -30,7 +30,7 @@ Connect your AI agent to the **WHO Global Health Observatory** — the authorita
 - **International Development Agencies** — track progress toward Sustainable Development Goals (SDGs) with official WHO indicators
 
 
-## Available Tools
+## Available Tools (3)
 - **get_who_country_profile**: Use ISO-3 country codes (BRA, USA, JPN, DEU, IND).
 
 Get a health snapshot for any country from WHO data
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `who-gho` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `who-gho` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WHO GHO** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ All-in-one review management platform that helps businesses collect, manage, and
 Cloutly is an all-in-one review management platform that helps businesses collect, manage, and respond to reviews from multiple sources. It aggregates data from Google, Facebook, Trustpilot, and more into one easy location. Use this MCP server to fetch recent reviews, deploy personalized reputation invitations to customers, and respond programmatically all through a single AI assistant.
 
 
-## Available Tools
+## Available Tools (7)
 - **list_businesses**: Retrieve all businesses/locations associated with your Cloutly account
 - **list_campaigns**: Retrieve active review campaigns for a specific business
 - **list_pending_reviews**: Retrieve reviews that have not been replied to yet
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloutly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloutly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloutly** tools.
 
 **Configuration:**

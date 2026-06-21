@@ -35,7 +35,7 @@ No more manual profile scraping or guessing email formats. Your AI acts as your 
 - **Growth Marketers** — automate lead enrichment and identify LinkedIn profiles from email lists through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **enrich_company**: Enrich company data
 - **enrich_contact**: Enrich contact data
 - **find_email_by_linkedin**: Find email by LinkedIn profile
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contactout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contactout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ContactOut** tools.
 
 **Configuration:**

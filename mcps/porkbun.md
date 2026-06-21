@@ -35,7 +35,7 @@ No more logging into web consoles just to update a simple TXT record or check if
 - **Domain Investors** — quickly list and monitor your entire portfolio and TLD pricing trends.
 
 
-## Available Tools
+## Available Tools (8)
 - **check_domain_availability**: Check if a domain is available for registration
 - **create_dns_record**: ) to the specified domain.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `porkbun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `porkbun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Porkbun** tools.
 
 **Configuration:**

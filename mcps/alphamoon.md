@@ -35,7 +35,7 @@ No more manual data entry from complex PDFs or digging through individual extrac
 - **Developers** — integrate high-speed document intelligence into custom automation workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_alphamoon_status**: Verify connectivity
 - **delete_document**: Delete a document
 - **get_document**: Get document details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alphamoon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alphamoon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alphamoon** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your web analytics and visitor insights wit
 - **Baidu Analytics Power Users** — integrate your existing Tongji workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_daily_trend**: Get daily traffic trend
 - **get_geo_distribution**: Get visitor geographic data
 - **get_page_rankings**: Get top visited pages
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `baidu-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `baidu-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Baidu Analytics / 百度统计** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Keycloak** instance to any AI agent to streamline your Identity a
 - **Backend Developers** — Setup test users and retrieve client credentials directly within the IDE flow.
 
 
-## Available Tools
+## Available Tools (34)
 - **create_auth_flow**: Create an authentication flow
 - **create_client**: Create a new client
 - **create_group**: Create a top-level group
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `keycloak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `keycloak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Keycloak** tools.
 
 **Configuration:**

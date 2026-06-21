@@ -34,7 +34,7 @@ Connect the **BlockCypher** multi-chain API to your AI agent to interact with ma
 - **Fintech Teams** — automate blockchain monitoring and transaction broadcasting workflows
 
 
-## Available Tools
+## Available Tools (15)
 - **fund_bcy_test_address**: Fund an address on the BCY test chain
 - **fund_beth_test_address**: Fund an address on the BETH test chain
 - **call_eth_contract_method**: Requires token.
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blockcypher-multi-chain-blockchain-developer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blockcypher-multi-chain-blockchain-developer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BlockCypher (Multi-chain Blockchain Developer API)** tools.
 
 **Configuration:**

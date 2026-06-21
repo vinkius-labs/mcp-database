@@ -33,7 +33,7 @@ Empower your AI agent with global geographic intelligence using the **Geocode.xy
 - **Content Creators** — Automatically tag locations mentioned in articles or social media posts using geoparsing.
 
 
-## Available Tools
+## Available Tools (5)
 - **autocomplete**: Provide suggestions for partial street names, postal codes, or city names
 - **forward_geocode**: Convert a place name or address into geographic coordinates
 - **geoparse**: Uses POST under the hood for long text support.
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geocodexyz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geocodexyz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Geocode.xyz** tools.
 
 **Configuration:**

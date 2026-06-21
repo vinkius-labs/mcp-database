@@ -35,7 +35,7 @@ Connect your **Clari** account to any AI agent and take full control of your rev
 - **Finance Teams** — verify revenue snapshots and fiscal time period configurations
 
 
-## Available Tools
+## Available Tools (8)
 - **list_clari_users**: List all users and hierarchy in the account
 - **get_opportunity_revenue_details**: Get detailed information for a specific opportunity
 - **list_revenue_accounts**: List CRM accounts associated with revenue data
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clari` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clari` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clari** tools.
 
 **Configuration:**

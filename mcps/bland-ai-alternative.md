@@ -35,7 +35,7 @@ No more manual dialing or listening through hours of recordings to find insights
 - **Developers** — integrate high-speed AI voice interactions into custom business workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **analyze_call_transcript**: Perform post-call analysis
 - **stop_active_call**: Stop an ongoing phone call
 - **create_voice_agent**: Create a persistent AI persona
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bland-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bland-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bland AI** tools.
 
 **Configuration:**

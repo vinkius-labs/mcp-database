@@ -13,7 +13,7 @@ Calculate statutory pre-judgment interest for US states based on debt amount, de
 This MCP server provides a precise engine to calculate statutory pre-judgment interest across various US jurisdictions. By using tools like `get_state_statute_details`, `calculate_accumulated_interest`, and `list_supported_juris_dictions`, AI agents can determine the legal interest rates (Simple or Compound) for specific states such as California, New York, or Texas. It handles complex date arithmetic to find the exact days elapsed between a default date and a reference date, ensuring compliance with state-specific statutes.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_accumulated_interest**: Calculate total interest accrued on a debt
 - **get_state_statute_details**: Get the legal interest rules for a specific state
 - **list_supported_jurisdictions**: List all supported US states
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-pre-judgment-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-pre-judgment-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Pre-judgment Interest Calculator** tools.
 
 **Configuration:**

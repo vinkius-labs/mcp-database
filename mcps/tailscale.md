@@ -35,7 +35,7 @@ No more jumping between the Tailscale admin console and your terminal. Your AI a
 - **IT Administrators** — authorize new devices and clean up old nodes from the network via simple commands.
 
 
-## Available Tools
+## Available Tools (13)
 - **authorize_device**: Authorize Device
 - **create_auth_key**: Create Auth Key
 - **delete_auth_key**: Delete Auth Key
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tailscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tailscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tailscale** tools.
 
 **Configuration:**

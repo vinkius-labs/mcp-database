@@ -31,7 +31,7 @@ Connect your **Jobvite** account to any AI agent to streamline your hiring proce
 - **HR Operations** — automate the creation of candidate records and job postings.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_candidate**: Create a new Jobvite candidate profile
 - **create_job**: Create a new Jobvite job requisition
 - **get_candidate**: Get details for a specific Jobvite candidate
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jobvite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jobvite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jobvite** tools.
 
 **Configuration:**

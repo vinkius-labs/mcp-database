@@ -31,7 +31,7 @@ Integrate **ContentGroove**, an intelligent video processing engine, directly in
 - **Event Marketers** — Feed keynote events and command AI tools to extract the most engaging 2-minute segments immediately.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_media_from_url**: Import a video from a URL to generate AI highlights
 - **create_direct_upload**: Generate a signed URL for direct video upload
 - **get_clip_details**: Get details of a specific highlight clip
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contentgroove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contentgroove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ContentGroove** tools.
 
 **Configuration:**

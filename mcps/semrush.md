@@ -32,7 +32,7 @@ Equip your conversational workflow with the raw data power of **Semrush**, the i
 - **Digital Analysts** — command the bot to fetch `traffic_analytics` on five different disruptive startups to assess bounce rates side-by-side
 
 
-## Available Tools
+## Available Tools (8)
 - **domain_overview**: Specify the database (e.g., "us", "uk") if targeting a specific region.
 
 Get domain SEO overview: rank, organic traffic, paid traffic
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `semrush` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `semrush` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Semrush** tools.
 
 **Configuration:**

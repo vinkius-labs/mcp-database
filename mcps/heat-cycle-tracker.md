@@ -13,7 +13,7 @@ Predict reproductive cycles and fertile windows for unspayed animals based on br
 The Heat Cycle Tracker MCP server provides biological insights into the estrous cycles of unspayed female animals. By using tools like `get_breed_metadata`, `calculate_upcoming_heat`, and `segment_cycle_phases`, users can estimate future fertile windows, identify upcoming heat dates, and view a complete chronological breakdown of physiological phases including Proestrus, Estrus, Diestrus, and Anestrus based on breed-specific biological baselines.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_breed_metadata**: Retrieve average cycle duration and phase distribution for a specific breed
 - **segment_cycle_phases**: Provide a complete chronological breakdown of all biological phases for a single specific cycle
 - **calculate_upcoming_heat**: Predict the date of the next fertile window and the estimated start of the next heat cycle
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heat-cycle-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heat-cycle-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heat Cycle Tracker** tools.
 
 **Configuration:**

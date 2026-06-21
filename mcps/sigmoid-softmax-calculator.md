@@ -13,7 +13,7 @@ Convert raw neural network logits into flawless, numerically stable probability 
 Deriving probabilities from the raw output layers of neural networks requires precise exponential calculations that language models frequently botch. This specialized calculator provides uncompromised mathematical stability for both multi-class and binary classifications. By applying advanced numerical safeguards—such as max-logit subtraction to prevent overflow—it flawlessly executes Softmax and Sigmoid functions. Your agents can now score, rank, and evaluate model confidence with absolute precision.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_activation**: Converts raw neural network logits into probabilities using Sigmoid or Softmax
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sigmoid-softmax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sigmoid-softmax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sigmoid & Softmax Calculator** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Unlock the full potential of your connected workspace by linking **Notion** to y
 - **Knowledge Workers** — retrieve specific documentation fragments instantly through natural language conversation.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_database**: Properties define columns. Minimum: provide a title property with type "title".
 
 Create a new Notion database inside a page
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `notion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `notion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Notion** tools.
 
 **Configuration:**

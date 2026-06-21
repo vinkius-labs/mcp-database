@@ -13,7 +13,7 @@ Analyze interest rate curves, identify spreads, and detect recession signals.
 The Yield Curve Analyzer is a specialized tool for financial professionals to interpret the shape of the yield curve. By using `calculate_curve_metrics`, you can determine if the market is in a Normal, Inverted, Flat, or Humped state and calculate critical spreads like 2s10s and 3m10a. The engine also provides deep insights into economic stability via `examine_recession_risk` to detect potential recessionary signals from yield inversions. Finally, use `get_allocation_guidance` to receive actionable investment strategies and target duration ranges based on the current market environment.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_allocation_guidance**: Get investment allocation guidance
 - **calculate_curve_metrics**: Calculate yield curve metrics
 - **examine_recession_risk**: Examine yield curve inversion for recession risk
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `yield-curve-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `yield-curve-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Yield Curve Analyzer** tools.
 
 **Configuration:**

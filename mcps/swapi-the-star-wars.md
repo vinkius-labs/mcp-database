@@ -33,7 +33,7 @@ Access the comprehensive **Star Wars API (SWAPI)** through your AI agent and div
 - **Data Enthusiasts** — analyze the relationships between different entities in the Star Wars universe.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_resource_by_url**: g., from a homeworld, films, or species attribute).
 
 Get a specific SWAPI resource by its URL
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `swapi-the-star-wars` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `swapi-the-star-wars` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SWAPI - The Star Wars** tools.
 
 **Configuration:**

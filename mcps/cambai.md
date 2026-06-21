@@ -35,7 +35,7 @@ No more manual toggling between translation portals or waiting on slow dubbing p
 - **Marketing Teams** — automate the scale of personalized audio messages across 140+ languages through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **create_dubbing**: Create a dubbing or translation job
 - **create_tts**: Returns a task ID to track progress.
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cambai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cambai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CAMB.AI** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to **Cronoscan** to analyze the Cronos blockchain through natural conver
 - **DeFi Users** — Check your portfolio balances and transaction status across the Cronos ecosystem instantly.
 
 
-## Available Tools
+## Available Tools (24)
 - **get_balance_multi**: Get CRO Balance for Multiple Addresses
 - **get_balance**: Get CRO Balance for a Single Address
 - **get_eth_price**: Get CRO Last Price
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cronoscan-cronos-block-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cronoscan-cronos-block-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cronoscan (Cronos Block Explorer)** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Testim** project to any AI agent and bring your automated end-to-
 - **Release Managers** — rapidly audit the health of test plans and retrieve a specific execution ID to ensure green lights before deploying
 
 
-## Available Tools
+## Available Tools (10)
 - **create_project_branch**: Creates a new test development branch
 - **get_execution_results**: Retrieves the status and results of a specific test execution
 - **get_test_details**: Retrieves full details for a specific Testim test
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `testim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `testim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Testim** tools.
 
 **Configuration:**

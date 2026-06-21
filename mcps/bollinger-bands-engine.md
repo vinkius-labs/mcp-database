@@ -13,7 +13,7 @@ Calculate moving standard deviation and Bollinger Bands for financial time-serie
 Bollinger Bands are crucial for measuring market volatility. They require computing a moving average, then a moving standard deviation, and then adding/subtracting it to form Upper and Lower bands. LLMs fail completely at calculating rolling standard deviations. This engine handles the complex math locally, returning exact arrays for the Upper, Middle, and Lower bands.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_bollinger_bands**: Provide an array of numbers and optional period/stdDev.
 
 Calculates precise Bollinger Bands (Upper, Middle, Lower)
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bollinger-bands-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bollinger-bands-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bollinger Bands Engine** tools.
 
 **Configuration:**

@@ -19,7 +19,7 @@ Customer address pipelines are notoriously fragile. AI models frequently struggl
 - **Zero-Dependency Architecture:** Pure JS runtime execution guarantees absolute microsecond speed without any massive geolocation NPM dependencies. Perfect for edge-runtime agentic pipelines.
 
 
-## Available Tools
+## Available Tools (1)
 - **format_postal_code**: Provide the raw postal code string and select the ISO 2-letter country code.
 
 Validates and formats global postal codes (e.g. BR CEP, US ZIP, UK Postcode) using strict deterministic regex rules
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-global-postal-formatter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-global-postal-formatter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Global Postal Formatter** tools.
 
 **Configuration:**

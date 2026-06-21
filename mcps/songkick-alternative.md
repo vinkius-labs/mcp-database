@@ -35,7 +35,7 @@ No more manually checking multiple tour websites. Your AI acts as a personal con
 - **Travelers** — check what live music is happening in a city you're planning to visit by searching metro area IDs.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_artist_calendar**: Get the upcoming events for a specific artist
 - **search_artists**: Find artists and their unique Songkick IDs
 - **search_events**: Search for upcoming events based on criteria
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `songkick-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `songkick-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Songkick** tools.
 
 **Configuration:**

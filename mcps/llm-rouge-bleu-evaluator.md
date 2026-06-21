@@ -13,7 +13,7 @@ Evaluate AI text generation quality. Compute exact mathematical BLEU and ROUGE s
 When building RAG systems or fine-tuning language models, you need deterministic metrics to know if the output is getting better. BLEU and ROUGE are the academic standards for NLP evaluation, measuring exact N-Gram overlap between machine-generated text and human reference texts. Asking an LLM to 'calculate its own BLEU score' results in pure hallucination. This engine tokenizes strings natively and computes true overlap precision and recall indices instantly.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_rouge_bleu**: Calculates approximate BLEU and ROUGE overlap scores for NLP text evaluation
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `llm-rouge-bleu-evaluator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `llm-rouge-bleu-evaluator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LLM ROUGE & BLEU Evaluator** tools.
 
 **Configuration:**

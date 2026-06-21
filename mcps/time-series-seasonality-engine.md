@@ -13,7 +13,7 @@ Compute exact Autocorrelation (ACF) to find seasonality lags in time-series data
 When analyzing sales data, website traffic, or temperatures, identifying the exact cyclic pattern (seasonality) is critical. Asking an LLM if data is 'seasonal' yields subjective guesses. This engine computes the Autocorrelation Function (ACF) deterministically local. By returning the exact correlation coefficients at various lags (e.g., lag 7 for weekly, lag 12 for monthly), your agent can mathematically prove the existence of cycles.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_acf_seasonality**: Calculates the Autocorrelation Function (ACF) for a time-series to detect seasonality
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `time-series-seasonality-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `time-series-seasonality-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Time-Series Seasonality Engine** tools.
 
 **Configuration:**

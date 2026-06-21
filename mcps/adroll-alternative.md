@@ -35,7 +35,7 @@ No more manual toggling between complex ad tables or missing spend spikes. Your 
 - **Media Buyers** — automate the retrieval of structured advertising metrics for internal reporting through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **get_campaign**: Get campaign details
 - **get_report**: Pass report criteria as a JSON string.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adroll-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adroll-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AdRoll** tools.
 
 **Configuration:**

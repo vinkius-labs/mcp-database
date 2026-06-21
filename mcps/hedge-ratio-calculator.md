@@ -13,7 +13,7 @@ Calculate commodity futures contracts and quantify price volatility exposure.
 The Hedge Ratio Calculator is a specialized tool for agricultural producers to manage market risk. By using tools like `calculate_hedge_volume`, agents can determine the exact number of B3 futures contracts needed for soybean or corn production. The server also provides `evaluate_price_exposure` to quantify financial protection during price drops and opportunity costs during price rises, as well as `project_net_margin` to estimate total harvest profitability based on production costs and hedging strategies.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_hedge_volume**: Calculate required futures contracts and hedged volume
 - **evaluate_price_exposure**: Quantify financial exposure to price volatility
 - **project_net_margin**: Estimate final net profitability of the harvest
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hedge-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hedge-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hedge Ratio Calculator** tools.
 
 **Configuration:**

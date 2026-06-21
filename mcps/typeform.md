@@ -29,7 +29,7 @@ Bring your advanced **Typeform** dynamic responses directly to an autonomous LLM
 - **Designers** — inspect structures, map flow branching logic without actually entering the dense visual edit modules heavily loaded inside modern browsers
 
 
-## Available Tools
+## Available Tools (6)
 - **get_form_insights**: Retrieves analytics and completion insights for a specific form
 - **get_form_details**: Retrieves structure and metadata for a specific Typeform form
 - **get_form_responses**: Provide the form ID.
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `typeform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `typeform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Typeform** tools.
 
 **Configuration:**

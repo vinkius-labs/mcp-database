@@ -32,7 +32,7 @@ Connect **Bird** (formerly MessageBird) to your AI agents to orchestrate omnicha
 - **Operations** — Automate communication workflows and audit voice call logs for quality assurance.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contact**: Identifiers should be a JSON string, e.g., '[{"key":"phone","value":"+123"}]'.
 
 Create a new contact profile in the Bird workspace
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bird-messagebird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bird-messagebird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bird (MessageBird)** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Predictive monitoring system to track attendance frequency and calculate academi
 The Attendance Tracker MCP server provides students with a powerful way to monitor their presence in classes. By using tools like `calculate_attendance_metrics`, users can determine their current attendance rate and how many more absences they can afford before hitting the threshold. The `predict_weekly_allowance` tool helps plan for the rest of the term by calculating allowable absences per week, while `assess_risk_severity` provides qualitative alerts on academic standing.
 
 
-## Available Tools
+## Available Tools (3)
 - **predict_weekly_allowance**: Predict how many classes can be missed per week
 - **calculate_attendance_metrics**: Returns current rate and margin.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `attendance-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `attendance-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Attendance Tracker** tools.
 
 **Configuration:**

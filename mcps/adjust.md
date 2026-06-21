@@ -34,7 +34,7 @@ Connect your **Adjust** account to your AI agent to unlock professional mobile m
 - **Marketing Operations** — audit app settings and event tokens across multiple mobile platforms
 
 
-## Available Tools
+## Available Tools (3)
 - **get_app_settings**: Get app configuration
 - **inspect_device**: Inspect device attribution
 - **get_kpi_report**: Filterable by date.
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adjust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adjust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adjust** tools.
 
 **Configuration:**

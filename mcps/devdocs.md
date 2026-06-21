@@ -34,7 +34,7 @@ Connect your AI agent to the **DevDocs.io** index and take full control of your 
 - **Polyglot Programmers** — quickly navigate documentation for different languages and tools using a unified search interface
 
 
-## Available Tools
+## Available Tools (3)
 - **list_libraries**: List all supported programming languages, frameworks, and SDKs (e.g. aws, vue~3, rust) available in DevDocs
 - **search_docs**: Search the index of a specific documentation library to find the exact manual page path
 - **read_page**: Read the content of a specific documentation page. Returns cleanly formatted Markdown text
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `devdocs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `devdocs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DevDocs** tools.
 
 **Configuration:**

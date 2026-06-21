@@ -13,7 +13,7 @@ Calculate and monitor supplier performance using weighted metrics.
 The Vendor Scorecard Calculator is a specialized MCP server designed to evaluate supplier health through multi-metric weighted scoring. By connecting your AI agent to this tool, you can process complex vendor data including OTIF, Quality, Flexibility, Cost, and Responsiveness. Use `evaluate_supplier_scores` to compute aggregate scores, `generate_performance_ranking` to sort vendors by excellence, and `detect_at_risk_vendors` to identify partners approaching critical performance thresholds.
 
 
-## Available Tools
+## Available Tools (3)
 - **evaluate_supplier_scores**: Calculate weighted performance scores for vendors
 - **generate_performance_ranking**: Rank vendors by their performance scores
 - **detect_at_risk_vendors**: Identify vendors at risk of falling into a lower performance tier
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vendor-scorecard-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vendor-scorecard-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vendor Scorecard Calculator** tools.
 
 **Configuration:**

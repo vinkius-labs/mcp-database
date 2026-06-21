@@ -28,7 +28,7 @@ The **Arcadia Plug MCP Server** provides a direct natural language interface to 
 - **Financial Analysts** — Monitor utility costs and billing cycles to optimize operational expenses.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_account_check**: Verify Arcadia account connection
 - **get_statement**: Get details for a specific statement
 - **list_accounts**: List all utility accounts associated with your organization
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arcadia-plug` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arcadia-plug` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Arcadia Plug** tools.
 
 **Configuration:**

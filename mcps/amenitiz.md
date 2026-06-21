@@ -21,7 +21,7 @@ Connect **Amenitiz** to any AI agent — the all-in-one PMS for independent hote
 - **Guests** — Guest database with visit history and preferences
 
 
-## Available Tools
+## Available Tools (8)
 - **list_reservations**: List hotel reservations
 - **get_reservation**: Get reservation details
 - **list_room_types**: List room types
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amenitiz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amenitiz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amenitiz** tools.
 
 **Configuration:**

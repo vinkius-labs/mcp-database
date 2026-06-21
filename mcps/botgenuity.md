@@ -35,7 +35,7 @@ No more manual toggling between chatbot portals or digging through individual le
 - **Product Teams** — integrate custom-trained chatbot responses into internal tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **get_chatbot_details**: Get details of a specific chatbot
 - **get_conversation_history**: Get full history for a conversation
 - **list_chatbots**: List all chatbots in your BotGenuity account
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `botgenuity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `botgenuity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BotGenuity** tools.
 
 **Configuration:**

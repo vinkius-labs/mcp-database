@@ -27,7 +27,7 @@ Connect your **Meltwater** account to any AI agent and take full control of your
 3. Start monitoring your brand from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_search_analytics**: Get analytics for a search
 - **get_media_insights**: Get high-level media insights
 - **get_mention_details**: Get details for a specific mention
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meltwater` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meltwater` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meltwater** tools.
 
 **Configuration:**

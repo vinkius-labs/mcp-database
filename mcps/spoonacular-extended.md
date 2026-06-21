@@ -29,7 +29,7 @@ Connect the **Spoonacular** food and recipe API to your AI agent to transform it
 No more manual searching through ad-heavy recipe blogs. Your AI acts as a digital sous-chef that knows exactly what you can cook with the ingredients you have.
 
 
-## Available Tools
+## Available Tools (22)
 - **add_to_meal_plan**: Add an item to a user's meal plan
 - **autocomplete_ingredient_search**: Autocomplete ingredient names
 - **autocomplete_recipe_search**: Autocomplete recipe titles based on a partial query
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spoonacular-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spoonacular-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spoonacular** tools.
 
 **Configuration:**

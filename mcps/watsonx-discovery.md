@@ -37,7 +37,7 @@ No more manual digging through complex IBM Cloud consoles to query your data. Yo
 - **Product Teams** — implement AI-powered search features and monitor the health of your discovery project
 
 
-## Available Tools
+## Available Tools (6)
 - **get_document_details**: Retrieves metadata and status for a specific indexed document
 - **get_component_settings**: Retrieves the configuration and health settings for project components
 - **list_discovery_collections**: Lists all data collections within the current watsonx Discovery project
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `watsonx-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `watsonx-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **watsonx Discovery** tools.
 
 **Configuration:**

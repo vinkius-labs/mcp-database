@@ -13,7 +13,7 @@ Manage marketing campaigns, leads, and sources via Integrate.com API.
 Empower your AI agents to manage your B2B marketing orchestration with Integrate.com. This MCP server allows you to list campaigns, track leads, monitor sources and media partners, and view system status directly through the Integrate API. Ideal for automating marketing operations and lead flow monitoring.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_lead**: Retrieves details for a specific lead
 - **get_system_status**: Gets the current Integrate system status
 - **list_campaigns**: Lists all marketing campaigns
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `integrate-integratecom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `integrate-integratecom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Integrate (Integrate.com)** tools.
 
 **Configuration:**

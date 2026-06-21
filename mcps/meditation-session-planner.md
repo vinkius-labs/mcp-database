@@ -13,7 +13,7 @@ Get a structured meditation plan tailored to your time and mental goal, complete
 **Need structure for deep rest?** Meditation can feel unstructured. Many users struggle knowing *how* to start or how long each part should be. The goal is always insight, but the process requires planning.
 
 
-## Available Tools
+## Available Tools (3)
 - **allocate_durations**: Minimum 5, maximum 60 minutes.
 
 Allocate time durations for meditation session phases
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meditation-session-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meditation-session-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meditation Session Planner** tools.
 
 **Configuration:**

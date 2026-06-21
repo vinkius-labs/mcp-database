@@ -28,7 +28,7 @@ Transform how your organization handles billing by giving your AI agent full con
 Ideal for finance teams, sales operations, and account managers needing instant, conversational access to Paycove billing data.
 
 
-## Available Tools
+## Available Tools (17)
 - **check_paycove_status**: Verify connectivity
 - **convert_quote_to_invoice**: Convert quote to invoice
 - **create_client**: Create a client
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paycove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paycove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paycove** tools.
 
 **Configuration:**

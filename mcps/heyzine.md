@@ -35,7 +35,7 @@ No more manual uploads or configuration through complex web editors. Your AI act
 - **Content Managers** — organize large digital libraries using bookshelves without leaving your workspace
 
 
-## Available Tools
+## Available Tools (12)
 - **add_flipbook_to_bookshelf**: Add a flipbook to a collection
 - **check_api_status**: Verify Heyzine API status
 - **convert_pdf_to_flipbook**: Returns the flipbook URL and ID.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heyzine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heyzine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heyzine** tools.
 
 **Configuration:**

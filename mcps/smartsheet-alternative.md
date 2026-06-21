@@ -33,7 +33,7 @@ Connect your **Smartsheet** account to any AI agent to automate your enterprise 
 - **Data Analysts** — streamline the retrieval of sheet metadata and monitor data collection directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_sheet_rows**: Rows must be provided as a JSON array.
 
 Append new rows
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smartsheet-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smartsheet-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Smartsheet** tools.
 
 **Configuration:**

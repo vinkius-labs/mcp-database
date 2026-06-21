@@ -32,7 +32,7 @@ Connect your **Refersion** account to any AI agent to streamline your affiliate 
 - **Developers** — test and manage webhooks and conversion logic directly from the coding environment
 
 
-## Available Tools
+## Available Tools (8)
 - **create_affiliate**: Create a new affiliate
 - **create_conversion**: Create a new conversion
 - **create_webhook**: Registers a new webhook listener
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `refersion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `refersion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Refersion** tools.
 
 **Configuration:**

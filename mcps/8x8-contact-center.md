@@ -34,7 +34,7 @@ Empower your AI agent to act as a real-time supervisor for your **8x8 Contact Ce
 - **Business Analysts** — extract contact center metrics for reporting through natural language queries.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_realtime_metrics**: Get live contact center metrics
 - **list_agent_interactions**: Filter by date to audit historical call resolution metadata.
 
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `8x8-contact-center` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `8x8-contact-center` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **8x8 Contact Center** tools.
 
 **Configuration:**

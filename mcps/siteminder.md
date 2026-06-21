@@ -33,7 +33,7 @@ Connect your **Siteminder** account to any AI agent to streamline hotel distribu
 - **Developers** — integrate hospitality data into custom workflows or AI assistants
 
 
-## Available Tools
+## Available Tools (18)
 - **cp_cancel_reservation**: Cancel an existing reservation
 - **cp_confirm_reservation**: Finalize booking with guest and payment details
 - **cp_get_property**: Get property details via Channels Plus API
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `siteminder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `siteminder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Siteminder** tools.
 
 **Configuration:**

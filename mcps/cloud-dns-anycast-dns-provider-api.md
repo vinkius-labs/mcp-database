@@ -32,7 +32,7 @@ Connect your **Cloud DNS** account to any AI agent to manage global Anycast DNS 
 - **Developers** — quickly point subdomains to new services or update TXT records for domain verification straight from the IDE.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_record**: Create a new DNS record
 - **create_zone**: Create a new DNS zone
 - **delete_record**: Delete a DNS record
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloud-dns-anycast-dns-provider-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloud-dns-anycast-dns-provider-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloud DNS (Anycast DNS Provider API)** tools.
 
 **Configuration:**

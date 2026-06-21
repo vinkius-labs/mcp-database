@@ -35,7 +35,7 @@ No more navigating the Replicate website to find models or check prediction stat
 - **Researchers** — explore model collections, inspect version schemas and test models before deployment
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_prediction**: Provide the prediction ID. The prediction status will change to "canceled".
 
 Cancel a running prediction
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `replicate-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `replicate-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Replicate** tools.
 
 **Configuration:**

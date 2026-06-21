@@ -32,7 +32,7 @@ Connect your AI agent to the **Federal Procurement Data System (FPDS)** to monit
 - **Journalists & Researchers** — track government transparency and public spending across federal agencies.
 
 
-## Available Tools
+## Available Tools (1)
 - **search_contracts**: To target DOD contracts, include DEPARTMENT_ID:"9700" or AGENCY_CODE:"9700" in the sQuery parameter. Returns XML data containing contract entries.
 
 Search federal contracts via FPDS Atom Feed
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dod-contracts-fpds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dod-contracts-fpds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DOD Contracts (FPDS)** tools.
 
 **Configuration:**

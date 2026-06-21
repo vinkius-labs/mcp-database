@@ -33,7 +33,7 @@ Equip your AI agent with the definitive open database for cosmetic products thro
 - **Health Tech Developers** — integrate open cosmetic data into their wellness applications.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_beauty_product**: Get cosmetic product details by barcode
 - **search_beauty_products**: Search for beauty products by category
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-beauty-facts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-beauty-facts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Beauty Facts** tools.
 
 **Configuration:**

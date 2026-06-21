@@ -32,7 +32,7 @@ Integrate **Craftboxx**, the specialized software for craft businesses, directly
 - **Project Leads** — Quickly check order details and material availability during planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_order**: Create a new craft order
 - **get_business_stats**: Retrieve high-level statistics for your business
 - **get_order_details**: Get details for a specific craft order
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `craftboxx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `craftboxx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Craftboxx** tools.
 
 **Configuration:**

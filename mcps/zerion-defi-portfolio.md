@@ -36,7 +36,7 @@ No more manual searching on block explorers. Your AI acts as a personal crypto a
 - **Data Analysts** — aggregate data from multiple wallets to identify trends or audit holdings.
 
 
-## Available Tools
+## Available Tools (16)
 - **list_chains**: List supported blockchains and metadata
 - **list_dapps**: List metadata for decentralized applications
 - **get_fungible**: Get token metadata, prices, and charts
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zerion-defi-portfolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zerion-defi-portfolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zerion (DeFi Portfolio)** tools.
 
 **Configuration:**

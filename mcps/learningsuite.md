@@ -33,7 +33,7 @@ Connect your **LearningSuite** account to any AI agent and manage training progr
 - **Administrators** — oversee enrollments and assessment data
 
 
-## Available Tools
+## Available Tools (10)
 - **get_ai_agent**: Get a specific AI agent
 - **get_course**: Get a specific course
 - **get_hub**: Get a specific hub
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `learningsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `learningsuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LearningSuite** tools.
 
 **Configuration:**

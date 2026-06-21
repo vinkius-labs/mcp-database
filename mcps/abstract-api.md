@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire data enrichment and verificatio
 - **Operations Leads** — automate global data querying to orchestrate cross-functional international teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **geolocate_ip**: Get geographic details for an IP address
 - **get_exchange_rate**: Get current exchange rates between two currencies
 - **get_holidays**: List public holidays for a country and year
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `abstract-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `abstract-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Abstract API** tools.
 
 **Configuration:**

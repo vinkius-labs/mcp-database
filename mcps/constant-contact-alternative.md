@@ -32,7 +32,7 @@ Connect your **Constant Contact** account to any AI agent to streamline your mar
 - **Business Owners** — automate routine marketing tasks and get instant reports on audience growth.
 
 
-## Available Tools
+## Available Tools (37)
 - **add_list_memberships**: Bulk add contacts to lists
 - **add_tags_to_contacts**: Bulk add tags to contacts
 - **bulk_delete_contacts**: Bulk delete contacts
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `constant-contact-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `constant-contact-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Constant Contact** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect to the **Blocknative Gas Platform** to access high-confidence gas price 
 - **Crypto Enthusiasts** — Quickly check network congestion levels through natural language
 
 
-## Available Tools
+## Available Tools (1)
 - **get_gas_prices**: Get real-time gas price suggestions
 
 
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blocknative-ethereum-mempool-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blocknative-ethereum-mempool-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blocknative (Ethereum Mempool API)** tools.
 
 **Configuration:**

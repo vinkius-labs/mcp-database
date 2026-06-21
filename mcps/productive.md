@@ -33,7 +33,7 @@ Connect your **Productive** account to any AI agent and bring your agency manage
 - **Sales Teams** — pull up client information and active deals to prepare for calls faster
 
 
-## Available Tools
+## Available Tools (12)
 - **list_projects**: Ideal for scoping agency workload.
 
 Lists all active and archived projects in Productive
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `productive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `productive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Productive** tools.
 
 **Configuration:**

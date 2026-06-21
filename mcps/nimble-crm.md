@@ -34,7 +34,7 @@ Connect your **Nimble CRM** account to your AI agent and streamline your relatio
 - **Business Owners** — automate the retrieval of deal lists and pipeline statuses for daily standups.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_note_to_contact**: Add a note to a contact
 - **get_activity**: Get specific activity details
 - **get_contact**: Get specific contact details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nimble-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nimble-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nimble CRM** tools.
 
 **Configuration:**

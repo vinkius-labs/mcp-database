@@ -36,7 +36,7 @@ No more manual exporting of usage logs or jumping between complex fleet manageme
 - **Operations Leads** — maintain a real-time overview of fleet location and billing usage.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_billing_cycle_usage**: Check data usage for the current billing cycle
 - **get_daily_usage_stats**: Retrieve aggregated daily data usage statistics
 - **get_device_details**: Get detailed information for a specific IoT device
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hologramio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hologramio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hologram.io** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect **PSPDFKit (Nutrient)** to your AI agent and handle complex document wor
 - **Operations Managers** — Streamline document workflows by converting legacy files and scanned images into searchable assets.
 
 
-## Available Tools
+## Available Tools (7)
 - **autotag_pdf**: Auto-tag a PDF for accessibility (PDF/UA)
 - **build_document**: Advanced document processing (redact, watermark, etc)
 - **convert_to_pdf**: ) to PDF.
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pspdfkit-nutrient` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pspdfkit-nutrient` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PSPDFKit (Nutrient)** tools.
 
 **Configuration:**

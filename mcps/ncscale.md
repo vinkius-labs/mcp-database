@@ -34,7 +34,7 @@ Connect your **ncScale** observability platform to your AI agent and gain full v
 - **Workspace Admins** — verify integrations and user access through natural language commands.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_alert**: Get specific alert info
 - **get_node**: Get specific node details
 - **get_workspace_info**: Get workspace metadata
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ncscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ncscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ncScale** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Nimble CRM** account to any AI agent to streamline your social sa
 - **Operations Leads** — automate CRM maintenance and data cleanup through simple AI commands.
 
 
-## Available Tools
+## Available Tools (4)
 - **delete_contacts**: Delete Nimble contacts
 - **get_contact**: Get details for specific Nimble contacts
 - **get_myself**: Get current Nimble user details
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nimble-crm-social-sales-crm-contacts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nimble-crm-social-sales-crm-contacts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nimble CRM (Social Sales CRM & Contacts API)** tools.
 
 **Configuration:**

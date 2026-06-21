@@ -34,7 +34,7 @@ Connect your **Hygraph** project to any AI agent and take full control of your f
 - **Digital Editors** — create and publish draft content quickly by commanding your AI agent to update specific document fields
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_document**: Dispatch an automated validation check routing Dynamic Model creation
 - **wipe_cms_document**: Irreversibly vaporize explicit Content arrays returning clean states
 - **list_project_locales**: Identify precise active arrays spanning Translation spaces
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hygraph-headless-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hygraph-headless-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hygraph (Headless CMS)** tools.
 
 **Configuration:**

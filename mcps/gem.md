@@ -35,7 +35,7 @@ Connect your **Gem** recruitment CRM to any AI agent to automate your talent sou
 - **Hiring Managers** — get a real-time overview of candidate activity and interaction history for your open roles.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **create_crm_candidate**: Add new candidate
 - **add_candidate_note**: Log an interaction
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gem` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gem` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gem** tools.
 
 **Configuration:**

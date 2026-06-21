@@ -35,7 +35,7 @@ Connect your **Mailgun** account to any AI agent and take full control of your t
 - **Growth Engineers** — audit campaign stats and manage suppression lists across multiple Mailgun domains efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **list_bounces**: Useful to detect out of bounds sending or inactive audiences.
 
 Check bounced email logs and suppression list for a domain
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailgun-transactional-email-domains` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailgun-transactional-email-domains` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailgun (Transactional Email & Domains)** tools.
 
 **Configuration:**

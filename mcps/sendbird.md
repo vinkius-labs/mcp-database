@@ -35,7 +35,7 @@ No more navigating complex dashboards to moderate a user or check channel status
 - **Community Managers** — oversee large open channels and enforce safety rules through simple natural language commands.
 
 
-## Available Tools
+## Available Tools (18)
 - **ban_user**: Ban a user from a channel
 - **block_user**: Block a user
 - **create_bot**: Create a bot
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sendbird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sendbird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sendbird** tools.
 
 **Configuration:**

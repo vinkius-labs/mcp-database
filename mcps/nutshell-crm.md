@@ -34,7 +34,7 @@ Connect your **Nutshell CRM** account to your AI agent and take control of your 
 - **Business Owners** — automate the retrieval of pipeline reports and activity logs for daily standups.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_accounts**: Find and list business accounts
 - **list_activities**: List CRM activities
 - **list_activity_types**: g. Phone Call, Email) available for logging.
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nutshell-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nutshell-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nutshell CRM** tools.
 
 **Configuration:**

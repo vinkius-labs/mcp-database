@@ -32,7 +32,7 @@ Integrate **Curator.io**, the modern social media aggregator, directly into your
 - **Content Curators** — Search for specific social posts within aggregated feeds for research and planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_details**: Resolves usage limits and account identifiers. Interacts with the account and billing boundary.
 
 Retrieve metadata for your Curator.io account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `curatorio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `curatorio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Curator.io** tools.
 
 **Configuration:**

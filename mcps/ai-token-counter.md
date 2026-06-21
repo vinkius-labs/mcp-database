@@ -18,7 +18,7 @@ When a RAG Agent fetches 10 documents to summarize, it blindly sends them to the
 - **Self-Aware Agents:** Allows Agents to do math and chunk their own massive datasets safely before hitting external API limits.
 
 
-## Available Tools
+## Available Tools (1)
 - **count_tokens**: Pass the raw text and receive the exact token count. Use the result to decide whether to chunk, summarize, or send directly.
 
 Counts exact LLM tokens (cl100k_base) offline. Prevents RAG agents from exceeding context windows and crashing
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ai-token-counter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ai-token-counter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AI Token Counter** tools.
 
 **Configuration:**

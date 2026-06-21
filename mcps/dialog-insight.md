@@ -32,7 +32,7 @@ Integrate **Dialog Insight**, the powerful relationship marketing and CRM platfo
 - **Digital Marketers** — Monitor automated journeys and campaign delivery during planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_new_marketing_contact**: Add a new contact record to the Dialog Insight database
 - **get_account_metadata**: Retrieve settings and limits for your Dialog Insight account
 - **get_campaign_performance**: Get detailed performance metrics for a specific campaign
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dialog-insight` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dialog-insight` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dialog Insight** tools.
 
 **Configuration:**

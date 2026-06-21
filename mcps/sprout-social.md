@@ -32,7 +32,7 @@ Bring your **Sprout Social** enterprise command center directly into your artifi
 - **DevSecOps** — rapidly write scripts triggering custom announcements crossing to official PR domains directly using prompt-level commands
 
 
-## Available Tools
+## Available Tools (10)
 - **create_social_post**: Provide a JSON array of profile_ids, the post text, and an optional scheduled_at time (ISO 8601).
 
 Create and schedule a new social media post
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sprout-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sprout-social` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sprout Social** tools.
 
 **Configuration:**

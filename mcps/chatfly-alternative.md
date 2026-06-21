@@ -35,7 +35,7 @@ No more manual copy-pasting of website content for training. Your AI acts as you
 - **Business Owners** — automate the deployment of 24/7 support bots and verify training progress through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **chat**: Interact with a chatbot
 - **create_bot**: Provide name and welcome message.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chatfly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chatfly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChatFly** tools.
 
 **Configuration:**

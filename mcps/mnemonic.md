@@ -34,7 +34,7 @@ Connect your **Mnemonic** account to your AI agent and unlock deep insights into
 - **Data Analysts** — automate the retrieval of complex transfer and ownership data for Web3 reporting.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_collection_details**: Get NFT collection info
 - **get_collection_distribution**: Get ownership distribution
 - **get_collection_stats**: Get collection statistics
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mnemonic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mnemonic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mnemonic** tools.
 
 **Configuration:**

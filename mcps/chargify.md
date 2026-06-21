@@ -32,7 +32,7 @@ Connect your **Chargify (Maxio)** site to any AI agent and take absolute control
 - **Ops & Founders** — ask your agent to parse the product catalog or apply a mass cancellation to a delinquent account immediately
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_subscription**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **create_customer**: json` tracking exact Name and Email strings tied to the B2B engine.
 
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chargify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chargify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chargify** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **Creatomate**, the powerful video automation platform, directly into 
 - **Developers** — Audit rendering pipelines and manage project assets via chat.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_project_settings**: Retrieve settings and metadata for the current project
 - **get_render_status**: Check the status and get the URL of a rendered video
 - **get_template_details**: Get structure and dynamic fields for a template
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `creatomate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `creatomate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Creatomate** tools.
 
 **Configuration:**

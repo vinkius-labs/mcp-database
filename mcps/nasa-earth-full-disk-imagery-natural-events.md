@@ -23,7 +23,7 @@ Two complementary Earth observation systems.
 - Coordinates and source links
 
 
-## Available Tools
+## Available Tools (5)
 - **get_epic_images**: 5 million km from Earth. Available in natural color or enhanced color.
 
 Get the latest full-disk images of Earth from the DSCOVR satellite
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-earth-full-disk-imagery-natural-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-earth-full-disk-imagery-natural-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA Earth — Full-Disk Imagery & Natural Events** tools.
 
 **Configuration:**

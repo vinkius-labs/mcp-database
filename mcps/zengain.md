@@ -27,7 +27,7 @@ Connect your **Zengain** (Nalpeiron Growth Platform) account to any AI agent and
 3. Start managing your customer success resources from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_health_score**: Get customer health score
 - **get_product**: Get details for a specific product
 - **get_analytics_summary**: Get analytics summary
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zengain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zengain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zengain** tools.
 
 **Configuration:**

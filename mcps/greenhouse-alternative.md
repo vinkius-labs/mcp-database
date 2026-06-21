@@ -36,7 +36,7 @@ No more manual status updates or digging through candidates in the ATS. Your AI 
 - **HR Operations** — manage office locations and department organization through automated queries
 
 
-## Available Tools
+## Available Tools (12)
 - **advance_application**: Move candidate to next stage
 - **create_candidate**: Can include first name, last name, and company.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `greenhouse-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `greenhouse-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Greenhouse** tools.
 
 **Configuration:**

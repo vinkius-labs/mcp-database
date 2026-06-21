@@ -34,7 +34,7 @@ Unlock the power of Natural Language Processing with **MeaningCloud**. This serv
 - **Customer Support Leads** — Monitor sentiment and irony in customer tickets to prioritize responses.
 
 
-## Available Tools
+## Available Tools (6)
 - **categorize_text**: g., IAB_2.0_en, Business_en).
 
 Assign categories to a text based on a taxonomy
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meaningcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meaningcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MeaningCloud** tools.
 
 **Configuration:**

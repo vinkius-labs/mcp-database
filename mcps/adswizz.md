@@ -34,7 +34,7 @@ Connect your **AdsWizz** account to your AI agent to orchestrate your digital au
 - **Marketing Analysts** — retrieve audio engagement metrics for cross-channel reporting
 
 
-## Available Tools
+## Available Tools (4)
 - **list_campaigns**: List audio ad campaigns
 - **get_campaign**: Get campaign details
 - **list_zones**: g. podcasts, streams).
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adswizz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adswizz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AdsWizz** tools.
 
 **Configuration:**

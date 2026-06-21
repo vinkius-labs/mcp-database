@@ -33,7 +33,7 @@ Connect your **Coppel** B2B account to any AI agent and manage Mexico's largest 
 - **Financial Analysts** — query credit portfolio data and payment collection performance programmatically
 
 
-## Available Tools
+## Available Tools (14)
 - **create_order**: Specify the product IDs, quantities, delivery address, and payment method. Credit-eligible customers can select weekly payment plans (abonos semanales).
 
 Place a new order
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coppel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coppel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coppel** tools.
 
 **Configuration:**

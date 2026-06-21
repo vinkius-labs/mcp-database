@@ -28,7 +28,7 @@ Connect **OpenAQ**, the world's largest open air quality database, to any AI age
 3. Start monitoring air quality from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (9)
 - **get_countries**: Includes location counts and city counts per country.
 
 List countries with monitoring stations
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openaq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openaq` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenAQ** tools.
 
 **Configuration:**

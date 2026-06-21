@@ -32,7 +32,7 @@ Equip your AI agent with deep intelligence for the **Roblox Social & Economy** e
 - **Analytical Gamers** — track your social circle and presence status with micro-metric precision
 
 
-## Available Tools
+## Available Tools (9)
 - **get_user_followers**: List followers of a Roblox user
 - **get_user_followings**: List users followed by a Roblox user
 - **get_user_friends**: List friends for a Roblox user
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `roblox-social-group-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `roblox-social-group-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Roblox Social & Group Intelligence** tools.
 
 **Configuration:**

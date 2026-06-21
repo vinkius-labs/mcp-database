@@ -28,7 +28,7 @@ Connect your AI agent to **KnowBe4 KMSAT** to get real-time visibility into your
 4. Start managing your security metrics via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **list_users**: Includes user IDs, names, emails, and current status. Essential for auditing user enrollment.
 
 List all users in KnowBe4 KMSAT
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `knowbe4-kmsat-reporting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `knowbe4-kmsat-reporting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **KnowBe4 (KMSAT Reporting)** tools.
 
 **Configuration:**

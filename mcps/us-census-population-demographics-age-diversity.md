@@ -23,7 +23,7 @@ U.S. Census demographic data.
 Requires a free API key from the Census Bureau.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_population_by_state**: The ACS is the most comprehensive demographic survey in the U.S., sampling 3.5 million households annually.
 
 Get total population and median age for all 50 U.S. states + DC
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-census-population-demographics-age-diversity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-census-population-demographics-age-diversity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **U.S. Census Population — Demographics, Age & Diversity** tools.
 
 **Configuration:**

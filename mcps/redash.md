@@ -33,7 +33,7 @@ Connect your **Redash** instance to any AI agent to interact with your data thro
 - **Engineers** — Test data source connections and manage query objects programmatically through the agent.
 
 
-## Available Tools
+## Available Tools (17)
 - **archive_dashboard**: Archive the specified dashboard
 - **archive_query**: Archive the specified query
 - **create_dashboard**: Create a new dashboard object
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `redash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `redash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Redash** tools.
 
 **Configuration:**

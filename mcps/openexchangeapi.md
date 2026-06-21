@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire financial research and currency
 - **Operations Leads** — automate financial data querying to orchestrate cross-functional global teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **convert_currency**: Convert an amount from one currency to another
 - **get_historical_rates**: Get exchange rates for a specific historical date
 - **get_latest_rates**: Get the latest exchange rates for a base currency
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openexchangeapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openexchangeapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenExchangeAPI** tools.
 
 **Configuration:**

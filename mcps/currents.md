@@ -33,7 +33,7 @@ Connect your **Currents** account to any AI agent to monitor global media, track
 - **Researchers** — perform deep searches across millions of archived articles for specific data points.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_auth**: Check API authentication status
 - **list_categories**: List available news categories
 - **list_languages**: List available languages
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `currents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `currents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Currents** tools.
 
 **Configuration:**

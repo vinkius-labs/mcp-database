@@ -35,7 +35,7 @@ No more manual navigation through complex forms to update a dataset description 
 - **Open Science Advocates** — easily search and discover public research artifacts to foster collaboration and transparency.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_deposition**: You can optionally provide metadata.
 
 Create a new Zenodo deposition
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zenodo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zenodo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zenodo** tools.
 
 **Configuration:**

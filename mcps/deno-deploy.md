@@ -33,7 +33,7 @@ Connect your **Deno Deploy** account to any AI agent to orchestrate your edge co
 - **Platform Teams** — manage organizational resources and shared layers across multiple projects efficiently.
 
 
-## Available Tools
+## Available Tools (15)
 - **create_app**: Create a new Deno Deploy application
 - **create_deployment**: Create a new deployment (revision) for an app
 - **create_layer**: Create a new layer for sharing environment variables
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deno-deploy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deno-deploy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deno Deploy** tools.
 
 **Configuration:**

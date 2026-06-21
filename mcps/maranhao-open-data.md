@@ -31,7 +31,7 @@ Connect to the **Maranhão Open Data Portal** to explore government transparency
 - **Data Analysts** — run SQL queries directly on government datasets to generate insights and reports.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_package**: Retrieve dataset metadata
 - **get_resource**: g., a CSV file or API endpoint within a dataset).
 
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `maranhao-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `maranhao-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Maranhão Open Data** tools.
 
 **Configuration:**

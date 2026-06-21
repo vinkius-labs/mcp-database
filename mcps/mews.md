@@ -29,7 +29,7 @@ Connect your **Mews** hotel to any AI agent and transform your front desk into a
 - **General Managers** — Daily operational KPIs across all departments
 
 
-## Available Tools
+## Available Tools (12)
 - **get_reservations**: Filter by date range. THE core tool — "Who is checking in today?" "How many rooms tonight?"
 
 Get hotel reservations
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mews` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mews** tools.
 
 **Configuration:**

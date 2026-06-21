@@ -13,7 +13,7 @@ Automate vulnerability scanning and security monitoring via Intruder.io API.
 Empower your AI agents to manage your cybersecurity posture with Intruder.io. This MCP server allows you to list security targets, track vulnerability scans, retrieve identified issues, and monitor cloud integrations directly through the Intruder API. Ideal for automating DevSecOps workflows and security auditing.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Use to verify identity and account settings.
 
 Gets your Intruder account details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `intruder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `intruder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Intruder** tools.
 
 **Configuration:**

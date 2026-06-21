@@ -35,7 +35,7 @@ Your AI agent becomes an elite cognitive search gateway to all your internal dat
 - **Technical Writers** — locate specific passages traversing across thousands of embedded documents effortlessly leveraging contextual semantic queries.
 
 
-## Available Tools
+## Available Tools (7)
 - **execute_rag_chat**: Provide corpus keys and the user query to get a summarized AI response with citations.
 
 Executes a RAG-powered chat completion
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vectara` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vectara` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vectara** tools.
 
 **Configuration:**

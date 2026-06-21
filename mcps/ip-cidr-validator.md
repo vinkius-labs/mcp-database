@@ -18,7 +18,7 @@ Cybersecurity and Network Operations (NOC) Agents constantly analyze firewall ac
 - **Firewall Shield:** Ensures AI agents make deterministic allow/block decisions based on strict networking rules.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_ip**: Pass the IP or CIDR string and receive validation results including network address, broadcast, and host range.
 
 Validates IPv4/IPv6 addresses and calculates binary CIDR subnet matches offline. Essential for cybersecurity and firewall agents
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ip-cidr-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ip-cidr-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IP & CIDR Validator** tools.
 
 **Configuration:**

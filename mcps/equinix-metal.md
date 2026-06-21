@@ -31,7 +31,7 @@ Manage your **Equinix Metal** infrastructure access and account settings directl
 - **Security Teams** — audit and rotate API keys efficiently via AI-driven commands.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_email**: Create an Email
 - **create_project_api_key**: Create a Project API Key
 - **create_user_api_key**: Create a User API Key
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `equinix-metal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `equinix-metal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Equinix Metal** tools.
 
 **Configuration:**

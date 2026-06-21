@@ -33,7 +33,7 @@ Connect to **The One API** and bring the vast world of J.R.R. Tolkien to your AI
 - **Data Analysts** — explore movie statistics, character distributions, and quote frequencies
 
 
-## Available Tools
+## Available Tools (13)
 - **get_book**: Get a specific book by ID
 - **get_chapter**: Requires authentication.
 
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `the-one` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `the-one` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **The One** tools.
 
 **Configuration:**

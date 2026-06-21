@@ -33,7 +33,7 @@ Connect your **Unsplash** developer account to any AI agent and integrate the wo
 - **Developers** — automate the retrieval of image metadata and statistics for application testing and content population.
 
 
-## Available Tools
+## Available Tools (28)
 - **add_photo_to_collection**: Add a photo to a collection (requires user auth)
 - **create_collection**: Create a new collection (requires user auth)
 - **delete_collection**: Delete a collection (requires user auth)
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unsplash-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unsplash-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unsplash** tools.
 
 **Configuration:**

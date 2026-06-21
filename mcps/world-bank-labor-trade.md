@@ -26,7 +26,7 @@ Leverage the World Bank API to power agentic research into international trade a
 Supply chain analysts, trade researchers, HR strategists, and international business consultants.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_unemployment_rate**: Get unemployment total (% of labor force)
 - **get_labor_force**: Get total labor force
 - **get_exports**: Get exports of goods/services (% of GDP)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `world-bank-labor-trade` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `world-bank-labor-trade` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **World Bank Labor & Trade** tools.
 
 **Configuration:**

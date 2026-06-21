@@ -32,7 +32,7 @@ Connect your **Portable.io** account to your favorite AI agent and take orchestr
 - **Ops Managers** — monitor synchronization health across multiple SaaS environments
 
 
-## Available Tools
+## Available Tools (6)
 - **list_flows**: List all integration flows configured in Portable
 - **get_flow**: Get complete configuration details of a specific data flow
 - **list_runs**: List historical execution runs for a specific data flow
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `portableio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `portableio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Portable.io** tools.
 
 **Configuration:**

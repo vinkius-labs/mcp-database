@@ -18,7 +18,7 @@ When Marketing AI Agents publish blog posts or e-commerce products, they need to
 - **SEO Perfection:** Ensures all slugs are lowercase, safely hyphenated, and perfectly formatted for Google and CMS platforms.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_cron_expression**: Pass the 5-field cron string (e.g. "0 9 * * 1-5") and receive validation status with field-level error diagnostics.
 
 Validates cron expressions by checking field ranges, step values, and syntax correctness offline
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `url-slug-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `url-slug-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **URL Slug Generator** tools.
 
 **Configuration:**

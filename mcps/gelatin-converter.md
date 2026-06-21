@@ -13,7 +13,7 @@ Calculates precise gelatin amounts for any liquid volume and classifies the resu
 **Need to set a dessert but aren't sure how much gelatin to use?** The final texture of your mousse, panna cotta, or jelly depends on the precise ratio of gelatin to liquid volume--a relationship often misunderstood. Using too little results in failure; using too much results in an overly firm structure. Our tool solves this by establishing a scientifically accurate calculation mechanism.
 
 
-## Available Tools
+## Available Tools (3)
 - **gelatine_conversion_factor**: Input form is "sheet" or "powder", input value is the measured amount.
 
 Convert between gelatin sheet and powder forms
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gelatin-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gelatin-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gelatin Converter** tools.
 
 **Configuration:**

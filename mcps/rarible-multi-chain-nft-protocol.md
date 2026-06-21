@@ -33,7 +33,7 @@ Connect to the **Rarible Multi-chain NFT Protocol** and empower your AI agent wi
 - **NFT Collectors & Traders** — monitor floor prices, bids, and collection activities through natural conversation.
 
 
-## Available Tools
+## Available Tools (20)
 - **get_activities_by_collection**: Get activities for a collection
 - **get_activities_by_item**: Get activities for an item
 - **get_activities_by_user**: Get activities for a user
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rarible-multi-chain-nft-protocol` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rarible-multi-chain-nft-protocol` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rarible (Multi-chain NFT Protocol)** tools.
 
 **Configuration:**

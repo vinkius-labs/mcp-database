@@ -38,7 +38,7 @@ No more manual CSV uploads or navigating complex dashboards. Your AI acts as a d
 - **Climate Leads** — monitor processing tasks and report generation status across multiple organizational inventories
 
 
-## Available Tools
+## Available Tools (16)
 - **create_upload**: An upload is required before you can add data records to Watershed.
 After creating an upload, you add data records to it, validate the data, and then submit it for processing.
 The upload acts as a batch grouping mechanism for related activity data.
@@ -201,7 +201,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `watershed-climate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `watershed-climate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Watershed Climate** tools.
 
 **Configuration:**

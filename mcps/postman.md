@@ -34,7 +34,7 @@ No exporting JSONs or jumping back and forth to read raw cURL formats. Ask the A
 - **QA Testers** — monitor failing API scenarios actively reporting through Postman Scheduled Monitors
 
 
-## Available Tools
+## Available Tools (6)
 - **list_collections**: List all available API Collections on the connected Postman account
 - **list_workspaces**: List all available engineering team workspaces in Postman
 - **list_environments**: List development environments (Staging, Prod) and their variables configured in Postman
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `postman` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `postman` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Postman** tools.
 
 **Configuration:**

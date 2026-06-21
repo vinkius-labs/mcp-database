@@ -34,7 +34,7 @@ Connect your **ESPHome** microcontrollers to any AI agent and take full control 
 - **Hardware Engineers** — monitor sensor metrics and trigger actions during prototyping phases.
 
 
-## Available Tools
+## Available Tools (10)
 - **alarm_action**: Perform an action on an alarm control panel
 - **button_press**: Press a button entity
 - **cover_action**: g., blinds, garage door), optionally setting position and tilt.
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `esphome` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `esphome` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ESPHome** tools.
 
 **Configuration:**

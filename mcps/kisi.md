@@ -33,7 +33,7 @@ Connect your **Kisi** account to any AI agent to automate your physical access c
 - **Developers** — Integrate physical access control logic and status monitoring into your custom applications
 
 
-## Available Tools
+## Available Tools (9)
 - **get_lock_details**: Get details for a specific lock
 - **get_place_details**: Get details for a specific place
 - **list_access_groups**: List all access groups
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kisi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kisi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kisi** tools.
 
 **Configuration:**

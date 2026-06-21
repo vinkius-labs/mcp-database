@@ -25,7 +25,7 @@ The **definitive Mega-Server** for Brazilian data intelligence. Why install 5 se
 Power users, data scientists, and AI agents that need comprehensive Brazilian intelligence without managing multiple integrations.
 
 
-## Available Tools
+## Available Tools (15)
 - **list_estados**: List all 27 Brazilian states
 - **get_nome_frequencia**: Get birth frequency by decade for a name
 - **get_ranking_nomes**: Filter by decade or sex.
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibge-full-access-dados-brasileiros` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibge-full-access-dados-brasileiros` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBGE Full Access — Dados Brasileiros** tools.
 
 **Configuration:**

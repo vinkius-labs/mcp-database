@@ -13,7 +13,7 @@ Connect and manage Home River Group properties, units, and residents via Entrata
 Empower your AI agents to interact with Home River Group's property management system. This MCP server allows listing properties, checking unit availability, managing resident information, tracking work orders, and creating leads directly through Entrata. Perfect for automating property maintenance workflows and prospect management.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_lead**: Submits a new lead/prospect to Home River Group
 - **create_work_order**: Creates a new maintenance work order
 - **get_availability**: Checks availability for units in a property
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `home-river-group` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `home-river-group` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Home River Group** tools.
 
 **Configuration:**

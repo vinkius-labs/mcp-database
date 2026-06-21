@@ -32,7 +32,7 @@ Bridge pure observability limits natively managing serverless AI tools via the s
 Strictly modeled bridging **AI Operations (AIOps)**, **Platform Engineers**, and **Systems Architects** tracking costs, evaluating latencies, and provisioning infrastructure for MCP agents.
 
 
-## Available Tools
+## Available Tools (8)
 - **metorial_delete_server**: Dismantle logical server parameters mapping natively
 - **metorial_deploy_server**: Trigger structural remote serverless provisioning of an MCP Logic matrix seamlessly
 - **metorial_get_server_status**: Check explicit logical health matrices protecting a hosted node
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `metorial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `metorial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Metorial** tools.
 
 **Configuration:**

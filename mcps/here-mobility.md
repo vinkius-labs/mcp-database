@@ -34,7 +34,7 @@ Connect AI agents to the HERE Transit API for comprehensive public transportatio
 Essential for **urban commuters**, **travelers**, **tourists**, **accessibility advocates**, **transit enthusiasts**, and **city planners**. Let AI agents find optimal public transit routes, compare multimodal options, check real-time departures, and plan complex journeys across transportation networks. Perfect for anyone in cities with public transit who wants to reduce driving costs, minimize carbon footprint, and navigate efficiently without car ownership.
 
 
-## Available Tools
+## Available Tools (8)
 - **discover_trips**: Returns trip details including departure/arrival times, duration, number of transfers, and transport modes. Use origin and destination in lat,lng format. Optionally specify departure or arrival time in ISO 8601 format. Best for planning multimodal journeys.
 
 Discover public transit trips between origin and destination using HERE Transit API
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `here-mobility` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `here-mobility` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HERE Mobility** tools.
 
 **Configuration:**

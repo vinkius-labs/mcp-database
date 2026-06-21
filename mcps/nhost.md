@@ -32,7 +32,7 @@ Connect your **Nhost** project to any AI agent to manage your backend services t
 - **Support Teams** — quickly verify user profile information and account status to resolve customer issues faster.
 
 
-## Available Tools
+## Available Tools (15)
 - **change_email**: Requires elevated NHOST_JWT credential.
 
 Request to change the authenticated user email
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nhost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nhost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nhost** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Stop digging through nested folders. Your AI agent acts as your personal file li
 - **Content Teams** — manage document lifecycles and export files to different formats for external distribution
 
 
-## Available Tools
+## Available Tools (15)
 - **copy_file**: Create a copy of a file
 - **update_file**: Update file metadata or content
 - **create_file_comment**: Add a comment to a file
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-drive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-drive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Drive** tools.
 
 **Configuration:**

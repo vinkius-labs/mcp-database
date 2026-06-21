@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire event management ecosystem with
 - **Operations Leads** — automate event querying to orchestrate cross-functional production teams smoothly.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_event**: Get details for a specific event
 - **get_me**: Get authenticated user info from Eventbrite
 - **list_attendees**: List attendees for an event
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventbrite-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventbrite-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eventbrite** tools.
 
 **Configuration:**

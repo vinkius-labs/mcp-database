@@ -35,7 +35,7 @@ No more manual editing for every small visual change. Your AI acts as your dedic
 - **Developers** — integrate automated infographic design and export features into custom internal tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **create_infographic**: Create a new infographic
 - **generate_image**: Generate an image for an infographic
 - **generate_json**: Get infographic structure in JSON
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `easelly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `easelly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Easelly** tools.
 
 **Configuration:**

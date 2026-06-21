@@ -13,7 +13,7 @@ Smart CRM that automatically tracks your interactions and provides AI-powered in
 Cloze is a smart CRM that automatically tracks your interactions and provides AI-powered insights to manage your relationships, projects, and deals. Through this MCP server, your AI agent can effortlessly pull contact histories, lookup custom tags, verify relationship strengths, and update ongoing project states without breaking your workflow.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_person**: Provide at least name or email.
 
 Create a new person in Cloze
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloze** tools.
 
 **Configuration:**

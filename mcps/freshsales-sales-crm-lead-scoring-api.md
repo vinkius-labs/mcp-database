@@ -33,7 +33,7 @@ Connect your **Freshsales** CRM to any AI agent to streamline your sales operati
 - **Account Executives** — manage contacts and accounts seamlessly while preparing for meetings.
 
 
-## Available Tools
+## Available Tools (21)
 - **convert_lead**: last_name and company_name are mandatory.
 
 Convert a lead to a contact
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freshsales-sales-crm-lead-scoring-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freshsales-sales-crm-lead-scoring-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Freshsales (Sales CRM & Lead Scoring API)** tools.
 
 **Configuration:**

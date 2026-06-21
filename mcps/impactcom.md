@@ -13,7 +13,7 @@ Manage partnership campaigns, ads, and affiliate payouts via Impact.com API.
 Empower your AI agents to manage your partnership ecosystem with Impact.com (formerly Impact Radius). This MCP server allows you to list campaigns, retrieve ad details, track actions and conversions, manage invoices, and view affiliate payouts directly through the Impact API. Ideal for automating partnership marketing and performance monitoring.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_actions**: Lists all actions (conversions, clicks)
 - **list_ads**: Lists all ads in your account
 - **list_campaigns**: Lists all partnership campaigns
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `impactcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `impactcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Impact.com** tools.
 
 **Configuration:**

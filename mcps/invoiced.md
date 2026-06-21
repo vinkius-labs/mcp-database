@@ -13,7 +13,7 @@ Manage accounts receivable, invoices, and payments via Invoiced API.
 Empower your AI agents to manage your billing and payments lifecycle with Invoiced. This MCP server allows you to list customers, retrieve invoice details, track payments, and view subscription plans directly through the Invoiced API. Ideal for automating accounts receivable and financial operations.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_customer**: Returns contact info, balance data, and payment settings. Use for deep intelligence on a customer before billing interactions.
 
 Retrieves details for a specific customer
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `invoiced` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `invoiced` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Invoiced** tools.
 
 **Configuration:**

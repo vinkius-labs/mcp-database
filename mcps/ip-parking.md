@@ -33,7 +33,7 @@ IP Parking is a Dutch developer of web-based PARCS hardware and software, enabli
 - **Revenue Auditors** — Quickly query transaction logs and verify daily income
 
 
-## Available Tools
+## Available Tools (10)
 - **register_anpr**: Used for testing or manual override of entry/exit.
 
 Simulate or register an ANPR (License Plate Recognition) event
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ip-parking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ip-parking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IP Parking** tools.
 
 **Configuration:**

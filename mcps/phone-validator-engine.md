@@ -18,7 +18,7 @@ LLMs often accept chaotic phone number inputs or try to format them incorrectly 
 - **Country Validation:** Validates the exact country code and identifies fake numbers immediately.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_phone**: Pass the raw phone string and optionally a country code. The engine uses libphonenumber to validate structure, detect carrier type, and format to E.164 standard.
 
 Validates and formats a phone number deterministically to E.164 standard using Google libphonenumber-js
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `phone-validator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `phone-validator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Phone Validator Engine** tools.
 
 **Configuration:**

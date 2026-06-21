@@ -24,7 +24,7 @@ This MCP connector provides specialized tools that model regulatory requirements
 The resulting data provides a definitive compliance report, ensuring your design meets stringent US and local Brazilian Fire Department standards.
 
 
-## Available Tools
+## Available Tools (3)
 - **specify_extinguisher_requirement**: Returns distribution by type (A, B, C) and compliance notes for placement.
 
 Determine required fire extinguisher quantity and type distribution by area and risk class
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fire-safety-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fire-safety-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fire Safety Calculator** tools.
 
 **Configuration:**

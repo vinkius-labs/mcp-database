@@ -34,7 +34,7 @@ No more switching between search engines and chat tools. Your AI acts as a web-g
 - **Analysts** — search the web with domain filters and get structured search results
 
 
-## Available Tools
+## Available Tools (8)
 - **chat**: Requires the model ID (e.g. "sonar", "sonar-pro", "sonar-reasoning") and messages array in JSON format. Each message must have a "role" ("user", "assistant" or "system") and "content" (text). Optionally set max_tokens, temperature (0-1), top_p (0-1), search domain filter, and whether to return images or related questions. Returns the assistant's response with citations.
 
 Send a chat message to a Perplexity model
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `perplexity-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `perplexity-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Perplexity AI** tools.
 
 **Configuration:**

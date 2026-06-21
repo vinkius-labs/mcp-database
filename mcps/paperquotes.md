@@ -32,7 +32,7 @@ Connect to the **PaperQuotes** API to enrich your conversations with inspiration
 - **Writers & Researchers** — Quickly verify quotes and find relevant authors for their work.
 
 
-## Available Tools
+## Available Tools (4)
 - **search_authors**: Search for authors in the database
 - **get_qod**: Get a curated Quote of the Day
 - **list_quotes**: Retrieve quotes from the PaperQuotes database
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paperquotes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paperquotes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PaperQuotes** tools.
 
 **Configuration:**

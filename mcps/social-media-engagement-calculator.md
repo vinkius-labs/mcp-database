@@ -13,7 +13,7 @@ Calculate platform-specific engagement rates for Instagram and LinkedIn and comp
 This MCP server provides specialized tools to quantify social media performance. Use `compute_instagram_engagement` to calculate engagement rates based on likes, comments, and saves relative to impressions. Use `compute_linkedin_engagement` to determine LinkedIn engagement using likes, comments, and shares. You can also use `retrieve_benchmark_standard` to find the target engagement rate for specific account tiers like Nano, Micro, Macro, or Mega.
 
 
-## Available Tools
+## Available Tools (3)
 - **retrieve_benchmark_standard**: Retrieves the target engagement benchmark for a specific account size tier
 - **compute_instagram_engagement**: Determines the engagement rate for Instagram posts
 - **compute_linkedin_engagement**: Determines the engagement rate for LinkedIn posts
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `social-media-engagement-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `social-media-engagement-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Social Media Engagement Calculator** tools.
 
 **Configuration:**

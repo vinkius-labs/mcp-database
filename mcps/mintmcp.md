@@ -33,7 +33,7 @@ Bring Enterprise Governance seamlessly to your AI Agents with the official MintM
 Explicitly designed mapping towards **Security Engineering Leads**, **Enterprise Platform Admins**, and **Compliance Matrices** operating LLMs securely. If restricting AI actions is a requirement, integrating MintMCP handles it frictionlessly.
 
 
-## Available Tools
+## Available Tools (8)
 - **mintmcp_eval_guardrail**: Pass structural parameter string checking via unified security AI PI-redaction guardrail engines
 - **mintmcp_fetch_audit_logs**: Dump systematic telemetries logging SOC2 matrix accesses tracking execution
 - **mintmcp_get_tool_policy**: Fetch the definitive SOC2 governance and RBAC parameters restricting one logic integration
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mintmcp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mintmcp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MintMCP** tools.
 
 **Configuration:**

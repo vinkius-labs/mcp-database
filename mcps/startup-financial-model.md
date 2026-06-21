@@ -13,7 +13,7 @@ Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and
 This MCP server provides a specialized engine for startup financial modeling. Use `query_revenue_growth` to forecast monthly revenue, `query_cost_structure` to calculate COGS and operating expenses, or `generate_comprehensive_projection` to produce a full P&L statement, cash flow projection, and identify your break-even month based on growth rates and cost margins.
 
 
-## Available Tools
+## Available Tools (3)
 - **generate_comprehensive_projection**: Generates a complete financial report
 - **query_cost_structure**: Calculate monthly COGS and Operating Expenses
 - **query_revenue_growth**: Calculate monthly revenue breakdown based on growth assumptions
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `startup-financial-model` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `startup-financial-model` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Startup Financial Model** tools.
 
 **Configuration:**

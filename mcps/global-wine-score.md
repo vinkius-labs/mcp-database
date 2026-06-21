@@ -33,7 +33,7 @@ Global Wine Score aggregates ratings from **Parker (Wine Advocate), Wine Spectat
 - **Enthusiasts** — Data-driven wine exploration beyond single-critic bias
 
 
-## Available Tools
+## Available Tools (6)
 - **get_latest_scores**: ). Each score is a confidence-weighted average out of 100, with vintage and regional context.
 
 Get latest wine scores
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `global-wine-score` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `global-wine-score` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Global Wine Score** tools.
 
 **Configuration:**

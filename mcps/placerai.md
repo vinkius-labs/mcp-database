@@ -34,7 +34,7 @@ Connect your AI agents to **Placer.ai**, the leading location intelligence platf
 - **Data Analysts** — integrate real-world traffic metrics into financial and operational models
 
 
-## Available Tools
+## Available Tools (10)
 - **get_demographics**: Get visitor demographics estimates
 - **get_poi_details**: Get complete details for a specific POI
 - **get_rankings**: Get location performance rankings
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `placerai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `placerai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Placer.ai** tools.
 
 **Configuration:**

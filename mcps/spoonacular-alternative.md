@@ -29,7 +29,7 @@ Connect **Spoonacular** food API to any AI agent and unlock powerful recipe sear
 3. Start exploring recipes and nutrition from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (13)
 - **analyze_recipe**: Analyze a recipe and get enrichment data
 - **extract_recipe**: Useful for importing recipes from blogs or recipe sites.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spoonacular-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spoonacular-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spoonacular** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Dwolla** account to any AI agent and take full control of your pa
 - **Product Managers** — audit funding sources and account balances during development cycles
 
 
-## Available Tools
+## Available Tools (30)
 - **list_account_transfers**: List transfers for an account
 - **list_beneficial_owners**: List beneficial owners for a customer
 - **list_customers**: List or search customers
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dwolla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dwolla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dwolla** tools.
 
 **Configuration:**

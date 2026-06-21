@@ -32,7 +32,7 @@ Integrate **Enspire Commerce**, the comprehensive omni-channel order management 
 - **Operations Teams** — Monitor inventory thresholds and organizational commerce metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_enspire_account_metadata**: Retrieve metadata and limits for your Enspire account
 - **get_order_details**: Get detailed settings and line items for a specific order
 - **get_sku_stock_level**: Get real-time stock levels for a specific product SKU
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `enspire-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `enspire-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Enspire Commerce** tools.
 
 **Configuration:**

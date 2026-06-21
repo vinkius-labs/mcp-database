@@ -34,7 +34,7 @@ Stop manually typing test addresses into the Smarty sandbox or setting up Postma
 - **Logistics Teams** — quickly verify delivery endpoints for complex multi-unit apartment addresses internally
 
 
-## Available Tools
+## Available Tools (7)
 - **autocomplete_intl_address**: Predictive autocomplete for international addresses
 - **autocomplete_us_address**: Predictive autocomplete for US addresses
 - **extract_addresses**: g., emails, documents) and find valid addresses.
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smarty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smarty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Smarty** tools.
 
 **Configuration:**

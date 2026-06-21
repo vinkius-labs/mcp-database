@@ -13,7 +13,7 @@ Analyze startup burn rate, expense composition, and runway forecasting.
 The Burn Rate Analyzer is a financial diagnostic tool designed for startups to monitor monthly expenditure distribution and operational efficiency. Using tools like `analyze_expense_composition`, you can break to breakdown costs across categories such as salaries, infrastructure, and marketing. The `compare_stage_benchmarks` tool allows you to evaluate your spending against industry standards for Seed, Series A, or Series B stages, identifying high overhead areas. Additionally, use `calculate_runway_forecast` to determine how many months of operation remain based on your current cash reserves and monthly burn rate.
 
 
-## Available Tools
+## Available Tools (3)
 - **compare_stage_benchmarks**: Evaluates the company's spending distribution against standard industry benchmarks
 - **analyze_expense_composition**: Analyzes the distribution of expenses across all categories and calculates efficiency ratios
 - **calculate_runway_forecast**: Determines how many months of operation remain based on current cash reserves and burn rate
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `burn-rate-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `burn-rate-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Burn Rate Analyzer** tools.
 
 **Configuration:**

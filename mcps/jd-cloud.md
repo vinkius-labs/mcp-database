@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your cloud infrastructure and supply chain 
 - **JD Cloud Power Users** — integrate your existing cloud projects into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_profile**: Get IAM user info
 - **get_billing_summary**: Get billing overview
 - **get_vm_detail**: Get VM metadata
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jd-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jd-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JD Cloud / 京东云** tools.
 
 **Configuration:**

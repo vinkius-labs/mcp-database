@@ -13,7 +13,7 @@ Calculate marketing payback periods, channel efficiency rankings, and optimized 
 This MCP server provides advanced financial modeling for customer acquisition analysis. Use `calculate_payback_curves` to generate month-by-month trajectories of cumulative gross margin against CAC, `rank_channels_by_payback` to identify which channels reach break-even fastest, and `optimize_budget_allocation` to distribute marketing funds toward the most efficient channels based on capital velocity.
 
 
-## Available Tools
+## Available Tools (3)
 - **optimize_budget_allocation**: Suggests how to distribute a total marketing budget across channels
 - **rank_channels_by_payback**: Identifies which channels reach their break-even point fastest
 - **calculate_payback_curves**: Generates a month-by-month trajectory of cumulative gross margin against the initial CAC
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `payback-period-by-channel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `payback-period-by-channel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Payback Period by Channel** tools.
 
 **Configuration:**

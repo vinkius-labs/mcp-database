@@ -33,7 +33,7 @@ Access over 60,000 artworks from the **Cleveland Museum of Art** directly throug
 - **Designers & Creatives** — use similarity search to find visual inspiration from historical masterpieces
 
 
-## Available Tools
+## Available Tools (9)
 - **get_artwork**: Retrieve a specific artwork by its Athena ID or accession number
 - **get_creator**: Retrieve a specific creator record by ID
 - **get_exhibition**: Retrieve a specific exhibition by ID
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cleveland-museum-of-art` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cleveland-museum-of-art` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cleveland Museum of Art** tools.
 
 **Configuration:**

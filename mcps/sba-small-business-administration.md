@@ -32,7 +32,7 @@ Connect to the **U.S. Small Business Administration (SBA)** data services to ver
 - **Financial Analysts** — automate the gathering of SBA geographic resources and business size data for reporting.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_all_geographic_links**: Get all geographic links from the SBA system
 - **get_city_county_links**: Get geographic links filtered by city or county
 - **check_small_business_status**: Check if a business qualifies as small under SBA regulations
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sba-small-business-administration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sba-small-business-administration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SBA (Small Business Administration)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Strava** account to any AI agent to analyze your fitness data and
 - **Data Enthusiasts** — export routes and activity streams directly into your workflow for custom analysis.
 
 
-## Available Tools
+## Available Tools (31)
 - **create_activity**: Create a manual activity
 - **explore_segments**: Explore segments by bounds
 - **export_route_gpx**: Export route as GPX
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `strava-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `strava-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Strava** tools.
 
 **Configuration:**

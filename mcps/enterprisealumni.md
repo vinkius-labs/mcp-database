@@ -32,7 +32,7 @@ Integrate **EnterpriseAlumni**, the strategic alumni engagement platform, direct
 - **Operations Teams** — Monitor network growth and organizational engagement metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_enterprisealumni_metadata**: Retrieve metadata and limits for your EnterpriseAlumni account
 - **get_alumni_detailed_profile**: Get detailed profile information for a specific alumni member
 - **get_network_engagement_summary**: Retrieve a high-level summary of network engagement metrics
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `enterprisealumni` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `enterprisealumni` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EnterpriseAlumni** tools.
 
 **Configuration:**

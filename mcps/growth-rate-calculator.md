@@ -27,7 +27,7 @@ The server operates through three connected tools that model different aspects o
 The result is not just a set of numbers; it is a comprehensive financial blueprint that helps determine if your growth rates are sustainable, profitable, and where your business stands relative to key industry benchmarks.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_historical_growth**: Pass data as a JSON array of objects with date and revenue fields.
 
 Analyze historical revenue growth across time periods
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `growth-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `growth-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Growth Rate Calculator** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ LLMs lose their context window when sorting arrays of 500+ items. They forget el
 - **Data Integrity:** Your array will never magically lose elements.
 
 
-## Available Tools
+## Available Tools (2)
 - **remove_duplicates**: Pass the array and the grouping key. The engine returns a structured map of grouped entries.
 
 Removes exact duplicates from a JSON array deterministically
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `data-sorting-filtering-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `data-sorting-filtering-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Data Sorting & Filtering Engine** tools.
 
 **Configuration:**

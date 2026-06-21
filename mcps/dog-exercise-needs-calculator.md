@@ -24,7 +24,7 @@ This service provides a comprehensive calculation based on established veterinar
 This system connects pet owners with actionable, science-backed plans, ensuring the recommended activity type is safe for their joints while providing enough stimulation to prevent boredom and anxiety. The result is a clear, customized roadmap for optimal canine health.
 
 
-## Available Tools
+## Available Tools (2)
 - **calculate_exercise_needs**: Calculate daily exercise needs for a dog
 - **classify_intensity**: Classify exercise intensity based on energy level
 
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dog-exercise-needs-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dog-exercise-needs-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dog Exercise Needs Calculator** tools.
 
 **Configuration:**

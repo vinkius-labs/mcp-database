@@ -35,7 +35,7 @@ No more clicking through the Supabase dashboard to check project status or manag
 - **Team Leads** — monitor organization health, track project creation and verify secret security across teams
 
 
-## Available Tools
+## Available Tools (14)
 - **create_branch**: The branch gets an isolated copy of the database that can be modified independently. Returns the created branch with its name and status.
 
 Create a new branch for a Supabase project
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `supabase-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `supabase-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Supabase** tools.
 
 **Configuration:**

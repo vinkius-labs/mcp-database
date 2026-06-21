@@ -28,7 +28,7 @@ Bring advanced survey analytics into your AI workflow with QuestionPro. Your age
 Ideal for market researchers, HR teams, and product managers needing fast, AI-driven insights from customer and employee feedback.
 
 
-## Available Tools
+## Available Tools (13)
 - **check_questionpro_status**: Verify connectivity
 - **create_survey**: Create a survey
 - **get_question**: Get question details
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `questionpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `questionpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QuestionPro** tools.
 
 **Configuration:**

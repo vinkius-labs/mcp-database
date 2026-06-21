@@ -34,7 +34,7 @@ No more manual navigation through the cloud console for routine checks. Your AI 
 - **Developers** — spin up or rebuild development environments directly from a coding assistant
 
 
-## Available Tools
+## Available Tools (38)
 - **list_certificates**: List all certificates
 - **create_certificate**: Create a new certificate
 - **create_firewall**: Create a new firewall
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hetzner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hetzner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hetzner** tools.
 
 **Configuration:**

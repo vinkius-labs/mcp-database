@@ -33,7 +33,7 @@ Connect your **Mastodon** account to any AI agent and manage your decentralized 
 - **Community Managers** — Monitor notifications and manage account relationships efficiently.
 
 
-## Available Tools
+## Available Tools (32)
 - **clear_notifications**: Clear all notifications
 - **unfollow_account**: Unfollow a Mastodon account
 - **block_account**: Block a Mastodon account
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mastodon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mastodon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mastodon** tools.
 
 **Configuration:**

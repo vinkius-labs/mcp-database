@@ -33,7 +33,7 @@ Connect your AI agent to the **Spaceflight News API (SNAPI)** to stay updated wi
 - **Developers** — integrate real-time space news feeds into your own applications or dashboards via your AI assistant.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_article**: Get a specific spaceflight news article
 - **list_articles**: List spaceflight news articles
 - **list_blogs**: List spaceflight blogs
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spaceflight-news` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spaceflight-news` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spaceflight News** tools.
 
 **Configuration:**

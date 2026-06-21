@@ -33,7 +33,7 @@ Connect to the **CurseForge** API and empower your AI agent to navigate the vast
 - **Server Administrators** — Automate the process of checking for mod updates and gathering download links for server packs.
 
 
-## Available Tools
+## Available Tools (17)
 - **list_categories**: Get all available classes and categories for a game
 - **get_files_batch**: Get a list of files by their IDs
 - **get_fingerprints_matches_fuzzy**: Get matches for a list of file fingerprints using fuzzy matching
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `curseforge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `curseforge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CurseForge** tools.
 
 **Configuration:**

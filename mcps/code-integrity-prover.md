@@ -42,7 +42,7 @@ The engine validates consistency: if the agent claims `CODE_PROVEN` but describe
 - **Grounded in Martin Fowler's Refactoring, Kent Beck's Simple Design, Sandi Metz's rules** — not opinions, but established engineering principles.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_code_integrity**: Code that compiles is not code that is correct. Code that passes tests is not code that is maintainable. You must: (1) enforce TYPE SAFETY — zero escape hatches. No `any` (TypeScript), no `void*` (C/C++), no `unsafe` (Rust), no `type: ignore` (Python), no `as` to silence errors, no non-null assertions. If the type system complains, the TYPE is wrong — fix the type, not the complaint, (2) audit for PLACEHOLDERS — zero TODO, FIXME, HACK, stub, panic!, unimplemented!(), NotImplementedError, mock data, or "will be implemented later" comments in code that will ship. If it is not implemented, it is not done. If it is not done, do not commit it, (3) audit for WORKAROUNDS — zero sleep() loops, busy-wait polling, setTimeout-as-fix, retry-without-diagnosis, "just restart the service," magic delay values. These mask root causes. If you need a delay, you have a race condition. Fix the race condition, (4) validate ERROR HANDLING — every catch/except block must: (a) catch a SPECIFIC error type, not generic Exception/Error, (b) perform a RECOVERY action or propagate meaningfully, (c) preserve debugging context (stack trace, relevant state). Empty catch {} is error suppression. catch(e) { log(e) } without recovery is error decoration, not handling, (5) audit for DUPLICATION — no copy-pasted blocks (extract to function), no magic numbers (extract to named constant), no hardcoded config (extract to config/env), no similar functions that differ by one parameter (extract to parameterized function). If rejected, the code has a structural integrity flaw. Fix the root cause, not the symptom.
 
 Structured reflection tool for code integrity validation across any language or framework. Forces the agent to prove code is free of type evasions, placeholder stubs, timing workarounds, swallowed errors, and duplicated logic before committing or proposing changes. Catches Type Evasion (any/void*/unsafe/type:ignore — silencing the type system instead of fixing the type), Placeholder Residue (TODO/FIXME/HACK/stub/panic! left in code that will ship — incomplete work disguised as done), Workaround Patterns (sleep loops, busy-wait polling, retry-without-diagnosis, timeout-as-fix — treating symptoms instead of root causes), Error Swallowing (empty catch blocks, catch-and-log-only, generic Exception without recovery — hiding failures instead of handling them), and Duplication Drift (copy-paste blocks, magic numbers, hardcoded config, similar functions that should be one). Call once per code change, PR review, or implementation proposal
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `code-integrity-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `code-integrity-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Code Integrity Prover** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ No more manual navigation through complex Jira plugins to find a test script. Yo
 - **Developers** — lookup test steps and preconditions for failed executions to rapidly debug software defects
 
 
-## Available Tools
+## Available Tools (10)
 - **get_execution**: Retrieves full details of a Zephyr Scale test execution
 - **list_test_plans**: Lists all test plans in a Zephyr Scale project
 - **list_test_cases**: Provide a Jira project key (e.g. "PROJ"). Returns test case keys, names, and statuses. Paginated.
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zephyr-scale-smartbear` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zephyr-scale-smartbear` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zephyr Scale (SmartBear)** tools.
 
 **Configuration:**

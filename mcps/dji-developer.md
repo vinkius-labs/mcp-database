@@ -35,7 +35,7 @@ Connect your AI agents to the **DJI Developer Platform**, the industry standard 
 - **DevOps Engineers** — monitor remote firmware deployments and device synchronization at scale
 
 
-## Available Tools
+## Available Tools (10)
 - **create_mission**: Create a new flight mission for a drone or dock
 - **get_device_osd**: Retrieve real-time flight data (OSD)
 - **get_device_status**: Get the online status and basic state of a drone
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dji-developer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dji-developer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DJI Developer** tools.
 
 **Configuration:**

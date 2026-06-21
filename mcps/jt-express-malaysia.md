@@ -35,7 +35,7 @@ Connect your AI agents to **J&T Express Malaysia**, the leading technology-drive
 - **Customer Support Teams** — quickly provide real-time parcel statuses and shipping estimates
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_order**: Cancel a previously created delivery order
 - **create_order**: Create a new J&T Express delivery order
 - **get_order_details**: Get details for a specific order
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jt-express-malaysia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jt-express-malaysia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **J&T Express Malaysia** tools.
 
 **Configuration:**

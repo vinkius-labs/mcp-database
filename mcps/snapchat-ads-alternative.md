@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on Snapch
 - **Business Owners** — automate ad querying to orchestrate your Snapchat-driven growth strategy smoothly.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_ad_account**: Get details for a specific ad account
 - **list_organizations**: List Snapchat organizations
 - **get_ad_account_stats**: Get statistics for an ad account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snapchat-ads-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snapchat-ads-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Snapchat Ads** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent directly to **Giuseppe**, NotCo’s proprietary Food Tech 
 - **Strategic Food Partners** — monitor project progress and evaluate AI-generated prototypes rapidly
 
 
-## Available Tools
+## Available Tools (14)
 - **analyze_nutrition**: Analyze the nutritional output of a formulation
 - **create_formulation**: Request a new AI formulation
 - **create_project**: Create a new R&D project
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `notco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `notco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NotCo** tools.
 
 **Configuration:**

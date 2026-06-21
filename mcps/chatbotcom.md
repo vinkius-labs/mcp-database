@@ -35,7 +35,7 @@ Connect your **ChatBot.com** account to any AI agent and take full control of yo
 - **Product Managers** — identify bot training needs and analyze entity usage for roadmap planning
 
 
-## Available Tools
+## Available Tools (8)
 - **get_story_details**: Get detailed information for a specific story
 - **get_chatbot_user_details**: Get details for a specific chatbot user
 - **list_chatbot_entities**: List custom entities used for NLP matching
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chatbotcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chatbotcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChatBot.com** tools.
 
 **Configuration:**

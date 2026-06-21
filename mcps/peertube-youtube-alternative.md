@@ -34,7 +34,7 @@ Connect your **PeerTube** instance to any AI agent to explore the decentralized 
 - **Privacy Enthusiasts** — Access decentralized video content through a secure, AI-driven interface.
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_video_download**: Generate video download
 - **get_completed_jobs**: Requires authentication.
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `peertube-youtube-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `peertube-youtube-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PeerTube (YouTube Alternative)** tools.
 
 **Configuration:**

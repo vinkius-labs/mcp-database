@@ -21,7 +21,7 @@ Connect your **SevenRooms** restaurant to any AI agent — the premium hospitali
 - **Multi-venue** — Cross-restaurant group analytics
 
 
-## Available Tools
+## Available Tools (8)
 - **list_reservations**: "Who is dining tonight?"
 
 List restaurant reservations
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sevenrooms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sevenrooms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SevenRooms** tools.
 
 **Configuration:**

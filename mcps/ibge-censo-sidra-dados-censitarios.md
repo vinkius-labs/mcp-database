@@ -28,7 +28,7 @@ Connect your AI agent to **SIDRA** — Brazil's most powerful statistical data s
 Economists, journalists, policy researchers, investment analysts, ESG consultants, and data scientists working with Brazilian macroeconomic data.
 
 
-## Available Tools
+## Available Tools (4)
 - **list_agregados**: List all SIDRA aggregate tables grouped by survey
 - **get_agregado_data**: Example: aggregate 4714 (IPCA) variable 63 (monthly variation). Levels: N1=Brasil, N2=Região, N3=UF, N6=Município.
 
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibge-censo-sidra-dados-censitarios` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibge-censo-sidra-dados-censitarios` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBGE Censo & SIDRA — Dados Censitários** tools.
 
 **Configuration:**

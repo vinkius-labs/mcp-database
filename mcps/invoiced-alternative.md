@@ -35,7 +35,7 @@ No more manual following up on overdue payments or missing billing updates. Your
 - **Developers** â€” integrate high-speed Invoiced billing data into custom ERP and accounting pipelines through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_invoiced_status**: Verify Invoiced API connectivity
 - **create_customer**: Create a customer
 - **create_invoice**: Pass line items as JSON array with name, quantity, and unit_cost.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `invoiced-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `invoiced-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Invoiced** tools.
 
 **Configuration:**

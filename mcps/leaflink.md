@@ -33,7 +33,7 @@ Connect your **LeafLink** account to any AI agent to automate your cannabis whol
 - **Sales Directors** — Quickly query brand catalogs and buyer information during planning sessions
 
 
-## Available Tools
+## Available Tools (9)
 - **list_wholesale_brands**: List all brands in your account
 - **create_new_product**: Requires a JSON body with product details.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leaflink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leaflink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LeafLink** tools.
 
 **Configuration:**

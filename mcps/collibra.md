@@ -31,7 +31,7 @@ Connect your AI to **Collibra**, the data intelligence platform that helps organ
 - **Compliance Teams** — Verify data classifications and governance policies quickly.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_asset**: Create a new asset in Collibra
 - **get_asset**: Retrieve detailed information about a specific asset
 - **get_community_details**: Retrieve detailed information about a specific community
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `collibra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `collibra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Collibra** tools.
 
 **Configuration:**

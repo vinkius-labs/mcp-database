@@ -35,7 +35,7 @@ No more switching between your code editor and the Payload Admin panel to verify
 - **DevOps Engineers** — inspect system globals and configuration settings across different environments
 
 
-## Available Tools
+## Available Tools (11)
 - **create_document**: Create a new document in a collection
 - **delete_document**: Delete a document
 - **get_document**: Get a single document by ID
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `payload-cms-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `payload-cms-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Payload CMS** tools.
 
 **Configuration:**

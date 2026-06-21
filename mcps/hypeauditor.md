@@ -13,7 +13,7 @@ Analyze influencers and retrieve reports via HypeAuditor API.
 Empower your AI agents with HypeAuditor's industry-leading influencer analytics. This MCP server allows you to search for influencers across Instagram, YouTube, and TikTok, retrieve detailed audit reports, and manage your account insights directly through the HypeAuditor API. Ideal for data-driven influencer marketing and brand protection.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_info**: Gets your HypeAuditor account details
 - **get_influencer_report**: Retrieves a detailed report for an influencer
 - **get_rate_limit**: Gets current API rate limit status
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hypeauditor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hypeauditor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HypeAuditor** tools.
 
 **Configuration:**

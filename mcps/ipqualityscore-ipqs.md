@@ -13,7 +13,7 @@ Detect fraud, proxies, and malicious activity via IPQS API.
 Empower your AI agents to protect your platform with IPQualityScore (IPQS). This MCP server allows you to perform real-time lookups for IPs, emails, URLs, and phone numbers to detect fraud, bots, and high-risk activity. Ideal for automating security checks and enhancing risk management.
 
 
-## Available Tools
+## Available Tools (10)
 - **email_lookup**: Returns a risk score and validation flags. Use this to vet new user registrations and prevent fraudulent accounts.
 
 Analyzes an email address for fraud and deliverability
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ipqualityscore-ipqs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ipqualityscore-ipqs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IPQualityScore (IPQS)** tools.
 
 **Configuration:**

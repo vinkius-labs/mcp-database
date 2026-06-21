@@ -35,7 +35,7 @@ Connect your AI agents to **Correios**, the official national postal service of 
 - **Customer Support Teams** — quickly provide real-time package statuses and address validation
 
 
-## Available Tools
+## Available Tools (8)
 - **calculate_price_deadline**: Calculate shipping price and delivery deadline
 - **get_contract_status**: Check the current status of your Correios contract
 - **get_unit_info**: Get details for a specific post office unit
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `correios-brazil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `correios-brazil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Correios (Brazil)** tools.
 
 **Configuration:**

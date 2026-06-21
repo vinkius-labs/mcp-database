@@ -27,7 +27,7 @@ Connect the **Rick and Morty API** to any AI agent and explore the complete show
 3. Start exploring the multiverse from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (9)
 - **get_character**: Get detailed character information
 - **get_characters**: Get multiple characters at once
 - **get_episode**: Get detailed episode information
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rick-and-morty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rick-and-morty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rick and Morty** tools.
 
 **Configuration:**

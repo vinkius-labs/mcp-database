@@ -22,7 +22,7 @@ This MCP uses a hyper-fast glob pattern to scan hundreds of local `.md` files in
 - **Status Aware:** Perfectly distinguishes between open and completed tasks.
 
 
-## Available Tools
+## Available Tools (1)
 - **extract_markdown_todos**: Provide the absolute directory path to scan.
 
 Scan a local directory of Markdown files (Obsidian, Notion, Logseq) and extract all open and completed tasks (- [ ] and - [x])
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `markdown-task-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `markdown-task-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Markdown Task Extractor** tools.
 
 **Configuration:**

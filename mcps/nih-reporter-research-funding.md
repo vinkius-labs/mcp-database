@@ -33,7 +33,7 @@ Connect to the **NIH RePORTER** (Research Portfolio Online Reporting Tools) to e
 - **Grant Writers & Administrators** — research successful grant examples and funding patterns within specific institutions or fields.
 
 
-## Available Tools
+## Available Tools (2)
 - **search_projects**: Use this to find grants, funding amounts, PIs, and organizations.
 
 Search for NIH projects based on specified criteria
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nih-reporter-research-funding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nih-reporter-research-funding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NIH RePORTER (Research Funding)** tools.
 
 **Configuration:**

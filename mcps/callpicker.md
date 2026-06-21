@@ -35,7 +35,7 @@ No more manual logging of phone results or digging through complex PBX portals. 
 - **Developers** — integrate high-speed virtual calling and CDR data into custom workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (9)
 - **get_call_details**: Get details for a specific call
 - **get_cdr_report**: Get Call Detail Records (CDR)
 - **get_pbx_system_status**: Check PBX system status
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `callpicker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `callpicker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Callpicker** tools.
 
 **Configuration:**

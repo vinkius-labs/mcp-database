@@ -28,7 +28,7 @@ Connect your **Shipmondo** account to any AI agent and take full control of your
 No more manual carrier portal logins. Your AI acts as a dedicated logistics coordinator.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_shipment**: Pass data as a JSON string.
 
 Create a new shipment
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shipmondo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shipmondo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shipmondo** tools.
 
 **Configuration:**

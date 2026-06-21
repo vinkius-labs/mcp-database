@@ -34,7 +34,7 @@ Connect your **Fathom Analytics** account to any AI agent and take full control 
 - **Business Owners** — check key traffic metrics and current visitor counts through simple natural language questions
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_info**: Get Fathom Analytics account information
 - **get_current_visitors**: Get the number of current visitors on a site
 - **get_device_stats**: Get device type aggregations for a site
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fathom-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fathom-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fathom Analytics** tools.
 
 **Configuration:**

@@ -37,7 +37,7 @@ No more manual exporting of timesheets for simple availability checks. Your AI a
 - **HR Specialists** — automate the process of retrieving employee profiles and role assignments.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_active_clock_ins**: List all employees currently clocked in at a specific location
 - **get_employee_profile**: Get detailed information for a specific employee
 - **get_api_profile**: Retrieve information about the authenticated user and plan status
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `homebase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `homebase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Homebase** tools.
 
 **Configuration:**

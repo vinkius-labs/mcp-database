@@ -13,7 +13,7 @@ Compute exact Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) for re
 Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) are the golden standards for validating regression algorithms (like predicting housing prices or stock values). When asking an AI agent to compare two arrays of numeric predictions, the AI will often approximate or outright invent the square roots and averages. This engine processes the arrays natively in JS, returning mathematically pristine MSE, RMSE, and MAE metrics in milliseconds.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_regression_metrics**: Calculates exact RMSE, MAE, and MSE for regression model validation
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rmse-mae-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rmse-mae-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RMSE & MAE Calculator** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Mercury** business banking account to your AI agent and manage yo
 - **Bookkeepers & CFOs** — Monitor cash flow and payment activity across multiple Mercury accounts from a single conversational interface.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_accounts**: List all Mercury bank accounts
 - **list_team_members**: List all team members
 - **get_account**: Get bank account details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mercury` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mercury` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mercury** tools.
 
 **Configuration:**

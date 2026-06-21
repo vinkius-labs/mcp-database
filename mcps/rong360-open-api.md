@@ -31,7 +31,7 @@ Connect your AI backend directly to **Rong360** (融360), a massive financial bi
 - **Security Teams** — Build robust AI vetting workflows prior to onboarding high-value accounts
 
 
-## Available Tools
+## Available Tools (4)
 - **check_credit_score**: Generate a big data credit score profile
 - **detect_face**: Perform facial recognition matching against a government ID
 - **validate_mobile_number**: Validate carrier ownership of a mobile phone
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rong360-open-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rong360-open-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rong360 Open API** tools.
 
 **Configuration:**

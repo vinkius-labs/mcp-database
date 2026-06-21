@@ -13,7 +13,7 @@ Calculate US federal court filing deadlines with automatic weekend and holiday a
 This MCP server provides specialized tools for legal professionals to determine US federal procedural filing deadlines. By using `calculate_deadline`, you can input an event date and a rule type (such as RULE_12 or NOTICE_OF_APPEAL) to find the final deadline, automatically adjusted for weekends and federal holidays. The server also includes `list_supported_rules` to browse available legal rules and `check_date_validity` to verify if a specific date is a valid business day for starting a legal clock.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_deadline**: Determines the final filing deadline for a specific event and rule type
 - **check_date_validity**: Validates whether a provided date is a viable starting point for a legal clock
 - **list_supported_rules**: Provides a list of all legal rules currently supported by the calculator
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-filing-deadline-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-filing-deadline-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Filing Deadline Calculator** tools.
 
 **Configuration:**

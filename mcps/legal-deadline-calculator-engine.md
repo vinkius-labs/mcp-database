@@ -13,7 +13,7 @@ Compute rigorous procedural deadlines in business days without risking LLM mathe
 In the legal profession, missing a deadline is catastrophic. Language models notoriously fail at date math, completely ignoring weekends and national holidays when asked to add 15 business days. This engine performs exact, local procedural deadline computations. By natively processing ISO dates and explicitly skipping non-business days and user-provided holidays, it ensures your autonomous legal agents never miss a filing date.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_legal_deadline**: Provide optional holidays to skip.
 
 Calculates exact procedural deadlines in business days, skipping weekends and optional holidays
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `legal-deadline-calculator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `legal-deadline-calculator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Legal Deadline Calculator Engine** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your customer engagement with **MeiQia** (�
 - **Business Owners** — get real-time insights into organization-wide customer engagement and agent performance.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_customer**: Create a new customer
 - **get_agent_status**: Get agent online status
 - **get_conversation**: Get conversation details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meiqia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meiqia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MeiQia** tools.
 
 **Configuration:**

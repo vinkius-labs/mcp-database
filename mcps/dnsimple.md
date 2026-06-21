@@ -35,7 +35,7 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 - **IT Administrators** — audit multiple accounts and list domains across different organizational units efficiently.
 
 
-## Available Tools
+## Available Tools (77)
 - **issue_letsencrypt_renewal**: Issue a Let's Encrypt certificate renewal
 - **list_accounts**: List accounts the authenticated entity has access to
 - **list_billing_charges**: List billing charges for an account
@@ -175,7 +175,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dnsimple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dnsimple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DNSimple** tools.
 
 **Configuration:**

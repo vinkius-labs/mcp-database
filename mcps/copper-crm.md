@@ -32,7 +32,7 @@ Integrate **Copper**, the CRM designed for Google Workspace, directly into your 
 - **Business Owners** — Get a quick overview of the sales pipeline and project progress.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_lead**: Creates a new lead record with identity properties and prepares it for pipeline entry.
 
 Create a new lead in the CRM
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `copper-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `copper-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Copper CRM** tools.
 
 **Configuration:**

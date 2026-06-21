@@ -34,7 +34,7 @@ Connect your **Vouchery.io** account to any AI agent to automate your promotiona
 - **Loyalty Managers** — track customer engagement and manage personalized rewards efficiently within the AI interface.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_campaign**: Provide name and type.
 
 Create a new marketing campaign
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `voucheryio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `voucheryio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vouchery.io** tools.
 
 **Configuration:**

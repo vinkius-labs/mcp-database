@@ -11,7 +11,7 @@ Connect Zulip to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (9)
 - **zulip_add_reaction**: Add an emoji reaction to a message
 - **zulip_get_messages**: Use anchor "newest" for latest messages.
 
@@ -52,7 +52,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zulip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zulip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zulip** tools.
 
 **Configuration:**

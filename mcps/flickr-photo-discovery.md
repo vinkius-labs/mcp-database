@@ -33,7 +33,7 @@ Equip your AI agent with the world's most iconic photography database through th
 - **Travel Enthusiasts** — explore specific locations through the eyes of the global photography community.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_flickr_photo_info**: Get detailed information for a specific photo
 - **get_recent_flickr_photos**: Get most recent public photos
 - **search_flickr_photos**: Search for public photos on Flickr
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flickr-photo-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flickr-photo-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flickr Photo Discovery** tools.
 
 **Configuration:**

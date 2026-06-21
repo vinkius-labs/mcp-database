@@ -32,7 +32,7 @@ Connect the **BaconIpsum** generator to your AI agent to spice up your mockups a
 - **Content Strategists** — create draft presentations and wireframes with a unique, flavorful touch
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_text**: Generate meaty lorem ipsum text
 
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `baconipsum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `baconipsum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BaconIpsum** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ No more manual clicks in the web UI just to refresh your latest manga chapters. 
 - **Developers** — integrate Kavita management into your coding workflows or custom automation scripts.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_authkey_expires**: Check API key expiration date
 - **authenticate**: Authenticate and receive a JWT token
 - **scan_all_libraries**: Trigger a scan of all libraries
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kavita-ebookmanga` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kavita-ebookmanga` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kavita (eBook/Manga)** tools.
 
 **Configuration:**

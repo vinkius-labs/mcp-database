@@ -13,7 +13,7 @@ Automate physical mail, postcards, checks, and address verification through Lob'
 Lob MCP Server enables AI agents to send physical mail directly from your applications. Create and mail letters, postcards, and checks programmatically through Lob's print and mail API. Verify US and international addresses, autocomplete partial addresses, and manage your address book. Build reusable HTML templates for personalized mailings. Perfect for automating vendor payments, customer communications, marketing campaigns, payroll checks, and direct mail operations. All mail is printed, processed, and delivered within 24 hours via USPS integration.
 
 
-## Available Tools
+## Available Tools (21)
 - **autocomplete_us_address**: Autocomplete a partial US address
 - **cancel_letter**: Only works if status is still "processing".
 
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lob** tools.
 
 **Configuration:**

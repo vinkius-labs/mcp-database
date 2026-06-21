@@ -32,7 +32,7 @@ Integrate **Craftnet**, the developer services platform for Craft CMS, directly 
 - **Digital Marketers** — Search for new plugins and explore store categories during project planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_details**: Retrieve metadata for your Craftnet account
 - **get_plugin_details**: Get detailed information for a specific plugin
 - **list_plugin_categories**: List all plugin categories on the Craft Store
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `craft-cms-craftnet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `craft-cms-craftnet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Craft CMS (Craftnet)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to **NASA TechPort** to explore the agency's comprehensive resource for 
 - **Policy Makers & Analysts** — track NASA's technology investments and program distributions across different organizations.
 
 
-## Available Tools
+## Available Tools (29)
 - **search_object_all_data**: Conduct a search for all objects with all fields included
 - **list_organization_types**: List available organization types
 - **list_organizations**: List organizations matching filters
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-techport-technology-projects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-techport-technology-projects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA TechPort (Technology Projects)** tools.
 
 **Configuration:**

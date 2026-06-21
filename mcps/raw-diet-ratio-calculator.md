@@ -13,7 +13,7 @@ Calculate precise daily food weights for BARF and PMR raw diets based on pet wei
 The Raw Diet Ratio Calculator is a specialized tool for pet owners following biologically appropriate raw feeding protocols like BARF or PMR. By providing your pet's weight and activity level, you can use tools like `calculate_daily_mass_requirement` to find the total daily food mass needed. The server then allows you to use `calculate_component_grams` to partition that mass into exact grams of muscle meat, meaty bones, organs, and vegetables according to the 80/10/5/5 ratio. It ensures your pet receives the correct nutritional balance without guesswork.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_component_grams**: Split total food mass into specific gram amounts for each dietary group
 - **calculate_daily_mass_requirement**: Determine the total amount of protein (in grams) needed for a 24-hour period
 - **get_protocol_description**: Provide a human-readable explanation of the dietary ratio
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `raw-diet-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `raw-diet-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Raw Diet Ratio Calculator** tools.
 
 **Configuration:**

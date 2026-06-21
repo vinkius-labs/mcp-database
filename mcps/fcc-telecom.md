@@ -19,7 +19,7 @@ The **FCC Telecom MCP Server** lets your AI agent search the Universal Service A
 - **Corporate Discovery** — Type any partial corporate name and let the AI extract real registered names straight from public accountability ledgers.
 
 
-## Available Tools
+## Available Tools (2)
 - **lookup_filer_by_id**: Lookup a specific Telecommunications operator by their exact FCC Form 499 Filer ID
 - **search_telecom_filers**: Perform a fuzzy string search across the national telecom database by company brand
 
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fcc-telecom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fcc-telecom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FCC Telecom** tools.
 
 **Configuration:**

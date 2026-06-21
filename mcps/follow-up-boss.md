@@ -35,7 +35,7 @@ Connect your **Follow Up Boss** (FUB) account to any AI agent to automate your r
 - **Lead Coordinators** — automate the organization of new inquiries and follow-up tasks without switching apps.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_note**: Add a note to a contact
 - **create_person**: Create a new contact
 - **create_task**: Add a new task
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `follow-up-boss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `follow-up-boss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Follow Up Boss** tools.
 
 **Configuration:**

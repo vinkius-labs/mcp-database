@@ -13,7 +13,7 @@ Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities.
 This MCP server provides a specialized engine for multinational enterprises to ensure compliance with the OECD Pillar Two framework. By using tools like `calculate_jurisdictional_deficiency`, companies can identify jurisdictions where the local effective tax rate falls below the 15% global minimum threshold. The server also enables calculating the weighted average global ETR via `calculate_global_etr` and determining the total enterprise-wide tax obligation, including all top-up taxes, through `calculate_consolidated_burden`. It acts as a critical bridge for AI agents to perform complex international tax computations accurately.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_consolidated_burden**: Provide the final total tax obligation for the entire enterprise including top-up adjustments
 - **calculate_global_etr**: Find the single weighted average tax rate for a company's entire global operations
 - **calculate_jurisdictional_deficiency**: Determine if a specific country's tax rate is insufficient and calculate the resulting liability
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `global-effective-tax-rate-pillar-two-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `global-effective-tax-rate-pillar-two-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Global Effective Tax Rate & Pillar Two Compliance** tools.
 
 **Configuration:**

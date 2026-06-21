@@ -33,7 +33,7 @@ Connect your **GoatCounter** account to any AI agent to monitor your web traffic
 - **Site Owners** — get quick summaries of daily traffic and top-performing content via simple chat commands.
 
 
-## Available Tools
+## Available Tools (14)
 - **count_hits**: Send pageviews or events to GoatCounter
 - **create_site**: Create a new site
 - **download_export**: Download a completed export file
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `goatcounter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `goatcounter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoatCounter** tools.
 
 **Configuration:**

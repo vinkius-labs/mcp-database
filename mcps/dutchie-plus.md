@@ -32,7 +32,7 @@ Integrate **Dutchie Plus**, the enterprise-grade e-commerce platform for cannabi
 - **Inventory & Brand Leads** — Audit synchronized brands and location-specific orders instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dutchie_plus_metadata**: Retrieve metadata and limits for your Dutchie Plus account
 - **get_location_details**: Get detailed settings and information for a specific dispensary location
 - **get_order_details**: Get detailed information for a specific online order
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dutchie-plus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dutchie-plus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dutchie Plus** tools.
 
 **Configuration:**

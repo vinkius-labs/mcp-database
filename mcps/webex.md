@@ -37,7 +37,7 @@ No more manual navigation through complex meeting dashboards to find a join link
 - **Executive Assistants** — schedule and reschedule video meetings and verify space history with simple commands
 
 
-## Available Tools
+## Available Tools (10)
 - **create_video_meeting**: Provide a title and ISO 8601 start/end timestamps.
 
 Schedules a new Webex video meeting
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Webex** tools.
 
 **Configuration:**

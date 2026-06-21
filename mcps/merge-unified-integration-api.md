@@ -34,7 +34,7 @@ Connect your **Merge.dev** account to any AI agent and take full control of your
 - **RevOps & HR Teams** — retrieve rapid summaries of employees, candidates, or sales contacts across different platforms efficiently
 
 
-## Available Tools
+## Available Tools (8)
 - **list_employees**: Be aware the list might be paginated or heavy.
 
 List employees from the linked HRIS integration
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `merge-unified-integration-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `merge-unified-integration-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Merge (Unified Integration API)** tools.
 
 **Configuration:**

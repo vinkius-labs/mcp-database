@@ -13,7 +13,7 @@ Calculate grain storage expenses and determine optimal market timing.
 This MCP server provides a suite of financial tools to manage the economic complexities of grain storage. It allows producers to calculate total gross expenditure, including monthly storage fees, drying costs for moisture reduction, and classification fees. By using `calculate_storage_expenditure`, users can determine their total investment. The server also calculates the monthly unit cost per bag via `calculate_monthly_unit_cost` and identifies the break-even price spread with `calculate_required_price_spread`. Finally, use `evaluate_selling_strategy` to receive a data-driven recommendation on whether to sell grain immediately or hold it for the off-season based on projected market increases.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_monthly_unit_cost**: Calculates the monthly cost burden per bag
 - **calculate_storage_expenditure**: Calculates total gross expenditure for storing grain
 - **calculate_required_price_spread**: Calculates the minimum price increase needed to break even
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grain-storage-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grain-storage-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Grain Storage Cost Calculator** tools.
 
 **Configuration:**

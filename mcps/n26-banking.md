@@ -33,7 +33,7 @@ Equip your AI agent with real-time personal finance intelligence through the **N
 - **Busy Professionals** — get quick summaries of their financial status without opening an app.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_n26_accounts**: List all N26 accounts
 - **get_n26_spaces**: Get N26 spaces and sub-account balances
 - **get_n26_transactions**: Get recent N26 transactions
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `n26-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `n26-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **N26 Banking** tools.
 
 **Configuration:**

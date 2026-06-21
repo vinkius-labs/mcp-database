@@ -32,7 +32,7 @@ Integrate **DevSkiller**, the technical screening and talent assessment platform
 - **Talent Acquisition Teams** — Manage the candidate pipeline and send test invitations during planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_metadata**: Retrieve metadata and limits for your DevSkiller account
 - **get_candidate_profile**: Get detailed information for a specific candidate
 - **get_candidate_assessment_report**: Retrieve the full assessment report for a candidate
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `devskiller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `devskiller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DevSkiller** tools.
 
 **Configuration:**

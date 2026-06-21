@@ -33,7 +33,7 @@ Connect your **Vercel** account to any AI agent and simplify how you manage your
 - **Product Owners** — get instant bird's-eye views of project history and deployment progress without leaving the workspace.
 
 
-## Available Tools
+## Available Tools (11)
 - **add_vercel_environment_variable**: Add a new environment variable
 - **create_vercel_deployment**: Create a new deployment
 - **delete_vercel_deployment**: Delete a specific deployment
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vercel-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vercel-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vercel** tools.
 
 **Configuration:**

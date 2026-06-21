@@ -33,7 +33,7 @@ Equip your AI agent with hyper-local environmental intelligence through the **Go
 - **Sustainability Researchers** — track urban air quality trends using Google's precise data.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_air_quality_history**: Get historical air quality data
 - **get_current_air_quality**: Get current air quality using Google Maps API
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-air-quality` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-air-quality` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Air Quality** tools.
 
 **Configuration:**

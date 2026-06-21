@@ -32,7 +32,7 @@ Integrate **Duda**, the professional website builder for agencies and SaaS, dire
 - **Operations Teams** — Monitor template usage and client access permissions across the organization instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **search_sites_by_domain**: Search for a Duda site using a domain or name keyword
 - **get_template_details**: Get detailed information for a specific Duda template
 - **list_client_accounts**: List all client accounts registered in your Duda organization
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `duda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `duda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Duda** tools.
 
 **Configuration:**

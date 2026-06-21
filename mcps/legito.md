@@ -33,7 +33,7 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 - **HR & Admin** — quickly download generated document versions and verify user permissions during onboarding
 
 
-## Available Tools
+## Available Tools (31)
 - **add_user_to_group**: Add a user to a user group
 - **list_advanced_styles**: List advanced styles
 - **list_categories**: List categories (groups)
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `legito` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `legito` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Legito** tools.
 
 **Configuration:**

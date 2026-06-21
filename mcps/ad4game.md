@@ -34,7 +34,7 @@ Connect your **Ad4Game** publisher account to your AI agent to streamline your g
 - **Marketing Analysts** — monitor payout trends and offer variety across gaming categories
 
 
-## Available Tools
+## Available Tools (3)
 - **list_offers**: List all available ad offers
 - **get_offer_details**: Get details for a specific offer
 - **get_creatives**: Fetch creatives for an offer
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ad4game` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ad4game` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ad4Game** tools.
 
 **Configuration:**

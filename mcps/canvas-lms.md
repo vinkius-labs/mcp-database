@@ -33,7 +33,7 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 - **Students & Developers** — track personal todos and activity streams directly from the terminal or code editor
 
 
-## Available Tools
+## Available Tools (45)
 - **create_admin**: Make a user an admin in an account
 - **create_assignment**: Create a new assignment in a course
 - **create_conversation**: Create a new conversation
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `canvas-lms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `canvas-lms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Canvas LMS** tools.
 
 **Configuration:**

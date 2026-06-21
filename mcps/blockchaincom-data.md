@@ -34,7 +34,7 @@ Connect your AI agent to the **Blockchain.com Data API** and orchestrate your cr
 - **Web3 Developers** — verify on-chain data and monitor mempool activity using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_address**: Get balance and transaction history for a Bitcoin address
 - **get_block_count**: Get the current total block count (height)
 - **get_block**: Get details of a specific block by hash
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blockchaincom-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blockchaincom-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blockchain.com Data** tools.
 
 **Configuration:**

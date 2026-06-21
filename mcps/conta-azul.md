@@ -35,7 +35,7 @@ Connect your **Conta Azul** account to any AI agent and take full control of you
 - **Accounting Operations** — verify NF-e statuses and reconcile billing logs directly from the workspace
 
 
-## Available Tools
+## Available Tools (15)
 - **list_customers**: Listar base de clientes paginada extraindo entidades corporativas no ERP
 - **get_customer**: Extrair perfil estático financeiro via UUID rastreando limites PF/PJ explícitos
 - **search_customers**: Pesquisar perfis corporativos/fiscais comparando documentos restritos via CPF/CNPJ
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `conta-azul` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `conta-azul` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Conta Azul** tools.
 
 **Configuration:**

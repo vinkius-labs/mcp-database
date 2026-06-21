@@ -33,7 +33,7 @@ Connect to **OpenAlex**, the world's most comprehensive open index of the global
 - **Students** — discover authoritative sources and key authors for any field of study
 
 
-## Available Tools
+## Available Tools (14)
 - **get_author**: Get a single author by their OpenAlex ID
 - **get_funder**: Get a single funder by its OpenAlex ID
 - **get_institution**: Get a single institution by its OpenAlex ID
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openalex-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openalex-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenAlex** tools.
 
 **Configuration:**

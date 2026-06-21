@@ -36,7 +36,7 @@ Connect AI agents to the PitchBook Direct Data API for comprehensive private mar
 Essential for **venture capitalists**, **private equity professionals**, **investment bankers**, **corporate development teams**, **limited partners**, **fundraisers**, **management consultants**, and **financial journalists**. Let AI agents perform company due diligence, track competitor fundraising, identify potential acquirers or investors, research LP backgrounds, map professional networks, and assess exit probabilities. Perfect for professionals who need to answer questions like 'What companies raised Series A in AI/ML last quarter?', 'Which PE firms are most active in healthcare buyouts?', or 'What is the predicted exit probability for this portfolio company?'
 
 
-## Available Tools
+## Available Tools (13)
 - **get_companies**: Returns company names, statuses, industries, locations, and key identifiers. Use optional filters to narrow results by industry, location, company status (Active, Acquired, Closed, IPO), or other attributes. Results follow JSON:API format with pagination metadata. Use this to find startups, established companies, or emerging players in specific sectors.
 
 Search and list companies in the PitchBook private market database
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pitchbook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pitchbook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PitchBook** tools.
 
 **Configuration:**

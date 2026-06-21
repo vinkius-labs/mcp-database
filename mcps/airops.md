@@ -34,7 +34,7 @@ Connect your **AirOps** account to your AI agent to unlock professional AI workf
 - **Data Specialists** — manage and search internal knowledge bases using AirOps memory stores
 
 
-## Available Tools
+## Available Tools (10)
 - **upload_file**: Upload file for AI
 - **list_apps**: List AI applications
 - **get_app_details**: Get app metadata
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AirOps** tools.
 
 **Configuration:**

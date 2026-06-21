@@ -32,7 +32,7 @@ Connect **Apideck** to your AI agent to streamline how you interact with multipl
 - **Support Teams** — who need to verify if a customer's integration is correctly configured in the Vault through natural language.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_crm_contacts**: g., salesforce, hubspot) using the Unified CRM API.
 
 List CRM contacts from a unified integration
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apideck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apideck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apideck** tools.
 
 **Configuration:**

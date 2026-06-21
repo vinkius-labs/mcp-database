@@ -28,7 +28,7 @@ The **AppFollow MCP Server** brings powerful app store intelligence directly to 
 - **Growth & Marketing** — Track rankings and ratings to measure the effectiveness of your ASO and UA efforts.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_check**: Verify AppFollow account connection
 - **get_app_info**: Retrieve basic information about an app from AppFollow
 - **get_rankings**: Track app rankings in store charts
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `appfollow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `appfollow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AppFollow** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your AI agent to **Convertio**, the versatile file conversion platform s
 - **Content Creators** — Convert proprietary media formats into universal extensions via chat.
 
 
-## Available Tools
+## Available Tools (8)
 - **convert_file**: Start a new file conversion job
 - **quick_convert_to_jpg**: Quickly convert any image URL to JPG
 - **quick_convert_to_pdf**: Quickly convert any document URL to PDF
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `convertio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `convertio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Convertio** tools.
 
 **Configuration:**

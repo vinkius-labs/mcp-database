@@ -33,7 +33,7 @@ Connect to the **Aragón Open Data** portal and unlock a wealth of public inform
 - **Researchers & Journalists** — search for public records and government transparency data through conversation
 
 
-## Available Tools
+## Available Tools (15)
 - **count_datasets**: Get total dataset count
 - **get_organization**: Get publisher/organization details
 - **get_dataset**: Get dataset details
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aragon-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aragon-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aragón Open Data** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect your **Fly.io** account to any AI agent and take full control of your ed
 - **SRE Teams** — monitor system execution logs and run diagnostic commands on active machines in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **create_machine**: Scales horizontal capacities dynamically without waiting on full platform deployments.
 
 Provision a new highly available Edge Machine inside an App
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fly.io** tools.
 
 **Configuration:**

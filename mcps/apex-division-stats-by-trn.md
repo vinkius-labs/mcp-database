@@ -36,7 +36,7 @@ Transform your AI agent into a professional esports analyst with **Apex & Divisi
 - **Coaches & Analysts** — identify strengths, weaknesses, and meta trends from granular player data
 
 
-## Available Tools
+## Available Tools (9)
 - **get_apex_leaderboard**: ) on the specified platform.
 
 Get global Apex Legends rankings by stat category
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apex-division-stats-by-trn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apex-division-stats-by-trn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apex & Division Stats by TRN** tools.
 
 **Configuration:**

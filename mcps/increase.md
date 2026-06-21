@@ -30,7 +30,7 @@ The **Increase MCP Server** connects AI to a physical, fully compliant commercia
 - **Advanced Corporate Ops** — Fire up temporary transaction routing numbers to accept wires.
 
 
-## Available Tools
+## Available Tools (12)
 - **increase_create_account**: Spin up a new Bank Account programmatically
 - **increase_create_ach**: Push an outbound ACH transfer to any US Bank
 - **increase_create_card**: Issue a physical/virtual debit card attached to an account
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `increase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `increase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Increase** tools.
 
 **Configuration:**

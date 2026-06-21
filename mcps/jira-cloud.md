@@ -13,7 +13,7 @@ Manage projects, search issues, and track tasks via Jira Cloud API.
 Empower your AI agents with Jira Cloud's powerful project management platform. This MCP server allows you to list and retrieve project details, search for issues using JQL, track priorities and statuses, and view dashboards directly through the Jira Cloud API. Ideal for automating software development workflows and team collaboration.
 
 
-## Available Tools
+## Available Tools (17)
 - **transition_issue**: g., "To Do" → "In Progress" → "Done"). Requires a transition ID — use list_transitions to discover valid IDs for the current issue state.
 
 Move a Jira issue to a different workflow status
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jira-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jira-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jira Cloud** tools.
 
 **Configuration:**

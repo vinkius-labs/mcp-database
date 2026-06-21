@@ -34,7 +34,7 @@ No more manual CSV downloads or wrestling with government transparency portals. 
 - **Developers** — integrate real Brazilian administrative data into your workflows or applications via your IDE.
 
 
-## Available Tools
+## Available Tools (3)
 - **list_datasets**: io platform. Supports pagination.
 
 List available datasets on Brasil.io
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brasilio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brasilio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Brasil.io** tools.
 
 **Configuration:**

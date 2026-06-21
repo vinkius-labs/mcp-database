@@ -34,7 +34,7 @@ Connect your **Files.com** secure storage account to any AI agent and simplify h
 - **Compliance Officers** — verify audit logs and track file lifecycle changes via the AI assistant.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_folder**: Create a new folder
 - **delete_file**: Delete a file or folder
 - **get_file_details**: Get details for a specific file
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `filescom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `filescom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Files.com** tools.
 
 **Configuration:**

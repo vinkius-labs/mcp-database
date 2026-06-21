@@ -35,7 +35,7 @@ Connect AI agents to the Runlayer Enterprise Control Plane for comprehensive MCP
 Essential for **IT security teams**, **AI governance officers**, **platform engineers**, **compliance managers**, and **enterprise architects** deploying MCP at scale. Let AI agents handle continuous MCP server registration, policy enforcement, audit log review, API key rotation, and shadow AI discovery. Perfect for organizations managing 10+ MCP servers and agents who need to maintain security compliance, prevent unauthorized AI usage, and enable AI-driven infrastructure governance.
 
 
-## Available Tools
+## Available Tools (27)
 - **create_api_key**: Returns the key value (shown only once) and metadata. Use this to create keys for integrations, CI/CD pipelines, or service accounts. Store the key value securely immediately after creation.
 
 Create a new API key for your Runlayer organization
@@ -179,7 +179,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `runlayer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `runlayer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Runlayer** tools.
 
 **Configuration:**

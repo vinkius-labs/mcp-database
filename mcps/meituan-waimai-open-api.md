@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your food delivery operations with **Meitua
 - **Meituan Power Users** — integrate your existing merchant workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_order**: Cancel an order
 - **confirm_order**: Confirm a new order
 - **get_order_detail**: Get order details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meituan-waimai-open-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meituan-waimai-open-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meituan Waimai Open API / 美团外卖** tools.
 
 **Configuration:**

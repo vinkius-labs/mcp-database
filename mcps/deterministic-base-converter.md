@@ -19,7 +19,7 @@ When LLMs attempt to convert massive binary or hexadecimal sequences into decima
 - **Zero-Dependency Architecture:** Pure JS runtime execution guarantees absolute microsecond speed without any external bloated packages.
 
 
-## Available Tools
+## Available Tools (3)
 - **convert_base**: Requires numeric string to prevent precision loss.
 
 Converts a numeric string from any base (2-36) to another base (2-36) with infinite BigInt precision
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-base-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-base-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Base Converter** tools.
 
 **Configuration:**

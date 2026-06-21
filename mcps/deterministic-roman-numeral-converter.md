@@ -19,7 +19,7 @@ When asked to convert complex numbers into Roman numerals, AI models frequently 
 - **Zero-Dependency Architecture:** Pure Javascript runtime execution guarantees absolute speed without external bloated packages.
 
 
-## Available Tools
+## Available Tools (2)
 - **convert_from_roman**: Converts a Roman numeral string back into a standard integer. Includes strict format validation
 - **convert_to_roman**: Converts a standard integer into a Roman numeral string. Supports numbers from 1 to 3999
 
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-roman-numeral-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-roman-numeral-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Roman Numeral Converter** tools.
 
 **Configuration:**

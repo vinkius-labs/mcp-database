@@ -35,7 +35,7 @@ Your agent becomes a personal car rental assistant — finding the best deals ac
 - **Operations Teams** — automate recurring rental bookings for field staff and regional offices
 
 
-## Available Tools
+## Available Tools (8)
 - **book_car**: Requires the car offer ID from a previous search, driver details (first name, last name, email), and confirmation of rental terms. Returns the booking confirmation with itinerary ID, which is needed for future retrieval or cancellation of the reservation. Ensure all date/times match the original search parameters.
 
 Book a rental car for the specified dates and location
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `expedia-car-rental` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `expedia-car-rental` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Expedia Car Rental** tools.
 
 **Configuration:**

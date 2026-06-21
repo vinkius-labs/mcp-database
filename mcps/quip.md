@@ -32,7 +32,7 @@ Integrate your **Quip** (Salesforce) account with any AI agent to bring your rea
 - **Account Executives** — Draft client updates and push the finalized HTML text into a shared Quip document.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_current_user**: Retrieves the authenticated user profile
 - **get_thread**: Retrieves a single Quip document or thread by ID
 - **get_threads**: Provide a comma-separated list of IDs.
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `quip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `quip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Quip** tools.
 
 **Configuration:**

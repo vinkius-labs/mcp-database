@@ -13,7 +13,7 @@ Manage home service jobs, customers, and invoices via Housecall Pro API.
 Connect your AI agents to Housecall Pro to streamline your home service business. This MCP server allows you to list and manage jobs, track customer details, view estimates, monitor invoices, and see your team of technicians directly through the Housecall Pro API. Ideal for automating scheduling and billing workflows.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_company**: Gets your company information
 - **get_customer**: Retrieves details for a specific customer
 - **get_job**: Retrieves details for a specific job
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `housecall-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `housecall-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Housecall Pro** tools.
 
 **Configuration:**

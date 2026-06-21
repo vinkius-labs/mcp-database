@@ -22,7 +22,7 @@ This MCP delegates the imputation logic to a local engine powered by `simple-sta
 - **Transparent Reporting:** Returns the exact fill value applied and the number of rows imputed for full auditability.
 
 
-## Available Tools
+## Available Tools (1)
 - **impute_missing_values**: Deterministically fill NaN/missing values in a dataset using Mean, Median, Mode, or Zero
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `missing-value-imputer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `missing-value-imputer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Missing Value Imputer** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to **Blastscan**, the leading block explorer for the Blast Network, and 
 - **Security Researchers** — quickly pull contract source code and analyze internal transaction flows.
 
 
-## Available Tools
+## Available Tools (29)
 - **get_contract_abi**: Get Contract ABI for Verified Source Codes
 - **get_ether_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_ether_balance**: Get Ether Balance for a Single Address
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blastscan-blast-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blastscan-blast-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blastscan (Blast Network Explorer)** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate and benchmark key email marketing metrics like delivery, engagement, a
 This MCP server provides specialized tools to quantify the effectiveness of your email campaigns. Use `calculate_delivery_metrics` to determine delivery and open rates, or `calculate_engagement_metrics` to analyze CTOR and conversion efficiency. You can also use `calculate_revenue_metrics` to find revenue per email sent and `get_industry_benchmark` to compare your performance against standard benchmarks for SaaS, eCommerce, Media, and B/B2B industries.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_industry_benchmark**: Get industry performance benchmarks
 - **calculate_delivery_metrics**: Calculate email delivery and open rates
 - **calculate_engagement_metrics**: Calculate email engagement metrics
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `email-marketing-performance-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `email-marketing-performance-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Email Marketing Performance Calculator** tools.
 
 **Configuration:**

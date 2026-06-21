@@ -31,7 +31,7 @@ Finch is the unified API for HRIS and payroll. This MCP server allows your AI ag
 - **Product Teams** — integrate unified HR data into your internal tools and workflows through simple natural language queries
 
 
-## Available Tools
+## Available Tools (11)
 - **get_automated_job**: Get details for a specific automated job
 - **get_company**: Get organization data (legal name, EIN, primary address)
 - **get_employment**: Get employment data for an individual (title, salary, department, etc.)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `finch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `finch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Finch** tools.
 
 **Configuration:**

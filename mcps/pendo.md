@@ -33,7 +33,7 @@ Connect your **Pendo** subscription to any AI agent and take full control of you
 - **Growth Engineers** — audit segments and metadata schemas while implementing new tracking events.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_pendo_account**: Get details for a specific account
 - **get_pendo_guide_metrics**: Get performance metrics for a guide
 - **get_pendo_guide**: Get details for a specific guide
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pendo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pendo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pendo** tools.
 
 **Configuration:**

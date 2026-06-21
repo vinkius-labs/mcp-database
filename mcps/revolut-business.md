@@ -29,7 +29,7 @@ The **Revolut Business MCP Server** effectively bridges large-scale pan-European
 - **Global Talent Agencies** — Easily map contractor IDs to counterparties and fire cross-border payroll seamlessly.
 
 
-## Available Tools
+## Available Tools (34)
 - **revolut_create_counterparty**: Required before making payments to a new recipient.
 
 Add a new payment recipient (Counterparty)
@@ -164,7 +164,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `revolut-business` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `revolut-business` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Revolut Business** tools.
 
 **Configuration:**

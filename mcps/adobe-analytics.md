@@ -34,7 +34,7 @@ Connect your **Adobe Analytics** account to your AI agent to unlock deep custome
 - **Product Owners** — retrieve feature engagement data and user journey patterns using simple commands
 
 
-## Available Tools
+## Available Tools (5)
 - **list_report_suites**: List available report suites
 - **get_metrics**: List metrics for a report suite
 - **get_dimensions**: g. Page, Device Type) for a specific report suite ID.
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adobe-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adobe-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adobe Analytics** tools.
 
 **Configuration:**

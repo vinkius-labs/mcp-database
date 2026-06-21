@@ -35,7 +35,7 @@ No more manual CSV imports or list searching. Your AI acts as a dedicated market
 - **Content Creators** — streamline the retrieval of contact metadata and monitor audience health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_contact**: Add contact to list
 - **check_list_membership**: Check if email is in list
 - **clear_sub_list**: Clear list contacts
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `robly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `robly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Robly** tools.
 
 **Configuration:**

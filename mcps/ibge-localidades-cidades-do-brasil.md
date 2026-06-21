@@ -27,7 +27,7 @@ Connect your AI agent to the **official IBGE geographic database** — the autho
 Fintechs, logistics companies, CRM systems, address validation services, market researchers, and anyone building AI agents that need precise Brazilian geographic intelligence.
 
 
-## Available Tools
+## Available Tools (5)
 - **list_estados**: List all Brazilian states (UFs)
 - **get_municipios_por_uf**: Use the 2-letter UF abbreviation (e.g., SP, RJ, MG, BA).
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibge-localidades-cidades-do-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibge-localidades-cidades-do-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBGE Localidades — Cidades do Brasil** tools.
 
 **Configuration:**

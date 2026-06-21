@@ -33,7 +33,7 @@ Equip your AI agent with high-resolution global weather and marine intelligence 
 - **Water Sports Enthusiasts** — check swell and tide data for coastal activities.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_astronomy_data**: Get sun and moon data
 - **get_marine_weather**: ) for a specific coordinate.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `storm-glass-marine-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `storm-glass-marine-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Storm Glass Marine & Weather** tools.
 
 **Configuration:**

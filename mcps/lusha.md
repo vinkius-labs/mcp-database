@@ -32,7 +32,7 @@ Connect **Lusha** to your AI agent and access verified B2B contact data for your
 - **Recruiters** — Find candidate contact details quickly for direct sourcing.
 
 
-## Available Tools
+## Available Tools (6)
 - **find_by_linkedin**: Find by LinkedIn URL
 - **get_credits**: Get credit balance
 - **search_contacts**: Search contacts
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lusha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lusha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lusha** tools.
 
 **Configuration:**

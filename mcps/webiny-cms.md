@@ -38,7 +38,7 @@ No more manual JSON drafting in GraphQL playgrounds. Your AI agent becomes your 
 - **CMS Administrators** — monitor tenant settings and audit content revisions through simple commands
 
 
-## Available Tools
+## Available Tools (9)
 - **create_cms_entry**: Provide the singular model name and field data as a JSON object.
 
 Creates a new draft entry for a content model
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webiny-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webiny-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Webiny CMS** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **JigsawStack** account to any AI agent and access AI-powered utili
 - **Automation Engineers** — build AI-powered data pipelines
 
 
-## Available Tools
+## Available Tools (7)
 - **ai_web_scrape**: Scrape a website using natural language
 - **check_nsfw_image**: Check if an image is NSFW
 - **check_profanity_text**: Check text for profanity
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jigsawstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jigsawstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JigsawStack** tools.
 
 **Configuration:**

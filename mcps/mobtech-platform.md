@@ -32,7 +32,7 @@ Connect your AI agents to **MobTech**, China's leading mobile development SDK pr
 - **App Developers** — Programmatic backend support for apps using MobTech SDKs
 
 
-## Available Tools
+## Available Tools (4)
 - **check_phone_status**: Check if a phone number limit has been reached
 - **get_share_analytics**: Get analytics for social sharing via ShareSDK
 - **get_social_auth_status**: Check the OAuth binding status for a user
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mobtech-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mobtech-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MobTech Platform** tools.
 
 **Configuration:**

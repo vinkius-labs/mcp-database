@@ -35,7 +35,7 @@ No more manual searching through folders. Your AI acts as a digital librarian th
 - **Researchers** — manage large collections of PDFs and papers with automated tagging and content retrieval.
 
 
-## Available Tools
+## Available Tools (26)
 - **create_correspondent**: Create a new correspondent
 - **create_document_type**: Create a new document type
 - **create_saved_view**: Create a new saved view
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paperless-ngx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paperless-ngx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paperless-ngx** tools.
 
 **Configuration:**

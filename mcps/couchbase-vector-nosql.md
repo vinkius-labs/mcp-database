@@ -35,7 +35,7 @@ Connect your **Couchbase** (Capella or self-hosted) cluster to any AI agent and 
 - **Product Teams** — quickly prototype search features and audit JSON document schemas through natural language
 
 
-## Available Tools
+## Available Tools (7)
 - **list_buckets**: Identify bounded routing spaces inside the Headless Couchbase DB
 - **list_scopes**: Retrieve explicit UX logging tracing explicit Scope and Collection Object limits
 - **list_indexes**: Enumerate explicitly attached structured rules exporting active Search Indexes
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `couchbase-vector-nosql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `couchbase-vector-nosql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Couchbase (Vector & NoSQL)** tools.
 
 **Configuration:**

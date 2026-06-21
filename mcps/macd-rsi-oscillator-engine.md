@@ -13,7 +13,7 @@ Calculate exact MACD and Relative Strength Index (RSI) technical indicators loca
 The Relative Strength Index (RSI) and Moving Average Convergence Divergence (MACD) are complex oscillators that require multiple passes of exponential averages. Asking an LLM to compute RSI over 100 days is a guaranteed failure. This engine integrates institutional-grade TS indicator math into the Vinkius edge runtime, providing autonomous trading and analysis agents with perfect signals.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_macd_rsi**: Provide data array and configuration parameters.
 
 Calculates MACD or RSI technical oscillators from a price array
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `macd-rsi-oscillator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `macd-rsi-oscillator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MACD & RSI Oscillator Engine** tools.
 
 **Configuration:**

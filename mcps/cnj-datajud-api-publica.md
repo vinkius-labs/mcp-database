@@ -32,7 +32,7 @@ Connect to the **CNJ Datajud Public API** to perform deep searches across the Br
 - **Researchers & Analysts** — Perform bulk queries and advanced data extraction for legal statistics and trends.
 
 
-## Available Tools
+## Available Tools (3)
 - **search_processes_advanced**: Execute an advanced Elasticsearch query against the Datajud API
 - **search_processes_by_class_and_organ**: Search processes by Procedural Class and Court Organ
 - **search_process_by_number**: g., api_publica_trf1, api_publica_tjsp).
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cnj-datajud-api-publica` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cnj-datajud-api-publica` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CNJ (Datajud API Pública)** tools.
 
 **Configuration:**

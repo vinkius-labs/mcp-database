@@ -33,7 +33,7 @@ No more manual drafting or navigating complex legal platforms. Your AI agent bec
 - **Founders & Executives** — streamline the legal boilerplate required to close deals faster.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_webhook**: Configure a new webhook to receive contract status updates
 - **delete_webhook**: Remove a previously configured webhook
 - **get_agreement**: Retrieve detailed information about a specific agreement
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `common-paper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `common-paper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Common Paper** tools.
 
 **Configuration:**

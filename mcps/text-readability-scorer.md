@@ -22,7 +22,7 @@ LLMs cannot accurately count syllables or calculate sentence complexity. This MC
 - **Consensus Evaluation:** Automatically aggregates all scores to give you a definitive target audience level.
 
 
-## Available Tools
+## Available Tools (1)
 - **readability_scorer**: Essential for SEO, marketing, and legal compliance.
 
 Calculate rigorous readability metrics for any text (Flesch-Kincaid, Gunning Fog, SMOG, etc.)
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `text-readability-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `text-readability-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Text Readability Scorer** tools.
 
 **Configuration:**

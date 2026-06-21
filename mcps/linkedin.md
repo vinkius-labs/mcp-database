@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire professional ecosystem on **Lin
 - **Operations Leads** — automate professional data querying to orchestrate cross-functional outreach teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_post**: Create a new post (UGC) on LinkedIn
 - **get_email**: Get primary email address of the authenticated user
 - **get_me**: Get authenticated user info from LinkedIn
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linkedin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linkedin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LinkedIn** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to the **Apex Legends API** to access real-time game data,
 - **Community Managers** — Monitor server status and map rotations to keep players informed.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_leaderboard**: Updates every 6 hours.
 
 Get top 500 players for specific statistics
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apex-legends` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apex-legends` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apex Legends** tools.
 
 **Configuration:**

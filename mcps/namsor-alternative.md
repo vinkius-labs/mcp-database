@@ -33,7 +33,7 @@ Connect **Namsor** to your AI agent to unlock advanced name analysis and data en
 - **Sales Operations** — Validate lead information and ensure phone numbers are correctly formatted for global outreach.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_gender**: Classify a name as male or female
 - **get_origin**: Identify the likely country of origin for a name
 - **parse_name**: Split a full name into its components
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `namsor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `namsor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Namsor** tools.
 
 **Configuration:**

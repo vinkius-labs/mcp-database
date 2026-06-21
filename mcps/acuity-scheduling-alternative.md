@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire scheduling ecosystem with **Acu
 - **Business Owners** — automate availability querying to orchestrate your time-driven growth smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_appointment**: Cancel an appointment
 - **create_appointment**: Create a new appointment
 - **get_appointment**: Get details for a specific appointment
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `acuity-scheduling-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `acuity-scheduling-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Acuity Scheduling** tools.
 
 **Configuration:**

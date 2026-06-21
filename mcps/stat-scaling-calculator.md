@@ -13,7 +13,7 @@ Compute and compare attribute progression curves for game design.
 This MCP server provides game designers with precise mathematical tools to define how attributes like Strength, Health, or Mana evolve from Level 1 to a maximum level. Using `compute_progression_table`, you can generate detailed level-by-level breakdowns for various growth archetypes including linear, exponential, and S-curves. The `analyze_growth_velocity` tool helps identify unintended power spikes by calculating the delta between levels, while `compare_scaling_strategies` allows for a unified visual comparison of multiple scaling configurations to ensure consistent progression feel.
 
 
-## Available Tools
+## Available Tools (3)
 - **compare_scaling_strategies**: Produces a unified dataset for visual comparison of different scaling configurations
 - **analyze_growth_velocity**: Calculates the incremental change in an attribute's value between consecutive levels
 - **compute_progression_table**: Generates a complete step-by-step breakdown of an attribute's value for every level
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stat-scaling-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stat-scaling-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stat Scaling Calculator** tools.
 
 **Configuration:**

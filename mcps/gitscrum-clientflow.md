@@ -34,7 +34,7 @@ Your agent becomes your client operations assistant, eliminating context-switchi
 - **Finance teams** — review proposals, invoices, and budget consumption in natural language
 
 
-## Available Tools
+## Available Tools (12)
 - **project_budget**: Get project budget
 - **create_client**: Create a new client
 - **get_client**: Get client details
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gitscrum-clientflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gitscrum-clientflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GitScrum ClientFlow** tools.
 
 **Configuration:**

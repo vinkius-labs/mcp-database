@@ -33,7 +33,7 @@ Connect to the **PubMed Central (PMC) Open Access Subset** to empower your AI ag
 - **Medical Professionals** — Quickly find peer-reviewed evidence and convert clinical identifiers into accessible research papers.
 
 
-## Available Tools
+## Available Tools (8)
 - **convert_ids**: Returns JSON.
 
 Convert between PMCIDs, PMIDs, DOIs, and Manuscript IDs
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pmc-open-access-pubmed-central` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pmc-open-access-pubmed-central` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PMC Open Access (PubMed Central)** tools.
 
 **Configuration:**

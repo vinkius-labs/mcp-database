@@ -32,7 +32,7 @@ Connect your **ThingsBoard** instance to any AI agent to orchestrate your IoT in
 - **Data Analysts** — extract latest sensor values and entity metadata for rapid prototyping and reporting.
 
 
-## Available Tools
+## Available Tools (7)
 - **find_alarms**: Search alarms with severity and status filters
 - **find_entities**: Search entities with complex filters
 - **get_telemetry**: Read latest telemetry values for an entity
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thingsboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thingsboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ThingsBoard** tools.
 
 **Configuration:**

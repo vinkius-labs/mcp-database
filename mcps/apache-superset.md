@@ -32,7 +32,7 @@ Empower your conversational AI with deep Business Intelligence access by integra
 - **Data Engineering Leads** — Audit operational reports safely probing exact table usage or testing semantic datasets cleanly isolating anomalies iteratively.
 
 
-## Available Tools
+## Available Tools (7)
 - **execute_sql_query**: Provide a database ID and the SQL statement.
 
 Executes a SQL query via SQL Lab
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apache-superset` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apache-superset` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apache Superset** tools.
 
 **Configuration:**

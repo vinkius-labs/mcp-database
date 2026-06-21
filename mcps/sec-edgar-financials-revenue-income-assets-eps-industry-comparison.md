@@ -22,7 +22,7 @@ SEC XBRL financial data.
 ### Like a free Bloomberg terminal
 
 
-## Available Tools
+## Available Tools (4)
 - **get_key_financials**: Returns the most recent 5 reported values across 10-K and 10-Q filings. This is like a mini Bloomberg terminal — for free.
 
 Get key financial data for a company — revenue, net income, assets, equity, EPS, cash
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sec-edgar-financials-revenue-income-assets-eps-industry-comparison` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sec-edgar-financials-revenue-income-assets-eps-industry-comparison` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SEC EDGAR Financials — Revenue, Income, Assets, EPS & Industry Comparison** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inpu
 **Are you considering higher education but unsure about scholarship eligibility?** Many students face the challenge of matching their financial background and academic performance against complex, shifting institutional criteria. Trying to calculate eligibility manually using minimum wage multipliers and specific score cutoffs is time-consuming and prone to error.
 
 
-## Available Tools
+## Available Tools (4)
 - **determine_eligibility_tier**: Determine scholarship eligibility tier based on per capita income
 - **identify_eligible_courses**: Public school students receive a score bonus. Lower scholarship tiers restrict available courses.
 
@@ -82,7 +82,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `prouni-eligibility-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `prouni-eligibility-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ProUni Eligibility Calculator** tools.
 
 **Configuration:**

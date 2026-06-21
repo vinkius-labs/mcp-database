@@ -33,7 +33,7 @@ Connect your **Evolio** account to any AI agent and manage your law firm operati
 - **Law Firm Administrators** — monitor caseloads, track pending tasks, and manage client profiles
 
 
-## Available Tools
+## Available Tools (14)
 - **check_evolio_status**: Verify connectivity
 - **create_case**: Create a case
 - **create_task**: Create a task
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `evolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `evolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Evolio** tools.
 
 **Configuration:**

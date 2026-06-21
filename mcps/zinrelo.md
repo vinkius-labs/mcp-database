@@ -33,7 +33,7 @@ Connect your **Zinrelo** account to any AI agent to automate your loyalty and re
 - **E-commerce Owners** — Automate the enrollment of new members and tracking of reward activities
 
 
-## Available Tools
+## Available Tools (9)
 - **award_points_activity**: Award points for a custom activity
 - **award_points_purchase**: Award points for a purchase
 - **enroll_member**: Enroll or update a loyalty member
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zinrelo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zinrelo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zinrelo** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Equip your AI agent with hyper-local environmental intelligence through the **Br
 - **Operations Managers** — verify local conditions for outdoor work and site safety.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_air_quality**: Get current air quality for a location
 - **get_pollen_levels**: Get current pollen data for a location
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `breezometer-air-quality-pollen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `breezometer-air-quality-pollen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BreezoMeter Air Quality & Pollen** tools.
 
 **Configuration:**

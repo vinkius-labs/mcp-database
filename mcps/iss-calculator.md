@@ -13,7 +13,7 @@ Calculate Service Tax (ISS) based on municipality rates and service types.
 This MCP server provides specialized tools for calculating Service Tax (ISS). Use `get_applicable_rate` to find the tax percentage for a specific municipality and service type, `check_withholding_status` to determine if tax must be withheld at source, and `calculate_tax_liability` to compute the final taxable base and tax amount including any allowed deductions.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_tax_liability**: Calculate final tax liability
 - **check_withholding_status**: Check if tax withholding is required
 - **get_applicable_rate**: Get the tax rate for a service in a municipality
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `iss-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `iss-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ISS Calculator** tools.
 
 **Configuration:**

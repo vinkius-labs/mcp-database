@@ -13,7 +13,7 @@ Calculate product gross margins, identify underperforming products against indus
 The Gross Margin Analyzer is a financial diagnostic tool designed to evaluate product profitability. It allows you to compute gross margins for multiple products using `calculate_product_margins`, identify which items are falling below industry-specific thresholds with `detect_underperforming_products` (supporting SaaS, Marketplace, and Hardware benchmarks), and forecast the impact of cost optimization strategies via `simulate_cogs_savings_impact`.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_product_margins**: Compute the current profitability margin for a provided list of products
 - **detect_underperforming_products**: Identify products failing to meet industry minimum profitability thresholds
 - **simulate_cogs_savings_impact**: Forecast projected gross margin improvement from COGS reduction
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gross-margin-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gross-margin-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gross Margin Analyzer** tools.
 
 **Configuration:**

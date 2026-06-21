@@ -32,7 +32,7 @@ Connect your **Bling ERP** API token to any AI agent and integrate Brazil's lead
 - **Logistics Teams** — search warehouse logic and map client logistics strictly prior to issuing an NF-e.
 
 
-## Available Tools
+## Available Tools (18)
 - **listar_contatos**: Listar todos os contatos (clientes, fornecedores, transportadoras) cadastrados no Bling
 - **consultar_contato**: Consultar dados completos de um contato pelo ID
 - **incluir_contato**: Cadastrar novo contato (cliente/fornecedor) no Bling
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bling-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bling-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bling ERP** tools.
 
 **Configuration:**

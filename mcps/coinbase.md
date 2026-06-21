@@ -34,7 +34,7 @@ Connect to **Coinbase** and access real-time cryptocurrency market data through 
 - **Developers** — integrate crypto price data into apps and dashboards
 
 
-## Available Tools
+## Available Tools (8)
 - **get_buy_price**: Returns the total price including Coinbase fees. Common pairs: BTC-USD, ETH-USD, SOL-USD, USDC-USD. Prices update in real-time and are only valid for seconds.
 
 Get the current buy price for a cryptocurrency pair
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coinbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coinbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coinbase** tools.
 
 **Configuration:**

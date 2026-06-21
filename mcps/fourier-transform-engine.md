@@ -22,7 +22,7 @@ This MCP brings high-speed FFT processing to your local machine using `fft.js`. 
 - **Dominant Frequency Extraction:** Returns the top 3 strongest frequency bins automatically.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_fft**: Perform Fast Fourier Transform (FFT) on time-series numeric arrays to extract frequency components
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fourier-transform-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fourier-transform-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fourier Transform Engine** tools.
 
 **Configuration:**

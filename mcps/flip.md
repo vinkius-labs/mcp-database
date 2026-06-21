@@ -35,7 +35,7 @@ Connect your **Flip** (Flip.id) account to any AI agent and automate your financ
 - **Business Owners** — get a quick overview of account balances and recent transaction history via simple AI commands.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_bill**: Create payment link (Bill)
 - **create_disbursement**: Send money (payout)
 - **get_balance**: Check account balance
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flip** tools.
 
 **Configuration:**

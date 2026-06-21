@@ -32,7 +32,7 @@ Integrate **Delighted by Qualtrics**, the leading experience management platform
 - **Support Teams** — Review customer feedback history before resolving support tickets.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_person_to_survey**: Adds a new person to the system and schedules a survey invitation to be sent via the default channel.
 
 Add a new person to Delighted to trigger a survey
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `delighted` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `delighted` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Delighted** tools.
 
 **Configuration:**

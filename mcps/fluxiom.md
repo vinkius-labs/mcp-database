@@ -28,7 +28,7 @@ Connect your **Fluxiom** account to any AI agent to automate your Digital Asset 
 3. Start managing your digital assets directly from your AI agent
 
 
-## Available Tools
+## Available Tools (9)
 - **create_tag**: Create a new tag
 - **delete_asset**: Remove an asset
 - **get_account_details**: Get account attributes
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fluxiom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fluxiom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fluxiom** tools.
 
 **Configuration:**

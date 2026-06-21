@@ -32,7 +32,7 @@ Integrate **Deputy**, the ultimate workforce management solution, directly into 
 - **Team Leads** — Review rosters and manage employee profiles during scheduling meetings.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_employee_profile**: Get detailed information for a specific employee
 - **get_authenticated_user**: Retrieve metadata for the current authenticated API user
 - **list_currently_active_shifts**: Identify employees who are currently clocked in (mock logic)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deputy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deputy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deputy** tools.
 
 **Configuration:**

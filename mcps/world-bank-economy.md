@@ -26,7 +26,7 @@ Empower your AI agent with instant access to the World Bank's economic data.
 Economists, financial analysts, and market researchers building global macro models.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_gdp**: Get Gross Domestic Product (GDP) in current US$
 - **get_gdp_growth**: Get annual GDP growth percentage
 - **get_inflation**: Get inflation rate (consumer prices, annual %)
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `world-bank-economy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `world-bank-economy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **World Bank Economy** tools.
 
 **Configuration:**

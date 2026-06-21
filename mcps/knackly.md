@@ -32,7 +32,7 @@ Connect your **Knackly** account to any AI agent and automate document generatio
 - **Sales** — create proposals and agreements on demand
 
 
-## Available Tools
+## Available Tools (8)
 - **create_data_record**: Add a new record
 - **get_record_details**: Get details for a specific record
 - **list_catalogs**: List catalogs in a workspace
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `knackly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `knackly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Knackly** tools.
 
 **Configuration:**

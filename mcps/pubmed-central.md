@@ -33,7 +33,7 @@ Connect your AI agent to **PubMed Central (PMC)**, the world's premier digital a
 - **Data Scientists** — Automate the collection of biomedical datasets and citation networks for large-scale analysis.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_bioc_article**: Retrieve full-text articles via the BioC API
 - **get_citing_articles**: Find PMC articles that cite a specific PubMed ID
 - **convert_ids**: Convert between article identifiers (PMCID, PMID, DOI)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pubmed-central` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pubmed-central` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PubMed Central** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to the **Boletín Oficial del Estado (BOE)** Open Data service to naviga
 - **Researchers & Citizens** — explore the Spanish legal framework and historical gazette records through an intuitive AI interface
 
 
-## Available Tools
+## Available Tools (17)
 - **get_boe_summary**: Get daily summary of the BOE
 - **get_borme_summary**: Get daily summary of the BORME
 - **get_consolidated_legislation**: ID format: BOE-A-YYYY-NUMBER.
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `boe-boletin-oficial-del-estado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `boe-boletin-oficial-del-estado` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BOE (Boletín Oficial del Estado)** tools.
 
 **Configuration:**

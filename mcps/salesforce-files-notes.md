@@ -25,7 +25,7 @@ Connect **Salesforce Files & Notes** to any AI agent.
 - **Operations** — Track document versions and ownership
 
 
-## Available Tools
+## Available Tools (7)
 - **sf_create_note**: Create a new Note attached to a record
 - **sf_get_attachments**: Get attachments on a specific record
 - **sf_file_details**: Get all versions of a specific file (ContentDocument)
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesforce-files-notes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesforce-files-notes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesforce Files & Notes** tools.
 
 **Configuration:**

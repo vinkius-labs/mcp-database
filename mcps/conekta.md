@@ -31,7 +31,7 @@ Integrate your AI assistant with **Conekta**, the leading online payment gateway
 - **Financial Analysts** — Quickly gather aggregate data on daily revenue, chargebacks, and successful orders.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_order**: Requires customer name, email, phone, and at least one line item with name, unit_price (in cents), and quantity. Currency defaults to MXN.
 
 Create a new order in Conekta
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `conekta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `conekta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Conekta** tools.
 
 **Configuration:**

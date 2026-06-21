@@ -32,7 +32,7 @@ Turn your **OpenSearch** cluster into an AI-native vector database. Create k-NN 
 - **Data teams** — inspect index health, document counts, and vector configurations through conversation instead of Kibana dashboards
 
 
-## Available Tools
+## Available Tools (6)
 - **search**: Provide the exact index name and a JSON-stringified dense float vector array to find conceptually similar embeddings natively.
 
 Execute a K-Nearest Neighbors (k-NN) vector search against OpenSearch
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opensearch-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opensearch-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenSearch Vector** tools.
 
 **Configuration:**

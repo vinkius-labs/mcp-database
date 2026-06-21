@@ -13,7 +13,7 @@ Compare 5 attribution models (First Touch, Last Touch, Linear, etc.) to quantify
 **The Challenge of Credit Allocation:** When a customer completes a purchase, how do you accurately assign credit for that revenue? Did the initial social media ad (First Touch) or the final email reminder (Last Touch) drive the sale? Traditional models often fail to capture the true value contribution across an entire customer journey. The simple answer is: it's complicated.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_attribution_shares**: Returns individual channel shares with percentage weights.
 
 Calculate proportional revenue share credit for each touchpoint using a specific attribution model
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `attribution-model-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `attribution-model-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Attribution Model Comparator** tools.
 
 **Configuration:**

@@ -28,7 +28,7 @@ The **AppLovin MCP Server** provides your AI agent with a powerful interface to 
 - **Growth Engineers** — Analyze user-level revenue and cohort data to optimize long-term retention and ROI.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_account_check**: Verify AppLovin account connection
 - **get_user_ad_revenue_report**: Get revenue data aggregated per user or per impression
 - **get_app_discovery_report**: Get performance data for UA campaigns (AppDiscovery)
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `applovin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `applovin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AppLovin** tools.
 
 **Configuration:**

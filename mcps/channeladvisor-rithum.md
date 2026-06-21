@@ -35,7 +35,7 @@ Connect your **ChannelAdvisor (Rithum)** account to any AI agent and take full c
 - **Logistics Specialists** — verify tracking information and distribution center availability for multi-channel orders
 
 
-## Available Tools
+## Available Tools (8)
 - **get_ca_order_details**: Get detailed information for a specific order
 - **get_ca_product_details**: Get detailed information for a specific product
 - **list_distribution_centers**: List available distribution centers
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `channeladvisor-rithum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `channeladvisor-rithum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChannelAdvisor (Rithum)** tools.
 
 **Configuration:**

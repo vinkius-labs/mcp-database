@@ -32,7 +32,7 @@ Connect your **AWeber** account to any AI agent and manage your entire email mar
 - **Automation Engineers** — programmatically manage subscriber flows and list metadata through natural language
 
 
-## Available Tools
+## Available Tools (12)
 - **add_subscriber**: Add a new subscriber to a list
 - **find_subscriber**: Find a subscriber by email across the entire account
 - **get_account_check**: Verify AWeber connection and list available accounts
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aweber` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aweber` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AWeber** tools.
 
 **Configuration:**

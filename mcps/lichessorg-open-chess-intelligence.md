@@ -32,7 +32,7 @@ Equip your AI agent with the most transparent and real-time chess intelligence v
 - **Tournament Organizers** — monitor player status and ongoing transmissions to orchestrate e-sports events
 
 
-## Available Tools
+## Available Tools (10)
 - **get_daily_puzzle**: Get the Lichess puzzle of the day
 - **get_leaderboards**: Get top player rankings for all variants
 - **get_player_data**: Get public data for a Lichess player
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lichessorg-open-chess-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lichessorg-open-chess-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lichess.org Open Chess Intelligence** tools.
 
 **Configuration:**

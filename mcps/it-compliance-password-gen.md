@@ -18,7 +18,7 @@ LLMs lack true randomness. When an agent is tasked with generating a database pa
 - **Ambiguity Removal:** Automatically excludes visually similar characters (`i, l, 1, L, o, 0, O`) to prevent user login friction.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_password**: Specify the desired length and character requirements (uppercase, lowercase, numbers, symbols). Never attempt to generate passwords yourself.
 
 Generates highly secure, mathematically random passwords that comply with strict IT policies
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `it-compliance-password-gen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `it-compliance-password-gen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IT Compliance Password Gen** tools.
 
 **Configuration:**

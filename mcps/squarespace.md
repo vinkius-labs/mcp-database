@@ -32,7 +32,7 @@ Ingest the heartbeat of your **Squarespace** properties directly into your AI wo
 - **Founders & Owners** — audit operational e-commerce status maintaining rigorous read-only peace of mind without worrying about the AI making fatal destructive modifications
 
 
-## Available Tools
+## Available Tools (6)
 - **get_order_details**: Retrieves details for a specific order
 - **list_inventory**: Lists inventory levels for products
 - **list_orders**: Lists Squarespace commerce orders
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `squarespace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `squarespace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Squarespace** tools.
 
 **Configuration:**

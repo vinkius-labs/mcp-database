@@ -35,7 +35,7 @@ Connect your **Clearout.io** account to any AI agent and take full control of yo
 - **Marketing Ops** — verify credit usage and monitor bulk job progress
 
 
-## Available Tools
+## Available Tools (8)
 - **get_bulk_verification_status**: Get the progress status of a bulk verification job
 - **get_clearout_credit_balance**: Retrieve the remaining email verification credit balance
 - **list_bulk_verification_jobs**: List all bulk verification jobs in the account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clearoutio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clearoutio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clearout.io** tools.
 
 **Configuration:**

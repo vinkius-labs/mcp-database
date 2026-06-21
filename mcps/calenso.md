@@ -31,7 +31,7 @@ Connect your AI agent to **Calenso** to natively manage appointment scheduling, 
 - **Developers** — Hook native booking endpoints directly into external workflows.
 
 
-## Available Tools
+## Available Tools (8)
 - **cancel_calenso_appointment**: Cancel an appointment
 - **create_calenso_customer**: Create a new customer
 - **get_calenso_appointment**: Get appointment details
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calenso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calenso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Calenso** tools.
 
 **Configuration:**

@@ -37,7 +37,7 @@ Access the world's largest hyperlocal air quality dataset through **PurpleAir** 
 - **Real Estate Professionals** — assess air quality for property evaluations.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_indoor_sensors**: These sensors measure air quality inside buildings, homes, and enclosed spaces. Useful for indoor air quality assessments, HVAC monitoring, and workspace health studies.
 
 Get all indoor PurpleAir sensors
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `purpleair` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `purpleair` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PurpleAir** tools.
 
 **Configuration:**

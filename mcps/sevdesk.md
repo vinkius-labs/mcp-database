@@ -33,7 +33,7 @@ Grant your conversational AI (like Claude or Cursor) the power of a dedicated Ge
 - **Agency Managers** — effortlessly check current bank configuration parameters and available accounting categories entirely via conversational prompts
 
 
-## Available Tools
+## Available Tools (15)
 - **list_contacts**: Lists all contacts (customers, suppliers) in sevDesk
 - **get_contact**: Retrieves details for a specific contact
 - **create_contact**: Category 3 for customers, 4 for suppliers.
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sevdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sevdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **sevDesk** tools.
 
 **Configuration:**

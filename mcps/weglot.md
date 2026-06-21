@@ -32,7 +32,7 @@ Connect your **Weglot** account to any AI agent to streamline your multilingual 
 - **Content Creators** — instantly translate snippets or UI strings while maintaining context and metadata.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_language_support**: Check if a specific translation pair is supported
 - **list_languages**: List all available languages supported by Weglot
 - **get_status**: Do not spam this endpoint.
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `weglot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `weglot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Weglot** tools.
 
 **Configuration:**

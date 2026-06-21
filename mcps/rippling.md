@@ -33,7 +33,7 @@ Connect your **Rippling** account to any AI agent to streamline HR and employee 
 - **IT Admins** — verify employee identities and access information directly from their workflow tools.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_department**: Create a new department
 - **get_company**: Retrieve details for a specific company
 - **get_employee**: Retrieve details for a specific employee
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rippling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rippling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rippling** tools.
 
 **Configuration:**

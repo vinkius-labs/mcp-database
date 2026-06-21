@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire environmental research workflow
 - **Operations Leads** — automate atmospheric data querying to orchestrate cross-functional climate teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_carbon_monoxide**: Get carbon monoxide emission data
 - **get_geojson_emissions**: Get emission data in GeoJSON format
 - **get_methane**: Get methane emission data
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emissions-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emissions-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Emissions API** tools.
 
 **Configuration:**

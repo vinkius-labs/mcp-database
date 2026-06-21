@@ -33,7 +33,7 @@ Connect your AI agent to **Unkey**, the robust platform for issuing and managing
 - **Customer Support** — verify developer keys and reset or update them based on support tickets
 
 
-## Available Tools
+## Available Tools (8)
 - **create_api_key**: Create a new API key for your users
 - **revoke_api_key**: Permanently delete (revoke) an API key
 - **get_api_details**: Get detailed information for a specific API
@@ -93,7 +93,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unkey-api-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unkey-api-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unkey API Management** tools.
 
 **Configuration:**

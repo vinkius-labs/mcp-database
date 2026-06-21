@@ -32,7 +32,7 @@ Integrate **Docdown**, the efficient document generation and automation platform
 - **Developers** — Audit template schemas and test document generation logic instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_new_document**: Generate a new document using a specific template and data object
 - **get_docdown_account_metadata**: Retrieve metadata and usage limits for your Docdown account
 - **get_document_status**: Get the current status and download URL for a specific document
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docdown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docdown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Docdown** tools.
 
 **Configuration:**

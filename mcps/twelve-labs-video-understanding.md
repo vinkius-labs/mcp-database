@@ -35,7 +35,7 @@ Transform your video archives into searchable, actionable data. Your AI can now 
 - **Developers** — integrate state-of-the-art video understanding into your AI workflows without building complex pipelines.
 
 
-## Available Tools
+## Available Tools (18)
 - **analyze_async**: Analyze and segment videos asynchronously
 - **analyze_sync**: Analyze and segment videos synchronously
 - **confirm_multipart_upload**: Confirm a multipart upload
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `twelve-labs-video-understanding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `twelve-labs-video-understanding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Twelve Labs (Video Understanding)** tools.
 
 **Configuration:**

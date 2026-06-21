@@ -24,7 +24,7 @@ The cost of maintaining an inefficient home is high, stemming from continuous th
 **The Advantage:** You receive an immediate, quantified energy rating (A-E) and a clear roadmap for improvement--a true blueprint for efficiency that prevents overspending on ineffective fixes. It connects raw structural data directly to measurable savings.
 
 
-## Available Tools
+## Available Tools (3)
 - **query_orientation_bias**: Determine the passive energy benefit or detriment of a building orientation
 - **query_improvement_recommendations**: Get prioritized improvement recommendations for building envelope deficiencies
 - **query_structure_thermal_score**: Calculate the thermal performance index for a residential structure
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `energy-efficiency-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `energy-efficiency-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Energy Efficiency Estimator** tools.
 
 **Configuration:**

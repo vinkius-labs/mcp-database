@@ -33,7 +33,7 @@ Connect your **Canva** account to any AI agent and take full control of your cre
 - **Marketing Teams** — Quickly search your approved Brand templates to scaffold new presentations programmatically.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_designs**: List all designs on Canva. Canva is the leading online design platform. Returns design IDs, titles, types, and thumbnails
 - **get_design**: Get full details of a Canva design including title, type, page count, dimensions, and created/updated timestamps
 - **create_design**: Create a new Canva design. Supports preset types like Presentation, Poster, InstagramPost
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `canva` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `canva` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Canva** tools.
 
 **Configuration:**

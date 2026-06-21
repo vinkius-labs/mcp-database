@@ -33,7 +33,7 @@ Connect your **Pabbly Email Marketing** account to any AI agent and take full co
 - **Growth Teams** — add new subscribers to specific lists or verify custom field mappings during lead generation.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_pabbly_list**: Create a new subscriber list
 - **create_pabbly_subscriber**: Add a new subscriber to a list
 - **get_pabbly_account**: Get account information
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pabbly-email-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pabbly-email-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pabbly Email Marketing** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Monitor, forecast, and stabilize game currency inflation by analyzing gold sinks
 The Game Economy Inflation Calculator is a specialized diagnostic tool designed for game developers and economists to maintain stability within a virtual ecosystem. By analyzing the balance between 'Gold Faucets' (currency entry) and 'Gold Sinks' (currency removal), this MCP server provides critical metrics like inflation rates, sink-to-faucet ratios, and future devaluation forecasts. Use `calculate_period_metrics` to assess current trends, `forecast_currency_devaluation` to predict long-term purchasing power loss, and `generate_economic_recommendations` to receive actionable design advice for stabilizing your game's economy.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_period_metrics**: Calculate fundamental inflation rate and sink-to-faucet balance
 - **forecast_currency_devaluation**: Predict future currency devaluation
 - **generate_economic_recommendations**: Generate economic design advice
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `game-economy-inflation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `game-economy-inflation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Game Economy Inflation Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **The Botforge** account to any AI agent and simplify how you manag
 - **Support Managers** — monitor bot health and receive real-time interaction events without leaving the workspace.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_bot_status**: Check bot operational status
 - **get_samples**: Get bot form field samples
 - **list_bots**: List all chatbots
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `the-botforge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `the-botforge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **The Botforge** tools.
 
 **Configuration:**

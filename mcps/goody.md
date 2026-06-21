@@ -35,7 +35,7 @@ No more manual data entry for every single gift. Your AI agent handles the catal
 - **Marketing Teams** — manage large-scale gifting campaigns for events or product launches through natural language
 
 
-## Available Tools
+## Available Tools (11)
 - **create_order_batch**: Send a gift to one or more recipients
 - **get_campaign**: Get details for a specific campaign
 - **get_order_batch**: Get details for a specific order batch
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `goody` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `goody` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Goody** tools.
 
 **Configuration:**

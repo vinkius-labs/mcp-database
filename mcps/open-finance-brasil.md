@@ -11,7 +11,7 @@ Connect Open Finance Brasil to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (7)
 - **get_accounts**: Returns account type, agency, number, and available balance.
 
 Get list of payment accounts and their balances
@@ -60,7 +60,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-finance-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-finance-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Finance Brasil** tools.
 
 **Configuration:**

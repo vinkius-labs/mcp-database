@@ -37,7 +37,7 @@ Connect your **Google Analytics 4** property to any AI agent and access web anal
 - **Growth Engineers** — analyze device breakdown, demographics, and real-time traffic patterns to optimize user experience
 
 
-## Available Tools
+## Available Tools (12)
 - **batch_run_reports**: Batch run reports
 - **check_compatibility**: Check report compatibility
 - **get_conversions**: Get conversions
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-analytics-4` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-analytics-4` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Analytics 4** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 - **RevOps** — Full CRM visibility and reporting
 
 
-## Available Tools
+## Available Tools (8)
 - **pd_add_product_to_deal**: Requires the deal ID, product ID (use pd_search_products or pd_list_products to find), unit price, and quantity. The line-item total is calculated automatically. Use when the user wants to add a product to a deal, build a quote, or track what is being sold.
 
 Attach a product from the catalog to a deal with a specific quantity and unit price for line-item tracking
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipedrive-products` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipedrive-products` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipedrive Products** tools.
 
 **Configuration:**

@@ -28,7 +28,7 @@ The **Atera MCP Server** provides your AI agent with a powerful interface to you
 - **Operations Managers** — Retrieve customer and contact data for reporting and strategic planning.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_ticket**: Create a new support ticket
 - **get_account_check**: Verify Atera account connection
 - **get_agent**: Get details for a specific agent
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `atera` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `atera` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Atera** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate employer liabilities and verify compliance with the US WARN Act.
 This MCP server provides specialized tools to quantify financial exposure and legal risks under the US Worker Adjustment and Retraining Notification (WARN) Act. Use `check_warn_compliance` to determine if a layoff event meets the legal threshold for mandatory notification and whether a violation has occurred based on the notice period provided. If a violation is identified, you can use `calculate_employee_backpay_liability` to compute the total aggregate wages and benefits owed to affected employees. Additionally, `calculate_civil_penalty_exposure` allows you to estimate the cumulative civil penalties incurred for each day of non-compliance.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_employee_backpay_liability**: Calculates total back pay owed to employees
 - **calculate_civil_penalty_exposure**: Estimates total civil penalties for non-compliance
 - **check_warn_compliance**: Determines if a layoff event violates the WARN Act
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-warn-act-compliance-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-warn-act-compliance-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US WARN Act Compliance Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect **Speechmatics** to your AI agent to handle advanced audio processing wo
 - **Data Analysts** — Convert large volumes of recorded meetings or calls into searchable text for analysis.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_job**: Create a new batch transcription job
 - **create_temp_key**: Create a temporary API key
 - **delete_job**: Delete a transcription job
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `speechmatics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `speechmatics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Speechmatics** tools.
 
 **Configuration:**

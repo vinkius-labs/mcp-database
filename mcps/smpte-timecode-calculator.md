@@ -18,7 +18,7 @@ LLMs are notoriously terrible at base-60 and base-30 math. If you ask an AI to a
 - **Drop-Frame Support:** Automatically accounts for NTSC 29.97 or 59.94 drop-frame logic.
 
 
-## Available Tools
+## Available Tools (3)
 - **add_timecodes**: Pass the frame count and the framerate (24, 25, 30, etc.).
 
 Adds two SMPTE timecodes natively supporting drop-frame math
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smpte-timecode-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smpte-timecode-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SMPTE Timecode Calculator** tools.
 
 **Configuration:**

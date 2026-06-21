@@ -34,7 +34,7 @@ Give your AI the ability to reach out, follow up, and monitor replies autonomous
 - **Sales Automation** — let your agent handle outreach and monitor responses automatically
 
 
-## Available Tools
+## Available Tools (11)
 - **list_inboxes**: An inbox is required to send or receive emails. Returns an array of inboxes with their IDs, email addresses, and names.
 
 List all inboxes assigned to the AgentMail API Key
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `agentmail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `agentmail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AgentMail** tools.
 
 **Configuration:**

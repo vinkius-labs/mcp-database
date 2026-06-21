@@ -37,7 +37,7 @@ No more manual data entry into complex accounting dashboards. Your AI agent beco
 - **Sales Teams** — lookup customer details and verify billing information before closing deals
 
 
-## Available Tools
+## Available Tools (10)
 - **approve_draft_invoice**: Finalizes a draft invoice, moving it to an unpaid/saved status
 - **create_accounting_customer**: Provide name and email.
 
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wave-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wave-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wave Accounting** tools.
 
 **Configuration:**

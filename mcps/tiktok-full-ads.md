@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on TikTok
 - **Business Owners** — automate ad querying to orchestrate your TikTok-driven growth strategy smoothly.
 
 
-## Available Tools
+## Available Tools (17)
 - **get_advertiser_balance**: Get the current balance and spending of an advertiser
 - **list_ads**: List all ads for an advertiser
 - **list_audiences**: List custom audiences for retargeting
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tiktok-full-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tiktok-full-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TikTok Full Ads** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Convert volumetric culinary measurements into mass in grams based on specific in
 This MCP server provides precise conversions between volume and weight for over 200 ingredients. By using tools like `search_ingredients`, `get_ingredient_density`, and `convert_volume_to_weight`, AI agents can accurately calculate the mass of ingredients like flour, sugar, or honey when given a volume measurement (e.g., cups, tablespoons, teaspoons). This is essential for digital recipe scaling and automated culinary tasks.
 
 
-## Available Tools
+## Available Tools (3)
 - **convert_volume_to_weight**: Convert a volume measurement to weight in grams
 - **get_ingredient_density**: Retrieve the weight of one cup for a specific ingredient
 - **search_ingredients**: Search for ingredients in the pantry
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ingredient-weight-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ingredient-weight-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ingredient Weight Converter** tools.
 
 **Configuration:**

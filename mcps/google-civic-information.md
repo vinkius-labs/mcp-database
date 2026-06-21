@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire civic participation and politic
 - **Operations Leads** — automate civic data querying to orchestrate cross-functional outreach teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the Google Civic Information API is operational
 - **get_google_civic_elections**: List upcoming and past elections supported by Google Civic
 - **get_representatives_by_address**: Find political representatives for a specific street address
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-civic-information` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-civic-information` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Civic Information** tools.
 
 **Configuration:**

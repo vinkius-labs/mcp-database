@@ -13,7 +13,7 @@ Calculate precise intervals between two dates in years, months, weeks, and days.
 This MCP server provides specialized tools to calculate the exact time elapsed between two dates. Use `get_date_breakdown` to receive a detailed breakdown of years, months, weeks, and days. You can also use `count_business_days` to determine the number of working days between two periods while optionally excluding regional holidays in the USA or Europe. Additionally, `verify_holiday_status` allows you to check if a specific date is recognized as a national holiday within your selected region.
 
 
-## Available Tools
+## Available Tools (3)
 - **count_business_days**: Calculates the total number of working days between two dates
 - **get_date_breakdown**: Provides a detailed breakdown of the time elapsed between two dates
 - **verify_holiday_status**: Checks if a specific date is recognized as a national holiday in a given region
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `days-between-dates-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `days-between-dates-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Days Between Dates Calculator** tools.
 
 **Configuration:**

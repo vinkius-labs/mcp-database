@@ -33,7 +33,7 @@ Equip your AI agent with advanced precision agriculture intelligence through the
 - **Sustainability Researchers** — track vegetation trends and resource efficiency over time.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_crop_health_data**: Get crop health indicators
 - **get_field_analytics**: Get analytics for a specific field
 - **get_agri_fields**: List all registered agricultural fields
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geopard-agriculture` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geopard-agriculture` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Geopard Agriculture** tools.
 
 **Configuration:**

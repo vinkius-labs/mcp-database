@@ -21,7 +21,7 @@ Direct access to 800,000+ photos from the Martian surface.
 FHAZ (front), RHAZ (rear), NAVCAM (navigation), MAST/PANCAM (panoramic), CHEMCAM, MAHLI (hand lens), MARDI (descent)
 
 
-## Available Tools
+## Available Tools (4)
 - **get_mars_photos**: Filter by camera: FHAZ (front hazard), RHAZ (rear hazard), MAST (mast), CHEMCAM, MAHLI, MARDI, NAVCAM. Curiosity has 800K+ photos.
 
 Get Mars rover photos by sol number and camera
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-mars-rover-photos-from-the-red-planet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-mars-rover-photos-from-the-red-planet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA Mars — Rover Photos from the Red Planet** tools.
 
 **Configuration:**

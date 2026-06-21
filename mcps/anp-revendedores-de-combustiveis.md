@@ -32,7 +32,7 @@ Connect to the **ANP (Agência Nacional do Petróleo, Gás Natural e Biocombust�
 - **Compliance Officers** — verify the legal status of resellers against official government records
 
 
-## Available Tools
+## Available Tools (2)
 - **list_combustivel_resellers**: Can be filtered by CNPJ, state (UF), and municipality.
 
 List automotive fuel resellers
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `anp-revendedores-de-combustiveis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `anp-revendedores-de-combustiveis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ANP (Revendedores de Combustíveis)** tools.
 
 **Configuration:**

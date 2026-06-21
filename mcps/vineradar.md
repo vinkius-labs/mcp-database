@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire wine research and vineyard audi
 - **Operations Leads** — automate wine data querying to orchestrate cross-functional hospitality teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the VineRadar API is operational
 - **get_vineyard_details**: Get full details for a specific vineyard by ID
 - **get_wine_details**: Get full details for a specific wine by ID
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vineradar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vineradar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VineRadar** tools.
 
 **Configuration:**

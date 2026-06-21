@@ -36,7 +36,7 @@ Give your AI agent precise geolocation superpowers with **OpenCage Geocoding**. 
 - **Privacy-conscious apps** — geocode sensitive addresses without leaving a trace in third-party logs
 
 
-## Available Tools
+## Available Tools (10)
 - **geocode_basic**: Identify bounded routing spaces inside the Headless OpenCage Engine
 - **geocode_bounding_box**: Inspect deep internal arrays mitigating specific Polygon domains
 - **geocode_high_confidence**: Dispatch an automated validation check routing explicit Score limits
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opencage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opencage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenCage** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Stop interrupting engineers to ask where a specific document lives. Your AI agen
 - **Onboarding & HR** — ask your assistant to fetch the latest company policies or generate reading lists for new hires
 
 
-## Available Tools
+## Available Tools (12)
 - **list_posts**: Returns post IDs and titles.
 
 List all wiki posts/articles in the Slab workspace
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `slab` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `slab` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Slab** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate hourly, per-hectare, and total operational costs for agricultural mach
 This MCP server provides specialized tools for agricultural economic analysis. Use `calculate_hourly_costs` to determine fixed and variable expenses per hour, including depreciation and fuel. Use `calculate_area_impact` to translate hourly costs into cost per hectare based on machine capacity. Finally, use `compare_ownership_models` to decide whether to maintain your own fleet or switch to outsourced contractors by comparing total project costs.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_area_impact**: Calculate the impact of machinery costs on a specific land area
 - **compare_ownership_models**: Compare owned machinery costs against outsourced contractor rates
 - **calculate_hourly_costs**: Calculate the hourly operational costs of machinery
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `machinery-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `machinery-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Machinery Cost Calculator** tools.
 
 **Configuration:**

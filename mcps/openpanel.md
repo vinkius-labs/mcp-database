@@ -32,7 +32,7 @@ Connect your **OpenPanel** account to any AI agent and manage your product analy
 - **Growth Hackers** — update user traits and manage reward points or usage limits via simple commands.
 
 
-## Available Tools
+## Available Tools (4)
 - **decrement_property**: Decrement a numeric property on a user profile
 - **identify_user**: Identify a user in OpenPanel
 - **increment_property**: Increment a numeric property on a user profile
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openpanel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openpanel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenPanel** tools.
 
 **Configuration:**

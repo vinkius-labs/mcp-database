@@ -33,7 +33,7 @@ Connect your **Azure Synapse** workspace to any AI agent and take full control o
 - **Cloud Ops** — remotely inspect compute scale thresholds (SQL/Spark pools) answering billing and scaling architecture queries on-demand
 
 
-## Available Tools
+## Available Tools (7)
 - **list_pipelines**: List all Azure Synapse Analytics data integration pipelines
 - **get_pipeline**: Get precise definition of a specific Azure Synapse pipeline
 - **list_notebooks**: List all Azure Synapse Spark notebooks
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `azure-synapse-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `azure-synapse-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Azure Synapse Analytics** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your AI agents to **Tencent Yuanqi** (腾讯元器), the official intell
 - **Product Teams** — integrate high-performance Chinese-native agents into custom applications
 
 
-## Available Tools
+## Available Tools (7)
 - **chat**: Requires assistant_id and user_id.
 
 Chat with a Tencent Yuanqi assistant
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tencent-yuanqi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tencent-yuanqi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tencent Yuanqi** tools.
 
 **Configuration:**

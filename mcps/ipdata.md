@@ -32,7 +32,7 @@ Connect **IPdata** to your AI agent to instantly analyze IP addresses and Autono
 - **Data Engineers** — Enrich datasets with organizational and geographic context using simple prompts.
 
 
-## Available Tools
+## Available Tools (3)
 - **lookup_asn**: Lookup details for an Autonomous System Number (ASN)
 - **lookup_ip**: Lookup details for a specific IP address
 - **lookup_own_ip**: Lookup the location and threat profile of the current IP
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ipdata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ipdata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IPdata** tools.
 
 **Configuration:**

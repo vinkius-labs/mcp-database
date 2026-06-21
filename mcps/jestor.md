@@ -13,7 +13,7 @@ Manage data, workflows, and records via Jestor low-code API.
 Empower your AI agents with Jestor's low-code internal tools platform. This MCP server allows you to list objects (tables), retrieve and list records, manage users, and monitor workflows and dashboards directly through the Jestor API. Ideal for automating internal operations and database management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_me**: Use this to verify connection status and current permissions.
 
 Gets current authenticated user info
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jestor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jestor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jestor** tools.
 
 **Configuration:**

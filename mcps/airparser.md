@@ -34,7 +34,7 @@ Connect your **Airparser** account to your AI agent to unlock professional unstr
 - **Data Analysts** — convert messy unstructured data into clean structured formats for reporting
 
 
-## Available Tools
+## Available Tools (10)
 - **list_inboxes**: List Airparser inboxes
 - **get_inbox_details**: Get inbox metadata
 - **parse_document_sync**: Parse document immediately
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airparser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airparser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Airparser** tools.
 
 **Configuration:**

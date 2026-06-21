@@ -13,7 +13,7 @@ Equip your AI agent with real-time web search capabilities across Google, Bing, 
 The SerpApi MCP server acts as the ultimate eye into the live web for your AI. By connecting this integration, your agents can organically bypass CAPTCHAs, retrieve current SERP events, scrape product catalogs via Google Shopping, find news, images, and localized search results globally. This module bridges the training gap of Language Models allowing instantaneous internet connectivity.
 
 
-## Available Tools
+## Available Tools (12)
 - **baidu_search**: Performs a search on Baidu
 - **bing_search**: Performs a search on Bing
 - **duckduckgo_search**: Performs a search on DuckDuckGo
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `serpapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `serpapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SerpApi** tools.
 
 **Configuration:**

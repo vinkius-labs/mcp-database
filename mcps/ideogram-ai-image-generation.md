@@ -34,7 +34,7 @@ Connect your **Ideogram** account to any AI agent and take full control of state
 - **Content Creators** — create unique thumbnails and transparent assets for video and web projects efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **generate**: Generate images from a text prompt using Ideogram. Ideogram excels at rendering text within images — the best in the industry for posters, ads, and branded content. Supports V_2, V_2_TURBO, V_3 models
 - **generate_v3**: Uses DEFAULT rendering speed.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ideogram-ai-image-generation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ideogram-ai-image-generation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ideogram (AI Image Generation)** tools.
 
 **Configuration:**

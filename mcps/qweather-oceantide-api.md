@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire maritime research and oceanogra
 - **Operations Leads** — automate oceanographic data querying to orchestrate cross-functional maritime teams smoothly.
 
 
-## Available Tools
+## Available Tools (2)
 - **check_api_status**: Check if the QWeather Ocean service is operational
 - **get_ocean_tide_data**: Get real-time tide data for a specific location and date
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qweather-oceantide-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qweather-oceantide-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QWeather Ocean/Tide API** tools.
 
 **Configuration:**

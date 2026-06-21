@@ -13,7 +13,7 @@ Transpose notes, chords, scales, and progressions with ease.
 A specialized musical engine for precise transposition. Use `transpose_element` to shift individual notes or chords, `apply_instrument_notation` to adapt concert pitch for Bb, Eb, and F instruments, `resolve_enharmonic_spelling` to ensure correct notation in specific keys, and `transpose_progression` to move entire sequences of music at once.
 
 
-## Available Tools
+## Available Tools (4)
 - **transpose_element**: Transpose a single musical element
 - **apply_instrument_notation**: Apply notation for transposing instruments
 - **resolve_enharmonic_spelling**: Resolve enharmonic spelling
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `transposition-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `transposition-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Transposition Calculator** tools.
 
 **Configuration:**

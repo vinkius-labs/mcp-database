@@ -32,7 +32,7 @@ Integrate **emfluence**, the intuitive marketing automation platform, directly i
 - **Operations Teams** — Monitor marketing volumes and organizational emfluence metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_emfluence_account_metadata**: Retrieve metadata and settings for your emfluence account
 - **get_email_performance_stats**: Get performance statistics for a specific marketing email
 - **get_contact_profile**: Get full profile and history for a specific contact
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emfluence-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emfluence-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **emfluence Marketing** tools.
 
 **Configuration:**

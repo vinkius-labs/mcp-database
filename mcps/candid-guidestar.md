@@ -34,7 +34,7 @@ Connect your **Candid (formerly GuideStar)** account to any AI agent and orchest
 - **Developers** — integrate reliable non-profit data into their applications using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_charity_check_pdf**: Generate a PDF report for compliance record-keeping
 - **get_demographics**: Get DEI data for a nonprofit
 - **get_nonprofit_essentials**: Get core details for a nonprofit by EIN
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `candid-guidestar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `candid-guidestar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Candid (GuideStar)** tools.
 
 **Configuration:**

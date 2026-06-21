@@ -13,7 +13,7 @@ Calculate optimal reorder points and safety stock levels based on demand volatil
 This MCP server provides advanced inventory management capabilities to prevent stockouts and optimize holding costs. Using the `calculate_reorder_metrics` tool, you can determine your exact reorder point (ROP), safety stock quantity, coverage days, and annual holding costs by providing average daily demand, lead time, and demand standard deviation. Additionally, use `get_service_level_zscore` to find statistical multipliers for different service levels, or `analyze_volatility_impact` to simulate how changes in demand uncertainty will affect your required inventory buffers.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_volatility_impact**: Analyze how changes in demand uncertainty affect stock levels
 - **calculate_reorder_metrics**: Calculate optimal reorder point and safety stock
 - **get_service_level_zscore**: Retrieve Z-score for a specific service level
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `reorder-point-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `reorder-point-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Reorder Point Calculator** tools.
 
 **Configuration:**

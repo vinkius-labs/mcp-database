@@ -35,7 +35,7 @@ No more manual review mining. Your AI assistant acts as a dedicated guest relati
 - **Hospitality Group Executives** — monitor reputation trends across multiple properties from a single interface.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_guest_details**: Retrieve detailed information for a specific guest ID
 - **list_detractors**: List all guests who are detractors (ratings 1-6)
 - **list_guest_feedback**: List all guests and their feedback status/results
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `guestmeter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `guestmeter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Guestmeter** tools.
 
 **Configuration:**

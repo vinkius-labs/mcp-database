@@ -13,7 +13,7 @@ Predict your semester GPA and its impact on your cumulative academic standing us
 The Semester GPA Projector allows students to simulate different academic outcomes. By using the `project_semester_gpa` tool, you can estimate your final grades across three scenarios: maintaining current performance, a 20% improvement, or a 20% decline. You can also use `calculate_cumulative_impact` to see how this semester's results will shift your total graduation GPA and `validate_course_structure` to ensure your course data is correctly formatted with proper weights.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_cumulative_impact**: Calculates the impact of the current semester on the cumulative GPA
 - **project_semester_gpa**: Projects semester GPA for three scenarios: baseline, improvement, and decline
 - **validate_course_structure**: Validates that all courses have weights summing to 100%
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `semester-gpa-projector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `semester-gpa-projector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Semester GPA Projector** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **DoorDash Drive**, the white-label delivery fulfillment platform, dir
 - **Customer Support** — Research specific delivery details and ETAs to assist customers instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_active_delivery**: Cancel a delivery that has not yet been picked up
 - **create_new_delivery**: Request a new DoorDash delivery (Drive v2)
 - **get_doordash_developer_metadata**: Retrieve metadata for the current authenticated developer account
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `doordash-drive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `doordash-drive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DoorDash Drive** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to **Tavus**, the leading platform for automated personali
 - **Customer Success** — create personalized onboarding and support videos for clients
 
 
-## Available Tools
+## Available Tools (7)
 - **delete_replica**: Permanently delete a specific replica
 - **delete_video**: Permanently delete a specific generated video
 - **generate_replica_video**: Generate a new AI video using a specific replica
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tavus-video-replicas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tavus-video-replicas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tavus Video Replicas** tools.
 
 **Configuration:**

@@ -25,7 +25,7 @@ Connect **LibraryThing** to your AI agent for instant book lookups, bibliographi
 3. Start querying books from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (4)
 - **get_book_coverage**: The coverage score (0-1) indicates how completely the book is cataloged on LibraryThing. Free, no API key required.
 
 Get catalog coverage score for a book
@@ -78,7 +78,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `librarything` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `librarything` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LibraryThing** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Gotenberg** instance to any AI agent to handle complex document c
 - **Operations Teams** — streamline document workflows by merging reports and managing PDF metadata without manual tools.
 
 
-## Available Tools
+## Available Tools (16)
 - **convert_html_to_pdf**: Returns the base64 encoded PDF.
 
 Convert raw HTML to PDF using Chromium
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gotenberg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gotenberg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gotenberg** tools.
 
 **Configuration:**

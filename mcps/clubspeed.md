@@ -35,7 +35,7 @@ Connect your **Clubspeed** account to any AI agent and take full control of your
 - **Ops Teams** — verify activity availability and monitor system health
 
 
-## Available Tools
+## Available Tools (8)
 - **get_clubspeed_account_info**: Retrieve core account and venue information
 - **get_customer_venue_details**: Get detailed information for a specific customer
 - **get_reservation_details**: Get detailed information for a specific reservation
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clubspeed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clubspeed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clubspeed** tools.
 
 **Configuration:**

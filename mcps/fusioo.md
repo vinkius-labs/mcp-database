@@ -35,7 +35,7 @@ Connect your **Fusioo** workspace to any AI agent to automate your project manag
 - **Operations Teams** — automate the creation of new records and verify field schemas seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **create_app_record**: Add a new record
 - **get_app_schema**: Get app metadata
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fusioo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fusioo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fusioo** tools.
 
 **Configuration:**

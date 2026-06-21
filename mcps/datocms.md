@@ -35,7 +35,7 @@ Connect your **DatoCMS** project to any AI agent and take full control of your h
 - **Digital Ops** — manage CMS models and verify record consistency through natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_record**: Provision a highly-available JSON Payload generating new content Items
 - **wipe_cms_record**: Irreversibly vaporize explicit App nodes dropping live Document rows
 - **wipe_media_upload**: Dispatch an automated validation check routing explicit Disk removals
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datocms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datocms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DatoCMS** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **Envoke**, the powerful and intuitive email marketing and communicati
 - **Operations Teams** — Monitor marketing volumes and organizational Envoke metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_envoke_account_metadata**: Retrieve metadata and limits for your Envoke account
 - **get_campaign_performance_stats**: Get performance statistics for a specific email campaign
 - **get_campaign_details**: Get detailed settings and status for a specific email campaign
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `envoke-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `envoke-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Envoke Marketing** tools.
 
 **Configuration:**

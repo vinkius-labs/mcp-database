@@ -34,7 +34,7 @@ Connect your **Corpay One** business payment account to any AI agent and simplif
 - **Business Owners** — get instant bird's-eye views of company spending and upcoming bill payments via the AI assistant.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_new_document**: Upload a new document
 - **get_document_details**: Get details for a specific document
 - **get_payment_details**: Get details for a specific payment
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `corpay-one` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `corpay-one` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Corpay One** tools.
 
 **Configuration:**

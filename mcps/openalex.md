@@ -33,7 +33,7 @@ Connect your AI agent to the **world's largest fully open catalog of scholarly w
 - **Science Policy Analysts** — analyze global research trends, funding impacts, and institutional performance across countries and disciplines
 
 
-## Available Tools
+## Available Tools (5)
 - **get_openalex_work**: Accepts OpenAlex ID (e.g. W2741809809 or full URL) or DOI (e.g. 10.1038/nature12373).
 
 Get full details of an academic work by OpenAlex ID or DOI
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openalex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openalex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenAlex** tools.
 
 **Configuration:**

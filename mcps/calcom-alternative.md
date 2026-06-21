@@ -35,7 +35,7 @@ No more manual toggling between calendars or sending back-and-forth availability
 - **Executive Assistants** — orchestrate complex scheduling flows and manage user availability through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_booking**: Remove meeting
 - **create_new_booking**: Schedule a meeting
 - **get_booking_details**: Get meeting info
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calcom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calcom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cal.com** tools.
 
 **Configuration:**

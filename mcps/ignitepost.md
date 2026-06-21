@@ -13,7 +13,7 @@ Manage hand-written note orders and outreach campaigns via IgnitePOST API.
 Empower your AI agents to send personalized, hand-written notes with IgnitePOST. This MCP server allows you to list and retrieve orders, manage templates, view available fonts and stationery, and track outreach campaigns directly through the IgnitePOST API. Ideal for automating relationship marketing and high-touch customer outreach.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_order**: Retrieves details for a specific order
 - **list_campaigns**: Lists all outreach campaigns
 - **list_contacts**: Lists all contacts
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ignitepost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ignitepost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IgnitePOST** tools.
 
 **Configuration:**

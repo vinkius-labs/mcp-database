@@ -13,7 +13,7 @@ Estimate your maximum lifting capacity using Epley, Brzycki, and Lander models.
 This MCP server provides specialized tools for strength athletes to predict their One Repetition Maximum (1RM) without the physical strain of a true max test. Use `get_epley_estimate` for a widely recognized method, `get_brzycki_estimate` for an alternative approach based on intensity ratios, or `get_lander_estimate` for a more complex statistical model. You can also use `get_lift_intensity` to determine the training load percentage of your sets.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_brzycki_estimate**: Determine the estimated 1RM using the Brzycki method
 - **get_epley_estimate**: Determine the estimated 1RM using the Epley method
 - **get_lift_intensity**: Calculate the percentage of a user's maximum capability used
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `one-rep-max-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `one-rep-max-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **One Rep Max Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Polar AccessLink** account to any AI agent to analyze your fitnes
 - **Data Nerds** — easily pull raw biometric data for custom analysis or logging.
 
 
-## Available Tools
+## Available Tools (27)
 - **activate_webhook**: Re-activate a deactivated webhook
 - **create_webhook**: Create a webhook
 - **delete_user**: De-register a user and revoke access
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `polar-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `polar-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Polar** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual exporting of lead lists or missing webinar sign-ups. Your AI acts
 - **Developers** — integrate high-speed FunnelCockpit data into custom automation workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_funnelcockpit_status**: Verify FunnelCockpit API connectivity
 - **create_contact**: Create a CRM contact
 - **get_account**: Get account info
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `funnelcockpit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `funnelcockpit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FunnelCockpit** tools.
 
 **Configuration:**

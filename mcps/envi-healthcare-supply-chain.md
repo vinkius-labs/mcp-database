@@ -32,7 +32,7 @@ Integrate **Envi**, the leading supply chain and inventory management platform f
 - **Procurement Specialists** — Monitor vendor performance and organizational supply metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_envi_account_metadata**: Retrieve metadata and limits for your Envi account
 - **get_supply_stock_level**: Get real-time stock levels for a specific medical item
 - **get_po_technical_details**: Get detailed settings and line items for a specific purchase order
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `envi-healthcare-supply-chain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `envi-healthcare-supply-chain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Envi Healthcare Supply Chain** tools.
 
 **Configuration:**

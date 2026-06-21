@@ -32,7 +32,7 @@ Integrate **DeveloperHub**, the specialized platform for developer documentation
 - **Developer Advocates** — Search for specific documentation snippets and technical details via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_metadata**: Retrieve metadata and usage limits for your DeveloperHub account
 - **get_documentation_page_content**: Get the full content and metadata for a specific documentation page
 - **get_documentation_sitemap**: Retrieve a structural map of all pages in a project
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `developerhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `developerhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeveloperHub** tools.
 
 **Configuration:**

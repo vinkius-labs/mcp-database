@@ -31,7 +31,7 @@ Connect your **HiDeliver** broadcasting account to an AI agent to execute bulk e
 - **Agency Developers** — construct custom dispatch rules dynamically testing mailing flows from the editor
 
 
-## Available Tools
+## Available Tools (9)
 - **cancel_delivery**: Cancel a mapped delivery trace
 - **create_delivery**: Log and schedule a fresh pickup delivery
 - **get_account_balance**: Evaluate remaining tokens or cash thresholds
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hideliver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hideliver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HiDeliver** tools.
 
 **Configuration:**

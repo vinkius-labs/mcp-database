@@ -13,7 +13,7 @@ Calculate precise pesticide dilution, tank loads, and safety intervals.
 This MCP server provides specialized tools for agricultural precision. Use `calculate_mixing_ratio` to determine the exact amount of product and water needed per tank, `calculate_total_deployment` to plan logistics like total tanks and cost per hectare, and `lookup_safety_warnings` to retrieve critical pre-harvest interval (PHI) data based on active ingredients.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_mixing_ratio**: Determines the precise composition of a single spray tank load
 - **lookup_safety_warnings**: Retrieves essential safety and compliance information based on the chemical used
 - **calculate_total_deployment**: Calculates the total logistics required for treating a large-scale area
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pesticide-dilution-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pesticide-dilution-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pesticide Dilution Calculator** tools.
 
 **Configuration:**

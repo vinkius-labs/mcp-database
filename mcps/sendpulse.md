@@ -33,7 +33,7 @@ Connect your **SendPulse** account to any AI agent to streamline your email mark
 - **Business Owners** — monitor account balance and team access through simple natural language queries.
 
 
-## Available Tools
+## Available Tools (28)
 - **add_contacts**: Add contacts to an address book
 - **add_smtp_unsubscribe**: Add to SMTP unsubscribe list
 - **get_balance**: Get SendPulse balance details
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sendpulse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sendpulse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SendPulse** tools.
 
 **Configuration:**

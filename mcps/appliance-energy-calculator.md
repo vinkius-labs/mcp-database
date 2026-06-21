@@ -13,7 +13,7 @@ Calculate electricity consumption in kWh and monthly costs for appliances.
 This MCP server provides tools to estimate the energy footprint and financial impact of household appliances. Use `calculate_daily_consumption` to find daily kWh usage, `calculate_monthly_expenses` to determine monthly costs based on tariffs, or `get_appliance_impact_summary` for a complete breakdown including power rating, hours used, and energy pricing.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_appliance_impact_summary**: Get a complete energy and cost summary for an appliance
 - **calculate_daily_consumption**: Calculate the energy consumption of an appliance in one day
 - **calculate_monthly_expenses**: Calculate the monthly electricity cost for a given energy usage
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `appliance-energy-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `appliance-energy-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Appliance Energy Calculator** tools.
 
 **Configuration:**

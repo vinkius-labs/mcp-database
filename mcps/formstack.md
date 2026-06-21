@@ -34,7 +34,7 @@ Connect your **Formstack** account to any AI agent to automate your professional
 - **Marketing Teams** — automate the retrieval of lead data and manage form updates for multi-channel campaigns.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_form**: Create a new form
 - **create_webhook**: Add a webhook
 - **delete_form**: Remove a form
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `formstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `formstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Formstack** tools.
 
 **Configuration:**

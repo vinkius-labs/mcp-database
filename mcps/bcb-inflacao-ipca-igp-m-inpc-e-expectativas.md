@@ -20,7 +20,7 @@ Brazilian inflation data.
 - **Focus Expectations** — Market forecasts
 
 
-## Available Tools
+## Available Tools (5)
 - **get_ipca**: Usado como meta de inflação pelo BCB. Mede a variação de preços de uma cesta de consumo para famílias com renda de 1 a 40 salários mínimos. Série SGS: 433.
 
 Obter o IPCA — Índice Nacional de Preços ao Consumidor Amplo
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bcb-inflacao-ipca-igp-m-inpc-e-expectativas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bcb-inflacao-ipca-igp-m-inpc-e-expectativas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BCB Inflação — IPCA, IGP-M, INPC e Expectativas** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Manage employee productivity, time tracking, and activity via Insightful API.
 Empower your AI agents to analyze and manage workforce productivity with Insightful (formerly Workpuls). This MCP server allows you to list employees and teams, track project progress, monitor real-time activity, and retrieve productivity and attendance reports directly through the Insightful API. Ideal for automating team management and performance monitoring.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_attendance**: Retrieves aggregated attendance and time tracking reports
 - **get_employee**: Retrieves details for a specific employee
 - **get_productivity**: Retrieves aggregated productivity reports
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `insightful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `insightful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Insightful** tools.
 
 **Configuration:**

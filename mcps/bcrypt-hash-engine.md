@@ -22,7 +22,7 @@ Bcrypt is the algorithm that Dropbox, GitHub, and every serious authentication s
 - **Pure JavaScript:** Uses bcryptjs — works in Edge, Lambda, Cloudflare Workers, and any Node.js runtime without compilation.
 
 
-## Available Tools
+## Available Tools (2)
 - **bcrypt_hash**: Bcrypt is the industry standard for password hashing — it includes a salt and is intentionally slow to resist brute-force attacks. Salt rounds control the computational cost (10 is default, 12+ for high security). Never store plaintext passwords.
 
 Hashes a password using bcrypt with configurable salt rounds. Pure JS, no native compilation needed
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bcrypt-hash-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bcrypt-hash-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bcrypt Hash Engine** tools.
 
 **Configuration:**

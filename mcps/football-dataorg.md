@@ -33,7 +33,7 @@ Connect the **Football-Data.org** API to your AI agent to retrieve comprehensive
 - **Football Fans** — Get instant updates on your favorite team's schedule and standing without searching through websites.
 
 
-## Available Tools
+## Available Tools (14)
 - **get_area**: Get details for a specific area
 - **get_competition_standings**: Can be filtered by standing type (TOTAL, HOME, AWAY).
 
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `football-dataorg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `football-dataorg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Football-Data.org** tools.
 
 **Configuration:**

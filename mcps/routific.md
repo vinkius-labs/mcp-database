@@ -32,7 +32,7 @@ Connect your conversational assistant directly to **Routific**, a premier logist
 - **Enterprise Product Engineers** — Easily execute deep and massive asynchronous routing batches proactively through an intuitive text interface dynamically tied natively to standard APIs natively natively.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_saas_job**: This action is irreversible.
 
 Cancels and deletes a delivery job from the platform
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `routific` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `routific` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Routific** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect **AgentOps** to your AI agent for comprehensive telemetry and observabil
 - **DevOps Teams** — Ensure the reliability and observability of production AI agents with structured telemetry data.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_trace**: Get details for a specific trace
 - **get_project**: Get AgentOps project details
 - **get_span**: Get details for a specific span
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `agentops-agent-telemetry-and-monitoring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `agentops-agent-telemetry-and-monitoring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AgentOps (Agent Telemetry and Monitoring)** tools.
 
 **Configuration:**

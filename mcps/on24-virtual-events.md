@@ -35,7 +35,7 @@ Connect your **ON24** account to your AI agent and gain deep insights into your 
 - **Marketing Operations** — automate the retrieval of survey results and Q&A logs for post-event reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_survey_responses**: Get survey response data
 - **list_event_attendees**: List event attendees
 - **list_virtual_events**: List all virtual events
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `on24-virtual-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `on24-virtual-events` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ON24 Virtual Events** tools.
 
 **Configuration:**

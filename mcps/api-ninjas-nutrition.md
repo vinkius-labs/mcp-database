@@ -22,7 +22,7 @@ The **API Ninjas Nutrition MCP Server** provides fast, lightweight nutritional a
 Free API key with rate limits. Simple X-Api-Key header authentication.
 
 
-## Available Tools
+## Available Tools (2)
 - **ninja_analyze_nutrition**: g. "1 lb brisket", "200g salmon", "3 eggs and 2 slices of toast") and get instant nutritional data: calories, protein, fat, carbs, fiber, sugar, sodium, and cholesterol. Fast NLP-powered analysis.
 
 Analyze nutritional content of any food using natural language
@@ -69,7 +69,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `api-ninjas-nutrition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `api-ninjas-nutrition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **API Ninjas Nutrition** tools.
 
 **Configuration:**

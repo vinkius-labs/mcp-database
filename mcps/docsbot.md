@@ -32,7 +32,7 @@ Integrate **DocsBot**, the AI-powered knowledge base platform, directly into you
 - **Product Teams** — Audit bot interaction logs to identify common user questions and content gaps.
 
 
-## Available Tools
+## Available Tools (10)
 - **ask_bot_question**: Ask a technical question to a specific DocsBot and retrieve an AI-generated answer
 - **get_docsbot_account_metadata**: Retrieve metadata for the current authenticated user
 - **get_bot_knowledge_summary**: Retrieve a high-level summary of the knowledge base size and source count
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docsbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docsbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DocsBot** tools.
 
 **Configuration:**

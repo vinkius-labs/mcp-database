@@ -35,7 +35,7 @@ No more switching between carrier portals and internal dashboards. Your AI acts 
 - **Logistics Operations** — Analyze delivery performance and trigger customer alerts for delays or successful deliveries.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_estimated_delivery_dates**: Uses POST but acts as a query.
 
 Calculate estimated delivery dates (EDD)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `narvar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `narvar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Narvar** tools.
 
 **Configuration:**

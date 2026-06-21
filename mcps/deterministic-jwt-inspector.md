@@ -19,7 +19,7 @@ Debugging authentication pipelines often requires pasting sensitive JSON Web Tok
 - **Zero-Dependency Architecture:** Pure JS runtime execution guarantees absolute microsecond speed without pulling heavy external cryptographic libraries.
 
 
-## Available Tools
+## Available Tools (1)
 - **inspect_jwt**: It does not verify the signature, so do not use it to authenticate the token, only to inspect its payload and headers.
 
 Deeply inspects and decodes a JSON Web Token (JWT), extracting the Header, Payload claims, and calculating expiry metadata without requesting verification keys
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-jwt-inspector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-jwt-inspector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic JWT Inspector** tools.
 
 **Configuration:**

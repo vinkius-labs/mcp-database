@@ -31,7 +31,7 @@ Connect your AI agent to the **Correios** infrastructure to automate logistics q
 - **Support Teams** — provide instant tracking updates within AI-powered chat interfaces without leaving the conversation.
 
 
-## Available Tools
+## Available Tools (2)
 - **calculate_price_deadline**: Uses POST but acts as a query.
 
 Calculate shipping price and deadline
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `correios-api-rest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `correios-api-rest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Correios API (REST)** tools.
 
 **Configuration:**

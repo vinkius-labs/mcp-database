@@ -32,7 +32,7 @@ Translate your AI conversation into structured personal knowledge management sea
 - **Researchers & Analysts** — Build deep graph linkages seamlessly tying bookmarks, date blocks, and deep nested lists via streamlined prompt interactions.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_checkbox_task**: Optionally set initial done status.
 
 Creates a checkbox/todo item in the Tana inbox
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tana** tools.
 
 **Configuration:**

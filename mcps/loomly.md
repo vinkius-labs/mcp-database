@@ -33,7 +33,7 @@ Connect your **Loomly** account to any AI agent and manage social media through 
 - **Agencies** — coordinate multi-client social calendars
 
 
-## Available Tools
+## Available Tools (8)
 - **create_new_post**: Add a new post to a calendar
 - **get_calendar_details**: Get metadata for a calendar
 - **get_user_profile**: Get your Loomly profile
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `loomly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `loomly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Loomly** tools.
 
 **Configuration:**

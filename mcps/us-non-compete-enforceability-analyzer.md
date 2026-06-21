@@ -13,7 +13,7 @@ Assess the legal enforceability of non-compete agreements across US states.
 This MCP server provides specialized tools to evaluate whether a non-compete clause is enforceable, partially enforceable, or void based on US state laws. Use `check_state_legality` to identify states with total statutory bans like California or Minnesota. Use `evaluate_noncompete_clause` to perform a detailed assessment using duration and geographic radius parameters. You can also use `get_enforceability_guidelines` to retrieve the maximum reasonable thresholds for specific jurisdictions.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_state_legality**: Checks if a US state has a statutory ban on non-competes
 - **evaluate_noncompete_clause**: Evaluates the enforceability of a non-compete clause
 - **get_enforceability_guidelines**: Retrieves general non-compete enforceability thresholds
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-non-compete-enforceability-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-non-compete-enforceability-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Non-Compete Enforceability Analyzer** tools.
 
 **Configuration:**

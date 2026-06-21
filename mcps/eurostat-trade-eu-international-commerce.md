@@ -20,7 +20,7 @@ Track EU trade flows and industrial activity across all 27 member states.
 - **Generic Query** — Any trade/industry dataset
 
 
-## Available Tools
+## Available Tools (5)
 - **get_trade_balance**: Dataset: ext_lt_maineu. Key partners: US, CN, UK, JP, CH.
 
 Get EU international trade balance by partner country
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eurostat-trade-eu-international-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eurostat-trade-eu-international-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eurostat Trade — EU International Commerce** tools.
 
 **Configuration:**

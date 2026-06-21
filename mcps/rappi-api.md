@@ -33,7 +33,7 @@ Empower your intelligent agents directly with **Rappi API**, the dominant delive
 - **LatAm SaaS Integrators** — build consolidated order aggregators unifying local Rappi merchant data with alternative distribution networks strictly under one hood.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_store_availability**: Check availability status of a store
 - **get_order_handoff**: Get handoff confirmation codes for an order
 - **get_store_menu**: Retrieve the full menu of a store
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rappi-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rappi-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rappi API** tools.
 
 **Configuration:**

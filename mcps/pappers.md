@@ -35,7 +35,7 @@ No more manual SIREN searching on government portals. Your AI acts as a dedicate
 - **Sales Teams** — streamline the qualification of French B2B leads and monitor prospect health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: fr service API.
 
 Verify Pappers API status
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pappers` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pappers` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pappers** tools.
 
 **Configuration:**

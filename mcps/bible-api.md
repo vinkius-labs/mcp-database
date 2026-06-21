@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire biblical research workflow with
 - **Operations Leads** — automate scripture data querying to orchestrate cross-functional educational teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_bible_details**: Get metadata for a specific Bible ID
 - **get_bible_chapter**: Get the content of a specific chapter
 - **get_bible_verse**: Get the text of a specific verse
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bible-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bible-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bible API** tools.
 
 **Configuration:**

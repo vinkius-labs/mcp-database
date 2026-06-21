@@ -13,7 +13,7 @@ Calculate the perfect water volume, salt concentration, and cooking time for any
 Achieve professional results every time with precise cooking parameters. This MCP server provides tools like `get_ideal_ratios` to determine the exact water, salt, and duration needed for specific pasta shapes and thicknesses. You can also use `verify_salinity` to check if your seasoning is correct or `assess_texture_risk` to prevent overcooking.
 
 
-## Available Tools
+## Available Tools (3)
 - **verify_salinity**: Verify if the salt concentration in pasta water is optimal
 - **assess_texture_risk**: Assess the risk of pasta being overcooked or undercooked
 - **get_ideal_ratios**: Calculate ideal cooking parameters for a specific pasta shape and thickness
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pasta-water-ratio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pasta-water-ratio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pasta Water Ratio** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Logseq** instance to any AI agent and take full control of your p
 - **PKM Enthusiasts** — audit complex graph structures and perform bulk block updates to maintain a clean and optimized personal knowledge base
 
 
-## Available Tools
+## Available Tools (10)
 - **list_pages**: List all pages in the current Logseq graph
 - **get_page**: Retrieve metadata for a specific Logseq page by mapping name or UUID limits
 - **create_page**: Editor.createPage` deploying new pages including native markdown contents inside the local map.
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `logseq-knowledge-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `logseq-knowledge-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Logseq (Knowledge Management)** tools.
 
 **Configuration:**

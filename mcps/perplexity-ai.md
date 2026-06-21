@@ -39,7 +39,7 @@ No more switching between search engines and reading through pages of results. Y
 - **Developers** — get structured JSON responses, code analysis, and reasoning for technical problem-solving
 
 
-## Available Tools
+## Available Tools (14)
 - **chat_completion**: The Sonar model searches the web, synthesizes information, and provides a concise answer.
 This is the basic query tool for factual questions, summaries, and general knowledge.
 Use this for quick lookups where you need accurate, up-to-date information.
@@ -213,7 +213,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `perplexity-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `perplexity-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Perplexity AI** tools.
 
 **Configuration:**

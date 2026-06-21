@@ -29,7 +29,7 @@ Connect the **Steam Web API** to any AI agent and retrieve gaming data including
 3. Start querying Steam data from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_app_list**: Get complete list of Steam apps
 - **get_badge_progress**: Get community badge progress for a user
 - **get_app_news**: Get news articles for a Steam app
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `steam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `steam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Steam** tools.
 
 **Configuration:**

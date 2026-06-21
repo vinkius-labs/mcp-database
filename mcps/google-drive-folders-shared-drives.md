@@ -36,7 +36,7 @@ This version is optimized for administrative organizational tasks and large-scal
 - **Workspace Architects** — maintain clean organizational structures and create intuitive shortcut paths across the company drive
 
 
-## Available Tools
+## Available Tools (12)
 - **add_folder_permission**: Share a folder with a user or group
 - **create_folder**: Create a new folder
 - **create_shortcut**: Create a shortcut to a file or folder
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-drive-folders-shared-drives` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-drive-folders-shared-drives` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Drive: Folders & Shared Drives** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more context-switching between your editor and the Sitecore backend. Your AI 
 - **Developers** — automate the creation of test items and query complex Sitecore trees while coding your front-end headless applications
 
 
-## Available Tools
+## Available Tools (9)
 - **create_content_item**: Requires parent ID, item name, and template ID.
 
 Creates a new item in the Sitecore content tree
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sitecore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sitecore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sitecore** tools.
 
 **Configuration:**

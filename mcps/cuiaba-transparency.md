@@ -33,7 +33,7 @@ Connect to the **Cuiabá Transparency Portal** and explore municipal public data
 - **Data Analysts** — fetch structured fiscal data for 2023, 2024, and beyond without manual scraping.
 
 
-## Available Tools
+## Available Tools (5)
 - **list_budget**: List municipal budget information for Cuiabá
 - **list_contracts**: List public tenders and contracts for Cuiabá
 - **list_expenses**: List municipal expenditures for Cuiabá
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cuiaba-transparency` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cuiaba-transparency` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cuiabá Transparency** tools.
 
 **Configuration:**

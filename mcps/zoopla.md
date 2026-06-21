@@ -33,7 +33,7 @@ Connect your **Zoopla** API to any AI agent to unlock comprehensive UK real esta
 - **Data Analysts** — extract property rich lists and Zed-Index values for market reporting and competitive analysis.
 
 
-## Available Tools
+## Available Tools (5)
 - **average_sold_prices**: Retrieve average sold prices for a particular area
 - **local_info_graphs**: Retrieve URLs for graphs showing local area statistics
 - **property_listings**: Retrieve a list of properties for sale or to rent in a given area
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoopla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoopla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoopla** tools.
 
 **Configuration:**

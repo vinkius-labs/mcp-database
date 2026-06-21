@@ -34,7 +34,7 @@ Your AI agent eliminates the need to navigate the verbose Auth0 dashboard while 
 - **Compliance Officers** — guarantee swift PII user deletions and review global connection mappings in a conversational format
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_user**: Vaporizes all bound external identity links, MFA setups, and locally-held database credentials instantly, ensuring complete privacy compliance during active right-to-be-forgotten regulatory requests.
 
 Permanently delete a user profile directly from Auth0
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `auth0` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `auth0` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Auth0** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Listrak** account to any AI agent to automate your cross-channel 
 - **Growth Engineers** — Integrate email and SMS automation logic directly into your custom internal tools
 
 
-## Available Tools
+## Available Tools (7)
 - **send_sms_broadcast**: Send an immediate SMS broadcast
 - **create_sms_contact**: Add a new SMS contact
 - **list_email_campaigns**: List all email campaigns
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `listrak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `listrak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Listrak** tools.
 
 **Configuration:**

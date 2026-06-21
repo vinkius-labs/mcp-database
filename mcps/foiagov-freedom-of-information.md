@@ -32,7 +32,7 @@ Connect to the **FOIA.gov** API to streamline access to Freedom of Information A
 - **Data Analysts** — pull annual report data in XML format for large-scale transparency analysis.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_agency_component_request_form**: Fetch the FOIA request form structure for a specific component
 - **get_agency_component**: Fetch a specific agency component by UUID
 - **get_annual_report_xml**: Fetch an agency annual report in XML format
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `foiagov-freedom-of-information` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `foiagov-freedom-of-information` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FOIA.gov (Freedom of Information)** tools.
 
 **Configuration:**

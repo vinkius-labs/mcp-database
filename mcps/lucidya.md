@@ -33,7 +33,7 @@ Connect your **Lucidya** account to any AI agent to automate your social listeni
 - **Data Analysts** — Automate the extraction of social metrics and AI-driven sentiment logs into your workflow
 
 
-## Available Tools
+## Available Tools (7)
 - **get_omniserve_analytics**: Query customer service analytics KPIs
 - **list_cdp_customers**: List customer profiles from CDP
 - **detect_arabic_dialect**: Detect the specific Arabic dialect of a text
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lucidya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lucidya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lucidya** tools.
 
 **Configuration:**

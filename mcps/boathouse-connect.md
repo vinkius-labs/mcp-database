@@ -34,7 +34,7 @@ Connect your **Boathouse Connect** account to any AI agent and manage your marin
 - **Operations Staff** — create reservations and monitor equipment inventory on the go
 
 
-## Available Tools
+## Available Tools (10)
 - **check_boathouse_status**: Verify API connectivity
 - **create_reservation**: Create a reservation
 - **get_equipment**: Get equipment details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `boathouse-connect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `boathouse-connect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Boathouse Connect** tools.
 
 **Configuration:**

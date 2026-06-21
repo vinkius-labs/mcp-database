@@ -35,7 +35,7 @@ No more manual status checking or complex navigation through fragmented event da
 - **Operations Leads** — automate the creation of venues and manage event logistics through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **list_event_attendees**: List attendees for an event
 - **create_event**: Requires event name, start and end dates, and currency.
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventbrite-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventbrite-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eventbrite** tools.
 
 **Configuration:**

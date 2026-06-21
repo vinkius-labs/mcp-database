@@ -33,7 +33,7 @@ Connect your **Bubble.io** no-code application to your AI agent to perform deep 
 - **Operations Teams** — Automate repetitive data entry or trigger maintenance workflows using IA.
 
 
-## Available Tools
+## Available Tools (8)
 - **bulk_create_things**: Provide a string with one JSON object per line (NDJSON format).
 
 Bulk create multiple Things in the Bubble database
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bubbleio-no-code-application-platform-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bubbleio-no-code-application-platform-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bubble.io (No-code Application Platform API)** tools.
 
 **Configuration:**

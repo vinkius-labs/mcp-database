@@ -33,7 +33,7 @@ Connect your **Stripe** account to any AI agent to automate your basic payment p
 - **Developers** — test core Stripe payment flows and monitor balances directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_charge**: Pass data as a JSON string.
 
 Create a new charge
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stripe-legacy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stripe-legacy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stripe Legacy** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ No more jumping between complex dashboard views. Your AI assistant acts as a ded
 - **Business Owners** — maintain a real-time overview of their sales funnel and appointments.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_appointment**: Book a new appointment on a calendar
 - **create_contact**: Pass payload as JSON string in "body_json" (requires firstName, email, or phone).
 
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `highlevel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `highlevel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HighLevel** tools.
 
 **Configuration:**

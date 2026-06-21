@@ -33,7 +33,7 @@ Connect your **SnapCall** account to any AI agent to automate your real-time cus
 - **Developers** — integrate real-time video and voice capabilities into custom AI-driven business workflows.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_call**: Create an instant video/voice call
 - **create_video_clip_request**: Request a video clip from customer
 - **create_webhook**: g., call.started, clip.created).
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snapcall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snapcall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SnapCall** tools.
 
 **Configuration:**

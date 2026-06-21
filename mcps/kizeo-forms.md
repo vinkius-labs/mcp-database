@@ -33,7 +33,7 @@ Connect your **Kizeo Forms** account to any AI agent to automate your field data
 - **Developers** — Integrate mobile form logic and data pushing into your custom operational tools
 
 
-## Available Tools
+## Available Tools (9)
 - **search_form_data**: Search form data with advanced filters
 - **create_new_user**: Requires name, email, and password.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kizeo-forms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kizeo-forms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kizeo Forms** tools.
 
 **Configuration:**

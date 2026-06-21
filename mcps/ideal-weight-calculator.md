@@ -13,7 +13,7 @@ Calculate your target weight range using scientific formulas like Lorentz, Devin
 This MCP server provides a precise engine for calculating healthy weight ranges. By utilizing established physiological models including the Lorentz, Devine, and Robinson formulas, alongside a BMI 22 benchmark, it helps you understand your target body mass. Use `calculate_ideal_weight_metrics` to find your range, `assess_bmi_status` to check your current BMI category, and `calculate_weight_gap` to determine exactly how much weight you need to gain or lose to reach your ideal window.
 
 
-## Available Tools
+## Available Tools (3)
 - **assess_bmi_status**: Assess current BMI and category
 - **calculate_ideal_weight_metrics**: Calculate target weight values using various scientific formulas
 - **calculate_weight_gap**: Analyze the gap between current weight and target range
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ideal-weight-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ideal-weight-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ideal Weight Calculator** tools.
 
 **Configuration:**

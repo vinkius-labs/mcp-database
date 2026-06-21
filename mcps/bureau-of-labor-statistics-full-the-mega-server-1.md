@@ -31,7 +31,7 @@ The **ultimate U.S. BLS Mega-Server** gives your agent omnipotent access to the 
 - **Hedge Funds** — Full economic picture modeling
 
 
-## Available Tools
+## Available Tools (1)
 - **query_bls**: Use this instead of specific endpoints if you intimately know the underlying numerical code. Up to 50 concurrent lookbacks allowed.
 
 Generic BLS v2 api timeseries query. Requires explicit BLS Series IDs
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bureau-of-labor-statistics-full-the-mega-server-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bureau-of-labor-statistics-full-the-mega-server-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bureau of Labor Statistics Full — The Mega Server** tools.
 
 **Configuration:**

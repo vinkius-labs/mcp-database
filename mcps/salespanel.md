@@ -27,7 +27,7 @@ Connect your **Salespanel** account to any AI agent and simplify your lead track
 3. Start managing your lead intelligence from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (11)
 - **get_company**: Get details for a specific company
 - **get_segment**: Get details for a specific segment
 - **get_visitor**: Get details for a specific website visitor
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salespanel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salespanel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salespanel** tools.
 
 **Configuration:**

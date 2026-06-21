@@ -39,7 +39,7 @@ No more navigating the Traction dashboard for every visitor action. Your AI acts
 - **HR Teams** — batch-create hosts for new employees and manage interview/tour scheduling
 
 
-## Available Tools
+## Available Tools (24)
 - **create_group_visit**: Provide group data as JSON including name, scheduled date, expected attendees, host, and location.
 Example: { "name": "Campus Tour", "scheduledDate": "2026-04-15", "expectedAttendees": 15, "hostId": "host_123", "locationId": "loc_456" }
 
@@ -231,7 +231,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `traction-guest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `traction-guest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Traction Guest** tools.
 
 **Configuration:**

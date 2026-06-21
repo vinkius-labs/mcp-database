@@ -35,7 +35,7 @@ No more manual designing of individual carousel slides or missing scheduled cont
 - **Growth Engineers** — automate the ingestion of high-speed Contentdrips assets into custom scheduling tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_contentdrips_status**: Verify ContentDrips API connectivity
 - **get_account**: Get account info
 - **get_job_result**: Get render result
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contentdrips` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contentdrips` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contentdrips** tools.
 
 **Configuration:**

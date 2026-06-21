@@ -33,7 +33,7 @@ Connect your **Stitch Data** account to any AI agent to orchestrate your ETL wor
 - **Product Managers** — monitor data pipeline health and verify successful loads across multiple client accounts
 
 
-## Available Tools
+## Available Tools (21)
 - **create_account**: Requires partner credentials.
 
 Create a new Stitch client account (Partners only)
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stitch-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stitch-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stitch Data** tools.
 
 **Configuration:**

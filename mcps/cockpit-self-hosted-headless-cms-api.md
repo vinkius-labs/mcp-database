@@ -33,7 +33,7 @@ Connect your **Cockpit CMS** instance to any AI agent and take full control of y
 - **Marketing Teams** — Quickly retrieve localized content and assets for multi-channel campaigns.
 
 
-## Available Tools
+## Available Tools (17)
 - **batch_content_items**: Batch request content from multiple models
 - **create_or_update_content_item**: If an _id is provided in the data, it updates the existing item.
 
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cockpit-self-hosted-headless-cms-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cockpit-self-hosted-headless-cms-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cockpit (Self-hosted Headless CMS API)** tools.
 
 **Configuration:**

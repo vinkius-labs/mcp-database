@@ -32,7 +32,7 @@ Connect to **The Cat API** and bring feline intelligence to your AI workflows. W
 - **Cat Enthusiasts** — manage a personal database of favorite cats through natural conversation.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_favourite**: Save an image to your favorites
 - **create_vote**: Vote on an image (Up or Down)
 - **get_favourites**: Retrieve your favorited images
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `the-cat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `the-cat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **The Cat** tools.
 
 **Configuration:**

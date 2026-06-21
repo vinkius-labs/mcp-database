@@ -13,7 +13,7 @@ Calculate optimal Battle Pass durations and daily XP requirements based on playe
 The Season Length Optimizer is a specialized tool for game designers to plan seasonal content. By analyzing Battle Pass tiers, XP per tier, and typical player gameplay hours, it provides precise estimates for both steady and rush completion timelines. Use `estimate_completion_days` to predict how long players will stay engaged, `calculate_daily_xp_requirement` to set target daily progress, and `get_buffer_duration` to ensure a comfortable safety margin in your seasonal planning.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_daily_xp_requirement**: Calculate the required daily XP to hit a seasonal deadline
 - **estimate_completion_days**: Estimate how many days it takes to finish the season
 - **get_buffer_duration**: Calculate the recommended season duration with a safety buffer
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `season-length-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `season-length-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Season Length Optimizer** tools.
 
 **Configuration:**

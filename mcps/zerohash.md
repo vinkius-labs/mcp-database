@@ -33,7 +33,7 @@ Connect your **ZeroHash** API credentials to any AI agent to orchestrate digital
 - **Compliance Officers** — Quickly retrieve participant data and trade records for auditing and reporting purposes.
 
 
-## Available Tools
+## Available Tools (12)
 - **list_accounts**: List accounts and current balances
 - **list_assets**: List supported assets on ZeroHash
 - **create_customer**: Create a new customer participant
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zerohash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zerohash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZeroHash** tools.
 
 **Configuration:**

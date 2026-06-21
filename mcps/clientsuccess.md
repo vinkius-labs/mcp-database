@@ -35,7 +35,7 @@ Connect your **ClientSuccess** account to any AI agent and take full control of 
 - **Leadership** — verify portfolio health and retention metrics across the organization
 
 
-## Available Tools
+## Available Tools (8)
 - **get_client_success_details**: Get detailed information for a specific client
 - **get_my_success_profile**: Retrieve information about the authenticated success manager
 - **list_success_clients**: List all clients in ClientSuccess
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clientsuccess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clientsuccess` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClientSuccess** tools.
 
 **Configuration:**

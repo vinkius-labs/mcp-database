@@ -37,7 +37,7 @@ No API key required for public data — completely free.
 - **Developers** — access crypto market data without authentication for dashboards and bots
 
 
-## Available Tools
+## Available Tools (8)
 - **get_asset_info**: Returns asset name, alternate names, decimals, status and collateral support. Optionally filter by specific assets (comma-separated).
 
 Get information about Kraken assets
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kraken` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kraken` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kraken** tools.
 
 **Configuration:**

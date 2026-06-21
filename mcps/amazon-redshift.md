@@ -32,7 +32,7 @@ Connect your **Amazon Redshift** data warehouse securely to your AI agent utiliz
 - **Data Engineers** — Audit Redshift cluster loads and verify execution lifecycles asynchronously for large reporting workloads directly connected to your conversational toolkit.
 
 
-## Available Tools
+## Available Tools (7)
 - **describe_table**: Retrieves column metadata for a table
 - **execute_sql**: This is an asynchronous operation that returns a statement ID.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazon-redshift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazon-redshift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazon Redshift** tools.
 
 **Configuration:**

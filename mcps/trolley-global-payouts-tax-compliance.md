@@ -34,7 +34,7 @@ Equip your AI agent with the most powerful platform for global payouts and tax c
 - **Operations Managers** — maintain a clear view of balances and payment statuses in real-time.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_recipient**: Get a specific recipient
 - **get_tax_forms**: ) associated with a specific recipient.
 
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trolley-global-payouts-tax-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trolley-global-payouts-tax-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Trolley Global Payouts & Tax Compliance** tools.
 
 **Configuration:**

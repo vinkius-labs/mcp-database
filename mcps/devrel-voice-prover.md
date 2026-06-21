@@ -33,7 +33,7 @@ AI-generated DevRel content fails on five axes:
 5. **authenticEngagement** — Personality, vulnerability, specific references, continuity.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_devrel_voice**: DevRel is a conversation between an engineer and their peers — not a press release. You must: (1) DEVELOPER VOICE — speak like a senior engineer to a peer. Zero corporate speak: no "excited to announce," no "innovative solution," no "best-in-class," no "leverage," no "synergy," no "empower," no "game-changing," no "seamless experience." Say "We shipped X because you asked" with the issue number, (2) COMMUNITY CONTEXT — reference SPECIFIC community signals: GitHub issues (#number), Discord thread links, feedback board vote counts, conference conversations. "The community wanted this" is NOT context — cite the source, (3) DEVELOPER VALUE — explain WHY developers care, not just WHAT changed. For each feature: what PAIN does it eliminate? What was the WORKAROUND? How does their DAILY workflow change? "We added X" is a feature dump, (4) ACTION PATH — runnable code example (not pseudocode), migration command with output, direct docs link, 3-step quickstart, feedback channel. "Try it out" is not an action path — show the code, (5) AUTHENTIC ENGAGEMENT — personality, vulnerability, specific references, continuity with previous conversations, human details. If you swap the brand name and the post still works, it is template voice. If rejected, your content reads as marketing, not DevRel.
 
 Structured reflection tool for authentic developer relations communication. DevRel is NOT marketing — it is the bridge between product and community. Forces community-grounded context, value articulation (WHY not just WHAT), actionable paths with runnable code, and authentic voice. Catches Corporate Speak ("We are excited to announce our innovative solution" — developers stop reading at "excited to announce." Say "We shipped X because you asked" with a link to the GitHub issue), Feature Dumps ("We added X, Y, Z" without explaining WHY developers care — what pain disappeared? What workaround is eliminated? How does their daily workflow change?), Community Deafness ("The community wanted this" without citing specific signals — which GitHub issues? Which Discord threads? Which feedback votes? No citations = no credibility), Missing Action Path ("Try it out!" is not an action path — show the install command, the import, the minimal working example. Every DevRel piece must answer "What do I DO now?"), and Template Voice (if you swap the brand name and the post still works, it is template voice — no personality, no specific references, no vulnerability, no human details). Call for changelogs, release notes, blog posts, tutorials, migration guides, and announcements
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `devrel-voice-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `devrel-voice-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DevRel Voice Prover** tools.
 
 **Configuration:**

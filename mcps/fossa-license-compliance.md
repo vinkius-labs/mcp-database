@@ -33,7 +33,7 @@ Connect your **FOSSA** account to any AI agent to automate open-source license c
 - **DevOps & Architects** — verify dependency trees and project metadata directly from the terminal or code editor.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_vulnerabilities**: Uses a POST request but only reads data.
 
 Check vulnerabilities by dependency locators
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fossa-license-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fossa-license-compliance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FOSSA (License Compliance)** tools.
 
 **Configuration:**

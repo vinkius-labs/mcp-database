@@ -35,7 +35,7 @@ Connect your **GivingFuel** account to any AI agent to automate your fundraising
 - **Finance Managers** — automate the retrieval of financial transaction data for auditing and reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **verify_api_connection**: Check connection
 - **filter_orders_by_status**: Filter by completion
 - **filter_orders_by_date**: Filter by date range
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `givingfuel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `givingfuel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GivingFuel** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate the exact minimum grade needed on your final exam to pass.
 An essential academic utility for students to determine their required performance on upcoming exams. Using tools like `calculate_required_final_score`, you can input your current grades and weights to find the exact score needed to reach your passing threshold. You can also use `evaluate_academic_standing` to check if you are currently in a recovery period or already approved, and `predict_grade_impact` to simulate how different final exam scores will affect your total course average.
 
 
-## Available Tools
+## Available Tools (3)
 - **evaluate_academic_standing**: Evaluate current academic standing
 - **predict_grade_impact**: Predict the impact of a hypothetical final exam score
 - **calculate_required_final_score**: Calculate the minimum grade needed on the final exam to pass
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `minimum-grade-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `minimum-grade-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Minimum Grade Calculator** tools.
 
 **Configuration:**

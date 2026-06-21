@@ -34,7 +34,7 @@ Connect your **Klarna** merchant account to any AI agent to automate your e-comm
 - **Developers** — Integrate Klarna's complex two-phase payment logic and status monitoring into your custom applications
 
 
-## Available Tools
+## Available Tools (8)
 - **cancel_authorized_order**: Cancel an authorized but uncaptured order
 - **capture_klarna_order**: Capture a formal order to trigger payment
 - **create_payment_session**: Requires order amount, currency, and order lines (items).
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `klarna` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `klarna` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Klarna** tools.
 
 **Configuration:**

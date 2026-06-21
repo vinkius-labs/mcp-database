@@ -35,7 +35,7 @@ No more manual updating of individual menu items or missing critical order statu
 - **Developers** â€” integrate high-speed MENU TIGER data into custom kitchen display and BI systems through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_menutiger_status**: Verify MenuTiger API connectivity
 - **get_account**: Get account info
 - **get_item**: Get item details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `menu-tiger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `menu-tiger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MENU TIGER** tools.
 
 **Configuration:**

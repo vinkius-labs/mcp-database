@@ -31,7 +31,7 @@ Embed the **ContentStack Management API (CMA)** core directly into your AI assis
 - **Project Managers** — Consolidate migration operations bulk updating metadata tagging or renaming taxonomies on hundreds of entries securely over text.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_entry**: Create a new entry
 - **get_content_type_details**: Get schema details for a specific content type
 - **get_entry_details**: Get full details for a specific entry
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contentstack-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contentstack-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ContentStack (Management)** tools.
 
 **Configuration:**

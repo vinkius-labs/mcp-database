@@ -34,7 +34,7 @@ Connect your **LlamaIndex (LlamaCloud)** account to any AI agent and take full c
 - **Data Scientists** — audit semantic index structures and manage data pipeline configurations across multiple enterprise AI projects efficiently
 
 
-## Available Tools
+## Available Tools (6)
 - **list_pipelines**: List LlamaCloud deployed data pipelines
 - **get_pipeline**: Get configuration details for a specific pipeline
 - **list_indexes**: List LlamaCloud active indexes
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `llamaindex-ai-data-framework-rag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `llamaindex-ai-data-framework-rag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LlamaIndex (AI Data Framework & RAG)** tools.
 
 **Configuration:**

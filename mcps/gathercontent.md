@@ -36,7 +36,7 @@ Connect your **GatherContent** (by Bynder) account to any AI agent to automate y
 - **Operations Teams** — automate the creation of placeholder items and verify template schemas seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **create_content_item**: Create new item
 - **get_item_content**: Get item metadata/content
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gathercontent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gathercontent` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GatherContent** tools.
 
 **Configuration:**

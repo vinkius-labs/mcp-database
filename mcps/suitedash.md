@@ -33,7 +33,7 @@ Connect your **SuiteDash** account to any AI agent to automate your client porta
 - **Operations Teams** — streamline the management of invoices and monitor deal progress directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_contact**: Register a new contact
 - **get_company_details**: Get details for a company
 - **get_contact_details**: Get details for a contact
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `suitedash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `suitedash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SuiteDash** tools.
 
 **Configuration:**

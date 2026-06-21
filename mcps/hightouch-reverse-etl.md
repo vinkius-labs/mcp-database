@@ -33,7 +33,7 @@ Connect your **Hightouch** account to any AI agent and take full control of your
 - **Growth Operations** — check sync run histories and success rates to ensure critical marketing and sales data is always up-to-date
 
 
-## Available Tools
+## Available Tools (6)
 - **list_destinations**: List all destinations
 - **list_syncs**: List all syncs
 - **get_sync**: Get sync details
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hightouch-reverse-etl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hightouch-reverse-etl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hightouch (Reverse ETL)** tools.
 
 **Configuration:**

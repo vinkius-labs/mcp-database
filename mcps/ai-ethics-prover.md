@@ -53,7 +53,7 @@ Tool calls are obligations. The LLM cannot skip stakeholder identification or cl
 **Disclaimer:** This is analytical support — it forces structured thinking about AI ethics. It does not prescribe ethical conclusions or replace qualified ethics review boards.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_ai_ethics**: You must: (1) identify STAKEHOLDERS — name each affected group with demographics, impact type, severity, and vulnerability. "Society" and "users" are not stakeholders, (2) quantify HARMS — each harm has severity (1-5), probability (%), reversibility, and affected population size. "Potentially harmful" is not quantification, (3) audit BIASES — each protected attribute tested with a named metric (statistical parity, equalized odds, calibration), measured disparity, and mitigation plan. "We checked for bias" without methodology is not an audit, (4) demonstrate TRANSPARENCY — each stakeholder group gets explanation at their comprehension level with top decision factors and counterfactual "what-if" scenarios. "Algorithmic complexity" is not an excuse for opacity, (5) provide RECOURSE — structured challenge mechanism with response SLA, human reviewer, appeal process, and remediation for confirmed errors. "Contact support" is not recourse. If rejected, your ethics assessment has an analytical flaw.
 
 Forces operationally specific AI ethics analysis before deploying AI systems. Catches Unnamed Stakeholders ("society" instead of specific groups), Unquantified Harms ("potentially harmful" without severity/probability), Unaudited Biases ("we checked" without methodology), Opaque Transparency ("algorithmic complexity" as excuse), and Absent Recourse ("contact support" instead of structured challenge). Call once per AI system ethical assessment. This is analytical support, not ethical certification
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ai-ethics-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ai-ethics-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AI Ethics Prover** tools.
 
 **Configuration:**

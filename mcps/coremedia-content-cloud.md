@@ -36,7 +36,7 @@ Connect your **CoreMedia Content Cloud** headless server to any AI agent and tak
 - **DevOps/Architects** — monitor headless server schemas and verify persisted query hashes in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **execute_graphql_payload**: Identify bounded routing spaces inside the Headless CoreMedia Delivery Schema
 - **get_cmarticle_path**: Perform structural extraction of properties driving active CMArticle nodes
 - **get_cmpicture_asset**: Retrieve explicit Cloud logging tracing explicit Image Assets
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coremedia-content-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coremedia-content-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoreMedia Content Cloud** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual status checking in the portal. Your AI acts as a dedicated channe
 - **Operations Leads** — streamline the retrieval of account metadata and monitor organizational partnership health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **check_api_status**: Verify API connectivity and account status
 - **create_lead**: Create a new lead
 - **get_account**: Get details for a specific account
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `partnerportalio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `partnerportalio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PartnerPortal.io** tools.
 
 **Configuration:**

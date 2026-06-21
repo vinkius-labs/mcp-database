@@ -34,7 +34,7 @@ Connect your **Modal** account to any AI agent and take full control of your hig
 - **DevOps Teams** — manage serverless secrets and track active app resource usage across multiple Modal projects efficiently
 
 
-## Available Tools
+## Available Tools (7)
 - **list_apps**: List isolated active/historical Modal Apps contexts
 - **get_app**: Get static specifics of an exact Modal App ID
 - **stop_app**: Force stop an actively running explicit Modal App execution
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `modal-serverless-ai-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `modal-serverless-ai-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Modal (Serverless AI Infrastructure)** tools.
 
 **Configuration:**

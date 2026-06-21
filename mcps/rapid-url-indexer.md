@@ -13,7 +13,7 @@ Fast URL indexing and SEO tools.
 The Rapid URL Indexer MCP server allows your AI agent to submit URLs for immediate search engine indexing. Monitor indexing campaigns, check credit balances, and automate SEO pinging efficiently.
 
 
-## Available Tools
+## Available Tools (5)
 - **create_project**: Submit new URLs for indexing
 - **get_credit_balance**: Check your remaining indexing credits
 - **get_project_report**: Get the indexing report for a project
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rapid-url-indexer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rapid-url-indexer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rapid URL Indexer** tools.
 
 **Configuration:**

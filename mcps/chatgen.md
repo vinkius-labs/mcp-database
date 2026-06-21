@@ -26,7 +26,7 @@ Connect your **ChatGen** account to any AI agent and simplify your conversationa
 3. Start managing your chatbot resources from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (9)
 - **create_bot**: Create a new chatbot
 - **delete_bot**: Delete a bot
 - **get_bot**: Get details for a specific bot
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chatgen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chatgen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChatGen** tools.
 
 **Configuration:**

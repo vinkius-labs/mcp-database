@@ -13,7 +13,7 @@ Determine maximum buildable area and optimal land utilization by applying local 
 **Need to know how much you can actually build on your lot?** Zoning laws dictate strict minimum setbacks (distances from property lines) that cannot be ignored. Ignoring these rules means building illegally and facing costly revisions.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_building_footprint**: Calculate the total buildable area and perimeter from usable envelope dimensions
 - **calculate_land_utilization_metrics**: Percentage is capped at 100% if footprint exceeds total area.
 
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `setback-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `setback-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Setback Calculator** tools.
 
 **Configuration:**

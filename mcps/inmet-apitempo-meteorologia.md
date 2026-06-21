@@ -33,7 +33,7 @@ Connect to the **INMET (Instituto Nacional de Meteorologia)** API to retrieve co
 - **Developers** — integrate official Brazilian meteorological data into applications without complex API handling.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_all_forecasts**: Get weather forecasts for all supported cities
 - **get_forecast_by_city**: Get weather forecast for a specific city
 - **get_meteorological_data_by_date**: Get meteorological data by date for a station
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inmet-apitempo-meteorologia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inmet-apitempo-meteorologia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **INMET (Apitempo - Meteorologia)** tools.
 
 **Configuration:**

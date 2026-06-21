@@ -32,7 +32,7 @@ Connect to the **Open Library API** — the Internet Archive's open catalog of o
 - **Book Lovers** — explore the world's largest open book catalog
 
 
-## Available Tools
+## Available Tools (16)
 - **get_author**: The key format is "OL33421A" (found in Open Library URLs).
 
 Get author profile by Open Library key
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mit-open-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mit-open-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MIT Open Library** tools.
 
 **Configuration:**

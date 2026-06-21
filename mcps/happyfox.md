@@ -36,7 +36,7 @@ No more manual navigating through complex ticketing tabs. Your AI assistant acts
 - **IT Support Staff** — automate the creation and tracking of internal technical tickets.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_staff_update**: Add a staff response/update to a ticket
 - **create_ticket**: Requires subject, text, category ID, and contact details.
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `happyfox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `happyfox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HappyFox** tools.
 
 **Configuration:**

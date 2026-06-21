@@ -32,7 +32,7 @@ Integrate **Everfit**, the leading software platform for fitness coaches and per
 - **Operations Teams** — Monitor client engagement and active subscription counts instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_everfit_account_metadata**: Retrieve metadata and limits for your Everfit business account
 - **get_client_performance_metrics**: Get high-level performance and health metrics for a client
 - **get_client_detailed_profile**: Get detailed profile and fitness metrics for a specific client
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `everfit-coaching` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `everfit-coaching` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Everfit Coaching** tools.
 
 **Configuration:**

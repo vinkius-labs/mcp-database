@@ -33,7 +33,7 @@ Connect your AI agent to the **Rijksmuseum Data API** to explore centuries of Du
 - **Developers & Data Scientists** — Integrate cultural heritage data into applications or perform large-scale metadata analysis.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_iiif_image_info**: Get IIIF image metadata
 - **get_iiif_manifest**: Get IIIF presentation manifest
 - **get_ldes_collection**: Get the Linked Data Event Streams (LDES) collection
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rijksmuseum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rijksmuseum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rijksmuseum** tools.
 
 **Configuration:**

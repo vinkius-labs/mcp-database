@@ -33,7 +33,7 @@ Connect your **eGestor** ERP account to any AI agent and manage your Brazilian s
 - **Operations Managers** — monitor inventory levels and supplier orders through conversational AI
 
 
-## Available Tools
+## Available Tools (10)
 - **get_contact**: Get a specific contact
 - **get_product**: Get a specific product
 - **get_purchase**: Get a specific purchase
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `egestor-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `egestor-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **eGestor ERP** tools.
 
 **Configuration:**

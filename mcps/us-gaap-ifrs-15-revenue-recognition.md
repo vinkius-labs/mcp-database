@@ -13,7 +13,7 @@ Automate ASC 606 and IFRS 15 revenue recognition by identifying obligations, all
 This MCP server provides a specialized engine for implementing the five-step model of ASC 606 and IFRS 15. It allows AI agents to automate complex financial calculations required for revenue recognition. Use `identify_performance_obligations` to analyze contract items, `allocate_transaction_price` to distribute total consideration based on relative standalone selling prices, and `calculate_revenue_recognition` to determine earned versus deferred revenue based on completion progress.
 
 
-## Available Tools
+## Available Tools (3)
 - **allocate_transaction_price**: Distribute total transaction price across performance obligations
 - **calculate_revenue_recognition**: Calculate recognized and deferred revenue
 - **identify_performance_obligations**: Analyze contract items to determine performance obligations
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-gaap-ifrs-15-revenue-recognition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-gaap-ifrs-15-revenue-recognition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US GAAP & IFRS 15 Revenue Recognition** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your AI agents to **TOTVS**, the largest technology company in Brazil an
 - **Process Analysts** — track and advance business workflows across the organizational ecosystem
 
 
-## Available Tools
+## Available Tools (11)
 - **get_available_services**: List available RM DataServers
 - **get_employee_details**: Get detailed information for a specific employee
 - **get_process_request**: Get details for a specific Fluig process request
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `totvs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `totvs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TOTVS** tools.
 
 **Configuration:**

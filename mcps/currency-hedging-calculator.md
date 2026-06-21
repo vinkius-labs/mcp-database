@@ -13,7 +13,7 @@ Evaluate the financial impact of using forward contracts to mitigate foreign exc
 This MCP server provides specialized tools for managing currency exposure. Use `calculate_exposure_impact` to compare unhedged and hedged transaction outcomes, `calculate_effective_rate` to find the true per-unit cost after fees, and `calculate_break_even_threshold` to identify the critical spot rate boundary between a profitable hedge and a costly one.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_break_even_threshold**: Find the spot rate boundary for a profitable hedge
 - **calculate_effective_rate**: Calculate the true per-unit price of a currency after hedging costs
 - **calculate_exposure_impact**: Calculate the financial impact of hedging a currency position
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `currency-hedging-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `currency-hedging-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Currency Hedging Calculator** tools.
 
 **Configuration:**

@@ -24,7 +24,7 @@ Connect your Splitwise account to AI agents to track expenses, check balances, a
 Perfect for roommates, travel groups, and everyday individuals using AI tools like Claude/Cursor to parse complex grocery or travel receipts and directly sync them to Splitwise.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_expense**: Expects a stringified JSON object containing details like cost, description, format details (e.g. users__0__user_id=123, users__0__paid_share=5.00, etc. or JSON).
 
 Create an expense
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `splitwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `splitwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Splitwise** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Deta Space** personal cloud to any AI agent and manage your serve
 - **Power Users** — automate personal file storage and data logging in a private, serverless environment.
 
 
-## Available Tools
+## Available Tools (10)
 - **base_delete_item**: Delete an item from Deta Base by its key
 - **base_get_item**: Retrieve a single item from Deta Base by its key
 - **base_insert_item**: Store an item in Deta Base only if the key does not already exist
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deta-space-serverless-personal-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deta-space-serverless-personal-cloud-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deta Space (Serverless Personal Cloud API)** tools.
 
 **Configuration:**

@@ -26,7 +26,7 @@ Empower your AI agents with institutional real estate intelligence. This server 
 3. Start querying institutional data directly from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (3)
 - **execute_query**: Execute a custom NCREIF query
 - **get_historical_npi**: Get historical NPI returns
 - **get_predefined_kpi**: Get predefined KPI data
@@ -70,7 +70,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ncreif-custom-query` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ncreif-custom-query` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NCREIF Custom Query** tools.
 
 **Configuration:**

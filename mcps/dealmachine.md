@@ -32,7 +32,7 @@ Integrate **DealMachine**, the leading CRM for real estate investors, directly i
 - **Real Estate Teams** — Monitor marketing campaigns and coordinate team activities via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_new_lead**: Persists a new lead based on property address, initiating property data resolution and owner identification.
 
 Add a new real estate lead to your CRM
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dealmachine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dealmachine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DealMachine** tools.
 
 **Configuration:**

@@ -24,7 +24,7 @@ Our MCP provides a comprehensive mechanism to bridge this gap by calculating bot
 The result is a clear, actionable financial roadmap. You immediately know which channels to fund more aggressively and where to cut spending for maximum impact.
 
 
-## Available Tools
+## Available Tools (3)
 - **assess_budget_efficiency**: Returns ranked channels, suggested budget percentages, and natural language recommendations. Provide period data as JSON array of {channelName, spendAmount, calculatedCAC} objects.
 
 Assess budget allocation efficiency and recommend optimal distribution
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blended-cac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blended-cac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blended CAC Calculator** tools.
 
 **Configuration:**

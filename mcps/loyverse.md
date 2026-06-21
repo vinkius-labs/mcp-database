@@ -32,7 +32,7 @@ The Loyverse MCP Server allows you to seamlessly integrate your point-of-sale sy
 - **Customer Service** — look up customer history automatically
 
 
-## Available Tools
+## Available Tools (4)
 - **l_list_customers**: List your registered store customers from Loyverse POS
 - **l_list_items**: List inventory items in your Loyverse account with optional pagination parameters
 - **l_list_locations**: List all store locations in your Loyverse account
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `loyverse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `loyverse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Loyverse** tools.
 
 **Configuration:**

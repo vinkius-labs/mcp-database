@@ -34,7 +34,7 @@ Replace manual link juggling by having your agent fetch the right booking URL or
 - **Customer Success** — list upcoming client check-ins and cancel unconfirmed events with a single prompt
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_event**: Specify the event ID and a cancellation reason.
 
 Cancels a scheduled appointment
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `savvycal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `savvycal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SavvyCal** tools.
 
 **Configuration:**

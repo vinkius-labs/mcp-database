@@ -18,7 +18,7 @@ When a Martech AI Agent drafts social media posts or email campaigns, it needs t
 - **Analytics Protection:** Guarantees that every generated link works perfectly without causing 404s or dropping tracking data.
 
 
-## Available Tools
+## Available Tools (1)
 - **build_utm_url**: Provide the base landing page URL, utm_source, and utm_medium as required fields. Optionally add campaign, term, and content. The engine handles all URL encoding and query string merging safely.
 
 Safely constructs and encodes marketing UTM tracking URLs. Prevents AI from hallucinating broken query strings
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `utm-campaign-builder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `utm-campaign-builder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UTM Campaign Builder** tools.
 
 **Configuration:**

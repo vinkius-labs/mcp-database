@@ -32,7 +32,7 @@ Connect to **Massive** to retrieve comprehensive historical dividend data for th
 - **Developers** — integrate reliable financial distribution data into trading bots or research tools without complex scraping.
 
 
-## Available Tools
+## Available Tools (1)
 - **list_dividends**: Retrieve historical cash dividends for a ticker
 
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `massive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `massive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Massive** tools.
 
 **Configuration:**

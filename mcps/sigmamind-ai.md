@@ -22,7 +22,7 @@ Connect your **SigmaMind** account to any AI agent and manage AI voice workflows
 - **Health Check** — Verify API connectivity
 
 
-## Available Tools
+## Available Tools (10)
 - **check_sigmamind_status**: Verify API connectivity
 - **create_agent**: Create a voice agent
 - **create_call**: Initiate a voice call
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sigmamind-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sigmamind-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SigmaMind AI** tools.
 
 **Configuration:**

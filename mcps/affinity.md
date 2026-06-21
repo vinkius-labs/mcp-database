@@ -34,7 +34,7 @@ Connect your **Affinity** account to your AI agent to unlock professional relati
 - **Executive Assistants** — quickly look up organization details and update person records using simple commands
 
 
-## Available Tools
+## Available Tools (5)
 - **list_persons**: Retrieve a paginated list of people your team has interacted with in your Affinity network
 - **list_organizations**: Retrieve companies and institutions mapped within your Affinity CRM
 - **list_smart_lists**: Retrieve the catalog of custom smart lists (pipelines) securely configured in your account
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `affinity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `affinity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Affinity** tools.
 
 **Configuration:**

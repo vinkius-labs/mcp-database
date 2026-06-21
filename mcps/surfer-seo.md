@@ -32,7 +32,7 @@ Bring industry-leading organic search optimization strategies dynamically into y
 - **Growth Marketers** — Programmatically track Content Scores and generate audits intuitively mapping structural content adjustments logically and safely.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_seo_audit**: Provide the full URL and target keyword.
 
 Creates a Surfer SEO Audit for a live URL
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `surfer-seo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `surfer-seo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Surfer SEO** tools.
 
 **Configuration:**

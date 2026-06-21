@@ -32,7 +32,7 @@ Integrate the **Criteo Marketing API** directly into your AI workflow. Manage yo
 - **E-commerce Teams** — Track advertiser accounts and target audiences during project planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_ad_set_details**: Get detailed configuration for an ad set
 - **get_campaign_details**: Get detailed settings for a specific campaign
 - **get_marketing_statistics**: Retrieve performance statistics for campaigns or ad sets
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `criteo-marketing-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `criteo-marketing-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Criteo Marketing API** tools.
 
 **Configuration:**

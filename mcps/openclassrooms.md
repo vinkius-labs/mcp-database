@@ -33,7 +33,7 @@ Connect your **OpenClassrooms** partner account to any AI agent and get full vis
 - **EdTech partners** — pull course metadata and student analytics for custom dashboards and integration workflows
 
 
-## Available Tools
+## Available Tools (9)
 - **lister_cours**: Lister les cours disponibles sur OpenClassrooms (Pagination active)
 - **consulter_cours**: Consulter le détail profond d'un cours spécifique
 - **rechercher_cours**: Rechercher des cours OpenClassrooms dynamiquement par mots-clés
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openclassrooms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openclassrooms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenClassrooms** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual logging into the dashboard to check individual extraction tasks. 
 - **Developers** — integrate high-speed no-code scraping data into custom workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_monitor**: Add new schedule
 - **remove_webhook**: Delete robot webhook
 - **get_user_profile**: Get account info
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `browse-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `browse-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Browse AI** tools.
 
 **Configuration:**

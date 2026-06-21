@@ -13,7 +13,7 @@ Calculate SOFA scores, mortality risk, and sepsis status.
 The SOFA Score Calculator is a clinical decision support tool designed to quantify organ dysfunction in patients. Using the `compute_organ_scores` tool, you can convert raw physiological measurements like PaO2, FiO2, and creatinine levels into standardized 0-4 scores for respiratory, coagulation, hepatic, cardiovascular, neurological, and renal systems. Once individual scores are obtained, use `calculate_total_sofa` to aggregate them into a single total score and determine the clinical severity level. The tool also provides advanced insights: `estimate_mortality_risk` uses the total score to provide mortality risk tiers, while `evaluate_sepsis_status` identifies Sepsis-3 criteria by detecting an acute change of 2 or more points from a baseline SOFA score.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_total_sofa**: Aggregates individual organ scores into a single SOFA score and severity level
 - **compute_organ_scores**: Converts clinical values into standardized 0-4 SOFA organ scores
 - **estimate_mortality_risk**: Provides mortality risk classification based on the total SOFA score
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sofa-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sofa-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SOFA Score Calculator** tools.
 
 **Configuration:**

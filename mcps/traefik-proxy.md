@@ -34,7 +34,7 @@ Connect your **Traefik Proxy** instance to any AI agent and gain real-time visib
 - **SRE Teams** — audit the entire proxy configuration to ensure security standards and entrypoint consistency
 
 
-## Available Tools
+## Available Tools (18)
 - **get_entrypoint**: Get details for a specific entrypoint
 - **get_http_middleware**: Get details for a specific HTTP middleware
 - **get_http_router**: Get details for a specific HTTP router
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `traefik-proxy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `traefik-proxy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Traefik Proxy** tools.
 
 **Configuration:**

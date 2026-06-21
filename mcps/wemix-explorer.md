@@ -35,7 +35,7 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 - **Node Operators** — monitor block production and network events without leaving the terminal.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_account_info**: Get basic information for a specific account
 - **list_account_tokens**: List tokens held by an account
 - **list_account_transfers**: Get a list of transfers associated with an account
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wemix-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wemix-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wemix Explorer** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate the **Free Dictionary API** into your AI workflows to provide instant,
 - **Developers** — integrate linguistic data into your prompts for better content generation or data labeling.
 
 
-## Available Tools
+## Available Tools (1)
 - **get_word_definition**: Get definitions, phonetics, and origins for an English word
 
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dictionaryapidev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dictionaryapidev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DictionaryAPI.dev** tools.
 
 **Configuration:**

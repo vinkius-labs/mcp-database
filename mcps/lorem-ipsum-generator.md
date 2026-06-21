@@ -22,7 +22,7 @@ This MCP generates standard lorem ipsum with controlled output: exact word count
 - **Batch Ready:** Up to 50 units per request for large-scale UI mockups.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_lorem_ipsum**: Specify the unit (words, sentences, paragraphs) and count (max 50). The output is deterministic and consistent, unlike LLM-generated filler text which varies in length and style each time.
 
 Generates lorem ipsum placeholder text by words, sentences, or paragraphs. Zero dependencies. For UI prototyping, database seeding, and content mockups
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lorem-ipsum-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lorem-ipsum-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lorem Ipsum Generator** tools.
 
 **Configuration:**

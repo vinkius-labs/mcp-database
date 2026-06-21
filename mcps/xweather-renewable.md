@@ -42,7 +42,7 @@ Your AI becomes a weather analyst, helping you assess sites, forecast production
 - **Asset Managers** — track weather alerts and conditions to protect renewable energy infrastructure
 
 
-## Available Tools
+## Available Tools (12)
 - **get_weather_alerts**: Critical for renewable energy asset protection during severe weather events.
 
 Get weather alerts and advisories for a location
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `xweather-renewable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `xweather-renewable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Xweather Renewable** tools.
 
 **Configuration:**

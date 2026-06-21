@@ -35,7 +35,7 @@ No more manual checking of execution logs or switching tabs to enable/disable fl
 - **Marketing Teams** — check the status of lead-gen flows and ensure integrations are running smoothly.
 
 
-## Available Tools
+## Available Tools (32)
 - **add_piece**: Add a custom piece to the platform
 - **delete_app_connection**: Delete an app connection
 - **delete_flow**: Delete a flow by ID
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `activepieces` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `activepieces` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Activepieces** tools.
 
 **Configuration:**

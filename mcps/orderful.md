@@ -27,7 +27,7 @@ Connect your **Orderful** account to empower your AI agents with modern EDI capa
 3. Start managing your EDI operations from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_organization**: Get organization details
 - **get_transaction**: Get details for a specific transaction
 - **get_transaction_errors**: Get errors for a transaction
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `orderful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `orderful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Orderful** tools.
 
 **Configuration:**

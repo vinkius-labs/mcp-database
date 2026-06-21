@@ -37,7 +37,7 @@ No more navigating complex GIS software to find coordinates or calculate routes.
 - **Researchers** — access geographic data for academic work, urban planning and geographic studies
 
 
-## Available Tools
+## Available Tools (6)
 - **geocode_address**: Accepts free-form address text like "1600 Pennsylvania Ave, Washington DC" or "Eiffel Tower, Paris". Returns candidate matches with coordinates, address components and confidence scores. Useful for mapping and location-based queries.
 
 Geocode an address to coordinates
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arcgis-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arcgis-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ArcGIS** tools.
 
 **Configuration:**

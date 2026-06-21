@@ -18,7 +18,7 @@ When a Martech AI Agent drafts a dynamic welcome email, it shouldn't manually tr
 - **Complex Logic:** Supports loops (`{{#each}}`) and conditionals (`{{#if}}`) instantly local, turning raw JSON into production-ready HTML.
 
 
-## Available Tools
+## Available Tools (1)
 - **compile_template**: Pass the raw Handlebars template with {{variable}} placeholders as "templateStr", and a JSON string of values as "dataStr". Supports {{#each}} loops and {{#if}} conditionals. Never try to do string replacement yourself.
 
 Compiles Handlebars templates perfectly. Prevents AI hallucination when replacing variables or applying conditionals in marketing emails
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `handlebars-template-compiler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `handlebars-template-compiler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Handlebars Template Compiler** tools.
 
 **Configuration:**

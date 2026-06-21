@@ -33,7 +33,7 @@ Connect your AI agent to **Tinybird**, the real-time data platform for developer
 - **DevOps Teams** — monitor ingestion performance and token scopes via AI assistance
 
 
-## Available Tools
+## Available Tools (10)
 - **execute_sql_query**: Execute an arbitrary SQL query against the Tinybird workspace
 - **get_datasource_details**: Get comprehensive information for a specific Data Source
 - **get_pipe_details**: Get detailed information for a specific Pipe
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tinybird-data-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tinybird-data-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tinybird Data Platform** tools.
 
 **Configuration:**

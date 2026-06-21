@@ -34,7 +34,7 @@ Connect your **Mailsac** account to any AI agent to automate your email testing 
 - **Privacy-Conscious Users** — Manage temporary communication channels via simple natural language commands
 
 
-## Available Tools
+## Available Tools (9)
 - **list_reserved_addresses**: List all reserved (enhanced) email addresses
 - **delete_inbox_message**: Permanently remove a message from an inbox
 - **list_custom_domains**: List custom domains linked to the account
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailsac` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailsac` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailsac** tools.
 
 **Configuration:**

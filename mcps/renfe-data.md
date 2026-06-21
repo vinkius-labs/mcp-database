@@ -33,7 +33,7 @@ Connect to the **Renfe Data** portal to monitor the Spanish railway network in r
 - **Data Scientists** — access open government data for urban mobility research and visualization.
 
 
-## Available Tools
+## Available Tools (11)
 - **ckan_datastore_search**: Search for data within a resource
 - **ckan_package_list**: List all dataset names in Renfe Data
 - **ckan_package_show**: Get metadata for a specific dataset
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `renfe-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `renfe-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Renfe Data** tools.
 
 **Configuration:**

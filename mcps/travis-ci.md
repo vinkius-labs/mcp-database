@@ -33,7 +33,7 @@ Supercharge your DevOps methodology by linking **Travis CI** exclusively to your
 - **Release Managers** — Ensure stable production lines by observing the absolute status of 'main' branches actively, forcing fresh deployments through explicit build triggers
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_travis_build**: This action is irreversible for the current execution.
 
 Cancels a currently running Travis CI build
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `travis-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `travis-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Travis CI** tools.
 
 **Configuration:**

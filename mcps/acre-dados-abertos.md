@@ -32,7 +32,7 @@ Connect to the **Acre Dados Abertos** portal to query public information from th
 - **Developers** — integrate real-time public data into applications using the Datastore search capabilities
 
 
-## Available Tools
+## Available Tools (8)
 - **get_group**: Get details for a specific group
 - **get_package**: Get detailed metadata for a specific dataset (package)
 - **get_resource**: Get metadata for a specific resource
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `acre-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `acre-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Acre Dados Abertos** tools.
 
 **Configuration:**

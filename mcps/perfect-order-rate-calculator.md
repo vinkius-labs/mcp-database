@@ -13,7 +13,7 @@ Calculate Perfect Order Rate and evaluate financial and loyalty impact.
 This MCP server provides specialized tools to calculate the Perfect Order Rate (POR) and analyze its business consequences. Use `calculate_order_integrity` to determine your fulfillment excellence, `calculate_failure_cost` to quantify the financial burden of logistics errors, and `calculate_loyalty_projection` to estimate how improvements will boost NPS and CLV.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_failure_cost**: Calculate the financial impact of order failures
 - **calculate_loyalty_projection**: Project future NPS and CLV based on improvements
 - **calculate_order_integrity**: Calculate the perfect order rate percentage
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `perfect-order-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `perfect-order-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Perfect Order Rate Calculator** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate the robust dynamic application security testing (DAST) capabilities of
 - **Backend Developers** — Quickly identify security regression issues caused by newly deployed microservices parsing scans directly in the development terminal.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_application_details**: Get detailed configuration for a specific StackHawk application
 - **get_organization_details**: Get StackHawk organization details and subscription tier
 - **get_scan_alerts**: Download individual security alerts discovered by a DAST scan
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stackhawk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stackhawk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **StackHawk** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Empower your AI agent with access to your **Funil de Vendas** CRM to automate yo
 - **Marketing Teams**. Automate the creation of leads from various sources directly into the sales funnels.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_crm_api_health**: Verify CRM API connectivity
 - **create_crm_activity**: Requires opportunity ID and subject.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `funil-de-vendas-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `funil-de-vendas-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Funil de Vendas** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual stat checking or CSV list management. Your AI acts as a dedicated
 - **E-commerce Owners** — streamline the retrieval of subscriber engagement data and monitor marketing health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_campaign**: Create a new email campaign
 - **get_group**: Get details for a subscriber group
 - **create_subscriber**: Add a new subscriber
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sendernet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sendernet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sender.net** tools.
 
 **Configuration:**

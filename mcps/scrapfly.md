@@ -35,7 +35,7 @@ No more managing browser clusters or rotating IPs. Your AI acts as a dedicated d
 - **Growth Engineers** — streamline the generation of visual audits and lead metadata directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **ai_data_extraction**: Extract structured data
 - **get_api_status**: Check account info
 - **list_extraction_models**: List AI models
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scrapfly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scrapfly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scrapfly** tools.
 
 **Configuration:**

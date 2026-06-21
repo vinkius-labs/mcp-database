@@ -32,7 +32,7 @@ Grant your AI agent the absolute capacity to bridge code into the global telecom
 - **Telecom Ops** — purge phantom active calls stuck in loop states by conversing directly using `list_calls` followed by sweeping `cancel_call` operations.
 
 
-## Available Tools
+## Available Tools (10)
 - **terminate_call**: Hang up an active call
 - **get_account_info**: Get Plivo account details
 - **get_call_details**: Get specific call details
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plivo** tools.
 
 **Configuration:**

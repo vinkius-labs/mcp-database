@@ -13,7 +13,7 @@ Calculate fair price, YTM, and inflation-adjusted returns for US Treasuries, UK 
 This MCP server provides specialized financial tools to value sovereign debt instruments. Use `calculate_bond_valuation` to determine the fair market price and annualized total return (YTM) for bonds like US T-Bills, T-Notes, or German Bunds based on current market yields. The `calculate_inflation_adjusted_return` tool allows you to assess purchasing power preservation by adjusting nominal returns against expected inflation rates. Additionally, use `calculate_currency_equivalent_yield` to evaluate the yield of a foreign bond when converted into a target currency, accounting for exchange rate impacts.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_bond_valuation**: Calculate fair market price and annualized total return (YTM) of a bond
 - **calculate_currency_equivalent_yield**: Evaluate the yield of a foreign sovereign bond in a target currency
 - **calculate_inflation_adjusted_return**: Assess purchasing power preservation by adjusting nominal return for inflation
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `treasury-return-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `treasury-return-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Treasury Return Calculator** tools.
 
 **Configuration:**

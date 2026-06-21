@@ -13,7 +13,7 @@ Estimate US federal and state corporate income taxes, providing comparative anal
 This MCP server provides a specialized calculation engine for estimating US corporate tax liabilities. It allows AI agents to retrieve state-specific tax rates using `get_state_tax_rate`, calculate detailed federal and state tax breakdowns with `calculate_tax_liability`, and perform complex comparative analyses between different business entities like C-Corp, S-Corp, and LLC via `compare_business_structures`. The tool accounts for the 21% flat federal rate and applies hardcoded state-level corporate income tax rates to provide an accurate effective tax rate estimation.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_tax_liability**: Calculates the specific tax breakdown for a single profit amount in a given state
 - **compare_business_structures**: Provides a side-by-side comparison of tax burdens for different business structures
 - **get_state_tax_rate**: Retrieves the hardcoded corporate income tax rate for a specific US state
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-corporate-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-corporate-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Corporate Tax Calculator** tools.
 
 **Configuration:**

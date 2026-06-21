@@ -28,7 +28,7 @@ The **Arcadia Utility Cloud MCP Server** (formerly Urjanet) provides an advanced
 - **Energy Engineers** — Retrieve meter-level data to monitor efficiency improvements and resource consumption.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_account_check**: Verify Arcadia Utility Cloud connection
 - **get_meter_data**: Retrieve consumption and usage data for a specific meter
 - **get_statement**: Get metadata for a specific statement
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arcadia-utility-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arcadia-utility-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Arcadia Utility Cloud** tools.
 
 **Configuration:**

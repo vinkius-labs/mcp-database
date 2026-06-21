@@ -33,7 +33,7 @@ Transform any text or URL into a high-quality QR code or decode existing ones us
 - **Operations Teams** — Decode QR codes from inventory photos or asset tags by simply pasting an image link.
 
 
-## Available Tools
+## Available Tools (2)
 - **create_qr_code**: Generate a QR code image URL from data
 - **read_qr_code**: Decode a QR code from an image URL
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qr-code-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qr-code-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QR Code Generator** tools.
 
 **Configuration:**

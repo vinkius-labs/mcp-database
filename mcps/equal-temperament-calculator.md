@@ -13,7 +13,7 @@ Calculate MIDI frequencies, interval deviations, and tuning system comparisons.
 A mathematical engine for musical acoustics. Use `generate_midi_frequency_log` to get a full list of MIDI frequencies, `calculate_interval_deviations` to find cents deviation from Just Intonation, and `compare_tuning_supports` to analyze differences between Pythagorean, Meantone, and Equal systems.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_interval_deviations**: Calculates deviations from Just Intonation
 - **generate_midi_frequency_log**: Generates a MIDI frequency log
 - **compare_tuning_systems**: Compares different tuning systems
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `equal-temperament-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `equal-temperament-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Equal Temperament Calculator** tools.
 
 **Configuration:**

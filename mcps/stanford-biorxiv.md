@@ -35,7 +35,7 @@ Preprints appear **6-12 months before** peer-reviewed publication. This server g
 - **Science Journalists** — track breaking scientific discoveries
 
 
-## Available Tools
+## Available Tools (16)
 - **get_preprint**: Searches both bioRxiv and medRxiv. Returns title, authors, corresponding author and institution, date, version, category, abstract, and license. DOI format: "10.1101/2024.01.15.575123".
 
 Get preprint details by DOI
@@ -146,7 +146,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stanford-biorxiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stanford-biorxiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stanford bioRxiv** tools.
 
 **Configuration:**

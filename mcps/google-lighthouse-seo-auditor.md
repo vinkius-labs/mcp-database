@@ -19,7 +19,7 @@ Stop paying agencies thousands of dollars for performance audits. This MCP conne
 - **Zero Friction:** No authentication required for standard use. Just connect the MCP and start auditing websites immediately. Your AI agent can now visually optimize web applications on the fly.
 
 
-## Available Tools
+## Available Tools (1)
 - **run_lighthouse_audit**: Returns the scores (0-100) and specific failed audits (e.g. large images, render-blocking JS) so you can suggest exact code fixes.
 
 Runs a full Google PageSpeed Insights (Lighthouse) audit on any public URL
@@ -74,7 +74,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-lighthouse-seo-auditor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-lighthouse-seo-auditor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Lighthouse SEO Auditor** tools.
 
 **Configuration:**

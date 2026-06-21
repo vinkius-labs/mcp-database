@@ -34,7 +34,7 @@ Connect your **Bloomreach Engagement** account to any AI agent and orchestrate y
 - **Data Analysts** — retrieve attribute and property definitions using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_catalog_items**: Retrieve items from a specific data catalog
 - **get_customer_properties**: Export properties for a specific registered customer
 - **list_segmentations**: List all customer segmentations
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bloomreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bloomreach` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bloomreach** tools.
 
 **Configuration:**

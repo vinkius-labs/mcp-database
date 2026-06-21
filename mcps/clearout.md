@@ -34,7 +34,7 @@ Connect your **Clearout** email intelligence account to any AI agent and simplif
 - **Growth Engineers** — automate email validation and verify credit balances via the AI assistant.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_bulk**: Already processed emails retain their results.
 
 Cancel a bulk verification
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clearout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clearout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clearout** tools.
 
 **Configuration:**

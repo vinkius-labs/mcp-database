@@ -34,7 +34,7 @@ Connect your **Bing Search API** account to any AI agent and integrate comprehen
 - **Developers** — integrate real-time web data into their automated agent workflows.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_trending_images**: Retrieve currently trending images
 - **get_trending_news**: Retrieve currently trending news topics
 - **search_images**: Search for images using Bing
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bing-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bing-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bing Search** tools.
 
 **Configuration:**

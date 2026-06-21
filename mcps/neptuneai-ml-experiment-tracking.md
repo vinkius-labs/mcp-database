@@ -35,7 +35,7 @@ Connect your **Neptune.ai** account to any AI agent and take full control of you
 - **AI Researchers** — track production model versions and ensure consistent metadata logging across multiple ML projects efficiently
 
 
-## Available Tools
+## Available Tools (6)
 - **list_projects**: List accessible Neptune workspaces and projects
 - **get_project**: Get specific details for a targeted Neptune ML project
 - **search_runs**: Search explicitly tracked ML experimentation runs inside a project
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `neptuneai-ml-experiment-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `neptuneai-ml-experiment-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Neptune.ai (ML Experiment Tracking)** tools.
 
 **Configuration:**

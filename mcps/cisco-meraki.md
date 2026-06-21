@@ -35,7 +35,7 @@ Connect your **Cisco Meraki** dashboard to any AI agent and take full control of
 - **Security Engineers** — verify firewall status and administrator access levels
 
 
-## Available Tools
+## Available Tools (8)
 - **get_device_details**: Get detailed information for a specific device by serial
 - **get_network_summary**: Get summary details for a specific network
 - **list_organization_admins**: List all administrators for an organization
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cisco-meraki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cisco-meraki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cisco Meraki** tools.
 
 **Configuration:**

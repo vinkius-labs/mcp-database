@@ -35,7 +35,7 @@ No more switching between browser tabs to compare hotels. Your AI agent handles 
 - **Revenue Analysts** — monitor pricing trends and competitor rates across markets programmatically
 
 
-## Available Tools
+## Available Tools (12)
 - **book_hotel**: This is a write action that results in an actual reservation. Required fields: property_id, check_in_date, check_out_date, room_id, rate_plan_id, guest first name, last name, and email. The room_id and rate_plan_id should be obtained from the check_availability or get_rate_plans tools. Include billing address and special requests if the user provides them. On success, returns an itinerary ID that can be used to retrieve or cancel the booking. ALWAYS confirm booking details with the user before executing this action.
 
 Book a hotel reservation through Expedia EAN
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `expedia-hotels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `expedia-hotels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Expedia Hotels** tools.
 
 **Configuration:**

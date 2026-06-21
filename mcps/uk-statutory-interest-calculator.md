@@ -13,7 +13,7 @@ Calculate statutory interest and fixed compensation for late commercial payments
 This MCP server provides tools to determine recoverable costs under the UK's Late Payment of Commercial Debts Act 1998. It calculates statutory interest (Bank of England base rate + 8%) and fixed compensation fees based on debt magnitude. Use `total_claim_summary` for a complete breakdown of interest, compensation, and total claim value.
 
 
-## Available Tools
+## Available Tools (3)
 - **compensation_fee**: Calculate the fixed compensation fee
 - **total_claim_summary**: Calculate a full summary of the claim
 - **accrued_interest**: Calculate statutory interest accrued on a debt
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uk-statutory-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uk-statutory-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UK Statutory Interest Calculator** tools.
 
 **Configuration:**

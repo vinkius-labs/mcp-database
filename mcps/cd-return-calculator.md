@@ -13,7 +13,7 @@ Calculate potential returns on Certificates of Deposit (CD) and compare them aga
 The CD Return Calculator is a specialized financial tool designed to help you project the growth of your investments in Certificates of Deposit. By providing the principal amount, APY, and term duration, you can use tools like `calculate_cd_yield` to see exactly how much interest you will earn and what your final balance will be. The server also provides context by using `fetch_market_benchmarks` to compare your CD's performance against current High-Yield Savings Account (HYSA) and Money Market rates. Finally, the `generate_investment_comparison` tool produces a clear assessment of whether your CD is outperforming liquid market alternatives.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_cd_yield**: Calculates the growth of an investment based on CD terms and compounding interest
 - **fetch_market_benchmarks**: Retrieves the current hardcoded benchmark rates for liquid alternatives based on a given interest rate level
 - **generate_investment_comparison**: Produces a high-level comparison between the CD investment and market alternatives
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cd-return-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cd-return-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CD Return Calculator** tools.
 
 **Configuration:**

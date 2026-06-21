@@ -34,7 +34,7 @@ Connect your **Buy Me A Coffee** account to any AI agent and orchestrate your cr
 - **Business Admins** — monitor monetization performance and product sales using natural language.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_account_stats**: Retrieve core account statistics
 - **list_extras**: List digital products (extras) purchased
 - **list_posts**: List blog posts from your page
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buy-me-a-coffee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buy-me-a-coffee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buy Me A Coffee** tools.
 
 **Configuration:**

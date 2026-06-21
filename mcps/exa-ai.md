@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire web discovery and semantic sear
 - **Operations Leads** — automate web discovery querying to orchestrate cross-functional research teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **find_similar**: Note: this endpoint is deprecated by Exa and may be removed in the future.
 
 Find websites similar to a given URL (deprecated — use search instead)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exa-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exa-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Exa AI** tools.
 
 **Configuration:**

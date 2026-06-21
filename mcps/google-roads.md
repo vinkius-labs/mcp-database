@@ -38,7 +38,7 @@ No more manual map matching or noisy GPS data visualization. Your AI acts as a d
 - **GIS Professionals** — snap scattered GPS points to road networks for spatial analysis and cartography
 
 
-## Available Tools
+## Available Tools (4)
 - **get_nearest_roads**: Returns the snapped coordinate, the original coordinate, and the place ID for each nearest road segment. Unlike snapToRoads which assumes coordinates form a continuous path, nearestRoads treats each point independently. Essential for reverse geocoding, finding which road a vehicle is on, identifying road segments for individual location points, and mapping scattered GPS points to roads. Each point is matched to the nearest road segment within a reasonable distance. Place IDs can be used with the speed limits endpoint. AI agents should reference this when users ask "what road is at these coordinates", "find the nearest road for each GPS point", or need to map individual location points to road segments without assuming a path.
 
 Get the nearest road segments for up to 100 individual GPS coordinates
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-roads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-roads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Roads** tools.
 
 **Configuration:**

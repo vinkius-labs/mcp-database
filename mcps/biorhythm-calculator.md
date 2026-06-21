@@ -13,7 +13,7 @@ Calculate and analyze the three primary biological cycles--physical, emotional, 
 This MCP server provides tools to quantify your biological rhythms. Use `get_rhythm_status` to determine the current energy percentages for physical, emotional, and intellectual cycles on any given date. You can also use `check_critical_windows` to identify upcoming dates of biological instability where cycles cross zero, or `locate_rhythm_peaks` to find when each cycle will reach its maximum positive amplitude.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_critical_windows**: Identify upcoming dates where biological instability is expected due to cycle transitions
 - **locate_rhythm_peaks**: Find the next occurrence of maximum biological strength for each cycle
 - **get_rhythm_status**: Determine the current biological standing and energy percentages for all three cycles on a specific date
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `biorhythm-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `biorhythm-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Biorhythm Calculator** tools.
 
 **Configuration:**

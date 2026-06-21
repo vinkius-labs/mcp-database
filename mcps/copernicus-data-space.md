@@ -36,7 +36,7 @@ Connect to the **Copernicus Data Space Ecosystem** and unlock the world's larges
 - **Emergency Response Teams** — rapidly locate recent satellite acquisitions for disaster assessment and situational awareness
 
 
-## Available Tools
+## Available Tools (14)
 - **check_copernicus_status**: Returns the connection status. Use this to verify your client_id:client_secret credentials are working correctly.
 
 Verify Copernicus Data Space API connectivity and authentication
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `copernicus-data-space` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `copernicus-data-space` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Copernicus Data Space** tools.
 
 **Configuration:**

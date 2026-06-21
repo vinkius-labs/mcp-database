@@ -35,7 +35,7 @@ Connect your **CS-Cart** or **Multi-Vendor** store to any AI agent and take full
 - **Accounting Teams** — verify tax rules and reconcile order totals directly from the workspace
 
 
-## Available Tools
+## Available Tools (10)
 - **list_products**: Resolves product IDs, names, prices, stock levels, and associated vendor identifiers.
 
 List CS-Cart products. CS-Cart is a popular multi-vendor B2B/B2C marketplace platform
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cs-cart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cs-cart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CS-Cart** tools.
 
 **Configuration:**

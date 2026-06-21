@@ -34,7 +34,7 @@ Connect your **Applitools Eyes** testing suite to your AI agent and manage your 
 - **Designers** — request a quick breakdown of structural UI changes caught by Applitools Visual AI before deployment
 
 
-## Available Tools
+## Available Tools (10)
 - **list_baselines**: Returns baseline IDs, names, and env configs. Filter by app name.
 
 List visual baselines for an app on Applitools
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `applitools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `applitools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Applitools** tools.
 
 **Configuration:**

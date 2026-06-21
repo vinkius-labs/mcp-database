@@ -34,7 +34,7 @@ Access **PG&E Public Datasets** directly from any AI agent and explore energy co
 - **Journalists** — access public energy data for reporting and analysis
 
 
-## Available Tools
+## Available Tools (8)
 - **get_billing_data**: Data is available by ZIP code and customer segment. Use this to analyze energy affordability, compare costs across regions, or identify rate impact on customers. Optional zipCode and year filters.
 
 Get billing data and average costs from PG&E public datasets
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pge-public-datasets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pge-public-datasets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PG&E Public Datasets** tools.
 
 **Configuration:**

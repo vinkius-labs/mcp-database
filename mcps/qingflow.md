@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your business processes with **QingFlow**, 
 - **IT Administrators** — monitor application schemas and automated workflows without manual technical overhead.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_record**: Create a new application record
 - **delete_record**: Delete an application record
 - **get_app_schema**: Get application field schema
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qingflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qingflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QingFlow** tools.
 
 **Configuration:**

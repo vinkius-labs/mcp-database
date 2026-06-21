@@ -32,7 +32,7 @@ Integrate **Denim**, the specialized marketing automation platform for financial
 - **Digital Marketers** — Audit marketing automations and target segments during campaign planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_new_contact**: Add a new contact to your Denim database
 - **get_account_metadata**: Retrieve settings and limits for your Denim account
 - **get_campaign_analytics**: Retrieve performance metrics for a specific campaign
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `denim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `denim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Denim** tools.
 
 **Configuration:**

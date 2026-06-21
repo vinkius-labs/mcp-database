@@ -31,7 +31,7 @@ Connect the **MJML** engine to your AI agent to generate professional, responsiv
 - **Designers** — Validate MJML syntax and see immediate visual results through the AI presenter
 
 
-## Available Tools
+## Available Tools (1)
 - **render_mjml**: Provide the raw MJML XML or JSON string.
 
 Render MJML markup to responsive HTML
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mjml-email-markup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mjml-email-markup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MJML (Email Markup)** tools.
 
 **Configuration:**

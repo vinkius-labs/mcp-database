@@ -22,7 +22,7 @@ Official ECB reference exchange rates.
 Completely open and unrestricted.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_exchange_rate**: Daily, monthly, or annual frequency. The ECB publishes reference rates for ~40 currencies against the euro at around 16:00 CET each business day.
 
 Get the EUR exchange rate against a specific currency from the ECB
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ecb-exchange-rates-official-eur-reference-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ecb-exchange-rates-official-eur-reference-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ECB Exchange Rates — Official EUR Reference Rates** tools.
 
 **Configuration:**

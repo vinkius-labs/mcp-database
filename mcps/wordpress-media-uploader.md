@@ -21,7 +21,7 @@ Your AI agent gains the immediate ability to act as a complete content productio
 - **Absolute Containment:** Because this is strictly a "Push-only" creation tool scoped only to Media, the agent is physically incapable of publishing text content, deleting plugins, or reading customer data. It is a completely secure, one-way funnel.
 
 
-## Available Tools
+## Available Tools (1)
 - **upload_wordpress_media**: Provide the public sourceUrl, a descriptive filename (like "seo-cover-image.jpg"), and an optional alt text for SEO.
 
 Downloads an image from a public URL and uploads it to the WordPress Media Library
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wordpress-media-uploader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wordpress-media-uploader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WordPress Media Uploader** tools.
 
 **Configuration:**

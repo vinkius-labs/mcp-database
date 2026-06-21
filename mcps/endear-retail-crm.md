@@ -32,7 +32,7 @@ Integrate **Endear**, the leading retail CRM and clienteling platform, directly 
 - **Operations Teams** — Monitor task completion and organizational retail metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_endear_account_metadata**: Retrieve metadata and settings for your Endear account
 - **get_customer_profile**: Get detailed profile and history for a specific customer
 - **quick_retail_performance_audit**: Retrieve a high-level summary of customers, orders, and products
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `endear-retail-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `endear-retail-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Endear Retail CRM** tools.
 
 **Configuration:**

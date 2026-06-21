@@ -11,7 +11,7 @@ Connect Health Gorilla to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_lab_order**: Orders in "received" or "pending" status can typically be cancelled. Orders already in "collected" or "testing" status cannot be cancelled and require lab notification. A cancellation reason is recommended for audit purposes. Use this when an order was submitted in error, the patient refused testing, or clinical circumstances have changed.
 
 Cancel a pending laboratory order
@@ -75,7 +75,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `health-gorilla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `health-gorilla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Health Gorilla** tools.
 
 **Configuration:**

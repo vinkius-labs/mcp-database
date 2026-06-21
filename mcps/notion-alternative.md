@@ -36,7 +36,7 @@ No more navigating through the Notion app to find a database or update page prop
 - **Team Leads** — audit workspace users, review comments and track page changes via conversation
 
 
-## Available Tools
+## Available Tools (13)
 - **append_block**: Requires the parent block/page ID and a JSON array of block objects. Each block must follow Notion's block schema: {"object":"block","type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello"}}]}}. Common types: paragraph, heading_1, heading_2, heading_3, bulleted_list_item, numbered_list_item, to_do, toggle, code.
 
 Append blocks to a Notion page
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `notion-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `notion-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Notion** tools.
 
 **Configuration:**

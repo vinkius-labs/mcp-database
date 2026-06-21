@@ -35,7 +35,7 @@ Connect your **Sift** account to any AI agent and take full control of your frau
 - **Developers** — verify event integration and scoring data during technical implementation
 
 
-## Available Tools
+## Available Tools (8)
 - **apply_user_decision**: Apply a manual decision to a user (e.g. block_user)
 - **list_user_decision_history**: List the history of decisions applied to a user
 - **get_user_fraud_labels**: Retrieve labels (e.g. $bad, $good) applied to a user
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sift-chargeback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sift-chargeback` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sift (Chargeback)** tools.
 
 **Configuration:**

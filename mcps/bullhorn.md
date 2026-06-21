@@ -34,7 +34,7 @@ No more manual searching through complex ATS interfaces. Your AI acts as a dedic
 - **Operations Leads** — Automate ATS querying to orchestrate staffing workflows smoothly.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_entity**: The data must be a valid JSON string representing the entity properties.
 
 Create a new Bullhorn entity
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bullhorn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bullhorn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bullhorn** tools.
 
 **Configuration:**

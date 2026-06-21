@@ -34,7 +34,7 @@ Transform your iFood merchant operations with AI-powered automation. Your agents
 Essential for **restaurant owners**, **food delivery managers**, **ghost kitchen operators**, and **multi-location food businesses** using iFood. Let AI agents handle order monitoring, catalog maintenance, and schedule management. Perfect for businesses processing 20+ daily orders who want faster response times, reduced manual oversight, and streamlined operations across multiple store locations.
 
 
-## Available Tools
+## Available Tools (11)
 - **assign_driver**: Requires order ID and driver ID. Use this to manage your own delivery fleet and coordinate order fulfillment.
 
 Assign a delivery driver to an iFood order
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ifood` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ifood` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **iFood** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Wistia** video marketing account to any AI agent to automate your
 - **Business Analysts** — get instant account-wide video performance reports and visitor metrics straight through the chat.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_project**: Create a new project
 - **get_account_analytics**: Get account-wide stats
 - **get_video_details**: Get metadata for a video
@@ -94,7 +94,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wistia-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wistia-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wistia** tools.
 
 **Configuration:**

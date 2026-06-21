@@ -36,7 +36,7 @@ Your agent navigates the entire competition hierarchy — from country to league
 - **Developers & Data Engineers** — integrate professional-grade multi-sport data into AI-powered applications
 
 
-## Available Tools
+## Available Tools (18)
 - **get_club_players**: Requires the numeric club ID.
 
 List all players currently registered to a specific club
@@ -153,7 +153,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sportdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sportdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SportDB** tools.
 
 **Configuration:**

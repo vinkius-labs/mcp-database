@@ -33,7 +33,7 @@ Empower your AI agent with the ability to generate high-quality images and PDFs 
 - **Ops Teams** — streamline the generation of dynamic PDF reports and monitor rendering consumption directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_status**: Check RenderForm API status
 - **get_account_info**: Get account information and quotas
 - **get_request_status**: Get the status of a render request
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `renderform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `renderform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RenderForm** tools.
 
 **Configuration:**

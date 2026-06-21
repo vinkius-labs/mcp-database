@@ -35,7 +35,7 @@ No more switching between your editor and the browser to share your knowledge. Y
 - **DevRel & Community Managers** — monitor latest posts and manage organizational content efficiently.
 
 
-## Available Tools
+## Available Tools (38)
 - **create_article**: Requires authentication.
 
 Publish a new article on DEV.to
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `devto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `devto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DEV.to** tools.
 
 **Configuration:**

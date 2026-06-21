@@ -34,7 +34,7 @@ Connect your **Lacework (FortiCNAPP)** account to any AI agent and take full con
 - **Compliance Officers** — audit security policies and unrestricted cloud assets to maintain a robust organizational security posture
 
 
-## Available Tools
+## Available Tools (10)
 - **list_container_vulnerabilities**: Examines ECR/DockerHub registries or direct cluster deployments for images carrying critical inherited CVEs at the filesystem level before CI/CD promotion blocks.
 
 List static image vulnerabilities detected in Container Registries
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lacework-cloud-security-cnapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lacework-cloud-security-cnapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lacework (Cloud Security & CNAPP)** tools.
 
 **Configuration:**

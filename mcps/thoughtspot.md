@@ -33,7 +33,7 @@ Connect your **ThoughtSpot** instance to any AI agent and bring your analytics w
 - **IT Admins** — Interrogate the user directory and group distributions directly from the command line or chat
 
 
-## Available Tools
+## Available Tools (7)
 - **search_metadata**: Supported types include LIVEBOARD, ANSWER, LOGICAL_TABLE, etc.
 
 Search for metadata objects in ThoughtSpot by type
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thoughtspot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thoughtspot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ThoughtSpot** tools.
 
 **Configuration:**

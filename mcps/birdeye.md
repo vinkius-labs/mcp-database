@@ -34,7 +34,7 @@ Connect your **Birdeye** account to any AI agent and orchestrate your customer e
 - **Marketing Leads** — retrieve review summaries and location data for reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **checkin_customer**: Check-in a customer to trigger review/survey requests
 - **get_business_info**: Retrieve core business information
 - **get_contact**: Get specific contact details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `birdeye` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `birdeye` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Birdeye** tools.
 
 **Configuration:**

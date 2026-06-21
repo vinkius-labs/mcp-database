@@ -33,7 +33,7 @@ Connect to **The Graph** to index and retrieve real-time blockchain data across 
 - **DeFi Power Users** — track wallet movements and liquidity pool swaps through natural language
 
 
-## Available Tools
+## Available Tools (8)
 - **get_evm_historical_balances**: Get EVM historical balances
 - **get_evm_holders**: Get EVM token holders
 - **get_evm_swaps**: ) for EVM chains.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `the-graph-web3-indexing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `the-graph-web3-indexing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **The Graph (Web3 Indexing)** tools.
 
 **Configuration:**

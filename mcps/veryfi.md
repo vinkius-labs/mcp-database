@@ -33,7 +33,7 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 - **Operations Managers** — Streamline tax document collection and business card sorting automatically
 
 
-## Available Tools
+## Available Tools (57)
 - **delete_bank_statements**: Delete a bank_statements
 - **delete_business_cards**: Delete a business_cards
 - **delete_checks**: Delete a checks
@@ -168,7 +168,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `veryfi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `veryfi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Veryfi** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Acunetix 360** account to your AI agent to automate your web appl
 - **Compliance Officers** — retrieve security reports and audit logs for risk assessment
 
 
-## Available Tools
+## Available Tools (3)
 - **list_scans**: List vulnerability scans
 - **launch_scan**: Start a new security scan
 - **list_vulnerabilities**: List all identified security issues
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `acunetix-360` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `acunetix-360` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Acunetix 360** tools.
 
 **Configuration:**

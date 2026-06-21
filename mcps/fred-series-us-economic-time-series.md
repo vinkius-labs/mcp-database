@@ -26,7 +26,7 @@ Connect your AI agent to the **most powerful economic data engine in the world**
 Quantitative analysts, economists, financial advisors, portfolio managers, data journalists, academic researchers, and anyone building AI agents that need authoritative U.S. economic data.
 
 
-## Available Tools
+## Available Tools (5)
 - **search_series**: Returns matching series with title, frequency, units, popularity. Use order_by=popularity to find the most-used series. Examples: "GDP", "unemployment rate", "inflation CPI".
 
 Search 816,000+ economic time series by keyword
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fred-series-us-economic-time-series` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fred-series-us-economic-time-series` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FRED Series — U.S. Economic Time Series** tools.
 
 **Configuration:**

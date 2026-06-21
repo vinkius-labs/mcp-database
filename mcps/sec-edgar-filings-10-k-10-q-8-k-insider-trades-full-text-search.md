@@ -23,7 +23,7 @@ SEC filings access.
 ### Zero Auth
 
 
-## Available Tools
+## Available Tools (6)
 - **get_recent_filings**: Includes form type, filing date, accession number, and primary document link. Results include all form types (10-K annual reports, 10-Q quarterlies, 8-K events, proxy statements, etc.).
 
 Get the most recent SEC filings for a company — 10-K, 10-Q, 8-K, and more
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search** tools.
 
 **Configuration:**

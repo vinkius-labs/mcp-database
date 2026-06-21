@@ -34,7 +34,7 @@ Connect your **Hyperbrowser** account to any AI agent and take full control of y
 - **QA & Automation Engineers** — monitor web application states and perform visual audits across different browser configurations in the cloud
 
 
-## Available Tools
+## Available Tools (10)
 - **page_content**: Get raw HTML content synchronously via Hyperbrowser
 - **create_session**: Returns a connection URL and session details. Pass optional JSON config for proxy, stealth, browser version, etc.
 
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hyperbrowser-web-infra-for-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hyperbrowser-web-infra-for-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hyperbrowser (Web Infra for AI)** tools.
 
 **Configuration:**

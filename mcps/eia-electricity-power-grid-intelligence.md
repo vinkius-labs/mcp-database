@@ -24,7 +24,7 @@ Real-time and historical intelligence on the entire U.S. power grid.
 Utility companies, grid operators, renewable energy developers, energy traders, ESG analysts, and infrastructure investors.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_electricity_prices**: Source: EIA-826, EIA-861.
 
 Get retail electricity prices by state and sector
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eia-electricity-power-grid-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eia-electricity-power-grid-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EIA Electricity — Power Grid Intelligence** tools.
 
 **Configuration:**

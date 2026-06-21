@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (8)
 - **odoo_confirm_order**: order, transitioning it from "draft"/"sent" to "sale" state. This triggers downstream operations like delivery order creation and inventory reservation. Use when the user says a quote is approved or wants to confirm an order.
 
 Confirm a draft quotation, converting it into an active sales order ready for fulfillment
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-sales` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-sales` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo Sales** tools.
 
 **Configuration:**

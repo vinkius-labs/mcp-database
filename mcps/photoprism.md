@@ -32,7 +32,7 @@ Connect your self-hosted **PhotoPrism** instance to any AI agent to interact wit
 - **Content Creators** — Retrieve assets from your library directly within your coding or writing workflow
 
 
-## Available Tools
+## Available Tools (7)
 - **create_oauth_token**: Create an OAuth2 token
 - **get_oauth_authorize**: Get OAuth2 Authorization
 - **get_oauth_userinfo**: Get OAuth2 UserInfo
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `photoprism` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `photoprism` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PhotoPrism** tools.
 
 **Configuration:**

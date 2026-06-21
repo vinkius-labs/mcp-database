@@ -33,7 +33,7 @@ Connect to the **ALESP (Assembleia Legislativa do Estado de São Paulo)** open d
 - **Citizens & Activists** — promote transparency by easily accessing public records through natural conversation.
 
 
-## Available Tools
+## Available Tools (18)
 - **get_agenda_eventos**: List upcoming and past events scheduled at the Assembly
 - **get_comissoes_membros**: List members of the permanent committees
 - **get_comissoes_reunioes**: List meetings of the permanent committees
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alesp-assembleia-sp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alesp-assembleia-sp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ALESP (Assembleia SP)** tools.
 
 **Configuration:**

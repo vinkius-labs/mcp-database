@@ -22,7 +22,7 @@ This engine uses a robust iCal parser to extract every event with its title, sta
 - **100% Air-Gapped Privacy:** Your personal schedule stays on your machine.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_ical_calendar**: ics). Provide the absolute file path.
 
 Parse a local .ics calendar export (Google Calendar, Apple Calendar, Outlook) into structured JSON events offline
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ical-calendar-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ical-calendar-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **iCal Calendar Parser** tools.
 
 **Configuration:**

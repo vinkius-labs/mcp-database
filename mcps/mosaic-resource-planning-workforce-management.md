@@ -35,7 +35,7 @@ Connect your **Mosaicapp** account to any AI agent and take full control of your
 - **Operations Directors** — audit project budgets and billable rates efficiently to maintain high-profitability standards across the organization
 
 
-## Available Tools
+## Available Tools (12)
 - **list_members**: List all explicit team members mapped within Mosaic
 - **get_member**: Get exact details parsing a given Mosaic team member
 - **list_work_plans**: List scheduled organizational work plans mapping resources
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mosaic-resource-planning-workforce-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mosaic-resource-planning-workforce-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mosaic (Resource Planning & Workforce Management)** tools.
 
 **Configuration:**

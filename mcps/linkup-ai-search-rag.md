@@ -34,7 +34,7 @@ Connect your **Linkup** account to any AI agent and take full control of real-ti
 - **Market Researchers** — perform large-scale data collection and fact-finding across the web without manual scraping scripts
 
 
-## Available Tools
+## Available Tools (2)
 - **search_web**: Choose "fast" mapping for basic factual requests and "deep" for thorough research limits.
 
 Perform a real-time web search extracting deep answers utilizing Linkup Platform
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linkup-ai-search-rag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linkup-ai-search-rag` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Linkup (AI Search & RAG)** tools.
 
 **Configuration:**

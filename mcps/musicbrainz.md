@@ -35,7 +35,7 @@ Connect to **MusicBrainz**, the world's largest open music database, and explore
 - **Developers** — build music apps using open, structured music data with MBIDs
 
 
-## Available Tools
+## Available Tools (15)
 - **browse_releases_by_artist**: Returns release titles, dates, countries and labels. Pagination: max 100 results per request.
 
 Browse all releases by a specific artist
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `musicbrainz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `musicbrainz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MusicBrainz** tools.
 
 **Configuration:**

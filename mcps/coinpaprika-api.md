@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire digital asset research and mark
 - **Operations Leads** — automate financial data querying to orchestrate cross-functional investment teams smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_coin_details**: Get full metadata and project details for a specific coin by ID
 - **get_coin_events**: Get recent and upcoming events for a specific cryptocurrency
 - **get_coin_exchanges**: Get all exchanges where a specific coin is traded
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coinpaprika-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coinpaprika-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoinPaprika API** tools.
 
 **Configuration:**

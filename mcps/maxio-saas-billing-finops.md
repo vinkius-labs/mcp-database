@@ -34,7 +34,7 @@ Connect your **Maxio (SaaSOptics)** account to any AI agent and take full contro
 - **Revenue Teams** — manage customer account metadata and identify contract renewal boundaries to optimize retention and expansion efforts efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contract**: Identify precise active arrays spanning native Gateway auth
 - **create_customer**: Provision a highly-available JSON Payload generating hard Customer bindings
 - **create_invoice**: Inspect deep internal arrays mitigating specific Plan Math
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `maxio-saas-billing-finops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `maxio-saas-billing-finops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Maxio (SaaS Billing & FinOps)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Zillow** API access to any AI agent to retrieve comprehensive rea
 - **Data Analysts** — retrieve regional demographics and market metrics directly into your workflow.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_chart**: Generates a URL for an image file displaying historical Zestimates
 - **get_comps**: Returns a list of comparable recent sales
 - **get_deep_comps**: ) for both the principal and comparable properties.
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zillow-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zillow-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zillow** tools.
 
 **Configuration:**

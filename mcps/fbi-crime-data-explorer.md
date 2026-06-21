@@ -32,7 +32,7 @@ Connect to the **FBI Crime Data Explorer (CDE)** to retrieve comprehensive law e
 - **Policy Makers** — evaluate the impact of safety initiatives using official historical data.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_agency_summarized**: Retrieve crime data for a specific law enforcement agency
 - **get_national_estimates**: Retrieve national crime estimates
 - **get_nibrs_victim_demographics**: Retrieve NIBRS victim demographic data
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fbi-crime-data-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fbi-crime-data-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FBI Crime Data Explorer** tools.
 
 **Configuration:**

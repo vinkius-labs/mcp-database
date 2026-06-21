@@ -32,7 +32,7 @@ Connect **GoHighLevel** to your AI agent and manage your all-in-one marketing an
 - **Business Owners** — Get a real-time snapshot of leads, deals, and campaign metrics without navigating the full CRM.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_contacts**: List all CRM contacts
 - **list_forms**: List lead capture forms
 - **get_contact**: Get contact details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gohighlevel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gohighlevel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoHighLevel** tools.
 
 **Configuration:**

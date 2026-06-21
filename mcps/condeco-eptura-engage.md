@@ -35,7 +35,7 @@ Connect your **Condeco** (now Eptura Engage) account to any AI agent and take fu
 - **DevOps/IT** — integrate workspace booking status into internal tools and dashboards
 
 
-## Available Tools
+## Available Tools (10)
 - **list_locations**: Identify bounded office capacities discovering standard enterprise real estate limits
 - **list_rooms**: Enumerate explicitly mapped meeting spaces filtering capacity and feature sets
 - **get_room_availability**: Determine real-time usage states extracting explicit chronological meeting blocks
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `condeco-eptura-engage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `condeco-eptura-engage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Condeco (Eptura Engage)** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect **Moesif** to your AI agent to gain deep visibility into your API ecosys
 - **Customer Success** — Quickly identify which users are experiencing errors or hitting rate limits.
 
 
-## Available Tools
+## Available Tools (6)
 - **count_events**: Count events matching a filter
 - **log_event**: Log a single API call to Moesif
 - **log_events_batch**: Log API calls in batch to Moesif
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moesif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moesif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moesif** tools.
 
 **Configuration:**

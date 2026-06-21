@@ -35,7 +35,7 @@ No more manual status checking in the dashboard for new subscribers. Your AI act
 - **Developers** — integrate real-time membership data and site metadata directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_member**: Create a new member
 - **get_account_info**: Get site info
 - **get_member**: Get member details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `memberful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `memberful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Memberful** tools.
 
 **Configuration:**

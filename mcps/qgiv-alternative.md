@@ -32,7 +32,7 @@ Connect your **Qgiv** account to any AI agent to streamline your nonprofit fundr
 - **Operations Teams** — Audit and maintain custom fields and dedication options across all active forms.
 
 
-## Available Tools
+## Available Tools (58)
 - **clone_form**: Clone an existing form
 - **create_custom_amount**: Create custom suggested donation amounts
 - **create_custom_field**: Create custom fields on donation forms
@@ -153,7 +153,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qgiv-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qgiv-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qgiv** tools.
 
 **Configuration:**

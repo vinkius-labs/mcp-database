@@ -35,7 +35,7 @@ Connect your **Clearscope** account to any AI agent and take full control of you
 - **Product Teams** — monitor topical authority and discoverability for product documentation and landing pages
 
 
-## Available Tools
+## Available Tools (10)
 - **list_reports**: Identify bounded logical arrays managing top-level Clearscope content SEO reports
 - **get_report_details**: Perform structural extraction of properties driving active NLP scoring boundaries
 - **create_report**: Provision a highly-available async parsing boundary running SERP execution hooks
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clearscope` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clearscope` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clearscope** tools.
 
 **Configuration:**

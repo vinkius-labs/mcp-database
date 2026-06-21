@@ -13,7 +13,7 @@ Instantly strip sensitive personal data from documents using deterministic, bull
 Sending raw legal or financial documents to LLMs risks massive data privacy breaches and compliance violations (GDPR/CCPA). Relying on an LLM to "forget" or manually scrub PII is an immense security vulnerability. This engine operates as a strict, local firewall, employing high-performance regex algorithms to deterministically eradicate emails, credit cards, SSNs, CPFs, and phone numbers. It seamlessly replaces sensitive intelligence with `[REDACTED]` tags locally, ensuring your client data remains entirely uncompromised before the LLM even sees the context.
 
 
-## Available Tools
+## Available Tools (1)
 - **redact_pii_strictly**: Instantly replaces Emails, CPFs, SSNs, and Credit Cards with [REDACTED] tags using fast offline regex
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `strict-pii-redaction-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `strict-pii-redaction-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Strict PII Redaction Engine** tools.
 
 **Configuration:**

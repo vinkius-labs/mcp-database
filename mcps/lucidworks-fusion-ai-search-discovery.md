@@ -34,7 +34,7 @@ Connect your **Lucidworks Fusion** instance to any AI agent and take full contro
 - **Digital Experience Teams** — audit search results across different apps and profiles to optimize user discovery and engagement
 
 
-## Available Tools
+## Available Tools (10)
 - **lw.list_collections**: Enumerate explicitly attached structured rules exporting active Billing
 - **lw.post_custom_query**: ` parsing deeply custom JSON logic mapping overriding Solr vectors natively.
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lucidworks-fusion-ai-search-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lucidworks-fusion-ai-search-discovery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lucidworks Fusion (AI Search & Discovery)** tools.
 
 **Configuration:**

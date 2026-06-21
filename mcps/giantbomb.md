@@ -34,7 +34,7 @@ Connect the **Giant Bomb** encyclopedia to your AI agent to unlock deep insights
 - **Content Creators** — pull accurate metadata and descriptions for reviews or video scripts without leaving your workflow.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_character**: Retrieve details for a specific character
 - **get_company**: Retrieve details for a specific company
 - **get_game**: Retrieve details for a specific game
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `giantbomb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `giantbomb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GiantBomb** tools.
 
 **Configuration:**

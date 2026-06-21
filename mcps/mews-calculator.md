@@ -13,7 +13,7 @@ Quantify patient physiological deterioration using the Modified Early Warning Sc
 The MEWS Calculator is a clinical assessment tool designed to identify patients at risk of clinical deterioration. By analyzing vital signs such as respiratory rate, SpO2, heart rate, systolic blood pressure, body temperature, and consciousness level (AVPU), it calculates a cumulative score. Use the `calculate_mews_score` tool to compute the numerical score, `get_clinical_classification` to determine risk levels, and `check_activation_threshold` to see if a Rapid Response Team activation is necessary.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_activation_threshold**: Checks if a MEWS score requires activation of the Rapid Response Team
 - **calculate_mews_score**: Calculates the cumulative MEWS score based on vital signs
 - **get_clinical_classification**: Determines the clinical risk category based on a MEWS score
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mews-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mews-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MEWS Calculator** tools.
 
 **Configuration:**

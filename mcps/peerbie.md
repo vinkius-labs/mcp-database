@@ -28,7 +28,7 @@ Turn your AI assistant into a relentless project manager. With the Peerbie integ
 Ideal for project managers and teams needing instant, conversational access to tasks and Peerbie company updates.
 
 
-## Available Tools
+## Available Tools (16)
 - **check_peerbie_status**: Verify connectivity
 - **create_post**: Create a feed post
 - **create_project**: Create a project
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `peerbie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `peerbie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Peerbie** tools.
 
 **Configuration:**

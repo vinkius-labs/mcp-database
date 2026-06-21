@@ -30,7 +30,7 @@ Connect your **Mindbody** business to any AI agent and run your fitness studio, 
 - **Multi-Location Operators** — Compare performance across all your locations in one conversation
 
 
-## Available Tools
+## Available Tools (15)
 - **get_client_history**: Shows attendance patterns, no-shows, and engagement over time. Critical for retention analysis.
 
 Get client visit history
@@ -157,7 +157,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mindbody` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mindbody` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mindbody** tools.
 
 **Configuration:**

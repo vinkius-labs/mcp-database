@@ -34,7 +34,7 @@ No digging into CURL terminal payloads or writing Python scripts for basic docum
 - **Backend Devs** — perform sanity checks and text-filtered semantic searches inspecting exact relevance scores
 
 
-## Available Tools
+## Available Tools (6)
 - **create_collection**: Provide the schema details as a JSON object.
 
 Creates a new search collection with a specific schema
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `typesense-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `typesense-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Typesense Vector Search** tools.
 
 **Configuration:**

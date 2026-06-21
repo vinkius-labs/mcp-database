@@ -34,7 +34,7 @@ Connect your **NinjaCat** agency account to your AI agent and streamline your ma
 - **Marketing Analysts** — automate the retrieval of report history and download links for performance audits.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_advertiser**: Get specific advertiser details
 - **get_agency_info**: Get agency metadata
 - **get_me**: Get current user details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ninjacat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ninjacat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NinjaCat** tools.
 
 **Configuration:**

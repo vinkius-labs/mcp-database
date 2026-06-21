@@ -13,7 +13,7 @@ Perform native Principal Component Analysis to safely reduce high-dimensional da
 Language models struggle immensely with complex matrix transformations. When analyzing large datasets or heavy vector embeddings, attempting dimensionality reduction through an LLM leads to severe data corruption. This engine executes mathematically flawless Principal Component Analysis (PCA) natively in the Vinkius Edge runtime. It compresses thousands of features into highly manageable 2D or 3D components while precisely calculating the retained variance, empowering your agent to visualize and process massive datasets with absolute confidence.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_pca**: Calculates Principal Component Analysis (PCA) exactly to reduce dimensionality
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pca-dimensionality-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pca-dimensionality-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PCA Dimensionality Engine** tools.
 
 **Configuration:**

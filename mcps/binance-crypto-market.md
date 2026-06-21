@@ -35,7 +35,7 @@ Connect your AI agent to the **Binance** public API and take full control of you
 - **Developers** — test and debug crypto market data integrations and candlestick logic through the chat
 
 
-## Available Tools
+## Available Tools (7)
 - **get_price**: Accept natural names: "bitcoin", "BTC", "eth", "SOLUSDT". Returns current price + 24h change percentage. For full stats (volume, high/low, trades), use crypto.ticker instead.
 
 Get the current price of any cryptocurrency in USDT with 24h trend
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `binance-crypto-market` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `binance-crypto-market` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Binance (Crypto Market)** tools.
 
 **Configuration:**

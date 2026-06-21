@@ -33,7 +33,7 @@ Connect your AI agent to the **STF Dados Abertos** portal and explore the transp
 - **Developers & Analysts** — integrate official STF data into applications using structured metadata and DataStore queries
 
 
-## Available Tools
+## Available Tools (9)
 - **get_group**: Get group details
 - **get_organization**: Get organization details
 - **get_package**: Get dataset details
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stf-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stf-dados-abertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **STF Dados Abertos** tools.
 
 **Configuration:**

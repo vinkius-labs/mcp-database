@@ -43,7 +43,7 @@ No more navigating the Metro website or manually checking train times. Your AI a
 - **Transit Apps** — integrate real-time WMATA data into mobility and journey planning applications
 
 
-## Available Tools
+## Available Tools (12)
 - **get_bus_incidents**: Returns incident descriptions, affected route IDs, detour information, bus stop closures, incident types (accident, road closure, construction, mechanical), start timestamps, and alternative service recommendations. Essential for bus service disruption awareness, alternative route planning, and passenger communication. AI agents should use this when users ask "are there any bus delays", "is route 30N running normally", or need to check Metrobus service reliability.
 
 Get current incidents affecting Metrobus service
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wmata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wmata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WMATA** tools.
 
 **Configuration:**

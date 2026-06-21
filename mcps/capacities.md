@@ -34,7 +34,7 @@ Connect your **Capacities** account to any AI agent and take full control of you
 - **Knowledge Workers** — Command the agent to search your Capacities workspace and extract specific object properties to brief you before a meeting.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_spaces**: List all personal spaces in the Capacities account. Spaces are top-level containers for organizing objects, notes, and knowledge
 - **get_space_info**: Retrieve detailed information about a Capacities space including all object types (structures), their property definitions, and configuration
 - **get_structures**: Get all object type definitions (structures) within a Capacities space exposing exact metadata parameters limitlessly
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `capacities` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `capacities` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Capacities** tools.
 
 **Configuration:**

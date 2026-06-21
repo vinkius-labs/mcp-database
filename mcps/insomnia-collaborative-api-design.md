@@ -34,7 +34,7 @@ Connect your **Insomnia Cloud** account to any AI agent and take full control of
 - **Software Architects** — monitor API design progress across multiple team projects and feature branches efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **list_orgs**: Use this to find the appropriate org_id needed for subsequent project or file operations.
 
 List all organizations on Insomnia Cloud. Insomnia (by Kong) is a leading API design, debugging, and testing tool supporting REST, GraphQL, gRPC, and WebSockets. Returns org names, IDs, and member counts
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `insomnia-collaborative-api-design` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `insomnia-collaborative-api-design` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Insomnia (Collaborative API Design)** tools.
 
 **Configuration:**

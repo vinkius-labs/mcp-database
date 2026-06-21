@@ -33,7 +33,7 @@ Connect your **CryptoCompare** account to any AI agent to access institutional-g
 - **Analysts** — Perform deep market cap and volume analysis using natural language queries.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_historical_daily**: Get daily historical OHLCV data
 - **get_historical_hourly**: Get hourly historical OHLCV data
 - **get_historical_minute**: Get minute historical OHLCV data
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cryptocompare-crypto-market-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cryptocompare-crypto-market-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CryptoCompare (Crypto Market Data)** tools.
 
 **Configuration:**

@@ -11,7 +11,7 @@ Connect eBay Seller to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_info**: Use this to verify account status or display seller metrics.
 
 Get your eBay seller account information and feedback score
@@ -75,7 +75,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ebay-seller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ebay-seller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **eBay Seller** tools.
 
 **Configuration:**

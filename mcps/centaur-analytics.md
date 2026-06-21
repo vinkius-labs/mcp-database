@@ -42,7 +42,7 @@ No more manual bin inspections or delayed quality testing. Your AI acts as a ded
 - **Commodity Traders** — assess grain quality and forecast value changes for trading decisions
 
 
-## Available Tools
+## Available Tools (12)
 - **get_facility_overview**: Essential for executive reporting, facility-wide quality assessment, and strategic storage management. AI agents should use this when users ask "give me an overview of my entire facility", "what is the overall grain quality status", or need facility-level summaries for management reporting.
 
 Get comprehensive overview of the entire grain storage facility
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `centaur-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `centaur-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Centaur Analytics** tools.
 
 **Configuration:**

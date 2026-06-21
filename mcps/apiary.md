@@ -34,7 +34,7 @@ No copying and pasting back and forth to the Apiary browser editor.
 - **Engineering Managers** — list all active APIS under your team, oversee member permissions, and check the testing status
 
 
-## Available Tools
+## Available Tools (10)
 - **list_apis**: Apiary is an API design-first platform.
 
 List all API projects on Apiary
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apiary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apiary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apiary** tools.
 
 **Configuration:**

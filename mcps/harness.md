@@ -36,7 +36,7 @@ No more manual navigating through complex DevOps dashboards. Your AI assistant a
 - **Release Managers** — automate the oversight of multiple projects and delivery pipelines.
 
 
-## Available Tools
+## Available Tools (11)
 - **execute_pipeline**: Trigger the execution of a pipeline
 - **get_audit_logs**: Retrieve platform audit logs
 - **get_execution_status**: Get status and step details for a specific pipeline execution
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harness` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harness** tools.
 
 **Configuration:**

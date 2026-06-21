@@ -43,7 +43,7 @@ No more manual weather checking or complex satellite data processing. Your AI ac
 - **Researchers** — access historical vegetation indices and weather data for agricultural studies
 
 
-## Available Tools
+## Available Tools (12)
 - **get_crop_health_index**: CHI provides a single metric for overall crop health, making it easier to track field conditions over time and compare across fields. Essential for quick field health assessment, prioritizing scouting missions, and communicating crop status to stakeholders. AI agents should use this when users ask "what is the overall crop health score for my field", "get a quick health assessment", or need a simplified crop condition metric. Date format: YYYY-MM-DD.
 
 Get Crop Health Index (CHI) for comprehensive crop condition assessment
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openweather-agro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openweather-agro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenWeather Agro** tools.
 
 **Configuration:**

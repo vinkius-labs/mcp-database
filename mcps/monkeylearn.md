@@ -34,7 +34,7 @@ Connect your **MonkeyLearn** account to your AI agent and leverage powerful NLP 
 - **Content Teams** — automate keyword extraction for SEO and tagging directly from the editor.
 
 
-## Available Tools
+## Available Tools (10)
 - **classify_text**: Classify text using a model
 - **extract_text**: Extract data from text
 - **get_classifier_details**: Get classifier metadata
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `monkeylearn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `monkeylearn` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MonkeyLearn** tools.
 
 **Configuration:**

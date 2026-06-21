@@ -31,7 +31,7 @@ Connect your AI to **Coda**, the collaborative document platform that brings tog
 - **Developers** — Automate data sync between Coda docs and other systems.
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_rows**: Delete one or more rows from a Coda table
 - **get_doc_details**: Retrieve detailed information about a specific Coda document
 - **get_formula_value**: Retrieve the current calculated value of a named formula
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coda** tools.
 
 **Configuration:**

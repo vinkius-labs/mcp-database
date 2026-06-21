@@ -33,7 +33,7 @@ Connect your **Integrate.io** account to any AI agent and take full control of y
 - **Operations Analysts** — track account credit usage and pipeline run histories to optimize data integration workflows
 
 
-## Available Tools
+## Available Tools (6)
 - **list_pipelines**: List all pipelines in the Integrate.io account
 - **get_pipeline**: Get details for a specific Integrate.io pipeline by ID
 - **list_jobs**: List all active and past jobs in Integrate.io
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `integrateio-etl-data-integration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `integrateio-etl-data-integration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Integrate.io (ETL & Data Integration)** tools.
 
 **Configuration:**

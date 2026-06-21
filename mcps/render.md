@@ -32,7 +32,7 @@ Connect your AI assistant directly to your **Render** cloud infrastructure via t
 - **Startups & Indie Hackers** — Save time managing platform UI. Just ask your AI companion to identify, suspend, and analyze your app deployments natively in seconds.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_service**: Specify type, name, owner, and repository.
 
 Creates a new Render service from a GitHub repository
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `render` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `render` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Render** tools.
 
 **Configuration:**

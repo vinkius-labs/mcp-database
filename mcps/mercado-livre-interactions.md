@@ -29,7 +29,7 @@ Connect **Mercado Livre Interactions** to any AI agent and manage your seller re
 - **Brand Managers** — Monitor seller metrics to ensure high performance standards
 
 
-## Available Tools
+## Available Tools (5)
 - **answer_question**: Reply to a buyer's question
 - **get_messages**: Get message history for a sale
 - **get_metrics**: Get detailed seller metrics
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mercado-livre-interactions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mercado-livre-interactions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mercado Livre Interactions** tools.
 
 **Configuration:**

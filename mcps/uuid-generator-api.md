@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire data architecture and unique id
 - **Operations Leads** — automate technical data querying to orchestrate cross-functional infrastructure teams smoothly.
 
 
-## Available Tools
+## Available Tools (2)
 - **check_api_status**: Check if the UUID Generator service is operational
 - **generate_uuids**: Generate one or more unique identifiers (UUIDs)
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uuid-generator-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uuid-generator-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UUID Generator API** tools.
 
 **Configuration:**

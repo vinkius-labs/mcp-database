@@ -33,7 +33,7 @@ Connect your **VBOUT** marketing automation account to any AI agent and simplify
 - **E-commerce Owners** — sync order data and monitor customer engagement levels directly from the AI assistant.
 
 
-## Available Tools
+## Available Tools (9)
 - **add_contact**: Requires email and list_id.
 
 Add a contact to a list
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vbout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vbout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VBOUT** tools.
 
 **Configuration:**

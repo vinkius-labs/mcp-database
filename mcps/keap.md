@@ -33,7 +33,7 @@ Connect your **Keap** (formerly Infusionsoft) account to any AI agent to optimiz
 - **Sales Professionals** — Quickly retrieve contact history and update deal statuses during client interactions
 
 
-## Available Tools
+## Available Tools (11)
 - **apply_tag_to_contact**: Apply a tag to a specific contact
 - **list_campaigns**: List all marketing campaigns
 - **list_contacts**: Use this to search for leads or customers.
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `keap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `keap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Keap** tools.
 
 **Configuration:**

@@ -28,7 +28,7 @@ The **ATS Anywhere MCP Server** (by HiringThing) provides a powerful natural lan
 - **Talent Acquisition Leads** — Monitor recruiting activity across multiple sites and teams using simple natural language.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_job**: Create a new job listing
 - **get_account_check**: Verify ATS Anywhere account connection
 - **get_applicant_notes**: Retrieve internal notes for an applicant
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ats-anywhere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ats-anywhere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ATS Anywhere** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **CoreWeave** account to any AI agent to manage specialized GPU clo
 - **AI Researchers** — Quickly inspect cluster status and deployment health during model training or testing phases.
 
 
-## Available Tools
+## Available Tools (24)
 - **get_vpc**: Get details for a specific VPC
 - **create_capacity_claim**: Create a new Inference Capacity Claim
 - **create_cluster**: Create a new CKS cluster
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coreweave-ai-gpu-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coreweave-ai-gpu-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoreWeave (AI GPU Cloud)** tools.
 
 **Configuration:**

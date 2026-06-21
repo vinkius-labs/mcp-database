@@ -34,7 +34,7 @@ Connect your **VTEX** Catalog API to any AI agent and manage your entire product
 - **Merchandising Teams** — Explore category hierarchies and brand structures to optimize product placement and discoverability.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_brand**: Get details of a brand
 - **get_category**: Get details of a category
 - **get_product**: Get full details of a specific product
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vtex-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vtex-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VTEX Catalog** tools.
 
 **Configuration:**

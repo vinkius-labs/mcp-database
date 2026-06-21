@@ -36,7 +36,7 @@ No more manual entry into billing tables or digging through subscription lists. 
 - **Operations Leads** — automate invoice generation and track transaction histories through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **create_billing_customer**: Create a new customer
 - **create_billing_invoice**: Create a new invoice
 - **create_subscription**: Create a new subscription
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chargeover-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chargeover-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChargeOver** tools.
 
 **Configuration:**

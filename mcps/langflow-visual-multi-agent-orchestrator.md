@@ -33,7 +33,7 @@ Connect your **Langflow** instance to any AI agent and take full control of your
 - **DevOps & Automation Leads** — integrate visual AI logic into broader systems by triggering webhooks and background workflows.
 
 
-## Available Tools
+## Available Tools (24)
 - **create_flow**: Create a new flow
 - **create_project**: Create a new project
 - **create_response**: Uses flow_id as the model.
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `langflow-visual-multi-agent-orchestrator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `langflow-visual-multi-agent-orchestrator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Langflow (Visual Multi-agent Orchestrator)** tools.
 
 **Configuration:**

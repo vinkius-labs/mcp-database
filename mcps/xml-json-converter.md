@@ -19,7 +19,7 @@ LLMs lose their minds when trying to parse large XML, SOAP, or RSS payloads. The
 - **Edge Performance:** Executes completely local within the V8 isolates, avoiding the latency and security risks of sending sensitive XML payloads to external conversion APIs.
 
 
-## Available Tools
+## Available Tools (2)
 - **convert_json_to_xml**: Pass the JSON string and receive well-formed XML output.
 
 Converts a JSON object string into a properly formatted XML string
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `xml-json-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `xml-json-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **XML <-> JSON Converter** tools.
 
 **Configuration:**

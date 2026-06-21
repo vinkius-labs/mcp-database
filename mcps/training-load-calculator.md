@@ -13,7 +13,7 @@ Quantify training stress, detect overtraining risks, and generate recovery strat
 This MCP server provides specialized tools to manage physical training load. Use `calculate_session_load` to determine the total physiological stress of a single session by multiplying volume and perceived intensity. Monitor your progress with `analyze_overtraining_risk`, which compares your current weekly load against a baseline to identify potential fatigue or overreaching. If recovery is needed, use `generate_deload_strategy` to receive specific targets for volume and intensity reduction, helping you maintain fitness while dissipating accumulated fatigue.
 
 
-## Available Tools
+## Available Tools (3)
 - **generate_deload_strategy**: Generates specific training targets for an upcoming recovery (deload) week
 - **analyze_overtraining_risk**: Evaluates whether current training patterns indicate a high risk of overtraining
 - **calculate_session_load**: Calculates the total physical stress for a single completed training session
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `training-load-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `training-load-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Training Load Calculator** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Procore is the leading cloud-based construction management software, connecting 
 - **Quality & Safety Managers** — pull observation reports and track corrective actions across the entire portfolio
 
 
-## Available Tools
+## Available Tools (8)
 - **list_projects**: List all construction projects
 - **get_project**: Includes budget, schedule, team, and project settings.
 
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `procore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `procore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Procore** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Bring the wisdom and unique perspective of **Kanye West** to your AI conversatio
 - **AI Enthusiasts** — add a layer of personality and humor to your custom AI agents
 
 
-## Available Tools
+## Available Tools (2)
 - **get_random_quote_json**: Get a random Kanye West quote (JSON endpoint)
 - **get_random_quote_text**: Get a random Kanye West quote (Text endpoint)
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kanyerest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kanyerest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kanye.Rest** tools.
 
 **Configuration:**

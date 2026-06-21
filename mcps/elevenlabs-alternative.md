@@ -35,7 +35,7 @@ No more manual copy-pasting into the web editor or complex history searching. Yo
 - **Marketing Teams** — automate the creation of personalized audio messages and track credit utilization without leaving your workspace
 
 
-## Available Tools
+## Available Tools (12)
 - **delete_history_item**: Delete audio record
 - **delete_voice**: Delete a cloned voice
 - **get_download_link**: Get audio download URL
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elevenlabs-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elevenlabs-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ElevenLabs** tools.
 
 **Configuration:**

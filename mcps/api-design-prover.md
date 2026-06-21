@@ -50,7 +50,7 @@ API Design Prover validates every contract through 5 Decision Pivots:
 - **Semantic traps detect vague answers.** 'We follow REST best practices,' 'errors are handled by the framework,' or 'pagination will be added later' all trigger automatic rejection.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_api_design**: You must: (1) MAP VERBS — every endpoint mapped to its HTTP verb with semantic correctness. GET = read (idempotent, cacheable, no side effects). POST = create (non-idempotent). PUT = full replace (idempotent, client sends entire resource). PATCH = partial update (only changed fields). DELETE = remove (idempotent). Any deviation from these semantics must be justified — "convenience" is not a justification, (2) DEFINE VERSIONING — method (URL path /v1/ preferred for visibility, header Accept-Version for flexibility, NEVER query params), what constitutes a breaking change (removing/renaming fields, changing types, altering error codes, removing endpoints), deprecation timeline (minimum 6 months), old version sunset policy, migration guides, (3) SHOW RESPONSE SHAPE — the EXACT JSON envelope every consumer receives on EVERY endpoint. Same structure for success, error, single resource, and list. Consumers should never need conditional parsing based on which endpoint they called, (4) SPECIFY PAGINATION — cursor-based (for real-time feeds, no count) or offset/limit (for stable datasets, with count). Max page size enforced server-side (never trust client). Default page size. Metadata returned (total, next_cursor, has_more), (5) CONTRACT ERRORS — structured error responses for every failure mode. RFC 7807 ({ type, title, status, detail, instance }) or equivalent with machine-readable code, human-readable message, correlation ID for tracing, and validation error array for 422s. If rejected, your API has a design flaw that will cost consumers integration time. Fix it.
 
 Structured reflection tool for REST/HTTP API design (Stripe/GitHub-grade, RFC 7807 compliant). Forces the agent to define verb semantics, versioning with deprecation, response envelope shape, pagination bounds, and error contracts BEFORE implementing an endpoint. Catches Verb Abuse (POST for reads, GET with side effects, PUT for partial updates), Unversioned APIs (no deprecation policy, breaking consumers silently), Shape Inconsistency (different response structures per endpoint — success vs error vs list), Unbounded Responses (no pagination, no max page size — returning 100K records in one call), and Uncontracted Errors (500 with "Internal Server Error" string instead of structured RFC 7807). Call once per API surface. Based on Stripe/GitHub API guidelines, RFC 7807 Problem Details, and REST API Design Rulebook (Masse 2011)
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `api-design-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `api-design-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **API Design Prover** tools.
 
 **Configuration:**

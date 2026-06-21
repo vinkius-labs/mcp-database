@@ -13,7 +13,7 @@ Calculate weighted GPA for US (4.0) and Brazilian (10.0) scales, including honor
 The GPA Calculator MCP provides a specialized engine for determining weighted Grade Point Averaged across different academic grading systems. It allows users to calculate the single-period weighted average using `compute_weighted_gpa`, evaluate performance trends between semesters with `compare_semesters`, and normalize grades between scales via `convert_grade_scale`. Perfect for students and educators managing US 4.0 and Brazilian 10.0 academic records.
 
 
-## Available Tools
+## Available Tools (3)
 - **compare_semesters**: Evaluates the performance trend between two different academic periods
 - **compute_weighted_gpa**: Returns weighted GPA, honors status, and total credits.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gpa-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gpa-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GPA Calculator** tools.
 
 **Configuration:**

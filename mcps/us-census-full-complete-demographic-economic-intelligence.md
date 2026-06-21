@@ -21,7 +21,7 @@ The **ultimate U.S. Census Mega-Server** — 14 tools.
 Requires a free API key from the Census Bureau.
 
 
-## Available Tools
+## Available Tools (14)
 - **get_housing_by_state**: renter-occupied, and vacant units for every state. The #1 dataset for real estate market analysis.
 
 Get housing data for all states — home values, rent, ownership rates, vacancies
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-census-full-complete-demographic-economic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-census-full-complete-demographic-economic-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **U.S. Census Full — Complete Demographic & Economic Intelligence** tools.
 
 **Configuration:**

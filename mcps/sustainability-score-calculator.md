@@ -13,7 +13,7 @@ Quantify your environmental footprint and discover actionable paths to a more su
 This MCP server provides AI agents with the ability to calculate personal sustainability scores based on daily habits. By using tools like `calculate_personal_score`, `get_category_status`, and `generate_improvement_roadmap`, agents can assess environmental impact across five key pillars: Transport, Food, Consumption, Energy, and Waste. The server processes raw habit data to return a weighted average score (0-100), qualitative assessments of each category, and personalized improvement roadmaps with actionable targets.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_personal_score**: Returns weighted average and status.
 
 Calculates the total sustainability score and provides a breakdown by category
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sustainability-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sustainability-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sustainability Score Calculator** tools.
 
 **Configuration:**

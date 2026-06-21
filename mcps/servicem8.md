@@ -35,7 +35,7 @@ No more juggling spreadsheets or multiple browser tabs to see where your team is
 - **Business Owners** — streamline the retrieval of service metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_job**: Requires description and company_uuid.
 
 Create a new ServiceM8 job
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `servicem8` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `servicem8` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ServiceM8** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent directly to the **São Paulo City Open Data Portal (CKAN)*
 - **Journalists & Citizens** — audit public spending and city performance through natural language conversation
 
 
-## Available Tools
+## Available Tools (11)
 - **datastore_search_sql**: SQL Query on a resource
 - **datastore_search**: Search data within a resource
 - **list_groups**: g., Educação, Meio Ambiente).
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sao-paulo-cidade` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sao-paulo-cidade` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **São Paulo (Cidade)** tools.
 
 **Configuration:**

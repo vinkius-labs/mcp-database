@@ -32,7 +32,7 @@ Connect your **Okta** Identity Cloud instance to any AI agent to streamline iden
 - **System Administrators** — Construct custom automated onboarding or offboarding commands dictating user lifecycles natively
 
 
-## Available Tools
+## Available Tools (10)
 - **clear_user_sessions**: Necessary when a device is compromised.
 
 Terminate all active login sessions for a specific user
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `okta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `okta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Okta** tools.
 
 **Configuration:**

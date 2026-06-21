@@ -35,7 +35,7 @@ No more manual data entry or toggling between browser tabs to find specific reco
 - **Developers** — integrate high-speed low-code data structures into custom AI workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **create_airtable_records**: Must pass a JSON array of objects with a "fields" key.
 
 Create new records
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airtable-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airtable-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Airtable** tools.
 
 **Configuration:**

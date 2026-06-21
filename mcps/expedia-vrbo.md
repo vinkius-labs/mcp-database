@@ -35,7 +35,7 @@ Your agent becomes a vacation rental concierge — scanning hundreds of entire-h
 - **Event Organizers** — locate multi-bedroom properties near event venues that accommodate large groups
 
 
-## Available Tools
+## Available Tools (11)
 - **book_rental**: Requires the rental property ID, check-in and check-out dates, guest details (primary guest name, email, phone), and payment information. This is a write action that will create an actual itinerary. Ensure all details are confirmed before executing.
 
 Book a vacation rental property
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `expedia-vrbo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `expedia-vrbo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Expedia Vrbo** tools.
 
 **Configuration:**

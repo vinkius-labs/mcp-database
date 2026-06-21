@@ -33,7 +33,7 @@ Connect your **Qencode** account to any AI agent to handle high-performance vide
 - **Product Teams** — integrate video processing status checks directly into project management or dev tools
 
 
-## Available Tools
+## Available Tools (11)
 - **add_simulcast_target**: Add a simulcast target to a live stream
 - **create_domain**: Create a custom CDN domain
 - **create_live_stream**: Requires a live access token.
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qencode-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qencode-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qencode** tools.
 
 **Configuration:**

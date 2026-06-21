@@ -25,7 +25,7 @@ Connect your **Forefront** account to any AI agent to harness powerful language 
 3. Start generating text and managing pipelines from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (10)
 - **add_pipeline_data**: Add data samples to a pipeline
 - **list_pipelines**: Returns a list of your pipelines
 - **create_chat_completion**: Pass messages array in chat-ml format.
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `forefront` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `forefront` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Forefront** tools.
 
 **Configuration:**

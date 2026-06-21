@@ -34,7 +34,7 @@ Connect your **Altoviz** account to your AI agent to unlock professional busines
 - **Sales Teams** — research customer history and create new quotes without leaving the chat
 
 
-## Available Tools
+## Available Tools (10)
 - **list_receipts**: List business receipts/expenses
 - **list_suppliers**: List suppliers
 - **list_products**: List catalog products
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `altoviz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `altoviz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Altoviz** tools.
 
 **Configuration:**

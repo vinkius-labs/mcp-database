@@ -32,7 +32,7 @@ Connect **Vatlayer** to your AI agent to automate VAT number validation and tax 
 - **SaaS Platforms** — Ensure global billing compliance by integrating real-time tax data into automated workflows.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_price**: Perform country-specific and VAT compliant price calculations
 - **get_rate_list**: Request a full set of VAT rates for all EU member states
 - **get_rate**: Request VAT rates for a specific EU member state
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vatlayer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vatlayer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vatlayer** tools.
 
 **Configuration:**

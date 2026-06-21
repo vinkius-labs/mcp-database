@@ -33,7 +33,7 @@ Empower your AI agent to orchestrate your entire entertainment research and humo
 - **Operations Leads** — automate entertainment data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (2)
 - **check_api_status**: Check if the API Ninjas Jokes service is operational
 - **get_random_joke**: Get one or more random jokes from API Ninjas
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jokes-api-api-ninjas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jokes-api-api-ninjas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jokes API (API Ninjas)** tools.
 
 **Configuration:**

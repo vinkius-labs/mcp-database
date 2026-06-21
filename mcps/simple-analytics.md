@@ -32,7 +32,7 @@ Connect **Simple Analytics** to your AI agent for privacy-first insights. Simple
 - **Developers** — integrate server-side event tracking and monitor site health directly from the terminal or IDE
 
 
-## Available Tools
+## Available Tools (5)
 - **add_website**: Requires Business or Enterprise plan.
 
 Add a new website to Simple Analytics
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simple-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simple-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Simple Analytics** tools.
 
 **Configuration:**

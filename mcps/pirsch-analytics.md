@@ -33,7 +33,7 @@ Connect **Pirsch Analytics** to your AI agent to monitor your website traffic an
 - **Data Analysts** — extract raw statistics and overview metrics for custom reporting and performance audits.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_domain**: Create a new domain
 - **list_domains**: List all domains
 - **send_event_batch**: Send a batch of events
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pirsch-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pirsch-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pirsch Analytics** tools.
 
 **Configuration:**

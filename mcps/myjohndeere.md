@@ -33,7 +33,7 @@ Connect your **MyJohnDeere** account to any AI agent to monitor and manage your 
 - **Fleet Operators** — monitor machine measurements and telematics to ensure optimal equipment performance.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_fields**: List fields for an organization
 - **list_machine_measurements**: List measurements for a specific machine
 - **list_organizations**: g., farms, dealerships) available to the authenticated user.
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `myjohndeere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `myjohndeere` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MyJohnDeere** tools.
 
 **Configuration:**

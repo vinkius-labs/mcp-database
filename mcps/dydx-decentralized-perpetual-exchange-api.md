@@ -32,7 +32,7 @@ Connect your **dYdX** account to any AI agent to monitor markets and execute tra
 - **Developers** — test trading strategies and inspect account states using natural language commands.
 
 
-## Available Tools
+## Available Tools (16)
 - **v3_create_order**: Requires authentication.
 
 Place a new order on dYdX v3
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dydx-decentralized-perpetual-exchange-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dydx-decentralized-perpetual-exchange-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **dYdX (Decentralized Perpetual Exchange API)** tools.
 
 **Configuration:**

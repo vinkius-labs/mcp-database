@@ -36,7 +36,7 @@ Connect your **ElevenLabs** account to any AI agent and take full control of you
 - **AI Researchers** — explore different voice models and stability settings directly from the chat interface
 
 
-## Available Tools
+## Available Tools (10)
 - **list_voices**: List all available voices
 - **list_pronunciation_dictionaries**: List pronunciation dictionaries
 - **get_voice**: Get voice details
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elevenlabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elevenlabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ElevenLabs** tools.
 
 **Configuration:**

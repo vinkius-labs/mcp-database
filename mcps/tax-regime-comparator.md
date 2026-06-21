@@ -13,7 +13,7 @@ Simulate and compare Brazilian tax regimes to find the most cost-effective struc
 The Tax Regime Comparator is a specialized financial simulation engine designed to help businesses navigate the complexities of Brazilian taxation. By analyzing projected annual revenue, profit margins, and business activity types, this MCP server provides precise comparisons between Simples Nacional, Lucro Presumido, and Lucro Real. Use `compare_tax_regimes` to identify the optimal regime and potential savings, or use `get_regime_breakdown` for a granular view of specific tax components like IRPJ and CSLL.
 
 
-## Available Tools
+## Available Tools (2)
 - **compare_tax_regimes**: Compares different Brazilian tax regimes to find the most efficient one
 - **get_regime_breakdown**: Provides a detailed breakdown of tax components for a specific regime
 
@@ -78,7 +78,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tax-regime-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tax-regime-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tax Regime Comparator** tools.
 
 **Configuration:**

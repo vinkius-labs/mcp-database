@@ -34,7 +34,7 @@ Connect to high-performance network diagnostic tools through your AI agent and p
 - **DevOps Engineers** — monitor service availability and web server headers through natural language commands.
 
 
-## Available Tools
+## Available Tools (10)
 - **dns_lookup**: ) for a specific domain.
 
 Forward DNS lookup
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nmap-online` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nmap-online` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nmap Online** tools.
 
 **Configuration:**

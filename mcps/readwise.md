@@ -32,7 +32,7 @@ Connect your **Readwise** account directly to your AI agent. Enabling this integ
 - **Knowledge Workers** — Transform casual web highlighting into an active second brain, allowing AI to connect ideas across different saved articles.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_auth_status**: Verifies the validity of the Readwise access token
 - **get_reader_document**: Retrieves details for a specific Reader document
 - **list_books**: Lists all books and sources in Readwise
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `readwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `readwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Readwise** tools.
 
 **Configuration:**

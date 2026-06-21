@@ -33,7 +33,7 @@ Connect your **Hashnode** account to any AI agent to streamline your technical w
 - **Content Managers** — Monitor publication feeds and update existing posts efficiently.
 
 
-## Available Tools
+## Available Tools (5)
 - **create_post**: Publish a new post to a publication
 - **get_post**: Get a single post by its slug
 - **get_publication_posts**: Get a list of posts from a specific publication
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hashnode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hashnode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hashnode** tools.
 
 **Configuration:**

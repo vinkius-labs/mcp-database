@@ -32,7 +32,7 @@ Connect **Meta Ads** to your AI agent and manage Facebook and Instagram advertis
 - **Agencies** — Manage multiple client ad accounts with unified campaign intelligence.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_campaigns**: List all Meta ad campaigns
 - **get_account_info**: Get ad account details
 - **get_campaign_insights**: Get campaign performance metrics
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meta-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meta-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meta Ads** tools.
 
 **Configuration:**

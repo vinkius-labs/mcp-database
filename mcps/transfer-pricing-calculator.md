@@ -13,7 +13,7 @@ Verify arm's length compliance for related-party transactions using CUP, Cost Pl
 The Transfer Pricing Calculator ensures that transactions between related parties follow the Arm's Length Principle. By using tools like `get_industry_benchmarks`, `verify_cost_plus_compliance`, `verify_resale_minus_compliance`, and `verify_cup_equivalence`, businesses can determine if their pricing strategies align with industry-standard profit margins and market benchmarks, mitigating tax risks.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_industry_benchmarks**: Retrieves the acceptable arm's length profit margin bounds for a specific industry sector
 - **verify_cup_equivalence**: Evaluates if a transaction price is sufficiently similar to a known market benchmark price
 - **verify_resale_minus_compliance**: Determines if the gross margin from a resale transaction is within acceptable industry bounds
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `transfer-pricing-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `transfer-pricing-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Transfer Pricing Calculator** tools.
 
 **Configuration:**

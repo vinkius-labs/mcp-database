@@ -32,7 +32,7 @@ Equip your AI agent with precise physical intelligence through the **PrecisionCo
 - **Cooks & DIY Enthusiasts** — convert recipes and measurements on the fly.
 
 
-## Available Tools
+## Available Tools (2)
 - **convert_units**: g., meters to feet, celsius to fahrenheit).
 
 Convert between physical units
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `precisionconvert-unit-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `precisionconvert-unit-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PrecisionConvert Unit Engine** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Freshsales** account to any AI agent to automate your sales CRM o
 - **SDRs & BDRs** — automate the creation of new leads and verify contact details seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_crm_lead**: Create a new lead
 - **get_account_details**: Get account metadata
 - **get_contact_metadata**: Get contact details
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freshsales` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freshsales` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Freshsales** tools.
 
 **Configuration:**

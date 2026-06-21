@@ -18,7 +18,7 @@ When integrating with platforms like Stripe, Shopify, or Banking APIs, your AI A
 - **HMAC Signatures:** Securely sign webhooks and API payloads by providing the shared secret.
 
 
-## Available Tools
+## Available Tools (1)
 - **hash_payload**: Pass the raw payload, optionally choose the algorithm (md5, sha1, sha256, sha512), and provide a secret key if you need HMAC signing for webhook verification.
 
 Generates a mathematical cryptographic hash (MD5, SHA-256) or HMAC for signing webhooks and API payloads
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crypto-hash-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crypto-hash-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Crypto Hash Engine** tools.
 
 **Configuration:**

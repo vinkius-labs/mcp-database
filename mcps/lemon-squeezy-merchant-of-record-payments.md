@@ -34,7 +34,7 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **Operations Leads** — automate store reporting and inventory checks through simple AI queries
 
 
-## Available Tools
+## Available Tools (60)
 - **activate_license**: Activate a license key
 - **cancel_subscription**: Cancel a subscription
 - **create_checkout**: Create a checkout
@@ -157,7 +157,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lemon-squeezy-merchant-of-record-payments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lemon-squeezy-merchant-of-record-payments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lemon Squeezy (Merchant of Record & Payments)** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Your agent becomes a full-service travel assistant — searching across hotels, 
 - **Executive Assistants** — plan and modify complex business travel schedules without navigating multiple booking platforms
 
 
-## Available Tools
+## Available Tools (13)
 - **book_flight**: Book an airline passenger ticket
 - **cancel_booking**: Cancel an active property reservation
 - **create_booking**: Execute a lodging booking reservation
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `expedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `expedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Expedia** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ When a Martech AI Agent publishes an article or product to a CMS like WordPress,
 - **Zero Hallucination:** Outputs a perfectly formatted `<script type="application/ld+json">` block ready for direct HTML injection.
 
 
-## Available Tools
+## Available Tools (1)
 - **build_schema**: Pass the Schema.org type (Article, Product, FAQPage, etc.) and a JSON string of properties. The engine injects @context and @type automatically and returns a valid <script type="application/ld+json"> block.
 
 Compiles 100% compliant Google JSON-LD schema blocks for SEO. Prevents AI hallucination of invalid @context or @type attributes
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `json-ld-seo-compiler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `json-ld-seo-compiler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSON-LD SEO Compiler** tools.
 
 **Configuration:**

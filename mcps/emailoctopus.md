@@ -32,7 +32,7 @@ Integrate **EmailOctopus**, the affordable and powerful email marketing platform
 - **Operations Teams** — Monitor marketing volumes and organizational campaign metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_campaign_performance_summary**: Get a summary of performance metrics for a specific campaign
 - **get_campaign_details**: Get detailed settings for a specific email campaign
 - **get_contact_profile**: Get full profile and history for a specific contact
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emailoctopus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emailoctopus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EmailOctopus** tools.
 
 **Configuration:**

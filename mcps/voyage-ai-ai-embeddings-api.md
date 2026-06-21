@@ -33,7 +33,7 @@ Connect your **Voyage AI** account to any AI agent to leverage state-of-the-art 
 - **Developers** — looking to integrate high-precision search into their applications without managing complex infrastructure.
 
 
-## Available Tools
+## Available Tools (13)
 - **cancel_batch**: Cancel a batch job
 - **create_batch**: Create a batch inference job
 - **create_contextualized_embeddings**: Create contextualized chunk embeddings
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `voyage-ai-ai-embeddings-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `voyage-ai-ai-embeddings-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Voyage AI (AI Embeddings API)** tools.
 
 **Configuration:**

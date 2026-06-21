@@ -33,7 +33,7 @@ Connect your **Cube.dev** instance to any AI agent to bridge the gap between nat
 - **Product Managers** — get instant answers to data questions by letting the AI query the semantic layer directly.
 
 
-## Available Tools
+## Available Tools (15)
 - **check_live**: Check if Cube deployment is live
 - **check_ready**: Check if Cube deployment is ready
 - **convert_query**: Convert a SQL query to a REST API query format
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cubedev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cubedev` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cube.dev** tools.
 
 **Configuration:**

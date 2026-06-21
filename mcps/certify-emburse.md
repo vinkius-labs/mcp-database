@@ -35,7 +35,7 @@ Connect your **Certify (Emburse Professional)** account to any AI agent and orch
 - **Travel Coordinators** — quickly look up travel-related expenses and receipt data
 
 
-## Available Tools
+## Available Tools (8)
 - **get_gl_dimensions**: Retrieve General Ledger dimensions and lists
 - **list_certify_receipts**: Retrieve receipts stored in the system
 - **list_certify_departments**: List company departments
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `certify-emburse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `certify-emburse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Certify (Emburse)** tools.
 
 **Configuration:**

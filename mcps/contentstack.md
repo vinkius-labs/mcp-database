@@ -31,7 +31,7 @@ Empower your conversational AI with secure and instant read access to your **Con
 - **Marketing Integrators** — Read copy text snippets and locate public URLs of campaign assets efficiently for cross-platform distribution.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_asset_details**: Get details for a specific asset
 - **get_content_type_details**: Get the schema for a specific content type
 - **get_entry**: Get detailed content for a specific entry
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contentstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contentstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contentstack** tools.
 
 **Configuration:**

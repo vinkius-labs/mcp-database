@@ -18,7 +18,7 @@ When a global routing agent reads `Accept-Language: en-US,pt-BR;q=0.9,fr;q=0.8`,
 - **Priority Ordered:** Returns languages sorted by quality weight, with the preferred language first.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_accept_language**: Pass the raw header value (e.g. "en-US,pt-BR;q=0.9,fr;q=0.8") and receive a priority-ordered list of languages with their quality weights. Never try to parse quality weights manually.
 
 Parses HTTP Accept-Language headers into an ordered list of user language preferences with quality weights. Essential for global routing and i18n agents
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accept-language-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accept-language-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Accept Language Parser** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more jumping between dashboards to check if your nightly backups finished or 
 - **SRE & Ops Leads** — manage status pages and track incident history across multiple environments.
 
 
-## Available Tools
+## Available Tools (44)
 - **bulk_issues**: Perform bulk actions on issues
 - **clone_monitor**: Clone an existing monitor
 - **create_api_key**: Create an API key
@@ -148,7 +148,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cronitor-cron-monitoring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cronitor-cron-monitoring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cronitor (Cron Monitoring)** tools.
 
 **Configuration:**

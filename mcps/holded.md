@@ -36,7 +36,7 @@ No more manual navigating through complex ERP modules for simple data lookups. Y
 - **Operations Leads** — maintain a real-time overview of inventory levels and customer contact data.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_contact_details**: Get detailed profile information for a specific contact
 - **get_invoice_details**: Get detailed information about a specific invoice
 - **get_api_profile**: Retrieve information about the authenticated account
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `holded` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `holded` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Holded** tools.
 
 **Configuration:**

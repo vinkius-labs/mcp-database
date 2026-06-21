@@ -21,7 +21,7 @@ U.S. Treasury budget data.
 ### Zero Auth
 
 
-## Available Tools
+## Available Tools (5)
 - **get_federal_revenue**: Shows current month and fiscal-year-to-date totals vs. prior year.
 
 Get federal government revenue — tax receipts by source
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-treasury-budget-federal-revenue-spending-deficit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-treasury-budget-federal-revenue-spending-deficit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **U.S. Treasury Budget — Federal Revenue, Spending & Deficit** tools.
 
 **Configuration:**

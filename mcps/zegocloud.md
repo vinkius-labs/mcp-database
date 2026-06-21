@@ -32,7 +32,7 @@ Connect your **ZegoCloud** infrastructure to any AI agent to moderate and contro
 - **Developers** — test and manage RTC workflows and messaging logic without leaving the code editor.
 
 
-## Available Tools
+## Available Tools (3)
 - **kickout_user**: Kick a user out of a room
 - **send_peer_message**: Send a peer-to-peer message
 - **stop_publish**: Stop publishing a stream
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zegocloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zegocloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZegoCloud** tools.
 
 **Configuration:**

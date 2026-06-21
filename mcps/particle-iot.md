@@ -37,7 +37,7 @@ No more manual device checking or complex API calls. Your AI acts as a dedicated
 - **Developers** — prototype IoT applications, test device functions, and integrate with external systems
 
 
-## Available Tools
+## Available Tools (8)
 - **call_function**: Functions are defined in the device firmware and can control actuators (turn on pump, open valve), trigger calibrations, change device modes, or perform system tasks. Accepts a single string argument (max 63 characters) to pass to the function. Returns the function execution result code. Essential for remote device control, automation, and actuator management. AI agents should use this when users ask "turn on the water pump on device X", "trigger calibration on sensor Y", or need to remotely control any function exposed by a device.
 
 Execute a cloud function on a specific Particle IoT device
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `particle-iot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `particle-iot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Particle IoT** tools.
 
 **Configuration:**

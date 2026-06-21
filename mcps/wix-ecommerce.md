@@ -38,7 +38,7 @@ No more manual navigation through complex store dashboards to check a stock leve
 - **Customer Support** — quickly lookup order statuses and customer details to provide rapid assistance
 
 
-## Available Tools
+## Available Tools (10)
 - **create_order_fulfillment**: Provide the order ID and tracking number.
 
 Creates a new fulfillment record with tracking for an order
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wix-ecommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wix-ecommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wix eCommerce** tools.
 
 **Configuration:**

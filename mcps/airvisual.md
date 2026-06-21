@@ -32,7 +32,7 @@ Connect your **AirVisual** (IQAir) account to any AI agent to monitor environmen
 - **Smart Home Enthusiasts** — integrate air quality triggers into your automated workflows.
 
 
-## Available Tools
+## Available Tools (7)
 - **list_cities**: List all supported cities in a specific state
 - **get_city_data**: Get real-time AQI and weather for a specific city
 - **list_countries**: List all supported countries
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airvisual` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airvisual` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AirVisual** tools.
 
 **Configuration:**

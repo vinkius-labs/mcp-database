@@ -33,7 +33,7 @@ Connect your **Aiven** account to any AI agent to manage your open-source data i
 - **SRE Teams** — automate infrastructure audits and monitor billing across multiple projects.
 
 
-## Available Tools
+## Available Tools (30)
 - **add_card**: Add credit card for user
 - **create_account_team**: Create a new team in an account
 - **create_account**: Create a new account
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aiven` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aiven` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aiven** tools.
 
 **Configuration:**

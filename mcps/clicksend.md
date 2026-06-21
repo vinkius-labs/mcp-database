@@ -35,7 +35,7 @@ Connect your **ClickSend** account to any AI agent and take full control of your
 - **DevOps Engineers** — verify system alerts and monitor messaging throughput
 
 
-## Available Tools
+## Available Tools (8)
 - **get_clicksend_account_info**: Retrieve core account details and balance
 - **get_sms_outbound_history**: Retrieve a history of sent SMS messages
 - **list_clicksend_contacts**: List all contacts stored in ClickSend
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clicksend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clicksend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClickSend** tools.
 
 **Configuration:**

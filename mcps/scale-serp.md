@@ -34,7 +34,7 @@ Scale SERP handles the IP rotation and CAPTCHAs, allowing your agent to simply r
 - **Web Scrapers & Analysts** — track Google Shopping price changes across a massive array of queries without server maintenance
 
 
-## Available Tools
+## Available Tools (10)
 - **custom_search**: Performs a highly customized Google search
 - **google_autocomplete**: Retrieves Google search autocomplete suggestions
 - **google_images**: Searches for images on Google
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scale-serp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scale-serp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scale SERP** tools.
 
 **Configuration:**

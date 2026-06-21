@@ -32,7 +32,7 @@ Connect to **Lineascan** and empower your AI agent with real-time access to the 
 - **Crypto Users** — monitor wallet balances and transaction statuses through natural language.
 
 
-## Available Tools
+## Available Tools (25)
 - **balance_multi**: Get ETH balances for multiple addresses
 - **check_verify_status**: Check the status of a verification request
 - **eth_block_number**: Returns the number of the most recent block
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lineascan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lineascan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lineascan** tools.
 
 **Configuration:**

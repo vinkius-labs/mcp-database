@@ -32,7 +32,7 @@ Connect to the **NRC ADAMS** (Agencywide Documents Access and Management System)
 - **Energy Analysts** — monitor daily plant status and event reports to understand trends in the nuclear power sector.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_nrc_rss_feed**: Get NRC RSS feeds for events, news, and status
 - **search_adams_legacy**: Note: This API is retiring June 2026. The q parameter uses a complex filter structure.
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nrc-adams-nuclear-regulatory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nrc-adams-nuclear-regulatory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NRC ADAMS (Nuclear Regulatory)** tools.
 
 **Configuration:**

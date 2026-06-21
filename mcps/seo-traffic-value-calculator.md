@@ -13,7 +13,7 @@ Estimate the monetary worth of organic search traffic by converting keyword rank
 This MCP server provides specialized tools to quantify the financial impact of SEO performance. Use `lookup_ctr_by_rank` to retrieve precise click-through rates from a predefined CTR curve based on search position. You can then use `calculate_estimated_clicks` to determine expected traffic volume using keyword volume and average rank, and finally apply `compute_traffic_monetary_value` to translate those clicks into measurable financial metrics like traffic value and savings versus Google Ads.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_estimated_clicks**: Determines how many actual clicks are expected from a group of keywords
 - **compute_traffic_monetary_value**: Translates raw click volume into measurable financial metrics
 - **lookup_ctr_by_rank**: Retrieves the precise click-through rate percentage for a specific search engine result position
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `seo-traffic-value-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `seo-traffic-value-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SEO Traffic Value Calculator** tools.
 
 **Configuration:**

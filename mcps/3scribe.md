@@ -34,7 +34,7 @@ Unlock the power of spoken word with **3Scribe**, your automated partner for hig
 - **Developers** — integrate transcription capabilities into custom media workflows
 
 
-## Available Tools
+## Available Tools (4)
 - **create_job**: You must provide a valid public URL. Returns a Job ID useful for tracking progress.
 
 Initiate a new audio or video transcription job in 3Scribe via a public media URL
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `3scribe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `3scribe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **3Scribe** tools.
 
 **Configuration:**

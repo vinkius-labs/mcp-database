@@ -13,7 +13,7 @@ Calculate YTM, Current Yield, and interest rate sensitivity for fixed-income bon
 This MCP server provides advanced financial engineering tools to value fixed-income instruments. Using the `get_bond_yield_metrics` tool, you can determine the Yield to Maturity (YTM) and Current Yield based on market price, face value, and coupon rates. It also calculates risk metrics like Modified Duration and Convexity, and estimates price volatility for various interest rate shifts (1bp, 25bp, and 100bp). Perfect for bond traders and analysts needing precise sensitivity analysis.
 
 
-## Available Tools
+## Available Tools (1)
 - **get_bond_yield_metrics**: Calculate Yield to Maturity (YTM), Current Yield, and interest rate sensitivity
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bond-yield-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bond-yield-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bond Yield Calculator** tools.
 
 **Configuration:**

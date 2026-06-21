@@ -30,7 +30,7 @@ Connect your AI agent to the **Global Biodiversity Information Facility (GBIF)**
 - **Environmental Consultants** — assess biodiversity in specific regions for impact studies and regulatory compliance
 
 
-## Available Tools
+## Available Tools (3)
 - **get_gbif_occurrences**: Optional country filter (ISO 2-letter code: US, BR, AU, GB).
 
 Find where a species has been observed worldwide
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gbif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gbif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GBIF** tools.
 
 **Configuration:**

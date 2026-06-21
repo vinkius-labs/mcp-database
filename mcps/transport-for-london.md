@@ -35,7 +35,7 @@ Connect to **Transport for London (TfL)** and access real-time London transit da
 - **Developers** — integrate TfL transit data into apps and travel tools
 
 
-## Available Tools
+## Available Tools (11)
 - **get_arrivals**: Returns predicted arrival times, destination, line number, vehicle ID and expected time to station. Use the stop point ID (e.g. "490009056W") from search_stop.
 
 Get live arrival predictions for a bus stop
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `transport-for-london` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `transport-for-london` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Transport for London** tools.
 
 **Configuration:**

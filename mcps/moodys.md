@@ -26,7 +26,7 @@ Empower your AI agents with world-class financial intelligence. The **Moody's Ra
 3. Start querying credit intelligence directly from your favorite MCP client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_issue_details**: Get detailed info for an issue
 - **get_issuer_details**: Get detailed info for an issuer
 - **get_market_segments**: List market segments
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moodys` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moodys` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moody's** tools.
 
 **Configuration:**

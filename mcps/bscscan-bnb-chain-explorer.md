@@ -33,7 +33,7 @@ Connect your AI agent to **BscScan** to explore the BNB Chain ecosystem with unp
 - **DeFi Users** — verify transaction statuses and wallet balances through natural language.
 
 
-## Available Tools
+## Available Tools (16)
 - **get_bep20_transfers**: Get List of BEP-20 Token Transfer Events by Address
 - **get_bep721_transfers**: Get List of BEP-721 (NFT) Token Transfer Events by Address
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bscscan-bnb-chain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bscscan-bnb-chain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BscScan (BNB Chain Explorer)** tools.
 
 **Configuration:**

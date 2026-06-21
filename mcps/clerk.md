@@ -35,7 +35,7 @@ Connect your **Clerk** account to any AI agent and take full control of your aut
 - **Operations Teams** — verify authentication allowlists and system health
 
 
-## Available Tools
+## Available Tools (8)
 - **get_auth_dashboard_summary**: Retrieve a summary of user counts and system health
 - **get_user_auth_details**: Get detailed information for a specific user
 - **list_auth_allowlist**: List identifiers (emails, domains) on the authentication allowlist
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clerk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clerk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clerk** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Your AI agent becomes a command center for your entire RAG and knowledge base in
 - **Product Teams** — quickly audit available sources and destinations when planning new feature integrations.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_data_sources**: Lists all configured remote data connectors (e.g. S3, GCS)
 - **list_data_destinations**: g. Vector DBs, SQL).
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unstructured` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unstructured` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unstructured** tools.
 
 **Configuration:**

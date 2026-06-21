@@ -33,7 +33,7 @@ Connect your **Humanity** account to any AI agent to streamline your workforce m
 - **Team Leads** — verify staff assignments and positions to optimize daily operations
 
 
-## Available Tools
+## Available Tools (20)
 - **list_companies**: List companies
 - **get_company**: Get details for a specific company
 - **create_location**: Create a new location
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `humanity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `humanity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Humanity** tools.
 
 **Configuration:**

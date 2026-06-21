@@ -34,7 +34,7 @@ Connect your **FusionSignage** account to any AI agent and manage your digital s
 - **IT Administrators** — audit screen connectivity, manage media libraries, and troubleshoot display issues
 
 
-## Available Tools
+## Available Tools (17)
 - **assign_playlist**: Assign playlist to screen
 - **check_fusion_status**: Verify connectivity
 - **create_playlist**: Create a playlist
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fusionsignage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fusionsignage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FusionSignage** tools.
 
 **Configuration:**

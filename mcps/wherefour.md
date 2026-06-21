@@ -35,7 +35,7 @@ Connect your **Wherefour** account to any AI agent to automate your inventory ma
 - **Inventory Controllers** — streamline item searches and vendor management through simple AI commands.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_inventory_item**: Get details of a specific inventory item
 - **get_order**: Get details of a specific order
 - **list_customers**: List all customers
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wherefour` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wherefour` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wherefour** tools.
 
 **Configuration:**

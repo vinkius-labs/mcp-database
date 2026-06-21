@@ -18,7 +18,7 @@ Validating an IBAN (International Bank Account Number) requires executing Modulu
 - **Format Check:** Verifies exact country-specific lengths and alphanumeric patterns before processing.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_iban**: Pass the full IBAN string and the engine performs the Modulus 97 checksum calculation to verify structural and mathematical validity.
 
 Validates international bank account numbers (IBAN) using mathematical Modulus 97 checksum
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `iban-bank-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `iban-bank-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBAN Bank Validator** tools.
 
 **Configuration:**

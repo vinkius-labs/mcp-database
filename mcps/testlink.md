@@ -33,7 +33,7 @@ Connect your **TestLink** self-hosted environment to any AI agent and bring your
 - **Developers** — verify the preconditions and expected results of a highly complex bug without requesting UI access from QA
 
 
-## Available Tools
+## Available Tools (10)
 - **get_test_case_details**: Retrieves full details for a specific test case
 - **get_test_plan_details**: Retrieves details for a specific test plan
 - **get_test_project_details**: Retrieves details for a specific TestLink test project
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `testlink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `testlink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TestLink** tools.
 
 **Configuration:**

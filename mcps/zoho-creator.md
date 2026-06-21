@@ -34,7 +34,7 @@ Connect your **Zoho Creator** account to any AI agent to automate your business 
 - **IT Teams** — streamline application management and data synchronization across the Zoho ecosystem.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_record**: Create new record
 - **delete_record**: Remove record
 - **get_api_status**: Get connection status
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Creator** tools.
 
 **Configuration:**

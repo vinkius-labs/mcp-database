@@ -33,7 +33,7 @@ Connect to the **Paleobiology Database (PBDB)** and turn your AI agent into a sp
 - **Science Enthusiasts** — satisfy your curiosity about prehistoric life by querying the same data used by professional paleontologists.
 
 
-## Available Tools
+## Available Tools (27)
 - **autocomplete_combined**: General auto-completion across multiple record types (taxa, strata, intervals, people)
 - **autocomplete_strata**: Auto-completion for strata names
 - **autocomplete_taxa**: Auto-completion for taxonomic names
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paleobiology-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paleobiology-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paleobiology Database** tools.
 
 **Configuration:**

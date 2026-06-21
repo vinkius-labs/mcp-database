@@ -20,7 +20,7 @@ ECB monetary policy rates.
 - **MFI Rates** — Bank lending/deposit rates
 
 
-## Available Tools
+## Available Tools (5)
 - **get_key_rates**: This is the rate at which banks can borrow from the ECB for one week. It's the most important eurozone interest rate for monetary policy.
 
 Get the ECB's key interest rates — the main refinancing rate (MRO)
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ecb-interest-rates-monetary-policy-rates-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ecb-interest-rates-monetary-policy-rates-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ECB Interest Rates — Monetary Policy Rates & Banking** tools.
 
 **Configuration:**

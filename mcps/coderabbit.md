@@ -34,7 +34,7 @@ Connect your **CodeRabbit** organization to any AI agent and take full control o
 - **Compliance Officers** — query audit logs for administrative action reports without accessing the dashboard
 
 
-## Available Tools
+## Available Tools (9)
 - **assign_seats**: Up to 500 user IDs per request.
 
 Assign CodeRabbit seats to users
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coderabbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coderabbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CodeRabbit** tools.
 
 **Configuration:**

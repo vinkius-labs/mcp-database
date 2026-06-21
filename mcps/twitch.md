@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire streaming ecosystem on **Twitch
 - **Operations Leads** — automate channel querying to orchestrate cross-functional creator teams smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_followed_channels**: Get channels followed by a user
 - **get_channel_followers**: Get followers for a channel
 - **get_channel_info**: Get channel information
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `twitch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `twitch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Twitch** tools.
 
 **Configuration:**

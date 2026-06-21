@@ -31,7 +31,7 @@ Connect your AI to **Collect**, the secure platform for gathering information an
 - **HR Teams** — Track onboarding document submissions and send reminders.
 
 
-## Available Tools
+## Available Tools (10)
 - **send_message**: Send a message to a recipient regarding a specific request
 - **create_request**: Send a new data collection request to a recipient
 - **get_campaign**: Retrieve detailed information about a specific campaign
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `collect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `collect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Collect** tools.
 
 **Configuration:**

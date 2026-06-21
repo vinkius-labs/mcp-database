@@ -35,7 +35,7 @@ No more manual dashboard refreshing or template searching. Your AI acts as a ded
 - **Customer Success Teams** — streamline the retrieval of contact metadata and coordinate multi-channel responses directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **assign_chat**: Assign chat to user
 - **create_contact**: Create a new contact
 - **get_chat**: Get chat details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `saysimple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `saysimple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Saysimple** tools.
 
 **Configuration:**

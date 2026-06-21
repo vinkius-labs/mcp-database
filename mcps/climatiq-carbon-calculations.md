@@ -33,7 +33,7 @@ Connect your AI agent to **Climatiq**, the leading platform for carbon calculati
 - **Product Owners** — build carbon-aware applications using verified scientific data
 
 
-## Available Tools
+## Available Tools (10)
 - **batch_estimate_emissions**: Provide calculations as a JSON array string.
 
 Perform up to 100 emission calculations in a single request
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `climatiq-carbon-calculations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `climatiq-carbon-calculations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Climatiq Carbon Calculations** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Equip your AI agent with professional-grade digital asset intelligence via **Ste
 - **Economic Researchers** — perform deep technical audits of the Steam virtual economy using industry-standard metrics
 
 
-## Available Tools
+## Available Tools (8)
 - **get_asset_class_info**: Get technical metadata for specific item classes
 - **get_store_asset_prices**: Get official in-game store prices for an app
 - **get_user_inventory**: AppIDs: 730=CS2, 570=Dota2, 440=TF2, 753=Steam.
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `steam-economy-market-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `steam-economy-market-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Steam Economy & Market Intelligence** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS d
 - **Infrastructure Leads** — audit project configurations and AWS connections through simple queries.
 
 
-## Available Tools
+## Available Tools (24)
 - **create_aws_account_connection**: Create AWS Account Connection
 - **create_cloudfront_invalidation**: Create CloudFront Cache Invalidation
 - **create_deployment**: Trigger a new deployment based on repository filters
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flightcontrol-aws-paas-deployments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flightcontrol-aws-paas-deployments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flightcontrol (AWS PaaS Deployments)** tools.
 
 **Configuration:**

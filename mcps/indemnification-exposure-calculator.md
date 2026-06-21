@@ -13,7 +13,7 @@ Calculate maximum financial exposure in indemnity clauses by assessing contractu
 This MCP server provides tools to quantify the potential financial risks associated with indemnification clauses in legal contracts. By analyzing the interaction between contractual caps, specific carve-outs (such as IP infringement or fraud), and jurisdictional legal standards, agents can determine the worst-case exposure scenario. Use `calculate_standard_cap` to find the primary liability ceiling, `evaluate_carveout_impact` to estimate additional risk from exceptions, and `calculate_worst_case_exposure` for a comprehensive breakdown of total potential loss.
 
 
-## Available Tools
+## Available Tools (3)
 - **evaluate_carveout_impact**: Estimates the additional liability exposure introduced by specific carve-out events
 - **calculate_standard_cap**: Calculates the maximum dollar amount allowed under the standard cap
 - **calculate_worst_case_exposure**: Aggregates standard caps, carve-outs, and damage type considerations
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `indemnification-exposure-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `indemnification-exposure-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Indemnification Exposure Calculator** tools.
 
 **Configuration:**

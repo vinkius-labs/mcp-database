@@ -33,7 +33,7 @@ Connect your **TomTom** API account directly to any AI agent to unlock enterpris
 - **App Developers** — Programmatically pull local Points of Interest strings and contact numbers directly into their coding setup
 
 
-## Available Tools
+## Available Tools (10)
 - **calculate_reachable_range**: Provide center coordinates and a time budget in seconds.
 
 Calculates an area reachable within a specific time or distance budget
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tomtom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tomtom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TomTom** tools.
 
 **Configuration:**

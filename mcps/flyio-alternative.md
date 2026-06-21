@@ -36,7 +36,7 @@ Stop using the CLI or web dashboard to manage individual VMs. Your AI acts as a 
 - **Full-Stack Developers** — quickly check machine status, restart problematic VMs and verify image versions directly from chat
 
 
-## Available Tools
+## Available Tools (13)
 - **create_machine**: io app. Requires the Docker image reference (e.g. "registry.fly.io/myapp:latest"). Optionally set the region (e.g. "iad", "sjc", "nrt"), CPU cores (1-16), memory in MB (256-8192), guest CPU kind (shared, performance) and services config. Machines start in stopped state — use start_machine after creation.
 
 Create a new machine in a Fly.io app
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flyio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flyio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fly.io** tools.
 
 **Configuration:**

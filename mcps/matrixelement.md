@@ -34,7 +34,7 @@ Connect your **Matrix** account to any AI agent and take full control of your de
 - **Community Managers** — manage room states and user interactions across large Matrix networks.
 
 
-## Available Tools
+## Available Tools (19)
 - **change_password**: Change the account password
 - **claim_keys**: Claim E2EE keys from the homeserver
 - **create_room**: Create a new Matrix room
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `matrixelement` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `matrixelement` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Matrix/Element** tools.
 
 **Configuration:**

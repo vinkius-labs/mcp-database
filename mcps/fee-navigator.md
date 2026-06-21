@@ -35,7 +35,7 @@ Connect your **Fee Navigator** account to any AI agent and take full control of 
 - **Payment Analysts** — pull granular fee data and industry benchmarks directly into your AI-powered auditing workflow
 
 
-## Available Tools
+## Available Tools (12)
 - **analyze_statement**: Trigger AI analysis for an uploaded statement
 - **get_account_info**: Get Fee Navigator account details
 - **get_audit**: Get details for a specific audit
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fee-navigator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fee-navigator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fee Navigator** tools.
 
 **Configuration:**

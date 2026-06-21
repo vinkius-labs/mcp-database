@@ -32,7 +32,7 @@ Empower your AI workflows with the powerful machine data analytics computing of 
 - **Security Operations Analyists (SecOps)** — Evaluate log trails and access control parameters concurrently directly securely exploring logs independently from web consoles.
 
 
-## Available Tools
+## Available Tools (9)
 - **list_account_users**: Lists all registered users in the account
 - **list_active_webhooks**: Lists configured alert webhooks
 - **create_search_job**: Provide a query string, start time, and end time. Returns a search job ID for tracking.
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sumo-logic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sumo-logic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sumo Logic** tools.
 
 **Configuration:**

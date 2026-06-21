@@ -31,7 +31,7 @@ Connect your conversational agent to the established **ConnectAndSell** platform
 - **Operations Teams** — Combine calling stats natively into larger operational narratives reported within an AI environment.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_performance_summary**: Supports optional date range filtering.
 
 Retrieve a summary of sales calling performance metrics
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `connectandsell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `connectandsell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ConnectAndSell** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Your AI agent gains deep context about what data means, where it lives, and who 
 - **Security & Governance** — inspect broad access personas and data-sharing purposes seamlessly
 
 
-## Available Tools
+## Available Tools (6)
 - **search_assets**: Search for data assets in the Atlan Data Catalog
 - **list_glossaries**: List all business glossaries in Atlan
 - **list_classifications**: ) configured in Atlan for data governance purposes.
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `atlan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `atlan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Atlan** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ Connect your AI agent to the world's most comprehensive **open weather API** —
 Logistics planners, agriculture professionals, event organizers, travel apps, and anyone building weather-aware AI agents.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_weather_forecast**: Provide latitude and longitude coordinates.
 
 Get weather forecast for any location (up to 16 days)
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-meteo-weather-forecast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-meteo-weather-forecast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open-Meteo Weather Forecast** tools.
 
 **Configuration:**

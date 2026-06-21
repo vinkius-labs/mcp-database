@@ -35,7 +35,7 @@ Your AI agent becomes a headless CMS power-user, perfectly capable of navigating
 - **Product Managers** — query content stats and generate instant reports on published vs. draft documents
 
 
-## Available Tools
+## Available Tools (10)
 - **list_typed_documents**: g., "post", "author").
 
 Lists all documents of a specific type
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sanity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sanity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sanity** tools.
 
 **Configuration:**

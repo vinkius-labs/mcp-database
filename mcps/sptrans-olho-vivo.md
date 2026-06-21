@@ -33,7 +33,7 @@ Connect to the **SPTrans Olho Vivo** API to bring real-time urban mobility intel
 - **Developers** — Integrate São Paulo's transit data into workflows or tools using simple natural language commands.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_forecast_by_line**: Get arrival forecast for all stops on a specific line
 - **get_forecast_by_stop**: Get arrival forecast for all lines arriving at a specific stop
 - **get_forecast**: Get arrival forecast for a specific stop and line
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sptrans-olho-vivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sptrans-olho-vivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SPTrans Olho Vivo** tools.
 
 **Configuration:**

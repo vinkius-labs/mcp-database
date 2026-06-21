@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire public transport research workf
 - **Operations Leads** — automate transport data querying to orchestrate cross-functional mobility teams smoothly.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_bus_service**: Get details of a bus service route
 - **get_bus_route_timetable**: Get the scheduled timetable for a bus route
 - **get_transport_by_postcode**: Useful when user only has a postcode, not coordinates.
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `transportapi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `transportapi-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TransportAPI** tools.
 
 **Configuration:**

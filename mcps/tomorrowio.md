@@ -33,7 +33,7 @@ Connect your **Tomorrow.io** account to any AI agent and integrate institutional
 - **Analytics Teams** — Predict attendance or consumer patterns merging upcoming precipitation and high-pollen counts with event data
 
 
-## Available Tools
+## Available Tools (10)
 - **get_air_quality_index**: Retrieve current and forecast air quality data
 - **get_custom_timelines**: Query weather data for custom time ranges and arbitrary intervals
 - **get_daily_forecast**: Returns up to 15 days of daily intervals.
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tomorrowio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tomorrowio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tomorrow.io** tools.
 
 **Configuration:**

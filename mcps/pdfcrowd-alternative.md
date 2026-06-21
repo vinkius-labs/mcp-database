@@ -32,7 +32,7 @@ Transform web content and documents with the **Pdfcrowd** MCP server. This power
 - **Content Managers** — Convert web pages to static documents for documentation and sharing.
 
 
-## Available Tools
+## Available Tools (5)
 - **convert_html_to_image**: Returns base64 encoded image data.
 
 Capture a screenshot of a web page or HTML content
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pdfcrowd-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pdfcrowd-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pdfcrowd** tools.
 
 **Configuration:**

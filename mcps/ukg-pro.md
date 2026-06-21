@@ -13,7 +13,7 @@ Manage HR data, employee profiles, and payroll via UKG Pro.
 The UKG Pro MCP Server integrates the Model Context Protocol with the UKG Pro human capital management suite, enabling AI agents to manage HR data, employee profiles, payroll details, and organizational structures seamlessly.
 
 
-## Available Tools
+## Available Tools (4)
 - **organizations**: List organizational components and structures
 - **employees**: Get a specific employee by ID in UKG Pro
 - **jobs**: Get a specific job configuration by job code
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ukg-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ukg-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UKG Pro** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Fireblocks** workspace to any AI agent to orchestrate institution
 - **Compliance Officers** — quickly retrieve screening results and validate travel rule data for specific transactions.
 
 
-## Available Tools
+## Available Tools (40)
 - **add_asset_to_wallet**: Add an asset/address to a wallet
 - **add_contract**: Add a new contract to the whitelist
 - **cancel_transaction**: Cancel a pending transaction
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fireblocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fireblocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fireblocks** tools.
 
 **Configuration:**

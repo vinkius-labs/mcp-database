@@ -34,7 +34,7 @@ Empower your AI agent to access a vast array of essential data services with **J
 - **Developers** — integrate a massive library of utility APIs into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_calendar_day**: Get calendar and holiday info for a day
 - **get_calendar_month**: Get holiday info for a month
 - **get_constellation_horoscope**: Get constellation horoscope
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `juhe-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `juhe-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Juhe Data / 聚合数据** tools.
 
 **Configuration:**

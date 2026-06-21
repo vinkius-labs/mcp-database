@@ -33,7 +33,7 @@ Connect your **Stirling PDF** instance to any AI agent and take full control of 
 - **Legal & Admin Teams** — Quickly sign or watermark documents without leaving your AI chat interface.
 
 
-## Available Tools
+## Available Tools (11)
 - **add_watermark**: Add a watermark to a PDF document
 - **cert_sign**: Sign a PDF document with a certificate
 - **get_all_requests**: Get POST requests count for all endpoints
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stirling-pdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stirling-pdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stirling PDF** tools.
 
 **Configuration:**

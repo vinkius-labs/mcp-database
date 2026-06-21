@@ -37,7 +37,7 @@ Connect to **7digital** and access a global music catalog through natural conver
 - **Retailers** — access global music catalog with pricing and checkout integration
 
 
-## Available Tools
+## Available Tools (11)
 - **get_track_preview**: Returns the preview URL, content type (audio/mpeg) and duration. Use the track ID from search_track or get_release_tracks results.
 
 Get a preview/stream URL for a specific track
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `7digital` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `7digital` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **7digital** tools.
 
 **Configuration:**

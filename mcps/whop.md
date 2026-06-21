@@ -33,7 +33,7 @@ Connect your **Whop** account to any AI agent to automate your digital commerce 
 - **Community Managers** — quickly check user membership statuses and process administrative tasks via natural conversation.
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_membership**: Cancel a user membership
 - **create_promo_code**: Create a new promo code
 - **get_membership**: Get details for a specific membership
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `whop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `whop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Whop** tools.
 
 **Configuration:**

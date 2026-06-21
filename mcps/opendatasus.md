@@ -32,7 +32,7 @@ Connect to the **OpenDataSUS** portal to explore and analyze Brazilian public he
 - **Developers** — integrate official Brazilian health data into applications and dashboards with ease
 
 
-## Available Tools
+## Available Tools (8)
 - **datastore_search**: Search and filter data within a resource
 - **group_list**: List all groups (categories)
 - **organization_list**: List all organizations (data providers)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opendatasus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opendatasus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenDataSUS** tools.
 
 **Configuration:**

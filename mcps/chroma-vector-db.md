@@ -34,7 +34,7 @@ Connect your **Chroma** vector database to any AI agent and take full control of
 - **DevOps Teams** — monitor instance connectivity and health through automated heartbeats
 
 
-## Available Tools
+## Available Tools (7)
 - **list_collections**: List all explicitly defined Vector Collections within a given tenant database
 - **get_collection**: Identify bounded logical settings configuring a specific Vector Collection block
 - **count_documents**: Execute explicit structural tracking enumerating total document volumes
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chroma-vector-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chroma-vector-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chroma (Vector DB)** tools.
 
 **Configuration:**

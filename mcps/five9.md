@@ -35,7 +35,7 @@ Connect your **Five9** account to any AI agent and automate your contact center 
 - **Support Leads** — monitor active support interactions and update agent states to ensure optimal customer service levels.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_agent_state**: Get specific agent state
 - **get_statistics**: Get real-time statistics
 - **list_active_interactions**: List active interactions
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `five9` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `five9` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Five9** tools.
 
 **Configuration:**

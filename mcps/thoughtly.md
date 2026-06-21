@@ -34,7 +34,7 @@ Your text agent becomes the ultimate dispatcher, effortlessly ordering your voic
 - **Operations Managers** — orchestrate complex communication workflows across both text and voice channels simultaneously
 
 
-## Available Tools
+## Available Tools (11)
 - **create_contact**: Optionally includes first name, last name, email.
 
 Create a new Thoughtly contact
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thoughtly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thoughtly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Thoughtly** tools.
 
 **Configuration:**

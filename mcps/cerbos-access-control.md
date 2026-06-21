@@ -33,7 +33,7 @@ Connect your **Cerbos** instance to any AI agent to streamline authorization man
 - **Compliance Officers** — retrieve audit logs and policy definitions to ensure organizational security standards
 
 
-## Available Tools
+## Available Tools (19)
 - **add_policy**: Add a new policy
 - **add_schema**: Add or update a schema
 - **authzen_evaluation**: Perform a single AuthZEN access evaluation
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cerbos-access-control` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cerbos-access-control` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cerbos (Access Control)** tools.
 
 **Configuration:**

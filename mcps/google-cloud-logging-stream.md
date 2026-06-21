@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely troubleshoot application errors, 
 - **Plug & Play Troubleshooting:** Instantly gives your agent the eyes and ears it needs to debug production issues autonomously.
 
 
-## Available Tools
+## Available Tools (1)
 - **stream_logs**: You can optionally filter them using advanced GCP Logging filter syntax (e.g., severity>=ERROR).
 
 Read and search log entries from the configured Google Cloud Log
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-cloud-logging-stream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-cloud-logging-stream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Cloud Logging Stream** tools.
 
 **Configuration:**

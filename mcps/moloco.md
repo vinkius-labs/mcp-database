@@ -34,7 +34,7 @@ Connect your **Moloco Ads** account to your AI agent and manage your programmati
 - **Growth Teams** — monitor ad account health, budget balances, and campaign distribution in real-time.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_balance**: Check AdAccount balance
 - **get_analytics_report**: Get performance analytics report
 - **get_campaign**: Get campaign details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moloco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moloco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moloco** tools.
 
 **Configuration:**

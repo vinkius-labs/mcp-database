@@ -18,7 +18,7 @@ While an AI Agent can base64-decode a JSON Web Token to read its claims, it is p
 - **Local Decoding:** Extract user IDs, roles, and expiration dates instantly without network latency.
 
 
-## Available Tools
+## Available Tools (1)
 - **decode_jwt**: Pass the JWT string and optionally a secret or public key. The engine decodes the header, payload, and validates the signature offline.
 
 Decodes JSON Web Tokens (JWT) and mathematically verifies cryptographic signatures offline
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jwt-decoder-verifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jwt-decoder-verifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JWT Decoder & Verifier** tools.
 
 **Configuration:**

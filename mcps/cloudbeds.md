@@ -29,7 +29,7 @@ Connect your **Cloudbeds** property to any AI agent and run your hotel from a si
 - **Housekeeping** — Prioritized room cleaning lists and status updates
 
 
-## Available Tools
+## Available Tools (10)
 - **list_reservations**: Filter by status: confirmed, checked_in, checked_out, cancelled. Core front-desk tool.
 
 List hotel reservations
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudbeds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudbeds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudbeds** tools.
 
 **Configuration:**

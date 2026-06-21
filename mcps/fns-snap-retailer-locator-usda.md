@@ -32,7 +32,7 @@ Connect to the **USDA Food and Nutrition Service (FNS)** database to locate reta
 - **Public Health Officials** — Map food accessibility and coordinate community outreach programs.
 
 
-## Available Tools
+## Available Tools (2)
 - **search_retailers_by_location**: Search for SNAP-authorized retailers within a radius of a coordinate
 - **search_retailers**: Example: State = 'VA' AND Zip5 = '22314'
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fns-snap-retailer-locator-usda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fns-snap-retailer-locator-usda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FNS SNAP Retailer Locator (USDA)** tools.
 
 **Configuration:**

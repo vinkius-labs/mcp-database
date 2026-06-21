@@ -33,7 +33,7 @@ Connect your **Drone CI** server to any AI agent to streamline your DevOps lifec
 - **SREs** — Manage secrets and cron jobs across multiple projects efficiently.
 
 
-## Available Tools
+## Available Tools (39)
 - **approve_build**: Approve a blocked build
 - **chown_repo**: Change repository ownership to current user
 - **create_build**: Create a custom build for a branch
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `drone-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `drone-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Drone CI** tools.
 
 **Configuration:**

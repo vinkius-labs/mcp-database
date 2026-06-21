@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your video infrastructure and digital asset
 - **Aliyun Power Users** — integrate your existing VOD workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_upload_auth**: Get upload credentials
 - **delete_media**: Delete VOD video
 - **get_media_metadata**: Get video info
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aliyun-vod` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aliyun-vod` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aliyun VOD / 阿里云视频点播** tools.
 
 **Configuration:**

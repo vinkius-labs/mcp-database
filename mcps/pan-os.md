@@ -11,7 +11,7 @@ Connect PAN-OS to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (8)
 - **commit**: This validates the config and activates it. Returns the commit job ID and status. Use this after making configuration changes to activate them.
 
 Commit the candidate configuration to running configuration
@@ -63,7 +63,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pan-os` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pan-os` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PAN-OS** tools.
 
 **Configuration:**

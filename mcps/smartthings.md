@@ -36,7 +36,7 @@ No more jumping between mobile apps to check if you left the lights on or to tri
 - **Smart Office Managers** — automate and monitor office environments, rooms, and energy usage through simple queries.
 
 
-## Available Tools
+## Available Tools (13)
 - **list_apps**: List all SmartApps
 - **create_room**: Create a new room in a SmartThings location
 - **execute_device_command**: g., switch on/off, set level).
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smartthings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smartthings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SmartThings** tools.
 
 **Configuration:**

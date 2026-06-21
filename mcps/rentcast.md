@@ -27,7 +27,7 @@ Connect your **RentCast** account to any AI agent and simplify your real estate 
 3. Start managing your real estate data from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_property_by_id**: Get property details by ID
 - **get_rental_comparables**: Get comparable rental properties
 - **get_sale_comparables**: Get comparable sale properties
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rentcast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rentcast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RentCast** tools.
 
 **Configuration:**

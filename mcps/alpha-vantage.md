@@ -38,7 +38,7 @@ No more navigating complex financial terminals to check stock prices or technica
 - **Students** — learn about technical analysis, market trends and financial data through interactive conversation
 
 
-## Available Tools
+## Available Tools (13)
 - **get_company_overview**: Useful for fundamental analysis and stock screening.
 
 Get company overview and fundamentals
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alpha-vantage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alpha-vantage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alpha Vantage** tools.
 
 **Configuration:**

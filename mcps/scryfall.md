@@ -35,7 +35,7 @@ No more manual searching through browser tabs to check a card's legality or curr
 - **Developers** — integrate MTG data into coding projects or custom tools directly from the IDE
 
 
-## Available Tools
+## Available Tools (19)
 - **autocomplete_cards**: Get card name suggestions
 - **get_bulk_data_by_type**: Get a specific bulk data file by type
 - **get_card_by_arena_id**: Get a card by Arena ID
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scryfall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scryfall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scryfall** tools.
 
 **Configuration:**

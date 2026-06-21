@@ -33,7 +33,7 @@ Connect your **Basis Technologies (formerly Centro)** account to any AI agent an
 - **Account Managers** — retrieve performance reports for clients on the fly during meetings or via automated summaries.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_ad**: Get specific ad details
 - **list_brands**: List all brands
 - **get_campaign_performance**: Get performance metrics for a campaign
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `basis-technologies` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `basis-technologies` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Basis Technologies** tools.
 
 **Configuration:**

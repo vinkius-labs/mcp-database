@@ -36,7 +36,7 @@ Connect your **Getty Images** account to any AI agent and take full control of y
 - **Designers** — discover visually similar assets and audit video metadata directly from the chat interface
 
 
-## Available Tools
+## Available Tools (10)
 - **search_images**: Returns asset IDs, titles, captions, preview URLs. Pass phrase and page.
 
 Search Getty Images stock photos
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `getty-images` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `getty-images` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Getty Images** tools.
 
 **Configuration:**

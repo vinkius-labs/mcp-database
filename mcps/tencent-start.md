@@ -34,7 +34,7 @@ Connect your AI agents to **Tencent START Cloud Gaming (GS)**, the high-performa
 - **Infrastructure Engineers** — scale cloud gaming capacity based on real-time demand
 
 
-## Available Tools
+## Available Tools (11)
 - **create_session**: Initialize a cloud gaming session
 - **get_capacity_limit**: Check max concurrent user limit for a game
 - **get_concurrent_user_info**: Check current concurrency for a game
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tencent-start` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tencent-start` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tencent START** tools.
 
 **Configuration:**

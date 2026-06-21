@@ -33,7 +33,7 @@ Connect your AI agent to the **Región de Murcia Datos Abiertos** portal. This M
 - **Developers** — integrate real-time public data sources into applications using AI-assisted discovery
 
 
-## Available Tools
+## Available Tools (7)
 - **get_dataset**: Get details for a specific dataset
 - **get_most_recent_datasets**: Get the most recently added datasets
 - **get_most_viewed_datasets**: Get the most viewed datasets
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `region-de-murcia-datos-abiertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `region-de-murcia-datos-abiertos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Región de Murcia Datos Abiertos** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Your AI agent acts as a dedicated web analyst, transforming complex dashboards i
 - **Website Owners** — keep a pulse on your site's performance without constantly logging into an analytics dashboard
 
 
-## Available Tools
+## Available Tools (11)
 - **get_now_campaigns**: Get active campaigns currently driving traffic
 - **get_now_overview**: Get a top-level overview of concurrent active visitors
 - **get_now_pages**: Get a list of pages currently being viewed
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gosquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gosquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoSquared** tools.
 
 **Configuration:**

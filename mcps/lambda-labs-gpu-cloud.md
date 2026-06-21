@@ -34,7 +34,7 @@ Connect your **Lambda Labs** account to any AI agent and take full control of yo
 - **AI Infrastructure Ops** — manage SSH keys and shared filesystems across multiple worker nodes to maintain scalable and secure ML environments
 
 
-## Available Tools
+## Available Tools (7)
 - **list_instances**: List running GPU instances on Lambda Cloud
 - **get_instance**: Get exact details and SSH connection string for a specific instance
 - **launch_instance**: g., powerful H100 or A100 boxes). Injects explicit SSH keys into the runtime so it is securely accessible over port 22 immediately upon boot.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lambda-labs-gpu-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lambda-labs-gpu-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lambda Labs (GPU Cloud)** tools.
 
 **Configuration:**

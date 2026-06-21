@@ -34,7 +34,7 @@ Connect your **Marqo** instance to any AI agent and take full control of your se
 - **Software Developers** — integrate AI-powered search results into applications and manage document lifecycles across multiple Marqo environments efficiently
 
 
-## Available Tools
+## Available Tools (6)
 - **list_indexes**: Crucial before writing queries hitting arbitrary collections.
 
 List all Marqo vector indexes
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `marqo-ai-vector-search-embeddings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `marqo-ai-vector-search-embeddings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Marqo AI (Vector Search & Embeddings)** tools.
 
 **Configuration:**

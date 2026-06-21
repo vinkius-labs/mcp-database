@@ -34,7 +34,7 @@ Your AI agent becomes a brilliant database administrator capable of exploring em
 - **DBAs** — manage and count records across collections effortlessly
 
 
-## Available Tools
+## Available Tools (7)
 - **list_collections**: List all collections in the Astra DB namespace
 - **find_documents**: Useful for standard NoSQL document retrieval.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datastax-astra-db-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datastax-astra-db-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DataStax Astra DB Vector** tools.
 
 **Configuration:**

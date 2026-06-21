@@ -36,7 +36,7 @@ Connect your **Discord** bot to any AI agent and take full control of your commu
 - **Ops Teams** — audit server member lists and manage channel hierarchies in real-time
 
 
-## Available Tools
+## Available Tools (15)
 - **add_reaction**: Use URL-encoded custom emojis (name:id) or standard Unicode emojis (e.g., 👍).
 
 Add an emoji reaction to a Discord message
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `discord` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `discord` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Discord** tools.
 
 **Configuration:**

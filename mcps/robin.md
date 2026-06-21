@@ -31,7 +31,7 @@ Connect your conversational assistant directly to **Robin**, the leading workpla
 - **Executive Assistants** — Manage aggressive scheduling by asking the AI to find free slots in multiple rooms and booking them instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **book_space**: Specify space ID, title, and start/end times.
 
 Books a meeting room by creating an event
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `robin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `robin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Robin** tools.
 
 **Configuration:**

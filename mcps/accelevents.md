@@ -21,7 +21,7 @@ Connect your **Accelevents** account to your AI agent to unlock effortless event
 - **Exhibitor Monitoring** — Retrieve details on exhibitors and products to support your event's marketplace
 
 
-## Available Tools
+## Available Tools (4)
 - **list_events**: Retrieve a list of all active, past, and upcoming events in Accelevents
 - **list_attendees**: Requires the event URL.
 
@@ -78,7 +78,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accelevents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accelevents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Accelevents** tools.
 
 **Configuration:**

@@ -24,7 +24,7 @@ Connect your Route4Me account to AI agents to manage addresses, routes, optimiza
 Perfect for logistics managers and transportation analysts aiming to extract reporting data through AI conversational interfaces without dealing with CSV exports.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_address**: Get an address by ID
 - **get_addresses**: List addresses from your Route4Me address book
 - **get_optimizations**: Get an optimization history
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `route4me-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `route4me-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Route4Me** tools.
 
 **Configuration:**

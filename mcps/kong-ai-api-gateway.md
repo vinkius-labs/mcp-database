@@ -34,7 +34,7 @@ Connect your **Kong API Gateway** instance to any AI agent and take full control
 - **AI Ops Teams** — monitor and adjust AI Proxy settings to optimize LLM usage and provider costs across the organization
 
 
-## Available Tools
+## Available Tools (10)
 - **list_consumers**: List all Consumer profiles registered in Kong
 - **create_consumer_key**: Generate an API Key credential for a Kong Consumer
 - **create_ai_plugin**: Frequently used for enabling the `ai-proxy` plugin for LLM routing and key encapsulation.
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kong-ai-api-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kong-ai-api-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kong (AI API Gateway)** tools.
 
 **Configuration:**

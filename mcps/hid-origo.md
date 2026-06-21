@@ -36,7 +36,7 @@ No more navigating complex management portals for simple identity lookups. Your 
 - **IT Admins** — streamline the process of inviting users to mobile identity enrollment during onboarding.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_enrollment_invitation**: Pass the invitation details as a JSON string in "body_json" (requires userId and partNumber).
 
 Send a new invitation to a user for mobile identity enrollment
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hid-origo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hid-origo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HID Origo** tools.
 
 **Configuration:**

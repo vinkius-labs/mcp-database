@@ -33,7 +33,7 @@ Connect to the **Fantom Network** through FtmScan to inspect on-chain activity u
 - **DeFi Users** — check wallet balances and recent activity across the Fantom ecosystem.
 
 
-## Available Tools
+## Available Tools (19)
 - **get_block_countdown**: Get Estimated Block Countdown Time
 - **get_block_reward**: Get Block Rewards
 - **get_contract_abi**: Get Contract ABI
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ftmscan-fantom-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ftmscan-fantom-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FtmScan (Fantom Network Explorer)** tools.
 
 **Configuration:**

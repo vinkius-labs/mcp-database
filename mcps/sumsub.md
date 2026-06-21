@@ -34,7 +34,7 @@ No more manual status checks in the dashboard. Your AI acts as a compliance assi
 - **Operations Teams** — automate the collection and processing of identity documents for faster onboarding.
 
 
-## Available Tools
+## Available Tools (5)
 - **add_document**: Upload a document for an applicant
 - **create_applicant**: Create a new Sumsub applicant
 - **generate_access_token**: Generate WebSDK access token
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sumsub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sumsub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sumsub** tools.
 
 **Configuration:**

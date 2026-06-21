@@ -32,7 +32,7 @@ Connect your **Chainlit Cloud** projects to any AI agent and embrace a new parad
 - **QA Specialists** — Periodically poll new conversations evaluating tone, relevance, and compliance parameters blindly spanning hundreds of hours without reading logs manually.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_projects**: List explicit globally configured Chainlit Cloud projects managing independent app tracking spaces
 - **list_threads**: List conversational threads identifying user interaction boundaries inside a specific deployed project
 - **get_thread**: Retrieve the exact payload for a specific conversational thread locating exact node topologies
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chainlit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chainlit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chainlit** tools.
 
 **Configuration:**

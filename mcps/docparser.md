@@ -32,7 +32,7 @@ Integrate **Docparser**, the leading document data extraction platform, directly
 - **Automation Leads** — Monitor parser health and success rates across the document pipeline instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_docparser_account_metadata**: Retrieve metadata and usage limits for your Docparser account
 - **get_parser_details**: Get detailed settings and status for a specific document parser
 - **quick_parser_health_audit**: Retrieve a high-level summary of parser activity and success rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docparser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docparser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Docparser** tools.
 
 **Configuration:**

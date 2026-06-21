@@ -33,7 +33,7 @@ Connect your **Osu!** account to any AI agent to explore the rhythm game's vast 
 - **Data Enthusiasts** — Extract beatmap attributes and scoring data for analysis or performance tracking.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_beatmap_attributes**: Get beatmap attributes
 - **get_beatmap_pack**: Get a specific beatmap pack
 - **list_beatmap_packs**: Get beatmap packs
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `osu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `osu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Osu!** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Mapbox** account to any AI agent to leverage powerful geospatial 
 - **Data Analysts** — perform spatial queries and retrieve feature metadata for geographic research and reporting.
 
 
-## Available Tools
+## Available Tools (27)
 - **geocode_reverse**: Reverse geocoding (v6)
 - **get_dataset_feature**: Retrieve a specific feature from a dataset
 - **get_directions**: Calculate optimal routes and turn-by-turn instructions
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mapbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mapbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mapbox** tools.
 
 **Configuration:**

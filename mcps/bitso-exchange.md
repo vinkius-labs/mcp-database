@@ -32,7 +32,7 @@ Connect your heavy lifting quantitative **Bitso Platform Account** to the Vurb e
 - **Power Holders** — Looking securely at account standing limits or balances without dealing with the slow GUI interfaces.
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_order**: Cancel a live unfulfilled order
 - **create_order**: Submit a new trading order
 - **get_account_status**: Get regulatory account status limits
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bitso-exchange` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bitso-exchange` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bitso Exchange** tools.
 
 **Configuration:**

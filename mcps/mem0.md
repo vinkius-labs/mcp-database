@@ -32,7 +32,7 @@ Connect your AI agent to **Mem0** — the industry-standard memory layer that en
 - **SaaS Teams** — add persistent memory to any AI feature so users feel understood and valued
 
 
-## Available Tools
+## Available Tools (4)
 - **delete_memory**: Use with caution — this action cannot be undone.
 
 Delete a specific memory by its ID
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mem0` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mem0` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mem0** tools.
 
 **Configuration:**

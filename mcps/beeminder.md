@@ -33,7 +33,7 @@ Connect your **Beeminder** account to any AI agent and integrate goal tracking i
 - **Developers** — automate datapoint logging from within the code editor or automated scripts.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_datapoint**: Add a new datapoint to a goal
 - **delete_datapoint**: Delete a datapoint
 - **get_goal_status**: Check the current status of a goal
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `beeminder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `beeminder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Beeminder** tools.
 
 **Configuration:**

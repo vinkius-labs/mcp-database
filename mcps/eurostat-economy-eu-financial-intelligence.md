@@ -27,7 +27,7 @@ Eurostat provides completely open, free access. No registration needed.
 ECB watchers, sovereign debt analysts, EU policy researchers, macro strategists, and anyone tracking European economic performance.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_gdp**: Dataset: namq_10_gdp (quarterly) or nama_10_gdp (annual). Filter by country, unit (CLV10_MEUR, CP_MEUR, PC_GDP), and GDP component (B1GQ=GDP, P3=consumption, P5G=investment).
 
 Get EU GDP data by country — quarterly or annual
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eurostat-economy-eu-financial-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eurostat-economy-eu-financial-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eurostat Economy — EU Financial Intelligence** tools.
 
 **Configuration:**

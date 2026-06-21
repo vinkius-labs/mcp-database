@@ -38,7 +38,7 @@ Connect your AI agent to **Watchmode**, the most accurate streaming availability
 - **Content Researchers** — verify legal access points for movies and series across platforms
 
 
-## Available Tools
+## Available Tools (8)
 - **get_title_cast**: Get the cast and crew for a title
 - **get_title_details**: Get full details and streaming sources for a title
 - **get_title_sources**: Get all streaming sources where a title is available
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `streaming-availability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `streaming-availability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Watchmode Streaming Availability** tools.
 
 **Configuration:**

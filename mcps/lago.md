@@ -33,7 +33,7 @@ Connect **Lago** to your AI agent to automate your metering and billing infrastr
 - **Finance Teams** — list invoices and verify billable metrics through natural language queries.
 
 
-## Available Tools
+## Available Tools (12)
 - **apply_coupon**: Apply a coupon to a customer
 - **batch_events**: Send a batch of usage events
 - **create_billable_metric**: Create a billable metric
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lago` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lago` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lago** tools.
 
 **Configuration:**

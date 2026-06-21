@@ -28,7 +28,7 @@ The **Asaas MCP Server** provides a powerful natural language interface to your 
 - **Finance Departments** — Monitor payment statuses and manage recurring subscriptions without manual dashboard exports.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_customer**: Register a new customer in Asaas
 - **create_payment**: Create a new payment (charge) for a customer
 - **get_account_check**: Verify Asaas account connection
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `asaas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `asaas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Asaas** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to the **Gnosis Chain** through the Gnosisscan API. This s
 - **DeFi Users** — track personal portfolio movements and internal contract interactions through natural language.
 
 
-## Available Tools
+## Available Tools (26)
 - **get_account_balance_multi**: Get xDAI Balance for Multiple Addresses
 - **get_account_balance**: Get xDAI Balance for a Single Address
 - **get_account_minedblocks**: Get a List of Blocks Validated by Address
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gnosisscan-gnosis-chain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gnosisscan-gnosis-chain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gnosisscan (Gnosis Chain Explorer)** tools.
 
 **Configuration:**

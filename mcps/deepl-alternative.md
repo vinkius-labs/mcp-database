@@ -34,7 +34,7 @@ Connect your **DeepL** account to any AI agent and access neural machine transla
 - **Developers** — integrate high-quality translation into AI workflows and monitor API consumption
 
 
-## Available Tools
+## Available Tools (14)
 - **create_glossary**: Create a glossary
 - **delete_glossary**: Delete a glossary
 - **get_document_status**: Check document translation status
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deepl-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deepl-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeepL** tools.
 
 **Configuration:**

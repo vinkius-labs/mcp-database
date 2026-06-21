@@ -32,7 +32,7 @@ Connect **Play.ht** to your AI agent to generate high-quality Text-to-Speech (TT
 - **Marketers** — create personalized audio messages and localized content at scale
 
 
-## Available Tools
+## Available Tools (2)
 - **create_instant_voice_clone**: Provide the audio file as a base64 encoded string.
 
 Create an instant voice clone from an audio sample
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `playht-voice-cloning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `playht-voice-cloning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Play.ht (Voice Cloning)** tools.
 
 **Configuration:**

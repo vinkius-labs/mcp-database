@@ -33,7 +33,7 @@ Connect your **SignRequest** account to any AI agent to automate your document s
 - **Operations Managers** — manage document templates and webhooks to integrate signing workflows into larger business processes.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_document**: You can provide a file URL or a template UUID, along with signers.
 
 Create a new document in SignRequest
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `signrequest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `signrequest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SignRequest** tools.
 
 **Configuration:**

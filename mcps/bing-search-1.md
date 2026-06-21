@@ -33,7 +33,7 @@ Connect your Microsoft **Bing Search** API key to any AI agent and empower it wi
 - **Content Creators** — rapidly search for image media and video links without leaving your AI environment.
 
 
-## Available Tools
+## Available Tools (10)
 - **search_local**: Force explicit Local Business listing extraction over standard web nodes
 - **search_news**: 0/news/search` resolving syndicated global PR articles grouped by timestamp clusters.
 
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bing-search-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bing-search-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bing Search** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **MainWP Dashboard** to any AI agent to automate your WordPress net
 - **Site Administrators** — Quickly audit plugin inventories and execute updates without leaving your dev tools
 
 
-## Available Tools
+## Available Tools (8)
 - **scan_network_malware**: Trigger a malware scan across the network
 - **scan_network_vulnerabilities**: Trigger a vulnerability scan across the network
 - **list_site_plugins**: List all plugins installed on a specific site
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mainwp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mainwp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MainWP** tools.
 
 **Configuration:**

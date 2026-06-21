@@ -13,7 +13,7 @@ Manage users, systems, and directories via JumpCloud API.
 Empower your AI agents with JumpCloud's open directory platform. This MCP server allows you to list and retrieve users, manage user and system groups, track managed systems, and view directories and SSO applications directly through the JumpCloud API. Ideal for automating IT administration and directory management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_user**: Returns account metadata, group memberships, and security settings. Use this for detailed user vetting or before making administrative changes.
 
 Retrieves details for a specific user
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jumpcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jumpcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JumpCloud** tools.
 
 **Configuration:**

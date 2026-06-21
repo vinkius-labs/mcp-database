@@ -38,7 +38,7 @@ Your AI agent becomes your office operations assistant, handling user lookups, s
 - **Administrators** — Automate routine notifications and approval processes through conversational AI
 
 
-## Available Tools
+## Available Tools (10)
 - **create_approval_process**: g., leave request, reimbursement, purchase order) by creating a new approval instance. Requires the approval template code (process_code) from your DingTalk admin, form component values matching the template structure, and the originator's user ID. Returns the process instance ID for tracking. Use this to automate approval workflows directly from AI conversations.
 
 Create a new approval workflow instance in DingTalk
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dingtalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dingtalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DingTalk** tools.
 
 **Configuration:**

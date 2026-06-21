@@ -34,7 +34,7 @@ Connect your **Afterpay (Clearpay)** merchant account to your AI agent to unlock
 - **Developers** — verify API integration and inspect payment responses using simple commands
 
 
-## Available Tools
+## Available Tools (5)
 - **get_afterpay_config**: Retrieve the minimum and maximum order transaction limits enforced by your Afterpay merchant account
 - **create_checkout**: The amount must fall within the configured limits.
 
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `afterpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `afterpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Afterpay** tools.
 
 **Configuration:**

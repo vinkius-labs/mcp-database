@@ -29,7 +29,7 @@ Give your AI agents programmatic control over your static site form backend usin
 Built for frontend developers, marketing teams, and static site operators who need a secure, serverless form backend with powerful AI-driven automation.
 
 
-## Available Tools
+## Available Tools (15)
 - **check_snipform_status**: Verify connectivity
 - **create_key**: Create a form
 - **delete_key**: Delete a form
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snipform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snipform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SnipForm** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Manage vacation rental properties, leads, and bookings via Hostfully API.
 Connect your AI agents to Hostfully's Property Management System. This MCP server allows you to list and manage properties, track leads, view guest information, and monitor service providers directly through the Hostfully API. Ideal for automating hospitality operations.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_agency**: Retrieves details for a specific agency
 - **get_lead**: Retrieves details for a specific lead
 - **get_property**: Retrieves details for a specific property
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hostfully` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hostfully` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hostfully** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect your **BoardGameGeek** account to any AI agent and unlock the full analy
 - **Event Organizers & Café Owners** — find games filtered by player count and duration to curate the perfect game night lineup
 
 
-## Available Tools
+## Available Tools (10)
 - **get_forum_list**: g. Reviews, Rules, General, Strategy) associated with a specific board game by its BGG ID. Use the returned forum IDs to browse individual threads.
 
 List discussion forums for a board game
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `boardgamegeek` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `boardgamegeek` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BoardGameGeek** tools.
 
 **Configuration:**

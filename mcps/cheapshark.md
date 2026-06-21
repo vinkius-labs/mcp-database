@@ -33,7 +33,7 @@ Connect to **CheapShark** and never miss a PC game deal again. This MCP server a
 - **Content Creators** — quickly pull current pricing data for game recommendations or reviews
 
 
-## Available Tools
+## Available Tools (5)
 - **get_deals**: Retrieve a list of current game deals
 - **get_game**: Get specific game details by ID
 - **manage_alert**: Manage email alerts for game price drops
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cheapshark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cheapshark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CheapShark** tools.
 
 **Configuration:**

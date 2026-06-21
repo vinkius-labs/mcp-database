@@ -19,7 +19,7 @@ LLMs are notoriously bad at math, often hallucinating numbers when calculating l
 - **Zero External APIs:** This engine is self-contained and runs securely within the Vinkius platform, requiring no third-party internet connections or API keys.
 
 
-## Available Tools
+## Available Tools (2)
 - **calculate_amortization**: Type can be SAC (Constant Amortization) or PRICE (French Amortization System).
 
 Calculates a perfect amortization schedule (SAC or PRICE) without hallucination
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `financial-math-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `financial-math-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Financial Math Engine** tools.
 
 **Configuration:**

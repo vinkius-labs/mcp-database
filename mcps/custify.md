@@ -32,7 +32,7 @@ Integrate **Custify**, the comprehensive customer success platform, directly int
 - **Success Operations** — Audit tasks and KPIs across all customer segments via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_customer_profile**: Resolves the newly generated customer ID and validation status. Mutates the customer database state.
 
 Create a new customer profile in Custify
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `custify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `custify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Custify** tools.
 
 **Configuration:**

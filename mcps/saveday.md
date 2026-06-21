@@ -26,7 +26,7 @@ Connect your **SaveDay** account to any AI agent to seamlessly capture and retri
 3. Start capturing and searching your knowledge base from Claude, Cursor, or any MCP-compatible client.
 
 
-## Available Tools
+## Available Tools (4)
 - **capture_content**: Type must be url, text, or image.
 
 Capture a URL, text, or image to SaveDay
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `saveday` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `saveday` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SaveDay** tools.
 
 **Configuration:**

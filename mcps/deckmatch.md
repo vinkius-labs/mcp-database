@@ -35,7 +35,7 @@ No more manual data entry for every deck. Your AI acts as your dedicated investm
 - **Accelerator Managers** — monitor incoming applications and search for relevant startups through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **tag_submission**: Label a submission
 - **delete_submission**: Remove pitch deck
 - **generate_investment_memo**: Create investment memo
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deckmatch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deckmatch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeckMatch** tools.
 
 **Configuration:**

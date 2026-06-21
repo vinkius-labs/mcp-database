@@ -33,7 +33,7 @@ Equip your AI agent with the industry standard for digital market intelligence t
 - **B2B Sales Teams** — qualify leads based on website traffic and authority.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_category_rank**: Get category rank for a domain
 - **get_global_rank**: Get global rank for a domain
 - **get_desktop_visits**: Get monthly desktop visits for a domain
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `similarweb-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `similarweb-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SimilarWeb Analytics** tools.
 
 **Configuration:**

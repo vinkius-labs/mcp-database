@@ -41,7 +41,7 @@ No more manual XML parsing or complex API queries. Your AI acts as a dedicated E
 - **Researchers** — access comprehensive European energy market data for studies
 
 
-## Available Tools
+## Available Tools (12)
 - **get_actual_generation**: ) for a specific bidding zone. Essential for post-market analysis, renewable energy performance tracking, and grid balance analysis. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get actual electricity generation data by energy source for a European bidding zone
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `entso-e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `entso-e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ENTSO-E** tools.
 
 **Configuration:**

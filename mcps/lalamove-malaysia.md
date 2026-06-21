@@ -35,7 +35,7 @@ Connect your AI agents to **Lalamove Malaysia**, the leading on-demand delivery 
 - **Logistics Coordinators** — quickly provide shipping estimates and track mission-critical parcels
 
 
-## Available Tools
+## Available Tools (10)
 - **add_priority_fee**: Add a priority fee (tip) to an order
 - **cancel_order**: Cancel an active delivery order
 - **get_driver_details**: Get information about the assigned driver
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lalamove-malaysia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lalamove-malaysia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lalamove Malaysia** tools.
 
 **Configuration:**

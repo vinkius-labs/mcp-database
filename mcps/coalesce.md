@@ -31,7 +31,7 @@ Connect your AI to **Coalesce**, the data transformation platform built for Snow
 - **Data Team Leads** — Get quick overviews of environment health and recent job results.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_environment**: Retrieve detailed information about a specific environment
 - **get_job_details**: Retrieve detailed information about a specific job
 - **get_run_status**: Check the current status and progress of a triggered run
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coalesce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coalesce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coalesce** tools.
 
 **Configuration:**

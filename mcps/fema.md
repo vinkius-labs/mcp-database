@@ -34,7 +34,7 @@ Connect to the **OpenFEMA** public database through any AI agent and gain instan
 - **Data Researchers** — pull aggregated disaster metrics directly into your AI-powered public safety workflow
 
 
-## Available Tools
+## Available Tools (11)
 - **get_disaster_applications**: Get statistics on disaster assistance applications
 - **get_emergency_agencies**: List emergency management agencies by state
 - **get_fema_regions**: List official FEMA regions
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fema` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fema` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FEMA** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 - **Product Teams** — summarize user feedback calls and share insights with the team via automated links.
 
 
-## Available Tools
+## Available Tools (30)
 - **create_batch_summarization**: Create a batch summarization for a folder
 - **create_folder**: Create a new folder
 - **create_media_export**: Create a media export
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sonix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sonix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sonix** tools.
 
 **Configuration:**

@@ -24,7 +24,7 @@ Capture website screenshots and generate visual previews programmatically with a
 Ideal for developers, designers, and marketers who need to automate visual testing, track competitor websites, or generate dynamic images via AI agents.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_screenshot_config**: Create a new screenshot configuration
 - **delete_screenshot_config**: Delete a screenshot configuration
 - **get_screenshot_config**: Get a specific screenshot configuration by ID
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pagepixels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pagepixels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PagePixels** tools.
 
 **Configuration:**

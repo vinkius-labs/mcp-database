@@ -35,7 +35,7 @@ No more manual following up on missing timesheets or digging through complex sch
 - **Construction Supervisors** — automate shift scheduling and job site assignments through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **create_job**: Add a new job/project
 - **create_shift**: Schedule a new shift
 - **create_task**: Add a new work task
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clockshark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clockshark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClockShark** tools.
 
 **Configuration:**

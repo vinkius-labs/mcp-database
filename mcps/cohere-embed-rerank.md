@@ -35,7 +35,7 @@ Connect your **Cohere** account to any AI agent and take full control of your en
 - **LLM Engineers** — audit tokenization and model availability for complex conversational workflows
 
 
-## Available Tools
+## Available Tools (5)
 - **list_models**: List all available Cohere models on your plan
 - **tokenize_text**: Tokenize text into token IDs for a specific model
 - **embed_texts**: Generate dense vector embeddings from text using Cohere models
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cohere-embed-rerank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cohere-embed-rerank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cohere (Embed & Rerank)** tools.
 
 **Configuration:**

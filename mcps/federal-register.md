@@ -33,7 +33,7 @@ Connect your AI agent to the **Federal Register** and navigate the vast landscap
 - **Policy Researchers** — analyze agency activity and historical document trends via AI-driven search
 
 
-## Available Tools
+## Available Tools (9)
 - **get_agency**: Fetch a single agency by slug
 - **get_current_public_inspection**: Retrieve all documents currently on public inspection
 - **get_document**: Fetch a single published document
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `federal-register` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `federal-register` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Federal Register** tools.
 
 **Configuration:**

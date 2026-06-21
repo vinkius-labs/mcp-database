@@ -32,7 +32,7 @@ Integrate **Dialpad**, the AI-powered cloud communications platform, directly in
 - **Office Admins** — Monitor organizational telephony usage and IVR structures instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **upsert_business_contact**: Bootstrap an entirely mutable Contact array resolving Dialpad directories
 - **wipe_directory_entry**: Irreversibly vaporize explicit contact constraints destroying Dialpad DB links
 - **get_person_details**: Perform structural extraction of properties driving an explicit Extension
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dialpad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dialpad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dialpad** tools.
 
 **Configuration:**

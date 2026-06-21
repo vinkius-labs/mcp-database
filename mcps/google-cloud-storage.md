@@ -36,7 +36,7 @@ No more manual navigation through the GCP Console for routine file checks. Your 
 - **Security Teams** — audit bucket permissions and public access settings instantly through conversational queries
 
 
-## Available Tools
+## Available Tools (12)
 - **copy_object**: Copy an object within or between buckets
 - **delete_object**: Remove an object from a bucket
 - **get_bucket_iam**: Get IAM policy for a bucket
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-cloud-storage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-cloud-storage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Cloud Storage** tools.
 
 **Configuration:**

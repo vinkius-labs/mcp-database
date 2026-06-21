@@ -32,7 +32,7 @@ Unlock the power of **Dades Obertes Catalunya**, the official open data platform
 - **Developers** — test data queries and explore API structures directly through natural language
 
 
-## Available Tools
+## Available Tools (2)
 - **query_dataset**: g., abcd-1234). Supports SoQL parameters like $select, $where, $limit.
 
 Query a specific dataset using SoQL parameters
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dades-obertes-catalunya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dades-obertes-catalunya` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dades Obertes Catalunya** tools.
 
 **Configuration:**

@@ -37,7 +37,7 @@ No more manual logging into communication dashboards to send a single text. Your
 - **Operations Managers** — track account balance and manage global communication workflows efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_verification_request**: Aborts an active verification request
 - **get_account_balance**: Retrieves the current Vonage account credit balance
 - **get_country_pricing**: Provide the ISO 3166-1 alpha-2 country code.
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vonage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vonage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vonage** tools.
 
 **Configuration:**

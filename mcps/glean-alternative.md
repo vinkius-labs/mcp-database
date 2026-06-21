@@ -35,7 +35,7 @@ Connect your **Glean** workspace to any AI agent and unlock enterprise knowledge
 - **Engineering Teams** — search codebases, wikis, and design docs through a single conversational interface
 
 
-## Available Tools
+## Available Tools (12)
 - **autocomplete**: Autocomplete suggestions
 - **bulk_index_documents**: Bulk index documents
 - **chat**: AI chat
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glean-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glean-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glean** tools.
 
 **Configuration:**

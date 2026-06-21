@@ -33,7 +33,7 @@ Connect your **LendAPI** account to any AI agent to automate your loan originati
 - **Fintech Developers** — Integrate loan origination logic and borrower management into your custom fintech applications
 
 
-## Available Tools
+## Available Tools (8)
 - **list_loan_applications**: List all loan applications
 - **list_borrowers**: List all borrower profiles
 - **create_loan_application**: Requires a JSON body with application details.
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lendapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lendapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LendAPI** tools.
 
 **Configuration:**

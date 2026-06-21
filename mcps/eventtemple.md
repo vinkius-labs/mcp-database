@@ -35,7 +35,7 @@ No more manual deal logging or digging through complex catering tables. Your AI 
 - **Venue Managers** — monitor upcoming event pipelines and track financial tasks through simple AI queries
 
 
-## Available Tools
+## Available Tools (9)
 - **get_booking**: Get booking details
 - **get_contact**: Get contact details
 - **get_event**: Get event details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventtemple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventtemple` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EventTemple** tools.
 
 **Configuration:**

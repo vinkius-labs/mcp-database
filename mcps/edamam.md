@@ -21,7 +21,7 @@ The **Edamam MCP Server** brings advanced nutritional intelligence to your AI ag
 Free developer tier available. Requires app_id and app_key from the Edamam developer portal. The most advanced nutrition analysis engine available.
 
 
-## Available Tools
+## Available Tools (2)
 - **analyze_nutrition**: g. "1 cup brown rice", "200g chicken breast", "1 large avocado") and get instant calorie, protein, fat, carb, and fiber breakdown. Powered by Edamam's NLP nutrition engine.
 
 Analyze the nutritional content of any food or ingredient using natural language
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `edamam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `edamam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Edamam** tools.
 
 **Configuration:**

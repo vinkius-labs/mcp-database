@@ -35,7 +35,7 @@ Eliminate the friction of switching tabs between IDEs and your ESP. Keep writing
 - **Marketing Leads** — audit behavioral conditions and track segment isolation safely through quick questions
 
 
-## Available Tools
+## Available Tools (10)
 - **list_publications**: List active Beehiiv publications
 - **get_publication**: Get specific Beehiiv publication metadata
 - **list_subscriptions**: List specific Beehiiv active subscribers
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `beehiiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `beehiiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Beehiiv** tools.
 
 **Configuration:**

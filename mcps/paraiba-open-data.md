@@ -33,7 +33,7 @@ The **Paraíba MCP Server** connects your AI agent to the official Dados Abertos
 - **Engaged Citizens** — Exercise transparency by asking simple questions about how state resources are allocated.
 
 
-## Available Tools
+## Available Tools (20)
 - **get_acao_governamental**: Get Ação Governamental (Government Action) data
 - **get_autorizacao_pagamento**: Get Autorizações de Pagamento (Payment Authorizations) data
 - **get_contratos_aditivos**: Get Aditivos de Contratos (Contract Addendums) data
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paraiba-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paraiba-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paraíba Open Data** tools.
 
 **Configuration:**

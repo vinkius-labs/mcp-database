@@ -31,7 +31,7 @@ Connect your **Product Hunt** account to any AI agent and track the latest start
 - **Developers & Designers** — discover new tools, open-source projects, and design inspiration while you code
 
 
-## Available Tools
+## Available Tools (3)
 - **daily_leaderboard**: It returns a list of products with their taglines, vote counts, and URLs.
 
 Fetches the current daily leaderboard of products from Product Hunt
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `product-hunt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `product-hunt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Product Hunt** tools.
 
 **Configuration:**

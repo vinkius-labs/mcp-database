@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire civic participation and voter a
 - **Operations Leads** — automate civic data querying to orchestrate cross-functional outreach teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: direct election data service.
 
 Check if the vote.direct service is operational
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `votedirect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `votedirect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **vote.direct** tools.
 
 **Configuration:**

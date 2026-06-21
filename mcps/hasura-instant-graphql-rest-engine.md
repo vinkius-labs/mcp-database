@@ -34,7 +34,7 @@ Connect your **Hasura** engine to any AI agent to automate database management a
 - **DevOps Engineers** — Monitor Hasura health and configuration consistency across different environments.
 
 
-## Available Tools
+## Available Tools (7)
 - **check_health**: Can optionally use strict mode to verify metadata consistency.
 
 Monitor Hasura server health
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hasura-instant-graphql-rest-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hasura-instant-graphql-rest-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hasura (Instant GraphQL & REST Engine)** tools.
 
 **Configuration:**

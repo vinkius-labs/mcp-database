@@ -32,7 +32,7 @@ Connect your **Kintone** instance to any AI agent and manage business applicatio
 - **Managers** — query records and track metrics across apps
 
 
-## Available Tools
+## Available Tools (8)
 - **add_records**: Input should be a JSON array of record objects.
 
 Add one or more records to an app
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kintone-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kintone-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kintone** tools.
 
 **Configuration:**

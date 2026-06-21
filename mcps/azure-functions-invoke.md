@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely offload complex math, heavy data 
 - **Plug & Play Processing:** Instantly gives your agent access to your proprietary enterprise logic isolated inside a serverless container.
 
 
-## Available Tools
+## Available Tools (1)
 - **invoke_function**: The tool waits for the function to execute and returns the result (JSON or text).
 
 Synchronously invoke the configured Azure Function
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `azure-functions-invoke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `azure-functions-invoke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Azure Functions Invoke** tools.
 
 **Configuration:**

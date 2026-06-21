@@ -35,7 +35,7 @@ Connect AI agents to the TripGo platform for intelligent multimodal journey plan
 Perfect for **urban commuters**, **multimodal travelers**, **cyclists**, **pedestrians**, **transit riders**, **accessibility planners**, and **eco-conscious citizens**. Let AI agents find optimal routes combining buses, trains, bikes, and walking. Ideal for daily commuters who want to compare route options, check real-time departures, track incoming vehicles, and plan sustainable journeys without car dependency.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_arrivals**: Returns route names, origins, scheduled vs estimated arrival times, and delays. Use this to track incoming vehicles. Requires stop ID.
 
 Get upcoming arrivals to a transit stop
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tripgo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tripgo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TripGo** tools.
 
 **Configuration:**

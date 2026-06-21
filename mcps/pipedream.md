@@ -32,7 +32,7 @@ Connect your **Pipedream** automation workspace directly to any AI agent. Review
 - **Automation Builders** — map out complex step trees naturally via the agent without losing context of your broader systems.
 
 
-## Available Tools
+## Available Tools (7)
 - **list_sources**: List event sources
 - **get_source**: Get source details
 - **list_workflows**: List workflows
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipedream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipedream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipedream** tools.
 
 **Configuration:**

@@ -22,7 +22,7 @@ This MCP solves the universal WhatsApp search problem. When you export any chat 
 - **2 Billion Potential Users:** Everyone with WhatsApp can use this instantly.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_whatsapp_chat**: They can export any chat from WhatsApp > Chat > Export Chat.
 
 Parse an exported WhatsApp chat .txt file offline. Extracts messages, senders, timestamps, and participant statistics
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `whatsapp-chat-export-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `whatsapp-chat-export-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WhatsApp Chat Export Parser** tools.
 
 **Configuration:**

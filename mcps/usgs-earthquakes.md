@@ -22,7 +22,7 @@ The **USGS Earthquakes MCP Server** brings planet-scale telemetry directly to yo
 Whether you are building environmental response bots or running historical data analytics on tectonic shifts, this zero-auth integration puts the pulse of the planet in your hands.
 
 
-## Available Tools
+## Available Tools (3)
 - **count_earthquakes**: Get the total count of earthquakes matching specific criteria
 - **query_earthquakes**: Use parameters like starttime, endtime, minmagnitude, and geographic boundaries (latitude/longitude/maxradiuskm) to narrow the search. Maximum 20,000 events returned per query.
 
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `usgs-earthquakes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `usgs-earthquakes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USGS Earthquakes** tools.
 
 **Configuration:**

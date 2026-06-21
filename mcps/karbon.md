@@ -33,7 +33,7 @@ Connect your **Karbon** account to any AI agent to streamline your accounting fi
 - **Client Managers** — Quickly retrieve contact details and historical notes before meetings
 
 
-## Available Tools
+## Available Tools (12)
 - **list_contacts**: Useful for a broad overview of clients and associates.
 
 List all contacts (Organizations and People)
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `karbon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `karbon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Karbon** tools.
 
 **Configuration:**

@@ -22,7 +22,7 @@ Powered by colord (4M+ weekly downloads), every conversion is mathematically exa
 - **Alpha Channel:** Full transparency support with rgba(), hsla(), and 8-digit hex.
 
 
-## Available Tools
+## Available Tools (1)
 - **color_converter_convert**: Pass any valid color string: HEX (#ff5733), RGB (rgb(255,87,51)), HSL (hsl(11,100%,60%)), CMYK, or CSS named colors (tomato, cornflowerblue). The engine returns ALL representations simultaneously so you never need multiple calls.
 
 Converts colors between HEX, RGB, HSL, CMYK formats. Also returns luminance, dark/light detection, closest CSS name, and alpha. CSS Color Level 4 precision
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `color-converter-engine-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `color-converter-engine-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Color Converter Engine** tools.
 
 **Configuration:**

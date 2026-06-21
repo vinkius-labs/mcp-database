@@ -32,7 +32,7 @@ Integrate **Everyware**, the powerful platform for payments and messaging, direc
 - **Operations Teams** — Monitor payment volumes and organizational Everyware metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_everyware_account_metadata**: Retrieve metadata and limits for your Everyware account
 - **get_message_delivery_status**: Get detailed delivery status and information for a specific message
 - **get_payment_volume_summary**: Retrieve a high-level summary of payment volume and success rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `everyware-payments-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `everyware-payments-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Everyware Payments & Messaging** tools.
 
 **Configuration:**

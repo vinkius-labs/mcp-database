@@ -33,7 +33,7 @@ Connect your **Zendesk Sell** (formerly Base CRM) account to any AI agent to aut
 - **Operations Teams** — Automate the creation of sales records and maintain database hygiene effortlessly
 
 
-## Available Tools
+## Available Tools (11)
 - **list_sales_contacts**: List all sales contacts (qualified prospects)
 - **create_sales_contact**: Requires a JSON body with contact details.
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zendesk-sell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zendesk-sell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zendesk Sell** tools.
 
 **Configuration:**

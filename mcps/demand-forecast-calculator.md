@@ -13,7 +13,7 @@ Generate 3-month demand projections using SMA, WMA, and Exponential Smoothing me
 This MCP server provides advanced forecasting capabilities to predict future demand based on historical data. It implements three distinct mathematical models: Simple Moving Average (`analyze_sma`), Weighted Moving Average (`analyze_wma`), and Exponential Smoothing (`analyze_exponential_smoothing`). For each method, the tools perform error backtesting to provide Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE), allowing you to identify the most accurate model for your specific dataset. Use these tools in Cursor, VS Code, Claude Desktop, or Windsurf to automate demand planning.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_exponential_smoothing**: Calculate demand forecast using Exponential Smoothing
 - **analyze_sma**: Calculate demand forecast using Simple Moving Average (SMA)
 - **analyze_wma**: Calculate demand forecast using Weighted Moving Average (WMA)
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `demand-forecast-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `demand-forecast-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Demand Forecast Calculator** tools.
 
 **Configuration:**

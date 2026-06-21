@@ -28,7 +28,7 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **Managers** — Full CRM visibility through conversation
 
 
-## Available Tools
+## Available Tools (5)
 - **hs_analytics_views**: Views are named configurations that scope analytics data — similar to Google Analytics views. Use when the user asks about available reporting scopes or needs a view ID for filtered analytics queries.
 
 List available analytics views in the HubSpot account for filtering web traffic and reporting data
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot Analytics** tools.
 
 **Configuration:**

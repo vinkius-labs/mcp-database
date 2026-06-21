@@ -35,7 +35,7 @@ Connect your **Cheddar (formerly CheddarGetter)** account to any AI agent and ta
 - **Financial Analysts** — verify transaction volumes and promotion effectiveness
 
 
-## Available Tools
+## Available Tools (8)
 - **add_cheddar_charge**: Add a one-time or quantity-based charge to a customer
 - **get_cheddar_customer_details**: Get detailed information for a specific customer
 - **get_cheddar_product_info**: Retrieve core product and configuration information
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cheddar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cheddar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cheddar** tools.
 
 **Configuration:**

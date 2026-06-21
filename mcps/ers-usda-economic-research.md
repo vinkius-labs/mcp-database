@@ -33,7 +33,7 @@ Connect to the **USDA Economic Research Service (ERS)** and query the Agricultur
 - **Policy Researchers** — analyze farm household characteristics and production practices across different U.S. states.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_arms_categories**: List ARMS categories and subcategories
 - **get_arms_farmtypes**: Get all ARMS Farm Types
 - **get_arms_reports**: Get available ARMS reports and variables
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ers-usda-economic-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ers-usda-economic-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ERS USDA (Economic Research)** tools.
 
 **Configuration:**

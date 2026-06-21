@@ -38,7 +38,7 @@ Stop context-switching to the Datadog dashboard every time an alert fires. Your 
 - **Developers** — query metrics, inspect log events and verify synthetics directly from your IDE
 
 
-## Available Tools
+## Available Tools (16)
 - **create_monitor**: Requires the monitor type (metric, anomaly, service check, event, log, process, rum, synthetics), a query string (e.g. "avg(last_5m):avg:system.cpu.user{host:myhost} > 80"), a notification message (using @user, @slack, @pagerduty) and a name. Optionally set tags, priority, renotify interval and threshold windows.
 
 Create a new Datadog monitor
@@ -149,7 +149,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datadog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datadog-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Datadog** tools.
 
 **Configuration:**

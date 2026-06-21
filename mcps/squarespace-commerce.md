@@ -32,7 +32,7 @@ Connect your **Squarespace Commerce** backend operations exclusively to your loc
 - **Shop Managers & Owners** — pull markdown tables highlighting "Low Stock Items" instantly right inside Cursor to orchestrate purchasing cycles quickly
 
 
-## Available Tools
+## Available Tools (10)
 - **adjust_inventory**: Provide a variant_id and a quantity delta (e.g. 5 to add, -2 to subtract).
 
 Adjusts the inventory quantity for a product variant
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `squarespace-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `squarespace-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Squarespace Commerce** tools.
 
 **Configuration:**

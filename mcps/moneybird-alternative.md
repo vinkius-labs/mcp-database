@@ -37,7 +37,7 @@ Connect your **Moneybird** administration to any AI agent and manage Dutch accou
 - **Small Businesses** — track expenses and VAT
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Moneybird API connectivity
 - **create_sales_invoice**: Requires a contact ID and line items.
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moneybird-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moneybird-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moneybird** tools.
 
 **Configuration:**

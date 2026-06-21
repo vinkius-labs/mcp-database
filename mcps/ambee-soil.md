@@ -36,7 +36,7 @@ No more manual soil sensor deployment or complex data extraction. Your AI acts a
 - **Landscapers** — check soil conditions for planting optimization and maintenance planning
 
 
-## Available Tools
+## Available Tools (5)
 - **get_grid_soil**: Returns gridded data points suitable for creating soil condition maps, GIS analysis, and spatial interpolation. Essential for precision agriculture mapping, variable rate application planning, and geospatial soil analysis. AI agents should use this when users ask "generate a soil moisture grid for mapping", "get gridded soil data for my field", or need structured spatial soil data for GIS integration.
 
 Get soil data on a structured grid for spatial analysis and mapping
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ambee-soil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ambee-soil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ambee Soil** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Cloudmersive** API account to any AI agent and simplify how you p
 - **Security Analysts** — perform quick malware checks on suspicious links via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **analyze_text_sentiment**: Analyze text sentiment
 - **check_cloudmersive_status**: Verify connectivity
 - **convert_doc_to_pdf**: Convert document to PDF
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudmersive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudmersive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudmersive** tools.
 
 **Configuration:**

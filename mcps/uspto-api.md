@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire intellectual property research 
 - **Operations Leads** — automate IP data querying to orchestrate cross-functional legal teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the USPTO Open Data API is operational
 - **get_patent_details**: Get full details for a specific patent number
 - **get_trademark_details**: Get full details for a specific trademark serial number
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uspto-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uspto-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USPTO API** tools.
 
 **Configuration:**

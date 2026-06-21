@@ -32,7 +32,7 @@ Connect to the **Tronald Dump** API to retrieve, search, and categorize quotes f
 - **Developers** — integrate a humorous or political quote engine into your AI workflows
 
 
-## Available Tools
+## Available Tools (5)
 - **get_quote**: Get a specific quote by ID
 - **get_quotes_by_tag**: Get quotes associated with a specific tag
 - **get_tags**: Get a list of all tags
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tronald-dump` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tronald-dump` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tronald Dump** tools.
 
 **Configuration:**

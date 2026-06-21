@@ -33,7 +33,7 @@ Connect your **Kavkom** account to any AI agent and manage phone communications 
 - **Managers** — monitor team phone usage and performance
 
 
-## Available Tools
+## Available Tools (7)
 - **create_contact**: Add a new contact
 - **get_call_details**: Get details for a specific call
 - **list_calls**: List Kavkom call history
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kavkom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kavkom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kavkom** tools.
 
 **Configuration:**

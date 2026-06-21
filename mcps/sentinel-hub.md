@@ -37,7 +37,7 @@ Connect to **Sentinel Hub** — the most powerful satellite imagery processing A
 - **Emergency Managers** — assess wildfire damage with burn severity indices in near real-time
 
 
-## Available Tools
+## Available Tools (14)
 - **catalog_search**: Specify a collection ID (e.g., "sentinel-2-l2a", "sentinel-1-grd"), a bounding box as [west, south, east, north] coordinates, and a date range. Returns item metadata including geometry, cloud cover, and band information.
 
 Search the Sentinel Hub STAC catalog for satellite imagery
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sentinel-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sentinel-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sentinel Hub** tools.
 
 **Configuration:**

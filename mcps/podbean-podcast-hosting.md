@@ -33,7 +33,7 @@ Connect your AI agent to **Podbean**, the comprehensive podcast hosting and mone
 - **Marketing Teams** — track performance trends and identify high-engagement episodes via AI assistance
 
 
-## Available Tools
+## Available Tools (8)
 - **get_episode_details**: Get comprehensive metadata for a specific podcast episode
 - **get_episode_analytics**: Retrieve download analytics for a specific episode
 - **get_podcast_analytics**: Retrieve download analytics for a specific podcast
@@ -93,7 +93,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `podbean-podcast-hosting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `podbean-podcast-hosting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Podbean Podcast Hosting** tools.
 
 **Configuration:**

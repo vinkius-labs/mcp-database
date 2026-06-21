@@ -13,7 +13,7 @@ Analyze and decompose supply chain lead times to identify bottlenecks.
 The Lead Time Analyzer is a specialized tool for supply chain professionals. It decomposes total lead time into specific stages, allowing you to distinguish between Value-Added and Non-Value-Added time. By using tools like `analyze_lead_time_composition`, you can identify the primary bottleneck in your process. Additionally, `calculate_reduction_impacts` allows you to simulate a 20% reduction in any stage to see its effect on the total duration, while `evaluate_process_volatility` helps you understand which stages contribute most to process uncertainty.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_lead_time_composition**: Calculates the core metrics of the lead time breakdown
 - **calculate_reduction_impacts**: Simulates efficiency gains by optimizing specific stages
 - **evaluate_process_volatility**: Determines which stages contribute most to the unpredictability of the total lead time
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lead-time-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lead-time-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lead Time Analyzer** tools.
 
 **Configuration:**

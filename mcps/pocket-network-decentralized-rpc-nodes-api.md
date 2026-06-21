@@ -32,7 +32,7 @@ Connect your AI agent to the **Pocket Network** decentralized infrastructure to 
 - **DApp Builders** — automate session checks and relay testing during the development lifecycle
 
 
-## Available Tools
+## Available Tools (7)
 - **get_account**: Get Pocket Network account details
 - **get_app**: Get Pocket Network app details
 - **get_block**: Get Pocket Network block details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pocket-network-decentralized-rpc-nodes-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pocket-network-decentralized-rpc-nodes-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pocket Network (Decentralized RPC Nodes API)** tools.
 
 **Configuration:**

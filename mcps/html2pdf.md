@@ -34,7 +34,7 @@ Transform web content and raw HTML into professional PDF files with **Html2Pdf**
 - **Content Creators** — Archive web articles or format HTML content into clean, portable documents.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_pdf**: Returns the PDF as a base64 encoded string, or triggers an async callback if callBackUrl is provided.
 
 Convert HTML or a URL to a PDF document
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `html2pdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `html2pdf` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Html2Pdf** tools.
 
 **Configuration:**

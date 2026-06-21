@@ -35,7 +35,7 @@ No more manual contact research or complex campaign toggling. Your AI acts as yo
 - **Growth Teams** — automate lead discovery and scale personalized outreach through simple AI queries
 
 
-## Available Tools
+## Available Tools (8)
 - **add_to_campaign**: Add contact to a campaign
 - **create_contact**: Create a new lead/contact
 - **enrich_contact_ai**: Trigger AI enrichment for a contact
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `firstquadrant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `firstquadrant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FirstQuadrant** tools.
 
 **Configuration:**

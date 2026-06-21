@@ -18,7 +18,7 @@ Large Language Models often approximate metric-to-imperial conversions, which ca
 - **Privacy First (Local):** Executes 100% locally. Zero API calls, meaning your sensitive engineering metrics or server logs never leave your machine.
 
 
-## Available Tools
+## Available Tools (4)
 - **convert_digital_storage**: g., 1 KB = 1024 B).
 
 Converts digital storage using binary prefixes (B, KB, MB, GB, TB)
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `universal-unit-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `universal-unit-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Universal Unit Converter** tools.
 
 **Configuration:**

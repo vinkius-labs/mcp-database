@@ -36,7 +36,7 @@ Connect your **Google Sheets** via OAuth2 to any AI agent and take full control 
 - **Developers** — test and debug complex spreadsheet batch operations and verify A1 notation logic through the chat interface
 
 
-## Available Tools
+## Available Tools (7)
 - **sheets.info**: Accepts full Google Sheets URL or just the spreadsheet ID. For reading cell values, use sheets.read.
 
 Get Google Sheets spreadsheet metadata: title, timezone, locale, and list of all sheet tabs with row/column dimensions
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-sheets-oauth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-sheets-oauth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Sheets (OAuth)** tools.
 
 **Configuration:**

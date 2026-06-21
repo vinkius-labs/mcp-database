@@ -13,7 +13,7 @@ Analyze construction alternatives by comparing Life Cycle Costs and Savings-to-I
 The Value Engineering Comparator MCP server provides specialized tools for construction professionals to evaluate the long-term financial viability of different building solutions. By using `compute_total_lcc`, you can determine the total economic commitment of an asset from inception to abandonment. The `calculate_net_savings` tool allows for direct comparison between baseline and proposed alternatives, while `calculate_investment_efficiency` quantifies the efficiency of extra initial capital through the Savings-to-Investment Ratio (SIR). This server acts as a bridge connecting AI agents in Cursor, VS Code, Claude Desktop, and Windsurf to precise financial engineering calculations.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_investment_efficiency**: 
 - **compute_total_lcc**: 
 - **calculate_net_savings**: 
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `value-engineering-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `value-engineering-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Value Engineering Comparator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Teachable** school to any AI agent to streamline your course mana
 - **School Administrators** — monitor the health of the school through transaction and webhook audits.
 
 
-## Available Tools
+## Available Tools (7)
 - **list_courses**: Can be filtered by name, publish status, or author.
 
 List all courses in the Teachable school
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `teachable-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `teachable-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Teachable (Extended)** tools.
 
 **Configuration:**

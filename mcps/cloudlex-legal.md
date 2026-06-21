@@ -41,7 +41,7 @@ Your AI becomes a legal practice assistant, helping you track cases, manage clie
 - **Case Managers** — organize medical records, liens, and settlement documentation
 
 
-## Available Tools
+## Available Tools (15)
 - **create_cloudlex_case**: USE WHEN:
 - User wants to open a new legal case
 - User needs to create a new matter for a client
@@ -192,7 +192,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudlex-legal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudlex-legal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CloudLex Legal** tools.
 
 **Configuration:**

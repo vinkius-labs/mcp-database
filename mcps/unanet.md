@@ -13,7 +13,7 @@ Project-based ERP for government contractors and professional services.
 The Unanet MCP Server connects AI agents to the Unanet project management and ERP suite. It enables agents to read timesheets, view expense reports, query project statuses, and list organizational workforce data, streamlining compliance and operational efficiency.
 
 
-## Available Tools
+## Available Tools (4)
 - **expenses**: List expense reports for a user
 - **projects**: List projects in Unanet
 - **timesheets**: List timesheets for a user
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unanet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unanet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unanet** tools.
 
 **Configuration:**

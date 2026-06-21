@@ -13,7 +13,7 @@ Calculate statutory limitation periods and expiry dates for European jurisdictio
 This MCP server provides a precise way to determine the statutes of limitations across various European legal systems. Using tools like `get_limitation_info`, you can retrieve the standard duration, starting point logic, and interruption causes for specific countries such as Germany (DE), France (FR), Spain (ES), and Portugal (PT). Additionally, the `calculate_expiry_date` tool allows you to input an event date to find the exact calendar day when a legal claim expires. It is designed to bridge AI agents with complex jurisdictional data, ensuring accurate tracking of legal deadlines.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_limitation_info**: Evaluates the standard duration, starting point logic, and interruption causes for a specific country and relationship type
 - **list_supported_jurisdictions**: Provides a list of all European countries currently serviced by the calculator
 - **calculate_expiry_date**: Determines the exact calendar date when a claim will expire based on a known starting event
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eu-limitation-periods-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eu-limitation-periods-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EU Limitation Periods Calculator** tools.
 
 **Configuration:**

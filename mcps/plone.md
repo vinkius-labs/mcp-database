@@ -34,7 +34,7 @@ No more manual navigation through complex CMS hierarchies. Your AI acts as a con
 - **Developers** — inspect content structures and metadata directly from the code editor
 
 
-## Available Tools
+## Available Tools (17)
 - **create_content**: Create new content in Plone
 - **create_group**: Create a new group
 - **create_user**: Create a new user
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plone** tools.
 
 **Configuration:**

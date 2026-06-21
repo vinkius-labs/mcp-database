@@ -36,7 +36,7 @@ No more jumping between multiple dashboard tabs. Your AI assistant acts as a ded
 - **Sales Development Reps** — monitor new inbound chats and qualify leads directly from the communication flow.
 
 
-## Available Tools
+## Available Tools (11)
 - **add_customer_tag**: Add a label/tag to a customer profile
 - **send_message**: Pass the payload as a JSON string in "body_json" (e.g., {"chat": 123, "text": "Hello"}).
 
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `helpcrunch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `helpcrunch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HelpCrunch** tools.
 
 **Configuration:**

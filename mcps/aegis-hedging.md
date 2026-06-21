@@ -34,7 +34,7 @@ Connect your **AEGIS Hedging** (Revenue Intelligence) account to your AI agent t
 - **Compliance Officers** — verify SDR reporting and maintain a complete audit trail of hedging activities
 
 
-## Available Tools
+## Available Tools (4)
 - **list_trades**: List energy hedge trades
 - **get_valuations**: Get real-time MTM valuations
 - **get_forward_curves**: Retrieve energy forward curves
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aegis-hedging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aegis-hedging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AEGIS Hedging** tools.
 
 **Configuration:**

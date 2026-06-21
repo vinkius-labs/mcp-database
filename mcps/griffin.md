@@ -34,7 +34,7 @@ Connect your **Griffin** Banking-as-a-Service account to any AI agent and take f
 - **Product Engineers** — prototype banking features and verify API responses directly through the chat interface synchronously
 
 
-## Available Tools
+## Available Tools (12)
 - **create_internal_transfer**: Transfer money between internal accounts
 - **get_account**: Get details for a specific bank account
 - **get_index**: Get the root index of resources from the Griffin API
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `griffin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `griffin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Griffin** tools.
 
 **Configuration:**

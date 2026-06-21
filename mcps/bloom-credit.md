@@ -33,7 +33,7 @@ Connect your **Bloom Credit** account to any AI agent and orchestrate your credi
 - **Compliance Teams** — monitor furnishment accounts and organization structures using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_consumer**: Create a new consumer profile
 - **create_order**: Order credit data for a consumer
 - **get_account_info**: Get authenticated account profile info
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bloom-credit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bloom-credit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bloom Credit** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **BookingLive** account to any AI agent to streamline your scheduli
 - **E-commerce Leads** — automate the creation and updating of complex booking orders through AI-driven workflows.
 
 
-## Available Tools
+## Available Tools (17)
 - **abort_order**: Aborts an order to ensure no pending items remain
 - **add_to_order**: Adds items to an existing order
 - **cancel_order**: Cancels an order and sends a cancellation email
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bookinglive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bookinglive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BookingLive** tools.
 
 **Configuration:**

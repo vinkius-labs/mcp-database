@@ -34,7 +34,7 @@ Connect your **MLflow** tracking server to any AI agent and take full control of
 - **AI Operations Teams** — track production model versions and ensure consistent deployment of high-performing ML models efficiently
 
 
-## Available Tools
+## Available Tools (6)
 - **search_experiments**: Search all MLflow registered Experiments explicitly
 - **get_experiment**: Get an explicit explicit MLflow Experiment by ID configuration
 - **search_runs**: Search exact Model Training Runs across specific Experiments
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mlflow-ml-lifecycle-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mlflow-ml-lifecycle-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MLflow (ML Lifecycle Management)** tools.
 
 **Configuration:**

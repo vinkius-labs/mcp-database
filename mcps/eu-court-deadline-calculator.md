@@ -13,7 +13,7 @@ Calculate legal procedural deadlines across European jurisdictions, accounting f
 The EU Court Deadline Calculator is a specialized engine designed to determine legal procedural deadlines within various European jurisdictions. By providing a country code, an event type (such as response, appeal, or execution), and the date of the triggering event, the tool calculates the final deadline while automatically accounting for weekends and national holidays. It uses `calculate_deadline` to find the adjusted date, `check_holiday_status` to verify specific dates, and `list_jurisdictions` to identify supported countries. This ensures that legal professionals can accurately track deadlines without manual calendar checking.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_deadline**: Calculates the final legal deadline based on a triggering event and specific legal parameters
 - **check_holiday_status**: Verifies if a specific calendar date is recognized as a public holiday in a chosen country
 - **list_jurisdictions**: Provides a valid list of supported countries and court levels
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eu-court-deadline-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eu-court-deadline-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EU Court Deadline Calculator** tools.
 
 **Configuration:**

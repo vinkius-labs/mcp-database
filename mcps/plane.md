@@ -32,7 +32,7 @@ Equip any AI agent with direct access to your **Plane** workspace. Whether you'r
 - **Product Teams** — cross-reference structured modules versus labels without dealing with the visual planner interface.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_projects**: List projects in a Plane workspace
 - **get_project**: Get specific details of a Plane project
 - **list_work_items**: List work items (issues) inside a Plane project
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plane** tools.
 
 **Configuration:**

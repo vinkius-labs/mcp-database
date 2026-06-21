@@ -28,7 +28,7 @@ Connect to the exact datasets used by the Federal Reserve and economists to meas
 - **Corporate Finance** — Adjust projections and budgets to accurate inflation curves
 
 
-## Available Tools
+## Available Tools (2)
 - **get_cpi_inflation**: S. Consumer Price Index baseline. Identifies macroeconomic price shifts and consumer buying power anomalies.
 
 Get Consumer Price Index (CPI-U) data for inflation tracking
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bls-prices-consumer-price-index-cpi-inflation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bls-prices-consumer-price-index-cpi-inflation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BLS Prices — Consumer Price Index (CPI) & Inflation** tools.
 
 **Configuration:**

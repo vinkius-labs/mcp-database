@@ -33,7 +33,7 @@ Connect your **AccuWeather** API to any AI agent to integrate hyper-local weathe
 - **Data Analysts** — Gather historical and current climate data for regional reporting.
 
 
-## Available Tools
+## Available Tools (13)
 - **alarms**: Get weather-related alarms for a location key
 - **autocomplete_city**: Get city suggestions as you type
 - **current_conditions**: Get current weather conditions for a location key
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accuweather-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accuweather-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AccuWeather** tools.
 
 **Configuration:**

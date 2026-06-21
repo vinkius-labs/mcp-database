@@ -35,7 +35,7 @@ No more manual status updates or digging through project boards. Your AI assista
 - **Operations Leaders** — automate time record collection and project volume reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_project**: Create a new onboarding project
 - **create_time_record**: Log time against a specific task or project
 - **get_project**: Get detailed information about a specific project
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `guidecx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `guidecx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GUIDEcx** tools.
 
 **Configuration:**

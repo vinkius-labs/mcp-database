@@ -13,7 +13,7 @@ Manage contractors, customers, and jobs via JobProgress API.
 Empower your AI agents with JobProgress's (now part of Leap) business management platform for contractors. This MCP server allows you to list and retrieve customers and jobs, track estimates and proposals, manage workflows and tasks, and view appointments directly through the JobProgress API. Ideal for automating construction and home improvement operations.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_customer**: Returns addresses, project history, and custom metadata. Essential for deep intelligence on a customer before preparing estimates or jobs.
 
 Retrieves details for a specific customer
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jobprogress-leap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jobprogress-leap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JobProgress (Leap)** tools.
 
 **Configuration:**

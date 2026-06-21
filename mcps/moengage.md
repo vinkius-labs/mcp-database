@@ -33,7 +33,7 @@ Connect your **MoEngage** account to any AI agent and manage customer engagement
 - **Developers** — integrate server-side events and push notifications
 
 
-## Available Tools
+## Available Tools (13)
 - **check_moengage_status**: Verify connectivity
 - **get_campaign_stats**: Get campaign stats
 - **get_campaign**: Get campaign details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moengage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moengage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MoEngage** tools.
 
 **Configuration:**

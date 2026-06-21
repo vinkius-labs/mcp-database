@@ -35,7 +35,7 @@ Equip your AI agent with the most comprehensive logistics intelligence available
 - **Customer Support Agents** — retrieve real-time tracking data to resolve delivery inquiries faster.
 
 
-## Available Tools
+## Available Tools (7)
 - **delete_tracking**: Delete a tracking number
 - **detect_carrier**: Detect carrier for a number
 - **get_tracking_info**: Get status for a tracking number
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `17track` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `17track` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **17Track** tools.
 
 **Configuration:**

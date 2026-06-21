@@ -36,7 +36,7 @@ Connect your **Equixly** account to any AI agent and take full control of your a
 - **QA Engineers** — verify API security boundaries and test for business logic flaws through natural conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **create_service**: Provide the human-readable name and the live base URL. After creation, upload an API spec to maximize attack surface coverage.
 
 Register a new API target service for autonomous pentesting
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `equixly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `equixly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Equixly** tools.
 
 **Configuration:**

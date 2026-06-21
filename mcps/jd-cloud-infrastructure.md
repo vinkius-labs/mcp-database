@@ -33,7 +33,7 @@ Connect your AI agents directly to **JD Cloud** (京东云), the enterprise clou
 - **Supply Chain Architects** — Oversee the cloud backbone powering JD's logistics network
 
 
-## Available Tools
+## Available Tools (11)
 - **describe_cloud_disk**: Get detailed information about a specific cloud disk
 - **describe_vm_instance**: Get detailed information about a specific VM instance
 - **describe_metric_data**: Query monitoring metric data for a cloud resource
@@ -93,7 +93,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jd-cloud-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jd-cloud-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JD Cloud Infrastructure** tools.
 
 **Configuration:**

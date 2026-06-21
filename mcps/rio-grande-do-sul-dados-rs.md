@@ -33,7 +33,7 @@ Connect to the **Dados RS** portal and explore the public data infrastructure of
 - **Developers** — integrate real-time public data into applications using the DataStore SQL capabilities
 
 
-## Available Tools
+## Available Tools (11)
 - **search_datastore_sql**: SQL Query on DataStore
 - **search_datastore**: Search DataStore
 - **list_groups**: List groups
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rio-grande-do-sul-dados-rs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rio-grande-do-sul-dados-rs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rio Grande do Sul (Dados RS)** tools.
 
 **Configuration:**

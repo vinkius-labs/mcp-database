@@ -32,7 +32,7 @@ Equip your AI agent with environmental intelligence through the **Green Web Foun
 - **Procurement Teams** — verify the green claims of potential SaaS and cloud vendors.
 
 
-## Available Tools
+## Available Tools (1)
 - **check_green_hosting**: Check if a website is hosted on green energy
 
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `green-web-check` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `green-web-check` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Green Web Check** tools.
 
 **Configuration:**

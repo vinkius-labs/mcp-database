@@ -35,7 +35,7 @@ Connect your AI agents to **Agora**, the leading real-time engagement platform f
 - **Product Managers** — retrieve monthly consumption reports and user engagement data via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **acquire_cloud_recording**: Required before starting.
 
 Request a resource ID for cloud recording
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `agora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `agora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Agora** tools.
 
 **Configuration:**

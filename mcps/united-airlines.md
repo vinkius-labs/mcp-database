@@ -38,7 +38,7 @@ No more switching between multiple flight tracker apps or digging through airlin
 - **Aviation Enthusiasts & Analysts** — explore United's route network, analyze fleet composition, and review operational patterns across major hubs like Newark (EWR), Chicago (ORD), Houston (IAH), Denver (DEN), and San Francisco (SFO)
 
 
-## Available Tools
+## Available Tools (12)
 - **get_aircraft_fleet**: Returns aircraft types, registration numbers, and other fleet details. Use this when users want to understand the types of aircraft United Airlines operates or find information about specific aircraft in their fleet. This provides static fleet composition data, not real-time aircraft positioning.
 
 Get information about United Airlines aircraft fleet
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `united-airlines` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `united-airlines` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **United Airlines** tools.
 
 **Configuration:**

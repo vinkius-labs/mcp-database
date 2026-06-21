@@ -33,7 +33,7 @@ Connect your **zipBoard** account to any AI agent to streamline your visual revi
 - **Project Managers** — monitor overall project health and organization-wide feedback cycles in real-time.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_project**: Pass data as a JSON string.
 
 Create a new project
@@ -93,7 +93,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zipboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zipboard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **zipBoard** tools.
 
 **Configuration:**

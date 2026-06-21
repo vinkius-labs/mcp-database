@@ -19,7 +19,7 @@ When a scheduling agent needs to know the time difference between São Paulo and
 - **Bidirectional:** Shows both the source and target local times plus the exact offset in hours and minutes.
 
 
-## Available Tools
+## Available Tools (1)
 - **get_timezone_offset**: Pass two IANA timezone names (e.g. "America/Sao_Paulo", "Europe/London") and optionally an ISO 8601 datetime. The engine returns the exact offset in hours/minutes and whether each zone is in DST. Never calculate DST offsets yourself — you will get it wrong.
 
 Calculates the exact offset between two IANA timezones at a specific moment, respecting Daylight Saving Time (DST). Powered by Luxon
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `timezone-offset-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `timezone-offset-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Timezone Offset Engine** tools.
 
 **Configuration:**

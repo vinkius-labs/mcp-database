@@ -34,7 +34,7 @@ Connect to the **National Renewable Energy Laboratory (NREL)** API through your 
 - **Energy Consultants** — automate the retrieval of utility rates and solar production estimates for client reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_geothermal_resource**: Check geothermal resource potential
 - **get_nearest_stations**: Find nearest fuel stations
 - **get_pvwatts_estimates**: Estimate solar energy production
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nrel-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nrel-energy-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NREL Energy Data** tools.
 
 **Configuration:**

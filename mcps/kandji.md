@@ -13,7 +13,7 @@ Manage Apple devices, blueprints, and security via Kandji MDM API.
 Empower your AI agents with Kandji's modern Apple MDM platform. This MCP server allows you to list and retrieve device details, manage blueprints and custom apps, track administrative activity, and view system security parameters directly through the Kandji API. Ideal for automating IT operations and fleet security for macOS and iOS.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_device**: Essential for deep-dive auditing of a specific asset.
 
 Retrieves details for a specific device
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kandji` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kandji` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kandji** tools.
 
 **Configuration:**

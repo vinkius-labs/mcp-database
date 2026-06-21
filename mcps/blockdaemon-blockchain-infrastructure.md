@@ -33,7 +33,7 @@ Connect your **Blockdaemon** account to any AI agent to interact with major bloc
 - **Crypto Operations** — Monitor wallet activity and UTXO sets for treasury management.
 
 
-## Available Tools
+## Available Tools (4)
 - **list_blocks**: Get a list of block identifiers
 - **get_financial_report**: Get a financial report for an address
 - **list_transactions**: Get a list of transactions for an address
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blockdaemon-blockchain-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blockdaemon-blockchain-infrastructure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blockdaemon (Blockchain Infrastructure)** tools.
 
 **Configuration:**

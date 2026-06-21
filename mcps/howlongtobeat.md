@@ -33,7 +33,7 @@ Equip your AI agent with the ultimate gaming library intelligence via the **HowL
 - **Game Journalists** — verify official versus community-reported gameplay durations.
 
 
-## Available Tools
+## Available Tools (1)
 - **search_game_times**: Search for game completion times
 
 
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `howlongtobeat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `howlongtobeat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HowLongToBeat** tools.
 
 **Configuration:**

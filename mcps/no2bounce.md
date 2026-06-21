@@ -32,7 +32,7 @@ Connect **No2Bounce** to your AI agent to ensure your email lists are clean and 
 - **Developers** — Integrate email verification into registration or contact forms via AI-driven automation.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_validation_status**: Check validation status or get final results
 - **validate_bulk**: Returns a trackingId to check status later.
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `no2bounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `no2bounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **No2Bounce** tools.
 
 **Configuration:**

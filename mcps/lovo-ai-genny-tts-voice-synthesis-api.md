@@ -32,7 +32,7 @@ Connect **Lovo AI (Genny)** to your AI agent to transform text into lifelike spe
 - **Marketers** — Quickly produce localized audio versions of ad copy and social media content.
 
 
-## Available Tools
+## Available Tools (4)
 - **create_tts_job**: Submit a text-to-speech synthesis job
 - **get_tts_job**: Check the status of a previously submitted TTS job
 - **get_speaker**: Get detailed information about a specific speaker
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lovo-ai-genny-tts-voice-synthesis-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lovo-ai-genny-tts-voice-synthesis-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lovo AI (Genny TTS & Voice Synthesis API)** tools.
 
 **Configuration:**

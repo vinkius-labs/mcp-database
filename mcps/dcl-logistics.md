@@ -32,7 +32,7 @@ Integrate **DCL Logistics**, the leader in third-party logistics (3PL) and fulfi
 - **Customer Support Teams** — Gather tracking information and return statuses for customer inquiries.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_details**: Returns account-level metadata such as company name, service tier, and active warehouse assignments.
 
 Retrieve metadata for your DCL Logistics account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dcl-logistics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dcl-logistics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DCL Logistics** tools.
 
 **Configuration:**

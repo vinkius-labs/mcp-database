@@ -35,7 +35,7 @@ Integrate **Livestorm**, the leading browser-based webinar and video events plat
 - **Customer Success** — Track training webinar attendance and send replay links to customers who missed sessions
 
 
-## Available Tools
+## Available Tools (10)
 - **create_event**: Provide at minimum the event title. Optionally specify description, start/end times, and event type (live, replay, or on-demand).
 
 Create a new webinar or event in Livestorm
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `livestorm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `livestorm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Livestorm** tools.
 
 **Configuration:**

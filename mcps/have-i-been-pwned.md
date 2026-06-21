@@ -32,7 +32,7 @@ Connect your AI agent to **Have I Been Pwned**, the internet's most trusted reso
 - **Researchers** — analyze trends and impact of major data breaches
 
 
-## Available Tools
+## Available Tools (5)
 - **check_password_safety**: Uses k-anonymity; your full password is never sent to the server.
 
 Check if a password has ever appeared in a data breach (safe, k-anonymity search)
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `have-i-been-pwned` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `have-i-been-pwned` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Have I Been Pwned** tools.
 
 **Configuration:**

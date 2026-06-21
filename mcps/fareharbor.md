@@ -34,7 +34,7 @@ Connect your **FareHarbor** affiliate or partner account to any AI agent and tak
 - **Operations Teams** — monitor booking statuses and operator availability through simple natural language queries
 
 
-## Available Tools
+## Available Tools (11)
 - **create_booking**: Create a new booking for a tour or activity
 - **get_availability**: Get details for a specific availability slot
 - **get_booking**: Get details for a specific booking by UUID
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fareharbor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fareharbor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FareHarbor** tools.
 
 **Configuration:**

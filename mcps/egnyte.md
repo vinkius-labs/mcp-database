@@ -36,7 +36,7 @@ No more manual folder navigation or complex permission setting in the web UI. Yo
 - **Compliance Officers** — search for sensitive documents and verify access levels through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_folder**: Create a new folder
 - **create_shared_link**: Generate share link
 - **delete_item**: Delete file or folder
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `egnyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `egnyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Egnyte** tools.
 
 **Configuration:**

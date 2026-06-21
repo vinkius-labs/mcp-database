@@ -13,7 +13,7 @@ Interactive, personalized product demos.
 The Storylane MCP server connects your AI agent directly to your demo infrastructure. Query demo completion rates, create personalized demo links for prospects, and sync engagement data natively.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_demo_link**: Generate a new trackable demo link
 - **get_demo_analytics**: Get engagement metrics for a specific demo
 - **get_demo**: Get metadata and status for a specific demo
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `storylane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `storylane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Storylane** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual searching through fragmented charity databases. Your AI acts as y
 - **Developers** — integrate high-quality nonprofit data and donation links into custom internal tools and social platforms
 
 
-## Available Tools
+## Available Tools (12)
 - **browse_by_cause**: Browse by cause
 - **browse_causes**: Browse causes
 - **check_everyorg_status**: Verify connectivity
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `everyorg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `everyorg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Every.org** tools.
 
 **Configuration:**

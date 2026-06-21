@@ -29,7 +29,7 @@ Empower your AI agents to completely automate your billing and tax operations us
 Perfect for financial controllers, accountants, and businesses operating in Saudi Arabia that require strict ZATCA e-invoicing compliance combined with AI automation.
 
 
-## Available Tools
+## Available Tools (20)
 - **check_simplefatoora_status**: Verify connectivity
 - **create_credit_note**: Create credit note
 - **create_customer**: Create a customer
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simplefatoora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simplefatoora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SimpleFatoora** tools.
 
 **Configuration:**

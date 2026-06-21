@@ -35,7 +35,7 @@ No more switching to the Miro app to check board content or add a quick sticky n
 - **Team Leads** — monitor collaboration activity, review comments and ensure proper board access for team members
 
 
-## Available Tools
+## Available Tools (14)
 - **add_board_member**: Requires the board ID and user ID. Optionally set the role (owner, admin, editor, commenter, viewer). The user must already have a Miro account.
 
 Add a member to a Miro board
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `miro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `miro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Miro** tools.
 
 **Configuration:**

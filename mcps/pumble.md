@@ -32,7 +32,7 @@ Connect your **Pumble** workspace to any AI agent and bring powerful automation 
 - **Operations Leads** — provision new project channels instantly and broadcast identical messages across the workspace
 
 
-## Available Tools
+## Available Tools (10)
 - **chat_add_reaction**: Adds an emoji reaction to a message
 - **chat_delete_message**: This action is irreversible.
 
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pumble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pumble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pumble** tools.
 
 **Configuration:**

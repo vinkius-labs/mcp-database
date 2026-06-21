@@ -13,7 +13,7 @@ Omnichannel marketing automation with eSputnik.
 The eSputnik MCP server allows your AI agent to orchestrate marketing campaigns across Email, SMS, Web Push, and Mobile Push. Send messages, retrieve contact lists, and manage omnichannel workflows seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **attach_to_group**: Add contacts to a specific group
 - **create_contact**: Create a new contact in eSputnik
 - **detach_from_group**: Remove contacts from a group
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `esputnik` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `esputnik` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **eSputnik** tools.
 
 **Configuration:**

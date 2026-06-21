@@ -43,7 +43,7 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 - **Content Creators** — generate 3D assets for videos, presentations, and social media
 
 
-## Available Tools
+## Available Tools (12)
 - **generate_crm_3d**: CRM is effective for objects with complex shapes and detailed surfaces. Accepts image URLs and returns 3D models with geometry and texture. Essential for complex object reconstruction, detailed asset creation, and applications needing accurate shape recovery. AI agents should reference this when users ask "reconstruct this object in 3D", "create a detailed 3D from this complex image", or need geometry-focused 3D generation.
 
 Generate 3D models using Canvas Reconstruction Model (CRM)
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `falai-3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `falai-3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **fal.ai 3D** tools.
 
 **Configuration:**

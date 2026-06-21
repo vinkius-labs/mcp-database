@@ -35,7 +35,7 @@ Connect your **DataForSEO** account to any AI agent and take full control of you
 - **Data Analysts** — retrieve structured SERP data across multiple search engines for market research and trend analysis
 
 
-## Available Tools
+## Available Tools (10)
 - **amazon_asin**: Identify precise active arrays spanning native Hold parsing
 - **baidu_organic**: ` parsing CN exact local search features excluding un-indexed subsets.
 
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dataforseo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dataforseo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DataForSEO** tools.
 
 **Configuration:**

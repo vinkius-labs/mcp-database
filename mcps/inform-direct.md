@@ -35,7 +35,7 @@ No more manual logging into Companies House or secretarial portals to check dead
 - **Business Owners** â€” automate the management of their UK company portfolio through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **add_company**: Add a company
 - **check_informdirect_status**: Verify Inform Direct API connectivity
 - **get_account**: Get account info
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inform-direct` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inform-direct` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Inform Direct** tools.
 
 **Configuration:**

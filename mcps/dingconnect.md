@@ -32,7 +32,7 @@ Integrate **DingConnect**, the world's leading mobile top-up platform, directly 
 - **Customer Service Teams** — Research operator support and product offerings during customer resolution.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_mobile_service_status**: Check if mobile services are available for a specific destination (mock logic)
 - **get_api_account_metadata**: Retrieve metadata and settings for your DingConnect API account
 - **get_account_credit_balance**: Retrieve the current credit balance for your DingConnect account
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dingconnect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dingconnect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DingConnect** tools.
 
 **Configuration:**

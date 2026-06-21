@@ -22,7 +22,7 @@ Connect **Gusto** to any AI agent and streamline your entire HR and payroll oper
 - **Departments & Locations** — Organizational structure and office locations
 
 
-## Available Tools
+## Available Tools (10)
 - **list_companies**: List managed companies
 - **list_time_off_policies**: List time-off policies
 - **get_company**: Get company details
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gusto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gusto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gusto** tools.
 
 **Configuration:**

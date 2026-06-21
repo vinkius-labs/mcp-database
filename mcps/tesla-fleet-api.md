@@ -36,7 +36,7 @@ The AI Agent MUST ALWAYS first invoke `wake_up_vehicle`, wait 10-15 seconds, and
 Specifically built for **Fleet Managers**, **Automotive Logistics Engineers**, and **Enterprise Operators** managing explicit Tesla vehicle matrices.
 
 
-## Available Tools
+## Available Tools (8)
 - **tesla_control_charge_port**: Call wake_up securely first executing correctly.
 
 Engage explicitly the charging port relay actively isolating the power array bounds smoothly
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tesla-fleet-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tesla-fleet-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tesla Fleet API** tools.
 
 **Configuration:**

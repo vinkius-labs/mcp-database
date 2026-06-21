@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire visual rendering and website ca
 - **Operations Leads** — automate website rendering to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_metadata**: Get metadata for a URL (Placeholder)
 - **generate_pdf**: Generate a PDF from a URL
 - **take_full_page_screenshot**: Take a full-page screenshot of a URL
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `urlbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `urlbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Urlbox** tools.
 
 **Configuration:**

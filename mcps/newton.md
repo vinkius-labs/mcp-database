@@ -33,7 +33,7 @@ Connect the **Newton** symbolic math engine to your AI agent to solve complex ma
 - **Data Scientists** — Validate mathematical models and simplify complex expressions during the research phase.
 
 
-## Available Tools
+## Available Tools (15)
 - **math_abs**: Calculate the absolute value of an expression
 - **math_arccos**: Calculate the inverse cosine of an expression
 - **math_arcsin**: Calculate the inverse sine of an expression
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `newton` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `newton` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Newton** tools.
 
 **Configuration:**

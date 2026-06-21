@@ -38,7 +38,7 @@ No more manual legal research across fragmented government websites. Your AI act
 - **Policy Researchers** — conduct 50-state surveys, analyze legislative history, and compare statutory changes over time
 
 
-## Available Tools
+## Available Tools (14)
 - **get_caselaw_opinion**: Use this to get the complete court opinion after finding it via search_caselaw.
 The response includes the full opinion text, court details, date, citations, and parties involved.
 
@@ -190,7 +190,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openlaws` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openlaws` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenLaws** tools.
 
 **Configuration:**

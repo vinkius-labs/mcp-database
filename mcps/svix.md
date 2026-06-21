@@ -35,7 +35,7 @@ No more manual debugging through logs. Your AI acts as a dedicated DevOps engine
 - **Product Integrations Leads** — manage customer-facing webhook applications and verify message flows in real-time.
 
 
-## Available Tools
+## Available Tools (15)
 - **create_application**: Create a new Svix application
 - **create_endpoint**: Create a new endpoint for a Svix application
 - **create_message**: Send a new webhook message
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `svix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `svix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Svix** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Moneypenny** account to any AI agent and review your business com
 - **Customer Service Leads** — track response patterns and interaction trends.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_activity_summary**: Get a summary of all calls and chats for today
 - **list_call_messages**: Format dates as MM/DD/YYYY.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moneypenny` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moneypenny` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moneypenny** tools.
 
 **Configuration:**

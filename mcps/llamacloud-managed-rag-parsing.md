@@ -34,7 +34,7 @@ Connect your **LlamaCloud** account to any AI agent and take full control of you
 - **Data Scientists** — audit managed indices and track parsing statuses to ensure high-quality fact-grounding for AI agents
 
 
-## Available Tools
+## Available Tools (6)
 - **list_pipelines**: List LlamaCloud deployed data pipelines
 - **get_pipeline**: Get configuration details for a specific pipeline
 - **list_projects**: List active LlamaCloud projects
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `llamacloud-managed-rag-parsing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `llamacloud-managed-rag-parsing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LlamaCloud (Managed RAG & Parsing)** tools.
 
 **Configuration:**

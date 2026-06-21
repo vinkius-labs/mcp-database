@@ -33,7 +33,7 @@ Connect to **CORE**, the world's largest aggregator of open access research pape
 - **Data Scientists** — access a massive corpus of open access metadata for literature reviews and scientific data analysis.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_article_history**: Get the history of an article
 - **get_article_pdf**: Get the PDF download URL for an article
 - **get_article**: Get a specific article by CORE ID
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `core-open-access-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `core-open-access-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CORE (Open Access Research)** tools.
 
 **Configuration:**

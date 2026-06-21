@@ -33,7 +33,7 @@ Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora
 - **Crypto Power Users** — Monitor personal portfolios and track specific on-chain events through a conversational interface.
 
 
-## Available Tools
+## Available Tools (30)
 - **get_abi**: Get Contract ABI for Verified Source Codes
 - **get_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_balance**: Get Ether Balance for a Single Address
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aurorascan-aurora-network-l2-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aurorascan-aurora-network-l2-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aurorascan (Aurora Network L2 Block Explorer API)** tools.
 
 **Configuration:**

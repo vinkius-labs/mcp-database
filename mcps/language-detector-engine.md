@@ -22,7 +22,7 @@ This MCP uses `franc` (200K+ weekly downloads, inspired by Google's CLD2) to per
 - **Confidence Scores:** Use the `all` flag to get an array of all matches with their exact probability scores.
 
 
-## Available Tools
+## Available Tools (1)
 - **detect_language**: Provide as much text as possible for higher accuracy.
 
 Detect the language of any text using n-gram analysis. Supports 400+ languages. Returns ISO 639-3 codes (e.g., "por", "eng", "spa")
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `language-detector-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `language-detector-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Language Detector Engine** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Browse AI** account to any AI agent and orchestrate your web scra
 - **Developers** — integrate web extraction logic into their coding environment using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_monitor**: Create a new monitor schedule for a robot
 - **get_bulk_run**: Get details of a specific bulk run
 - **get_robot**: Get details of a specific robot
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `browse-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `browse-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Browse AI** tools.
 
 **Configuration:**

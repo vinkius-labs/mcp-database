@@ -35,7 +35,7 @@ No more manual scrubbing through identified visitor logs. Your AI acts as your d
 - **Growth Marketers** — integrate identity resolution data and automated messaging into custom performance workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (8)
 - **add_tag_to_contact**: Add a tag to a contact
 - **get_contact**: Get contact profile details
 - **list_xray_leads**: List identified website visitors
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `customersai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `customersai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Customers.ai** tools.
 
 **Configuration:**

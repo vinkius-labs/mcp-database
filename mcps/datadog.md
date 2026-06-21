@@ -34,7 +34,7 @@ Connect your **Datadog** account to any AI agent and take full control of your i
 - **System Admins** — audit monitor configurations and verify system boundaries through natural language
 
 
-## Available Tools
+## Available Tools (11)
 - **list_dashboards**: Returns a list of dashboard identifiers, titles, layout types (timeboard/screenboard), and direct access URLs.
 
 List all dashboards
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datadog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datadog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Datadog** tools.
 
 **Configuration:**

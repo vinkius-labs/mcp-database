@@ -33,7 +33,7 @@ Connect your **Countly** analytics instance to any AI agent to monitor user beha
 - **Growth Teams** — track conversion events and user profile updates to optimize marketing funnels.
 
 
-## Available Tools
+## Available Tools (8)
 - **begin_session**: Starts a new session for a user
 - **end_session**: Ends the current session
 - **read_drill**: Perform advanced segmentation and filtering (Enterprise Edition)
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `countly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `countly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Countly** tools.
 
 **Configuration:**

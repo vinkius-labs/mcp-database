@@ -43,7 +43,7 @@ No more navigating complex LIMS dashboards or manually reconciling sample queues
 - **Client Relations** — provide cultivators and processors with real-time sample status updates, CoA delivery confirmations, and order progress reports
 
 
-## Available Tools
+## Available Tools (12)
 - **list_audit_logs**: Each audit log entry contains the precise timestamp (ISO 8601), performing user name and ID, action type (sample created, result modified, CoA issued, workflow step completed, user permission changed, instrument calibration recorded), affected record ID and type, previous and new values for any modifications, IP address and user agent, and justification comment (if required for critical changes). Fundamental for regulatory inspections, data integrity investigations, deviation root cause analysis, FDA 21 CFR Part 11 compliance, and ISO/IEC 17025 quality system requirements. AI agents use this to reconstruct event sequences during quality investigations, identify unauthorized or suspicious changes, monitor user activity patterns, generate audit-ready documentation packages, and demonstrate data integrity to regulatory inspectors.
 
 List all audit trail entries for laboratory operations and data modifications
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scispot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scispot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scispot** tools.
 
 **Configuration:**

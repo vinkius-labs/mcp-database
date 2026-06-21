@@ -33,7 +33,7 @@ Connect your **PropelAuth** dashboard to any AI agent to streamline B2B identity
 - **Product Developers** — Test authentication flows and verify user metadata directly from the code editor.
 
 
-## Available Tools
+## Available Tools (42)
 - **add_user_to_org**: Add a user to an organization immediately
 - **allow_saml**: Allow or disallow SAML for an organization
 - **change_user_role_in_org**: Change a user role within an organization
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `propelauth-b2b-authentication` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `propelauth-b2b-authentication` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PropelAuth (B2B Authentication)** tools.
 
 **Configuration:**

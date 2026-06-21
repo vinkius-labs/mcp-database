@@ -18,7 +18,7 @@ LLMs are language models, not calculators. When faced with advanced algebra, cal
 - **Scientific Facts & Data:** Get precise, real-time data on planetary physics, chemistry formulas, demographic statistics, and historical economics.
 
 
-## Available Tools
+## Available Tools (1)
 - **query_wolfram_alpha**: Queries the Wolfram Alpha computational knowledge engine for math, physics, statistics, and facts
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wolfram-alpha-solver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wolfram-alpha-solver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wolfram Alpha Solver** tools.
 
 **Configuration:**

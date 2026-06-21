@@ -27,7 +27,7 @@ The **ApplicantStack MCP Server** integrates your recruiting and onboarding work
 - **HR Teams** — Track hiring trends and ensure onboarding tasks are initiated for all new hires.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_account_check**: Verify ApplicantStack account connection
 - **get_candidate**: Get details for a specific candidate
 - **get_job**: Get details for a specific job
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `applicantstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `applicantstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ApplicantStack** tools.
 
 **Configuration:**

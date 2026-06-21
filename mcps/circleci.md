@@ -35,7 +35,7 @@ Connect your **CircleCI** account to any AI agent and take full control of your 
 - **Infrastructure Teams** — manage shared contexts and environment variables across projects
 
 
-## Available Tools
+## Available Tools (8)
 - **get_my_cci_profile**: Retrieve information about the authenticated user
 - **get_workflow_details**: Get detailed information for a specific workflow
 - **list_cci_contexts**: List shared contexts for an organization
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `circleci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `circleci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CircleCI** tools.
 
 **Configuration:**

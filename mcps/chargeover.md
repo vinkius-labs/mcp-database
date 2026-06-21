@@ -35,7 +35,7 @@ Connect your **ChargeOver** account to any AI agent and take full control of you
 - **Business Owners** — verify total recurring revenue and transaction volumes
 
 
-## Available Tools
+## Available Tools (8)
 - **get_chargeover_account**: Retrieve core account and user information
 - **get_customer_details**: Get detailed information for a specific customer
 - **get_invoice_details**: Get detailed information for a specific invoice
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chargeover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chargeover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChargeOver** tools.
 
 **Configuration:**

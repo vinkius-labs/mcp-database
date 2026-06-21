@@ -33,7 +33,7 @@ Connect your **Raygun** account to any AI agent to gain deep visibility into you
 - **Product Owners** — Query user session data to understand how new features are performing in the wild.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_legacy_deployment**: Create a deployment using the legacy API
 - **list_applications**: List accessible Raygun applications
 - **list_deployments**: List deployments for a specific application
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `raygun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `raygun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Raygun** tools.
 
 **Configuration:**

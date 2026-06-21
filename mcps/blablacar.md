@@ -34,7 +34,7 @@ Connect AI agents to the world's largest carpooling network for affordable, sust
 Ideal for **budget travelers**, **students**, **eco-conscious commuters**, **travel planners**, and **digital nomads**. Let AI agents find the cheapest rides, compare schedules across dates, verify driver credibility, and plan multi-city carpool routes. Perfect for anyone taking 2+ intercity trips monthly who wants to save 40-60% vs trains while reducing carbon footprint through shared transportation.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_driver_profile**: Use this to verify driver credibility and read passenger reviews before booking a ride. Requires the driver user ID from a trip result.
 
 Get driver profile and ratings on BlaBlaCar
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blablacar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blablacar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BlaBlaCar** tools.
 
 **Configuration:**

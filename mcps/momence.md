@@ -30,7 +30,7 @@ Connect your **Momence** studio to any AI agent and manage your fitness business
 - **Instructors** — Quick access to class rosters and member preferences
 
 
-## Available Tools
+## Available Tools (10)
 - **list_sessions**: Filter by date range.
 
 List scheduled sessions
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `momence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `momence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Momence** tools.
 
 **Configuration:**

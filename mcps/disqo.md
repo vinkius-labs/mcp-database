@@ -32,7 +32,7 @@ Integrate **DISQO**, the leading consumer insights and behavioral data platform,
 - **Data Analysts** — Gather structured metric definitions and research data for reporting instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_platform_metadata**: Retrieve metadata and usage limits for your DISQO account
 - **get_project_details**: Get detailed settings and status for a specific DISQO project
 - **quick_behavioral_audit**: Retrieve a high-level summary of the most active behavioral metrics
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `disqo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `disqo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DISQO** tools.
 
 **Configuration:**

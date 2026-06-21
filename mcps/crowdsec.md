@@ -34,7 +34,7 @@ No more manual log diving or complex CLI commands to check if an IP is malicious
 - **System Administrators** — automate the auditing of blocked ranges and suspicious network activity through natural language
 
 
-## Available Tools
+## Available Tools (3)
 - **get_cti_smoke**: Get CTI reputation for an IP
 - **get_decisions_stream**: Poll for new and deleted decisions from LAPI
 - **get_decisions**: Query CrowdSec LAPI for decisions
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crowdsec` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crowdsec` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CrowdSec** tools.
 
 **Configuration:**

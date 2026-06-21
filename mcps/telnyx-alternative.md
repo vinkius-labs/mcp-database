@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire global communication infrastruc
 - **Business Owners** — automate telecom querying to orchestrate your data-driven communication strategy smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_call**: Get details for a specific call
 - **get_me**: Get authenticated Telnyx public key/info
 - **get_phone_number**: Get details for a specific phone number
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telnyx-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telnyx-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telnyx** tools.
 
 **Configuration:**

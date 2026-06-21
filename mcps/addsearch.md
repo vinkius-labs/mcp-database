@@ -32,7 +32,7 @@ Connect your **AddSearch** account to your AI agent and turn your site's search 
 - **E-Commerce Teams** — query specific product categories and verify if the relevance ranking is displaying the right inventory
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_document**: Requires Secret Key.
 
 Permanently delete a document
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `addsearch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `addsearch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AddSearch** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the **ZetaChain Explorer** and gain deep visibility into the ZetaChai
 - **Crypto Enthusiasts** — Monitor wallet balances and network activity through natural conversation.
 
 
-## Available Tools
+## Available Tools (17)
 - **get_block_transactions**: Get transactions in a specific block
 - **get_block**: Get block details by hash or number
 - **get_address_internal_transactions**: Get internal transactions for an address
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zetachain-explorer-zetachain-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zetachain-explorer-zetachain-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zetachain Explorer (ZetaChain Block Explorer API)** tools.
 
 **Configuration:**

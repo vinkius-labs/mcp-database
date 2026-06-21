@@ -32,7 +32,7 @@ Connect your **PipeRun CRM** account to any AI agent to streamline your sales op
 - **Operations Teams** — automate the organization of sales documents and activity logging.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_activity**: Create a new activity
 - **delete_activity**: Delete an activity
 - **delete_file**: Delete a file from PipeRun
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crm-piperun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crm-piperun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CRM PipeRun** tools.
 
 **Configuration:**

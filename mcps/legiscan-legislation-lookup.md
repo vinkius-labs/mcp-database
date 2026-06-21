@@ -33,7 +33,7 @@ Equip your AI agent with real-time legislative intelligence through the **LegiSc
 - **Active Citizens** — monitor the activity of their state representatives.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_bill_details**: Get details for a specific bill
 - **get_state_master_list**: Get the current master list for a state
 - **search_bills**: Search for legislative bills
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `legiscan-legislation-lookup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `legiscan-legislation-lookup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LegiScan Legislation Lookup** tools.
 
 **Configuration:**

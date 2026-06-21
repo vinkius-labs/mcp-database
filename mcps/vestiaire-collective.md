@@ -37,7 +37,7 @@ No more manual price tracking or inventory spreadsheets. Your AI agent becomes y
 - **Stylists & Personal Shoppers** — source specific high-end pieces for clients through advanced AI-powered filtering
 
 
-## Available Tools
+## Available Tools (9)
 - **analyze_price_trends**: Analyser les tendances de prix pour une marque et catégorie (valorisation du luxe)
 - **get_item_details**: Consulter un article : marque, état, authentification, prix vs. neuf, taille, matière
 - **list_available_brands**: Lister les marques de luxe disponibles (Hermès, Chanel, Louis Vuitton, Dior, etc.)
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vestiaire-collective` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vestiaire-collective` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vestiaire Collective** tools.
 
 **Configuration:**

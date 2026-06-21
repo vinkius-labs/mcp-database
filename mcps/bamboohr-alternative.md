@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire HR ecosystem with **BambooHR**,
 - **Team Leaders** — stay updated on their team's availability and profile details through simple natural language queries.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_custom_report**: Requires a JSON list of fields.
 
 Generate a custom report
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bamboohr-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bamboohr-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BambooHR** tools.
 
 **Configuration:**

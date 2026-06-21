@@ -34,7 +34,7 @@ Connect your **NeonCRM** account to your AI agent and take full control of your 
 - **Operations Managers** — automate the retrieval of grant and constituent lists for reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Get specific account details
 - **get_donation**: Get donation details
 - **get_crm_event**: Get specific event details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `neoncrm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `neoncrm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NeonCRM** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Manage Apple devices, computers, and inventory via Jamf Pro API.
 Empower your AI agents to manage your Apple ecosystem with Jamf Pro. This MCP server allows you to list mobile devices and computers, track inventory details, manage users and buildings, and view management scripts and packages directly through the Jamf Pro API. Ideal for automating IT operations and device management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_computer**: Includes disk encryption status, installed apps, and user info. Use this for detailed Mac auditing.
 
 Retrieves details for a specific computer
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jamf-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jamf-pro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jamf Pro** tools.
 
 **Configuration:**

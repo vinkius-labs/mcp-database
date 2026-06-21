@@ -24,7 +24,7 @@ The diagnosis of Atrial Fibrillation (AFib) requires careful risk stratification
 **Advantage:** By running these tools together, agents can provide comprehensive patient care pathways. Instead of just listing a score, they deliver actionable advice that synthesizes both high thromboembolic risk *and* high bleeding risk concerns, guiding the clinician toward optimal therapy.
 
 
-## Available Tools
+## Available Tools (3)
 - **query_cha2ds2_vasc_score**: Calculate the CHA2DS2-VASc score for atrial fibrillation stroke risk assessment
 - **calculate_hasbled_score**: Calculate the HAS-BLED score for bleeding risk assessment during anticoagulation
 - **get_risk_recommendations**: Get clinical recommendations based on CHA2DS2-VASc and HAS-BLED scores
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cha2ds2-vasc-has-bled-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cha2ds2-vasc-has-bled-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CHA₂DS₂-VASc & HAS-BLED Calculator** tools.
 
 **Configuration:**

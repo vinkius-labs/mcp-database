@@ -13,7 +13,7 @@ Calculate seasonal indices and optimize inventory planning using historical sale
 This MCP server provides advanced analytical tools to quantify seasonal patterns in sales data. By using `calculate_seasonal_indices`, you can determine how much each month deviates from the average demand. The `analyze_extremes` tool identifies peak and trough months, while `generate_recommendations` suggests specific inventory stocking postures like 'Aggressive' or 'Lean' based on your seasonal indices. It is designed to help businesses transform historical monthly sales records into actionable inventory strategies.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_extremes**: Identifies peak and trough months in the seasonal cycle
 - **calculate_seasonal_indices**: Calculates monthly seasonal indices and deseasonalized demand
 - **generate_recommendations**: Generates inventory stocking recommendations
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `seasonality-index-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `seasonality-index-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Seasonality Index Calculator** tools.
 
 **Configuration:**

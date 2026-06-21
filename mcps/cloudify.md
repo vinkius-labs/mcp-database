@@ -34,7 +34,7 @@ Connect your **Cloudify Manager** to any AI agent and take full control of your 
 - **SREs** — quickly identify failed executions and verify infrastructure lifecycle states
 
 
-## Available Tools
+## Available Tools (7)
 - **list_blueprints**: Identify bounded logical arrays managing top-level orchestration schemas
 - **get_blueprint**: Perform structural extraction of properties driving active blueprint schemas
 - **list_deployments**: Retrieve the exact structural matching verifying actualized runtime schemas
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudify** tools.
 
 **Configuration:**

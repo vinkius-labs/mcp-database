@@ -35,7 +35,7 @@ Connect your **Elasticsearch** cluster to any AI agent and take full control of 
 - **Ops Teams** — verify cluster index health and manage vector storage namespaces in real-time
 
 
-## Available Tools
+## Available Tools (6)
 - **search**: Dense vector knn search
 - **list_indexes**: List all indexes
 - **get_index**: Get index info
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elasticsearch-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elasticsearch-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elasticsearch Vector** tools.
 
 **Configuration:**

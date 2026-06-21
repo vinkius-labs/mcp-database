@@ -33,7 +33,7 @@ Connect your **Hookdeck** account to any AI agent to orchestrate your webhook in
 - **Integration Specialists** — verify routing rules and connection counts across different environments.
 
 
-## Available Tools
+## Available Tools (52)
 - **cancel_event**: Cancel scheduled retries for an event
 - **count_connections**: Count total connections
 - **count_sources**: Count total sources
@@ -148,7 +148,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hookdeck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hookdeck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hookdeck** tools.
 
 **Configuration:**

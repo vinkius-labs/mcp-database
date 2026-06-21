@@ -35,7 +35,7 @@ Connect your **Guidewire ClaimCenter** account to any AI agent and take full con
 - **Insurance Ops** — verify document uploads and note history during claim processing
 
 
-## Available Tools
+## Available Tools (8)
 - **list_claim_activities**: List current activities and tasks across all claims
 - **list_claimcenter_claims**: List insurance claims from Guidewire ClaimCenter
 - **list_claim_contacts**: List shared contacts (claimants, vendors, providers)
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `guidewire-claimcenter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `guidewire-claimcenter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Guidewire ClaimCenter** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ Your AI agent becomes your ITSM command center — no more navigating complex Fi
 - **IT Directors** — get real-time dashboards on incident volume, resolution times, and backlog health
 
 
-## Available Tools
+## Available Tools (10)
 - **create_record**: Provide fields as JSON string. Common tables: incident, change_request, sc_request, problem.
 
 Create a new record in any ServiceNow table
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `servicenow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `servicenow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ServiceNow** tools.
 
 **Configuration:**

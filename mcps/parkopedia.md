@@ -32,7 +32,7 @@ Connect **Parkopedia** to any AI agent and access the world's most comprehensive
 - **Fleet Managers** — Optimize parking logistics for delivery and service vehicles
 
 
-## Available Tools
+## Available Tools (10)
 - **search_amenities**: Search for nearby amenities related to parking
 - **get_analytics**: Get parking analytics and trends for a location
 - **search_by_bounds**: Search for parking spots within a geographic bounding box
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `parkopedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `parkopedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Parkopedia** tools.
 
 **Configuration:**

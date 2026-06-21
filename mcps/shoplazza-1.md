@@ -36,7 +36,7 @@ No more manual stock checks or missing order updates. Your AI acts as your dedic
 - **Marketing Teams** — analyze technical customer segments and collection performance to optimize campaigns through simple AI queries
 
 
-## Available Tools
+## Available Tools (11)
 - **create_shoplazza_customer**: Create a new customer
 - **create_shoplazza_product**: Create a new product
 - **get_shoplazza_customer**: Get customer details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shoplazza-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shoplazza-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shoplazza** tools.
 
 **Configuration:**

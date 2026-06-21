@@ -35,7 +35,7 @@ No more switching between your store backend and ShipBob dashboard to check if a
 - **Operations Managers** — monitor warehouse receiving and inventory history to optimize supply chain workflows
 
 
-## Available Tools
+## Available Tools (30)
 - **batch_cancel_shipments**: Cancel multiple shipments at once
 - **batch_update_tracking**: Mark tracking as synced to your system
 - **cancel_order**: Cancel an order and its shipments
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shipbob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shipbob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ShipBob** tools.
 
 **Configuration:**

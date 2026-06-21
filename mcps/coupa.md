@@ -36,7 +36,7 @@ Connect your **Coupa** instance to any AI agent and manage procurement operation
 - **Category Managers** — query contracts and supplier performance scorecards rapidly
 
 
-## Available Tools
+## Available Tools (10)
 - **approve_purchase_order**: Touches workflow and authorization boundary states.
 
 Approve a pending purchase order
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coupa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coupa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coupa** tools.
 
 **Configuration:**

@@ -28,7 +28,7 @@ Take deep dives aggregating actionable insights reading purely API analytics via
 Specifically built for analytical needs of **Data Scientists**, **Market Researchers**, and **Omnichannel Officers** targeting comprehensive Walmart retail performance.
 
 
-## Available Tools
+## Available Tools (8)
 - **luminate_category_trends**: Allocate analytics naturally tracking explicit boundaries accurately parsing cleanly
 - **luminate_channel_performance**: Update explicit bounds tracking omnichannel constraints explicitly accurately
 - **luminate_conversion_rates**: Verify explicitly organic SKU arrays discovering if explicitly bound targets cleanly convert
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `walmart-luminate-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `walmart-luminate-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Walmart Luminate Analytics** tools.
 
 **Configuration:**

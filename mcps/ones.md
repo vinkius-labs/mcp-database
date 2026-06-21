@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your R&D lifecycle with **ONES**, the leadi
 - **Enterprise Leaders** — get real-time insights into organization-wide R&D activity and resource allocation.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_task**: Create a new ONES task
 - **get_org_info**: Get organization summary
 - **get_project**: Get project details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ones` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ones` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ONES** tools.
 
 **Configuration:**

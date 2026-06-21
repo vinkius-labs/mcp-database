@@ -13,7 +13,7 @@ Calculate running training intensity zones and race pace predictions based on pe
 The Training Pace Calculator MCP server provides precise tools for runners to determine their optimal training intensities. By using `calculate_zones_from_pace`, you can derive specific zones (Easy, Aerobic, Tempo, Interval, and VO2max) in both metric (min/km) and imperial (min/mile) formats based on a recent race result. Alternatively, if you only know your physiological capacity, `calculate_zones_from_vo2max` uses your VO2max value to estimate these same training zones. For runners looking to plan for future goals, the `estimate_distance_conversion` tool utilizes Riegel's formula to predict how your pace might change as you move from shorter distances like a 5K to longer ones like a Marathon.
 
 
-## Available Tools
+## Available Tools (3)
 - **estimate_distance_conversion**: Uses Riegel's formula.
 
 Predict pace for a different distance based on current performance
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `training-pace-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `training-pace-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Training Pace Calculator** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **Dixa**, the customer friendship platform, directly into your AI work
 - **Operations Teams** — Monitor support team structures and organizational metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_service_account_metadata**: Retrieve metadata and usage limits for your Dixa account
 - **get_agent_profile**: Get full profile and performance data for a specific agent
 - **get_conversation_details**: Get detailed information for a specific customer conversation
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dixa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dixa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dixa** tools.
 
 **Configuration:**

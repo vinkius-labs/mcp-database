@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your high-performance OLAP infrastructure w
 - **StarRocks Power Users** — integrate your existing analytical workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **execute_query**: Execute arbitrary SQL query
 - **get_cluster_info**: Get frontend nodes info
 - **get_storage_usage**: Get data storage statistics
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `starrocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `starrocks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **StarRocks** tools.
 
 **Configuration:**

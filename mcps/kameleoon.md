@@ -33,7 +33,7 @@ Empower your AI agents to control your **Kameleoon** experimentation platform. T
 - **Data Analysts** — Automate the retrieval of experiment results and metadata for reporting
 
 
-## Available Tools
+## Available Tools (10)
 - **create_experiment**: Requires a name and a site ID.
 
 Create a new experiment
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kameleoon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kameleoon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kameleoon** tools.
 
 **Configuration:**

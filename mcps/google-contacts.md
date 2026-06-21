@@ -31,7 +31,7 @@ Connect your **Google Contacts** directory to any AI agent and take full control
 - **Developers** — fetch precise contact information straight from the IDE without opening external windows
 
 
-## Available Tools
+## Available Tools (9)
 - **create_contact_group**: 
 - **create_contact**: Creates a new contact (connection)
 - **delete_contact**: Deletes a contact
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-contacts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-contacts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Contacts** tools.
 
 **Configuration:**

@@ -37,7 +37,7 @@ Lunatask uses end-to-end encryption. While this API allows creating and updating
 - **Power Users** — Automate task creation and organizational metadata updates directly from your development tools
 
 
-## Available Tools
+## Available Tools (8)
 - **create_journal_entry**: Add a new journal entry
 - **create_new_task**: Requires a name and an area_id.
 
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lunatask` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lunatask` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lunatask** tools.
 
 **Configuration:**

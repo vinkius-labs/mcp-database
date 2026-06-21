@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire digital performance stack with 
 - **Tingyun Power Users** — integrate your existing observability workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_info**: Get account metadata
 - **get_app_summary**: Get application summary
 - **get_metrics**: Query metric data
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tingyun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tingyun` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tingyun / 听云** tools.
 
 **Configuration:**

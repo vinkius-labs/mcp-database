@@ -35,7 +35,7 @@ No more manual scrolling to check pin counts or engagement. Your AI acts as a de
 - **E-commerce Teams** — streamline the retrieval of visual assets and monitor product discovery directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_board**: Add new board
 - **create_new_pin**: Required media_source must be provided as JSON.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pinterest-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pinterest-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pinterest** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **ContextQA** account to any AI agent and take full control of your
 - **Product Owners** — monitor release readiness and audit test execution history using natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: Identify bounded ContextQA test environments grouping automated validations
 - **get_project**: Retrieve explicit Project mapping UUIDs analyzing execution spaces limitlessly
 - **list_suites**: Perform structural extraction matching asynchronous GUI test Suites payloads
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contextqa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contextqa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ContextQA** tools.
 
 **Configuration:**

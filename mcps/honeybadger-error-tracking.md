@@ -34,7 +34,7 @@ Connect your **Honeybadger** account to any AI agent and take full control of yo
 - **Engineering Leads** — audit unresolved fault counts and team assignments to optimize bug-fixing workflows and incident response
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: Returns project names, IDs, tokens, language, environments, and fault/notice counts.
 
 List all projects in Honeybadger
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `honeybadger-error-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `honeybadger-error-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Honeybadger (Error Tracking)** tools.
 
 **Configuration:**

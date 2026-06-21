@@ -35,7 +35,7 @@ No more manual spreadsheet exporting for basic check-ins. Your AI acts as a dedi
 - **Developers** — integrate real-time call tracking data and attribution intelligence directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **search_calls**: Search calls
 - **check_nimbata_status**: Verify connectivity
 - **create_source**: Create a tracking source
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nimbata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nimbata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nimbata** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the official Open Data portal of the **CNMC (Comisión Nacional de lo
 - **Policy Researchers** — access public sector information for economic modeling and reporting
 
 
-## Available Tools
+## Available Tools (2)
 - **datastore_search**: g., a CSV file within a dataset). Requires a resource_id obtained via package_search.
 
 Retrieve actual records from a specific CNMC resource
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cnmc-comision-mercados-y-competencia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cnmc-comision-mercados-y-competencia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CNMC (Comisión Mercados y Competencia)** tools.
 
 **Configuration:**

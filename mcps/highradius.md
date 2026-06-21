@@ -33,7 +33,7 @@ HighRadius is a leading Order-to-Cash automation platform used by enterprises to
 - **Collections Agents** -- View customer balances and outstanding invoices quickly
 
 
-## Available Tools
+## Available Tools (11)
 - **get_cash_application_status**: Get the current status of the cash application process
 - **create_dispute**: Body should include invoice_id, reason, and amount.
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `highradius` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `highradius` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HighRadius** tools.
 
 **Configuration:**

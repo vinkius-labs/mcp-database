@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire localization and language audit
 - **Operations Leads** — automate linguistic data querying to orchestrate cross-functional localization teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the LibreTranslate service is operational
 - **detect_language**: Detect the language of a specific text string
 - **list_supported_languages**: List all languages supported by the LibreTranslate instance
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `libretranslate-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `libretranslate-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LibreTranslate API** tools.
 
 **Configuration:**

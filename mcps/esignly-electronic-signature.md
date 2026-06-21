@@ -32,7 +32,7 @@ Integrate **eSignly**, the powerful and secure electronic signature platform, di
 - **HR & Admin Teams** — Monitor template usage and organizational document metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_esignly_account_metadata**: Retrieve metadata and limits for your eSignly account
 - **get_document_detailed_data**: Get detailed settings and status for a specific document
 - **quick_signing_volume_audit**: Retrieve a high-level summary of document and template activity
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `esignly-electronic-signature` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `esignly-electronic-signature` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **eSignly Electronic Signature** tools.
 
 **Configuration:**

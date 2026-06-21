@@ -33,7 +33,7 @@ Connect your **Facebook Ads** (Meta Marketing) account to any AI agent and take 
 - **Growth Teams** — integrate ad management and insights directly into your AI-powered marketing workflow
 
 
-## Available Tools
+## Available Tools (12)
 - **get_ad_account_info**: Get basic info for the Facebook Ad Account
 - **get_ad_details**: Get details for a specific ad
 - **get_ad_set_details**: Get details for a specific ad set
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `facebook-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `facebook-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Facebook Ads** tools.
 
 **Configuration:**

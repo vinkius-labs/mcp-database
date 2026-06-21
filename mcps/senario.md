@@ -35,7 +35,7 @@ No more manual user imports or spreadsheet result tracking. Your AI acts as a de
 - **Safety Officers** — streamline the retrieval of session records and monitor certification compliance directly within the chat.
 
 
-## Available Tools
+## Available Tools (9)
 - **add_content**: Add content to a collection
 - **create_user_and_assign**: Create a new user and assign them to an AR collection
 - **get_activity_data**: Get detailed training activity results
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `senario` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `senario` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Senar.io** tools.
 
 **Configuration:**

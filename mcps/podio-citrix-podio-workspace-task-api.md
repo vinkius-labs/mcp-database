@@ -32,7 +32,7 @@ Connect your **Citrix Podio** workspace to any AI agent to orchestrate complex b
 - **Developers** — Quickly inspect Podio app schemas and test item filtering during integration builds.
 
 
-## Available Tools
+## Available Tools (8)
 - **add_item**: Add a new item to a Podio app
 - **get_app**: Get details of a specific Podio app
 - **create_task**: Create a new Podio task
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `podio-citrix-podio-workspace-task-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `podio-citrix-podio-workspace-task-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Podio (Citrix Podio Workspace & Task API)** tools.
 
 **Configuration:**

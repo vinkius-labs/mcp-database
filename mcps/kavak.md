@@ -35,7 +35,7 @@ Connect to the **Kavak** platform from any AI agent and navigate Mexico's larges
 - **Financial Advisors** — calculate financing options for clients looking to purchase vehicles
 
 
-## Available Tools
+## Available Tools (14)
 - **create_reservation**: Requires buyer contact details. The vehicle will be taken off the marketplace during the reservation period.
 
 Reserve a vehicle for purchase
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kavak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kavak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kavak** tools.
 
 **Configuration:**

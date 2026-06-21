@@ -32,7 +32,7 @@ Integrate **Drift**, the leading conversational marketing and sales platform, di
 - **Customer Success** — Research specific contact profiles and interaction history to assist customers instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_drift_platform_metadata**: Retrieve metadata for the current authenticated Drift account
 - **get_contact_profile**: Get full profile data and interaction history for a specific contact
 - **get_conversation_details**: Get detailed information and full transcript for a specific conversation
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `drift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `drift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Drift** tools.
 
 **Configuration:**

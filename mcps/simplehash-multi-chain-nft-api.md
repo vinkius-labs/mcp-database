@@ -33,7 +33,7 @@ Connect to **SimpleHash**, the most comprehensive NFT API, and empower your AI a
 - **Data Analysts** — aggregate multi-chain transfer history and collection metrics without writing complex scrapers.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_collection_details**: Retrieve information about a specific NFT collection
 - **get_collections_by_wallet**: Retrieve all collections that a specific wallet owns NFTs from
 - **get_nft_details**: Retrieve detailed metadata and ownership information for a specific NFT
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simplehash-multi-chain-nft-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simplehash-multi-chain-nft-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SimpleHash (Multi-chain NFT API)** tools.
 
 **Configuration:**

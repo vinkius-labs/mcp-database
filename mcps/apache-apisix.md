@@ -33,7 +33,7 @@ Connect your **Apache APISIX** instance to any AI agent to orchestrate high-perf
 - **SRE Teams** — troubleshoot traffic flow and consumer access issues using natural language queries.
 
 
-## Available Tools
+## Available Tools (50)
 - **dump_control_discovery**: Memory dump of discovered service endpoints
 - **dump_control_plugin_metadatas**: Dump all plugin metadata from the Control API
 - **dump_control_routes**: Dump all configured Routes from the Control API
@@ -146,7 +146,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apache-apisix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apache-apisix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apache APISIX** tools.
 
 **Configuration:**

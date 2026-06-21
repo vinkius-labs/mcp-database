@@ -13,7 +13,7 @@ Manage payments, customers, and refunds via Hyperswitch API.
 Empower your AI agents to manage your payment infrastructure with Hyperswitch. This MCP server allows you to list payments, retrieve customer details, manage refunds, track disputes, and view payouts directly through the Hyperswitch API. Ideal for automating fintech operations and payment monitoring.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_customer**: Retrieves details for a specific customer
 - **get_dispute**: Retrieves details for a specific dispute
 - **get_payment**: Retrieves details for a specific payment
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hyperswitch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hyperswitch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hyperswitch** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **EngageBay**, the all-in-one marketing, sales, and service CRM, direc
 - **Operations Teams** — Monitor task completion and organizational CRM metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_engagebay_account_metadata**: Retrieve metadata and limits for your EngageBay account
 - **get_contact_profile**: Get detailed profile and interaction history for a specific contact
 - **get_deal_details**: Get detailed settings and status for a specific sales deal
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `engagebay-all-in-one-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `engagebay-all-in-one-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EngageBay All-in-One CRM** tools.
 
 **Configuration:**

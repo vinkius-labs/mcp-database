@@ -31,7 +31,7 @@ Take complete proxy command over physically hosted NIM limits checking analytics
 Explicitly targeted for **MLOps Engineers**, **Hardware Proxies Admins**, and **Infrastructure Integrators** dynamically orchestrating native NVIDIA chips securely.
 
 
-## Available Tools
+## Available Tools (8)
 - **nim_check_health_live**: Execute liveness probes natively evaluating if the physical host container orchestrator is responsive
 - **nim_check_health_ready**: Detect if the GPU inference layers have successfully loaded the explicitly configured model artifacts natively
 - **nim_get_container_logs**: Fetch explicit execution parameters catching native stdout proxies bound cleanly to the orchestrator layer securely
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nvidia-nim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nvidia-nim` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NVIDIA NIM** tools.
 
 **Configuration:**

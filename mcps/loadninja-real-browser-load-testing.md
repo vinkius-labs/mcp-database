@@ -34,7 +34,7 @@ Connect your **LoadNinja** account to any AI agent and take full control of your
 - **DevOps Engineers** — audit virtual user (VU) limits and data center locations to ensure global scalability and infrastructure reliability
 
 
-## Available Tools
+## Available Tools (10)
 - **list_scenarios**: List all load test scenarios on LoadNinja
 - **get_scenario**: Get full details of a specific LoadNinja scenario including target URL and configuration
 - **run_scenario**: Run a LoadNinja scenario with specified virtual users and duration explicitly in minutes
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `loadninja-real-browser-load-testing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `loadninja-real-browser-load-testing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LoadNinja (Real-Browser Load Testing)** tools.
 
 **Configuration:**

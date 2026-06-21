@@ -34,7 +34,7 @@ Connect your **MailerSend** account to any AI agent and manage transactional ema
 - **DevOps** — monitor domain health and deliverability
 
 
-## Available Tools
+## Available Tools (12)
 - **get_date_analytics**: Check usage stats
 - **get_domain_details**: Get domain info
 - **get_message_info**: Get message status
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailersend-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailersend-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MailerSend** tools.
 
 **Configuration:**

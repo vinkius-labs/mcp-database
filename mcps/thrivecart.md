@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire checkout ecosystem with **Thriv
 - **Operations Managers** — automate sales querying to orchestrate your e-commerce growth smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_customer**: Get details for a specific customer
 - **get_product**: Get details for a specific product
 - **get_subscription**: Get details for a specific subscription
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thrivecart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thrivecart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ThriveCart** tools.
 
 **Configuration:**

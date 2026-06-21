@@ -35,7 +35,7 @@ No more manual dashboard uploading or CID tracking. Your AI acts as a dedicated 
 - **Data Architects** — streamline the retrieval of decentralized content metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_pin_group**: Add new collection
 - **remove_pin_group**: Delete collection
 - **get_pinning_stats**: Check data usage
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pinata-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pinata-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pinata Cloud** tools.
 
 **Configuration:**

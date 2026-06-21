@@ -33,7 +33,7 @@ Connect your **Qualtrics** account to any AI agent and take full control of your
 - **Data Analysts** — pull raw survey data directly into your analysis environment via AI-driven export commands
 
 
-## Available Tools
+## Available Tools (15)
 - **create_contact**: Create a new contact in an XM Directory
 - **create_distribution**: Create a new distribution for a survey
 - **create_event_subscription**: Create a webhook event subscription
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qualtrics-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qualtrics-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qualtrics** tools.
 
 **Configuration:**

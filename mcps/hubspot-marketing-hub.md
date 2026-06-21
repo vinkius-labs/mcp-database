@@ -28,7 +28,7 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **Managers** — Full CRM visibility through conversation
 
 
-## Available Tools
+## Available Tools (6)
 - **hs_form_submissions**: Returns each submission with the field values the visitor entered, submission date, and page URL. Use when the user wants to review lead capture data, check who submitted a form, or analyze form conversion data. You need the form ID — use hs_list_forms to find it.
 
 Get individual form submissions for a specific HubSpot form, showing submitted field values and dates
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-marketing-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-marketing-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot Marketing Hub** tools.
 
 **Configuration:**

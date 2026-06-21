@@ -34,7 +34,7 @@ Connect your **Toket** account to any AI agent and simplify how you deploy NFT c
 - **Developers** — automate the creation of smart contracts and asset distribution directly from the workspace.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_collection**: Provide name, symbol, and owner wallet.
 
 Create a new NFT collection
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `toket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `toket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Toket** tools.
 
 **Configuration:**

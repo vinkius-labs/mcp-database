@@ -35,7 +35,7 @@ Connect your **Cognita** (TrueFoundry) instance to any AI agent and take full co
 - **DevOps Teams** — monitor Cognita model registries and ensure that all LLM endpoints are active and reachable
 
 
-## Available Tools
+## Available Tools (7)
 - **rag_query**: Identify precise active arrays spanning rented Transformation vectors
 - **list_models**: Inspect deep internal arrays mitigating specific Picture constraints
 - **list_collections**: Identify bounded routing spaces inside the Headless Cognita RAG limit
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cognita-rag-framework` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cognita-rag-framework` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cognita (RAG Framework)** tools.
 
 **Configuration:**

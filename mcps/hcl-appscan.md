@@ -28,7 +28,7 @@ The **HCL AppScan MCP Server** brings powerful application security testing capa
 - **Compliance Officers** — Monitor application security status and ensure all apps are regularly scanned.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_check**: Verify AppScan account connection
 - **get_account_info**: Retrieve authenticated user information
 - **get_app**: Get details for a specific application
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hcl-appscan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hcl-appscan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HCL AppScan** tools.
 
 **Configuration:**

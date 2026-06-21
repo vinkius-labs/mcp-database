@@ -13,7 +13,7 @@ Convert culinary measurements between units like cups, spoons, and ml, or estima
 This MCP server provides precise tools for culinary conversions. Use `convert_volume` to switch between volumetric units like cup, tablespoon, teaspoon, ml, oz, liter, and pinch. Use `estimate_mass` to calculate the estimated weight in grams of an ingredient based on its type (liquid, granulated, or solid). Additionally, `get_unit_details` provides metadata for specific units.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_unit_details**: Provides metadata and usage context for a specific culinary unit
 - **convert_volume**: Converts a value from one volumetric unit to another
 - **estimate_mass**: Calculates the estimated mass (in grams) of a specific volume
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `culinary-unit-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `culinary-unit-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Culinary Unit Converter** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 - **Content Marketers** — Track article performance and manage cross-posted content.
 
 
-## Available Tools
+## Available Tools (36)
 - **create_article**: Create a new article
 - **create_display_ad**: Create a display ad
 - **create_page**: Create a page
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `devto-forem-developer-community-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `devto-forem-developer-community-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dev.to (Forem Developer Community API)** tools.
 
 **Configuration:**

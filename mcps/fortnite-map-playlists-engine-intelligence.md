@@ -32,7 +32,7 @@ Equip your AI agent with the structural intelligence of the Fortnite ecosystem v
 - **Pro Gamers & Coaches** — identify active playlists and player limits to optimize training sessions and strategies
 
 
-## Available Tools
+## Available Tools (8)
 - **get_aes_encryption_keys**: Useful for datamining.
 
 Get encryption keys for game files
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fortnite-map-playlists-engine-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fortnite-map-playlists-engine-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fortnite Map, Playlists & Engine Intelligence** tools.
 
 **Configuration:**

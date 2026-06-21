@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your device communication and mobile engage
 - **Xiaomi Cloud Power Users** — integrate your existing MiPush workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (6)
 - **push_to_alias**: Send push to a user alias
 - **push_to_all**: Broadcast push to all devices
 - **push_to_regid**: Send push to a device registration ID
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `xiaomi-push-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `xiaomi-push-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Xiaomi Push Service / 小米推送** tools.
 
 **Configuration:**

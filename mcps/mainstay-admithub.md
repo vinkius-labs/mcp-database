@@ -34,7 +34,7 @@ Connect your **Mainstay (formerly AdmitHub)** account to your AI agent to unlock
 - **Enrollment Managers** — manage personalized nudges and student segments using simple natural language commands
 
 
-## Available Tools
+## Available Tools (5)
 - **list_contacts**: List student contacts
 - **get_contact_details**: Get student details
 - **list_campaigns**: List engagement campaigns
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mainstay-admithub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mainstay-admithub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mainstay (AdmitHub)** tools.
 
 **Configuration:**

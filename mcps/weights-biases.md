@@ -37,7 +37,7 @@ No more manual browsing through complex experiment dashboards to check model per
 - **AI Developers** — quickly surface model metrics and experiment summaries for faster development cycles
 
 
-## Available Tools
+## Available Tools (6)
 - **get_run_details**: Retrieves full details for a specific W&B run, including summary metrics and config
 - **list_project_artifacts**: Lists all artifacts (datasets, models, etc.) in a project
 - **list_wandb_projects**: Lists all projects within a Weights & Biases entity (user or team)
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `weights-biases` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `weights-biases` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Weights & Biases** tools.
 
 **Configuration:**

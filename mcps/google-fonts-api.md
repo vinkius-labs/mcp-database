@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire visual design and font auditing
 - **Operations Leads** — automate design data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the Google Fonts service is operational
 - **get_font_details**: Get full metadata and variants for a specific font family
 - **list_all_fonts**: List all fonts available in the Google Fonts catalog
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-fonts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-fonts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Fonts API** tools.
 
 **Configuration:**

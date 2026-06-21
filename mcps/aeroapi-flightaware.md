@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire aviation research and flight au
 - **Operations Leads** — automate aviation data querying to orchestrate cross-functional logistics teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the AeroAPI service is operational
 - **get_airport_details**: Get metadata and location details for a specific airport by code (ICAO or IATA)
 - **get_flight_details**: Get comprehensive details for a specific flight by identifier (ident or fa_flight_id)
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aeroapi-flightaware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aeroapi-flightaware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AeroAPI (FlightAware)** tools.
 
 **Configuration:**

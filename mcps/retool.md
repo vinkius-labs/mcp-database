@@ -31,7 +31,7 @@ Connect your conversational assistant directly to the **Retool** ecosystem. This
 - **Data Teams** — Quickly verify if the relevant PostgreSQL database has been integrated to Retool for team usage.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_app**: Retrieves details for a specific Retool application
 - **list_apps**: Lists all applications in the Retool organization
 - **list_folders**: Lists all folders in the Retool workspace
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `retool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `retool` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Retool** tools.
 
 **Configuration:**

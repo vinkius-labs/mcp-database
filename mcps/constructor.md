@@ -35,7 +35,7 @@ Connect your **Constructor.io** account to any AI agent and take full control of
 - **Marketing Teams** — verify that curated collections and brand taxonomies are correctly mapped and rankable
 
 
-## Available Tools
+## Available Tools (10)
 - **autocomplete**: Perform structural extraction of properties driving active Account logic
 - **browse_brand**: Inspect deep internal arrays mitigating specific Plan Math
 - **browse_category**: Provision a highly-available JSON Payload generating hard Customer bindings
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `constructor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `constructor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Constructor** tools.
 
 **Configuration:**

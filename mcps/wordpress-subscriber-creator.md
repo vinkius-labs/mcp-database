@@ -21,7 +21,7 @@ Your AI agent gains the immediate ability to act as a membership onboarding assi
 - **Absolute Containment:** The code is strictly hardcoded to `roles: ['subscriber']`. The AI is physically incapable of creating an Admin or Editor account, ensuring your site remains 100% secure from unauthorized privilege escalation.
 
 
-## Available Tools
+## Available Tools (1)
 - **create_wordpress_subscriber**: The role is strictly limited to Subscriber, so they have no admin powers. Ideal for member signups, newsletters, or gating content.
 
 Creates a new user account in WordPress with the strictly enforced "subscriber" role
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wordpress-subscriber-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wordpress-subscriber-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WordPress Subscriber Creator** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual dashboard building just to answer a quick question about system h
 - **Platform Teams** — automate infrastructure health reports and audit monitoring configurations via natural language.
 
 
-## Available Tools
+## Available Tools (14)
 - **clean_tombstones**: enable-admin-api to be enabled.
 
 Remove deleted data from disk
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `prometheus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `prometheus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Prometheus** tools.
 
 **Configuration:**

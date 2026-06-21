@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire mobile communication strategy w
 - **Operations Managers** — automate messaging workflows to orchestrate customer engagement smoothly.
 
 
-## Available Tools
+## Available Tools (8)
 - **delete_message_template**: Delete a WhatsApp template
 - **get_business_profile**: Get WhatsApp business profile
 - **get_media**: Get media information
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `whatsapp-business-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `whatsapp-business-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WhatsApp Business** tools.
 
 **Configuration:**

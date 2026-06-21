@@ -13,7 +13,7 @@ Manage products, sales, and affiliates via JVZoo API.
 Empower your AI agents with JVZoo's digital commerce platform. This MCP server allows you to list and retrieve product details, track sales transactions, manage affiliates, and view account information directly through the JVZoo API. Ideal for automating marketing operations and sales tracking.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Use to verify connection status and account identity.
 
 Retrieves details about your JVZoo account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jvzoo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jvzoo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JVZoo** tools.
 
 **Configuration:**

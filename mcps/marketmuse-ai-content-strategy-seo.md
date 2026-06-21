@@ -35,7 +35,7 @@ Connect your **MarketMuse** account to any AI agent and take full control of you
 - **Marketing Managers** — score new content drafts and verify competitive positioning across multiple topics efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **analyze_topic**: MarketMuse uses AI to analyze content gaps and topic authority.
 
 Analyze a topic with MarketMuse AI
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `marketmuse-ai-content-strategy-seo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `marketmuse-ai-content-strategy-seo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MarketMuse (AI Content Strategy & SEO)** tools.
 
 **Configuration:**

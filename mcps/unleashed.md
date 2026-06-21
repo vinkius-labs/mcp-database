@@ -28,7 +28,7 @@ Connect your **Unleashed Software** account to any AI agent and take full contro
 No more jumping between tabs to check stock levels, assembly statuses, or customer details. Your AI acts as a dedicated operations assistant.
 
 
-## Available Tools
+## Available Tools (43)
 - **list_accounts**: List financial accounts
 - **list_assemblies**: List assemblies
 - **list_attribute_sets**: List attribute sets
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unleashed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unleashed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unleashed** tools.
 
 **Configuration:**

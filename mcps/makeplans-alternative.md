@@ -13,7 +13,7 @@ Online booking and appointment scheduling via MakePlans MCP.
 Connect your MakePlans account to your AI agent. Manage bookings, list services, check staff availability, and create appointments directly using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_booking**: Create a new booking
 - **delete_booking**: Delete/Cancel a booking
 - **get_booking**: Get details for a specific booking
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `makeplans-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `makeplans-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MakePlans** tools.
 
 **Configuration:**

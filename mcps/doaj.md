@@ -34,7 +34,7 @@ Connect to the **Directory of Open Access Journals (DOAJ)** to explore millions 
 - **Librarians & Data Scientists** — automate the retrieval of scholarly metadata for analysis or cataloging
 
 
-## Available Tools
+## Available Tools (8)
 - **bulk_create_articles**: Requires publisher API key. Keep batch sizes around 600KB.
 
 Bulk upload articles to DOAJ
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `doaj` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `doaj` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DOAJ** tools.
 
 **Configuration:**

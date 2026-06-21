@@ -33,7 +33,7 @@ Connect your **Fellow** workspace to any AI agent and manage your entire meeting
 - **Remote Teams** — stay aligned on meeting outcomes and decisions.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_fellow_status**: Verify Fellow API connectivity
 - **complete_action_item**: Mark an action item as completed
 - **create_action_item**: Optionally link it to a meeting, assign to a user by email, and set a due date.
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fellow-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fellow-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fellow** tools.
 
 **Configuration:**

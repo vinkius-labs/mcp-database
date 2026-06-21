@@ -13,7 +13,7 @@ Calculate precise quantities, application sequences, and costs for seed treatmen
 This MCP server provides specialized tools for agricultural professionals to manage seed treatment processes. Use `compute_material_requirements` to determine the exact mass of fungicides, insecticides, and inoculants needed based on your batch weight. The `get_application_sequence` tool ensures biological stability by recommending the correct order of application, always placing inoculants last. You can also use `calculate_treatment_cost` to estimate total expenditure and `estimate_solution_volume` to calculate the required spray volume per 100kg of seed.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_application_sequence**: Determine the correct order of treatment application
 - **compute_material_requirements**: Calculate required amounts of fungicide, insecticide, and inoculant
 - **estimate_solution_volume**: Estimate the required spray solution volume
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `seed-treatment-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `seed-treatment-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Seed Treatment Calculator** tools.
 
 **Configuration:**

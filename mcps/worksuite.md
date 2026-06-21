@@ -33,7 +33,7 @@ Connect your **Worksuite** (formerly Shortlist) account to any AI agent to autom
 - **Operations Teams** — streamline the onboarding and payment tracking for global contingent workforces.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_job**: Get details of a job opening
 - **get_project**: Get details of a specific project
 - **get_talent**: Get details of a specific talent
@@ -94,7 +94,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `worksuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `worksuite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Worksuite** tools.
 
 **Configuration:**

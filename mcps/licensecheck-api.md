@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire software compliance and license
 - **Operations Leads** — automate legal data querying to orchestrate cross-functional development teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_software_license**: Search for a software license by name or identifier
 - **check_api_status**: dev REST API.
 
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `licensecheck-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `licensecheck-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LicenseCheck API** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect your **Chorus.ai (ZoomInfo)** account to any AI agent and take full cont
 - **Product Managers** — verify customer feedback and pain points discussed in sales calls
 
 
-## Available Tools
+## Available Tools (8)
 - **get_my_chorus_profile**: Retrieve information about the currently authenticated session
 - **get_meeting_details**: Get detailed information for a specific meeting
 - **get_meeting_moments**: Retrieve AI-identified key moments for a meeting
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chorusai-zoominfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chorusai-zoominfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chorus.ai (ZoomInfo)** tools.
 
 **Configuration:**

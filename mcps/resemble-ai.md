@@ -33,7 +33,7 @@ Connect your **Resemble AI** account to any AI agent to generate, manage, and pr
 - **Security Teams** — Verify the authenticity of audio files and detect synthetic manipulations using built-in safety tools.
 
 
-## Available Tools
+## Available Tools (16)
 - **add_watermark**: Apply an imperceptible watermark to an audio file
 - **create_clip**: Supports SSML.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `resemble-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `resemble-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Resemble AI** tools.
 
 **Configuration:**

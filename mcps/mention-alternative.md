@@ -33,7 +33,7 @@ Connect your **Mention** account to any AI agent and manage brand monitoring thr
 - **Customer Support** — identify unhappy customers complaining online
 
 
-## Available Tools
+## Available Tools (12)
 - **create_monitoring_alert**: Add new alert
 - **remove_monitoring_alert**: Delete an alert
 - **favorite_mention**: Mark as favorite
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mention-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mention-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mention** tools.
 
 **Configuration:**

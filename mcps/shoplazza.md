@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your global retail business with **Shoplazz
 - **Shoplazza Power Users** — integrate your existing retail workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_customer**: Get customer details
 - **get_inventory_levels**: Get inventory levels
 - **get_order**: Get order details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shoplazza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shoplazza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shoplazza / 店匠** tools.
 
 **Configuration:**

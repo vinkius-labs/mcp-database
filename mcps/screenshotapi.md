@@ -35,7 +35,7 @@ No more manual 'Print Screen' or browser debugging. Your AI acts as a dedicated 
 - **Content Creators** — streamline the generation of website previews and PDF reports directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **capture_clean_screenshot_no_ads**: Capture screenshot without ads or cookies
 - **capture_dark_mode_screenshot**: Capture screenshot in dark mode
 - **capture_delayed_screenshot**: Useful for lazy-loading elements.
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `screenshotapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `screenshotapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ScreenshotAPI** tools.
 
 **Configuration:**

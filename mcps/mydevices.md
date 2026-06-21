@@ -26,7 +26,7 @@ Connect your **myDevices Cayenne** account to empower your AI agents with IoT ca
 3. Start managing your IoT fleet directly from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_device**: Get device details
 - **get_sensor_data**: Get current sensor value
 - **get_sensor_history**: Get historical sensor data
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mydevices` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mydevices` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **myDevices** tools.
 
 **Configuration:**

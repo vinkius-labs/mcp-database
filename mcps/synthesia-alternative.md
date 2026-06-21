@@ -34,7 +34,7 @@ Connect your **Synthesia** AI video account to any AI agent and simplify how you
 - **Ops & Product Teams** — monitor production status and manage video assets directly from the workspace via the AI assistant.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_video_from_template**: Generate video using a Synthesia template
 - **create_video**: Create a new AI avatar video
 - **create_webhook**: completed or video.failed.
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `synthesia-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `synthesia-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Synthesia** tools.
 
 **Configuration:**

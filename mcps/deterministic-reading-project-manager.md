@@ -19,7 +19,7 @@ Managing extensive reading backlogs (like research papers, tech books, or docume
 - **Zero-Dependency Architecture:** Pure JS runtime execution guarantees absolute microsecond speed without any massive external NPM dependencies.
 
 
-## Available Tools
+## Available Tools (1)
 - **analyze_reading_list**: Provide the items array as a JSON string, ensuring all required fields are present.
 
 Analyzes an array of reading items to generate comprehensive progress reports, estimate exact completion times (based on WPM), and construct an optimized reading sequence using the Snowball Method
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-reading-project-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-reading-project-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Reading Project Manager** tools.
 
 **Configuration:**

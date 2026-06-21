@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire cloud storage ecosystem with **
 - **Business Owners** — automate storage querying to orchestrate your data-driven growth smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **copy_item**: Copy a file or folder
 - **create_folder**: Create a new folder in DropBox
 - **create_shared_link**: Create a shared link for a path
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dropbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dropbox-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DropBox** tools.
 
 **Configuration:**

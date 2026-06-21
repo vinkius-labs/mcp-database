@@ -11,7 +11,7 @@ Connect IBM watsonx to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (10)
 - **create_prompt**: Create a new prompt in watsonx
 - **generate_chat**: Use this for multi-turn conversational AI applications.
 
@@ -59,7 +59,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibm-watsonx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibm-watsonx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBM watsonx** tools.
 
 **Configuration:**

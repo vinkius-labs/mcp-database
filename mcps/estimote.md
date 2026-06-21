@@ -36,7 +36,7 @@ Connect your **Estimote Cloud** account to any AI agent and take full control of
 - **Operations Teams** — audit beacon battery levels and manage physical device assignments in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **assign_tag_to_beacon**: If the tag does not exist, it is created automatically. A device can have multiple tags. Use to organize beacons by floor, zone, store section, or campaign. Tags persist in the cloud and do not require physical beacon access.
 
 Assign an organizational tag to a specific Estimote beacon device, adding it to a logical group for fleet management, analytics filtering, and proximity campaign targeting
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `estimote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `estimote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Estimote** tools.
 
 **Configuration:**

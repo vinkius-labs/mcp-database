@@ -26,7 +26,7 @@ Connect your **Makeswift** site to any AI agent and simplify your visual buildin
 3. Start managing your visual experiences from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **create_snapshot**: Create a new content snapshot
 - **get_page**: Get details for a specific page
 - **get_site_details**: Get current Makeswift site details
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `makeswift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `makeswift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Makeswift** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Mobile Action** account to your AI agent and gain a competitive e
 - **ASO Specialists** — automate the retrieval of keyword suggestions and ranking history.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_ad_creatives**: Get app advertising creatives
 - **get_app_info**: Get detailed app store information
 - **get_app_reviews**: Get app customer reviews
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mobile-action` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mobile-action` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mobile Action** tools.
 
 **Configuration:**

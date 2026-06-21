@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire legal research workflow with **
 - **Operations Leads** — automate legal data querying to orchestrate cross-functional research teams smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_court**: Get details for a specific court
 - **get_judge**: Get details for a specific judge
 - **get_opinion**: Get details for a specific opinion
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `courtlistener` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `courtlistener` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CourtListener** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Bland AI** API key to your AI agent and take full programmatic co
 - **Developers** — debug live conversational flows, disconnect rogue calls, and test WebRTC fallback channels without leaving the IDE.
 
 
-## Available Tools
+## Available Tools (10)
 - **analyze_call**: Interrogate an active recording querying direct goal completion status
 - **end_call**: Force an immediate disconnect disrupting a live AI call
 - **get_batch**: Retrieve aggregations profiling the concurrent status of a Bulk Batch
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bland-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bland-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bland AI** tools.
 
 **Configuration:**

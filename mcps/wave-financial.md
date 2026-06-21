@@ -34,7 +34,7 @@ Connect your AI agent to **Wave Financial**, the all-in-one accounting software 
 - **Financial Analysts** — audit business performance and cash flow via AI
 
 
-## Available Tools
+## Available Tools (10)
 - **get_user_info**: Retrieve the authenticated user information
 - **list_accounts**: List the chart of accounts for a specific business
 - **list_bills**: List bills (accounts payable) for a specific business
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wave-financial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wave-financial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wave Financial** tools.
 
 **Configuration:**

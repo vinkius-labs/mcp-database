@@ -33,7 +33,7 @@ Connect to **Reqres**, the industry-standard hosted REST-API, to simulate real-w
 - **AI Builders** — provide your agent with a sandbox environment to practice data manipulation and tool usage.
 
 
-## Available Tools
+## Available Tools (25)
 - **agent_health**: Get Agent Sandbox health probe and rate-limit status
 - **agent_orders**: Get orders with relational data from Agent Sandbox
 - **agent_scenarios**: List available failure scenarios in Agent Sandbox
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `reqres` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `reqres` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Reqres** tools.
 
 **Configuration:**

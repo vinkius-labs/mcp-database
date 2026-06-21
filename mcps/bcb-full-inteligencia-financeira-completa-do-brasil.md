@@ -22,7 +22,7 @@ The **ultimate Brazil Central Bank Mega-Server** — 22 tools across 4 domains.
 ### 2 Engines: SGS (20K+ series) + Olinda OData (PTAX/Focus/PIX)
 
 
-## Available Tools
+## Available Tools (21)
 - **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
 
 Obter a cotação do dólar americano (PTAX) em uma data específica
@@ -158,7 +158,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bcb-full-inteligencia-financeira-completa-do-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bcb-full-inteligencia-financeira-completa-do-brasil` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BCB Full — Inteligência Financeira Completa do Brasil** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ Your AI agent becomes your SMS operations center, handling verification flows, d
 - **Security Teams** — Send verification codes and voice calls for multi-factor authentication flows
 
 
-## Available Tools
+## Available Tools (10)
 - **create_template**: The template must be approved before it can be used. Template content should include variable placeholders like {1}, {2} for dynamic content. Approval typically takes a few minutes to hours.
 
 Create a new SMS template in Chuanglan 253
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chuanglan-253-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chuanglan-253-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chuanglan 253** tools.
 
 **Configuration:**

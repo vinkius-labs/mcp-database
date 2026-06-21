@@ -39,7 +39,7 @@ No more switching to another terminal to run Redis commands. Your AI acts as an 
 - **Full-Stack Teams** — manipulate data structures (hashes, lists, sets) for application state without opening Redis CLI
 
 
-## Available Tools
+## Available Tools (23)
 - **decr**: If the key does not exist, it is initialized to 0 before the operation. Returns the new value after decrementing.
 
 Decrement a numeric value in Upstash Redis
@@ -172,7 +172,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `upstash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `upstash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Upstash** tools.
 
 **Configuration:**

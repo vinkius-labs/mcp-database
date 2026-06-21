@@ -33,7 +33,7 @@ Connect your **Zyte API** account to any AI agent to bypass anti-bot measures an
 - **Developers** — debug web scrapers and inspect browser-rendered content directly from the code editor
 
 
-## Available Tools
+## Available Tools (3)
 - **extract_data**: Uses POST under the hood but acts as a read query.
 
 Extract web data using Zyte API
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zyte` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zyte** tools.
 
 **Configuration:**

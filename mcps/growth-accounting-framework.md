@@ -13,7 +13,7 @@ Analyze user movement, retention patterns, and growth efficiency using the Growt
 This MCP server provides a complete toolkit for analyzing product growth through the lens of the Growth Accounting Framework. By decomposing changes in your active user base, you can identify exactly how much growth is driven by new acquisitions, how many users are returning after absence (resurrected), and where you are losing momentum (churned). Use `classify_user_flow` to categorize user movement between periods, `calculate_growth_metrics` to compute critical indicators like the Quick Ratio and Stickiness (DAU/MAU), and `evaluate_growth_health` to receive a qualitative diagnosis of your product's sustainability based on industry benchmarks.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_growth_metrics**: Compute growth stability and engagement metrics
 - **evaluate_growth_health**: Diagnose growth health status
 - **classify_user_flow**: Categorize users into New, Retained, Resurrected, and Churned
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `growth-accounting-framework` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `growth-accounting-framework` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Growth Accounting Framework** tools.
 
 **Configuration:**

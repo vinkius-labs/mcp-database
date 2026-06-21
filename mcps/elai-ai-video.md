@@ -32,7 +32,7 @@ Integrate **Elai.io**, the leading AI video generation platform, directly into y
 - **Operations Leads** — Research specific project details and organizational video metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_new_ai_video**: Create a new AI video from a template or text script
 - **get_elai_account_metadata**: Retrieve metadata and credit balance for your Elai account
 - **get_video_details**: Get detailed settings and rendering status for a specific video
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elai-ai-video` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elai-ai-video` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elai AI Video** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **GetBlock** account to any AI agent and interact with dozens of bl
 - **DeFi Users** — monitor wallet balances and transaction statuses across multiple protocols via a single interface.
 
 
-## Available Tools
+## Available Tools (26)
 - **btc_analyzepsbt**: Analyze and provide information about a PSBT
 - **btc_createpsbt**: Create a transaction in the Partially Signed Bitcoin Transaction format
 - **btc_getbestblockhash**: Get the hash of the best (tip) block
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `getblock-web3-rpc-provider` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `getblock-web3-rpc-provider` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GetBlock (Web3 RPC Provider)** tools.
 
 **Configuration:**

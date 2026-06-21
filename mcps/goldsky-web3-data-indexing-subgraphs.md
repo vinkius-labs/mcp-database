@@ -33,7 +33,7 @@ Connect your **Goldsky** account to any AI agent to orchestrate high-performance
 - **Protocol Teams** — Manage cross-chain data indexing infrastructure through simple conversational commands.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_pipeline**: Create and deploy a new pipeline
 - **delete_pipeline**: Delete a pipeline (irreversible)
 - **get_pipeline_error_count**: Get error count in a time window for a pipeline
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `goldsky-web3-data-indexing-subgraphs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `goldsky-web3-data-indexing-subgraphs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Goldsky (Web3 Data Indexing & Subgraphs)** tools.
 
 **Configuration:**

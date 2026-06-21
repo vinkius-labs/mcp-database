@@ -33,7 +33,7 @@ Connect your **Humanloop** account to any AI agent to streamline your LLM operat
 - **DevOps Teams** — automate the deployment of prompt configurations across different environments.
 
 
-## Available Tools
+## Available Tools (12)
 - **call_prompt_stream**: Execute a prompt and stream the response
 - **delete_prompt_version**: Remove a specific version of a prompt
 - **deploy_prompt**: g., production, staging).
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `humanloop-llm-prompt-management-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `humanloop-llm-prompt-management-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Humanloop (LLM Prompt Management API)** tools.
 
 **Configuration:**

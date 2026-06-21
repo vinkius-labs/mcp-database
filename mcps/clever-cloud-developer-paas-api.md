@@ -33,7 +33,7 @@ Connect your **Clever Cloud** account to any AI agent and take full control of y
 - **Technical Leads** — oversee multiple organizations and applications across the entire Clever Cloud ecosystem.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_application**: Provide necessary configuration in the body.
 
 Create a new Clever Cloud application
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clever-cloud-developer-paas-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clever-cloud-developer-paas-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clever Cloud (Developer PaaS API)** tools.
 
 **Configuration:**

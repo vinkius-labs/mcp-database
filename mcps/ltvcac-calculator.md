@@ -23,7 +23,7 @@ Our MCP provides a clear mechanism to bridge this financial intelligence gap. It
 The result is not just a number; it's an actionable measure of financial health. You can immediately determine if your marketing spend supports sustainable growth.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_cac**: Accepts JSON array of {channelName, totalSpend, newCustomersAcquired} objects.
 
 Calculate Customer Acquisition Cost (CAC) per marketing channel
@@ -93,7 +93,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ltvcac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ltvcac-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LTV:CAC Calculator** tools.
 
 **Configuration:**

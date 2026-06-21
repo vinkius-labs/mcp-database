@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your digital communication with **SendCloud
 - **SendCloud Power Users** — integrate your existing communication workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_address_member**: Add member to address list
 - **create_address**: Create address list
 - **delete_address**: Delete address list
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sendcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sendcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SendCloud** tools.
 
 **Configuration:**

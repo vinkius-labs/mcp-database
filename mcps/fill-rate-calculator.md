@@ -13,7 +13,7 @@ Calculate Order, Line, and Unit Fill Rate metrics along with stockout costs.
 This MCP server provides essential logistics performance tools to measure supply chain efficiency. Use `calculate_fill_rate_metrics` to determine Order, Line, and Unit Fill Rates from raw fulfillment data. The `estimate_stockout_impact` tool quantifies the financial loss and potential NPS degradation caused by unfulfilled orders. Additionally, `compare_to_benchmarks` allows you to evaluate your current performance against industry-specific targets for sectors like retail, pharmaceutical, electronics, and food & beverage.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_fill_rate_metrics**: Calculate Order, Line, and Unit Fill Rate metrics
 - **compare_to_benchmarks**: Evaluate performance against industry benchmarks
 - **estimate_stockout_impact**: Quantify the financial and reputational damage of unfulfilled demand
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fill-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fill-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fill Rate Calculator** tools.
 
 **Configuration:**

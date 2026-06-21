@@ -33,7 +33,7 @@ Connect your **MediaSilo (Legacy)** account to any AI agent and manage video pro
 - **Video Editors** — automate file organization and sharing workflows
 
 
-## Available Tools
+## Available Tools (11)
 - **list_assets**: List all assets in the MediaSilo account
 - **list_folder_assets**: List assets within a specific MediaSilo folder
 - **get_asset**: Get details for a specific MediaSilo asset
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mediasilo-legacy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mediasilo-legacy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MediaSilo (Legacy)** tools.
 
 **Configuration:**

@@ -44,7 +44,7 @@ The tool validates logical consistency. If the agent says `REASONING_PROVEN` but
 - **Universal domain.** Unlike specialized MCPs, Critical Thinking Prover applies to ANY complex problem — technical architecture, business strategy, policy design, ethical dilemmas, resource allocation, organizational change.
 
 
-## Available Tools
+## Available Tools (2)
 - **validate_task_completion**: "I think I am done" is not proof. You must: (1) state the OBJECTIVE clearly — what was the user's actual request?, (2) CHECKLIST all requirements from the prompt — each requirement mapped to a specific file change or action taken. Generic "addressed all requirements" is not a checklist, (3) list MODIFIED FILES — exact paths with line ranges. "Updated the code" is not traceability, (4) provide VERIFICATION LOGS — compilation output, test results, build logs, or script output. Must prove execution. "It should work" and placeholder assertions are rejected, (5) expose REMAINING GAPS — outstanding tasks, out-of-scope items, assumptions, manual checks. "No gaps" without explicit audit means you have not looked, (6) commit to your VERDICT — if the pivots say incomplete, the verdict must say incomplete. If rejected, fix the highlighted issue before declaring the task finished.
 
 Structured reflection tool to verify task completion and delivery integrity. Forces the agent to prove it is actually finished — not "I think I am done" but mapping every user requirement to a specific file change, supplying execution logs as evidence, and identifying remaining gaps. Catches Incomplete Requirements (declaring done when 3 of 5 requirements are addressed), Unmodified Artifacts (claiming changes without specifying which files at which lines), Unverified Changes (no compilation logs, no test output, no build results — "it should work"), Gap Blindness (assuming 100% completion without listing outstanding work or limitations), and Delivery Flaws (placeholders, TODOs, or stub implementations left in committed code). Call at the end of every task execution
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `critical-thinking-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `critical-thinking-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Critical Thinking Prover** tools.
 
 **Configuration:**

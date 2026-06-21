@@ -35,7 +35,7 @@ No more manual triggering of cloud tests or digging through complex run logs. Yo
 - **DevOps Teams** — automate the retrieval of testing IPs and monitor suite performance through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **get_ips**: Get BugBug IP addresses
 - **get_suite_run**: Get status of a suite run
 - **get_suite**: Get details for a specific suite
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bugbug` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bugbug` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BugBug** tools.
 
 **Configuration:**

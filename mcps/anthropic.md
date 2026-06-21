@@ -33,7 +33,7 @@ The **Anthropic MCP Server** enables seamless integration with Claude, the leadi
 - **Project Managers** — Track AI spending and model availability across your team's account.
 
 
-## Available Tools
+## Available Tools (8)
 - **cancel_batch**: Cancel a pending Message Batch
 - **check_rate_limits**: Check current rate limits for your Anthropic account
 - **create_batch**: Saves 50% on token costs.
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `anthropic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `anthropic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Anthropic** tools.
 
 **Configuration:**

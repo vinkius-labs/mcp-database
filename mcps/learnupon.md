@@ -33,7 +33,7 @@ Connect your **LearnUpon** portal to any AI agent to automate your learning mana
 - **HR Specialists** — Automate the onboarding of new hires into specific training paths effortlessly
 
 
-## Available Tools
+## Available Tools (9)
 - **list_courses**: List all available courses
 - **enroll_user_in_course**: Requires course_id and user identification.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `learnupon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `learnupon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LearnUpon** tools.
 
 **Configuration:**

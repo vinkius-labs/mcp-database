@@ -33,7 +33,7 @@ Connect your **Heroku** account to any AI agent and take full control of your cl
 - **System Admins** — manage maintenance windows and application lifecycles across multiple environments and regions efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **create_app**: Provision a fresh structural App container on Heroku
 - **delete_app**: Traffic routing instantly yields persistent 404/no web-dynos responses. Highly destructive.
 
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heroku-paas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heroku-paas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heroku (PaaS)** tools.
 
 **Configuration:**

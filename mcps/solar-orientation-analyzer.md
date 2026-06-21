@@ -13,7 +13,7 @@ Calculate solar incidence angles, sunlight duration, and architectural protectio
 The Solar Orientation Analyzer provides specialized tools for architects and engineers to assess solar exposure. Use `calculate_solar_incidence` to determine the sun's angle relative to a facade during summer, winter, and equinox periods. Use `estimate_sunlight_duration` to calculate how many hours of direct sunlight each face receives throughout the year. Finally, use `generate_protection_srategy` to receive architectural recommendations like brise-soleil or reflective glazing based on calculated heat gain risks.
 
 
-## Available Tools
+## Available Tools (3)
 - **generate_protection_strategy**: Returns recommendation and impact level.
 
 Provides architectural recommendations for solar shading or heat mitigation based on calculated exposure
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `solar-orientation-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `solar-orientation-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Solar Orientation Analyzer** tools.
 
 **Configuration:**

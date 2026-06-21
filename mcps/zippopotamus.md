@@ -31,7 +31,7 @@ Equip your AI agent with global geographic intelligence via the **Zippopotam.us*
 - **Data Scientists** — access a reliable source of structured postal and coordinate data.
 
 
-## Available Tools
+## Available Tools (2)
 - **lookup_nearby_city**: Lookup zip codes for a city
 - **lookup_postcode**: Lookup location by postal code
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zippopotamus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zippopotamus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zippopotam.us** tools.
 
 **Configuration:**

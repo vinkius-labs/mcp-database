@@ -13,7 +13,7 @@ Calculate estimated project duration in weeks based on total built area and buil
 **Project Scope:** Estimating construction timelines is complex because duration depends not only on the sheer size of the build but also on its inherent complexity and structural type. A simple square footage calculation fails to capture these crucial variables.
 
 
-## Available Tools
+## Available Tools (3)
 - **query_base_phase_durations**: No inputs required.
 
 Retrieve standard base durations for each construction phase
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `construction-schedule-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `construction-schedule-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Construction Schedule Calculator** tools.
 
 **Configuration:**

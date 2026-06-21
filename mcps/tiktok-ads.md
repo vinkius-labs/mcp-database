@@ -32,7 +32,7 @@ Connect **TikTok Ads** to your AI agent and manage your TikTok advertising campa
 - **E-commerce Brands** — Track ROAS, conversion data, and product catalog performance.
 
 
-## Available Tools
+## Available Tools (8)
 - **enable_campaign**: Enable a campaign
 - **list_campaigns**: List all TikTok ad campaigns
 - **list_adgroups**: List all TikTok ad groups
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tiktok-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tiktok-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TikTok Ads** tools.
 
 **Configuration:**

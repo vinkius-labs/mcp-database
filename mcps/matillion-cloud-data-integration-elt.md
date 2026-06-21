@@ -34,7 +34,7 @@ Connect your **Matillion Data Productivity Cloud** account to any AI agent and t
 - **BI Operations Teams** — track active runtime agents and ensure high availability of critical ELT processes efficiently
 
 
-## Available Tools
+## Available Tools (6)
 - **list_pipelines**: List all Matillion ETL pipelines
 - **get_pipeline**: Get specific pipeline details
 - **list_executions**: List recent pipeline executions
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `matillion-cloud-data-integration-elt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `matillion-cloud-data-integration-elt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Matillion (Cloud Data Integration & ELT)** tools.
 
 **Configuration:**

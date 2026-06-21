@@ -32,7 +32,7 @@ Integrate the powerful AI-native PostgreSQL extensions of **Supabase Vector** st
 - **Backend Developers** — Evaluate robust vector databases quickly debugging your semantic infrastructure and RAG deployments natively directly in your active workspace.
 
 
-## Available Tools
+## Available Tools (7)
 - **delete_table_rows**: This action is irreversible.
 
 Deletes rows from a table based on a column value
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `supabase-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `supabase-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Supabase Vector** tools.
 
 **Configuration:**

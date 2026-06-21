@@ -27,7 +27,7 @@ Connect **Mixmax** to your AI agent and manage your sales communication through 
 3. Start managing your sales outreach with Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (10)
 - **add_recipient_to_sequence**: Add a recipient to an email sequence
 - **create_reminder**: Create a new email reminder
 - **get_availability**: Check user calendar availability
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mixmax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mixmax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mixmax** tools.
 
 **Configuration:**

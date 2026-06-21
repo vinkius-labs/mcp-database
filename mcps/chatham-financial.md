@@ -35,7 +35,7 @@ Connect your **Chatham Financial (ChathamDirect)** account to any AI agent and t
 - **Investment Analysts** — verify portfolio summaries and legal entity data for reporting
 
 
-## Available Tools
+## Available Tools (8)
 - **get_trade_accounting**: Get hedge accounting details for a transaction
 - **get_hedge_effectiveness**: Retrieve hedge effectiveness test results
 - **get_chatham_market_data**: Retrieve benchmark rates and forward curves
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chatham-financial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chatham-financial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chatham Financial** tools.
 
 **Configuration:**

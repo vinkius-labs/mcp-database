@@ -13,7 +13,7 @@ Calculate final examination scores, manage stage thresholds, and estimate compet
 This MCP server provides specialized tools to automate the complex scoring logic of competitive examinations. Use `calculate_weighted_score` to determine a candidate's total score based on stage weights, and `verify_stage_thresholds` to ensure minimum requirements are met for each exam phase. You can also use `resolve_tiebreaker` to handle identical scores using a priority hierarchy, or `predict_ranking_position` to estimate a candidate's rank relative to available vacancies.
 
 
-## Available Tools
+## Available Tools (4)
 - **predict_ranking_position**: Estimates where a candidate stands in the overall competition relative to available job openings
 - **calculate_weighted_score**: All stages in scores must have corresponding weights, and total weight must be 1.0.
 
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `concurso-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `concurso-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Concurso Score Calculator** tools.
 
 **Configuration:**

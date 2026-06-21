@@ -32,7 +32,7 @@ Connect your **Anaplan** account to your AI agent to automate financial planning
 - **Operations Teams** — Monitor the status of long-running data syncs directly from your workspace.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_task_status**: Get status of a running task
 - **list_exports**: List export actions for a model
 - **list_files**: List files in a model (exports/imports)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `anaplan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `anaplan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Anaplan** tools.
 
 **Configuration:**

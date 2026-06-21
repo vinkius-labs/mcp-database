@@ -32,7 +32,7 @@ Connect your **Wakapi** instance to any AI agent to monitor your development wor
 - **Freelancers** — accurately report time spent on specific client projects without manual timers.
 
 
-## Available Tools
+## Available Tools (4)
 - **send_heartbeats**: Provide a heartbeat object or an array of heartbeat objects.
 
 Send coding activity heartbeats to Wakapi
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wakapi-wakatime-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wakapi-wakatime-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wakapi (WakaTime Alternative)** tools.
 
 **Configuration:**

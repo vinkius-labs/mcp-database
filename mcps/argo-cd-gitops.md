@@ -33,7 +33,7 @@ Connect your **Argo CD** instance to any AI agent and take full control of your 
 - **Software Developers** — manage their own application environments and roll back changes without needing deep CLI knowledge.
 
 
-## Available Tools
+## Available Tools (13)
 - **add_cluster**: Add a new cluster to Argo CD
 - **add_repository**: Add a new repository to Argo CD
 - **get_application_logs**: Get logs for an Argo CD application
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `argo-cd-gitops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `argo-cd-gitops` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Argo CD (GitOps)** tools.
 
 **Configuration:**

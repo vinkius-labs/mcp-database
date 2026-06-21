@@ -13,7 +13,7 @@ Calculate and benchmark Rule of 40 performance for SaaS and software companies.
 The Rule of 40 Analyzer is a specialized financial tool designed to evaluate the health of software and SaaS businesses. By combining revenue growth rates with profitability margins (EBITDA or FCF), it provides a single metric to assess business efficiency. Use `calculate_rule_of_40` to determine if a company falls into the Risk, Healthy, or Elite performance tiers. For a more comprehensive view, use `compute_ttm_metrics` to aggregate quarterly data and identify long-term trends over the last twelve months. Additionally, you can benchmark your results against industry standards using `compare_to_sector_peers`, which compares your score against established sectors like Software (SaaS), Fintech, and Infrastructure/Cloud.
 
 
-## Available Tools
+## Available Tools (3)
 - **compare_to_sector_peers**: Compares a company score against industry benchmarks
 - **compute_ttm_metrics**: Aggregates quarterly data to determine the TTM performance score
 - **calculate_rule_of_40**: g., 40 for 40%) and returns the score and performance tier.
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rule-of-40-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rule-of-40-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rule of 40 Analyzer** tools.
 
 **Configuration:**

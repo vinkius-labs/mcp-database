@@ -34,7 +34,7 @@ Connect your **Agendor** account to your AI agent to unlock professional sales o
 - **Business Owners** — retrieve sales summaries and identify bottlenecks in the revenue process effortlessly
 
 
-## Available Tools
+## Available Tools (6)
 - **list_people**: Retrieve a comprehensive directory of person profiles registered in your Agendor CRM
 - **create_person**: Can optionally link the person to a company.
 
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `agendor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `agendor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Agendor** tools.
 
 **Configuration:**

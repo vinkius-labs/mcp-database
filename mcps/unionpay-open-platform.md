@@ -31,7 +31,7 @@ Integrate the world's largest card network directly into your operations. **Unio
 - **Cross-border Developers** — Easily manage Chinese payments globally without complex SDK footprint
 
 
-## Available Tools
+## Available Tools (7)
 - **cancel_card_token**: Unbind or cancel an existing UnionPay card token
 - **check_card_risk_status**: Query UnionPay risk status for a card
 - **generate_qr_code**: Generate a UnionPay QR Code for payment
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unionpay-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unionpay-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UnionPay Open Platform** tools.
 
 **Configuration:**

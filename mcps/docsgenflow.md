@@ -35,7 +35,7 @@ No more manual filling of templates or missing document generation errors. Your 
 - **Developers** — integrate high-speed DocsGenFlow document data into custom CRM and ERP pipelines through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_docsgenflow_status**: Verify DocsGenFlow API connectivity
 - **create_template**: Create a template
 - **download_document**: Download a document
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docsgenflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docsgenflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DocsGenFlow** tools.
 
 **Configuration:**

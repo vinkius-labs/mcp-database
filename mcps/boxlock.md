@@ -35,7 +35,7 @@ No more manual status checking of individual locks or missing delivery attempts.
 - **Security Teams** — automate the auditing of physical access events and monitor tampering alerts through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **get_lock**: Get lock details
 - **list_activities**: List lock activity logs
 - **list_barcodes**: List all active barcodes
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `boxlock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `boxlock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BoxLock** tools.
 
 **Configuration:**

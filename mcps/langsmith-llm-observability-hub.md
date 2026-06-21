@@ -34,7 +34,7 @@ Connect your **LangSmith** account to any AI agent and take full control of your
 - **AI Analysts** — audit human feedback queues and report on overall model grounding and accuracy across multiple tracing projects
 
 
-## Available Tools
+## Available Tools (6)
 - **list_projects**: Maps out the boundaries of distinct AI pipelines currently monitored by LangSmith.
 
 List all active LangSmith tracing projects/sessions
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `langsmith-llm-observability-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `langsmith-llm-observability-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LangSmith (LLM Observability & Hub)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ No more switching to the Fauna dashboard for quick data lookups or schema checks
 - **Product Teams** — retrieve real-time usage metrics or user data without needing a custom admin panel.
 
 
-## Available Tools
+## Available Tools (1)
 - **execute_fql**: Can be used for reading, creating, updating, or deleting data depending on the FQL string provided.
 
 Execute a Fauna Query Language (FQL) query
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fauna-serverless-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fauna-serverless-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fauna (Serverless DB)** tools.
 
 **Configuration:**

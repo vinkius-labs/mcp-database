@@ -35,7 +35,7 @@ Connect to **Hacker News** (Y Combinator) and take full control of your tech new
 - **Curious Professionals** — quickly summarize top stories and read insightful comments through the chat interface
 
 
-## Available Tools
+## Available Tools (3)
 - **top_stories**: Fetch the current Top stories on the Hacker News front page
 - **new_stories**: Fetch the most recently submitted stories on Hacker News
 - **get_item**: Read the detailed contents of a specific Hacker News item (a story, comment, or poll) by its ID. Returns HTML comments converted cleanly to Markdown
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hacker-news` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hacker-news` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hacker News** tools.
 
 **Configuration:**

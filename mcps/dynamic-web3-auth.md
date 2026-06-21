@@ -33,7 +33,7 @@ Connect your **Dynamic** environment to any AI agent to streamline Web3 user man
 - **Product Managers** — Monitor webhook configurations and available event types to coordinate feature releases.
 
 
-## Available Tools
+## Available Tools (8)
 - **check_sanctions**: Check wallet sanctions
 - **delete_user**: Delete a user from an environment
 - **get_embedded_wallet_versions**: Get active embedded wallet versions
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dynamic-web3-auth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dynamic-web3-auth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dynamic (Web3 Auth)** tools.
 
 **Configuration:**

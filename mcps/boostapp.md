@@ -32,7 +32,7 @@ Connect your **Boostapp** account to any AI agent to streamline your sales and c
 - **Business Owners** — maintain a clean and organized customer database using AI-driven automation.
 
 
-## Available Tools
+## Available Tools (1)
 - **create_lead**: Requires full name and phone number. Can optionally include pipeline stage and subscription details.
 
 Create a new lead in Boostapp
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `boostapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `boostapp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Boostapp** tools.
 
 **Configuration:**

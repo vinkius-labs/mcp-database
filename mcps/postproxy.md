@@ -25,7 +25,7 @@ Manage your Google Business Profile posts, reviews, and local SEO presence acros
 Marketing teams, social media managers, and developers looking to integrate Postproxy for AI Agents to streamline multi-channel social media campaigns and audience engagement.
 
 
-## Available Tools
+## Available Tools (11)
 - **createCommentReply**: Reply to a comment on a post in Postproxy
 - **createPost**: Provide text, status, and the list of profile IDs to publish to.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `postproxy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `postproxy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Postproxy** tools.
 
 **Configuration:**

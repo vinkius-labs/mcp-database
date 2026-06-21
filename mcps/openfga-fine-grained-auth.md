@@ -33,7 +33,7 @@ Connect your **OpenFGA** instance to any AI agent to manage Relationship-Based A
 - **DevOps & SREs** — Monitor store health and manage authorization environments across different clusters.
 
 
-## Available Tools
+## Available Tools (16)
 - **batch_check_relations**: Perform multiple checks in one request
 - **check_relation**: Check if a user has a relation to an object
 - **create_store**: Create a new OpenFGA store
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openfga-fine-grained-auth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openfga-fine-grained-auth` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenFGA (Fine-Grained Auth)** tools.
 
 **Configuration:**

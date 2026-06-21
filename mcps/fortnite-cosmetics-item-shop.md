@@ -32,7 +32,7 @@ Equip your AI agent with real-time intelligence for the world's most dynamic gam
 - **Collectors & Traders** — perform deep audits of skin history and rarity distribution across the ecosystem
 
 
-## Available Tools
+## Available Tools (8)
 - **get_cosmetic_details**: Get full details for a specific cosmetic by ID
 - **get_new_cosmetics**: List newly added and leaked cosmetics
 - **get_item_shop**: Updated at 00:00 UTC.
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fortnite-cosmetics-item-shop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fortnite-cosmetics-item-shop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fortnite Cosmetics & Item Shop** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **Growth Marketers** — trigger test events and verify analytics pipelines during development.
 
 
-## Available Tools
+## Available Tools (53)
 - **add_team_user**: Add user to team
 - **admin_list_teams**: Returns all teams (Admin only)
 - **admin_list_users**: Returns all users (Admin only)
@@ -149,7 +149,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `umami-privacy-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `umami-privacy-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Umami (Privacy Analytics)** tools.
 
 **Configuration:**

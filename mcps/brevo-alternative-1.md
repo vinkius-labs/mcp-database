@@ -33,7 +33,7 @@ Connect your **Brevo** account to any AI agent to orchestrate your transactional
 - **Customer Support** — verify if specific transactional emails were delivered to users by checking message IDs and event logs.
 
 
-## Available Tools
+## Available Tools (45)
 - **create_contact_attribute**: Create a new contact attribute
 - **create_contact_folder**: Create a new contact folder
 - **create_contact_list**: Create a new contact list
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brevo-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brevo-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Brevo** tools.
 
 **Configuration:**

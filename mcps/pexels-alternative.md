@@ -33,7 +33,7 @@ Connect to the **Pexels** library to discover millions of high-quality photos an
 - **Marketing Teams** — automate the discovery of visual content that matches specific brand colors and orientations.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_collection_media**: Get all media within a specific collection
 - **get_curated_photos**: Get a list of curated photos
 - **get_featured_collections**: Get a list of featured collections
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pexels-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pexels-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pexels** tools.
 
 **Configuration:**

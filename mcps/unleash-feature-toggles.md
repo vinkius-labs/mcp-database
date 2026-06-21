@@ -33,7 +33,7 @@ Connect your **Unleash** instance to any AI agent and gain full control over you
 - **Software Engineers** — verify flag evaluations and context properties directly from the code editor
 
 
-## Available Tools
+## Available Tools (11)
 - **list_environments**: Fetches all environments configured in Unleash.
 
 List all Unleash environments
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unleash-feature-toggles` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unleash-feature-toggles` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unleash (Feature Toggles)** tools.
 
 **Configuration:**

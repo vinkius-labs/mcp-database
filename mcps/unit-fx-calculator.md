@@ -19,7 +19,7 @@ LLMs notoriously struggle with complex compound conversions (e.g. converting km/
 - **In-Memory Edge Cache:** FX rates are cached in a native V8 `Map` for 1 hour, meaning massive batch conversions run instantly without getting rate-limited.
 
 
-## Available Tools
+## Available Tools (3)
 - **batch_convert**: ). Pass the value, source unit, and target unit for exact mathematical conversion.
 
 Converts multiple physical units in a single deterministic pass
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unit-fx-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unit-fx-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unit & FX Calculator** tools.
 
 **Configuration:**

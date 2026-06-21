@@ -13,7 +13,7 @@ Calculate the financial impact, EMV, and profitability of influencer marketing c
 This MCP server provides specialized analytical tools to quantify the media value and economic efficiency of influencer partnerships. Use `get_engagement_valuation` to determine Earned Media Value (EMV) and Cost Per Engagement (CPE). Use `get_conversion_economics` to analyze campaign profitability, including estimated conversions, CPA, and projected lifetime revenue based on LTV. You can also use `compare_to_paid_social` to evaluate how influencer performance compares against standard paid social benchmarks.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_engagement_valuation**: Determines the media value and engagement efficiency of a campaign
 - **compare_to_paid_social**: Compares influencer campaign efficiency to paid social benchmarks
 - **get_conversion_economics**: Analyzes campaign profitability based on conversions and customer value
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `influencer-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `influencer-roi-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Influencer ROI Calculator** tools.
 
 **Configuration:**

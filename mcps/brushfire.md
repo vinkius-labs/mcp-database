@@ -34,7 +34,7 @@ Connect your **Brushfire** account to any AI agent and orchestrate your event ma
 - **Finance Teams** — monitor event orders and transaction statuses using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_in_attendee**: Mark an attendee as checked-in
 - **get_account_info**: Retrieve core account information
 - **get_attendee**: Get details of a specific attendee
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brushfire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brushfire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Brushfire** tools.
 
 **Configuration:**

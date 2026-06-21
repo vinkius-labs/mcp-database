@@ -37,7 +37,7 @@ No more navigating multiple NASA websites to find Mars photos or check asteroid 
 - **Space Enthusiasts** — track near-Earth objects, browse rover photos and view satellite imagery of any location
 
 
-## Available Tools
+## Available Tools (9)
 - **get_apod**: If no date is specified, returns today's APOD. Optionally specify a single date, a date range (start_date and end_date), or a count of random APODs. Returns the image/video URL, title, explanation, copyright and date. This is one of NASA's most popular APIs.
 
 Get NASA Astronomy Picture of the Day (APOD)
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA** tools.
 
 **Configuration:**

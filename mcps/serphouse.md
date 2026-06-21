@@ -13,7 +13,7 @@ Grant your AI agent unfiltered real-time access to Google and Bing SERP data to 
 Equip your AI assistant with the ultimate crawler module engineered for unbridled search engine access. The SERPHouse MCP integration overcomes the constraints of offline AI knowledge by granting direct, proxy-rotated querying power over Google and Bing endpoints. Seamlessly transform your agent into a high-performance web discovery engine without triggering Captcha blocks.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_account_info**: Retrieves SERPHouse account information
 - **google_images**: Searches for images on Google
 - **google_news**: Searches for news on Google
@@ -78,7 +78,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `serphouse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `serphouse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SERPHouse** tools.
 
 **Configuration:**

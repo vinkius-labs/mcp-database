@@ -33,7 +33,7 @@ Connect to **MySportsFeeds** to bring professional sports data into your AI work
 - **Developers** — integrate professional sports data into applications or research projects via natural language
 
 
-## Available Tools
+## Available Tools (12)
 - **get_daily_games**: Get daily games schedule
 - **get_daily_player_stats**: Get daily player stats
 - **get_game_boxscore**: Get game boxscore
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mysportsfeeds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mysportsfeeds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MySportsFeeds** tools.
 
 **Configuration:**

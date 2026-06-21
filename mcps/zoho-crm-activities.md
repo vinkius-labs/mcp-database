@@ -27,7 +27,7 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 - **Support Teams** — Access contact and account data seamlessly
 
 
-## Available Tools
+## Available Tools (8)
 - **zoho_create_call**: Subject is required. Call_Type: Outbound or Inbound. Call_Purpose describes the reason (Prospecting, Follow-up, Demo, etc.). Call_Start_Time uses ISO format. Use to log completed calls or schedule upcoming ones.
 
 Log a call in Zoho CRM with subject, type (Inbound/Outbound), purpose, and start time for activity tracking
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-crm-activities` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-crm-activities` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho CRM Activities** tools.
 
 **Configuration:**

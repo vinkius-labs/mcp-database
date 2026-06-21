@@ -22,7 +22,7 @@ A single signal is misleading. Dogs communicate complex emotions through the *co
 **The Advantage:** Instead of vague suggestions, you get a precise assessment (e.g., 'Fearful' with 'High Confidence') followed by step-by-step instructions on how to safely approach the dog, minimizing stress for both parties.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_emotional_state**: Returns primary emotion, confidence level, and secondary readings.
 
 Analyze body signals to determine the dog primary emotional state and confidence level
@@ -94,7 +94,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dog-body-language-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dog-body-language-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dog Body Language Decoder** tools.
 
 **Configuration:**

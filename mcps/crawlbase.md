@@ -36,7 +36,7 @@ Connect your **Crawlbase** (formerly ProxyCrawl) account to any AI agent and tak
 - **Market Researchers** — perform deep web crawls and capture snapshots of target sites for offline analysis
 
 
-## Available Tools
+## Available Tools (10)
 - **scrape_html**: crawlbase.com` datacenter proxies.
 
 Identify bounded routing spaces inside the Headless Crawlbase Engine
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crawlbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crawlbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Crawlbase** tools.
 
 **Configuration:**

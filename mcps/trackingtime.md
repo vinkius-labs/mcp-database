@@ -34,7 +34,7 @@ Connect your **TrackingTime** account to any AI agent and simplify how you manag
 - **Productivity Junkies** — keep an organized record of daily activities and time spent on specific projects via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_time_entry**: Manual time entry
 - **create_project**: Add new project
 - **create_task**: Add new task
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trackingtime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trackingtime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TrackingTime** tools.
 
 **Configuration:**

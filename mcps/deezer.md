@@ -28,7 +28,7 @@ Connect **Deezer** music catalog to any AI agent and search millions of tracks, 
 3. Start exploring music from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (14)
 - **get_album**: Get detailed album information
 - **get_album_tracks**: Get tracks from an album
 - **get_artist_radio**: Get artist radio tracks
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deezer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deezer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deezer** tools.
 
 **Configuration:**

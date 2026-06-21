@@ -33,7 +33,7 @@ Supercharge your email marketing with AI agents controlling Zoho Campaign. Autom
 Ideal for **marketing teams**, **email marketers**, **growth hackers**, and **agencies** using Zoho Campaign. Let AI agents handle list segmentation, campaign creation, performance analysis, and contact management. Perfect for teams running 10+ campaigns monthly who want to streamline operations, reduce manual tasks, and gain faster insights from campaign data.
 
 
-## Available Tools
+## Available Tools (13)
 - **add_contacts_to_list**: Each contact requires at minimum an email address. Optionally include first name, last name, phone, company, and custom fields. Contacts must be provided as a JSON array of objects. Returns count of successfully added contacts.
 
 Add contacts to a Zoho Campaign mailing list
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-campaign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-campaign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Campaign** tools.
 
 **Configuration:**

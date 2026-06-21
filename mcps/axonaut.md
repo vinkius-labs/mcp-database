@@ -34,7 +34,7 @@ Transform your business administration with **Axonaut**, the all-in-one ERP desi
 - **Accountants** — retrieve financial document lists and product metadata for rapid auditing.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_task**: Create a new task
 - **get_account_check**: Verify Axonaut connection and get current user info
 - **get_company**: Get details for a specific company
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `axonaut` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `axonaut` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Axonaut** tools.
 
 **Configuration:**

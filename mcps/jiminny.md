@@ -35,7 +35,7 @@ No more manual reviewing of long call recordings or missing coaching opportuniti
 - **Developers** â€” integrate high-speed Jiminny conversation data into custom CRM and BI tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_jiminny_status**: Verify Jiminny API connectivity
 - **get_action_items**: Get action items from a call
 - **get_activity**: Get activity details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jiminny` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jiminny` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jiminny** tools.
 
 **Configuration:**

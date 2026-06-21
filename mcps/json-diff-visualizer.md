@@ -22,7 +22,7 @@ This MCP generates visual, colorized diffs with `+` and `-` markers — the same
 - **Complementary:** Use with deep-diff-engine for programmatic processing, json-diff-visualizer for human review.
 
 
-## Available Tools
+## Available Tools (1)
 - **diff_json**: Pass two JSON strings and receive both a structural diff (machine-readable) and a visual diff (human-readable with + and - markers). Essential for CI/CD agents comparing config versions, deployment manifests, or database schema snapshots.
 
 Generates structural and visual diffs between two JSON objects. Shows added, removed, and modified fields with exact paths
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `json-diff-visualizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `json-diff-visualizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSON Diff Visualizer** tools.
 
 **Configuration:**

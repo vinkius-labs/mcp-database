@@ -34,7 +34,7 @@ Transform your team communication into an AI-powered workflow with **Slack**, th
 - **Operations Managers** — audit communication patterns, find specific discussions, and coordinate across multiple channels effortlessly.
 
 
-## Available Tools
+## Available Tools (6)
 - **channels_list**: Returns public and private channels the bot has access to. Channel IDs are needed for sending messages or reading history.
 
 List Slack channels in the workspace
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `slack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `slack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Slack** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 - **Civic Tech Developers** — integrate official Brazilian legislative data into transparency tools and dashboards.
 
 
-## Available Tools
+## Available Tools (49)
 - **get_bloco**: Get details of a block
 - **get_deputado**: Get details of a specific deputy
 - **get_evento**: Get details of an event
@@ -145,7 +145,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `camara-dos-deputados-v2` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `camara-dos-deputados-v2` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Câmara dos Deputados (v2)** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual browsing through news sites for industry updates. Your AI acts as
 - **Product Managers** — streamline the retrieval of sector trends and monitor technological shifts directly within the chat.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_report**: Pass report data as a JSON string.
 
 Create a new news report
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `newslit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `newslit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Newslit** tools.
 
 **Configuration:**

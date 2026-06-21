@@ -35,7 +35,7 @@ Stop switching between tabs to check patient details or practitioner availabilit
 - **Medical Support Staff** — automate the process of finding practitioner IDs and business location details.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_appointment**: Create a new appointment
 - **create_patient**: Create a new patient
 - **create_treatment_note**: Create a treatment note
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cliniko` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cliniko` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cliniko** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect **Strava Planning** to any AI agent and manage your training logistics �
 - **Data Exporters** — export route data in GPX/TCX formats for use with other platforms and devices
 
 
-## Available Tools
+## Available Tools (14)
 - **get_athlete**: Use this to review personal profile details, check equipment assignments, or verify account settings.
 
 Get the authenticated athlete's profile information
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `strava-planning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `strava-planning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Strava Planning** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate US legal filing deadlines based on claim type, state, and accrual date
 This MCP server provides precise tools for determining the statute of limitations for various legal actions across US states. Use `calculate_statute_deadline` to find standard deadlines for contract, tort, or fraud claims. The server also supports evaluating the discovery rule via `evaluate_discovery_rule` and assessing how tolling events like minority or incapacity might extend your deadline using `check_tolling_impact`.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_tolling_impact**: Identifies if any known tolling events have extended the existing deadline
 - **calculate_statute_deadline**: Determines the standard filing deadline based on claim type, state, and the date of the incident
 - **evaluate_discovery_rule**: Re-calculates a deadline based on the moment the harm was discovered
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-statute-of-limitations-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-statute-of-limitations-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Statute of Limitations Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Livepeer** account to any AI agent to orchestrate decentralized v
 - **DApp Developers** — integrate decentralized video features into applications using natural language commands.
 
 
-## Available Tools
+## Available Tools (34)
 - **create_clip**: Create a short video clip from a live stream
 - **create_multistream_target**: Create a multistream target (e.g., Twitch, YouTube)
 - **create_room**: Create a real-time WebRTC multi-participant video room
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `livepeer-decentralized-video` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `livepeer-decentralized-video` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Livepeer (Decentralized Video)** tools.
 
 **Configuration:**

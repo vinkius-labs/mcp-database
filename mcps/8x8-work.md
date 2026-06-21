@@ -34,7 +34,7 @@ Transform your **8x8 Work** communications data into a strategic asset for your 
 - **Customer Success Managers** — verify call activity and interaction counts for specific extensions instantly.
 
 
-## Available Tools
+## Available Tools (3)
 - **list_call_records**: List call detail records (CDR)
 - **get_extension_summary**: Get extension call summary
 - **list_ring_groups**: List ring group analytics
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `8x8-work` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `8x8-work` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **8x8 Work** tools.
 
 **Configuration:**

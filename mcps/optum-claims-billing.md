@@ -29,7 +29,7 @@ Take complete proxy control over your hospital Back-Office, accelerating financi
 Specifically built for **Hospital Billing Departments**, **FinTech Operators**, and **Medical Accounting Agencies**.
 
 
-## Available Tools
+## Available Tools (5)
 - **opt_check_claim_status**: Check if a submitted bill has been paid, denied, or is pending medical review
 - **opt_get_remittance_advice**: Downloads the Electronic Remittance Advice (835 ERA) detailing payment breakouts
 - **opt_handle_denial_revision**: Resubmits a corrected claim fixing coding errors to overturn a payer denial
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `optum-claims-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `optum-claims-billing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Optum Claims & Billing** tools.
 
 **Configuration:**

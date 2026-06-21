@@ -34,7 +34,7 @@ Connect your **ElevenLabs** account to any AI agent to generate high-quality aud
 - **Sound Designers** — quickly prototype sound effects and clean up audio recordings using AI-powered isolation.
 
 
-## Available Tools
+## Available Tools (34)
 - **add_dictionary_from_file**: Add pronunciation dictionary from a PLS file
 - **add_dictionary_from_rules**: Add pronunciation dictionary from rules
 - **isolate_audio**: Remove background noise from audio
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elevenlabs-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elevenlabs-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ElevenLabs** tools.
 
 **Configuration:**

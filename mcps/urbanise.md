@@ -34,7 +34,7 @@ Connect your **Urbanise** property management account to any AI agent and simpli
 - **Strata Management Companies** — coordinate supplier lists and monitor financial ledgers for entire property portfolios.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Urbanise API connectivity
 - **create_maintenance_job**: Requires job title and description.
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `urbanise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `urbanise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Urbanise** tools.
 
 **Configuration:**

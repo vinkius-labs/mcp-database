@@ -38,7 +38,7 @@ Your AI agent becomes a protein domain expert with access to InterPro's unified 
 - **Bioinformaticians** — integrate protein family classifications into automated annotation pipelines
 
 
-## Available Tools
+## Available Tools (16)
 - **get_cdd_entry**: CDD provides curated models for protein domain families and includes additional alignment and structure data. Use accessions like cd00001.
 
 Get CDD (Conserved Domain Database) entry details
@@ -149,7 +149,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ebi-interpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ebi-interpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EBI InterPro** tools.
 
 **Configuration:**

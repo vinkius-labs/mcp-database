@@ -35,7 +35,7 @@ Connect your **Clientify** CRM account to any AI agent and take full control of 
 - **Sales Ops** — verify pipeline stages and monitor team activity
 
 
-## Available Tools
+## Available Tools (8)
 - **get_contact_crm_details**: Get detailed information for a specific contact
 - **get_deal_details**: Get detailed information for a specific sales deal
 - **get_my_clientify_profile**: Retrieve information about the authenticated CRM user
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clientify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clientify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clientify** tools.
 
 **Configuration:**

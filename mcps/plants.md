@@ -32,7 +32,7 @@ Connect to the **Trefle API** to explore global plant data. This server allows y
 - **Developers** — integrate plant data into applications without manual API calls.
 
 
-## Available Tools
+## Available Tools (11)
 - **correct_species**: Submit a data correction for a species
 - **get_plant**: Get details for a specific plant
 - **get_species**: Get details for a specific species
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plants` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plants` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plants** tools.
 
 **Configuration:**

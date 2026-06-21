@@ -34,7 +34,7 @@ Connect your **Langfuse** account to any AI agent and take full control of your 
 - **Data Scientists** — manage prompt templates and audit evaluation metrics to improve model response quality and grounding efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **get_trace**: Get complete telemetry and nested graph for a single trace
 - **get_daily_metrics**: Generate rolled-up USD cost and aggregated latency statistics
 - **create_observation**: Create a new LLM observation (span, event, generation) inside a trace
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `langfuse-llm-tracing-evals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `langfuse-llm-tracing-evals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Langfuse (LLM Tracing & Evals)** tools.
 
 **Configuration:**

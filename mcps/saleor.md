@@ -29,7 +29,7 @@ Empower your conversational AI with deep access to **Saleor**, the highly scalab
 5. Ask the AI: "Find out order specifics and shipping details for order number '334'."
 
 
-## Available Tools
+## Available Tools (10)
 - **get_customer**: Retrieves profile information and order history for a specific customer
 - **get_order**: Retrieves details for a specific order
 - **get_product**: Retrieves details for a specific product by ID
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `saleor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `saleor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Saleor** tools.
 
 **Configuration:**

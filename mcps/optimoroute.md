@@ -35,7 +35,7 @@ Connect your **OptimoRoute** account to any AI agent and orchestrate your entire
 - **Operations analysts** — pull proof of delivery data and scheduling info for audit and compliance reporting
 
 
-## Available Tools
+## Available Tools (10)
 - **get_order_pod**: Retrieve the exact structural matching verifying Delivery success Proof
 - **create_route_order**: Identify bounded routing spaces inside the Headless OptimoRoute platform
 - **delete_stale_order**: Perform structural extraction of properties driving active Deletions
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `optimoroute` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `optimoroute` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OptimoRoute** tools.
 
 **Configuration:**

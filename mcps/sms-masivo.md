@@ -35,7 +35,7 @@ Connect your **SMS Masivo** account to any AI agent and automate your SMS commun
 - **Sales Teams** — automate follow-up messaging with scheduled delivery.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_smsmasivo_status**: Verify SMS Masivo API connectivity
 - **create_contact**: Create a new contact
 - **get_balance**: Check your SMS credit balance
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sms-masivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sms-masivo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SMS Masivo** tools.
 
 **Configuration:**

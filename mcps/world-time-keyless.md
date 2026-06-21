@@ -37,7 +37,7 @@ No more manual math to figure out a time difference. Your AI agent becomes your 
 - **Everyday Users** — find out what time it is anywhere in the world through a simple chat command
 
 
-## Available Tools
+## Available Tools (2)
 - **get_current_time**: You can provide a timezone string (e.g. "America/Sao_Paulo") or use "ip" to infer from the network.
 
 Retrieves the exact current atomic time, UTC offset, and DST state for a specified timezone
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `world-time-keyless` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `world-time-keyless` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **World Time (Keyless)** tools.
 
 **Configuration:**

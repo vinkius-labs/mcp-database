@@ -35,7 +35,7 @@ Connect your AI agents to **Sensors Data** (神策数据), the leading professio
 - **Growth Engineers** — integrate deep behavioral insights into automated marketing and personalization flows
 
 
-## Available Tools
+## Available Tools (10)
 - **analyze_events**: Perform complex event analysis
 - **analyze_funnel**: Calculate conversion funnel metrics
 - **analyze_retention**: Calculate user retention rates
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sensors-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sensors-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sensors Data** tools.
 
 **Configuration:**

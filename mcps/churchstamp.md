@@ -35,7 +35,7 @@ No more manual uploading of recipient CSVs or guessing mail delivery dates. Your
 - **Outreach Coordinators** — automate the management of recipient lists and mail piece assignments through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_churchstamp_status**: Verify ChurchStamp API connectivity
 - **create_campaign**: Optionally assign a design template.
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `churchstamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `churchstamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChurchStamp** tools.
 
 **Configuration:**

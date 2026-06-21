@@ -34,7 +34,7 @@ Connect your **Amazon Selling Partner (SP-API)** account to your AI agent to unl
 - **Financial Analysts** — request financial event reports and monitor revenue across global marketplaces
 
 
-## Available Tools
+## Available Tools (10)
 - **list_orders**: List Amazon orders
 - **get_order_items**: Get order items
 - **list_fba_inventory**: List FBA inventory
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazon-selling-partner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazon-selling-partner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazon Selling Partner** tools.
 
 **Configuration:**

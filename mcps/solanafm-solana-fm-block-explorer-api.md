@@ -34,7 +34,7 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 - **Crypto Enthusiasts** — Monitor wallet activity and token holdings through natural conversation.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_account_info**: Get the metadata and state of a Solana account
 - **get_account_transactions**: List transactions associated with a specific account address
 - **get_block**: Get detailed information about a specific block
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `solanafm-solana-fm-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `solanafm-solana-fm-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SolanaFM (Solana FM Block Explorer API)** tools.
 
 **Configuration:**

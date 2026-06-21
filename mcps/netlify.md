@@ -34,7 +34,7 @@ Connect your **Netlify** account to any AI agent and orchestrate your web hostin
 - **Content Teams** — retrieve recent form submissions and user feedback using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_deploy**: Get specific deploy details
 - **get_site**: Get details of a specific site
 - **get_user**: Get authenticated user profile
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `netlify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `netlify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Netlify** tools.
 
 **Configuration:**

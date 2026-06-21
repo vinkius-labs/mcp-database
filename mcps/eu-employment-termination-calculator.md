@@ -13,7 +13,7 @@ Estimate statutory severance pay for Germany, France, Spain, and Portugal.
 This MCP server provides precise calculations for statutory employment termination compensation across key European jurisdictions. Using the `calculate_severance` tool, you can estimate severance amounts based on monthly salary, years of service, and dismissal type for Germany (DE), France (FR), Spain (ES), and Portugal (PT). The server also includes `get_country_policy` to retrieve specific legal formulas and `validate_eligibility` to check if a termination event qualifies for statutory pay.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_severance**: Calculates the estimated monetary compensation for an employee termination
 - **get_country_policy_summary**: g., France 10-year cap).
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eu-employment-termination-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eu-employment-termination-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EU Employment Termination Calculator** tools.
 
 **Configuration:**

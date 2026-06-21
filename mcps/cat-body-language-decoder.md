@@ -21,7 +21,7 @@ Determine a cat's emotional state instantly by describing observable body cues l
 **Advantage:** By connecting these tools, you move beyond simple guessing. You get a structured, scientifically grounded interpretation that pinpoints not only the cat's dominant emotion but also *why* the system believes it--identifying key indicators and potential ambiguities.
 
 
-## Available Tools
+## Available Tools (2)
 - **query_confidence_and_ambiguity**: Detects conflicting descriptors and recommends what to observe next for a more accurate reading.
 
 Assess the consistency and ambiguity of cat body language observations
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cat-body-language-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cat-body-language-decoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cat Body Language Decoder** tools.
 
 **Configuration:**

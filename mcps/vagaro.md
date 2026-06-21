@@ -30,7 +30,7 @@ Connect your **Vagaro** business to any AI agent and manage your salon, spa, or 
 - **Front Desk** — Quick client lookup, appointment details, and scheduling assistance
 
 
-## Available Tools
+## Available Tools (10)
 - **list_appointments**: Filter by date to see a specific day.
 
 List salon/spa/fitness appointments
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vagaro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vagaro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vagaro** tools.
 
 **Configuration:**

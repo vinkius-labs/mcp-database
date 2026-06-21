@@ -26,7 +26,7 @@ Completely open. No registration needed.
 The NWS API covers the United States, Puerto Rico, Guam, and US territories.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_forecast**: Provide latitude and longitude for any US location. Returns high/low temps, wind speed/direction, precipitation probability, and detailed narrative.
 
 Get 7-day weather forecast for a US location by latitude and longitude
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `noaa-forecast-us-weather-predictions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `noaa-forecast-us-weather-predictions` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NOAA Forecast — US Weather Predictions** tools.
 
 **Configuration:**

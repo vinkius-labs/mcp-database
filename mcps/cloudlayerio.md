@@ -35,7 +35,7 @@ Connect your **cloudlayer.io** account to any AI agent and take full control of 
 - **Compliance Teams** — verify usage quotas and monitor document generation history
 
 
-## Available Tools
+## Available Tools (8)
 - **convert_html_to_pdf**: Convert raw HTML string into a PDF document
 - **capture_url_screenshot**: Capture a high-quality screenshot (image) of a public URL
 - **convert_url_to_pdf**: Convert a public URL into a high-quality PDF document
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudlayerio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudlayerio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **cloudlayer.io** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ The **Appbot MCP Server** provides deep insights into your app's user feedback. 
 - **App Developers** — Track technical feedback and bug reports surfaced in app store reviews.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_info**: Retrieve Appbot account details and connection status
 - **get_review_details**: Get complete details for a single specific review
 - **get_reviews_by_custom_topic**: Retrieve reviews associated with a specific custom topic
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `appbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `appbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Appbot** tools.
 
 **Configuration:**

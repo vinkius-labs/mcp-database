@@ -13,7 +13,7 @@ Predict academic performance and calculate required grades to pass subjects.
 The Weighted Average Calculator MCP server connects AI agents to your academic data. It allows users to track progress in various subjects by calculating current weighted averages, determining the exact grades needed in future assessments to reach a passing threshold, and running performance simulations (optimistic, realistic, and pessimistic). Using tools like `get_subject_status`, `calculate_required_grade`, `run_performance_simulations`, and `evaluate_subject_risk`, AI agents can provide precise academic forecasting and risk assessment for students.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_required_grade**: Calculate the grade needed in remaining assessments to hit a target threshold
 - **evaluate_subject_risk**: Assess the risk level of each assessment category
 - **run_performance_simulations**: Simulate potential final grades based on different performance scenarios
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `weighted-average-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `weighted-average-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Weighted Average Calculator** tools.
 
 **Configuration:**

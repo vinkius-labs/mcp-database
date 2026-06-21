@@ -31,7 +31,7 @@ Connect your AI agent to the **National Renewable Energy Laboratory (NREL)** Sol
 - **Engineers** — retrieve precise irradiance metrics for solar installation planning directly in your workflow.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_solar_resource**: Get average solar irradiance data for a location
 - **query_nsrdb_data**: Query nearest NSRDB datasets for a location
 
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nrel-solar-resource` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nrel-solar-resource` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NREL Solar Resource** tools.
 
 **Configuration:**

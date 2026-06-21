@@ -35,7 +35,7 @@ Your AI agent seamlessly becomes an extension of your Security and Compliance op
 - **Sales & GTM Teams** — approve sensitive trust-center whitepaper requests immediately from chatbots.
 
 
-## Available Tools
+## Available Tools (10)
 - **vanta_compliance_status**: Shows: overall pass rate percentage, number of passing/failing/warning tests per framework, critical alerts requiring immediate attention, and the audit-readiness score. Use when the user asks "how is our compliance?", "are we ready for the SOC 2 audit?", or needs a quick compliance health check across all frameworks.
 
 Get the overall compliance posture dashboard — pass rates per framework, critical alerts, and audit readiness score across SOC 2, ISO 27001, HIPAA, and GDPR
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vanta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vanta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vanta** tools.
 
 **Configuration:**

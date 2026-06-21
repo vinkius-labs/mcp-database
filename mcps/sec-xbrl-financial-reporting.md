@@ -32,7 +32,7 @@ Connect your AI agent to the **SEC EDGAR** database and perform deep financial a
 - **Compliance Officers** — verify submission histories and disclosure accuracy for specific CIKs
 
 
-## Available Tools
+## Available Tools (4)
 - **get_company_concept**: Get all XBRL disclosures for a single company concept
 - **get_company_facts**: Get all company concepts data for a specific company
 - **get_submissions**: Includes metadata and recent filings.
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sec-xbrl-financial-reporting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sec-xbrl-financial-reporting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SEC XBRL (Financial Reporting)** tools.
 
 **Configuration:**

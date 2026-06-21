@@ -31,7 +31,7 @@ Empower your Agent to seamlessly manage Chinese payment ecosystems with **Ping++
 - **Developers in China** — Connect multiple SDK backends to a single MCP endpoint to rapid prototype monetization
 
 
-## Available Tools
+## Available Tools (7)
 - **create_charge**: Requires the order_no, amount, app ID, channel, currency, subject, and body.
 
 Create a new charge (payment request)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ping` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ping` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ping++** tools.
 
 **Configuration:**

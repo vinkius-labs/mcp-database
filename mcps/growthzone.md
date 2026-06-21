@@ -35,7 +35,7 @@ No more manual exports or jumping between complex CRM tabs. Your AI assistant ac
 - **Executive Assistants** — automate organizational lookups and contact management to keep operations running smoothly.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_contact**: Get detailed information about a specific contact by ID
 - **get_my_profile**: Get information about the current authenticated user/account
 - **list_contacts**: List all contacts in the GrowthZone database
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `growthzone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `growthzone` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GrowthZone** tools.
 
 **Configuration:**

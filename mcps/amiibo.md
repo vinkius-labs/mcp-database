@@ -32,7 +32,7 @@ Connect to the **AmiiboAPI** and explore the vast world of Nintendo's Amiibo col
 - **Nintendo Fans** — explore the history and variety of Amiibo releases across different platforms
 
 
-## Available Tools
+## Available Tools (7)
 - **get_amiibo**: Get data for a specific Amiibo by ID
 - **get_last_updated**: Get database last updated timestamp
 - **list_amiibo_series**: Get all Amiibo Series
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amiibo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amiibo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amiibo** tools.
 
 **Configuration:**

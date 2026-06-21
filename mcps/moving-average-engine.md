@@ -13,7 +13,7 @@ Calculate Simple (SMA) and Exponential (EMA) moving averages exactly. Stop LLMs 
 Large Language Models are notoriously bad at sequential math. If you give an LLM 100 days of stock closing prices and ask for a 14-day SMA, it will hallucinate the averages. This engine processes arrays natively in JS, computing mathematically precise Simple and Exponential Moving Averages local, giving your financial agents the reliable technical indicators they need for quantitative analysis.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_moving_average**: Calculates exact Simple (SMA) or Exponential (EMA) moving averages
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moving-average-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moving-average-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moving Average Engine** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your daily planning and environmental monit
 - **QWeather Power Users** — integrate your existing environmental workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_air_now**: 5, etc.).
 
 Get current air quality
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QWeather / 和风天气** tools.
 
 **Configuration:**

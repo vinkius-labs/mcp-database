@@ -13,7 +13,7 @@ Italian lead management and call center CRM.
 The crm4 solution MCP server enables your AI agent to manage leads, campaigns, and call center activities. Automate your customer outreach via SMS, WhatsApp, and phone calls directly from your chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_contact_to_list**: Add a contact to a specific distribution list
 - **create_contact**: Create a new contact in the CRM
 - **delete_contact**: Permanently remove a contact
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crm4-solution` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crm4-solution` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **crm4 solution** tools.
 
 **Configuration:**

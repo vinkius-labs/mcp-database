@@ -32,7 +32,7 @@ Connect your **Ping Identity** environment to any AI agent to streamline identit
 - **IT Support** — quickly fetch specific user metadata and check active session/credential health.
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_user**: Revokes all current session tokens, nullifies application scopes, isolates SCIM directory references, and executes the formal deletion API.
 
 Hard delete a user identity and purge related credentials
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ping-identity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ping-identity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ping Identity** tools.
 
 **Configuration:**

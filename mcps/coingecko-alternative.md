@@ -35,7 +35,7 @@ No more manual searching through charts. Your AI can now calculate portfolio val
 - **Financial Analysts** — automate the collection of historical data and global market metrics for reporting.
 
 
-## Available Tools
+## Available Tools (29)
 - **list_asset_platforms**: List all asset platforms
 - **get_coin_history**: Get historical data at a given date
 - **get_coin_market_chart_range**: Get historical market data within a range of timestamp
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coingecko-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coingecko-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoinGecko** tools.
 
 **Configuration:**

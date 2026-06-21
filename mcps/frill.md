@@ -32,7 +32,7 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 - **Developers** — update changelogs and announcement categories directly from the terminal or code editor.
 
 
-## Available Tools
+## Available Tools (35)
 - **create_announcement**: Create a new announcement
 - **create_category**: Create a new announcement category
 - **create_comment**: Create a new comment on an idea
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `frill` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `frill` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Frill** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect to the **CoinLore** API to empower your AI agent with comprehensive cryp
 - **Developers** — Integrate crypto pricing and metadata into your workflow using natural language commands.
 
 
-## Available Tools
+## Available Tools (11)
 - **list_assets**: Get a lightweight list of all coins
 - **get_coin_info**: Get static metadata for a specific coin
 - **get_coin_markets**: Get top 50 exchanges and markets for a coin
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coinlore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coinlore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoinLore** tools.
 
 **Configuration:**

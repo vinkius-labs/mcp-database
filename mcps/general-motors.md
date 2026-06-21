@@ -35,7 +35,7 @@ Connect AI agents to the General Motors Connected Vehicle API for comprehensive 
 Perfect for **GM vehicle owners**, **fleet managers**, **service advisors**, and **roadside assistance teams**. Let AI agents automate morning warm-ups, monitor tire pressure for safety, track mileage for maintenance schedules, and locate vehicles. Ideal for drivers who want to integrate their car into their smart home or AI assistant workflow for seamless mobility management.
 
 
-## Available Tools
+## Available Tools (14)
 - **flash_horn**: Requires VIN. Use this to locate a vehicle in a crowded parking lot or driveway.
 
 Trigger the horn of a GM vehicle to locate it
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `general-motors` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `general-motors` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **General Motors** tools.
 
 **Configuration:**

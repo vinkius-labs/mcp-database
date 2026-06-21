@@ -35,7 +35,7 @@ No more manual scrubbing through subscriber exports or slow UI navigation. Your 
 - **Business Owners** — monitor audience growth and manage subscriber lists through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **add_contact_to_list**: Add a new contact to a list
 - **create_email_list**: Create a new subscriber list
 - **remove_contact_from_list**: Delete a contact from a list
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emailoctopus-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emailoctopus-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EmailOctopus** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ No more manual file uploading or searching for specialized converter apps. Your 
 - **Operations Leads** — automate bulk document conversions and monitor credit utilization through simple AI queries
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_job**: Cancel a conversion job
 - **create_simple_job**: Create a simple conversion job (URL to Output format)
 - **get_job**: Get details of a specific job
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudconvert-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudconvert-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CloudConvert** tools.
 
 **Configuration:**

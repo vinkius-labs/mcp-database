@@ -13,7 +13,7 @@ Calculate EBITDA, margins, and EV/EBITDA multiples with industry benchmark compa
 The EBITDA Calculator MCP server provides essential tools for financial analysis. Use `calculate_earnings_metrics` to derive EBITDA and profitability margins from EBIT, depreciation, and amortization. With `calculate_enterprise_multiple`, you can determine valuation ratios using Enterprise Value. Finally, use `analyze_sector_variance` to compare your results against industry benchmarks like Technology or Energy to see if a company is undervalued or overvalued.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_sector_variance**: Compares the company's calculated multiple against predefined industry averages
 - **calculate_earnings_metrics**: Calculates the fundamental EBITDA value and the resulting profitability margin
 - **calculate_enterprise_multiple**: Calculates the current EV/EBITDA valuation multiple
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ebitda-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ebitda-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EBITDA Calculator** tools.
 
 **Configuration:**

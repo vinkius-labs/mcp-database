@@ -33,7 +33,7 @@ Connect to the **Open Library** database and turn your AI into a master libraria
 - **Bibliophiles** — discover new reads and explore the history of specific literary works through their various editions.
 
 
-## Available Tools
+## Available Tools (17)
 - **get_author**: g., "OL23919A").
 
 Get details for a specific Author
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-library-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-library-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Library** tools.
 
 **Configuration:**

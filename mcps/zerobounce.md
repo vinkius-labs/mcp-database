@@ -33,7 +33,7 @@ Connect **ZeroBounce** to your AI agent to ensure your email lists are clean, ac
 - **Developers** — integrate email verification into signup flows to prevent fake account creation.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_activity**: Check email activity data
 - **get_credits**: Get remaining ZeroBounce credits
 - **score_file**: AI Scoring for a file of emails
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zerobounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zerobounce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZeroBounce** tools.
 
 **Configuration:**

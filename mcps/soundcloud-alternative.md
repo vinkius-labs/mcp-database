@@ -33,7 +33,7 @@ Connect your **SoundCloud** account to any AI agent to discover music, manage yo
 - **Developers** — Test SoundCloud API integrations and resolve track metadata directly within your IDE.
 
 
-## Available Tools
+## Available Tools (9)
 - **resolve_url**: Resolve a SoundCloud URL
 - **search_tracks**: Search for tracks on SoundCloud
 - **upload_track**: asset_data should be the raw file content or a placeholder for this MCP implementation.
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `soundcloud-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `soundcloud-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SoundCloud** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire aviation research and logistics
 - **Operations Leads** — automate aviation data querying to orchestrate cross-functional logistics teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the IATA API is operational
 - **get_city_details**: Get details for a specific city by IATA city code
 - **search_airlines**: Search for airlines by IATA code
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `iata-developer-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `iata-developer-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IATA Developer Portal** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect to the **Conflux Network** and interact with both Core Space and eSpace 
 - **Crypto Power Users** — monitor balances and sponsorship levels across multiple accounts in a unified conversation.
 
 
-## Available Tools
+## Available Tools (25)
 - **cfx_get_account**: Get summary of a Core Space account state
 - **cfx_get_balance**: Get CFX balance of an address on Core Space
 - **cfx_get_best_block_hash**: Get hash of the block with the highest weight
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `conflux` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `conflux` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Conflux** tools.
 
 **Configuration:**

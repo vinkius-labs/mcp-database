@@ -35,7 +35,7 @@ Connect your **Cartrack** fleet account to any AI agent and take full control of
 - **Logistics Teams** — quickly verify vehicle availability and geofence statuses for route planning
 
 
-## Available Tools
+## Available Tools (8)
 - **get_fuel_status**: Get current fuel levels and consumption for a vehicle
 - **get_vehicle_position**: Get the real-time GPS position of a specific vehicle
 - **get_vehicle_details**: Get detailed information for a specific vehicle
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cartrack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cartrack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cartrack** tools.
 
 **Configuration:**

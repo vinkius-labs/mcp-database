@@ -32,7 +32,7 @@ Connect your **Buenbit** trading account to any AI agent and manage your decentr
 - **Everyday Investors** — Simply wanting the easiest API tunnel to monitor if Ethereum exploded overnight.
 
 
-## Available Tools
+## Available Tools (14)
 - **cancel_order**: Cancel a pending crypto order
 - **create_order**: Create a new market/limit trade order
 - **execute_withdrawal**: Broadcast a native withdrawal
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buenbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buenbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buenbit** tools.
 
 **Configuration:**

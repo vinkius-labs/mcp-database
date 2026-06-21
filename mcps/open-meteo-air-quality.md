@@ -22,7 +22,7 @@ Give your AI the power to **assess air safety** with real-time pollutant data at
 Health apps, allergy sufferers, outdoor sports planners, environmental agencies, and parents monitoring playground safety.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_air_quality**: 5, PM10, ozone, nitrogen dioxide, sulphur dioxide, and carbon monoxide concentrations for any location.
 
 Get air quality pollutant concentrations
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-meteo-air-quality` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-meteo-air-quality` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open-Meteo Air Quality** tools.
 
 **Configuration:**

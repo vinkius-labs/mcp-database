@@ -34,7 +34,7 @@ Connect your **MongoDB Atlas** cluster to any AI agent and take full control of 
 - **Search Architects** — audit search indices and monitor collection organization across multiple Atlas environments efficiently
 
 
-## Available Tools
+## Available Tools (6)
 - **search**: Perform highly-dimensional Vector similarity search using $vectorSearch
 - **find**: Find standard MongoDB documents resolving standard query filters
 - **insert**: Insert a distinct generic document into standard target collection
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mongodb-atlas-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mongodb-atlas-vector-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MongoDB Atlas Vector Search** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual copy-pasting or complex VLOOKUP building. Your AI acts as a dedic
 - **Business Owners** — streamline the retrieval of spreadsheet metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_spreadsheet**: Create a new spreadsheet
 - **delete_spreadsheet**: Delete a spreadsheet
 - **get_folder**: Get details for a specific folder
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rows** tools.
 
 **Configuration:**

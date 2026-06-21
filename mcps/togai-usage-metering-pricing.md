@@ -33,7 +33,7 @@ Connect **Togai** to any AI agent to orchestrate complex usage-based pricing mod
 - **Developers** — Test event ingestion and verify metering logic directly from the code editor.
 
 
-## Available Tools
+## Available Tools (19)
 - **check_entitlement**: Check entitlement for a specific feature
 - **create_account**: Create a new account
 - **create_customer**: Create a new customer
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `togai-usage-metering-pricing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `togai-usage-metering-pricing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Togai (Usage Metering & Pricing)** tools.
 
 **Configuration:**

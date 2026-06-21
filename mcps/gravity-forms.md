@@ -34,7 +34,7 @@ Connect your **Gravity Forms** REST API to any AI agent and take full control of
 - **Data Analysts** — extract form results and entry data for quick analysis and reporting through the chat interface
 
 
-## Available Tools
+## Available Tools (12)
 - **create_entry_note**: Add a new note to a form entry
 - **delete_entry**: Delete a form entry
 - **get_entry**: Get detailed data for a specific form entry
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gravity-forms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gravity-forms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gravity Forms** tools.
 
 **Configuration:**

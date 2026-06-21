@@ -33,7 +33,7 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 - **Knowledge Workers** — maintain a clean, organized library of web resources using natural language commands
 
 
-## Available Tools
+## Available Tools (32)
 - **archive_link**: Archive a link (triggers an update of the link's archive files)
 - **bulk_update_links**: Bulk update links (tags/collections)
 - **create_collection**: Create a new collection
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linkwarden` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linkwarden` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Linkwarden** tools.
 
 **Configuration:**

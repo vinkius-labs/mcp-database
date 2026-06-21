@@ -35,7 +35,7 @@ No more manual API calls to test your notification logic. Your AI acts as a comm
 - **DevOps & Growth Hackers** — automate transactional messaging and monitor notification delivery directly from the terminal or IDE
 
 
-## Available Tools
+## Available Tools (9)
 - **cancel_workflow_run**: Cancel a running workflow to prevent further messages
 - **create_or_update_user**: Create a new user or update an existing user profile
 - **delete_all_notifications**: Delete all notifications for the authenticated user
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `engagespot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `engagespot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Engagespot** tools.
 
 **Configuration:**

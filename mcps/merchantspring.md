@@ -27,7 +27,7 @@ Connect your **MerchantSpring** account to any AI agent and take full control of
 3. Start managing your e-commerce intelligence from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_store_health**: Get store health status
 - **get_inventory_report**: Get inventory status report
 - **get_sales_summary**: Get aggregated sales summary
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `merchantspring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `merchantspring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MerchantSpring** tools.
 
 **Configuration:**

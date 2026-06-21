@@ -34,7 +34,7 @@ Connect your **Lexware Office (lexoffice)** account to any AI agent and take ful
 - **Accountants & Ops** — audit voucher categories and tax mappings to ensure GoBD compliance across the entire accounting system
 
 
-## Available Tools
+## Available Tools (14)
 - **list_contacts**: Nützlich zur Verwaltung der Stammdaten.
 
 Alle Kontakte (Kunden, Lieferanten) in Lexoffice strukturieren und auflisten
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lexware-office-accounting-invoicing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lexware-office-accounting-invoicing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lexware Office (Accounting & Invoicing)** tools.
 
 **Configuration:**

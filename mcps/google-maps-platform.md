@@ -33,7 +33,7 @@ Google Maps provides the gold standard in global mapping data, used by millions 
 - **Developers** — Integrate accurate geocoding and rich place data into their applications
 
 
-## Available Tools
+## Available Tools (9)
 - **get_directions**: Supports modes: "driving" (default), "walking", "bicycling", "transit".
 
 Get travel directions between two points
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-maps-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-maps-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Maps Platform** tools.
 
 **Configuration:**

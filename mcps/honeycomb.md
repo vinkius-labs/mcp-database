@@ -36,7 +36,7 @@ No more manual configuration of complex query DSLs for simple status checks. You
 - **Platform Leads** — maintain a real-time overview of dataset usage and board sharing across the organization.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_marker**: Pass details as a JSON string in "body_json" (requires message). Use "__all__" for team-wide markers.
 
 Create a new marker (e.g., deploy, maintenance) on a dataset timeline
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `honeycomb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `honeycomb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Honeycomb** tools.
 
 **Configuration:**

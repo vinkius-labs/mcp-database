@@ -31,7 +31,7 @@ Connect your AI agent to **Spider.cloud** — the fastest web scraping API in th
 - **Built-in stealth** mode with fingerprint rotation and residential proxies
 
 
-## Available Tools
+## Available Tools (3)
 - **spider_crawl**: Spider.cloud Rust engine follows internal links and scrapes each page. Configure depth and page limits to control scope.
 
 Crawl an entire website at blazing speed — up to 100K+ pages/second. Returns content from multiple pages following internal links
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spider` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spider` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spider** tools.
 
 **Configuration:**

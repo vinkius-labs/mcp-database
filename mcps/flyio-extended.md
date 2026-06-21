@@ -33,7 +33,7 @@ Connect your **Fly.io** account to any AI agent to orchestrate your cloud infras
 - **SRE Teams** — Quickly inspect infrastructure health and manage certificates during incident response.
 
 
-## Available Tools
+## Available Tools (28)
 - **check_certificate**: Trigger DNS validation check for a certificate
 - **create_acme_certificate**: Request a Let's Encrypt certificate
 - **create_app**: Create a new Fly App
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flyio-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flyio-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fly.io** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ No more manual searching for the day's top products. Your AI acts as your person
 - **Marketers** — analyze successful launches and engagement patterns directly from your workspace.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_client_token**: Get a client-level access token
 - **get_posts**: Get a list of posts
 - **get_viewer**: Get the currently authenticated viewer
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `product-hunt-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `product-hunt-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Product Hunt** tools.
 
 **Configuration:**

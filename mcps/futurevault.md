@@ -35,7 +35,7 @@ Connect your **FutureVault** account to any AI agent to automate your document m
 - **Financial Planners** — get a real-time overview of folder structures and document statuses for audit readiness.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **get_document_metadata**: Get document details
 - **get_folder_details**: Get folder metadata
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `futurevault` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `futurevault` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FutureVault** tools.
 
 **Configuration:**

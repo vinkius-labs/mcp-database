@@ -13,7 +13,7 @@ Compare federal and state tax liabilities across different US business entity st
 This MCP server provides AI agents with the ability to perform detailed tax liability comparisons for US-based businesses. By using tools like `calculate_tax_comparison`, `evaluate_s_corp_savings_potential`, and `get_state_tax_context`, an agent can analyze how different entity structures--such as Sole Proprietorship, Partnership, S-Corp, and C-Corp--impact total tax burdens based on annual profit, owner salary, and state jurisdiction. This is essential for financial planning and optimizing business structure elections.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_tax_comparison**: Compare tax liabilities across different business structures
 - **evaluate_s_corp_savings_potential**: Quantify potential tax savings from S-Corp election
 - **get_state_tax_context**: Retrieve tax environment information for a specific state
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-llc-tax-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-llc-tax-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US LLC Tax Comparator** tools.
 
 **Configuration:**

@@ -37,7 +37,7 @@ No API key required — completely free with 30 requests/second.
 - **Researchers** — explore historical price data, exchange rankings and market trends
 
 
-## Available Tools
+## Available Tools (9)
 - **get_asset**: Returns the current price in USD, market cap, 24h trading volume, price change percentages (1h, 24h, 7d), circulating supply, total supply, max supply and rank. Asset IDs are lowercase with hyphens (e.g. "bitcoin", "ethereum", "solana").
 
 Get detailed info for a specific cryptocurrency
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coincap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coincap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoinCap** tools.
 
 **Configuration:**

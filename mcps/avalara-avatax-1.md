@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire tax compliance and financial au
 - **Operations Leads** — automate tax data querying to orchestrate cross-functional financial teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the Avalara AvaTax service is operational
 - **create_tax_transaction**: Provide line items, addresses, and customer code as JSON string.
 
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `avalara-avatax-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `avalara-avatax-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Avalara AvaTax** tools.
 
 **Configuration:**

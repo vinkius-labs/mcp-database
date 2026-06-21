@@ -23,7 +23,7 @@ The planet's largest archive of daily weather records, freely accessible.
 GHCN-Daily has worldwide stations, with densest coverage in the US, Europe, and Australia.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_daily_data**: This is the planet's largest archive of daily weather records. Filter by station, data types (TMAX, TMIN, PRCP, SNOW, SNWD), and date range. Stations are worldwide but densest coverage is in the US.
 
 Get daily weather data (GHCN-Daily): temperatures, precipitation, snow
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `noaa-climate-historical-weather-records` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `noaa-climate-historical-weather-records` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NOAA Climate — Historical Weather Records** tools.
 
 **Configuration:**

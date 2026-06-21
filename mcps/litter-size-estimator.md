@@ -13,7 +13,7 @@ Predict puppy litter sizes based on breed and physical size.
 The Litter Size Estimator provides biological predictions for canine litters. By using the `calculate_litter_estimate` tool, you can input a specific breed and size (Small, Medium, or Large) to retrieve the estimated minimum, maximum, and average number of puppies. You can also use `lookup_breed_statistics` to see general trends for a breed or `list_supported_degrees` to see all available breeds in the database.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_litter_estimate**: Predict the number of puppies based on breed and size
 - **list_supported_breeds**: List all supported breeds
 - **lookup_breed_statistics**: Get general litter size statistics for a breed
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `litter-size-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `litter-size-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Litter Size Estimator** tools.
 
 **Configuration:**

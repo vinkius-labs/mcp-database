@@ -34,7 +34,7 @@ Connect your **Fleetio** account to any AI agent and automate your fleet managem
 - **Logistics Coordinators** — automate the retrieval of driver contact information and vendor details for faster coordination.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_issue**: Report a new issue
 - **create_meter_entry**: Add vehicle meter reading
 - **get_issue**: Get issue details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fleetio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fleetio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fleetio** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Take full control of your payment operations with **Stripe**, the global payment
 - **Support Teams** — quickly look up customer payment status and share invoice links during support tickets.
 
 
-## Available Tools
+## Available Tools (13)
 - **customers_list**: Optionally filter by email. Returns customer details including name, email, balance, and delinquency status.
 
 List Stripe customers
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stripe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stripe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stripe** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ No more manual slide creation. Your AI acts as a creative director, building out
 - **Product Managers** — document features and roadmaps by generating tomes directly from project specs
 
 
-## Available Tools
+## Available Tools (5)
 - **add_page**: Add a new page to an existing tome
 - **create_tome**: Create a new tome in a workspace
 - **get_tome**: Get detailed information about a specific tome
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tome-ai-storytelling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tome-ai-storytelling` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tome (AI Storytelling)** tools.
 
 **Configuration:**

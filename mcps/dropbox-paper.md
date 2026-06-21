@@ -37,7 +37,7 @@ Connect your **Dropbox Paper** account to any AI agent and take full control of 
 - **Developers** — test and debug collaborative document integrations and verify markdown rendering logic in real-time
 
 
-## Available Tools
+## Available Tools (12)
 - **list_files**: Use to browse and discover documents.
 
 List all files and Paper documents in a specified Dropbox folder path
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dropbox-paper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dropbox-paper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dropbox Paper** tools.
 
 **Configuration:**

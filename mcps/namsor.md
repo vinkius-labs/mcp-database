@@ -27,7 +27,7 @@ Connect your **Namsor** account to any AI agent and simplify your name analytics
 3. Start enriching your lead and customer data from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (6)
 - **predict_country**: Predict country residency from name
 - **predict_diaspora**: Predict diaspora from name
 - **predict_ethnicity**: g., Hispanic, Asian, White).
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `namsor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `namsor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Namsor** tools.
 
 **Configuration:**

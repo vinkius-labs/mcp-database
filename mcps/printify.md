@@ -33,7 +33,7 @@ Connect your **Printify** account to any AI agent and manage your entire print-o
 - **Developers** — integrate print-on-demand capabilities into custom workflows or automated agents
 
 
-## Available Tools
+## Available Tools (22)
 - **calculate_shipping_cost**: Calculate shipping costs for an order
 - **create_order**: Create a new order
 - **create_product**: Create a new product in a shop
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `printify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `printify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Printify** tools.
 
 **Configuration:**

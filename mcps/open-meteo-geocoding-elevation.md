@@ -21,7 +21,7 @@ The essential **utility server** that powers location-aware AI agents.
 Developers, data engineers, travel apps, logistics platforms, and any AI agent that needs to convert place names into actionable coordinates.
 
 
-## Available Tools
+## Available Tools (3)
 - **search_location**: Supports any language.
 
 Search for cities and locations globally
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-meteo-geocoding-elevation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-meteo-geocoding-elevation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open-Meteo Geocoding & Elevation** tools.
 
 **Configuration:**

@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to drop critical alerts
 - **Absolute Containment:** The agent can only *push* messages. It doesn't poll your chat history, it doesn't read your private DMs, and it cannot spy on your groups. It is the purest, safest way to give your AI a megaphone directly to your phone.
 
 
-## Available Tools
+## Available Tools (1)
 - **send_telegram_message**: Provide the text in the "text" parameter. You can optionally format the text using HTML or MarkdownV2 by specifying the "parseMode" parameter.
 
 Send a notification or message to a Telegram chat, group, or channel via a Bot
@@ -78,7 +78,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telegram-bot-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telegram-bot-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telegram Bot Notifier** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Froged** account to any AI agent to automate your customer succes
 - **Marketing Teams** — automate the logging of custom behavioral events to ensure the right in-app campaigns are triggered.
 
 
-## Available Tools
+## Available Tools (11)
 - **verify_api_status**: Verify API connection
 - **get_contact_details**: Get contact metadata
 - **get_chat_details**: Get conversation history
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `froged` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `froged` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Froged** tools.
 
 **Configuration:**

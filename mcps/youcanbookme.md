@@ -38,7 +38,7 @@ No more manual filtering through booking dashboards to find an attendee's email.
 - **Product Teams** — implement programmatic booking flows and verify availability slots through simple conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **list_profiles**: Lists all booking pages (profiles) in the YouCanBook.me account
 - **get_profile**: Retrieves detailed configuration for a specific booking page
 - **list_bookings**: Status options: tentative, upcoming, finished, cancelled.
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `youcanbookme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `youcanbookme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **YouCanBook.me** tools.
 
 **Configuration:**

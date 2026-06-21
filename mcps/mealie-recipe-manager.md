@@ -32,7 +32,7 @@ Connect your **Mealie** instance to any AI agent and take full control of your k
 - **Health Enthusiasts** — keep track of your recipe database and categories for better nutritional planning
 
 
-## Available Tools
+## Available Tools (13)
 - **create_meal_plan**: Create a new meal plan entry
 - **create_recipe**: Create a new recipe
 - **create_shopping_list**: Create a new shopping list
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mealie-recipe-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mealie-recipe-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mealie (Recipe Manager)** tools.
 
 **Configuration:**

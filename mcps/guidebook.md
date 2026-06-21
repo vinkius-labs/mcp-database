@@ -36,7 +36,7 @@ No more manual data entry in the Builder interface. Your AI assistant acts as a 
 - **App Developers** — integrate Guidebook content flows into your development environment seamlessly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_guide**: Get detailed information about a specific guide
 - **get_rate_limit**: Check current API usage and rate limits
 - **get_session**: Get details for a specific schedule session
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `guidebook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `guidebook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Guidebook** tools.
 
 **Configuration:**

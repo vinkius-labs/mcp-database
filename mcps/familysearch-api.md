@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire genealogical research and ances
 - **Operations Leads** — automate genealogical data querying to orchestrate cross-functional educational teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the FamilySearch API is operational
 - **get_person_memories**: Get memories (photos, stories) associated with a person
 - **get_person_pedigree**: Get the ancestry (pedigree) for a specific person
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `familysearch-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `familysearch-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FamilySearch API** tools.
 
 **Configuration:**

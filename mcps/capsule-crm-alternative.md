@@ -33,7 +33,7 @@ Connect your **Capsule CRM** account to any AI agent to streamline your sales an
 - **Project Leads** — monitor project progress and task completion across the organization.
 
 
-## Available Tools
+## Available Tools (31)
 - **create_entry**: Create a new note entry
 - **create_opportunity**: Create a new opportunity
 - **create_party**: Create a new party (person or organisation)
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `capsule-crm-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `capsule-crm-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Capsule CRM** tools.
 
 **Configuration:**

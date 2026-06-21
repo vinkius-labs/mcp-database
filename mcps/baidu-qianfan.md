@@ -35,7 +35,7 @@ Connect your AI agents to **Baidu Qianfan** (百度千帆), the enterprise-grade
 - **Knowledge Managers** — build robust RAG pipelines using Qianfan's embedding and chat services
 
 
-## Available Tools
+## Available Tools (6)
 - **get_embeddings**: Generate vector embeddings for text
 - **list_train_jobs**: List model training jobs
 - **chat_completions**: Requires model endpoint name.
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `baidu-qianfan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `baidu-qianfan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Baidu Qianfan** tools.
 
 **Configuration:**

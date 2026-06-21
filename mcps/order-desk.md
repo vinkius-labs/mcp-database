@@ -27,7 +27,7 @@ Connect your **Order Desk** account to empower your AI agents with multi-channel
 3. Start managing your fulfillment from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (7)
 - **get_inventory_item**: Get inventory item details
 - **get_order**: Get details for a specific order
 - **get_order_shipments**: Get shipments for an order
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `order-desk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `order-desk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Order Desk** tools.
 
 **Configuration:**

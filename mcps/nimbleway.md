@@ -34,7 +34,7 @@ Connect your **Nimbleway** account to your AI agent and leverage high-performanc
 - **Developers** — integrate high-fidelity web scraping into your workflows through natural language commands.
 
 
-## Available Tools
+## Available Tools (10)
 - **extract_html**: Extract web page as HTML
 - **extract_markdown**: Extract web page as Markdown
 - **get_job**: Get specific job details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nimbleway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nimbleway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nimbleway** tools.
 
 **Configuration:**

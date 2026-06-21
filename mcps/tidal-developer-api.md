@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire music research and discography 
 - **Operations Leads** — automate musical data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the TIDAL Developer service is operational
 - **get_artist_albums**: Get all albums for a specific artist by ID
 - **get_album_tracks**: Get all tracks belonging to a specific album by ID
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tidal-developer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tidal-developer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TIDAL Developer API** tools.
 
 **Configuration:**

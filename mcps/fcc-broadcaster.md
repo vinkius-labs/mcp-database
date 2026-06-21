@@ -19,7 +19,7 @@ The **FCC Broadcaster MCP Server** ties your AI agent directly into the operatio
 - **Transparent Gateway** — Fully public, unmetered access to official telecom records, allowing immediate lookup without generating credentials or navigating bureaucratic forms.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_fm_station_details**: Search for an FM radio broadcast station in the US by Call Sign
 - **get_tv_station_details**: Search for a public US Television broadcast station by Call Sign
 
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fcc-broadcaster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fcc-broadcaster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FCC Broadcaster** tools.
 
 **Configuration:**

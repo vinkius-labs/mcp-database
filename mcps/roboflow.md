@@ -33,7 +33,7 @@ Connect **Roboflow** to your AI agent to streamline your computer vision pipelin
 - **Product Teams** — audit model performance and visualize inference results through simple conversation.
 
 
-## Available Tools
+## Available Tools (29)
 - **add_projects_to_folder**: Add projects to a folder (Enterprise)
 - **auto_label**: Start an auto-labeling job using foundation models
 - **cancel_training**: Cancel an active training job
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `roboflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `roboflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Roboflow** tools.
 
 **Configuration:**

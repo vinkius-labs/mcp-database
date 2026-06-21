@@ -32,7 +32,7 @@ Connect your **Tradier** brokerage account to any AI agent to streamline your tr
 - **Developers** — Integrate brokerage capabilities into your AI-driven financial tools and custom trading assistants.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_account_balances**: Get balances and buying power for a specific account
 - **get_account_history**: Review trading history and account activity
 - **get_account_positions**: View current holdings in an account
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tradier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tradier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tradier** tools.
 
 **Configuration:**

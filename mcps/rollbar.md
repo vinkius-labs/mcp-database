@@ -33,7 +33,7 @@ Connect your conversational assistant directly to **Rollbar**, the premier conti
 - **Engineering Managers** — Monitor deployment frequencies and resolve fixed bug tickets manually by just typing the order without dealing with complex filters.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_deploy**: Retrieves details for a specific deployment
 - **get_item**: Retrieves details for a specific error item
 - **get_occurrence**: Retrieves full details for a specific error occurrence
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rollbar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rollbar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rollbar** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Nile** account to any AI agent and take full control of your tena
 - **Backend Architects** — audit user identity mappings and manage tenant-specific data sharding efficiently to maintain high-scalability standards
 
 
-## Available Tools
+## Available Tools (6)
 - **list_databases**: Identifies root connectivity endpoints (name bindings) necessary for querying physical data.
 
 List high-level tenant-aware PostgreSQL databases provisioned on Nile
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nile-postgresql-for-multi-tenant-apps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nile-postgresql-for-multi-tenant-apps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nile (PostgreSQL for Multi-Tenant Apps)** tools.
 
 **Configuration:**

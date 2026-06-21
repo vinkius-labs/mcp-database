@@ -33,7 +33,7 @@ Connect your **ElectricSQL** sync engine to any AI agent to stream data directly
 - **Product Teams** — monitor real-time system state or user activity directly within the AI chat interface.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_shape**: Use offset=-1 for initial sync.
 
 Sync a shape of data out of Postgres via GET
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `electricsql-sync-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `electricsql-sync-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ElectricSQL (Sync Engine)** tools.
 
 **Configuration:**

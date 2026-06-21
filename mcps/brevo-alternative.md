@@ -35,7 +35,7 @@ No more manual toggling between campaign tables or digging through SMTP logs. Yo
 - **Developers** — integrate high-speed email marketing and SMTP features into custom workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (11)
 - **get_account**: Get Brevo account details
 - **create_email_campaign**: Create an email campaign
 - **create_contact**: Create a new contact
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brevo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brevo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Brevo** tools.
 
 **Configuration:**

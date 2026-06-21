@@ -35,7 +35,7 @@ No more manually searching through block explorers. Your AI acts as a dedicated 
 - **Crypto Enthusiasts** — monitor wallet activity and network health through natural conversation.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_info**: Get account details
 - **get_block**: Get block details
 - **get_extrinsic**: Get extrinsic details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moonriver-moonriver-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moonriver-moonriver-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moonriver (Moonriver Block Explorer API)** tools.
 
 **Configuration:**

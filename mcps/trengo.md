@@ -34,7 +34,7 @@ Connect your **Trengo** omnichannel inbox to any AI agent and simplify how you m
 - **Operations Leads** — coordinate communication channels and monitor webhook events via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_ticket**: Create a new ticket
 - **create_webhook**: Create a new webhook
 - **get_account_profile**: Get current user profile
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trengo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trengo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Trengo** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Amberdata** account to any AI agent to access comprehensive digit
 - **DeFi Researchers** — Monitor lending protocols and DEX activity using natural language queries.
 
 
-## Available Tools
+## Available Tools (28)
 - **get_address_balances_latest**: Get current native account balance
 - **get_address_token_balances_latest**: Get current ERC-20 token holdings
 - **get_address_token_transfers**: Get historical token transfer events for an address
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amberdata-digital-asset-crypto-market-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amberdata-digital-asset-crypto-market-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amberdata (Digital Asset & Crypto Market Data API)** tools.
 
 **Configuration:**

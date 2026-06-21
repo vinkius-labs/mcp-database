@@ -34,7 +34,7 @@ Connect your **Broadage Sports** account to any AI agent and orchestrate your sp
 - **Die-hard Fans** — check live scores and player info using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_match_events**: Get timeline of match events (goals, cards)
 - **get_match_lineup**: Get starting lineups and substitutes for a match
 - **get_match_stats**: Get detailed match statistics (possession, shots)
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `broadage-sports` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `broadage-sports` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Broadage Sports** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ Connect your **Postmark** account to any AI agent and simplify your transactiona
 3. Start managing your transactional emails from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (11)
 - **get_delivery_stats**: Get email delivery statistics
 - **get_outbound_stats**: Get outbound delivery stats
 - **get_template**: Get details for a specific email template
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `postmark-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `postmark-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Postmark** tools.
 
 **Configuration:**

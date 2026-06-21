@@ -33,7 +33,7 @@ Connect to **Rev AI** to transform your audio and video files into actionable te
 - **Developers** — Integrate professional-grade STT capabilities into your AI workflows to process voice notes or meeting recordings.
 
 
-## Available Tools
+## Available Tools (19)
 - **delete_stt_job**: Only allowed for completed or failed jobs.
 
 Permanently delete job data
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `revai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `revai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rev.ai** tools.
 
 **Configuration:**

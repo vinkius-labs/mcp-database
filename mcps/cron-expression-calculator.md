@@ -18,7 +18,7 @@ Cron expressions are notoriously difficult for LLMs to validate perfectly. This 
 - **Human Translation:** Turns complex expressions into readable schedules instantly.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_next_cron_dates**: Use this tool to get the precise mathematical timestamps of when a cron expression will run.
 
 Calculates the exact next execution dates for a Cron expression
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cron-expression-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cron-expression-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cron Expression Calculator** tools.
 
 **Configuration:**

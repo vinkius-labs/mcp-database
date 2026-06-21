@@ -35,7 +35,7 @@ Connect your **Getpaid** account to any AI agent to automate your billing, payme
 - **SaaS Founders** — get a real-time overview of active subscriptions and recent checkout sessions.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **create_checkout_session**: Initiate checkout
 - **get_account_details**: Get account identity
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `getpaid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `getpaid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Getpaid** tools.
 
 **Configuration:**

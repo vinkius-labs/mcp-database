@@ -40,7 +40,7 @@ AI agents describe outcomes and call them procedures. 'Process the data,' 'handl
 | All pass | ALGORITHM_PROVEN | Precise. Abstract. Bounded. |
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_ada_algorithm**: You must: (1) SEQUENCE STEPS — specify each operation in exact order with input, action, and output, (2) EXTRACT ABSTRACTION — identify the general pattern beyond this specific instance, (3) ANALYZE EDGE CASES — test empty input, boundary values, malformed data, termination conditions, (4) DECOMPOSE OPERATIONS — break every high-level operation into its primitive components, (5) BOUND SCOPE — state what the solution CAN do AND what it CANNOT do. If rejected, fix the specific algorithmic gap the engine identifies.
 
 Forces the agent to think like Ada Lovelace — specify operations in precise sequential order, extract the general pattern beyond the specific case, analyze edge cases and boundaries, decompose high-level operations into primitives, and honestly bound what the solution can and cannot do
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ada-lovelace-algorithmic-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ada-lovelace-algorithmic-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ada Lovelace Algorithmic Prover** tools.
 
 **Configuration:**

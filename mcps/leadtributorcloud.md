@@ -35,7 +35,7 @@ No more manual emailing of leads to partners or missing critical conversion upda
 - **Developers** — integrate high-speed leadtributor data into custom partner portals through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **add_activity**: Add lead activity
 - **check_leadtributor_status**: Verify connectivity
 - **create_lead**: Create a lead
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leadtributorcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leadtributorcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **leadtributor.cloud** tools.
 
 **Configuration:**

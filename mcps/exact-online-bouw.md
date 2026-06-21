@@ -35,7 +35,7 @@ No more manual logging of site hours or complex navigation through ERP tables. Y
 - **Site Supervisors** — quickly verify employee assignments and project structures through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_cost_transaction**: Requires project ID, item, date, and amount.
 
 Register a cost or expense for a project
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exact-online-bouw` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exact-online-bouw` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Exact Online Bouw** tools.
 
 **Configuration:**

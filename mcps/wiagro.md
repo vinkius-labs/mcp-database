@@ -42,7 +42,7 @@ No more manual silobag inspections or delayed quality testing. Your AI acts as a
 - **Agricultural Consultants** — provide data-driven storage management recommendations to clients
 
 
-## Available Tools
+## Available Tools (12)
 - **get_rupture_alerts**: Rupture alerts indicate tears, holes, or structural damage to silobags that could expose grain to weather, pests, and spoilage. Returns alert severity, location of rupture, detection timestamp, and recommended actions. Essential for silobag integrity monitoring, grain protection, and preventing quality loss. AI agents should use this when users ask "are there any silobag ruptures detected", "show rupture alerts for silobag 3", or need structural integrity alerts for silobag management. Optional silobag_id filters alerts for a specific silobag.
 
 Get silobag rupture detection alerts for all silobags or a specific one
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wiagro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wiagro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wiagro** tools.
 
 **Configuration:**

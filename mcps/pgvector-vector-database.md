@@ -32,7 +32,7 @@ Connect your **PostgreSQL + pgvector** database to any AI agent and manage vecto
 - **Fullstack Developers** — Add semantic search to existing apps by querying pgvector directly through your AI agent, no new microservices needed.
 
 
-## Available Tools
+## Available Tools (6)
 - **search_vectors**: Vector similarity search
 - **list_tables**: List tables
 - **insert_vector**: Insert a vector
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pgvector-vector-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pgvector-vector-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **pgvector (Vector Database)** tools.
 
 **Configuration:**

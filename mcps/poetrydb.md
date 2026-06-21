@@ -35,7 +35,7 @@ No more searching through fragmented archives. Your AI acts as a digital librari
 - **Developers** — integrate literary data into applications or test NLP models with rich text.
 
 
-## Available Tools
+## Available Tools (8)
 - **advanced_search**: g., title, author, linecount, poemcount) to filter poems. The number of fields must match the number of terms.
 
 Perform a complex search combining multiple fields
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `poetrydb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `poetrydb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PoetryDB** tools.
 
 **Configuration:**

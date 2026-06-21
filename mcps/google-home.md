@@ -38,7 +38,7 @@ Your AI becomes a smart home assistant, helping you manage climate, security, an
 - **Energy-Conscious Users** — optimize thermostat settings and eco mode for energy savings
 
 
-## Available Tools
+## Available Tools (12)
 - **generate_camera_stream**: The stream token is temporary and should be used immediately. Stop the stream when done.
 
 Generate a live camera stream URL from a Nest camera or doorbell
@@ -166,7 +166,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Home** tools.
 
 **Configuration:**

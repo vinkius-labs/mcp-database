@@ -32,7 +32,7 @@ Connect your **Wiki.js** instance to any AI agent and take full control of your 
 - **Support Teams** — find relevant internal documentation to answer customer queries faster.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_page**: Create a new Wiki.js page
 - **delete_page**: Delete a Wiki.js page
 - **get_page**: Fetch a Wiki.js page by path
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wikijs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wikijs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wiki.js** tools.
 
 **Configuration:**

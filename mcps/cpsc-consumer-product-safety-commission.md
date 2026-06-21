@@ -33,7 +33,7 @@ Connect to the **Consumer Product Safety Commission (CPSC)** database to monitor
 - **Concerned Parents & Consumers** — quickly check household items for safety hazards.
 
 
-## Available Tools
+## Available Tools (1)
 - **search_recalls**: The API is public and requires no authentication.
 
 Search for CPSC consumer product recalls
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cpsc-consumer-product-safety-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cpsc-consumer-product-safety-commission` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CPSC (Consumer Product Safety Commission)** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Your AI becomes a dedicated virtual accountant — instantly answering financial
 - **Operations Managers** — track inventory levels and supplier bills across multiple warehouses
 
 
-## Available Tools
+## Available Tools (14)
 - **create_contact**: For Colombian tax compliance (DIAN), include the identification type (NIT, CC, CE) and number. The contact can be tagged as client, supplier, or both.
 
 Create a new contact (client or supplier)
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alegra-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alegra-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alegra** tools.
 
 **Configuration:**

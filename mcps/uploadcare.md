@@ -36,7 +36,7 @@ Your AI agent becomes the control center for your media distribution platform.
 - **Product Teams** — audit recent user uploads and ensure temporary unneeded files aren't taking up storage quotas.
 
 
-## Available Tools
+## Available Tools (10)
 - **batch_delete_files**: This action is irreversible.
 
 Permanently removes multiple files in a single operation
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uploadcare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uploadcare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Uploadcare** tools.
 
 **Configuration:**

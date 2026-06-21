@@ -34,7 +34,7 @@ Connect **ImageCharts** to any AI agent and generate data visualizations through
 - **Marketing** — create data-driven visuals for campaigns and social media
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_bar_chart**: Generate a bar chart image
 - **generate_bubble_chart**: Generate a bubble chart image
 - **generate_doughnut_chart**: Generate a doughnut chart image
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `imagecharts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `imagecharts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ImageCharts** tools.
 
 **Configuration:**

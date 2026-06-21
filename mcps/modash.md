@@ -27,7 +27,7 @@ Connect **Modash** to your AI agent to discover the perfect creators for your br
 3. Start discovering influencers with Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (11)
 - **get_instagram_report**: Get deep analytics for an Instagram profile
 - **get_raw_profile**: Get real-time, unfiltered profile data
 - **get_tiktok_report**: Get analytics for a TikTok profile
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `modash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `modash` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Modash** tools.
 
 **Configuration:**

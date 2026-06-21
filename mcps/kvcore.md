@@ -28,7 +28,7 @@ Connect your AI agent to **kvCORE**, the primary platform for real estate profes
 4. Start managing your real estate business via chat
 
 
-## Available Tools
+## Available Tools (10)
 - **search_kvcore_leads**: Returns lead IDs and basic contact info.
 
 Search for leads in kvCORE
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kvcore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kvcore` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **kvCORE** tools.
 
 **Configuration:**

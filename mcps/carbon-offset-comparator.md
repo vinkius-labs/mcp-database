@@ -13,7 +13,7 @@ Compare the financial efficiency of different carbon offset strategies.
 The Carbon Offset Comparator is an evaluation engine designed to compare the cost-effectiveness of various carbon sequestration and avoidance strategies. By calculating the cost per metric ton of CO2 avoided, it provides a clear financial benchmark for environmental impact. Using tools like `get_strategy_efficiency`, `compare_strategies_ranking`, and `project_budget_impact`, agents can analyze the economic viability of tree planting, reforestation, solar energy displacement, and biodigester implementation.
 
 
-## Available Tools
+## Available Tools (3)
 - **compare_strategies_ranking**: Ranks a list of selected strategies from most cost-effective to least cost-effective
 - **get_strategy_efficiency**: Provides the specific cost per metric ton of CO2 for a single chosen offset strategy
 - **project_budget_impact**: Calculates the total amount of CO2 that can be offset for each provided strategy given a fixed financial budget
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `carbon-offset-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `carbon-offset-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Carbon Offset Comparator** tools.
 
 **Configuration:**

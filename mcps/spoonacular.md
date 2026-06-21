@@ -23,7 +23,7 @@ The **Spoonacular MCP Server** connects your AI agent to the world's leading rec
 Free tier: 150 requests/day. The most widely used recipe API by professional developers worldwide.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_random_recipes**: Perfect for meal inspiration.
 
 Get random recipe suggestions from Spoonacular
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spoonacular` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spoonacular` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spoonacular** tools.
 
 **Configuration:**

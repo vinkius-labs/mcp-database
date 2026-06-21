@@ -34,7 +34,7 @@ Connect **PG&E Data Portals** to any AI agent and programmatically search, disco
 - **Clean Tech Companies** — identify high-potential markets for EV charging, solar, and efficiency products
 
 
-## Available Tools
+## Available Tools (10)
 - **query_by_date_range**: Specify the dataset ID and start/end dates to retrieve records within that time period. Use this for time-series analysis across any dataset type. Dataset ID from search_datasets. Dates in YYYY-MM-DD format. This is useful for year-over-year comparisons and trend analysis.
 
 Query any PG&E dataset filtered by a specific date range
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pge-data-portals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pge-data-portals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PG&E Data Portals** tools.
 
 **Configuration:**

@@ -21,7 +21,7 @@ The **Astronomy Picture of the Day (APOD)** has been running since June 16, 1995
 Includes images from Hubble, Webb, ground-based observatories, amateur astrophotographers, and occasionally videos. Each entry has a detailed explanation written by a professional astronomer.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_apod**: Includes title, explanation, image URL, copyright, and media type (image or video). Running since June 16, 1995 — one of the most popular websites across all federal agencies.
 
 Get the Astronomy Picture of the Day — NASA's most popular API
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-apod-astronomy-picture-of-the-day` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-apod-astronomy-picture-of-the-day` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA APOD — Astronomy Picture of the Day** tools.
 
 **Configuration:**

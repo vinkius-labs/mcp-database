@@ -32,7 +32,7 @@ Connect your **Meilisearch** instance to any AI agent to automate your search en
 - **Content Managers** — Quickly verify if specific content is correctly indexed without using a dedicated dashboard.
 
 
-## Available Tools
+## Available Tools (44)
 - **add_documents**: Add or replace documents in an index
 - **cancel_tasks**: Cancel pending or processing tasks
 - **chat_completion**: Request a chat completion from a workspace
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meilisearch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meilisearch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meilisearch** tools.
 
 **Configuration:**

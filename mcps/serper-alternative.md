@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire web discovery workflow with **S
 - **IP Analysts** — perform rapid audits of patents and scholarly articles without manual browser searches.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_autocomplete**: Get Google autocomplete suggestions
 - **search_google**: Perform a Google search for organic results
 - **search_images**: Search for images on Google
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `serper-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `serper-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Serper** tools.
 
 **Configuration:**

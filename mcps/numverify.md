@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire phone validation and identity v
 - **Operations Leads** — automate phone data querying to orchestrate cross-functional communications teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_phone_line_type**: Identify if a phone number is mobile, landline, or other
 - **get_phone_carrier**: Get carrier information for a phone number
 - **get_phone_location**: Get geographic location details for a phone number
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `numverify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `numverify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NumVerify** tools.
 
 **Configuration:**

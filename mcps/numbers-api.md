@@ -35,7 +35,7 @@ Equip your AI agent with interesting facts and historical context for any number
 - **Data Storytellers** — add human-readable context to purely numerical data points.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_date_fact**: Get a fact about a date
 - **get_math_fact**: Get a mathematical fact about a number
 - **get_random_fact**: Get a random fact
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `numbers-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `numbers-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Numbers API** tools.
 
 **Configuration:**

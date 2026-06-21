@@ -38,7 +38,7 @@ Connect to the **Chess.com** public API and explore the entire chess ecosystem t
 - **Chess Enthusiasts** — explore titled player lists, discover streamers to watch, and track the strongest players worldwide
 
 
-## Available Tools
+## Available Tools (15)
 - **get_club_info**: com club by its URL identifier. Returns the club name, description, creation date, last activity date, visibility status, admin information, and total member count. Use this tool to learn about a club before joining, verify club existence, or gather metadata about chess communities.
 
 Get information about a Chess.com club
@@ -146,7 +146,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chesscom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chesscom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chess.com** tools.
 
 **Configuration:**

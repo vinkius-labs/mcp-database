@@ -33,7 +33,7 @@ Connect your **Flipt** instance to any AI agent to orchestrate feature managemen
 - **Developers** — create variants and constraints directly while coding to speed up feature implementation
 
 
-## Available Tools
+## Available Tools (9)
 - **create_constraint**: Create a constraint for a segment
 - **create_distribution**: Create a distribution for a rule
 - **create_variant**: Create a new variant for a flag
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flipt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flipt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flipt** tools.
 
 **Configuration:**

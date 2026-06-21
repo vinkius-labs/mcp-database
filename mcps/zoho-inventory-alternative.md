@@ -34,7 +34,7 @@ Connect your **Zoho Inventory** account to any AI agent to automate your supply 
 - **Logistics Teams** — automate the tracking of purchase orders and invoices across global regions.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_item**: Requires the item name and sales rate. Optional description can be provided.
 
 Create a new inventory item
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-inventory-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-inventory-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Inventory** tools.
 
 **Configuration:**

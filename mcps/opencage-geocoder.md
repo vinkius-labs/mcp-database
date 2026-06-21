@@ -33,7 +33,7 @@ Connect the **OpenCage Geocoder** to your AI agent for high-precision global geo
 - **Logistics Teams** — Verify addresses and calculate coordinates for routing and delivery services.
 
 
-## Available Tools
+## Available Tools (2)
 - **forward_geocode**: Forward geocode an address or placename to coordinates
 - **reverse_geocode**: Reverse geocode coordinates to an address
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opencage-geocoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opencage-geocoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenCage Geocoder** tools.
 
 **Configuration:**

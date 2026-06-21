@@ -33,7 +33,7 @@ Connect your **ServiceTitan** account to any AI agent to streamline your field s
 - **Inventory Managers** — adjust stock levels and monitor SKUs directly from the chat interface.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_inventory_adjustment**: Adjust stock levels in ServiceTitan
 - **create_customer**: Create a new customer in ServiceTitan
 - **create_payment**: Record a payment in ServiceTitan
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `servicetitan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `servicetitan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ServiceTitan** tools.
 
 **Configuration:**

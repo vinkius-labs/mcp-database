@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire cloud communication infrastruct
 - **Business Owners** — automate telecom querying to orchestrate your data-driven communication strategy smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Get Plivo account details
 - **get_call**: Get details for a specific call
 - **get_message**: Get details for a specific message
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plivo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plivo-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plivo** tools.
 
 **Configuration:**

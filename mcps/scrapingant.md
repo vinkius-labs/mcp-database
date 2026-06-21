@@ -35,7 +35,7 @@ No more wrestling with IP blocks or complex browser configurations. Your AI acts
 - **Growth Hackers** — streamline the extraction of competitor metadata and monitor website changes directly within the chat.
 
 
-## Available Tools
+## Available Tools (5)
 - **scrape_extended_data**: Scrape webpage with network logs and cookies
 - **extract_structured_data**: Extract JSON data using AI
 - **scrape_to_markdown**: Ideal for RAG and LLMs.
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scrapingant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scrapingant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ScrapingAnt** tools.
 
 **Configuration:**

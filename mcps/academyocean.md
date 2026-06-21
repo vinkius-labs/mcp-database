@@ -34,7 +34,7 @@ Connect your **AcademyOcean** account to your AI agent to streamline corporate e
 - **Operations Leads** — streamline user provisioning and training reports
 
 
-## Available Tools
+## Available Tools (4)
 - **list_learners**: List all academy learners
 - **invite_learner**: Invite a new learner
 - **list_courses**: List all available courses
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `academyocean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `academyocean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AcademyOcean** tools.
 
 **Configuration:**

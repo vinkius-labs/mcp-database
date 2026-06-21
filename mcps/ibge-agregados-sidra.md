@@ -33,7 +33,7 @@ Connect to the **IBGE SIDRA** (System for Automatic Recovery) database and explo
 - **Developers** — integrate official Brazilian statistics into applications with ease.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_localidades**: Get available geographic levels for an aggregate
 - **get_metadados**: Get metadata for a specific aggregate
 - **get_periodos**: Get available time periods for an aggregate
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibge-agregados-sidra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibge-agregados-sidra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBGE Agregados (SIDRA)** tools.
 
 **Configuration:**

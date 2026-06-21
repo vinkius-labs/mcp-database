@@ -22,7 +22,7 @@ This MCP uses `deep-diff` (1M+ weekly downloads) to compute exact structural dif
 - **Structural Fidelity:** Ignores formatting and whitespace. Only alerts on real data changes.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_json_diff**: Calculate structural differences between two JSON objects. Returns an array of changes (add, edit, delete) with exact paths
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deep-diff-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deep-diff-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deep Diff Engine** tools.
 
 **Configuration:**

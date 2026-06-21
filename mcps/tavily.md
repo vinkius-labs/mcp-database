@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire web research workflow with **Ta
 - **Operations Leads** — automate research querying to orchestrate cross-functional intelligence teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **extract_content**: Extract clean content from specific URLs
 - **get_answer**: Get a direct AI answer for a search query
 - **get_search_context**: Get search context for a query (optimized for LLMs)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tavily` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tavily` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tavily** tools.
 
 **Configuration:**

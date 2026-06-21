@@ -27,7 +27,7 @@ Connect your **Referrizer** account to any AI agent and simplify your referral m
 3. Start managing your referral engine from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (11)
 - **get_campaign**: Get details for a referral campaign
 - **get_referral**: Get details for a specific referral
 - **get_reward**: Get details for a specific reward
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `referrizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `referrizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Referrizer** tools.
 
 **Configuration:**

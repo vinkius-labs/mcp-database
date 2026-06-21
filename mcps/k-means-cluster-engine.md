@@ -13,7 +13,7 @@ Group complex data points into optimal clusters with deterministic, high-speed E
 Pattern recognition and segmentation require strict mathematical rigor, not probabilistic guesses. If you ask an LLM to group a thousand geolocations or user profiles, the output will inevitably be flawed and unstable. This engine provides your autonomous workflows with a battle-tested K-Means clustering algorithm that runs entirely local. It reliably identifies centroids and strictly assigns every data point to its optimal cluster, enabling flawless customer segmentation, anomaly detection, and spatial routing without API friction.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_kmeans**: Performs deterministic K-Means clustering on a dataset
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `k-means-cluster-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `k-means-cluster-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **K-Means Cluster Engine** tools.
 
 **Configuration:**

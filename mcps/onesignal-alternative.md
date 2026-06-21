@@ -35,7 +35,7 @@ No more manual logging to check open rates or send emergency alerts. Your AI act
 - **Operations Teams** — streamline the retrieval of player metadata and monitor system alerts directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_scheduled_alert**: Stop notification
 - **send_push_notification**: Send proactive alert
 - **remove_player**: Delete device record
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onesignal-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onesignal-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OneSignal** tools.
 
 **Configuration:**

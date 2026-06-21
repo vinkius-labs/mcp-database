@@ -30,7 +30,7 @@ Connect your **Google Calendar** network to any AI agent and optimize scheduling
 - **Founders & Execs** — delegate scheduling back-and-forths strictly through one coherent command block
 
 
-## Available Tools
+## Available Tools (15)
 - **list_events**: List upcoming events from a specific calendar
 - **list_event_instances**: List instances of a recurring event
 - **move_event**: Move an event to a different calendar
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-calendar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-calendar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Calendar** tools.
 
 **Configuration:**

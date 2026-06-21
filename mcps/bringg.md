@@ -37,7 +37,7 @@ No more jumping between dispatch dashboards. Your AI agent handles the logistics
 - **Founders & executives** — pull an immediate snapshot of daily active tasks and active fleet resources
 
 
-## Available Tools
+## Available Tools (10)
 - **assign_driver_to_task**: Manually override optimization and assign a specific driver to a task
 - **force_task_complete**: Force a delivery task status to COMPLETE (successfully delivered)
 - **create_delivery_task**: Create a new delivery task (order) in the Bringg Delivery Hub
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bringg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bringg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bringg** tools.
 
 **Configuration:**

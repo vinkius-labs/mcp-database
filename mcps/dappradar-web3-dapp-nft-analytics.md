@@ -35,7 +35,7 @@ No more manual searching through dashboards. Your AI acts as a Web3 data scienti
 - **Investors & Researchers** — track historical volume and transaction trends to identify emerging market opportunities
 
 
-## Available Tools
+## Available Tools (8)
 - **get_chain_stats**: Get aggregate metrics for a specific blockchain ecosystem
 - **get_dapp_metrics**: Get historical activity metrics for a specific dapp
 - **get_dapp**: Get detailed information for a specific dapp
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dappradar-web3-dapp-nft-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dappradar-web3-dapp-nft-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DappRadar (Web3 Dapp & NFT Analytics)** tools.
 
 **Configuration:**

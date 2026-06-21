@@ -40,7 +40,7 @@ No more navigating multiple transport operator websites or manually parsing real
 - **Travel Apps** — integrate real-time UK transit data into mobility and journey planning applications
 
 
-## Available Tools
+## Available Tools (12)
 - **get_bus_arrivals**: Returns list of arriving services with line names and numbers, origins, scheduled and real-time arrival times (ETA), expected wait times, direction, operator details, and any delay indicators. Essential for passenger pickup coordination, arrival monitoring, and real-time arrival boards. AI agents use this when users ask "when is the next bus arriving at this stop", "show incoming buses at stop X", or need to track arriving bus services for passenger coordination.
 
 Get real-time bus arrivals at a specific UK stop
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `transportapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `transportapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TransportAPI** tools.
 
 **Configuration:**

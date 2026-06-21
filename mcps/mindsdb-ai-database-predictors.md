@@ -34,7 +34,7 @@ Connect your **MindsDB** instance to any AI agent and take full control of your 
 - **BI Analysts** — execute SQL queries that combine historical data with future predictions to generate rapid business insights efficiently
 
 
-## Available Tools
+## Available Tools (6)
 - **list_databases**: List external databases connected through MindsDB
 - **list_models**: Use when checking which algorithms are ready to query predictions.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mindsdb-ai-database-predictors` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mindsdb-ai-database-predictors` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MindsDB (AI Database & Predictors)** tools.
 
 **Configuration:**

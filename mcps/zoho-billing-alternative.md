@@ -32,7 +32,7 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 - **Developers** — Integrate billing metadata into your workflow to verify plan codes and product IDs while coding.
 
 
-## Available Tools
+## Available Tools (101)
 - **accept_estimate**: Mark an estimate as accepted
 - **apply_credit_note_to_invoices**: Apply credits to multiple invoices
 - **associate_coupon**: Associate a coupon with a subscription
@@ -196,7 +196,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-billing-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-billing-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Billing** tools.
 
 **Configuration:**

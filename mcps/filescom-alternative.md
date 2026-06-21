@@ -32,7 +32,7 @@ Connect your **Files.com** account to any AI agent to streamline enterprise file
 - **Data Managers** — organize large datasets, move files between environments, and verify file metadata via chat.
 
 
-## Available Tools
+## Available Tools (17)
 - **add_user_to_group**: Add a user to a group
 - **copy_file**: Copy a file or folder
 - **create_group**: Create a new group
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `filescom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `filescom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Files.com** tools.
 
 **Configuration:**

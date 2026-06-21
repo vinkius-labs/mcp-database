@@ -18,7 +18,7 @@ If an AI agent needs to scrape a product price from a 20,000-line e-commerce HTM
 - **Precision Scraping:** Supports complex CSS selectors (e.g. `#main .price`) and extracts specific attributes like `href` or `src`.
 
 
-## Available Tools
+## Available Tools (1)
 - **query_dom**: Pass the HTML string and a CSS query (e.g. "h1", ".price", "#title"). Returns the matched text content or attributes.
 
 Parses a raw HTML string and extracts text or attributes using a CSS selector deterministically
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `html-dom-query-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `html-dom-query-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HTML DOM Query Engine** tools.
 
 **Configuration:**

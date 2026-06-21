@@ -34,7 +34,7 @@ Connect your **Ironclad** account to any AI agent and manage your entire contrac
 - **Procurement Teams** — Manage vendor agreements, renewals, and compliance from conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **ironclad_get_approvals**: Returns each approver with their status (approved/pending/rejected), approval date, and any comments. Essential for tracking where a contract is stuck in the approval process. Use when the user asks "who still needs to approve this contract?" or "why is this contract delayed?"
 
 Get the approval status of a specific Ironclad contract workflow — who approved, who is pending, and who rejected
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ironclad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ironclad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ironclad** tools.
 
 **Configuration:**

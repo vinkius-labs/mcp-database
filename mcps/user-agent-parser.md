@@ -18,7 +18,7 @@ When an IT Support Agent analyzes an error log or a firewall access log, it enco
 - **Log Analysis:** Transforms unreadable logs into clean JSON, empowering AI agents to accurately diagnose platform-specific bugs.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_ua**: Pass the raw UA string from HTTP headers or server logs and receive exact identification of the client.
 
 Decodes raw HTTP User-Agent strings into structured JSON objects (Browser, OS, Device). Prevents LLMs from hallucinating client specs from log files
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `user-agent-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `user-agent-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **User-Agent Parser** tools.
 
 **Configuration:**

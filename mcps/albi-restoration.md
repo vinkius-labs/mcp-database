@@ -35,7 +35,7 @@ No more manual logging into field service apps or digging through complex financ
 - **Operations Leads** — automate the oversight of organization-wide inventory and contact directories through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Albi API status
 - **create_new_contact**: Add a new contact
 - **create_new_restoration_project**: Requires project name and primary contact.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `albi-restoration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `albi-restoration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Albi Restoration** tools.
 
 **Configuration:**

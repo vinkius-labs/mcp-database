@@ -37,7 +37,7 @@ No more switching tabs to specialized GIS dashboards. Your AI agent acts as a fu
 - **Data scientists** — clean and resolve coordinate anomalies using the powerful ArcGIS suggestion engine
 
 
-## Available Tools
+## Available Tools (10)
 - **calculate_service_area**: Facilities specified as lon,lat.
 
 Calculate drive-time, walk-time, or travel-distance service areas
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arcgis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arcgis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ArcGIS** tools.
 
 **Configuration:**

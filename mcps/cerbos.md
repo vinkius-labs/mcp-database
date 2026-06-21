@@ -32,7 +32,7 @@ Connect your **Cerbos** instance to any AI agent to manage complex authorization
 - **DevOps Teams** — monitor Cerbos instance metadata and configuration status
 
 
-## Available Tools
+## Available Tools (6)
 - **get_authzen_config**: Returns endpoint URLs for the AuthZEN APIs
 - **authzen_evaluation**: Single action evaluation using the AuthZEN entity model
 - **authzen_evaluations**: Supports execute_all, deny_on_first_deny, and permit_on_first_permit semantics.
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cerbos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cerbos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cerbos** tools.
 
 **Configuration:**

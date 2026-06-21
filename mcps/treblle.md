@@ -32,7 +32,7 @@ Connect your **Treblle** account to your AI agent to streamline API monitoring a
 - **QA Engineers** — capture and report API errors with full context during testing phases
 
 
-## Available Tools
+## Available Tools (1)
 - **ingest_api_data**: Sensitive fields (passwords, CCs, SSNs) are automatically masked before transmission.
 
 Send API request/response data to Treblle
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `treblle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `treblle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Treblle** tools.
 
 **Configuration:**

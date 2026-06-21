@@ -38,7 +38,7 @@ No more manual browsing through weather websites. Your AI agent becomes your per
 - **Everyday Users** — quickly check if you need an umbrella or a jacket through a simple chat command
 
 
-## Available Tools
+## Available Tools (7)
 - **weather.current**: Accept natural language city names (e.g. "São Paulo", "New York", "Paris, France"). Do NOT use for forecasts — use weather.forecast for that.
 
 Get current weather conditions for any city in the world
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `weather-open-meteo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `weather-open-meteo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Weather (Open-Meteo)** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Quantify and visualize your environmental impact through personal habit changes.
 The Eco Savings Tracker connects AI agents to real-world ecological metrics. By using tools like `calculate_impact_of_change`, `get_total_savings`, and `get_environmental_milestones`, agents can transform simple habit changes--such as reducing red meat consumption or switching to LED bulbs--into measurable data for CO2 reduction, water conservation, and ecological milestones.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_impact_of_change**: Calculates the environmental savings of a single habit change
 - **get_environmental_milestones**: Translates cumulative savings into ecological achievements
 - **get_total_savings**: Aggregates all recorded habit changes
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eco-savings-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eco-savings-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eco Savings Tracker** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the **Theta Network** ecosystem to manage decentralized infrastructur
 - **Content Platforms** — manage video workflows and livestreams programmatically via natural language
 
 
-## Available Tools
+## Available Tools (30)
 - **ai_create_deployment**: Launch a new AI model or Jupyter Notebook
 - **ai_delete_deployment**: Delete an AI deployment
 - **ai_list_deployments**: List all deployments in a project
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `theta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `theta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Theta** tools.
 
 **Configuration:**

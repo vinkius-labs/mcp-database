@@ -35,7 +35,7 @@ Connect your AI agents to **Sympla**, the leading event management and ticketing
 - **AEC & Venue Managers** — integrate event data into broader physical facility management systems
 
 
-## Available Tools
+## Available Tools (10)
 - **checkin_participant_by_id**: Validate event entry using participant ID
 - **checkin_participant_by_ticket**: Validate event entry using ticket number
 - **get_event_details**: Get detailed information for a specific event
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sympla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sympla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sympla** tools.
 
 **Configuration:**

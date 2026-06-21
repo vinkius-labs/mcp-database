@@ -18,7 +18,7 @@ When an AI Agent builds a dashboard summary or writes a financial report, it sho
 - **Every Format Covered:** Currencies (`$0,0.00`), bytes (`0.0b`), percentages (`0%`), abbreviations (`0.0a`), and custom patterns.
 
 
-## Available Tools
+## Available Tools (1)
 - **format_numeral**: Pass the raw number as a string and the Numeral.js format pattern (e.g. "$0,0.00" for currency, "0.0b" for bytes, "0%" for percentage, "0.0a" for abbreviations).
 
 Formats raw numbers into perfect display strings: currencies ($10,000.00), bytes (2.5MB), percentages (97%), or abbreviations (1.5k). Powered by Numeral.js
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `numeral-formatter-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `numeral-formatter-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Numeral Formatter Engine** tools.
 
 **Configuration:**

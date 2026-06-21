@@ -18,7 +18,7 @@ If you ask an AI to 'clean this HTML before saving it', it will likely fail to c
 - **Zero-Trust Input:** Enforces a strict whitelist of safe tags, ensuring that what goes into your database cannot execute harmful code in a browser.
 
 
-## Available Tools
+## Available Tools (1)
 - **sanitizeHtml_html**: Pass the raw HTML and receive clean, safe HTML with dangerous tags and attributes stripped.
 
 Strips malicious XSS vectors and unsafe tags from HTML payloads before they are saved to a database
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `html-xss-sanitizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `html-xss-sanitizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HTML XSS Sanitizer** tools.
 
 **Configuration:**

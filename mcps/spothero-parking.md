@@ -33,7 +33,7 @@ SpotHero is the leading parking marketplace in North America, covering over 400 
 - **Fleet Managers** — book parking for delivery vehicles or company cars efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **book_parking**: Requires spot ID, start/end times, payment method ID, and vehicle info (make, model, plate, color).
 
 Book a parking spot and create a reservation
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spothero-parking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spothero-parking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SpotHero Parking** tools.
 
 **Configuration:**

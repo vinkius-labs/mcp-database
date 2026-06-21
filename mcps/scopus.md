@@ -33,7 +33,7 @@ Connect your **Scopus** API credentials to any AI agent and unlock the power of 
 - **University Administrators** — audit institutional output and author profiles with ease
 
 
-## Available Tools
+## Available Tools (10)
 - **get_abstract**: Get detailed metadata for a specific document
 - **get_affiliation**: Get detailed profile for an institution
 - **get_author**: Get detailed profile for a specific author
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scopus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scopus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scopus** tools.
 
 **Configuration:**

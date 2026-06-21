@@ -11,7 +11,7 @@ Connect Honeywell Process to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (10)
 - **create_maintenance_ticket**: The ticket includes asset identification, problem description, priority level, requested completion date, and any relevant diagnostic data. Upon creation, the system assigns a work order number, routes the ticket to the appropriate maintenance team, and triggers notifications. Use this tool to formally log equipment issues, schedule preventive maintenance, or escalate asset health concerns to the maintenance workflow.
 
 Create a new maintenance work order or ticket for an asset
@@ -69,7 +69,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `honeywell-process` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `honeywell-process` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Honeywell Process** tools.
 
 **Configuration:**

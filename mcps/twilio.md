@@ -35,7 +35,7 @@ No more bouncing between the Twilio Console and your dashboard. Your AI agent be
 - **Founders** — query exact spend usage records for the week to keep budgets under control
 
 
-## Available Tools
+## Available Tools (15)
 - **cancel_active_call**: Immediately terminates an active voice call
 - **delete_message**: The message body becomes inaccessible after deletion. This action is irreversible.
 
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `twilio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `twilio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Twilio** tools.
 
 **Configuration:**

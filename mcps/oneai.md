@@ -32,7 +32,7 @@ Connect **OneAI** to any AI agent to process text, audio, and video using a libr
 - **Developers** — integrate advanced NLP capabilities into your workflow without building custom models.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_async_task_status**: Check the status of an asynchronous OneAI pipeline task
 - **run_async_pipeline**: Provide either content_url or input text, plus steps.
 
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oneai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oneai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OneAI** tools.
 
 **Configuration:**

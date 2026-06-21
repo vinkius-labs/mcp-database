@@ -32,7 +32,7 @@ Connect the **Sellsy CRM** API to your AI workflow to unlock conversational over
 - **Operation & Finance Teams** — automatically dump your overdue `list_invoices` matrix into a text format so it can be pushed for collection workflows
 
 
-## Available Tools
+## Available Tools (12)
 - **list_companies**: List all companies (clients, prospects) in the CRM
 - **get_company**: Get detailed information about a specific company
 - **search_companies**: Search companies by name or keyword
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sellsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sellsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sellsy** tools.
 
 **Configuration:**

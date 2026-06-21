@@ -35,7 +35,7 @@ No more manual file uploading or complex latency tuning in the portal. Your AI a
 - **Research Teams** — scale the processing of interview recordings and monitor usage limits through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **get_project_usage**: Check API usage and limits
 - **list_api_keys**: List active API keys
 - **list_available_models**: List high-performance AI models
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deepgram-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deepgram-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deepgram** tools.
 
 **Configuration:**

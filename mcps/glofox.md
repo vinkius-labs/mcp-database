@@ -29,7 +29,7 @@ Connect your **Glofox** gym or studio to any AI agent and manage your fitness bu
 - **Front Desk** — Quick member lookup, booking status, and account info
 
 
-## Available Tools
+## Available Tools (8)
 - **search_members**: Returns profile, membership status, check-in history, and account balance. The core CRM of your gym.
 
 Search gym members
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glofox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glofox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glofox** tools.
 
 **Configuration:**

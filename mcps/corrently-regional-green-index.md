@@ -33,7 +33,7 @@ Equip your AI agent with hyper-local energy intelligence through the **Corrently
 - **Smart City Researchers** — analyze the localization of green energy production.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_regional_green_index**: Returns a forecast of when the grid is cleanest.
 
 Get green electricity index for a ZIP code
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `corrently-regional-green-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `corrently-regional-green-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Corrently Regional Green Index** tools.
 
 **Configuration:**

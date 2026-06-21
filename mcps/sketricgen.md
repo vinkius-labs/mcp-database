@@ -29,7 +29,7 @@ Empower your AI agents to securely orchestrate complex workflows using the Sketr
 Designed for AI engineers, prompt designers, and automation teams seeking an advanced orchestration layer with full traceability for complex agentic workflows.
 
 
-## Available Tools
+## Available Tools (18)
 - **check_sketricgen_status**: Verify connectivity
 - **delete_conversation**: Delete conversation
 - **get_agent**: Get agent details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sketricgen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sketricgen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SketricGen** tools.
 
 **Configuration:**

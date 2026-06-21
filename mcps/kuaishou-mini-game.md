@@ -32,7 +32,7 @@ Connect your **Kuaishou Mini-Game** (快手小游戏) developer account to any A
 - **Moderators** — Check user-generated content for policy compliance
 
 
-## Available Tools
+## Available Tools (10)
 - **check_content**: Essential for games with user-generated content.
 
 Check user-generated content for policy violations
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kuaishou-mini-game` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kuaishou-mini-game` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kuaishou Mini-Game** tools.
 
 **Configuration:**

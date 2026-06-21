@@ -32,7 +32,7 @@ Equip your AI agent with the power of the **Epic Online Services (EOS)** ecosyst
 - **Analytical Gamers** — track your achievement progress and friend activity with micro-metric precision
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_details**: Get full profile for an Epic account by ID
 - **get_achievement_definitions**: List all achievements available in a game
 - **get_blocked_users**: List blocked users for an account
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epic-online-services-social-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epic-online-services-social-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Epic Online Services & Social Analytics** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **MailerSend** account to any AI agent to automate your transaction
 - **Marketing Engineers** — Automate the synchronization of recipient data and track campaign-level interactions
 
 
-## Available Tools
+## Available Tools (10)
 - **get_sender_domain_details**: Get details for a specific domain
 - **get_sent_message_details**: Get details for a specific sent message
 - **get_recipient_details**: Get details for a specific recipient
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailersend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailersend` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MailerSend** tools.
 
 **Configuration:**

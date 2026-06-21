@@ -31,7 +31,7 @@ Integrate the **Contentful** content management platform directly into your conv
 - **Digital Marketers** — Find and use specific image assets seamlessly without leaving the planning timeline.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_content_type**: Get details of a specific content type
 - **update_entry**: Update an existing entry
 - **create_entry**: Create a new entry in draft state
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contentful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contentful` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contentful** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your physical **Last-Mile Logistic Console (99Minutos)** to the Vurb arc
 - **Merchant Services Analytics** — Consolidating active run metrics looking at Delivery failure rates.
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_order**: Void an active courier run
 - **create_order**: Request a courier express delivery
 - **create_store**: Register a new dispatch warehouse
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `99minutos-express` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `99minutos-express` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **99Minutos Express** tools.
 
 **Configuration:**

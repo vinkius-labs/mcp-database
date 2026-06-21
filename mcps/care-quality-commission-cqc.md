@@ -35,7 +35,7 @@ Connect your AI agent to the **Care Quality Commission (CQC)** Syndication API a
 - **Developers** — integrate official health regulation data into healthcare management applications
 
 
-## Available Tools
+## Available Tools (8)
 - **get_changes**: Identify organizations updated within a specific timeframe
 - **get_location**: Get detailed information for a specific location, including ratings
 - **get_provider_locations**: Get all locations associated with a specific provider
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `care-quality-commission-cqc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `care-quality-commission-cqc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Care Quality Commission (CQC)** tools.
 
 **Configuration:**

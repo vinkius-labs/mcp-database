@@ -37,7 +37,7 @@ No more manual navigating through complex analytics dashboards for simple data u
 - **Data Privacy Officers** — streamline the execution of GDPR data deletion requests.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_account_properties**: Add or update properties for an account (group of users)
 - **add_user_properties**: Add or update custom properties for a user profile
 - **bulk_add_user_properties**: Update properties for multiple users in a single request
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heap** tools.
 
 **Configuration:**

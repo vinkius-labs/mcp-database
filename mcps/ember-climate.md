@@ -38,7 +38,7 @@ No more manual CSV downloads or spreadsheet wrangling. Your AI becomes an instan
 - **Policy Makers & Journalists** — fact-check energy claims with authoritative data from over 200 geographies on demand
 
 
-## Available Tools
+## Available Tools (11)
 - **get_carbon_intensity_monthly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). This helps analyze seasonal patterns in grid carbon footprint and track monthly decarbonization progress.
 
 Get monthly carbon intensity of electricity generation for countries/regions
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ember-climate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ember-climate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ember Climate** tools.
 
 **Configuration:**

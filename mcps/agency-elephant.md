@@ -35,7 +35,7 @@ No more manual toggling between CRM tabs or missing critical follow-ups. Your AI
 - **Sales Operations** — automate the ingestion of new leads into specialized drip campaigns through simple AI queries
 
 
-## Available Tools
+## Available Tools (8)
 - **add_lead_to_group**: Add a lead to a group
 - **create_lead**: Create a new lead
 - **get_lead_details**: Get lead details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `agency-elephant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `agency-elephant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Agency Elephant** tools.
 
 **Configuration:**

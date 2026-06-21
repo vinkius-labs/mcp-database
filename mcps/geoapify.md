@@ -33,7 +33,7 @@ Integrate **Geoapify** into your AI workflows to provide your agent with advance
 - **Data Analysts** — enrich datasets with precise coordinates, elevation data, and administrative boundaries.
 
 
-## Available Tools
+## Available Tools (17)
 - **calculate_isoline**: Calculate areas reachable within a certain time (isochrones) or distance (isodistances)
 - **calculate_route_matrix**: Calculate travel times and distances between multiple sources and targets
 - **calculate_route**: Calculate routes for various modes (drive, truck, bicycle, walk, transit)
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geoapify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geoapify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Geoapify** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Luma AI** account to any AI agent and take full control of state-
 - **AI Artists & Designers** — iterate on photorealistic imagery and complex video transitions directly from your workspace
 
 
-## Available Tools
+## Available Tools (10)
 - **lm.get_generation**: Get the status and result of a Luma Dream Machine generation. Returns state (queued/dreaming/completed/failed) and video URL
 - **lm.list_generations**: List recent Luma Dream Machine generations. Returns generation IDs, prompts, states, and timestamps
 - **lm.delete_generation**: Delete a Luma Dream Machine generation and its video
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `luma-ai-generative-video-creative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `luma-ai-generative-video-creative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Luma AI (Generative Video & Creative)** tools.
 
 **Configuration:**

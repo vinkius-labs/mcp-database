@@ -35,7 +35,7 @@ No more manual logging into dashboards to check message delivery. Your AI acts a
 - **Developers** — integrate real-time telephony data and application metadata directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_number_details**: Get details for a specific phone number
 - **get_recording**: Get details for a specific recording
 - **list_recordings**: List all call recordings
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plivo-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plivo-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plivo** tools.
 
 **Configuration:**

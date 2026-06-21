@@ -25,7 +25,7 @@ Grant your AI agent (like Claude or Cursor) aggressive observational dominance o
 3. Engage your agent pragmatically: "List all BI workbooks related to the North American region and see what underlying datasets they depend on!"
 
 
-## Available Tools
+## Available Tools (7)
 - **list_workbooks**: Returns workbook names and IDs.
 
 Lists all workbooks in the Sigma organization
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sigma-computing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sigma-computing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sigma Computing** tools.
 
 **Configuration:**

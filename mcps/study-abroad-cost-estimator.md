@@ -19,7 +19,7 @@ Calculates a comprehensive budget for international studies in USD, EUR, and BRL
 By integrating these three components into one estimate, you get a single, accurate total cost projection in USD, EUR, and BRL. This allows for concrete financial planning before you even book your ticket.
 
 
-## Available Tools
+## Available Tools (3)
 - **col_estimate**: Estimate monthly cost of living for a study abroad destination
 - **logistics_and_fees**: Calculate mandatory fees and logistics costs for studying abroad
 - **tuition_estimate**: Estimate tuition and fees for a study abroad program
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `study-abroad-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `study-abroad-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Study Abroad Cost Estimator** tools.
 
 **Configuration:**

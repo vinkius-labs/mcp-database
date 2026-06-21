@@ -31,7 +31,7 @@ Connect your AI agent to **Serper.dev** — the fastest and most cost-effective 
 - **Native LangChain/CrewAI integration** — the default search tool for most AI frameworks
 
 
-## Available Tools
+## Available Tools (3)
 - **google_image_search**: dev to query Google Images and return structured results including image URLs, titles, and source pages. Useful for visual research, content creation, and reference gathering.
 
 Search Google Images for visual content related to any query. Returns image URLs, titles, and sources
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `serper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `serper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Serper** tools.
 
 **Configuration:**

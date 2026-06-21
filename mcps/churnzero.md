@@ -35,7 +35,7 @@ Connect your **ChurnZero** account to any AI agent and take full control of your
 - **Executives** — verify portfolio health and success journey progress
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_success_details**: Get detailed information for a specific account
 - **list_churnzero_accounts**: List all customer accounts
 - **list_churnzero_alerts**: List active customer success alerts
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `churnzero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `churnzero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ChurnZero** tools.
 
 **Configuration:**

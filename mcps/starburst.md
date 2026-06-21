@@ -32,7 +32,7 @@ Integrate the powerful federated data analytics capabilities of **Starburst** di
 - **Data Governance Managers** — Maintain strict oversight of access limitations continuously verifying role assignments and auditing internal data products natively.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_query_details**: Retrieves details for a specific SQL query
 - **list_catalogs**: g., S3, Snowflake, Iceberg) are connected.
 
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `starburst` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `starburst` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Starburst** tools.
 
 **Configuration:**

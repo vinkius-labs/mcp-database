@@ -35,7 +35,7 @@ Connect your **Cloudinary** account to any AI agent and take full control of you
 - **Ops Teams** — verify storage utilization and monitor transformation quotas
 
 
-## Available Tools
+## Available Tools (8)
 - **delete_media_resource**: Permanently delete a media resource from the cloud
 - **get_media_resource_details**: Get detailed information for a specific media resource
 - **list_upload_presets**: List all configured upload presets
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudinary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudinary` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudinary** tools.
 
 **Configuration:**

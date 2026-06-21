@@ -32,7 +32,7 @@ Connect to the **Ayuntamiento de Barcelona (Open Data BCN)** portal and transfor
 - **Developers** — Integrate official city data into applications using SQL-like queries directly from the AI.
 
 
-## Available Tools
+## Available Tools (7)
 - **bcn_current_packages**: List datasets including their resources
 - **bcn_datastore_search_sql**: The table name must be the resource_id wrapped in double quotes.
 
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ayuntamiento-de-barcelona-ckan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ayuntamiento-de-barcelona-ckan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ayuntamiento de Barcelona (CKAN)** tools.
 
 **Configuration:**

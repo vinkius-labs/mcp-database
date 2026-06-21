@@ -35,7 +35,7 @@ Connect your **OneTrust** account to any AI agent and manage privacy compliance,
 - **Security & Compliance** — Monitor incidents, risks, and regulatory deadlines from anywhere
 
 
-## Available Tools
+## Available Tools (10)
 - **onetrust_create_dsar**: Request types: ACCESS (subject wants their data), DELETION (right to be forgotten), RECTIFICATION (correct inaccurate data), PORTABILITY (data export), OPT_OUT (stop selling/sharing). The request enters the fulfillment workflow with regulatory deadlines automatically calculated (e.g., 30 days for GDPR).
 
 Create a new data subject access request in OneTrust — register a GDPR/CCPA privacy request on behalf of an individual
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onetrust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onetrust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OneTrust** tools.
 
 **Configuration:**

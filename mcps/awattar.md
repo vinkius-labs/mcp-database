@@ -32,7 +32,7 @@ Connect to **aWATTar** to monitor electricity market prices and optimize your sm
 - **IoT Developers** — build energy-aware applications using clean, structured market data directly in your development workflow.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_current_yaml**: Get current aWATTar price statistics in YAML format
 - **get_market_data**: Prices for the next day are typically updated daily at 14:00 (CET/CEST).
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `awattar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `awattar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Awattar** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Canto** Digital Asset Management (DAM) account to any AI agent an
 - **Product Teams** — Keep an updated repository of product mockups, assigning and tracking visual iterations seamlessly using AI agents.
 
 
-## Available Tools
+## Available Tools (10)
 - **assign_asset_album**: Identify precise active arrays spanning native linking trees
 - **create_canto_album**: Mutate global Web CRM boundaries substituting Collections gracefully
 - **create_canto_folder**: Provision a highly-available JSON Payload generating new Resource boundaries
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `canto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `canto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Canto** tools.
 
 **Configuration:**

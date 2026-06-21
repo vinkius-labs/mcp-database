@@ -27,7 +27,7 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 - **Support Teams** — Access contact and account data seamlessly
 
 
-## Available Tools
+## Available Tools (11)
 - **zoho_convert_lead**: This is the standard sales qualification workflow in Zoho CRM. The lead is removed from the Leads module and data transfers to the new records. Use when a lead is qualified and ready to enter the sales pipeline.
 
 Convert a qualified Zoho CRM lead into a Contact + Account + Deal — the key sales qualification step
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-crm-contacts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-crm-contacts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho CRM Contacts** tools.
 
 **Configuration:**

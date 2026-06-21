@@ -13,7 +13,7 @@ Flawless data translation. Convert massive CSV files to JSON and back instantly 
 Converting large CSVs to JSON via LLM results in truncated outputs. This MCP uses `PapaParse` to convert unlimited rows instantly.
 
 
-## Available Tools
+## Available Tools (2)
 - **convert_csv_to_json**: Pass the CSV string with headers and receive clean objects with named keys. Essential for importing spreadsheet data into APIs or databases.
 
 Converts a raw CSV string into a perfectly formatted JSON array of objects
@@ -82,7 +82,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `csv-json-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `csv-json-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CSV <-> JSON Converter** tools.
 
 **Configuration:**

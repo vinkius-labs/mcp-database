@@ -35,7 +35,7 @@ Connect to **API Ninjas** and access a comprehensive suite of health and fitness
 - **Nutritionists** — look up nutritional info for food items and estimate body fat
 
 
-## Available Tools
+## Available Tools (8)
 - **get_bmr**: Requires weight (kg), height (cm), age and gender. Returns BMR value in calories/day.
 
 Calculate Basal Metabolic Rate
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `api-ninjas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `api-ninjas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **API Ninjas** tools.
 
 **Configuration:**

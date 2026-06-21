@@ -27,7 +27,7 @@ Connect your **OnPay** account to empower your AI agents with payroll and HR cap
 3. Start managing your payroll operations from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_company_info**: Get general company information
 - **get_employee**: Get employee details
 - **get_transaction**: Get transaction details
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onpay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OnPay** tools.
 
 **Configuration:**

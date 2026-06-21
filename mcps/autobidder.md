@@ -35,7 +35,7 @@ No more manual checking of tender portals or missing bid deadlines. Your AI acts
 - **Developers** — integrate high-speed Autobidder data into custom internal tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_autobidder_status**: Verify AutoBidder API connectivity
 - **create_request**: Create a bid request
 - **get_bid**: Get bid details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `autobidder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `autobidder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Autobidder** tools.
 
 **Configuration:**

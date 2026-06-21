@@ -33,7 +33,7 @@ Bring the **Oxylabs SERP Scraper API** directly into your AI workflows. Perform 
 - **Content strategists** — analyze YouTube video rankings and news syndication across global domains
 
 
-## Available Tools
+## Available Tools (10)
 - **baidu_search**: Inspect deep internal arrays mitigating specific Plan Math
 - **bing_search**: Dispatch an automated validation check routing explicit Gateway history
 - **google_search**: Identify bounded CRM records inside the Headless Oxylabs SERP Platform
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oxylabs-serp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oxylabs-serp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Oxylabs SERP** tools.
 
 **Configuration:**

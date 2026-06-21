@@ -35,7 +35,7 @@ No more manual checking of individual rank trackers or missing local visibility 
 - **Marketing Operations** — automate the management of scheduled scans and campaign reporting through simple AI queries
 
 
-## Available Tools
+## Available Tools (13)
 - **add_keyword**: Add a keyword
 - **add_location**: Add a location
 - **check_localfalcon_status**: Verify connectivity
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `local-falcon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `local-falcon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Local Falcon** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your conversational assistant directly to the **Replicate** ecosystem. T
 - **Builders** — Mix and match the output of various specialized models intelligently using natural language instructions.
 
 
-## Available Tools
+## Available Tools (12)
 - **list_models**: Lists public models available on Replicate
 - **get_account**: Retrieves the authenticated Replicate account details
 - **list_collections**: g., "Image-to-Text", "Audio Generation").
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `replicate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `replicate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Replicate** tools.
 
 **Configuration:**

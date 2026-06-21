@@ -13,7 +13,7 @@ Verify the mathematical validity and structure of Brazilian CNPJ numbers.
 The CNPJ Validator MCP server provides a specialized engine for verifying Brazilian business identification numbers (CNPJ) through checksum algorithms and structural analysis. It allows AI agents to perform high-precision validation of CNPJ strings without external dependencies on federal databases. Using tools like `validate_cnpj_format`, `analyze_cnpj_structure`, and `batch_validate_cnpjs`, you can confirm if a number is mathematically valid, deconstruct it into its constituent parts (root, branch, and check digits), and even infer the Brazilian state of registration based on internal regional mapping rules. This server is ideal for automating compliance checks, data cleaning, and business identification workflows within your AI-driven processes.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_cnpj_structure**: Deconstructs a CNPJ into its constituent parts
 - **batch_validate_cnpjs**: Performs high-volume validation on a list of identifiers
 - **validate_cnpj_format**: Validates a CNPJ string using checksum algorithm
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cnpj-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cnpj-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CNPJ Validator** tools.
 
 **Configuration:**

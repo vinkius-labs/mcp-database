@@ -27,7 +27,7 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 - **Support Teams** — Access contact and account data seamlessly
 
 
-## Available Tools
+## Available Tools (7)
 - **zoho_create_case**: Subject is required. Status: New, Assigned, On Hold, Closed. Priority: High, Medium, Low. Case_Origin: Phone, Email, Web, Chat, Forum, Twitter. Case_Reason: Installation, Performance, Feature Request, etc. Use when logging a new customer issue or support request.
 
 Create a new support case in Zoho CRM with subject, priority, origin channel, reason, and description
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-crm-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-crm-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho CRM Service** tools.
 
 **Configuration:**

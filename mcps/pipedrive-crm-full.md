@@ -27,7 +27,7 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 - **RevOps** — Full CRM visibility and reporting
 
 
-## Available Tools
+## Available Tools (11)
 - **pd_create_activity**: Subject and type are required. Type must be one of: call, meeting, email, task, lunch, deadline. Optionally set due_date (YYYY-MM-DD) and link to deal_id, person_id, or both. Add a note for context. Activities appear in the Pipedrive calendar and task queue.
 
 Schedule a sales activity in Pipedrive — a call, meeting, email, task, lunch, or deadline linked to deals or contacts
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipedrive-crm-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipedrive-crm-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipedrive CRM (Full)** tools.
 
 **Configuration:**

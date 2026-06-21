@@ -32,7 +32,7 @@ Connect your AI agent to the **world's most AI-enhanced academic knowledge graph
 - **R&D Teams** — evaluate researcher impact using influential citation counts and h-index metrics for talent scouting or collaboration decisions
 
 
-## Available Tools
+## Available Tools (4)
 - **get_semantic_citations**: Essential for literature reviews and impact analysis.
 
 Find papers that cite a specific work on Semantic Scholar
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `semantic-scholar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `semantic-scholar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Semantic Scholar** tools.
 
 **Configuration:**

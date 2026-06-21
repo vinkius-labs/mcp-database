@@ -34,7 +34,7 @@ Connect your **GoTo Meeting** account to any AI agent and manage your video conf
 - **Operations Teams** — audit meeting history, track usage patterns, and manage scheduling through AI
 
 
-## Available Tools
+## Available Tools (6)
 - **create_meeting**: Schedule a new meeting
 - **delete_meeting**: Delete a meeting
 - **get_meeting_details**: Get details for a specific meeting
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `goto-meeting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `goto-meeting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoTo Meeting** tools.
 
 **Configuration:**

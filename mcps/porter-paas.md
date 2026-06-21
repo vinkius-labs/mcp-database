@@ -34,7 +34,7 @@ No pulling KUBECONFIG files, authenticating via cloud CLI tools, or navigating d
 - **Engineering Leads** — inspect resource mapping and isolate distinct staging environments instantly
 
 
-## Available Tools
+## Available Tools (10)
 - **deploy_app_tag**: Assigns a raw docker registry digest/tag directly causing Kubernetes to perform an absolute image pull orchestrating a fresh deployment state spanning replica boundaries.
 
 Forcefully mutate the executed Docker image running internally
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `porter-paas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `porter-paas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Porter PaaS** tools.
 
 **Configuration:**

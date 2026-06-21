@@ -34,7 +34,7 @@ Connect your **Booking Manager (MMK Systems)** account to any AI agent and orche
 - **Travel Agents** — retrieve yacht details and automated offers using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **check_availability**: Check yacht availability for specific dates
 - **create_booking**: Create a new reservation or option
 - **get_extras**: List available extras for a yacht
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `booking-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `booking-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Booking Manager** tools.
 
 **Configuration:**

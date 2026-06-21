@@ -19,7 +19,7 @@ Autonomous agents demand flawless date arithmetic. When standard LLMs attempt to
 - **Anniversary Prediction:** Automatically forecasts the next cycle anniversary, accounting for Feb 29 leap year mutations.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_exact_age**: Provide the birthDateStr in ISO format.
 
 Executes precise chronological timeline generation. Calculates absolute age in years, months, and days, returning cumulative metrics and forecasting the next anniversary date
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `absolute-chronological-timeline-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `absolute-chronological-timeline-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Absolute Chronological Timeline Engine** tools.
 
 **Configuration:**

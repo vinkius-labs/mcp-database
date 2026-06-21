@@ -34,7 +34,7 @@ Stop managing external map APIs or relying on outdated geocoders. Simply tell th
 - **E-commerce Ops** — validate rooftop tax zones resolving complex US jurisdictions directly during development
 
 
-## Available Tools
+## Available Tools (10)
 - **autocomplete_address**: Returns up to 10 candidate addresses ranked by relevance. Designed for keystroke-by-keystroke usage in address input forms.
 
 Provide real-time address suggestions as users type using the Precisely Typeahead Autocomplete API, drawing from a comprehensive global address database to accelerate form completion and reduce entry errors
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `precisely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `precisely` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Precisely** tools.
 
 **Configuration:**

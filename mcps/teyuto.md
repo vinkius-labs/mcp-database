@@ -22,7 +22,7 @@ Connect your **Teyuto** account to any AI agent and manage your video platform.
 - **Subscription Plans** — View plan pricing and features
 
 
-## Available Tools
+## Available Tools (10)
 - **check_teyuto_status**: Verify API connectivity
 - **get_collection**: Get collection details
 - **get_user**: Get user details
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `teyuto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `teyuto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Teyuto** tools.
 
 **Configuration:**

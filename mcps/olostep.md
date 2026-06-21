@@ -35,7 +35,7 @@ No more manual checking of individual scraping jobs or missing batch completion 
 - **Developers** â€” integrate high-speed Olostep scraping data into custom LLM and RAG pipelines through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_olostep_status**: Verify Olostep API connectivity
 - **create_agent**: Create a scraping agent
 - **create_batch**: Pass URLs as comma-separated values.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `olostep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `olostep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Olostep** tools.
 
 **Configuration:**

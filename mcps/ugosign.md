@@ -33,7 +33,7 @@ Connect your **Ugosign** account to any AI agent to streamline your electronic s
 - **Developers** — integrate real-time electronic signature intelligence into custom business and legal dashboards
 
 
-## Available Tools
+## Available Tools (6)
 - **create_signature_request**: Pass data as a JSON string.
 
 Create a new signature request
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ugosign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ugosign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ugosign** tools.
 
 **Configuration:**

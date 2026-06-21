@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire legal research and legislative 
 - **Operations Leads** — automate legal data querying to orchestrate cross-functional compliance teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the BCLaws API is operational
 - **get_bc_regulation**: Get details for a specific British Columbia regulation
 - **get_bc_statute**: Get details for a specific British Columbia statute
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bclaws-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bclaws-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BCLaws API** tools.
 
 **Configuration:**

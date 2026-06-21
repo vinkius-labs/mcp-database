@@ -35,7 +35,7 @@ Connect your **Hunter** account to any AI agent and power your email prospecting
 - **Marketing Teams** — build verified email lists, enrich contact databases, and manage prospecting pipelines
 
 
-## Available Tools
+## Available Tools (12)
 - **create_new_lead**: Save lead to CRM
 - **remove_lead**: Delete lead record
 - **search_domain_emails**: Find emails for domain
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hunter-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hunter-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hunter** tools.
 
 **Configuration:**

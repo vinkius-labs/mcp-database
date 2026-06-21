@@ -34,7 +34,7 @@ Connect your **Miro** account to any AI agent and take full control of your visu
 - **Engineering Teams** — audit collaborative board memberships and retrieve visual project summaries efficiently to maintain alignment
 
 
-## Available Tools
+## Available Tools (8)
 - **list_boards**: List high-level Miro Boards accessible globally
 - **get_board**: Get static explicit configuration of a specific Miro Board
 - **create_board**: Create a fresh new collaborative Miro Board
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `miro-visual-collaboration-whiteboarding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `miro-visual-collaboration-whiteboarding` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Miro (Visual Collaboration & Whiteboarding)** tools.
 
 **Configuration:**

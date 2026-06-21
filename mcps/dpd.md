@@ -13,7 +13,7 @@ Streamline your logistics and shipping with DPD.
 This MCP server integrates DPD services, allowing you to create shipments, track parcel statuses, and find nearby pickup points. It's designed for businesses that need to automate their shipping workflows efficiently.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_shipment**: Cancel an existing DPD shipment
 - **create_shipment**: Provide shipment data as a JSON string.
 
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dpd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dpd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DPD** tools.
 
 **Configuration:**

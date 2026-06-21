@@ -32,7 +32,7 @@ Connect **LinkedIn Ads** to your AI agent and manage your B2B advertising campai
 - **Agencies** — Manage multiple client LinkedIn advertising accounts from one interface.
 
 
-## Available Tools
+## Available Tools (8)
 - **list_campaign_groups**: List campaign groups
 - **list_campaigns**: List campaigns
 - **list_creatives**: List ad creatives
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `linkedin-ads-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `linkedin-ads-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LinkedIn Ads** tools.
 
 **Configuration:**

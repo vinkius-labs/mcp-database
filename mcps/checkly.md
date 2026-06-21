@@ -35,7 +35,7 @@ Connect your **Checkly** account to any AI agent and take full control of your a
 - **QA Automation Engineers** — monitor the status of browser-based synthetic tests
 
 
-## Available Tools
+## Available Tools (8)
 - **get_checkly_account_info**: Retrieve core account and organization metadata
 - **get_check_performance_metrics**: Retrieve performance metrics for a specific check
 - **get_check_details**: Get detailed information for a specific check
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `checkly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `checkly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Checkly** tools.
 
 **Configuration:**

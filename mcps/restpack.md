@@ -33,7 +33,7 @@ Restpack provides powerful tools for web-to-document conversion. This MCP server
 - **Marketing Teams** — Generate high-quality social media previews or website mockups instantly using simple prompts.
 
 
-## Available Tools
+## Available Tools (4)
 - **capture_screenshot**: Returns a CDN URL.
 
 Capture a screenshot of a web page
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `restpack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `restpack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Restpack** tools.
 
 **Configuration:**

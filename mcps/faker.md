@@ -33,7 +33,7 @@ Connect the **Faker** MCP server to your AI agent to instantly generate realisti
 - **Product Designers** — fill prototypes with realistic content instead of 'lorem ipsum'.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_addresses**: Can be filtered by country_code.
 
 Generate mock address data
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `faker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `faker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Faker** tools.
 
 **Configuration:**

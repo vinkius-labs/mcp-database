@@ -22,7 +22,7 @@ The **Taiwan Weather MCP Server** integrates your AI agent with the official Cen
 Free API key required (instant registration). Taiwan's CWA maintains one of the densest meteorological sensor networks in Asia, delivering high-precision data essential for anyone operating in the Western Pacific typhoon corridor.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_taiwan_earthquakes**: Taiwan sits on the Pacific Ring of Fire and experiences frequent seismic activity. Reports include magnitude, depth, epicenter coordinates, and official assessment.
 
 Get significant earthquake reports for Taiwan and the surrounding Pacific region
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `taiwan-weather-cwa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `taiwan-weather-cwa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Taiwan Weather (CWA)** tools.
 
 **Configuration:**

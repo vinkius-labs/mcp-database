@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your marketing operations within the WeChat
 - **WeChat Power Users** — integrate your existing JingDigital workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contact**: Create a new contact
 - **get_account_info**: Get account metadata
 - **get_campaign**: Get campaign details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jingdigital` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jingdigital` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JingDigital** tools.
 
 **Configuration:**

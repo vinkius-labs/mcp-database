@@ -30,7 +30,7 @@ Connect your **123FormBuilder** account to any AI agent and simplify how you col
 - **Administrative Staff** — manage form organization and verify submission statuses via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_new_form**: Add empty form
 - **remove_form**: Delete form
 - **remove_entry**: Delete submission
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `123formbuilder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `123formbuilder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **123FormBuilder** tools.
 
 **Configuration:**

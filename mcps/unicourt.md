@@ -33,7 +33,7 @@ Connect your **UniCourt** account to any AI agent to streamline legal research a
 - **Insurance & Finance** — assess legal risks by inspecting party histories and active court cases
 
 
-## Available Tools
+## Available Tools (27)
 - **delete_pacer_credential**: Delete PACER account credentials
 - **generate_token**: Generate a new UniCourt access token
 - **get_case_count_analytics**: Get case count analytics by case type
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unicourt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unicourt` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UniCourt** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your self-hosted **Huginn** instance to any AI agent and take full contr
 - **Automation Power Users** — Orchestrate complex multi-step scenarios and migrate configurations between instances seamlessly.
 
 
-## Available Tools
+## Available Tools (13)
 - **list_events**: List recent Huginn events
 - **create_agent**: Create a new Huginn agent
 - **delete_agent**: Delete a Huginn agent
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `huginn-ifttt-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `huginn-ifttt-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Huginn (IFTTT Alternative)** tools.
 
 **Configuration:**

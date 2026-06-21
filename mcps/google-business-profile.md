@@ -36,7 +36,7 @@ Keep your business information up-to-date and your customers heard without manua
 - **Customer Support Teams** — monitor and answer customer questions on Google Maps efficiently
 
 
-## Available Tools
+## Available Tools (12)
 - **answer_question**: Provide an answer to a customer question
 - **create_review_reply**: Reply to a customer review
 - **get_location_details**: Get detailed info for a specific location
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-business-profile` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-business-profile` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Business Profile** tools.
 
 **Configuration:**

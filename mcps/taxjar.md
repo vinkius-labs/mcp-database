@@ -32,7 +32,7 @@ Equip your artificial assistant with precise commercial tax intelligence integra
 - **Risk & Compliance Analysts** — Investigate operational profiles retrieving strict matrix summaries auditing active customer exemptions textually.
 
 
-## Available Tools
+## Available Tools (10)
 - **calculate_sales_tax**: Provide order details like from/to addresses and amounts as a JSON payload.
 
 Calculates the exact sales tax for a specific order
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `taxjar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `taxjar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TaxJar** tools.
 
 **Configuration:**

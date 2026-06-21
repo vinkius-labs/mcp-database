@@ -13,7 +13,7 @@ Calculate agricultural insurance parameters, premiums, and indemnity ceilings.
 This MCP server provides tools to determine essential agricultural insurance metrics. Using `calculate_insurance_metrics`, agents can compute guaranteed productivity, maximum indemnity, and estimated premiums based on historical yields and regional risk rates. The server also includes `lookup_premium_rate` for retrieving specific crop-region premium percentages and `validate_insurance_eligibility` to verify if a production setup complies with current insurance regulations.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_insurance_metrics**: Performs the primary calculation to output all necessary insurance parameters
 - **lookup_premium_rate**: Retrieves the specific insurance premium rate associated with a particular crop in a specific region
 - **validate_insurance_eligibility**: Checks if a specific production setup is valid under current insurance regulations
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crop-insurance-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crop-insurance-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Crop Insurance Calculator** tools.
 
 **Configuration:**

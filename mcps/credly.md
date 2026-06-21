@@ -32,7 +32,7 @@ Integrate **Credly**, the world's largest digital credential network, directly i
 - **Program Coordinators** — Track recipient engagement and verify issuer authorizations via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_badge_details**: Get detailed information for a specific issued badge
 - **get_organization_info**: Get metadata for a specific organization
 - **get_template_details**: Get full design and criteria for a badge template
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `credly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `credly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Credly** tools.
 
 **Configuration:**

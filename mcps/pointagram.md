@@ -33,7 +33,7 @@ Connect your **Pointagram** account to any AI agent to streamline your team gami
 - **Developers** — integrate real-time gamification data and player stats into custom business dashboards
 
 
-## Available Tools
+## Available Tools (6)
 - **create_player**: Pass data as a JSON string.
 
 Create a new player
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pointagram` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pointagram` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pointagram** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more jumping between disparate tools for support and billing. Your AI acts as
 - **Operations Managers** — streamline the retrieval of billing metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_person**: Provide email and optionally name.
 
 Create a new person in the CRM
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `outseta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `outseta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Outseta** tools.
 
 **Configuration:**

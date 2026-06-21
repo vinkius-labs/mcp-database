@@ -35,7 +35,7 @@ Connect your **Gong** account to any AI agent and unlock conversation intelligen
 - **Sales Enablement** — curate best-practice calls in the coaching library and evaluate with scorecards
 
 
-## Available Tools
+## Available Tools (14)
 - **check_gong_status**: Verify connectivity
 - **get_call**: Get call details
 - **get_call_stats**: Get call statistics
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gong-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gong-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gong** tools.
 
 **Configuration:**

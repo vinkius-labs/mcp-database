@@ -32,7 +32,7 @@ Connect your **Railway** cloud infrastructure to an AI agent, streamlining opera
 - **System Administrators** — Conduct fast routine checks on service connectivity scaling without having to rely entirely on separate client applications.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_project**: Creates a new Railway project
 - **delete_project**: This action is irreversible.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `railway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `railway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Railway** tools.
 
 **Configuration:**

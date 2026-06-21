@@ -29,7 +29,7 @@ Einstellung-Challenger Prover uses 5 Decision Pivots that force the agent to cha
 5. **optimalMethodSelected** — Was the simplest, most elegant, and resource-efficient solution selected?
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_einstellung**: The Einstellung effect (Luchins 1942) means the first solution you find BLOCKS perception of simpler alternatives — even when the simpler solution is obvious to someone seeing the problem fresh. You must: (1) STATE the default heuristic — what is the automatic, standard approach? The one you reach for without thinking? Be honest: this is probably the solution you already planned, (2) ACTIVELY SEARCH for counterexamples — simpler approaches that bypass the default entirely. Not "variations of the default" — genuinely different approaches. Can you solve it with a built-in? A data structure change? No code at all? Luchins subjects who were told "don't be blind" found the simple solution immediately, (3) MAP alternatives with MEASURABLE comparison — lines of code, time complexity, dependencies added, cognitive load, maintenance burden. Not "seems simpler" — measure it, (4) SELECT the absolute simplest solution that satisfies all constraints — elegance is the absence of unnecessary complexity, not the presence of clever patterns, (5) JUSTIFY if the complex solution wins — sometimes the complex approach IS correct. But justify it with evidence, not habit. If rejected, your approach is bloated or suboptimal — search for a simpler path.
 
 Structured reflection tool to prevent Einstellung bias — the cognitive trap where a known solution blocks perception of simpler, superior alternatives. Named after Luchins' 1942 water jug experiments where subjects who learned a complex 3-jar solution failed to see a trivial 1-jar solution. Catches Einstellung Trap (the first solution that comes to mind blocks all simpler alternatives — you reach for a regex when string.split() works, a state machine when a boolean suffices, a microservice when a function call is enough), Heuristic Dominance (the "standard" approach dominates without examination — "we always use X" without asking if X is appropriate for THIS specific problem. Enterprise patterns applied to a 200-line script. AbstractFactoryProviderManagerService for a CRUD endpoint), and Counterexample Blindness (not searching for simpler paths because the first solution feels adequate — Luchins proved that once subjects found the complex solution, they stopped looking. The simple solution was RIGHT THERE but cognitively invisible). Call once per complex task, algorithm, or design decision
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `einstellung-challenger-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `einstellung-challenger-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Einstellung-Challenger Prover** tools.
 
 **Configuration:**

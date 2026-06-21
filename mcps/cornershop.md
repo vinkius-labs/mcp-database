@@ -33,7 +33,7 @@ Connect your **Cornershop by Uber** B2B account to any AI agent and manage your 
 - **Personal Assistants** — manage client grocery lists and track deliveries efficiently
 
 
-## Available Tools
+## Available Tools (14)
 - **cancel_order**: Note: Orders can only be cancelled without penalty if the shopper hasn't started picking.
 
 Cancel a pending order
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cornershop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cornershop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cornershop** tools.
 
 **Configuration:**

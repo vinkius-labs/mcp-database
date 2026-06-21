@@ -18,7 +18,7 @@ When an AI Agent works with legacy infrastructure configs like php.ini, MySQL my
 - **Full Syntax:** Sections ([section]), nested keys (key.subkey=value), inline comments, and multiline values.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_ini**: ini, my.cnf, .editorconfig, or Git config. Pass the raw INI or JSON content and the direction ("ini-to-json" or "json-to-ini"). The engine handles sections ([section]), inline comments, and nested keys deterministically.
 
 Converts INI configuration files to JSON and vice versa. Handles sections, key-value pairs, and comments. Powered by the ini package (55M+ weekly downloads)
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ini-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ini-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **INI Parser Engine** tools.
 
 **Configuration:**

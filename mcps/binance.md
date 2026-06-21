@@ -36,7 +36,7 @@ No API key required for public data — completely free.
 - **Developers** — access crypto market data without authentication for dashboards and bots
 
 
-## Available Tools
+## Available Tools (8)
 - **get_24h_ticker**: Includes last price, 24h change (price and %), high/low, volume (base and quote), number of trades and open interest. Useful for market overview and scanning.
 
 Get 24-hour rolling window price change statistics
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `binance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `binance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Binance** tools.
 
 **Configuration:**

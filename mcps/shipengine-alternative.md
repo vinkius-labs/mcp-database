@@ -34,7 +34,7 @@ Connect your **ShipEngine** account to any AI agent to streamline your entire sh
 - **Developers** — test shipping workflows and carrier integrations using natural language instead of manual API calls.
 
 
-## Available Tools
+## Available Tools (13)
 - **add_funds**: Add funds to a carrier balance
 - **connect_carrier**: Connect a carrier account
 - **create_label_rate_shopper**: Create a label using the rate shopper
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shipengine-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shipengine-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ShipEngine** tools.
 
 **Configuration:**

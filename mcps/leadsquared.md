@@ -33,7 +33,7 @@ Connect your **LeadSquared** account to any AI agent to automate your sales exec
 - **Operations Managers** — Automate prospect synchronization and maintain CRM data hygiene easily
 
 
-## Available Tools
+## Available Tools (10)
 - **list_activity_types**: g., Phone Call, Meeting) configured in LeadSquared.
 
 List all lead activity types
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leadsquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leadsquared` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LeadSquared** tools.
 
 **Configuration:**

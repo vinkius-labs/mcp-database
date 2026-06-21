@@ -35,7 +35,7 @@ No more manual dashboard testing or complex webhook setups for simple alerts. Yo
 - **Power Users** — streamline the retrieval of account limits and monitor multi-device notifications directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **grant_app_license**: Assign license to user
 - **stop_emergency_alert**: Cancel repeated retries
 - **update_glances_data**: Set watch glance info
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pushover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pushover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pushover** tools.
 
 **Configuration:**

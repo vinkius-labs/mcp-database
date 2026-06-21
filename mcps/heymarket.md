@@ -35,7 +35,7 @@ No more manual texting from a mobile device or switching tabs to check your inbo
 - **Operations Managers** — monitor team response times and coordinate staff assignments across shared inboxes
 
 
-## Available Tools
+## Available Tools (9)
 - **create_contact**: Register a new contact
 - **get_chat_history**: Get conversation history
 - **get_message_details**: Get details for a message
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `heymarket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `heymarket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Heymarket** tools.
 
 **Configuration:**

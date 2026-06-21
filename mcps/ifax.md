@@ -34,7 +34,7 @@ Connect your **iFax** account to any AI agent and manage fax communications thro
 - **Operations** — automate fax workflows for compliance and document exchange
 
 
-## Available Tools
+## Available Tools (6)
 - **cancel_fax**: Cancel a pending fax
 - **download_fax**: Download a fax document
 - **get_fax_status**: Check fax delivery status
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ifax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ifax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **iFax** tools.
 
 **Configuration:**

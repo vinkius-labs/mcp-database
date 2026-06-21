@@ -33,7 +33,7 @@ Connect your **ZeroTier** infrastructure to any AI agent to orchestrate software
 - **Remote Teams** — Quickly join or switch between project-specific virtual networks during development.
 
 
-## Available Tools
+## Available Tools (13)
 - **list_central_network_members**: List all members of a ZeroTier Central network
 - **get_central_network**: Get details for a specific ZeroTier Central network
 - **list_central_networks**: List all ZeroTier Central networks
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zerotier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zerotier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZeroTier** tools.
 
 **Configuration:**

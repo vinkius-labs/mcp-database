@@ -32,7 +32,7 @@ Connect your **AwardWallet** business account to any AI agent and track your loy
 - **Operations Teams** — automate the auditing of corporate travel data and loyalty program status for employees
 
 
-## Available Tools
+## Available Tools (9)
 - **create_auth_url**: Generate an authorization URL for a user to link their AwardWallet account
 - **get_account_check**: Verify AwardWallet Business API connection
 - **get_account_details**: Get specific details for a loyalty account
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `awardwallet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `awardwallet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AwardWallet** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **PitchBox** account to any AI agent and take full control of your 
 - **Content Marketers** — verify project metadata and pending tasks without leaving your workflow.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_pitchbox_campaign**: Get details for a specific campaign
 - **get_pitchbox_me**: Get current user profile info
 - **get_pitchbox_opportunity**: Get details for a specific opportunity
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pitchbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pitchbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PitchBox** tools.
 
 **Configuration:**

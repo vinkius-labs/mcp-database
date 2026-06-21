@@ -33,7 +33,7 @@ Equip your AI agent with a source of canine joy via the **Dog CEO** MCP server. 
 - **Pet Stores & Vets** — access a reliable source of breed names and imagery for client materials.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_dog_by_breed**: Get a dog image by breed
 - **list_dog_breeds**: List all dog breeds
 - **get_random_dog_image**: Get a random dog image
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dog-ceo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dog-ceo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dog CEO** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Close** CRM account to any AI agent and take full control of your
 - **Revenue Ops** — verify lead status mapping and monitor sales throughput
 
 
-## Available Tools
+## Available Tools (8)
 - **get_lead_details**: Get detailed information for a specific lead
 - **get_my_close_profile**: Retrieve information about the authenticated user
 - **get_opportunity_details**: Get detailed information for a specific opportunity
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `close` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `close` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Close** tools.
 
 **Configuration:**

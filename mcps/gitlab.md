@@ -35,7 +35,7 @@ Connect your **GitLab** instance to any AI agent to automate your DevSecOps life
 - **DevOps Engineers** — automate the retrieval of file contents and project metadata for auditing and automation.
 
 
-## Available Tools
+## Available Tools (16)
 - **verify_api_connection**: Check connection
 - **create_project_issue**: Open an issue
 - **get_repository_file**: Read file content
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gitlab` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gitlab` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GitLab** tools.
 
 **Configuration:**

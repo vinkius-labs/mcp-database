@@ -35,7 +35,7 @@ No more manual tagging or losing track of interesting articles. Your AI acts as 
 - **Avid Readers** — streamline the retrieval of unread items and monitor personal knowledge growth directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **save_to_pocket**: Save a URL to Pocket
 - **add_tags_to_item**: Add labels to item
 - **archive_pocket_item**: Archive an item
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pocket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pocket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pocket** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ No more manual exporting of booking data. Your AI assistant acts as a dedicated 
 - **Short-term Rental Owners** — monitor revenue performance and guest satisfaction trends from a single interface.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_accounting_stats**: Retrieve business-level accounting summary and statistics
 - **get_calendar**: Get availability and pricing calendar for a listing
 - **get_listing_stats**: Retrieve performance statistics for a specific property listing
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `guesty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `guesty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Guesty** tools.
 
 **Configuration:**

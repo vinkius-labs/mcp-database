@@ -33,7 +33,7 @@ Connect your **Bazaarvoice** account to any AI agent and gain deep insights into
 - **Product Teams** — search reviews for specific keywords to identify feature requests or recurring issues.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_product**: Get specific product details
 - **get_question**: Get specific question details
 - **get_review**: Get specific review details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bazaarvoice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bazaarvoice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bazaarvoice** tools.
 
 **Configuration:**

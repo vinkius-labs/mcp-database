@@ -13,7 +13,7 @@ Access real-time and historical energy market data via ISO New England API.
 Empower your AI agents to monitor the New England power grid with the ISO-NE Web Services API. This MCP server allows you to retrieve real-time system load, generation fuel mix, locational marginal prices (LMP), and market forecasts directly through the official ISO New England API. Ideal for energy analysis, grid monitoring, and market research.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_actual_interchange**: g., NYISO, Hydro-Quebec). Essential for understanding net imports and exports of electricity.
 
 Retrieves actual interchange data
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `iso-new-england` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `iso-new-england` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ISO New England** tools.
 
 **Configuration:**

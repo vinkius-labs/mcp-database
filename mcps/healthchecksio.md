@@ -33,7 +33,7 @@ Connect your **Healthchecks.io** account to any AI agent to monitor and manage y
 - **SRE Teams** — automate the auditing of monitoring coverage and integration status
 
 
-## Available Tools
+## Available Tools (13)
 - **create_check**: Use the unique field to upsert if it already exists.
 
 Create a new check
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `healthchecksio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `healthchecksio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Healthchecks.io** tools.
 
 **Configuration:**

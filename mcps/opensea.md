@@ -35,7 +35,7 @@ No more manual searching through marketplace tabs. Your AI acts as a dedicated f
 - **Data Analysts** — automate the retrieval of collection statistics and trait distributions for market research.
 
 
-## Available Tools
+## Available Tools (35)
 - **cancel_order**: Off-chain cancellation of an order
 - **generate_listing_fulfillment**: Get data to buy an NFT
 - **generate_offer_fulfillment**: Get data to accept an offer
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opensea` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opensea` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenSea** tools.
 
 **Configuration:**

@@ -21,7 +21,7 @@ The **ClinicalTrials.gov MCP Server** connects your AI agent to the United State
 Zero authentication required. Fully open public data maintained by the National Library of Medicine. Critical for pharmaceutical researchers, healthcare professionals, patient advocates, and biotech analysts.
 
 
-## Available Tools
+## Available Tools (3)
 - **find_recruiting_trials**: Useful for patients and healthcare providers looking for active enrollment opportunities.
 
 Find clinical trials that are actively recruiting participants for a specific medical condition
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clinicaltrialsgov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clinicaltrialsgov` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClinicalTrials.gov** tools.
 
 **Configuration:**

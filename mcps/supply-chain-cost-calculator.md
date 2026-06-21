@@ -13,7 +13,7 @@ Calculate SCM cost ratio, category breakdown, and industry benchmarks.
 This MCP server provides specialized tools to measure supply chain efficiency. Use `calculate_scm_ratio` to determine total expenditure as a percentage of revenue, `get_cost_distribution` for a granular breakdown across transportation, warehousing, inventory, order processing, and administration, and `evaluate_sector_performance` to compare your results against industry benchmarks like Retail, Manufacturing, or Distribution.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_cost_distribution**: Analyzes how the total SCM expenditure is distributed across different operational pillars
 - **calculate_scm_ratio**: Calculates total SCM cost as a percentage of revenue
 - **evaluate_sector_performance**: Identifies if the SCM ratio is within target and flags reduction opportunities
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `supply-chain-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `supply-chain-cost-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Supply Chain Cost Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 - **System Architects** — design and test complex messaging workflows using natural language commands.
 
 
-## Available Tools
+## Available Tools (38)
 - **batch_messages**: Send multiple messages in a single request
 - **bulk_cancel_messages**: Cancel multiple messages based on filters
 - **bulk_delete_dlq**: Delete all messages from the DLQ
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qstash-serverless-message-queue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qstash-serverless-message-queue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QStash (Serverless Message Queue)** tools.
 
 **Configuration:**

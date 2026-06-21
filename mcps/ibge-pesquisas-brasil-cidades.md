@@ -22,7 +22,7 @@ Access the same data engine powering the official **Brasil Cidades** portal — 
 Urban planners, public policy researchers, ESG analysts, journalists, and data scientists building Brazilian city intelligence systems.
 
 
-## Available Tools
+## Available Tools (4)
 - **list_pesquisas**: List all IBGE surveys and research programs
 - **get_indicadores**: Use survey ID (e.g., 33 for Censo Demográfico, 38 for Produção Agrícola Municipal).
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibge-pesquisas-brasil-cidades` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibge-pesquisas-brasil-cidades` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBGE Pesquisas — Brasil Cidades** tools.
 
 **Configuration:**

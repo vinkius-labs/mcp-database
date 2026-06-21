@@ -33,7 +33,7 @@ Connect the **Listen Notes Podcast API** to any AI agent to automate your podcas
 - **Podcast Enthusiasts** — Automate the discovery of new shows and episodes via simple natural language commands
 
 
-## Available Tools
+## Available Tools (7)
 - **get_best_podcasts**: You can provide an optional genre_id.
 
 Get a list of best podcasts by genre
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `listen-notes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `listen-notes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Listen Notes** tools.
 
 **Configuration:**

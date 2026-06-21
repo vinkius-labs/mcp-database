@@ -33,7 +33,7 @@ Connect your **Cirium** developer account to any AI agent to access the world's 
 - **Developers & Data Analysts** — pull real-time positional data and schedules into your AI-driven tools.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_airport_status**: Get a list of flights departing from or arriving at an airport
 - **get_airport_tracks**: Get tracks for all flights near a specific airport
 - **create_alert_rule**: Register a new alert rule for a flight
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cirium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cirium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cirium** tools.
 
 **Configuration:**

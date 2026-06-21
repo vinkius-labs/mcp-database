@@ -39,7 +39,7 @@ No more browsing hundreds of listings manually. Your AI acts as a dedicated trav
 - **Experience Seekers** — discover unique local activities and tours alongside accommodation search
 
 
-## Available Tools
+## Available Tools (12)
 - **get_calendar**: This helps plan trips by confirming availability before attempting to book.
 You can optionally specify a month (YYYY-MM format) to view a specific month's calendar.
 The response shows available dates, minimum stay requirements, and pricing variations by date.
@@ -175,7 +175,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airbnb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airbnb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Airbnb** tools.
 
 **Configuration:**

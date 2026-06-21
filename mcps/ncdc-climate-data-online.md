@@ -34,7 +34,7 @@ Connect to the **National Climatic Data Center (NCDC)** API through your AI agen
 - **Educators** — access authoritative public data for classroom projects and climate education.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_climate_data**: Retrieve actual climate records
 - **get_dataset**: Get specific dataset details
 - **get_station**: Get specific station details
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ncdc-climate-data-online` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ncdc-climate-data-online` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NCDC Climate Data Online** tools.
 
 **Configuration:**

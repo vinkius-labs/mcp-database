@@ -35,7 +35,7 @@ Connect your **FirstPromoter** account to any AI agent and automate your affilia
 - **Marketing Operations** — automate the gathering of conversion and lead data for internal marketing reports.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_promoter**: Create a new promoter
 - **create_reward**: Create a new reward
 - **get_campaign_report**: Get campaign performance report
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `firstpromoter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `firstpromoter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FirstPromoter** tools.
 
 **Configuration:**

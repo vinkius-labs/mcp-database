@@ -32,7 +32,7 @@ Integrate **Cradl AI**, the advanced document data extraction platform, directly
 - **Developers** — Audit model performance and task statuses during integration testing.
 
 
-## Available Tools
+## Available Tools (10)
 - **extract_data_from_url**: Touches OCR engine, model prediction, and data normalization boundary.
 
 Trigger a new data extraction prediction from a file URL
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cradl-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cradl-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cradl AI** tools.
 
 **Configuration:**

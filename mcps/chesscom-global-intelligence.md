@@ -32,7 +32,7 @@ Equip your AI agent with deep intelligence from the world's leading chess platfo
 - **Content Creators** — retrieve high-integrity match data and daily puzzles for reporting and community engagement
 
 
-## Available Tools
+## Available Tools (12)
 - **get_player_stats**: Get ratings and statistics for a player
 - **list_active_streamers**: List active Chess.com streamers
 - **list_titled_players**: List players with a specific title (GM, IM, etc)
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chesscom-global-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chesscom-global-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chess.com Global Intelligence** tools.
 
 **Configuration:**

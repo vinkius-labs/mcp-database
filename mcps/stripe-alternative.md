@@ -38,7 +38,7 @@ No more switching to the Stripe dashboard to check a payment status or audit ref
 - **Product Managers** — monitor subscription statuses, track customer growth and review coupon usage via conversation
 
 
-## Available Tools
+## Available Tools (13)
 - **create_customer**: Optionally set the email, name and description. Returns the created customer with its ID.
 
 Create a new Stripe customer
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stripe-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stripe-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stripe** tools.
 
 **Configuration:**

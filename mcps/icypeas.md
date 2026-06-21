@@ -13,7 +13,7 @@ Lead generation and email verification via Icypeas API.
 Empower your AI agents to build and verify your lead database with Icypeas. This MCP server allows you to list prospects, search for specific leads, manage prospect lists, verify email deliverability, and find contact information directly through the Icypeas API. Ideal for automating sales outreach and lead enrichment.
 
 
-## Available Tools
+## Available Tools (10)
 - **find_email**: Finds an email address for a specific person at a domain
 - **get_account**: Gets your Icypeas account details
 - **get_campaign**: Retrieves details for a specific campaign
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `icypeas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `icypeas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Icypeas** tools.
 
 **Configuration:**

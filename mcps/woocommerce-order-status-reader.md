@@ -19,7 +19,7 @@ Empower your AI customer support bots to instantly answer the most common e-comm
 - **Tracking Extraction:** It automatically parses WooCommerce's `_tracking_number` meta data so the AI can provide tracking links and shipping method details directly to the customer.
 
 
-## Available Tools
+## Available Tools (1)
 - **read_woocommerce_order**: You must provide either the specific orderId or the customer's email address to search for recent orders.
 
 Reads the real-time status of a WooCommerce order
@@ -63,7 +63,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `woocommerce-order-status-reader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `woocommerce-order-status-reader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WooCommerce Order Status Reader** tools.
 
 **Configuration:**

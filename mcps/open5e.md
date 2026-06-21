@@ -30,7 +30,7 @@ Connect your AI agent to the **Open5e** API, the ultimate open-source resource f
 No more flipping through rulebooks mid-game. Your AI acts as a digital Dungeon Master's assistant, providing instant stats and descriptions.
 
 
-## Available Tools
+## Available Tools (12)
 - **list_backgrounds**: List character backgrounds
 - **list_classes**: List character classes and archetypes
 - **list_conditions**: List status effects and conditions
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open5e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open5e` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open5e** tools.
 
 **Configuration:**

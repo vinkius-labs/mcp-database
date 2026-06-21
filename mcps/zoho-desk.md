@@ -33,7 +33,7 @@ Transform your Zoho Desk into an AI-ready support powerhouse. Your agents can no
 Perfect for **customer support teams**, **IT helpdesks**, and **SaaS companies** using Zoho Desk. Empower AI agents to handle tier-1 support, triage tickets, escalate issues, and maintain customer records — all through natural language commands. Ideal for teams managing 100+ tickets daily who want to reduce response times and automate repetitive workflows.
 
 
-## Available Tools
+## Available Tools (13)
 - **add_note**: Notes are only visible to agents and not visible to customers. Use this for internal collaboration, escalation notes, or context that should not be shared with the customer. Requires a valid ticket ID.
 
 Add an internal note to a Zoho Desk ticket
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-desk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-desk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Desk** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Sablier** protocol data to any AI agent to manage real-time finan
 - **DeFi Power Users** — Query complex stream data and prepare Merkle campaigns without manual script writing.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_eligibility**: Check if an address is eligible for a campaign
 - **check_validity**: Validate an IPFS CID for a Sablier campaign
 - **create_merkle_campaign**: Returns the CID and Merkle root.
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sablier-token-streaming-real-time-payroll` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sablier-token-streaming-real-time-payroll` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sablier (Token Streaming & Real-time Payroll)** tools.
 
 **Configuration:**

@@ -26,7 +26,7 @@ Connect your **MediaSilo** (Shift) account to any AI agent and take full control
 3. Start managing your media workflows from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_asset**: Get details for a specific asset
 - **get_project**: Get details for a specific project
 - **get_project_assets**: List all assets within a project
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mediasilo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mediasilo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MediaSilo** tools.
 
 **Configuration:**

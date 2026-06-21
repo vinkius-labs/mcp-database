@@ -13,7 +13,7 @@ Assess neurological impairment and determine airway management protocols using t
 The Glasgow Coma Scale (GCS) Calculator is a specialized clinical decision support tool designed to objectively assess a patient's level of consciousness following head injury or neurological insult. By evaluating three physiological components--eye opening, verbal response, and motor response--the tool calculates the total GCS score and classifies the severity of the injury into Mild, Moderate, or Severe tiers. Additionally, it provides critical airway management instructions via `get_airway_instruction` based on the calculated score and offers a qualitative clinical prognosis assessment using `evaluate_clinical_prognosis`. This MCP server acts as a bridge for AI agents to perform rapid neurological assessments and prepare for emergency medical interventions.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_gcs_metrics**: Calculates the cumulative GCS score and determines injury severity
 - **evaluate_clinical_prognosis**: Provides a qualitative assessment of the expected clinical outcome
 - **get_airway_instruction**: Determines the appropriate airway management protocol
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glasgow-coma-scale-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glasgow-coma-scale-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glasgow Coma Scale Calculator** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more jumping between browser tabs to check server statuses or billing cycles.
 - **Finance & Ops** — retrieve billing summaries and resource prices to maintain budget control over cloud environments.
 
 
-## Available Tools
+## Available Tools (46)
 - **get_account**: Get UpCloud account information
 - **assign_ip**: Assign a new IP address
 - **list_audit_logs**: List account audit logs
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `upcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `upcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UpCloud** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Manage campuses, courses, and users via Illumidesk LMS API.
 Connect your AI agents to Illumidesk, the AI-powered learning management system. This MCP server allows you to list campuses, manage courses, track user memberships, and access activity logs directly through the Illumidesk API. Ideal for automating education workflows and course management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_activity_logs**: Retrieves activity logs for a specific campus
 - **get_campus**: Retrieves details for a specific campus
 - **get_course**: Retrieves details for a specific course
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `illumidesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `illumidesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Illumidesk** tools.
 
 **Configuration:**

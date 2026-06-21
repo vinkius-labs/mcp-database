@@ -21,7 +21,7 @@ Large Language Models are brilliant at reasoning, but they notoriously hallucina
 Stop relying on probabilistic models for exact numbers. Equip your agent with a real calculator.
 
 
-## Available Tools
+## Available Tools (5)
 - **calculate_factorial**: Calculates the factorial of a non-negative integer
 - **calculate_percentage**: Calculates the percentage of a given total value
 - **calculate_power**: Calculates the base raised to the exponent power
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fundamental-math` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fundamental-math` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fundamental Math** tools.
 
 **Configuration:**

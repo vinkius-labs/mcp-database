@@ -35,7 +35,7 @@ No more manual call logs or complex agent configuration. Your AI acts as a dedic
 - **Operations Teams** — streamline the retrieval of agent metadata and monitor organizational voice health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_phone_number**: Get details for a specific phone number
 - **create_voice_agent**: Create a new AI voice agent
 - **start_phone_call**: Initiate an outbound phone call
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `retell-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `retell-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Retell AI** tools.
 
 **Configuration:**

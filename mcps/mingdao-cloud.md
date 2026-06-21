@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your enterprise workflows with **Mingdao Cl
 - **IT Administrators** — manage application users and monitor automated workflows without manual technical overhead.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_row**: Add a new record to a worksheet
 - **delete_row**: Delete a record from a worksheet
 - **get_app_info**: Get application summary
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mingdao-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mingdao-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mingdao Cloud** tools.
 
 **Configuration:**

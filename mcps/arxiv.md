@@ -29,7 +29,7 @@ Connect your AI agent to **arXiv** — the world's premier open-access preprint 
 - **Mathematics & Statistics Professionals** — find proofs, new theorems, and statistical methodology papers in real-time
 
 
-## Available Tools
+## Available Tools (2)
 - **get_arxiv_paper**: IDs look like 2106.09685 or cs/0101001.
 
 Get full preprint details by arXiv ID
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arxiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arxiv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **arXiv** tools.
 
 **Configuration:**

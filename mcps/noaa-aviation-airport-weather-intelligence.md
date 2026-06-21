@@ -23,7 +23,7 @@ The definitive aviation weather intelligence from the NOAA Aviation Weather Cent
 METARs and TAFs work worldwide using ICAO codes (KJFK, EGLL, LFPG, SBGR).
 
 
-## Available Tools
+## Available Tools (5)
 - **get_metar**: Provide ICAO codes comma-separated (KJFK, EGLL, LFPG). Returns temperature, wind, visibility, clouds, pressure, weather phenomena. Optionally retrieve past hours of data.
 
 Get METAR (current airport weather) for any airport worldwide by ICAO code
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `noaa-aviation-airport-weather-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `noaa-aviation-airport-weather-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NOAA Aviation — Airport Weather Intelligence** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Bring the joy of cats to your AI interactions with the **CatAAS** MCP server. Th
 - **Teams** — Lighten the mood in collaborative environments with random cat GIFs and images.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_cat_by_tag**: Get a random cat filtered by tag
 - **get_cat_with_tag_and_text**: Get a random cat with a specific tag and custom text
 - **get_cat_with_text**: Get a random cat with custom text overlaid
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cataas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cataas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CatAAS** tools.
 
 **Configuration:**

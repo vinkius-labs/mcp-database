@@ -32,7 +32,7 @@ Connect **BILL (Bill.com)** to your AI agent and streamline your accounts payabl
 - **Bookkeepers** — Reconcile vendor payments and review invoice details directly from your workflow.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_vendors**: List all vendors
 - **get_company_profile**: Get company profile
 - **get_vendor**: Get vendor details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `billcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `billcom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bill.com** tools.
 
 **Configuration:**

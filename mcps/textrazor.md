@@ -33,7 +33,7 @@ Connect **TextRazor** to your AI agent to unlock state-of-the-art text analysis 
 - **Market Researchers** — monitor news and social media by extracting key entities and relations in real-time
 
 
-## Available Tools
+## Available Tools (11)
 - **add_dictionary_entries**: Add entries to a custom dictionary
 - **analyze_text**: Provide either text or url, and a comma-separated list of extractors.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `textrazor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `textrazor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TextRazor** tools.
 
 **Configuration:**

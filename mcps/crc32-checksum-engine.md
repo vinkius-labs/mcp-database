@@ -22,7 +22,7 @@ This MCP provides pure JavaScript CRC32 calculation with zero native dependencie
 - **Validation Ready:** Compare calculated vs expected CRC32 to verify data integrity.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_crc32**: CRC32 is the standard checksum used in ZIP archives, PNG images, Ethernet frames, and many industrial protocols. Pass any string content and receive the checksum in three formats: signed integer, unsigned integer, and uppercase hexadecimal.
 
 Calculates CRC32 checksums of strings. Returns signed, unsigned, and hexadecimal representations. Standard in ZIP, PNG, Ethernet, and MPEG-2
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crc32-checksum-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crc32-checksum-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CRC32 Checksum Engine** tools.
 
 **Configuration:**

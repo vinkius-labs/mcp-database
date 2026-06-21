@@ -36,7 +36,7 @@ Connect your **Elastic Security** (SIEM) deployment to any AI agent and take ful
 - **DevOps Teams** — monitor SIEM health and verify prepackaged rule update statuses in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **add_exception**: name value to the target exception container, implicitly ignoring telemetry matched on this field for any rule bound to the list. Use explicitly to resolve false positives.
 
 Whitelist a hostname inside an existing Exception List
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elastic-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elastic-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elastic Security** tools.
 
 **Configuration:**

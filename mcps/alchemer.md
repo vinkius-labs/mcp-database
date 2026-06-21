@@ -34,7 +34,7 @@ Connect your **Alchemer (formerly SurveyGizmo)** account to your AI agent to unl
 - **Data Analysts** — retrieve granular survey data for external analysis and reporting using simple commands
 
 
-## Available Tools
+## Available Tools (10)
 - **list_surveys**: List account surveys
 - **get_survey_details**: Get survey metadata
 - **list_survey_questions**: List survey questions
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alchemer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alchemer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alchemer** tools.
 
 **Configuration:**

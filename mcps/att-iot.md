@@ -39,7 +39,7 @@ No more logging into the IoT Control Center portal for every SIM check. Your AI 
 - **Finance Teams** -- audit data usage across the fleet, forecast billing cycles, and reallocate unused pool capacity to save costs
 
 
-## Available Tools
+## Available Tools (10)
 - **activate_device**: Returns activation timestamp and assigned IP. Use to onboard new devices or restore service after maintenance.
 
 Activate a suspended or deactivated IoT SIM
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `att-iot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `att-iot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AT&T IoT** tools.
 
 **Configuration:**

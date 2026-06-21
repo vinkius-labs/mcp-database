@@ -22,7 +22,7 @@ With 40M+ weekly downloads, nanoid is the ID generator behind Supabase, Vite, an
 - **Cryptographic:** Uses `crypto.getRandomValues()` — the same API used for encryption keys.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_nanoid**: Default size is 21 characters with collision probability of ~1 billion years at 1000 IDs/hour. For custom alphabets, pass an alphabet string (e.g. "0123456789" for numeric IDs). Nanoid uses crypto.getRandomValues() for security.
 
 Generates unique URL-safe IDs using nanoid. 2x faster than UUID, 118 bytes. Custom alphabet support
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nanoid-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nanoid-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nanoid Generator** tools.
 
 **Configuration:**

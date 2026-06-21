@@ -27,7 +27,7 @@ Transform how your organization interacts with reading material by giving your A
 Ideal for researchers, students, and professionals needing instant, conversational access to their curated knowledge base.
 
 
-## Available Tools
+## Available Tools (16)
 - **check_readwise_status**: Verify connectivity
 - **create_highlight**: Create a highlight
 - **delete_highlight**: Delete a highlight
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `readwise-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `readwise-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Readwise** tools.
 
 **Configuration:**

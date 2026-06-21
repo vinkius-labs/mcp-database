@@ -33,7 +33,7 @@ Equip your AI agent with a source of feline wisdom through the **Cat Facts** MCP
 - **Educators** — source fun animal facts for biology and nature presentations.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_random_cat_fact**: Get a random cat fact
 - **list_cat_breeds**: List cat breeds
 - **list_cat_facts**: List multiple cat facts
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cat-facts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cat-facts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cat Facts** tools.
 
 **Configuration:**

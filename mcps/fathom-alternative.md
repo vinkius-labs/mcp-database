@@ -35,7 +35,7 @@ No more digging through dashboards to find simple traffic stats. Your AI acts as
 - **Developers** — manage site configurations and event IDs straight from the code editor.
 
 
-## Available Tools
+## Available Tools (20)
 - **get_account**: Retrieve information about the Fathom account owner
 - **get_aggregations**: Generate flexible reports by grouping and filtering data
 - **create_event**: Create a new event for a site
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fathom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fathom-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fathom** tools.
 
 **Configuration:**

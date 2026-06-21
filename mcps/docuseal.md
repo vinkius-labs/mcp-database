@@ -33,7 +33,7 @@ Connect your **DocuSeal** account to any AI agent to streamline your electronic 
 - **Sales Teams** — Send out sales orders and service agreements for signature without leaving your AI-powered workflow.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_submission**: Create a new submission to request signatures
 - **create_template**: Can be created from HTML content.
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docuseal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docuseal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DocuSeal** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Greenspark** account to any AI agent and automate your business's
 - **Operations Teams** — calculate and offset the carbon footprint of company operations and travel synchronously
 
 
-## Available Tools
+## Available Tools (12)
 - **create_impact**: Trigger a new climate impact (e.g. plant a tree)
 - **create_webhook**: Configure a new API webhook
 - **estimate_footprint**: Calculate the carbon footprint of a transaction
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `greenspark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `greenspark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Greenspark** tools.
 
 **Configuration:**

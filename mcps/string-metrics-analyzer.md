@@ -19,7 +19,7 @@ LLMs suffer from absolute tokenization blindness. If you ask an AI "How many tim
 - **SEO & Constraints:** Perfect for ensuring AI-generated SEO titles, meta descriptions, or ad copies stay strictly within character limits without hallucinating length.
 
 
-## Available Tools
+## Available Tools (1)
 - **analyze_string_metrics**: Pass both strings and receive Levenshtein distance, Jaccard index, and other similarity scores for deduplication or fuzzy matching.
 
 Deterministically calculates text metrics including exact character count, word count, and specific character occurrences to bypass LLM tokenization blindness
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `string-metrics-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `string-metrics-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **String Metrics Analyzer** tools.
 
 **Configuration:**

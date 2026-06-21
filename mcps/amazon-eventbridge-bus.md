@@ -17,7 +17,7 @@ Grant your AI agent **precise, scoped access** to a single Amazon EventBridge Bu
 - **Put Events** — Dispatch custom JSON events specifying the `Source` and `DetailType` to trigger AWS Lambda functions, Step Functions, or third-party webhooks via EventBridge Rules.
 
 
-## Available Tools
+## Available Tools (1)
 - **put_events**: Send custom events to the Amazon EventBridge Bus
 
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazon-eventbridge-bus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazon-eventbridge-bus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazon EventBridge Bus** tools.
 
 **Configuration:**

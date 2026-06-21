@@ -33,7 +33,7 @@ Connect your **Mapflow** account to any AI agent and manage geospatial AI proces
 - **Environmentalists** — monitor forests and land use
 
 
-## Available Tools
+## Available Tools (7)
 - **create_processing**: Pass data as a JSON string.
 
 Start a new imagery analysis
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mapflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mapflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mapflow** tools.
 
 **Configuration:**

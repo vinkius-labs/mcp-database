@@ -27,7 +27,7 @@ Connect **FlightStats** to your AI agent to monitor global aviation data, track 
 3. Start tracking flights and airport schedules directly from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (22)
 - **get_active_airlines**: Get all active airlines
 - **get_active_airports**: Get all active airports
 - **get_airport_by_code**: Get airport details by code
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flightstats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flightstats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FlightStats** tools.
 
 **Configuration:**

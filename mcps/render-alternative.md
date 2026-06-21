@@ -32,7 +32,7 @@ Connect your **Render** organizational account to any AI agent and command your 
 - **Incident Responders** — Swiftly list and verify active deployment logs to remediate downtime states natively.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_deploy**: Trigger a new deploy for a service
 - **get_service**: Get a single Render service details
 - **list_custom_domains**: List custom domains for a service
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `render-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `render-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Render** tools.
 
 **Configuration:**

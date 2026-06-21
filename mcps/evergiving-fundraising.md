@@ -32,7 +32,7 @@ Integrate **Evergiving**, the powerful platform for fundraising and field market
 - **Operations Teams** — Monitor field fundraiser schedules and organizational fundraising metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_evergiving_account_metadata**: Retrieve metadata and limits for your Evergiving account
 - **get_campaign_performance_summary**: Get a summary of performance metrics for a specific fundraising campaign
 - **get_donation_detailed_data**: Get detailed settings and information for a specific donation or pledge
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `evergiving-fundraising` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `evergiving-fundraising` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Evergiving Fundraising** tools.
 
 **Configuration:**

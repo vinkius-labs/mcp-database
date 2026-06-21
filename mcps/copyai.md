@@ -32,7 +32,7 @@ Integrate **Copy.ai**, the AI OS for GTM (Go-to-Market), directly into your work
 - **Content Strategists** — Quickly trigger complex multi-step AI processes via chat.
 
 
-## Available Tools
+## Available Tools (7)
 - **delete_webhook**: Remove a registered webhook
 - **get_workflow_run_status**: Status can be PROCESSING, COMPLETE, or FAILED.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `copyai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `copyai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Copy.ai** tools.
 
 **Configuration:**

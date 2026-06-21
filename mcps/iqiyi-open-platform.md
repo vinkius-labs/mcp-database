@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your video entertainment and membership ins
 - **iQiyi Power Users** — integrate your existing project integrations into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_content_metadata**: Get video metadata
 - **get_order_info**: Get order details
 - **get_user_profile**: Get user information
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `iqiyi-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `iqiyi-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **iQiyi Open Platform / 爱奇艺开放平台** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect **AI21 Studio** to your AI agent and unlock access to the powerful Jamba
 - **Researchers** — generate robust summaries of enormous walls of text using specialized endpoints rather than generic LLM prompts
 
 
-## Available Tools
+## Available Tools (7)
 - **chat_completion**: g., jamba-1.5-large, jamba-1.5-mini) and the conversation messages as a JSON array.
 
 Generate chat completions using AI21 Jamba models
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ai21-studio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ai21-studio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AI21 Studio** tools.
 
 **Configuration:**

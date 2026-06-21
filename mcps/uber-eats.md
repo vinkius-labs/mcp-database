@@ -35,7 +35,7 @@ Connect AI agents to the Uber Eats Marketplace API for complete restaurant and d
 Essential for **restaurant owners**, **food delivery managers**, **multi-location food businesses**, **ghost kitchen operators**, **franchise managers**, and **POS system integrators** using Uber Eats. Let AI agents handle order monitoring, menu maintenance, delivery tracking, and store management. Perfect for businesses processing 20+ daily orders who want faster response times, reduced manual oversight, and streamlined operations across multiple restaurant locations.
 
 
-## Available Tools
+## Available Tools (14)
 - **accept_order**: This notifies the customer that the restaurant is preparing their food and triggers courier assignment by Uber Eats. Required before marking order as ready for pickup. Use this to acknowledge incoming orders and begin food preparation. Should be done promptly to maintain good restaurant ratings.
 
 Accept a pending Uber Eats order to confirm preparation
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uber-eats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uber-eats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Uber Eats** tools.
 
 **Configuration:**

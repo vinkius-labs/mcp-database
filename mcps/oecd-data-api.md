@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire macroeconomic research and poli
 - **Operations Leads** — automate statistical data querying to orchestrate cross-functional research teams smoothly.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_api_status**: Check if the OECD Data service is operational
 - **get_oecd_dataset**: Get specific economic or social data from an OECD dataset ID
 - **list_oecd_dataflows**: List all available dataflows and datasets in the OECD catalog
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oecd-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oecd-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OECD Data API** tools.
 
 **Configuration:**

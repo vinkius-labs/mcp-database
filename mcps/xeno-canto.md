@@ -32,7 +32,7 @@ Connect to the **Xeno-canto** database to access over 800,000 recordings of bird
 - **Data Scientists** — collect bioacoustic datasets for machine learning and environmental analysis.
 
 
-## Available Tools
+## Available Tools (1)
 - **search_recordings**: g., gen:Turdus cnt:france q:A).
 
 Search for bird sound recordings on Xeno-canto
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `xeno-canto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `xeno-canto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Xeno-canto** tools.
 
 **Configuration:**

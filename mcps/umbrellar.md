@@ -13,7 +13,7 @@ Cloud hosting, domains, and managed IT services.
 The Umbrellar MCP server provides a direct conversational link to your cloud infrastructure. Query server status, check domain availability, and monitor your managed services directly via AI.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_product_eligibility**: Check if a product is eligible for warranty coverage
 - **create_claim**: Submit a new warranty claim
 - **get_claim**: Get details for a specific warranty claim
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `umbrellar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `umbrellar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Umbrellar** tools.
 
 **Configuration:**

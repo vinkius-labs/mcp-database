@@ -13,7 +13,7 @@ Estimate agricultural production costs per unit of yield and benchmark against r
 The Cost-per-Bag Calculator is an agricultural economics engine designed to help farmers and agribusiness professionals estimate production costs per unit of yield. By inputting fixed costs like land lease and machinery maintenance, alongside variable costs such as seeds, fertilizers, and pesticides, the tool calculates the total cost per hectare. It further translates these area-based expenses into a precise cost per bag using expected yields. Users can also analyze cost distribution to identify major expenditure drivers and use `compare_regional_benchmark` to evaluate their performance against industry standards in different regions.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_total_area_cost**: Calculate the total cost per hectare
 - **analyze_cost_distribution**: Analyze the distribution of costs
 - **compare_regional_benchmark**: Compare user costs and yields against regional industry averages
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cost-per-bag-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cost-per-bag-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cost-per-Bag Calculator** tools.
 
 **Configuration:**

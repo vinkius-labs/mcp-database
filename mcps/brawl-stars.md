@@ -29,7 +29,7 @@ Connect your **Brawl Stars** API key to any AI agent and dive deep into game ana
 No more manual searching for player tags or checking the app for map rotations. Your AI acts as your personal game analyst and scout.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_brawler_rankings**: Get brawler-specific rankings
 - **get_brawler**: Get information about a specific brawler
 - **list_brawlers**: List all available brawlers
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brawl-stars` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brawl-stars` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Brawl Stars** tools.
 
 **Configuration:**

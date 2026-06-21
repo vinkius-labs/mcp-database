@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to evaluate anomalies a
 - **Absolute Containment:** Because this uses the one-way Events API V2, the agent cannot read your incident history, cannot modify on-call schedules, and cannot snoop on resolving engineers. It is the purest, safest way to give your AI paging superpowers.
 
 
-## Available Tools
+## Available Tools (1)
 - **trigger_pagerduty_incident**: Provide a clear summary, the source of the issue, and an optional severity level ("critical", "error", "warning", "info"). Defaults to critical.
 
 Trigger an incident in PagerDuty using the Events API V2
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pagerduty-incident-trigger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pagerduty-incident-trigger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PagerDuty Incident Trigger** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Campaigner** account to any AI agent and orchestrate your email m
 - **Developers** — integrate email workflow and subscriber management into their environment using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_subscriber**: Add a new subscriber to Campaigner
 - **get_account_info**: Retrieve core account information
 - **get_campaign_stats**: Retrieve performance statistics for a campaign
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `campaigner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `campaigner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Campaigner** tools.
 
 **Configuration:**

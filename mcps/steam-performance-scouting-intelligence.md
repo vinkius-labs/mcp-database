@@ -32,7 +32,7 @@ Transform your AI agent into a professional e-sports scout and performance analy
 - **Tournament Organizers** — automate integrity checks including VAC bans and server availability directly from your workflow
 
 
-## Available Tools
+## Available Tools (11)
 - **get_player_badges**: List all community badges earned by a player
 - **get_friend_list**: Requires the user profile to be public.
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `steam-performance-scouting-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `steam-performance-scouting-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Steam Performance & Scouting Intelligence** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Hotmart** account to any AI agent and manage your digital product
 - **Affiliate Managers** — review sales commissions, track affiliate performance, and audit transaction histories
 
 
-## Available Tools
+## Available Tools (6)
 - **get_sales_history**: Get sales history
 - **get_sales_summary**: Get sales summary
 - **get_student_progress**: Get progress for a student
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hotmart-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hotmart-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hotmart** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual logging into the dashboard for quick guest checks. Your AI acts a
 - **Growth Teams** — streamline the ingestion of new guests and monitor organizational activity directly within the chat.
 
 
-## Available Tools
+## Available Tools (6)
 - **add_guests_to_event**: Manually add guests to an event
 - **create_event**: Create a new Luma event
 - **list_event_guests**: List guests for an event
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `luma` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `luma` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Luma** tools.
 
 **Configuration:**

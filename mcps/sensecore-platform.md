@@ -35,7 +35,7 @@ Connect your AI agents to the **SenseCore Platform**, the industrial-grade AI in
 - **Machine Learning Ops** — orchestrate and track large-scale inference tasks on the SenseCore platform
 
 
-## Available Tools
+## Available Tools (11)
 - **create_assistant**: Define a new AI assistant
 - **get_assistant_details**: Get complete configuration for an assistant
 - **create_message**: Add a message to a thread
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sensecore-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sensecore-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SenseCore Platform** tools.
 
 **Configuration:**

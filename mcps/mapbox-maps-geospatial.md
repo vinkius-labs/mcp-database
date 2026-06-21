@@ -35,7 +35,7 @@ Connect your **Mapbox** account to any AI agent and take full control of world-c
 - **Data Analysts** — clean GPS datasets using road snapping and enrich location data with precise elevation and coordinate metadata
 
 
-## Available Tools
+## Available Tools (10)
 - **get_directions**: Calculate driving, walking, or cycling directions between points
 - **get_elevation**: Query elevation data for a specific coordinate point
 - **search_places**: Search for places, addresses, or POIs using Mapbox Geocoding
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mapbox-maps-geospatial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mapbox-maps-geospatial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mapbox (Maps & Geospatial)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **LangGraph Cloud** account to any AI agent and take full control o
 - **Ops Teams** — audit scheduled crons and manage execution runs to ensure reliable delivery of automated AI workflows
 
 
-## Available Tools
+## Available Tools (10)
 - **list_assistants**: List LangGraph deployed assistants (graph configurations)
 - **cancel_run**: Interrupt and cancel an ongoing graph execution run
 - **create_thread**: Create a new LangGraph thread to hold conversational state
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `langgraph-cloud-stateful-ai-agents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `langgraph-cloud-stateful-ai-agents` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LangGraph Cloud (Stateful AI Agents)** tools.
 
 **Configuration:**

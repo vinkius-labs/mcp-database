@@ -13,7 +13,7 @@ Manage employees, leaves, and organization data via Humaans HRIS API.
 Connect your AI agents to Humaans, the modern HRIS for global teams. This MCP server allows you to list and manage employees, track leave requests, view public holidays, and access organization data like teams, departments, and offices directly through the Humaans API. Ideal for automating HR operations and employee directory lookups.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_employee**: Retrieves details for a specific employee
 - **get_me**: Gets current authenticated user info
 - **list_departments**: Lists organization departments
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `humaans` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `humaans` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Humaans** tools.
 
 **Configuration:**

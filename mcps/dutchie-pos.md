@@ -32,7 +32,7 @@ Integrate **Dutchie POS** (formerly Greenbits/LeafLogix), the leading retail pla
 - **Operations Teams** — Monitor order fulfillment and customer metadata across the organization instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dutchie_pos_metadata**: Retrieve metadata and limits for your Dutchie POS account
 - **get_order_details**: Get detailed information for a specific order
 - **get_product_details**: Get detailed settings and information for a specific product
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dutchie-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dutchie-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dutchie POS** tools.
 
 **Configuration:**

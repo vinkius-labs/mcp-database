@@ -41,7 +41,7 @@ No more manual silo inspections or complex monitoring software. Your AI acts as 
 - **Agricultural Consultants** — provide data-driven storage management recommendations to clients
 
 
-## Available Tools
+## Available Tools (11)
 - **set_relay_state**: Accepts device ID, relay name, and desired state (true=on, false=off). Essential for remote grain management, automated ventilation scheduling, and responding to temperature/moisture alerts. AI agents should use this when users ask "turn on the fan for silo 3", "activate aeration for bin 2", or need to remotely control ventilation equipment based on sensor readings. WARNING: Always verify current conditions before changing relay states.
 
 Control relay outputs (fans, aeration, dryers) connected to an AgroLog device
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `agrolog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `agrolog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AgroLog** tools.
 
 **Configuration:**

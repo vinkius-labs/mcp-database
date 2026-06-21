@@ -34,7 +34,7 @@ Connect your **FormKeep** account to any AI agent to automate your form data ret
 - **Marketing Operations** — automate the retrieval of survey data and customer feedback for reporting and analysis.
 
 
-## Available Tools
+## Available Tools (5)
 - **delete_submission**: Remove a submission
 - **get_form_details**: Get form metadata
 - **get_submission**: Get submission details
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `formkeep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `formkeep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FormKeep** tools.
 
 **Configuration:**

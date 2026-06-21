@@ -34,7 +34,7 @@ Stop digging through dashboard menus to figure out if your discount script is wo
 - **Support Teams** — give the bot a customer’s email and have it retrieve the total order history immediately
 
 
-## Available Tools
+## Available Tools (9)
 - **get_customer_details**: Retrieves details for a specific customer
 - **get_order_details**: Retrieves details for a specific order
 - **get_subscription_details**: Retrieves details for a specific subscription
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snipcart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snipcart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Snipcart** tools.
 
 **Configuration:**

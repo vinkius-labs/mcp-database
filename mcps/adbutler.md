@@ -34,7 +34,7 @@ Connect your **AdButler** account to your AI agent to unlock professional ad ser
 - **Ad Network Administrators** — manage multiple publishers and zones using simple natural language commands
 
 
-## Available Tools
+## Available Tools (5)
 - **list_campaigns**: Retrieve a list of active and pending self-serve advertising campaigns in AdButler
 - **list_publishers**: Retrieve the full list of publishers managing ad inventory in your AdButler network
 - **list_zones**: Requires Publisher ID.
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adbutler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adbutler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AdButler** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual copy-pasting between devices or missing mobile notifications. You
 - **Support Coordinators** — streamline the retrieval of contact metadata and monitor device availability directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **register_new_device**: g. a script) to receive pushes.
 
 Add a target device
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pushbullet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pushbullet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pushbullet** tools.
 
 **Configuration:**

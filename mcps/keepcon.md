@@ -33,7 +33,7 @@ Empower your AI agents to moderate user-generated content using **Keepcon**. Thi
 - **Developers** — Integrate semantic moderation checks into your applications during development
 
 
-## Available Tools
+## Available Tools (9)
 - **acknowledge_results**: Acknowledge receipt of results
 - **export_results**: Retrieve batch moderation results
 - **submit_feedback**: g., false positives) to improve the semantic engine.
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `keepcon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `keepcon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Keepcon** tools.
 
 **Configuration:**

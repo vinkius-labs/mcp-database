@@ -35,7 +35,7 @@ Connect your **Northflank** account to any AI agent and take full control of you
 - **Platform Teams** — manage organizational project spaces and verify secret vault mappings across multiple Northflank environments efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **create_project**: Directly assigns the fundamental cloud region routing ingress requests, acting as a crucial first step in any IaC bootstrapping sequence.
 
 Provision a brand new isolated Northflank Project space
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `northflank-developer-cloud-orchestration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `northflank-developer-cloud-orchestration` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Northflank (Developer Cloud & Orchestration)** tools.
 
 **Configuration:**

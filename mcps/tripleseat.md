@@ -21,7 +21,7 @@ Connect your **Tripleseat** account to any AI agent — the leading event manage
 - **Accounts** — Corporate client tracking with total spend
 
 
-## Available Tools
+## Available Tools (8)
 - **list_events**: "What events this week?"
 
 List events
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tripleseat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tripleseat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tripleseat** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Scale up your AI operations without opening terminal panes to check Ray cluster 
 - **Backend Developers** — debug service health metrics and endpoint statuses without navigating the heavy cloud dashboard
 
 
-## Available Tools
+## Available Tools (7)
 - **list_models**: g., meta-llama/Llama-2-70b-chat-hf).
 
 List available AI models on Anyscale Endpoints
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `anyscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `anyscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Anyscale** tools.
 
 **Configuration:**

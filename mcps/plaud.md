@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire voice-to-intelligence ecosystem
 - **Operations Leads** — automate recording querying to orchestrate cross-functional team intelligence smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_file**: Delete a Plaud recording
 - **get_download_url**: Get MP3 download URL for a recording
 - **get_file_detail**: Get details for a specific recording
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plaud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plaud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plaud** tools.
 
 **Configuration:**

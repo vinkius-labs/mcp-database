@@ -22,7 +22,7 @@ No AI can truly evaluate password strength. This MCP uses the Dropbox zxcvbn eng
 - **100% Local:** The password never leaves the engine. Zero network calls. Zero data leakage.
 
 
-## Available Tools
+## Available Tools (1)
 - **score_password_strength**: The zxcvbn engine (created by Dropbox) detects common patterns, dictionary words, keyboard sequences (qwerty, zxcvbn), dates, and l33t-speak substitutions. It returns a score from 0 (very weak) to 4 (very strong), estimated crack times for different attack scenarios, and actionable feedback. No AI can truly evaluate password strength — this engine uses real combinatorial analysis.
 
 Evaluates password strength using the Dropbox zxcvbn engine. Returns a 0-4 score, crack time estimates, and improvement suggestions
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `password-strength-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `password-strength-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Password Strength Scorer** tools.
 
 **Configuration:**

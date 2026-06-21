@@ -32,7 +32,7 @@ Connect **RentCast** to your AI agent to unlock powerful real estate insights. Q
 - **Data Analysts** — pull property metadata and market trends directly into your workflow.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_rental_avm_long_term**: Generate rental valuations and estimated market rents for long-term rentals
 - **get_rental_avm_short_term**: Generate rental valuations and estimated market rents for short-term/Airbnb rentals
 - **get_market_stats**: Retrieve aggregate market data and trends for a specific zip code
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rentcast-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rentcast-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RentCast** tools.
 
 **Configuration:**

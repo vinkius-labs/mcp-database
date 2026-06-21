@@ -32,7 +32,7 @@ Equip your AI agent with professional-grade strategic intelligence for **Clash o
 - **Strategy Enthusiasts** — analyze war histories and opponent compositions to optimize attack plans
 
 
-## Available Tools
+## Available Tools (14)
 - **get_cwl_group**: Get Clan War League group status
 - **get_capital_raid_seasons**: Get Clan Capital raid history
 - **get_clan_details**: Use the clan tag with #.
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clash-of-clans-strategy-war-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clash-of-clans-strategy-war-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clash of Clans Strategy & War Analytics** tools.
 
 **Configuration:**

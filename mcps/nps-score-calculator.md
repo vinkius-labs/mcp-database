@@ -13,7 +13,7 @@ Calculate Net Promoter Score, performance tiers, and statistical margin of error
 The NPS Score Calculator MCP server provides a complete toolkit for analyzing customer loyalty. Use `calculate_nps` to transform raw response counts into a meaningful Net Promoter Score, including performance classifications (Critical, OK, Good, Excellent) and statistical margin of error. You can also use `get_industry_benchmark` to find standard targets for sectors like Technology or Retail, and `compare_performance` to see how your results stack up against the industry baseline.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_industry_benchmark**: Retrieves the NPS benchmark for a specific industry
 - **calculate_nps**: Calculates Net Promoter Score (NPS) and statistical margin of error
 - **compare_performance**: Compares current NPS against industry benchmark
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nps-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nps-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NPS Score Calculator** tools.
 
 **Configuration:**

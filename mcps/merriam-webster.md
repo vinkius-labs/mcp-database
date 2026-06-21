@@ -35,7 +35,7 @@ Equip your AI agent with the gold standard of the English language via the **Mer
 - **Developers** — integrate reliable linguistic data into their applications through natural language queries.
 
 
-## Available Tools
+## Available Tools (2)
 - **define_word**: Get the definition of a word
 - **get_thesaurus**: Get synonyms and antonyms
 
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `merriam-webster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `merriam-webster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Merriam-Webster** tools.
 
 **Configuration:**

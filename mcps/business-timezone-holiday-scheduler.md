@@ -18,7 +18,7 @@ LLMs hallucinate dates. They forget leap years, daylight saving time rules, and 
 - **Flawless Timezones:** Instantly convert meeting times between complex IANA timezones (e.g., from `America/Sao_Paulo` to `Asia/Tokyo`), accounting for real-world offset rules.
 
 
-## Available Tools
+## Available Tools (2)
 - **add_business_days**: It automatically skips weekends. If you provide a countryCode (e.g. "US", "BR", "JP"), it will also query the Nager.Date API to skip national public holidays for that country.
 
 Calculates a future date by adding a specific number of business days (skipping weekends and optional public holidays)
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `business-timezone-holiday-scheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `business-timezone-holiday-scheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Business Timezone & Holiday Scheduler** tools.
 
 **Configuration:**

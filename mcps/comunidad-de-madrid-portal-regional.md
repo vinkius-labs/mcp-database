@@ -33,7 +33,7 @@ Connect your AI agent to the **Comunidad de Madrid Open Data Portal** to access 
 - **Researchers & Citizens** — find public information about air quality, transport schedules, or economic indicators through simple conversation.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_dataset**: Get full metadata for a specific dataset
 - **get_resource**: Get metadata for a specific resource
 - **list_datasets**: List all dataset identifiers in the portal
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `comunidad-de-madrid-portal-regional` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `comunidad-de-madrid-portal-regional` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Comunidad de Madrid (Portal Regional)** tools.
 
 **Configuration:**

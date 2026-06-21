@@ -34,7 +34,7 @@ Stop managing HTML string templates manually or debugging mail senders manually 
 - **Postmaster Administrators** — audit sudden drops in global metric performance, asking LLMs to filter Bounce Events systematically
 
 
-## Available Tools
+## Available Tools (10)
 - **create_template**: Provide a unique ID, display name, subject and valid HTML.
 
 Creates a new HTML email template
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sparkpost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sparkpost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SparkPost** tools.
 
 **Configuration:**

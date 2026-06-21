@@ -28,7 +28,7 @@ Connect your **Marqeta** account to any AI agent to manage your card issuing inf
 4. Start issuing cards and managing fintech workflows from your MCP-compatible client
 
 
-## Available Tools
+## Available Tools (31)
 - **create_ach_funding_source**: Create an ACH funding source
 - **create_auth_control**: Create an authorization control
 - **create_business**: Create a new Marqeta business
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `marqeta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `marqeta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Marqeta** tools.
 
 **Configuration:**

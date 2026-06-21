@@ -32,7 +32,7 @@ Connect your **Stability AI** account to any AI agent and unlock professional-gr
 - **Content Creators** — Generate unique assets for social media, blogs, or presentations using simple text commands.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_user_account**: Check user account details
 - **list_engines**: List available engines for generation
 - **masking**: Replaces parts of an image defined by a mask
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stability-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stability-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stability AI** tools.
 
 **Configuration:**

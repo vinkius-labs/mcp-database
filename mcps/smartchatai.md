@@ -33,7 +33,7 @@ Connect your **SmartChatAI** account to any AI agent to automate your intelligen
 - **Customer Success Teams** — streamline the retrieval of conversational logs and monitor user satisfaction directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_pdf_to_knowledge_base**: Train bot using a PDF
 - **add_text_to_knowledge_base**: Train bot using raw text
 - **add_website_to_knowledge_base**: Train bot using a URL
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smartchatai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smartchatai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SmartChatAI** tools.
 
 **Configuration:**

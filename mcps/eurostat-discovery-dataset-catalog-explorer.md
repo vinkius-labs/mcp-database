@@ -21,7 +21,7 @@ The master key to all EU statistics. Discovery lets your AI agent explore, under
 Data explorers, researchers discovering what EU data exists, and AI agents that need to dynamically find and query European statistics.
 
 
-## Available Tools
+## Available Tools (3)
 - **search_datasets**: Returns matching dataset codes and names. Use this to find the right dataset code before querying data.
 
 Search Eurostat dataset catalog by keyword
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eurostat-discovery-dataset-catalog-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eurostat-discovery-dataset-catalog-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eurostat Discovery — Dataset Catalog Explorer** tools.
 
 **Configuration:**

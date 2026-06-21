@@ -44,7 +44,7 @@ Your AI acts as a personal entertainment database assistant — no more switchin
 - **Casual Viewers** — ask "what should I watch tonight?" and get personalized recommendations based on trending, top-rated, or genre-filtered results
 
 
-## Available Tools
+## Available Tools (15)
 - **get_movie_credits**: Returns two arrays: "cast" (actors with their characters, order, and profile images) and "crew" (directors, producers, writers, cinematographers, editors, composers, etc. with their jobs and departments). Use this when users ask "who starred in...", "who directed...", or want the full cast list of a movie. The movieId is the TMDb ID from search results. Cast includes: actor name, character name, order (billing order), profile image path. Crew includes: name, job title (Director, Producer, Screenplay, etc.), department.
 
 Get complete cast and crew information for a specific movie
@@ -158,7 +158,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `the-movie-database-tmdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `the-movie-database-tmdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **The Movie Database (TMDb)** tools.
 
 **Configuration:**

@@ -30,7 +30,7 @@ The **Stark Bank MCP Server** brings highest-end Brazilian financial tech direct
 - **Infrastructure Ops** — Rotate corporate cards when limits trigger by simply pinging your AI sidekick.
 
 
-## Available Tools
+## Available Tools (9)
 - **stark_create_boleto**: Efetuar a emissão de Lote de Boletos Bancários Oficiais (Stark Bank)
 - **stark_create_corporate_card**: Tecnologia Enterprise: Criar novo Cartão de Crédito Corporativo on-the-fly
 - **stark_create_pix_charge**: Criar uma Cobrança Pix dinâmica imediata (Stark Bank)
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stark-bank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stark-bank` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stark Bank** tools.
 
 **Configuration:**

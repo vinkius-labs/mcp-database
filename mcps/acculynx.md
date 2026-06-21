@@ -34,7 +34,7 @@ Connect your **AccuLynx** account to your AI agent to streamline your roofing bu
 - **Accounting Staff** — monitor payment statuses and sync issues with ease
 
 
-## Available Tools
+## Available Tools (4)
 - **list_leads**: Retrieve a list of recent inquiries and prospective roofing projects in AccuLynx
 - **create_lead**: Requires first and last name.
 
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `acculynx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `acculynx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AccuLynx** tools.
 
 **Configuration:**

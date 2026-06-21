@@ -32,7 +32,7 @@ Integrate **Deck Commerce**, the leading order management system (OMS) for direc
 - **Customer Service Teams** — Gather tracking info and return details for customer inquiries instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_metadata**: Returns account-level metadata such as organization name, active integrations, and system configuration.
 
 Retrieve settings and metadata for your Deck Commerce account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deck-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deck-commerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deck Commerce** tools.
 
 **Configuration:**

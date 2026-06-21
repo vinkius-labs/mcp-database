@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your environmental monitoring and high-prec
 - **Caiyun Power Users** — integrate your existing weather workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_aqi_info**: Get air quality index
 - **get_daily_forecast**: Get daily weather forecast
 - **get_hourly_forecast**: Get hourly weather forecast
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `caiyun-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `caiyun-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Caiyun Weather / 彩云天气** tools.
 
 **Configuration:**

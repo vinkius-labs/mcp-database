@@ -33,7 +33,7 @@ Connect your **SuperTokens** Core instance to any AI agent to manage user lifecy
 - **Security Engineers** — audit roles and revoke suspicious sessions directly through a conversational interface.
 
 
-## Available Tools
+## Available Tools (18)
 - **assign_role_to_user**: Assign a role to a user
 - **bulk_import_users**: Bulk import users
 - **create_or_update_role**: Create or update a user role
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `supertokens` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `supertokens` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SuperTokens** tools.
 
 **Configuration:**

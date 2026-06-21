@@ -34,7 +34,7 @@ No more manual dashboard entries or complex SDK configurations for quick trackin
 - **DevOps Engineers** — monitor system health and event counts without leaving the terminal or chat interface.
 
 
-## Available Tools
+## Available Tools (4)
 - **post_classic_counter**: Post a counter stat using the StatHat Classic API
 - **post_classic_value**: Post a value stat using the StatHat Classic API
 - **post_ez_stat**: Creates the stat automatically if it does not exist.
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stathat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stathat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **StatHat** tools.
 
 **Configuration:**

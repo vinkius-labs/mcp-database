@@ -33,7 +33,7 @@ Connect to **Travelport**, the world's leading travel commerce platform, and emp
 - **Developers** — Integrate travel booking capabilities into custom AI workflows and travel assistants.
 
 
-## Available Tools
+## Available Tools (21)
 - **add_offer_to_workbench**: Add an air offer to an existing workbench
 - **add_traveler_to_workbench**: Add a traveler to an existing workbench
 - **authorize_card**: Authorize a payment card
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `travelport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `travelport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Travelport** tools.
 
 **Configuration:**

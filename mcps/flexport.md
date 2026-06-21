@@ -34,7 +34,7 @@ Connect your **Flexport** account to any AI agent and automate your global trade
 - **Finance Operations** — automate the retrieval of freight billing data and documents for audit and reconciliation.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_purchase_order**: Create a new purchase order
 - **download_document**: Get document download link
 - **get_document**: Get document metadata
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flexport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flexport` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flexport** tools.
 
 **Configuration:**

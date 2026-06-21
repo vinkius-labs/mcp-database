@@ -34,7 +34,7 @@ Connect to the **Recreation Information Database (RIDB)** and explore thousands 
 - **Outdoor Enthusiasts** — discover new recreation areas and view site media directly within your workflow
 
 
-## Available Tools
+## Available Tools (10)
 - **get_activity**: Get details for a specific recreation activity
 - **get_facility**: Get details for a specific recreation facility
 - **get_organization**: Get details for a specific organization
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `recreationgov-ridb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `recreationgov-ridb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Recreation.gov (RIDB)** tools.
 
 **Configuration:**

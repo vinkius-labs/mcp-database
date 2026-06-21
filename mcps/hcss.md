@@ -36,7 +36,7 @@ No more manual exporting of field reports or logging into multiple portals. Your
 - **Estimators** — verify bid item details and estimate progress during high-pressure bidding cycles.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_bid_items**: List bid items for a specific estimate
 - **get_equipment_location**: Get current GPS coordinates for a specific piece of equipment
 - **get_equipment_meters**: Get latest meter readings (odometer/hours) for equipment
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hcss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hcss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HCSS** tools.
 
 **Configuration:**

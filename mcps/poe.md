@@ -31,7 +31,7 @@ Connect your **Poe** (Quora's AI platform) account to any AI agent and manage yo
 - **Community Managers** — Monitor bot conversations and track engagement metrics
 
 
-## Available Tools
+## Available Tools (10)
 - **create_bot**: Requires a bot name, base URL for your API endpoint, and the model name. Optionally set a system prompt and description.
 
 Create a new API bot on Poe
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `poe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `poe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Poe** tools.
 
 **Configuration:**

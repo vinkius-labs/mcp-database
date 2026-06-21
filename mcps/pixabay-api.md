@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire visual content and media auditi
 - **Operations Leads** — automate media data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_api_status**: Check if the Pixabay service is operational
 - **search_pixabay_images**: Search for free high-quality images on Pixabay
 - **search_pixabay_videos**: Search for free high-quality videos on Pixabay
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pixabay-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pixabay-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pixabay API** tools.
 
 **Configuration:**

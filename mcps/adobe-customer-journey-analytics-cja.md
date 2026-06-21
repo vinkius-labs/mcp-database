@@ -34,7 +34,7 @@ Connect your **Adobe Customer Journey Analytics (CJA)** account to your AI agent
 - **Product Owners** — retrieve feature engagement data across multiple device platforms instantly
 
 
-## Available Tools
+## Available Tools (6)
 - **list_data_views**: List CJA data views
 - **get_data_view_dimensions**: List dimensions for a data view
 - **get_data_view_metrics**: List metrics for a data view
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adobe-customer-journey-analytics-cja` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adobe-customer-journey-analytics-cja` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adobe Customer Journey Analytics (CJA)** tools.
 
 **Configuration:**

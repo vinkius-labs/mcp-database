@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire visual ecosystem with **Unsplas
 - **Operations Leads** — automate visual data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_collection**: Get details for a specific collection
 - **get_photo_stats**: Get statistics for a specific photo
 - **get_photo**: Get details for a specific photo
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `unsplash-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `unsplash-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Unsplash** tools.
 
 **Configuration:**

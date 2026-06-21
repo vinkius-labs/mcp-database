@@ -33,7 +33,7 @@ Connect to the **Portal da Transparência (CGU)** and audit Brazilian public spe
 - **Civic Tech Developers** — build tools that monitor public spending using real-time government data.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_auxilio_emergencial_beneficiario_por_municipio**: Restricted API limit applies.
 
 Get Auxilio Emergencial beneficiaries by municipality
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `portal-da-transparencia-cgu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `portal-da-transparencia-cgu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Portal da Transparência (CGU)** tools.
 
 **Configuration:**

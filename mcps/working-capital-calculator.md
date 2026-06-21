@@ -13,7 +13,7 @@ Calculate your Cash Conversion Cycle and Working Capital Need instantly.
 This MCP server provides specialized financial tools to determine the Cash Conversion Cycle (CCC) and the monetary Working Capital Need. By analyzing your inventory, receivables, and pay/payables periods, you can identify how much capital is tied up in your operations. Use `get_financial_cycle_summary` to get a complete overview of your operational efficiency and financial risk.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_cash_conversion_cycle**: Determine the total duration in days that capital is tied up in the operational process
 - **calculate_monetary_working_capital**: Convert the timeframe of the financial cycle into a specific monetary value based on company turnover
 - **get_financial_cycle_summary**: Provide a complete financial profile including all constituent periods and final calculated values
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `working-capital-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `working-capital-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Working Capital Calculator** tools.
 
 **Configuration:**

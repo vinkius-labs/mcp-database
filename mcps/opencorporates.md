@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire corporate auditing and due dili
 - **Operations Leads** — automate corporate data querying to orchestrate cross-functional strategy teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_company_details**: Get full details for a specific company by jurisdiction and number
 - **get_corporate_grouping**: Get details for a corporate grouping
 - **get_api_status**: Check current API token usage and status
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opencorporates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opencorporates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenCorporates** tools.
 
 **Configuration:**

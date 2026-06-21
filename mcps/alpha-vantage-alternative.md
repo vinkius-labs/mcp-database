@@ -33,7 +33,7 @@ Connect **Alpha Vantage** to your AI agent to transform it into a powerful finan
 - **Developers** — integrate market data into your workflow without leaving your code editor.
 
 
-## Available Tools
+## Available Tools (16)
 - **get_balance_sheet**: Get annual and quarterly balance sheets
 - **get_cash_flow**: Get annual and quarterly cash flow statements
 - **time_series_daily_adjusted**: Get daily adjusted time series for a stock
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alpha-vantage-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alpha-vantage-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alpha Vantage** tools.
 
 **Configuration:**

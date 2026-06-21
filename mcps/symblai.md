@@ -33,7 +33,7 @@ Connect **Symbl.ai** to your AI agent to unlock deep insights from your meetings
 - **Developers** — Integrate conversation intelligence into your workflow without building complex NLP pipelines.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_tracker**: Create a tracker to detect specific keywords or phrases
 - **get_action_items**: Get action items from a processed conversation
 - **get_follow_ups**: Get follow-ups from a processed conversation
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `symblai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `symblai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Symbl.ai** tools.
 
 **Configuration:**

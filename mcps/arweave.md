@@ -33,7 +33,7 @@ Connect to the **Arweave** network and manage permanent data storage through nat
 - **Crypto Users** — monitor wallet balances and storage costs for permanent file uploads.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_block_by_hash**: Retrieve a block by its hash
 - **get_block_by_height**: Retrieve a block by its height
 - **get_storage_price**: Get the cost in Winstons to store data
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arweave` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arweave` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Arweave** tools.
 
 **Configuration:**

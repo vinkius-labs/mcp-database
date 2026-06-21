@@ -33,7 +33,7 @@ Connect your **WebHR** account to any AI agent to automate your human resource m
 - **Business Owners** — get instant summaries of organizational health and personnel metrics straight through the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_attendance_summary**: Get aggregated attendance metrics
 - **get_employee_details**: Get details for an employee
 - **list_attendance_logs**: List clock-in/out records
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webhr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webhr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WebHR** tools.
 
 **Configuration:**

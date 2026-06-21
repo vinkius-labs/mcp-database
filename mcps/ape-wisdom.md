@@ -33,7 +33,7 @@ The **Ape Wisdom MCP Server** allows your AI agent to tap into the pulse of reta
 - **Social Media Managers** — Monitor the conversation around specific brands or assets in the crypto space.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_market_snapshot**: Get a quick summary of top trending stocks and crypto
 - **get_sentiment_leaders**: Get assets with the highest positive sentiment
 - **get_top_gainers**: Get assets with the highest mention growth in the last 24h
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ape-wisdom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ape-wisdom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ape Wisdom** tools.
 
 **Configuration:**

@@ -25,7 +25,7 @@ The output is a safe, comprehensive, and balanced schedule that respects all bio
 Instead of random play sessions, you receive a concrete plan detailing exactly what to do, when, and for how long. This ensures optimal physical fitness and sustained mental engagement for your companion.
 
 
-## Available Tools
+## Available Tools (3)
 - **assess_environment_capacity**: Returns max activity duration, restriction matrix, and activity type modifier.
 
 Model the physical limitations and benefits of the pet's living environment
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-enrichment-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-enrichment-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Enrichment Planner** tools.
 
 **Configuration:**

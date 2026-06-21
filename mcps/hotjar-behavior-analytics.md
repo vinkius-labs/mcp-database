@@ -33,7 +33,7 @@ Connect your **Hotjar** account to any AI agent and take full control of your be
 - **Data Privacy Officers** — automate user lookup and data deletion requests to maintain GDPR compliance with ease
 
 
-## Available Tools
+## Available Tools (10)
 - **list_sites**: List all tracked sites
 - **list_funnels**: List conversion funnels
 - **get_site**: Get current site details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hotjar-behavior-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hotjar-behavior-analytics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hotjar (Behavior Analytics)** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your AI to **CoinMarketCal**, the leading economic calendar for the cryp
 - **Portfolio Managers** — Monitor events across held assets to anticipate volatility.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_coin_id**: Find the CoinMarketCal ID for a coin by its name or symbol
 - **get_event_details**: Retrieve detailed information about a specific event by its ID
 - **list_categories**: Retrieve the list of event categories (e.g., Roadmap, Release)
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coinmarketcal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coinmarketcal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoinMarketCal** tools.
 
 **Configuration:**

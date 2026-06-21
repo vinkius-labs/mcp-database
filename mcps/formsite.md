@@ -34,7 +34,7 @@ Connect your **Formsite** account to any AI agent to automate your form results 
 - **Customer Feedback Managers** — manage sophisticated surveys and retrieve user sentiment via simple AI commands.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_webhook**: Create a new webhook
 - **delete_webhook**: Remove a webhook
 - **get_form_details**: Get form metadata
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `formsite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `formsite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Formsite** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Woodpecker CI** server to any AI agent to automate your continuou
 - **SREs & System Admins** — Keep an eye on CI infrastructure health and manage secrets across the organization.
 
 
-## Available Tools
+## Available Tools (34)
 - **activate_repo**: Activate a repository
 - **cancel_pipeline**: Cancel a running pipeline
 - **chown_repo**: Change repository owner to the current user
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `woodpecker-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `woodpecker-ci` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Woodpecker CI** tools.
 
 **Configuration:**

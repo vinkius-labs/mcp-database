@@ -32,7 +32,7 @@ Connect **Mediastack** to your AI agent to search, filter, and retrieve global n
 - **Journalists & Researchers** — quickly aggregate sources and verify timelines of events across multiple global outlets.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_news**: Use the date parameter for historical news.
 
 Retrieve live or historical news articles
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mediastack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mediastack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mediastack** tools.
 
 **Configuration:**

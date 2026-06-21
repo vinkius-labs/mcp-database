@@ -33,7 +33,7 @@ Connect **DocRaptor** to your AI agent to transform HTML content or URLs into pr
 - **Operations Teams** — Convert web-based dashboards or internal tools into shareable PDF reports with a single prompt.
 
 
-## Available Tools
+## Available Tools (4)
 - **create_document**: Use async=true or hosted=true to avoid large binary responses in the tool output.
 
 Create a PDF or Excel document from HTML
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docraptor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docraptor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DocRaptor** tools.
 
 **Configuration:**

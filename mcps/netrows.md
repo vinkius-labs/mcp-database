@@ -43,7 +43,7 @@ No more navigating flight tracking websites or manually parsing aviation data fe
 - **Airline Analysts** — track competitor operations, analyze route networks, and monitor fleet utilization
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_usage**: The Netrows API operates on a credit-based system where each API call consumes 1 credit. Essential for monitoring API consumption, budget management, rate limit awareness, and planning integration usage patterns. AI agents should query this when users ask "how many credits do I have left", "what is my API usage this month", or need to monitor their API consumption before running large batch queries.
 
 Check your API account usage and remaining credits
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `netrows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `netrows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Netrows** tools.
 
 **Configuration:**

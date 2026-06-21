@@ -35,7 +35,7 @@ No more digging through complex ERP menus to find a customer balance or create a
 - **Operations Managers** — maintain inventory levels and manage supplier relationships through automated queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_invoice**: Requires contact ID and items.
 
 Create a new invoice
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `holded-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `holded-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Holded** tools.
 
 **Configuration:**

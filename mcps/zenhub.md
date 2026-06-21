@@ -33,7 +33,7 @@ Connect your **ZenHub** account to any AI agent to streamline your agile project
 - **Scrum Masters** — Facilitate planning by querying release reports and team velocity metrics
 
 
-## Available Tools
+## Available Tools (8)
 - **get_repo_board**: Get the ZenHub board for a repository
 - **get_epic_data**: Get details for a specific epic
 - **list_repo_epics**: List all ZenHub epics for a repository
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zenhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zenhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZenHub** tools.
 
 **Configuration:**

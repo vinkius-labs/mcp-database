@@ -23,7 +23,7 @@ The Placetel MCP Server allows AI agents to interact with your Placetel PBX data
 Connect your Placetel account via your API Token to manage your VoIP configurations dynamically.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_group**: Get details for a specific group
 - **get_sip_user**: Get details for a specific SIP user
 - **get_user**: Get details for a specific user
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `placetel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `placetel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Placetel** tools.
 
 **Configuration:**

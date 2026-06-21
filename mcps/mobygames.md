@@ -37,7 +37,7 @@ Connect to **MobyGames** and explore the world's largest video game database thr
 - **Journalists** — find game information, reviews and credits for articles and reviews
 
 
-## Available Tools
+## Available Tools (11)
 - **get_attributes**: g. "Educational", "Free-to-play", "Open world", "Multiplayer"). Returns attribute names and IDs.
 
 Get game attributes/special attributes
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mobygames` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mobygames` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MobyGames** tools.
 
 **Configuration:**

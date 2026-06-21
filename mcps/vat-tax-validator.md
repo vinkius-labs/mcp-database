@@ -18,7 +18,7 @@ Validating a European VAT number or a corporate Tax ID requires complex, country
 - **B2B Billing Shield:** Ensures that before your agent creates an invoice in Stripe or Xero, the tax ID is structurally valid.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_vat**: Pass the tax number string and the engine performs offline mathematical validation against the correct country format.
 
 Validates European and international VAT (Value Added Tax) numbers offline using strict country-specific algorithms
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vat-tax-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vat-tax-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VAT Tax Validator** tools.
 
 **Configuration:**

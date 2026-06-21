@@ -40,7 +40,7 @@ No more navigating multiple state 511 websites or manually checking truck route 
 - **Safety Managers** — verify bridge clearances, monitor incidents, and ensure weight compliance
 
 
-## Available Tools
+## Available Tools (10)
 - **get_bridge_clearances**: Returns bridge location coordinates, clearance height in feet/meters, bridge identifier, road name, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for truck height compliance planning, low bridge avoidance, oversized load routing, and fleet safety management. AI agents should use this when users ask "find low bridges under 14 feet on I-95", "what bridge clearances exist in this area", or need vertical clearance data for truck route planning.
 
 Get bridge clearance heights from the National Bridge Inventory for truck route planning
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `road511-trucking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `road511-trucking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Road511 Trucking** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect **SerpApi** to your AI agent to scrape and analyze search engine results
 - **Market Researchers** — monitor competitor visibility and global search trends
 
 
-## Available Tools
+## Available Tools (3)
 - **get_account**: Retrieve SerpApi account information
 - **get_locations**: Find supported locations for SerpApi searches
 - **search**: ) and returns structured results.
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `serpapi-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `serpapi-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SerpApi** tools.
 
 **Configuration:**

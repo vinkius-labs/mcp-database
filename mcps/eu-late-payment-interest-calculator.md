@@ -13,7 +13,7 @@ Calculate interest and fixed compensation for overdue commercial payments accord
 This MCP server provides a precise way to calculate the financial burden of late B2B payments in the European Union. It automates the complex process of determining interest accrual based on the ECB reference rate plus an 8% margin, as mandated by the EU Late Payment Directive (2011/7/EU). You can use `calculate_accrued_interest` to find the variable cost of delay, `calculate_fixed_compensation` to determine the fixed administrative recovery fee based on debt tiers, or `get_total_overdue_cost` for a comprehensive view of both interest and compensation.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_accrued_interest**: You need the original invoice amount, the due date, and the current calculation date.
 
 Calculates the interest accrued on an unpaid invoice based on the EU Late Payment Directive
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eu-late-payment-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eu-late-payment-interest-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EU Late Payment Interest Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Open Exchange Rates** account to any AI agent to integrate global
 - **Developers** — Test currency logic and verify API responses without leaving the code editor.
 
 
-## Available Tools
+## Available Tools (7)
 - **convert_currency**: Convert any value from one currency to another
 - **list_currencies**: Get a list of all available currency symbols and names
 - **get_historical_rates**: Retrieve exchange rates for a specific date
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-exchange-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-exchange-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Exchange Rates** tools.
 
 **Configuration:**

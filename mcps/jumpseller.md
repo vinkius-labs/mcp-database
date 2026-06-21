@@ -13,7 +13,7 @@ Manage products, orders, and customers via Jumpseller API.
 Empower your AI agents with Jumpseller's e-commerce platform. This MCP server allows you to list and retrieve products and orders, manage customers and categories, track store pages, and view general store information directly through the Jumpseller API. Ideal for automating store management and order processing.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_order**: Returns line items, shipping addresses, payment status, and customer notes. Use this for order troubleshooting or providing customer support.
 
 Retrieves details for a specific order
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jumpseller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jumpseller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jumpseller** tools.
 
 **Configuration:**

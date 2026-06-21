@@ -32,7 +32,7 @@ Connect your **ClickHouse** instance to any AI agent to perform lightning-fast O
 - **DevOps** — monitor cluster health and replication status during maintenance or incidents.
 
 
-## Available Tools
+## Available Tools (4)
 - **execute_query**: Execute a mutating query on ClickHouse
 - **ping**: Check ClickHouse server health
 - **replicas_status**: Check ClickHouse replica delay
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clickhouse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clickhouse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClickHouse** tools.
 
 **Configuration:**

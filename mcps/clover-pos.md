@@ -34,7 +34,7 @@ Integrate your AI agent with **Clover**, the leading point-of-sale (POS) system.
 - **Accountants** — audit payment logs and tax rates via AI assistance
 
 
-## Available Tools
+## Available Tools (10)
 - **get_merchant_info**: Retrieve basic information about the Clover merchant
 - **get_order_details**: Retrieve detailed information for a specific order
 - **list_inventory_categories**: List inventory categories
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clover-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clover-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clover POS** tools.
 
 **Configuration:**

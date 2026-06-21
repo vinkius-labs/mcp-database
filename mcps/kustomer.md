@@ -28,7 +28,7 @@ Connect your AI agent to **Kustomer** to streamline your support operations and 
 4. Start managing your support data via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **list_kustomer_customers**: Essential for identifying customer IDs for support auditing.
 
 List all customers in Kustomer
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kustomer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kustomer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kustomer** tools.
 
 **Configuration:**

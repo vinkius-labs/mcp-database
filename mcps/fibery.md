@@ -30,7 +30,7 @@ Fibery is a work management platform that adapts to your unique processes. This 
 - **Operations Teams** — pull structured data and manage custom workflows through simple natural language queries
 
 
-## Available Tools
+## Available Tools (11)
 - **add_comment**: Add a comment to an entity
 - **create_entity**: Create a new entity in a specific database
 - **delete_entity**: Delete an entity
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fibery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fibery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fibery** tools.
 
 **Configuration:**

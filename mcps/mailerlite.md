@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire email marketing ecosystem with 
 - **Operations Leads** — automate audience querying to orchestrate cross-functional marketing teams smoothly.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_subscriber_to_group**: Add a subscriber to a group
 - **create_group**: Create a new subscriber group
 - **create_subscriber**: Mandatory: email is required.
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailerlite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailerlite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MailerLite** tools.
 
 **Configuration:**

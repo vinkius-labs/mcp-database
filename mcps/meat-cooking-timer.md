@@ -13,7 +13,7 @@ Calculate precise cooking times and target internal temperatures for various mea
 The Meat Cooking Timer MCP server provides AI agents with the ability to calculate essential cooking parameters for culinary precision. Using tools like `get_target_temperature`, `calculate_cooking_time`, and `validate_cooking_context`, agents can determine the exact internal temperature required for safety (adhering to USDA standards) and estimate duration based on meat weight and cooking method (Oven, Grill, or Sous Vide). This bridge connects AI assistants to food science principles, ensuring safe and delicious results.
 
 
-## Available Tools
+## Available Tools (3)
 - **validate_cooking_context**: Verify if a cut of meat is appropriate for a method
 - **calculate_cooking_time**: Estimate the total cooking time required
 - **get_target_temperature**: Get the required internal temperature for a meat type and doneness level
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meat-cooking-timer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meat-cooking-timer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meat Cooking Timer** tools.
 
 **Configuration:**

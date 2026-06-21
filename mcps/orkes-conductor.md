@@ -33,7 +33,7 @@ Connect your **Orkes Conductor** cluster to any AI agent and get full visibility
 - **Architects** — inspect workflow graphs and task definitions to understand orchestration dependencies
 
 
-## Available Tools
+## Available Tools (6)
 - **list_workflow_defs**: List all registered overarching Workflow Definitions via Orkes API
 - **get_workflow_def**: Get a specific Workflow Definition explicitly by name
 - **list_task_defs**: List all explicitly registered Task Definitions via Conductor API
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `orkes-conductor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `orkes-conductor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Orkes Conductor** tools.
 
 **Configuration:**

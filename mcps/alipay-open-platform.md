@@ -36,7 +36,7 @@ Eliminate manual API signature headaches entirely. Your AI agent now signs, disp
 - **Growth Engineers** — integrate Alipay checkout flows into conversational commerce bots enabling frictionless mobile payments at scale
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_trade**: Cancel a trade (rollback)
 - **close_trade**: Close an unpaid Alipay trade
 - **create_trade**: Create a new Alipay transaction/order
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alipay-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alipay-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alipay Open Platform** tools.
 
 **Configuration:**

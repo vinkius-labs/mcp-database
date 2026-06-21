@@ -24,7 +24,7 @@ The definitive natural gas data source. From Henry Hub pricing to weekly storage
 Gas traders, LNG analysts, utility planners, pipeline operators, and energy risk managers.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_natgas_prices**: Henry Hub spot price is the benchmark for North American gas trading.
 
 Get natural gas prices: Henry Hub, citygate, wellhead, industrial, residential
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eia-natural-gas-gas-market-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eia-natural-gas-gas-market-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EIA Natural Gas — Gas Market Intelligence** tools.
 
 **Configuration:**

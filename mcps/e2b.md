@@ -31,7 +31,7 @@ Connect your AI agent to **E2B** — the leading sandbox platform for AI code ex
 - **EdTech Platforms** — let students execute code in sandboxed environments with full isolation
 
 
-## Available Tools
+## Available Tools (3)
 - **create_sandbox**: The sandbox is an isolated Linux VM that starts in ~150ms. Use templates like "base" (default), "python3", or "node" for pre-configured environments. Default timeout is 300 seconds.
 
 Create a new isolated cloud sandbox for running code securely. Each sandbox is a Firecracker microVM with its own filesystem
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `e2b` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `e2b` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **E2B** tools.
 
 **Configuration:**

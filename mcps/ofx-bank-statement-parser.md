@@ -22,7 +22,7 @@ This MCP acts as a secure, local financial bridge. It parses your bank's export 
 - **Accountant Ready:** Ask the AI: 'How much did I spend on Uber last month according to this file?'
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_ofx_bank_statement**: Provide the absolute file path.
 
 Parse an OFX or QFX bank statement file into clean JSON data. Extracts transactions safely and offline
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ofx-bank-statement-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ofx-bank-statement-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OFX Bank Statement Parser** tools.
 
 **Configuration:**

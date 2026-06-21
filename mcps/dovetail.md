@@ -35,7 +35,7 @@ No more manual scrubbing through interview transcripts or complex project naviga
 - **Design Leads** — monitor research progress and manage team collaboration through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **create_insight**: Create a new research insight
 - **create_note**: Create a new research note
 - **get_project_details**: Get details for a research project
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dovetail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dovetail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dovetail** tools.
 
 **Configuration:**

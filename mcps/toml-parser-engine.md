@@ -18,7 +18,7 @@ When an AI Agent edits Cargo.toml, pyproject.toml, or wrangler.toml, it needs to
 - **Full TOML 1.0 Spec:** Nested tables, arrays of tables, inline tables, datetime, and multiline strings.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_toml**: Pass the raw TOML or JSON content and the direction ("toml-to-json" or "json-to-toml"). The engine handles nested tables, arrays of tables, inline tables, and datetime values deterministically.
 
 Converts TOML configuration files to JSON and vice versa. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml) workflows
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `toml-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `toml-parser-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TOML Parser Engine** tools.
 
 **Configuration:**

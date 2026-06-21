@@ -35,7 +35,7 @@ No more jumping between browser tabs to correlate logs. Your AI can now act as a
 - **Security Analysts** — Audit user roles and search for suspicious patterns using structured log queries.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_customer_info**: Retrieve Loggly account details
 - **get_events**: Max 5,000 events per search.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `loggly-cloud-log-management-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `loggly-cloud-log-management-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Loggly (Cloud Log Management API)** tools.
 
 **Configuration:**

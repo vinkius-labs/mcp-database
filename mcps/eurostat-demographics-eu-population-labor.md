@@ -26,7 +26,7 @@ Complete EU demographic and labor market intelligence for all 27 member states.
 Demographers, labor economists, HR analysts, social policy researchers, and EU-focused data journalists.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_population**: Dataset: demo_pjan. Filter by age group and sex. Covers all 27 EU members + EEA + candidate countries.
 
 Get EU population by country, age, and sex
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eurostat-demographics-eu-population-labor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eurostat-demographics-eu-population-labor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eurostat Demographics — EU Population & Labor** tools.
 
 **Configuration:**

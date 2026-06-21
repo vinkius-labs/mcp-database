@@ -18,7 +18,7 @@ Autonomous financial agents demand uncompromising mathematical accuracy. When st
 - **Direct Comparison Engine:** Seamlessly evaluate two competing loan offers side-by-side to determine which structure is mathematically cheaper over the full term, including the impact of extra payments.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_loan_amortization**: Provide principal, annual rate, months, and type.
 
 Calculates total interest, total paid, and installments for a specific loan (PRICE or SAC)
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `intelligent-loan-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `intelligent-loan-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Intelligent Loan Comparator** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ No more manual lead entry or missing campaign gaps. Your AI acts as your dedicat
 - **Marketing Teams** — analyze technical campaign analytics and monitor webhook events through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **add_snovio_prospect_to_list**: Add prospect to list
 - **find_snovio_domain_emails**: Find emails for a domain
 - **find_snovio_prospect_by_name**: Find email by name and domain
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `snovio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `snovio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Snov.io** tools.
 
 **Configuration:**

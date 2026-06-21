@@ -41,7 +41,7 @@ Your AI becomes a universal smart home assistant, translating your natural langu
 - **Integration Builders** — build automations and workflows through Zapier's NLA API
 
 
-## Available Tools
+## Available Tools (12)
 - **list_climate_actions**: List available climate/thermostat control actions
 - **get_zapier_config_link**: Use this link to expose new actions for AI control.
 
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zapier-smart-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zapier-smart-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zapier Smart Home** tools.
 
 **Configuration:**

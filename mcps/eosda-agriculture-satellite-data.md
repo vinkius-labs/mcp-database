@@ -34,7 +34,7 @@ Empower your AI agent with cutting-edge remote sensing capabilities via the **EO
 - **Researchers** — access historical and near real-time satellite data for agricultural studies.
 
 
-## Available Tools
+## Available Tools (6)
 - **search_dataset**: ) within a date range and optional area of interest. Returns scene IDs, dates, cloud cover percentages and download URLs. Use get_available_datasets to see all dataset options.
 
 Search satellite imagery for a specific dataset
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eosda-agriculture-satellite-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eosda-agriculture-satellite-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EOSDA Agriculture Satellite Data** tools.
 
 **Configuration:**

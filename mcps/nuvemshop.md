@@ -39,7 +39,7 @@ No more navigating the Nuvemshop dashboard for every catalog or order action. Yo
 - **Developers** — configure webhooks for integrations, manage product variants programmatically, and automate catalog operations
 
 
-## Available Tools
+## Available Tools (24)
 - **create_coupon**: You must provide the coupon code
 and type (percentage, absolute, or shipping). Optional fields include value, validity dates,
 minimum purchase amount, and applicable products/categories.
@@ -252,7 +252,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nuvemshop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nuvemshop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nuvemshop** tools.
 
 **Configuration:**

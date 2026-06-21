@@ -32,7 +32,7 @@ Connect to the **IBGE (Brazilian Institute of Geography and Statistics)** databa
 - **Developers** — integrate official Brazilian demographic data into applications without complex setup.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_name_frequency**: Multiple names can be separated by a pipe (|).
 
 Obtains the frequency of births per decade for a specific name
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibge-nomes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibge-nomes` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBGE Nomes** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ LLMs lack spatial and geometric reasoning. If an AI agent attempts to calculate 
 - **Multi-Unit Precision:** Native support for Kilometers, Miles, Meters, and Nautical Miles without manual float conversions.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_distance**: Pass latitude and longitude for both points. The engine uses the Haversine formula to return the distance in kilometers and miles.
 
 Calculates the exact geographic distance between two GPS coordinates using the mathematical Haversine formula
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `haversine-distance-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `haversine-distance-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Haversine Distance Engine** tools.
 
 **Configuration:**

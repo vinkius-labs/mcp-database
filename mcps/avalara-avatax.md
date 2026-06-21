@@ -32,7 +32,7 @@ Connect your **Avalara AvaTax** account to any AI agent and automate your transa
 - **Developers** — test tax calculation logic in sandbox and audit transaction records through natural language commands
 
 
-## Available Tools
+## Available Tools (10)
 - **commit_transaction**: Mark a transaction as committed for reporting
 - **create_transaction**: Calculate tax and record a transaction
 - **get_account_check**: Verify AvaTax account connection
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `avalara-avatax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `avalara-avatax` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Avalara (AvaTax)** tools.
 
 **Configuration:**

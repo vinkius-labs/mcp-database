@@ -31,7 +31,7 @@ Connect your AI assistant to **ComboCurve**, the cloud-based energy platform for
 - **Operations Teams** — Check well statuses and production trends directly from chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_forecast**: Retrieve details of a specific forecast
 - **get_monthly_volumes**: Retrieve monthly forecasted volumes for a project and forecast
 - **get_project**: Retrieve details of a specific project
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `combocurve` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `combocurve` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ComboCurve** tools.
 
 **Configuration:**

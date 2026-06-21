@@ -36,7 +36,7 @@ Connect your **H2O.ai** instance to any AI agent and take full control of your m
 - **Developers** — test and debug H2O.ai integrations and verify data schemas through the chat interface
 
 
-## Available Tools
+## Available Tools (6)
 - **list_frames**: List frames
 - **get_frame**: Get frame
 - **list_models**: List models
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `h2oai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `h2oai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **H2O.ai** tools.
 
 **Configuration:**

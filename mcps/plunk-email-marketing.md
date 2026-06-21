@@ -33,7 +33,7 @@ Connect your AI agent to **Plunk**, the versatile email marketing platform desig
 - **Customer Support** — update contact metadata or send direct notifications to users
 
 
-## Available Tools
+## Available Tools (8)
 - **create_or_update_contact**: Provide metadata as a JSON string if needed.
 
 Create a new contact or update an existing one
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `plunk-email-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `plunk-email-marketing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Plunk Email Marketing** tools.
 
 **Configuration:**

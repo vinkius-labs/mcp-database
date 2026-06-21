@@ -36,7 +36,7 @@ No more manual data entry or ordering through the web interface. Your AI assista
 - **Executive Assistants** — manage the sending of physical holiday or appreciation cards effortlessly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_credit_balance**: Check current account credit balance
 - **get_order**: Get details for a specific order
 - **list_address_book**: List recipients in your address book
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `handwrytten` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `handwrytten` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Handwrytten** tools.
 
 **Configuration:**

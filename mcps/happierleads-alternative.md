@@ -35,7 +35,7 @@ Connect your **HappierLeads** account to any AI agent and turn anonymous website
 - **Growth Teams** — monitor high-intent pages like pricing and demo requests to identify warm leads
 
 
-## Available Tools
+## Available Tools (17)
 - **check_happier_status**: Verify connectivity
 - **get_analytics**: Get analytics overview
 - **get_lead**: Get lead details
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `happierleads-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `happierleads-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HappierLeads** tools.
 
 **Configuration:**

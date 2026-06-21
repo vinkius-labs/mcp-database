@@ -33,7 +33,7 @@ Connect your **Checkmarx One** enterprise environment to any AI agent and take p
 - **Developers** — grab the exact Best Fix Location (BFL) for a zero-day issue and ask the LLM to rewrite the sanitization logic instantly
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_scan**: Prevents unnecessary engine resource consumption and drops the scanning context if the developer pushed a new commit overlapping the running job.
 
 Cancel an actively running Checkmarx scan
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `checkmarx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `checkmarx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Checkmarx** tools.
 
 **Configuration:**

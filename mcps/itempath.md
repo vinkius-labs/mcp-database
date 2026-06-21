@@ -13,7 +13,7 @@ Manage inventory, materials, and orders via ItemPath API.
 Empower your AI agents to manage your warehouse and inventory with ItemPath. This MCP server allows you to list materials, retrieve order details, track inventory transactions, and view storage locations directly through the ItemPath API. Ideal for automating supply chain operations and stock monitoring.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_material**: Returns SKU details, storage rules, and quantity-on-hand. Essential for analyzing the status of specific inventory items.
 
 Retrieves details for a specific material
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `itempath` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `itempath` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ItemPath** tools.
 
 **Configuration:**

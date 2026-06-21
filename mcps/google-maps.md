@@ -35,7 +35,7 @@ Connect your **Google Maps Platform** account to any AI agent and take full cont
 - **Developers** — test and debug location-based API parameters and verify PlaceID metadata schemas through natural conversation
 
 
-## Available Tools
+## Available Tools (4)
 - **geocode**: Convert an address or location name into precise geographic coordinates (Latitude / Longitude)
 - **place_search**: Search for businesses, restaurants, or spots (e.g. "Pizza in New York", "Hospitals near me")
 - **place_details**: Get deep details of a specific Place (Phone number, reviews, opening hours, website) using its PlaceID
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-maps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-maps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Maps** tools.
 
 **Configuration:**

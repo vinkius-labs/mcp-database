@@ -35,7 +35,7 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 - **Crypto Enthusiasts** — monitor network activity and token metadata through simple chat commands.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_account_actions**: Get Account Transactions
 - **get_account**: Get Account Details
 - **get_action**: Get Action by Hash
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `iotex-iotex-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `iotex-iotex-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IoTeX (IoTeX Block Explorer API)** tools.
 
 **Configuration:**

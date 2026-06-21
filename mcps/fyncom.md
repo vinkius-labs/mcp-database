@@ -35,7 +35,7 @@ No more manual payment processing for small incentives. Your AI acts as your ded
 - **Product Developers** — integrate real-time reward systems and incentive intelligence into custom applications through automated AI actions
 
 
-## Available Tools
+## Available Tools (6)
 - **add_reward_lead**: Pass data in JSON.
 
 Add a lead to a reward campaign
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fyncom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fyncom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FynCom** tools.
 
 **Configuration:**

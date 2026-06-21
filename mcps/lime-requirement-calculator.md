@@ -13,7 +13,7 @@ Calculate precise limestone dosage and total application costs using base satura
 This MCP server provides specialized agricultural tools to determine the exact amount of lime needed for soil correction. Use `calculate_base_saturation_dosage` to calculate requirements based on current and target base saturation (V%), soil CTC, and lime PRNT. You can also use `calculate_smp_dosage` to assess needs via the SMP buffer method, and `calculate_total_expenditure` to project total mass needed and financial investment for a specific field area.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_base_saturation_dosage**: Calculates the amount of lime required to reach a desired base saturation level
 - **calculate_smp_dosage**: Determines the lime requirement based on the SMP buffer capacity measurements
 - **calculate_total_expenditure**: Estimates the total financial investment required for a specific field area
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lime-requirement-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lime-requirement-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lime Requirement Calculator** tools.
 
 **Configuration:**

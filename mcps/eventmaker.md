@@ -32,7 +32,7 @@ Integrate **Eventmaker**, the comprehensive event management software, directly 
 - **Operations Teams** — Monitor registration progress and organizational event metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_eventmaker_account_metadata**: Retrieve metadata and limits for your Eventmaker account
 - **get_event_performance_stats**: Get high-level performance metrics for a specific event
 - **get_event_detailed_data**: Get detailed settings and information for a specific event
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventmaker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventmaker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eventmaker** tools.
 
 **Configuration:**

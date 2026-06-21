@@ -33,7 +33,7 @@ Connect your **KeyPay** (now Employment Hero Payroll) account to any AI agent to
 - **Business Owners** — Get instant visibility into payroll costs and history
 
 
-## Available Tools
+## Available Tools (10)
 - **list_businesses**: List all businesses associated with the account
 - **list_pay_run_deductions**: List deductions for a specific pay run
 - **list_pay_run_earnings**: List earnings for a specific pay run
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `keypay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `keypay` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **KeyPay** tools.
 
 **Configuration:**

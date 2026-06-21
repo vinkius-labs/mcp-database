@@ -32,7 +32,7 @@ Integrate **Donately**, the simplest online fundraising platform, directly into 
 - **Operations Teams** — Monitor donation volumes and organizational fundraising metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_donately_account_metadata**: Retrieve metadata and limits for your Donately account
 - **get_campaign_performance_summary**: Retrieve a high-level summary of a specific campaigns performance
 - **get_donation_details**: Get detailed information for a specific donation
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `donately` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `donately` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Donately** tools.
 
 **Configuration:**

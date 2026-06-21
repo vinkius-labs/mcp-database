@@ -34,7 +34,7 @@ Connect your AI agent to **Dotloop**, the leading real estate transaction manage
 - **Brokerage Administrators** — audit activity and manage contacts within the brokerage profile
 
 
-## Available Tools
+## Available Tools (10)
 - **add_loop_participant**: Add a new participant to a loop
 - **get_loop_details**: Get comprehensive information for a specific loop
 - **get_loop_activity**: Retrieve the activity log for a specific loop
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dotloop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dotloop` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dotloop** tools.
 
 **Configuration:**

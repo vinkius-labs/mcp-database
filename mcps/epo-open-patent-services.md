@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire intellectual property research 
 - **Operations Leads** — automate patent data querying to orchestrate cross-functional innovation teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the EPO Open Patent Services are operational
 - **get_patent_bibliographic**: Get full bibliographic metadata for a specific patent by Doc ID
 - **get_patent_legal_status**: Check the current legal status of a patent publication
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epo-open-patent-services` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epo-open-patent-services` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EPO Open Patent Services** tools.
 
 **Configuration:**

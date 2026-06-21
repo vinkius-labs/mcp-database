@@ -21,7 +21,7 @@ This MCP delegates the heavy variance analysis to the deterministic `jstat` engi
 - **Data Privacy:** Your sensitive business metrics stay entirely on your local machine.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_anova**: Perform exact deterministic One-Way ANOVA tests to compare means across multiple groups without LLM math hallucinations
 
 
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `anova-calculator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `anova-calculator-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ANOVA Calculator Engine** tools.
 
 **Configuration:**

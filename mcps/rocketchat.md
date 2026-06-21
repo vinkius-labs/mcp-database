@@ -32,7 +32,7 @@ Connect your conversational assistant directly to **Rocket.Chat**, the open-sour
 - **Operations & IT** — Empower your conversational agent to act as a responsive chatbot directly inside Rocket.Chat, running commands and pushing logs directly to specific channels.
 
 
-## Available Tools
+## Available Tools (10)
 - **chat_delete_message**: You must provide both room ID and message ID.
 
 Deletes a message from a room
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rocketchat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rocketchat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rocket.Chat** tools.
 
 **Configuration:**

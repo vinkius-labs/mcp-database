@@ -41,7 +41,7 @@ AI-generated engineering reasoning fails for five specific reasons:
 - **NFPA / IBC / NEC** — Fire, Building, Electrical Codes
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_engineering_reasoning**: Engineering is not intuition — it is standards compliance, quantified risk, and mathematical proof. You must: (1) identify the governing STANDARD — exact designation, clause, edition. "ASME BPVC Section VIII, Div. 1, UG-27, 2023 Ed." is a reference. "Per ASME" is not. Multiple standards may apply — list each with scope, (2) provide CALCULATION evidence — inputs with units and sources, method or formula, numerical results, acceptance criteria from the standard, safety factor or margin. "The design is adequate" is not a calculation, (3) specify CODE and jurisdiction — which code governs, which edition is in force, which authority has jurisdiction (AHJ), which local amendments apply, (4) QUANTIFY risks — hazard identification method (HAZOP, FMEA, FTA), severity classification, likelihood estimation with basis, specific mitigation measures, residual risk after mitigation, (5) TRACE compliance — requirement-to-evidence matrix. For each requirement: the requirement ID, the design feature satisfying it, the analysis or test demonstrating compliance, and the acceptance criterion with actual result. If rejected, your engineering analysis has a structural deficiency.
 
 Structured reflection tool for engineering reasoning and regulatory compliance. Forces the agent to construct rigorous, standards-grounded engineering arguments before any design conclusion. Catches Standard Misapplication (citing "ASME" without specifying BPVC Section VIII Division 1 UG-27 2023 Edition — a 600-page standard is not a reference. The specific clause that governs YOUR design is the reference), Calculation Gap ("the design is adequate" without showing inputs, method, numerical results, acceptance criteria, and safety margin. Engineering is mathematics, not opinion), Code Blindness ("per industry standards" instead of naming the code, edition, jurisdiction, and authority having jurisdiction — codes exist because people died. Cite them), Unquantified Risk ("risks are acceptable" without hazard identification method (HAZOP/FMEA/FTA), severity classification (SIL/ASIL/RPN), likelihood with basis, mitigation measures, and residual risk after mitigation), and Compliance Theater (claiming compliance without a requirement-to-evidence traceability matrix — each requirement mapped to the specific design feature, analysis, or test that satisfies it). Call once per engineering analysis or compliance assessment
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `engineering-reasoning-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `engineering-reasoning-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Engineering Reasoning Prover** tools.
 
 **Configuration:**

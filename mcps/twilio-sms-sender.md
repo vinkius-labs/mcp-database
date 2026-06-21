@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to drop critical 'wake-
 - **Absolute Containment:** Because this is strictly a sending tool, the agent cannot read your incoming messages, cannot answer phone calls, and cannot alter your Twilio account settings. It is the purest, safest way to give your AI SMS superpowers.
 
 
-## Available Tools
+## Available Tools (1)
 - **send_twilio_sms**: Provide the destination phone number in E.164 format (e.g., +1234567890) in the "to" parameter, and the text in the "body" parameter.
 
 Send an SMS text message to a mobile phone number using Twilio
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `twilio-sms-sender` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `twilio-sms-sender` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Twilio SMS Sender** tools.
 
 **Configuration:**

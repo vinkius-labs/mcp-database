@@ -33,7 +33,7 @@ Connect to the **FDIC BankFind Suite** to query public data on US banks and fina
 - **Compliance Officers** — verify institution status and branch locations across the US.
 
 
-## Available Tools
+## Available Tools (8)
 - **list_demographics**: List demographic data related to financial institutions
 - **list_failures**: Filter by FAILYR, SAVING, RESTYPE, etc.
 
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fdic-bankfind-suite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fdic-bankfind-suite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FDIC BankFind Suite** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect **JSONBin.io** to your AI agent to turn it into a powerful data manageme
 - **Automation Engineers** — maintain state across different AI workflows and agent sessions.
 
 
-## Available Tools
+## Available Tools (27)
 - **add_schema_to_collection**: Add a schema to a collection for validation
 - **count_bin_versions**: Count versions of a JSON bin
 - **create_access_key**: Create a restricted access key
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jsonbinio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jsonbinio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSONBin.io** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Nextcloud** instance to any AI agent and take full control of you
 - **Developers** — Inspect server capabilities and manage app passwords directly from your coding environment.
 
 
-## Available Tools
+## Available Tools (16)
 - **get_capabilities**: Get Nextcloud server capabilities
 - **create_folder**: Create a new folder in Nextcloud (WebDAV)
 - **create_share**: Share Types: 0=User, 1=Group, 3=Public Link, 4=Email, 6=Federated, 7=Circle, 10=Talk.
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nextcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nextcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nextcloud** tools.
 
 **Configuration:**

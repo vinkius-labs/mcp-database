@@ -35,7 +35,7 @@ No API key required — completely free.
 - **Writers & Creators** — get canonical character data for fan fiction, quizzes and content creation
 
 
-## Available Tools
+## Available Tools (6)
 - **get_all_characters**: Each entry includes name, house, role (student/staff/creature), actor name, patronus, species and alive status. Useful for exploring the entire Harry Potter universe.
 
 Get all Harry Potter characters and creatures
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harry-potter-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harry-potter-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harry Potter API** tools.
 
 **Configuration:**

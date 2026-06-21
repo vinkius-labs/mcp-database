@@ -32,7 +32,7 @@ Connect your **Laravel Forge** developer account to an AI agent to execute compl
 - **System Admins** — audit entire physical networks executing zero shell scripts
 
 
-## Available Tools
+## Available Tools (9)
 - **deploy_site**: Command a deployment script queue to execute on a repository site
 - **get_server**: Retrieve detailed data on a specific server droplet
 - **get_site**: Look up specifics for an exact site layout on a server
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `laravel-forge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `laravel-forge` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Laravel Forge** tools.
 
 **Configuration:**

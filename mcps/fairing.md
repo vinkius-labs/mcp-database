@@ -34,7 +34,7 @@ Connect your **Fairing** (formerly EnquireLabs) account to any AI agent and take
 - **Data Analysts** — pull raw survey responses and insights directly into your AI-powered data workflow
 
 
-## Available Tools
+## Available Tools (12)
 - **list_responses**: List all survey responses
 - **list_surveys**: List all Fairing surveys
 - **get_account_info**: Get Fairing account information
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fairing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fairing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fairing** tools.
 
 **Configuration:**

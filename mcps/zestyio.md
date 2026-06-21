@@ -33,7 +33,7 @@ Connect your **Zesty.io** account to any AI agent to streamline your headless CM
 - **Growth Engineers** — Automate the creation of landing page items and marketing content entries
 
 
-## Available Tools
+## Available Tools (8)
 - **create_content_item**: Requires a JSON object with field values.
 
 Create a new content item
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zestyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zestyio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zesty.io** tools.
 
 **Configuration:**

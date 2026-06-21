@@ -36,7 +36,7 @@ Connect to **CrossRef** and explore the world's largest scholarly metadata datab
 - **Librarians** — look up DOIs, verify citations and discover journal metadata
 
 
-## Available Tools
+## Available Tools (13)
 - **get_funder**: Returns funder name, country, URI, work count and location info.
 
 Get details for a specific research funder
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crossref-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crossref-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CrossRef** tools.
 
 **Configuration:**

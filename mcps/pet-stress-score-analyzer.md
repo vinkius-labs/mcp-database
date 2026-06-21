@@ -24,7 +24,7 @@ This service bridges the gap between observation and actionable care. It uses ad
 **The Advantage:** Instead of simply reacting to symptoms, this service provides a structured methodology. It gives you a clear score, identifies the 'why,' and delivers specific steps to improve your pet's environment and routine.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_stress_score**: Calculate estimated stress score for a pet based on observed behavioral signals
 - **generate_management_suggestions**: Generate environmental management recommendations to reduce pet stress
 - **query_probable_triggers**: Identify probable environmental triggers causing pet stress
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-stress-score-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-stress-score-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Stress Score Analyzer** tools.
 
 **Configuration:**

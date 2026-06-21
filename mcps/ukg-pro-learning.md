@@ -13,7 +13,7 @@ Manage employee training, courses, and learning paths via UKG Pro Learning.
 The UKG Pro Learning MCP Server integrates the Model Context Protocol with the UKG LMS, enabling AI agents to query training catalogs, track employee course completions, manage learning paths, and fetch enrollment data.
 
 
-## Available Tools
+## Available Tools (4)
 - **enrollments**: List enrollments for a specific user
 - **courses**: Get a specific training course by ID
 - **curricula**: List tracking curricula (Learning Paths)
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ukg-pro-learning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ukg-pro-learning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UKG Pro Learning** tools.
 
 **Configuration:**

@@ -26,7 +26,7 @@ Connect your **Nutrient Workflow** (formerly Integrify) environment to any AI ag
 3. Start managing your enterprise workflows from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **complete_task**: Complete a workflow task
 - **get_process**: Get details for a specific process
 - **get_request**: Get details for a specific request
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nutrient-workflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nutrient-workflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nutrient Workflow** tools.
 
 **Configuration:**

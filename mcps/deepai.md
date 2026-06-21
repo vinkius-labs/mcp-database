@@ -33,7 +33,7 @@ Connect **DeepAI** to your AI agent to unlock powerful image generation and mani
 - **Developers** — Integrate image processing tasks directly into your coding environment or agent-led projects.
 
 
-## Available Tools
+## Available Tools (5)
 - **colorize_image**: Adds color to black and white or historic images
 - **edit_image**: Modifies images based on text prompts
 - **remove_background**: Removes the background from an image using AI
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deepai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deepai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeepAI** tools.
 
 **Configuration:**

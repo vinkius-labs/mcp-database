@@ -13,7 +13,7 @@ Aligns a Bagua map to your floor plan based on entrance orientation.
 The Feng Shui Bagua Mapper connects your physical space to the ancient Bagua energy map. By providing the orientation of your main entrance, you can use `orientationTool` to calculate the rotation, then apply `mapAreaTool` or `analyzeLayoutTool` to identify which life areas--such as Wealth, Love, or Career--correspond to each room in your home. This tool bridges the gap between architectural layouts and spatial energy analysis.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_orientation_offset**: Converts various entrance descriptions into a standardized numerical rotation value
 - **analyze_room_layout**: Takes a collection of rooms and produces a complete mapping of room names to their corresponding Life Areas
 - **map_coordinate_to_area**: Determines which single Life Area covers a specific point in space given a rotation
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `feng-shui-bagua-mapper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `feng-shui-bagua-mapper` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Feng Shui Bagua Mapper** tools.
 
 **Configuration:**

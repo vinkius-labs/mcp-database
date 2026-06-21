@@ -35,7 +35,7 @@ Connect your **Mirakl** instance to any AI agent and take full control of your e
 - **Finance & Compliance Teams** — track marketplace invoices and seller compliance profiles efficiently to maintain high platform standards
 
 
-## Available Tools
+## Available Tools (10)
 - **list_offers**: Represents the exact live inventory binding a specific product to a specific explicit price from a Shop.
 
 List global Marketplace offers created by multiple sellers
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mirakl-enterprise-marketplace-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mirakl-enterprise-marketplace-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mirakl (Enterprise Marketplace Platform)** tools.
 
 **Configuration:**

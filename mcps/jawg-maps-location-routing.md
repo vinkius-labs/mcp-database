@@ -34,7 +34,7 @@ Connect your **Jawg Maps** account to any AI agent and take full control of prof
 - **Urban Researchers** — analyze city accessibility and elevation data across different geographic regions efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **search_autocomplete**: You can optionally bias results towards a specific GPS location.
 
 Autocomplete a place or address search query
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jawg-maps-location-routing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jawg-maps-location-routing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jawg Maps (Location & Routing)** tools.
 
 **Configuration:**

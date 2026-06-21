@@ -33,7 +33,7 @@ Integrate **Edgio (formerly Limelight Networks and Uplynk)** into your AI workfl
 - **DevOps Teams** — Integrate CDN and streaming controls into CI/CD pipelines or monitoring agents.
 
 
-## Available Tools
+## Available Tools (17)
 - **create_event**: Creates a new live event
 - **delete_asset**: Permanently removes an asset from the system
 - **get_asset**: Retrieves detailed metadata for a specific asset
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `limelight-networks-edgio-cdn-streaming-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `limelight-networks-edgio-cdn-streaming-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Limelight Networks (Edgio CDN & Streaming API)** tools.
 
 **Configuration:**

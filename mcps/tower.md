@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your team's productivity with **Tower**, th
 - **Knowledge Workers** — manage your personal tasks and team collaborations directly from your AI-powered assistant.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_task**: Create a new Tower task
 - **get_project**: Get project details
 - **get_task_details**: Get task details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tower** tools.
 
 **Configuration:**

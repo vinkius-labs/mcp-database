@@ -35,7 +35,7 @@ No more manual access management or episode uploading through complex dashboards
 - **Marketing Teams** — deliver personalized audio experiences and track listener engagement through automated reporting
 
 
-## Available Tools
+## Available Tools (10)
 - **add_audio**: Add a new audio episode
 - **create_contact**: Create a new contact
 - **get_contact**: Get contact details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hirofm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hirofm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hiro.fm** tools.
 
 **Configuration:**

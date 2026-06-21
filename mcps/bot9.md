@@ -26,7 +26,7 @@ Connect your **Bot9** account to any AI agent and orchestrate your customer supp
 3. Start managing your conversational AI fleet from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (8)
 - **add_data_source**: Add a URL to train the bot
 - **create_bot**: Create a new AI chatbot
 - **get_bot**: Get details of a specific bot
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bot9` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bot9` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bot9** tools.
 
 **Configuration:**

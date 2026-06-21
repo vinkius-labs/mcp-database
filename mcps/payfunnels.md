@@ -35,7 +35,7 @@ No more manual logging into dashboards to check payment status. Your AI acts as 
 - **Sales Teams** — streamline the creation of custom payment links and monitor deal closures directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **cancel_subscription**: Cancel a recurring subscription
 - **create_setup_fee**: Requires a name.
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `payfunnels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `payfunnels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Payfunnels** tools.
 
 **Configuration:**

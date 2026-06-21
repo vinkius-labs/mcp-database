@@ -43,7 +43,7 @@ No more navigating multiple MTA apps or manually checking train and bus times. Y
 - **Mobility Apps** — integrate real-time MTA data into journey planning and transit tracking applications
 
 
-## Available Tools
+## Available Tools (12)
 - **get_bus_estimated_arrival**: Returns predicted arrival times, route information, destinations, wait times, and delay indicators for each expected bus. Supports both multi-route stop queries and single-route filtered queries. Essential for targeted arrival predictions, route-specific wait time estimation, and passenger trip timing. AI agents should reference this when users ask "when is the next M15 at this stop", "show arrival estimates for route B46 at stop 12345", or need route-filtered arrival data at a specific bus stop.
 
 Get estimated arrival times for buses at a stop, optionally filtered by route
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MTA** tools.
 
 **Configuration:**

@@ -19,7 +19,7 @@ LLMs fabricate strings that LOOK random but are NOT cryptographically secure. Th
 - **Entropy Report:** Returns exact entropy bits for security auditing.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_random_string**: Never fabricate random-looking strings yourself — they are not truly random. Specify the length and charset (hex, alphanumeric, base64, url_safe, numeric, distinguishable).
 
 Generates cryptographically secure random strings using Node.js crypto.randomBytes(). Supports hex, alphanumeric, base64, url-safe, numeric, and distinguishable character sets
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crypto-random-string` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crypto-random-string` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Crypto Random String** tools.
 
 **Configuration:**

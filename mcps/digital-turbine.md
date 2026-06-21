@@ -32,7 +32,7 @@ Integrate **Digital Turbine**, the leading independent mobile growth platform, d
 - **Growth Leads** — Audit overall performance metrics and revenue trends during strategy sessions.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_platform_metadata**: Retrieve metadata and limits for your Digital Turbine account
 - **get_app_monetization_details**: Get detailed monetization settings and status for a specific app
 - **get_campaign_analytics**: Get detailed settings and performance metrics for a specific campaign
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `digital-turbine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `digital-turbine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Digital Turbine** tools.
 
 **Configuration:**

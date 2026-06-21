@@ -32,7 +32,7 @@ Integrate **Erply**, the powerful enterprise resource planning (ERP) and point-o
 - **Operations Teams** — Monitor invoice statuses and organizational ERP metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_erply_user_metadata**: Retrieve metadata and settings for the current Erply user
 - **list_inventory_stock_levels**: List real-time inventory levels across all products
 - **get_product_detailed_data**: Get detailed settings and information for a specific product
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `erply-erp-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `erply-erp-pos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Erply ERP & POS** tools.
 
 **Configuration:**

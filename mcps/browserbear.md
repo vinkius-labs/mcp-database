@@ -34,7 +34,7 @@ Connect your **Browserbear (Roborabbit)** account to any AI agent and orchestrat
 - **Developers** — integrate complex browser interactions into their coding environment using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_task**: Create a new browser automation task
 - **delete_run**: Delete a task run record
 - **get_run**: Get status and results of a task run
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `browserbear` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `browserbear` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Browserbear** tools.
 
 **Configuration:**

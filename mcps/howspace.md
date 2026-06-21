@@ -32,7 +32,7 @@ Connect your **Howspace** account to any AI agent and manage your collaborative 
 - **Change Management Consultants** — manage large-scale workshops and stakeholder engagement through AI
 
 
-## Available Tools
+## Available Tools (7)
 - **add_participant**: Add a participant to a workspace
 - **create_workspace**: Create a new workspace
 - **get_me**: Get current user info
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `howspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `howspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Howspace** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate string tension, instrument total tension, and gauge requirements for m
 An essential utility for musicians and instrument makers to calculate the physical tension exerted by strings. Use `calculate_single_string_tension` to find the force of a single string, `analyze_instrument_set_profile` to evaluate total neck stress and tension balance across a set, or `derive_alternative_gauge` to determine the necessary thickness for new tunings. This tool helps prevent instrument damage by monitoring cumulative tension.
 
 
-## Available Tools
+## Available Tools (3)
 - **derive_alternative_gauge**: Determines what string thickness (gauge) is enough to keep tension constant when changing tuning
 - **analyze_instrument_set_profile**: Evaluates an entire set of strings to determine total instrument stress and tension uniformity
 - **calculate_single_string_tension**: Calculates the physical tension for one individual string at a specific pitch
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `string-tension-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `string-tension-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **String Tension Calculator** tools.
 
 **Configuration:**

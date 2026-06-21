@@ -34,7 +34,7 @@ Connect your **Airship (formerly Urban Airship)** account to your AI agent to un
 - **Operations Leads** — monitor delivery statuses and manage static lists using simple commands
 
 
-## Available Tools
+## Available Tools (10)
 - **send_push_notification**: Send a push alert
 - **list_segments**: List audience segments
 - **get_segment_details**: Get segment criteria
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airship` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airship` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Airship** tools.
 
 **Configuration:**

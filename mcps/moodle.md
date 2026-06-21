@@ -34,7 +34,7 @@ Connect your **Moodle** LMS account to your AI agent and streamline your educati
 - **Academic Analysts** — automate the retrieval of grade and completion data for student performance reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_course_assignments**: List assignments in courses
 - **get_course_completion**: Get course completion status
 - **get_course_groups**: List groups in a course
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moodle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moodle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moodle** tools.
 
 **Configuration:**

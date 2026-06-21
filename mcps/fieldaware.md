@@ -31,7 +31,7 @@ FieldAware is a comprehensive field service management platform. This MCP server
 - **Field Dispatchers** — quickly look up customer history and asset details through simple natural language queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_job**: Create a new job
 - **get_customer**: Get details for a specific customer
 - **get_invoice**: Get details for a specific invoice
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fieldaware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fieldaware` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FieldAware** tools.
 
 **Configuration:**

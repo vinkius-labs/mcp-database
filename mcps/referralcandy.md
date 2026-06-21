@@ -29,7 +29,7 @@ Give your AI agent full programmatic control over your ReferralCandy ecosystem. 
 Designed for marketing teams, e-commerce operators, and growth hackers who need instant, conversational access to affiliate and referral performance metrics.
 
 
-## Available Tools
+## Available Tools (16)
 - **check_referralcandy_status**: Verify connectivity
 - **get_campaign**: Get campaign details
 - **get_referral**: Get referral details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `referralcandy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `referralcandy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ReferralCandy** tools.
 
 **Configuration:**

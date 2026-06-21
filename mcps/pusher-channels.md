@@ -35,7 +35,7 @@ No more jumping into the Pusher Debug Console to manually trigger test events or
 - **Support Teams** — quickly identify if a user is connected to a presence channel or terminate problematic sessions.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_channel**: Fetch information for a specific channel
 - **list_channel_users**: Fetch users in a presence channel
 - **list_channels**: Fetch multiple channels
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pusher-channels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pusher-channels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pusher Channels** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Empower your AI agents to manage your **PlanetScale** serverless infrastructure 
 - **Platform Architects** — audit distribution footprints, node metadata, and connection strings across multiple organizational environments automatically.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_branch**: Does *not* duplicate data (creates an empty schema clone of the parent) for secure CI testing uncoupled entirely from `main` load balancing layers.
 
 Fork a PlanetScale schema mapping to a new isolated Branch
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `planetscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `planetscale` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PlanetScale** tools.
 
 **Configuration:**

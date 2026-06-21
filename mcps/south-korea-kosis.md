@@ -21,7 +21,7 @@ The **South Korea KOSIS MCP Server** connects your AI agent to the Korean Statis
 Free API key required (instant registration at kosis.kr). South Korea publishes highly granular data covering semiconductor exports, technology adoption, and manufacturing output — intelligence that is critical for supply chain analysis and technology market research.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_korea_stats_data**: Requires orgId and tableId from search_korea_statistics. Optionally filter by time period (YYYYMM or YYYY format).
 
 Retrieve statistical data from a specific KOSIS table in South Korea
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `south-korea-kosis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `south-korea-kosis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **South Korea KOSIS** tools.
 
 **Configuration:**

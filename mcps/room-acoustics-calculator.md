@@ -13,7 +13,7 @@ Predict room modes, Schroeder frequency, and RT60 decay for studio acoustics.
 This MCP server provides specialized tools for acoustic engineers to analyze recording environments. Use `get_room_modes` to identify axial, tangential, and oblique standing waves. Determine the transition from discrete modes to a diffuse field with `get_schroeder_frequency`. Predict reverberation decay using `estimate_reverberation_time` based on surface materials like Acoustic Foam or Concrete. Finally, use `identify_tretment_needs` to pinpoint problematic low-frequency resonances that require bass traps.
 
 
-## Available Tools
+## Available Tools (4)
 - **estimate_reverberation_time**: Predict RT60 based on surface materials
 - **get_room_modes**: Identify all axial, tangential, and oblique resonant frequencies
 - **get_schroeder_frequency**: Determine the frequency boundary between discrete and diffuse fields
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `room-acoustics-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `room-acoustics-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Room Acoustics Calculator** tools.
 
 **Configuration:**

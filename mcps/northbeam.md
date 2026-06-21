@@ -35,7 +35,7 @@ Connect your **Northbeam** account to your AI agent and gain deep insights into 
 - **Growth Teams** — monitor recently completed exports and verify data synchronization in real-time.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dashboard_settings**: Get workspace dashboard settings
 - **list_breakdowns**: g., Platform, Campaign, Ad Set) in attribution reports.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `northbeam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `northbeam` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Northbeam** tools.
 
 **Configuration:**

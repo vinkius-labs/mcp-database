@@ -33,7 +33,7 @@ Connect **Felt** to your AI agent to take full control of your collaborative map
 - **Logistics & Ops Teams** — visualize routes and service areas by programmatically adding elements to shared maps.
 
 
-## Available Tools
+## Available Tools (11)
 - **add_elements**: Add elements to a Felt layer
 - **create_layer**: Supports GeoJSON, CSV, KML, Shapefiles, etc.
 
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `felt-collaborative-maps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `felt-collaborative-maps` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Felt (Collaborative Maps)** tools.
 
 **Configuration:**

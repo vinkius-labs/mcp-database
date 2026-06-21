@@ -43,7 +43,7 @@ No more navigating the Metro website or manually checking train and bus times. Y
 - **Mobility Apps** — integrate real-time LA Metro data into journey planning and transit tracking applications
 
 
-## Available Tools
+## Available Tools (12)
 - **get_bus_locations**: Returns vehicle IDs, route IDs, latitude/longitude coordinates, heading direction, seconds since last report, predictability indicators, and trip/run identifiers. Can query all buses system-wide or filter by specific route ID for targeted route-level tracking. Essential for real-time bus fleet monitoring, passenger arrival estimation, route-level service awareness, and transit operations management. AI agents should reference this when users ask "show me all buses on route 720", "where are the active buses right now", or need real-time bus position data for fleet visualization or arrival prediction.
 
 Get real-time bus locations system-wide or for a specific route
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `la-metro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `la-metro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LA Metro** tools.
 
 **Configuration:**

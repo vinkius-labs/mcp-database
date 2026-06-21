@@ -34,7 +34,7 @@ Your AI agent becomes your growth partner, giving you instant access to affiliat
 - **Merchants** — programmatically monitor affiliate performance and validate tracked transactions.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_merchant_details**: Retrieve detailed information about a specific merchant
 - **get_performance_summary**: Calculate basic commission and sale totals for a set of transactions
 - **get_transaction_details**: Retrieve details of a specific transaction
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `commission-factory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `commission-factory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Commission Factory** tools.
 
 **Configuration:**

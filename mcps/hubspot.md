@@ -36,7 +36,7 @@ Connect your **HubSpot** account to any AI agent and manage your entire CRM thro
 - **RevOps** — inspect pipelines, audit data quality, and manage associations through AI
 
 
-## Available Tools
+## Available Tools (12)
 - **link_crm_objects**: g. Contact to Company).
 
 Create association
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot** tools.
 
 **Configuration:**

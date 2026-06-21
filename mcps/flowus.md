@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your knowledge base with **FlowUs**, the ve
 - **Students & Researchers** — manage study notes and research databases without manual technical overhead.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_database_row**: Add row to database
 - **create_page**: Create a new FlowUs page
 - **get_database**: Get database schema
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flowus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flowus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FlowUs** tools.
 
 **Configuration:**

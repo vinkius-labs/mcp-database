@@ -32,7 +32,7 @@ Connect to the **NPM Registry** to explore the world's largest software registry
 - **Security Researchers** — inspect package metadata and maintenance scores to evaluate library health.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_registry_meta**: Get information about the NPM registry instance
 - **get_package**: Get metadata for an NPM package
 - **get_package_version**: Get metadata for a specific version of an NPM package
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `npm-registry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `npm-registry` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NPM Registry** tools.
 
 **Configuration:**

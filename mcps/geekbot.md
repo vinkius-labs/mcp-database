@@ -35,7 +35,7 @@ No more manual checking of Slack channels for missing standups. Your AI acts as 
 - **HR & Ops** — automate the collection of team feedback and internal surveys through simple AI commands
 
 
-## Available Tools
+## Available Tools (6)
 - **submit_standup_report**: Programmatically submit a report
 - **get_user_profile**: Check account connection
 - **get_standup_details**: Get metadata for a standup
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geekbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geekbot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Geekbot** tools.
 
 **Configuration:**

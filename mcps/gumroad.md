@@ -36,7 +36,7 @@ No more manual exporting of CSVs or jumping between store tabs. Your AI assistan
 - **Customer Support Agents** — quickly check transaction details and license statuses during customer interactions.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_my_profile**: Get information about your Gumroad user profile
 - **get_product**: Get detailed information about a specific product
 - **get_sale**: Get detailed information about a specific sale
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gumroad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gumroad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gumroad** tools.
 
 **Configuration:**

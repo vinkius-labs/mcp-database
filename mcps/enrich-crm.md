@@ -35,7 +35,7 @@ No more manual contact research or toggling between dozens of browser tabs. Your
 - **Growth Engineers** — automate data collection for competitive analysis and technical market research through simple AI queries
 
 
-## Available Tools
+## Available Tools (5)
 - **enrich_company**: Enrich company data
 - **enrich_person**: Enrich person data
 - **find_email**: Find a professional email address
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `enrich-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `enrich-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Enrich CRM** tools.
 
 **Configuration:**

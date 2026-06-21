@@ -36,7 +36,7 @@ No more manual payment tracking or digging through bank files. Your AI acts as y
 - **SaaS Founders** — monitor subscription health and manage failed payments through automated queries
 
 
-## Available Tools
+## Available Tools (12)
 - **stop_pending_payment**: Cancel payment
 - **create_new_customer**: Add payer to account
 - **collect_payment**: Trigger new payment
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gocardless-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gocardless-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GoCardless** tools.
 
 **Configuration:**

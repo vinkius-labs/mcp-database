@@ -32,7 +32,7 @@ Integrate **Endorsal**, the fully automated testimonial collection platform, dir
 - **Operations Teams** — Monitor review volumes and organizational Endorsal metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **quick_social_proof_audit**: Retrieve a high-level summary of testimonials and widget activity
 - **approve_pending_testimonial**: Approve a pending testimonial for public display
 - **get_endorsal_account_metadata**: Retrieve metadata and limits for your Endorsal account
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `endorsal-testimonials` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `endorsal-testimonials` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Endorsal Testimonials** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual attendee tracking or complex agenda navigation. Your AI acts as y
 - **Community Managers** — keep members updated on event schedules and manage RSVPs through simple AI commands
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_connectivity**: Verify Eventmix API status
 - **create_new_event**: Requires a title and scheduled date.
 
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventmix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventmix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eventmix** tools.
 
 **Configuration:**

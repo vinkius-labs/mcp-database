@@ -31,7 +31,7 @@ Trigger massive inference executions navigating safely over natively hosted logi
 Explicitly targeted evaluating limits specifically for **AI Engineers**, **Generative Integrators**, and **Developers** parsing direct responses over public NVIDIA compute matrices.
 
 
-## Available Tools
+## Available Tools (8)
 - **nvidia_chat_completion**: Trigger direct NLP inference matrices directly evaluating queries over hosted LLMs
 - **nvidia_check_token_quota**: Poll safely dynamic credit and explicit constraint execution limits bounding inference execution
 - **nvidia_generate_embeddings**: Pass parameters safely mapping explicit unstructured vectors directly using specific Embedding arrays
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nvidia-api-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nvidia-api-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NVIDIA API Catalog** tools.
 
 **Configuration:**

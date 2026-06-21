@@ -35,7 +35,7 @@ No more manual subscriber management or complex campaign navigation in the dashb
 - **Sales Teams** — create new leads and manage mailing segments through simple AI commands
 
 
-## Available Tools
+## Available Tools (8)
 - **create_contact**: Create a new contact
 - **create_mailing_list**: Create a new mailing list
 - **delete_contact**: Delete a contact
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fidelizador` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fidelizador` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fidelizador** tools.
 
 **Configuration:**

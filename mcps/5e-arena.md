@@ -33,7 +33,7 @@ No more refreshing bloated leaderboards checking for a friend's rank fluctuation
 - **League Operators** — track active penalty statuses discovering foul play dynamically securing server health actively managing toxic user purges completely automatically through programmatic chat loops
 
 
-## Available Tools
+## Available Tools (10)
 - **get_leaderboard**: Fetch the Top 500 Radiant/Global leaderboard
 - **get_live_matches**: Get a list of currently ongoing high-ELO matches
 - **get_map_stats**: Get a players map-specific win rates
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `5e-arena` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `5e-arena` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **5E Arena** tools.
 
 **Configuration:**

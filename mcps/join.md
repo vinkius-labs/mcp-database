@@ -13,7 +13,7 @@ Manage recruiting, jobs, and candidates via JOIN API.
 Empower your AI agents with JOIN's modern recruiting platform. This MCP server allows you to list job openings, retrieve candidate details, manage applications, and view organization departments directly through the JOIN API. Ideal for automating hiring workflows and talent acquisition.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_application**: Returns answers to form questions, internal notes, and application status. Use when evaluating a specific applicant or moving them through the pipeline.
 
 Retrieves details for a specific application
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `join` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `join` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Join** tools.
 
 **Configuration:**

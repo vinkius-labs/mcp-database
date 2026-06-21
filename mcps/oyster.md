@@ -34,7 +34,7 @@ Connect your **Oyster** account to any AI agent to streamline your global team m
 - **Operations Leads** — streamline the hiring process by checking country availability and creating draft employments.
 
 
-## Available Tools
+## Available Tools (15)
 - **create_draft_employment**: This is an async operation.
 
 Create a draft employment (Beta, Async)
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oyster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oyster` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Oyster** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your AI assistant to **CometChat**, the communication platform providing
 - **Developers** — Test chat features and verify group configurations directly from chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_group**: Create a new group in CometChat
 - **create_user**: Create a new user in CometChat
 - **deactivate_user**: Deactivate a user instead of deleting them
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cometchat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cometchat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CometChat** tools.
 
 **Configuration:**

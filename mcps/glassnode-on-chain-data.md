@@ -33,7 +33,7 @@ Connect your **Glassnode** account to any AI agent to analyze crypto markets wit
 - **Financial Analysts** — generate reports on network growth and valuation metrics instantly
 
 
-## Available Tools
+## Available Tools (6)
 - **get_bulk_metric**: Use a="*" for all assets.
 
 Get bulk metric data for multiple assets
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `glassnode-on-chain-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `glassnode-on-chain-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Glassnode (On-chain Data)** tools.
 
 **Configuration:**

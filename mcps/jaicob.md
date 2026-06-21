@@ -33,7 +33,7 @@ Connect your **Jaicob** account to any AI agent and leverage AI capabilities thr
 - **Analysts** — extract insights and summarize large documents
 
 
-## Available Tools
+## Available Tools (6)
 - **create_candidate**: Create a new candidate profile
 - **list_applications**: List job applications
 - **list_candidates**: List all candidates in Jaicob
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jaicob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jaicob` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jaicob** tools.
 
 **Configuration:**

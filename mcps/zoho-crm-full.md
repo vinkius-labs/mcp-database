@@ -27,7 +27,7 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 - **Support Teams** — Access contact and account data seamlessly
 
 
-## Available Tools
+## Available Tools (9)
 - **zoho_create_contact**: Last_Name is required. Account_Name links the contact to an existing account (company). Contacts represent qualified individuals in the CRM — use for customers, partners, or qualified prospects.
 
 Create a new contact in Zoho CRM with name, email, phone, and linked account for customer management
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-crm-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-crm-full` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho CRM (Full)** tools.
 
 **Configuration:**

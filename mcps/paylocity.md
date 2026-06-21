@@ -33,7 +33,7 @@ Connect your **Paylocity** account to any AI agent and take full control of your
 - **Finance Teams** — audit earnings and deductions data for reconciliation tasks.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_employee_benefit_setup**: Get benefit configuration for an employee
 - **get_employee_custom_fields**: Get custom field values for an employee
 - **get_employee_deductions**: Get deduction details for an employee
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paylocity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paylocity` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paylocity** tools.
 
 **Configuration:**

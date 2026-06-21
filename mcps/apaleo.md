@@ -29,7 +29,7 @@ Connect your **Apaleo** hotel to any AI agent — the API-first PMS built for mo
 - **Finance Teams** — Invoice tracking and folio reconciliation
 
 
-## Available Tools
+## Available Tools (10)
 - **list_reservations**: The front-desk dashboard.
 
 List hotel reservations
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apaleo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apaleo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apaleo** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to **Zippopotam.us** to empower your AI agent with global geocoding and 
 - **Logistics & E-commerce** — validate shipping destinations and calculate regional routing based on postal codes.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_location_by_postal_code**: Get location information by postal code
 - **get_postal_codes_by_city**: Get postal codes by city and state
 
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zippopotamus-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zippopotamus-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zippopotam.us** tools.
 
 **Configuration:**

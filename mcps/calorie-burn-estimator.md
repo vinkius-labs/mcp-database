@@ -13,7 +13,7 @@ Calculate energy expenditure using MET values, body weight, and activity duratio
 The Calorie Burn Estimator MCP server provides a precise way to calculate calories burned during physical activities. By using the Metabolic Equivalent of Task (MET) principle, it calculates energy expenditure based on your body weight and the duration of the exercise. You can use `search_activities` to find specific exercises in our database of over 80 activities, `estimate_calories_burned` to get exact calorie counts, and `classify_activity_intensity` to understand the physiological effort level of an activity.
 
 
-## Available Tools
+## Available Tools (3)
 - **classify_activity_intensity**: Classify the intensity of an activity
 - **estimate_calories_burned**: Estimate calories burned during an activity
 - **search_activities**: Search for physical activities and their MET values
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calorie-burn-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calorie-burn-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Calorie Burn Estimator** tools.
 
 **Configuration:**

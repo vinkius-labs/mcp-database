@@ -33,7 +33,7 @@ Connect your **Nasdaq Data Link** (formerly Quandl) account to any AI agent to a
 - **Quantitative Researchers** — automate the retrieval of economic indicators and fundamental data for model inputs
 
 
-## Available Tools
+## Available Tools (4)
 - **request_bulk_download**: Returns a status (PENDING, RUNNING, SUCCEEDED) and file URLs.
 
 Request a bulk download for a datatable
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasdaq-data-link-quandl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasdaq-data-link-quandl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nasdaq Data Link (Quandl)** tools.
 
 **Configuration:**

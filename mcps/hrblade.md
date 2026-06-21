@@ -32,7 +32,7 @@ Connect your **HRBlade** account to any AI agent and manage asynchronous video i
 - **HR Teams** — scale asynchronous interviewing and manage high-volume candidate screening
 
 
-## Available Tools
+## Available Tools (6)
 - **create_interview**: Pass data as a JSON string.
 
 Create a new interview template
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hrblade` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hrblade` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HRBlade** tools.
 
 **Configuration:**

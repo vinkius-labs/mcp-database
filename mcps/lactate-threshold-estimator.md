@@ -13,7 +13,7 @@ Estimate metabolic lactate thresholds using effort-based metrics or heart rate d
 The Lactate Threshold Estimator provides a non-invasive way to identify your physiological limits without laboratory testing. Using the `estimate_mlss` tool, you can calculate threshold parameters based on a sustainable one-hour effort (MLSS). Alternatively, use `detect_hr_drift` to find the metabolic threshold point from time-series heart rate and workload data by identifying cardiovascular decoupling. Once your threshold is identified, use `generate_zones` to produce five specific training zones (from recovery to anaerobic) recalibrated to your current fitness level and athlete classification.
 
 
-## Available Tools
+## Available Tools (3)
 - **detect_hr_drift**: Detect the HR drift threshold from time-series data
 - **estimate_mlss**: Estimate MLSS parameters based on a sustainable effort
 - **generate_zones**: Generate training zones based on a discovered threshold
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lactate-threshold-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lactate-threshold-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lactate Threshold Estimator** tools.
 
 **Configuration:**

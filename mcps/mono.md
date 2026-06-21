@@ -33,7 +33,7 @@ Connect your **Mono** account to any AI agent to access real-time financial data
 - **Operations Teams** — Verify user identities and initiate payouts through simple natural language commands.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_account**: Get Mono account details
 - **get_identity**: Get identity information for a Mono account
 - **initiate_payment**: Initiate a direct bank transfer
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mono` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mono` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mono** tools.
 
 **Configuration:**

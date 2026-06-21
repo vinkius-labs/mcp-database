@@ -35,7 +35,7 @@ No more context-switching between the terminal and your workspace. Your AI agent
 - **System administrators** — identify zombie databases and clean up unused serverless resources efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **create_database**: Provide the organization slug, database name, and target group.
 
 Provision a massively distributed Serverless SQLite database
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `turso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `turso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Turso** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to **JSONPlaceholder**, the industry-standard fake REST API, to simulate
 - **Product Designers** — demonstrate AI-driven workflows using realistic (but safe) mock data
 
 
-## Available Tools
+## Available Tools (21)
 - **create_post**: Create a new post
 - **delete_post**: Delete a post
 - **get_album_photos**: Get photos for a specific album
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jsonplaceholder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jsonplaceholder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSONPlaceholder** tools.
 
 **Configuration:**

@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (7)
 - **odoo_list_accounts**: account records ordered by code — the full General Ledger account structure. Returns account code + name (e.g., "1100 - Accounts Receivable"), account type (asset_receivable, liability_payable, income, expense, etc.), and whether the account supports reconciliation. Use when the user asks about the GL structure, needs an account code, or wants to understand the financial reporting hierarchy.
 
 List the Chart of Accounts in Odoo showing account codes, names, types, and reconciliation settings
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-accounting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo Accounting** tools.
 
 **Configuration:**

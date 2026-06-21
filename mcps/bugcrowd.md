@@ -34,7 +34,7 @@ Connect your **Bugcrowd** account to any AI agent and orchestrate your vulnerabi
 - **CisOs & Security Leads** — monitor program health and target coverage using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_submission**: Create a new vulnerability submission
 - **get_engagement**: Get details of a specific engagement
 - **get_organization_info**: Retrieve core organization information
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bugcrowd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bugcrowd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bugcrowd** tools.
 
 **Configuration:**

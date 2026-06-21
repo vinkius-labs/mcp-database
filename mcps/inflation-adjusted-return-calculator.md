@@ -13,7 +13,7 @@ Calculate real investment returns by adjusting nominal rates against inflation.
 This MCP server provides precise tools to determine the true performance of your investments. By applying the Fisher equation, it allows you to calculate the `get_real_return_percentage` to see actual growth, use `calculate_purchasing_power_ratio` to understand how much value remains, and apply `compute_absolute_inflationary_erosion` to quantify the loss in currency units due to rising prices. It is an essential tool for any investor tracking real wealth preservation across different inflation regimes.
 
 
-## Available Tools
+## Available Tools (3)
 - **compute_absolute_inflationary_erosion**: Calculate the absolute inflationary erosion in currency units
 - **calculate_purchasing_power_ratio**: Calculate the ratio of purchasing power preserved
 - **get_real_return_percentage**: Calculate the real return rate using the Fisher equation
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inflation-adjusted-return-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inflation-adjusted-return-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Inflation-Adjusted Return Calculator** tools.
 
 **Configuration:**

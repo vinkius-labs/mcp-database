@@ -33,7 +33,7 @@ Connect your **HashiCorp Vault** instance to any AI agent to automate secrets ma
 - **Developers** — fetch development secrets and generate local database credentials without leaving the IDE.
 
 
-## Available Tools
+## Available Tools (50)
 - **approle_login**: Login using AppRole authentication
 - **configure_aws_root**: Configure AWS root credentials
 - **configure_database**: Configure a database connection
@@ -146,7 +146,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hashicorp-vault` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hashicorp-vault` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HashiCorp Vault** tools.
 
 **Configuration:**

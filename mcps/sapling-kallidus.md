@@ -13,7 +13,7 @@ Manage employee onboarding, data, and tasks via Sapling API.
 Empower your AI agents with Sapling's (by Kallidus) HR and onboarding platform. This MCP server allows you to list and retrieve employee profiles, track onboarding and offboarding tasks, manage departments and teams, and view office locations directly through the Sapling API. Ideal for automating HR workflows and personnel management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Use to verify connection status and account settings.
 
 Retrieves details about your Sapling account
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sapling-kallidus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sapling-kallidus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sapling (Kallidus)** tools.
 
 **Configuration:**

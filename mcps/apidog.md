@@ -32,7 +32,7 @@ Connect your **Apidog** account to your AI agent and seamlessly access your API 
 - **QA Automation Teams** — fetch expected response payloads automatically to construct robust integration tests
 
 
-## Available Tools
+## Available Tools (5)
 - **list_projects**: List all API projects in the connected Apidog organization
 - **list_endpoints**: List all API endpoints defined within a specific Apidog project
 - **get_endpoint**: Fetch the complete schema of a single API endpoint
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apidog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apidog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apidog** tools.
 
 **Configuration:**

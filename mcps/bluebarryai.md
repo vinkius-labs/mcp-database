@@ -35,7 +35,7 @@ No more manual toggling between different AI tools or digging through fragmented
 - **Developers** — integrate high-speed AI agent management and video intelligence into custom business workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **analyze_youtube**: Analyze a YouTube video
 - **get_agent**: Get details for an AI agent
 - **get_automation_status**: Get status of an automation
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bluebarryai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bluebarryai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **bluebarry.ai** tools.
 
 **Configuration:**

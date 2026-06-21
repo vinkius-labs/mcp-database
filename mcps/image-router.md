@@ -24,7 +24,7 @@ Connect your **ImageRouter** account to any AI agent and manage AI image generat
 - **Task Status** — Check async generation progress
 
 
-## Available Tools
+## Available Tools (11)
 - **check_imagerouter_status**: Verify API connectivity
 - **edit_image**: Edit an existing image
 - **generate_image_advanced**: Generate with full options
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `image-router` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `image-router` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Image Router** tools.
 
 **Configuration:**

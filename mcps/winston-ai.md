@@ -33,7 +33,7 @@ Connect your **Winston AI** account to any AI agent and simplify how you verify 
 - **Fact-Checkers & Journalists** — verify the accuracy of claims and the authenticity of digital images instantly.
 
 
-## Available Tools
+## Available Tools (11)
 - **detect_ai_file**: Detect AI content in a document file (via URL)
 - **detect_ai_image**: Detect if an image is AI-generated (via URL)
 - **detect_ai_text**: Higher score means more likely human.
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `winston-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `winston-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Winston AI** tools.
 
 **Configuration:**

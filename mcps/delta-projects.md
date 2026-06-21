@@ -32,7 +32,7 @@ Integrate **Delta Projects**, the efficient programmatic advertising platform, d
 - **Account Managers** — Gather structured campaign data and reports for client updates instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_platform_metadata**: Retrieve metadata and configuration for your Delta Projects account
 - **get_campaign_performance**: Get detailed settings and performance metrics for a specific campaign
 - **get_custom_ad_report**: Retrieve a custom performance report based on specific dimensions
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `delta-projects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `delta-projects` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Delta Projects** tools.
 
 **Configuration:**

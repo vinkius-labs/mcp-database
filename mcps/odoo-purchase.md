@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (7)
 - **odoo_confirm_purchase_order**: order, transitioning from "draft" to "purchase" state. This locks the order, notifies the vendor, and creates an incoming receipt (stock.picking) for warehouse processing. Use when the user approves a vendor quote or wants to place the order.
 
 Confirm a draft RFQ, converting it into a confirmed purchase order and triggering receipt creation
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-purchase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-purchase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo Purchase** tools.
 
 **Configuration:**

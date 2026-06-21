@@ -13,7 +13,7 @@ Compare the carbon footprint and waste generation of different lifestyle choices
 The Environmental Impact Comparator allows AI agents to evaluate the ecological consequences of daily habits. By using tools like `compare_transportation_impact`, `compare_dietary_impact`, and `compare_packaging_waste_impact`, agents can calculate differences in carbon emissions (CO2e), water usage, and plastic waste generation over specific periods. This is ideal for answering questions about switching from cars to metros, or replacing single-use plastics with reusable alternatives.
 
 
-## Available Tools
+## Available Tools (3)
 - **compare_transportation_impact**: Compare carbon emissions between two transport modes
 - **compare_dietary_impact**: Compare environmental impact of two food types
 - **compare_packaging_waste_impact**: Calculate plastic waste prevented
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `environmental-impact-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `environmental-impact-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Environmental Impact Comparator** tools.
 
 **Configuration:**

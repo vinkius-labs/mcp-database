@@ -32,7 +32,7 @@ Connect your **Qdrant** vector database (Cloud or Self-Hosted) to any AI agent a
 - **Backend Developers** — manage vector cluster configuration and clear bad datasets efficiently
 
 
-## Available Tools
+## Available Tools (7)
 - **list_collections**: Lists all collections in the Qdrant instance
 - **get_collection**: Retrieves detailed information about a specific collection
 - **search**: You must provide a JSON array of floats for the query vector.
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qdrant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qdrant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qdrant** tools.
 
 **Configuration:**

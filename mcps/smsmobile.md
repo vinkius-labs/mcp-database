@@ -33,7 +33,7 @@ Connect your **Smsmobile** account to any AI agent and turn your smartphone into
 - **Support Agents** — Respond to SMS and WhatsApp inquiries within your existing AI-powered workspace.
 
 
-## Available Tools
+## Available Tools (26)
 - **check_whatsapp_number**: Check if a number is registered on WhatsApp
 - **delete_gateway_mobile**: Delete a mobile from SMS Gateway
 - **delete_sms**: Delete SMS messages from the server log
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smsmobile` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smsmobile` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Smsmobile** tools.
 
 **Configuration:**

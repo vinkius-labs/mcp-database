@@ -28,7 +28,7 @@ The **Applied Epic MCP Server** provides a powerful natural language interface t
 - **Agency Operations** — Streamline workflow tracking and documentation management using AI-assisted automation.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_activity**: Create a new activity record
 - **get_account_check**: Verify Applied Epic account connection
 - **get_client**: Get details for a specific client
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `applied-epic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `applied-epic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Applied Epic** tools.
 
 **Configuration:**

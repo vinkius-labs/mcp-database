@@ -33,7 +33,7 @@ Connect your **Gladly** platform to any AI agent to streamline your customer ser
 - **CX Operations** — automate the retrieval of public answers to assist in drafting customer responses.
 
 
-## Available Tools
+## Available Tools (20)
 - **add_answer**: Add a new answer
 - **create_business_hours**: Create business hours
 - **delete_answer**: Delete an answer
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gladly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gladly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gladly** tools.
 
 **Configuration:**

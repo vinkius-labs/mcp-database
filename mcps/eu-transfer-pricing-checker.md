@@ -13,7 +13,7 @@ Verify intercompany transaction compliance with OECD Arm's Length Principle usin
 The EU Transfer Pricing Checker is a specialized compliance engine designed to ensure that intercompany transactions between related entities adhere to the OECD Arm's Length Principle. By comparing applied margins against industry-standard benchmarks, it identifies potential tax adjustment risks. AI agents can use tools like `check_compliance` to verify if a specific margin falls within established ranges, `evaluate_risk_impact` to assess the severity of deviations, and `get_benchmark_ranges` to retrieve market-standard minimum and maximum thresholds for various sectors and functions.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_benchmark_ranges**: Retrieves the hardcoded market-standard ranges
 - **check_compliance**: Checks if a transaction margin falls within the established arm's length range
 - **evaluate_risk_impact**: Determines the level of tax audit risk and potential severity
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eu-transfer-pricing-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eu-transfer-pricing-checker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EU Transfer Pricing Checker** tools.
 
 **Configuration:**

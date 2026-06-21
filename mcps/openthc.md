@@ -39,7 +39,7 @@ No more navigating complex regulatory portals or manually reconciling spreadshee
 - **Supply Chain Coordinators** — track B2B transfer status, verify incoming quantities, and orchestrate logistics across licensed facilities
 
 
-## Available Tools
+## Available Tools (12)
 - **list_b2b_transactions**: Each B2B transaction record contains the transfer ID, direction (incoming/outgoing), counterparty company, transfer status (draft, committed, received, rejected), creation date, expected fulfillment date, line items with quantities, and attached manifests or bills of lading. Essential for supply chain orchestration, logistics planning, and regulatory transfer documentation. AI agents use this to track shipment status, verify received quantities, and prepare compliance reports.
 
 List all B2B transfer transactions (incoming and outgoing)
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openthc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openthc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenTHC** tools.
 
 **Configuration:**

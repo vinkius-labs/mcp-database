@@ -32,7 +32,7 @@ Connect your AI agent to **HealthData.gov**, the central clearinghouse for open 
 - **Developers** — integrate official HHS data into applications by testing queries through a natural language interface.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_catalog**: Get catalog of datasets from HealthData.gov
 - **query_dataset**: g., 6xf2-c3ie) and SoQL parameters.
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `healthdatagov-hhs-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `healthdatagov-hhs-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HealthData.gov (HHS Open Data)** tools.
 
 **Configuration:**

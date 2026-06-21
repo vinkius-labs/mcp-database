@@ -13,7 +13,7 @@ Calculate optimal safety stock levels using Square Root, Statistical, and Fixed 
 The Safety Stock Calculator is a specialized engine designed to help supply chain professionals determine the ideal amount of buffer inventory needed to mitigate stockout risks. By analyzing demand and lead time variability, it provides three distinct calculation strategies: the Square Root method for simplified scaling, the Statistical method for advanced uncertainty modeling (accounting for both demand and lead time fluctuations), and the Fixed Coverage method for simple period-based buffering. Use `analyze_inventory_costs` to perform a comparative economic analysis, evaluating the trade-offs between holding costs and stockout risks across all methods to find your optimal inventory strategy.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_square_root_safety_stock**: Calculates safety stock using the simplified square root scaling method
 - **calculate_statistical_safety_stock**: Calculates safety stock using the advanced statistical method
 - **calculate_fixed_coverage_safety_stock**: Calculates safety stock based on a fixed number of periods of coverage
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `safety-stock-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `safety-stock-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Safety Stock Calculator** tools.
 
 **Configuration:**

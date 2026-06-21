@@ -13,7 +13,7 @@ Analyze chord sequences to identify Roman numeral functions, harmonic patterns, 
 The Chord Progression Analyzer is a specialized tool for musicians and music theorists. It bridges the gap between raw chord sequences and deep harmonic understanding. By using tools like `analyze_roman_numerals`, you can convert any list of chords into their Roman numeral functions relative to a specific key. The system also features `classify_progression` to detect complex patterns such as cadences or secondary dominants, and `lookup_musical_context` to reveal the emotional resonance and common musical genres associated with those specific movements. This MCP server is ideal for use in Cursor, VS Code, Claude Desktop, and Windsurf.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_roman_numerals**: g., "C Major") and returns the scale degrees as Roman numerals.
 
 Converts a list of named chords into their corresponding Roman numeral functions relative to a provided key
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chord-progression-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chord-progression-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chord Progression Analyzer** tools.
 
 **Configuration:**

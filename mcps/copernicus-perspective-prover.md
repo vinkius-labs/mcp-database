@@ -40,7 +40,7 @@ AI agents accept the default perspective and add workarounds when it fails. They
 | All pass | PERSPECTIVE_PROVEN | Frame shifted. Epicycles eliminated. |
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_copernicus_perspective**: Think like Copernicus — the most important scientific revolution was not discovering new data, it was looking at the SAME data from a different position. You must: (1) QUESTION THE DEFAULT — identify the assumed perspective, trace its origin (evidence vs convention vs authority vs habit), and calculate the complexity cost it forces. "The obvious approach" is the most dangerous phrase — geocentrism was obvious for 14 centuries, (2) COUNT EPICYCLES — list every workaround, exception, and special case needed to keep the current model working. Each workaround is a signal, not an edge case. Ptolemy needed 40+ epicycles — each was "reasonable," together they were a symptom. If you have 5+ workarounds, you likely have a broken model, not a complex domain, (3) PROPOSE ALTERNATIVE FRAME — describe a fundamentally different reference point. Not a tweak to the current model — a different CENTER. Copernicus did not add a better epicycle, he moved the Sun to the center. What would change if you moved your center?, (4) MOVE THE OBSERVER — reanalyze the SAME data from the new position. Do not describe the new frame — USE it. What patterns become visible from the new vantage point that were hidden before? Copernicus: retrograde motion became simple geometry. Same planets, different explanation, (5) COMPARE SIMPLICITY — count workarounds in BOTH frames. Not "obviously simpler" — measure: how many exceptions does each frame need? What new complexity does the alternative introduce? Is the tradeoff worth it? Count, do not assert. If rejected, you are locked in the current frame without examining alternatives.
 
 Structured reflection tool for Copernican perspective shifts — questioning default frames by counting accumulated workarounds as model-failure signals. Forces the agent to identify the assumed perspective, count its epicycles (patches that keep a broken model alive), propose a fundamentally different reference frame, reanalyze from the new position, and compare complexity measurably. Catches Default Lock (accepting the current framework as "obvious" without questioning its origin — geocentrism was "obvious" for 1,400 years), Epicycle Blindness (treating 5+ workarounds as "edge cases" instead of recognizing them as symptoms of a broken model), Tweak Addiction (proposing "improvements" to the current frame instead of a fundamentally different center — another epicycle, not heliocentrism), Observer Fixation (describing the alternative frame without actually reanalyzing data from the new position), and Simplicity Assertion ("obviously better" without counting workarounds in both frames). Call once per framework evaluation or when accumulated workarounds exceed 3
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `copernicus-perspective-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `copernicus-perspective-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Copernicus Perspective Prover** tools.
 
 **Configuration:**

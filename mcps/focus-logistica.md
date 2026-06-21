@@ -31,7 +31,7 @@ Connect **Focus Logística** to any AI agent and manage your Brazilian cargo tra
 - **Accounting Firms** — Retrieve XML and verify status for client compliance
 
 
-## Available Tools
+## Available Tools (7)
 - **close_mdfe**: Close/Finish a MDF-e
 - **consult_cte**: Consult CT-e status
 - **consult_mdfe**: Consult MDF-e status
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `focus-logistica` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `focus-logistica` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Focus Logística** tools.
 
 **Configuration:**

@@ -19,7 +19,7 @@ Asking an LLM to calculate personal or corporate finances is dangerous. AI model
 - **Zero-Dependency Execution:** Operates entirely natively within the V8 runtime, guaranteeing extreme speed and deterministic precision without relying on fragile external financial APIs.
 
 
-## Available Tools
+## Available Tools (1)
 - **analyze_budget**: You must provide the exact monthly income and a stringified JSON array of categorized expenses.
 
 Instantly applies the 50/30/20 financial rule to an income and expenses list, returning strict algorithmic deviations, percentages, and surplus/deficit health checks
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-503020-budget-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-503020-budget-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic 50/30/20 Budget Engine** tools.
 
 **Configuration:**

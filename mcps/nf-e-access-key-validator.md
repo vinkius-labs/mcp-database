@@ -13,7 +13,7 @@ Validate the structural integrity and compliance of Brazilian NF-e access keys.
 This MCP server provides specialized tools for verifying Brazilian Electronic Invoice (NF-e) access keys. Use `verify_key_structure` to check the 44-digit sequence for mathematical validity using the Modulo 11 algorithm. The `extract_key_metadata` tool decomposes a valid key into its constituent parts, such as CNPJ and State Code, while `validate_business_compliance` audits these components against official tax authority standards.
 
 
-## Available Tools
+## Available Tools (3)
 - **extract_key_metadata**: Decomposes a valid access key into its constituent business parts for inspection
 - **validate_business_compliance**: Checks if the components within a key adhere to allowed tax authority standards
 - **verify_key_structure**: Determines if an access key is structurally valid based on length and the mathematical checksum
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nf-e-access-key-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nf-e-access-key-validator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NF-e Access Key Validator** tools.
 
 **Configuration:**

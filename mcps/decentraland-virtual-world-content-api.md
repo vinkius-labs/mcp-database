@@ -33,7 +33,7 @@ Connect to the **Decentraland** ecosystem and interact with the metaverse's cont
 - **Data Analysts** — Gather statistics on user distribution and realm health for research or reporting.
 
 
-## Available Tools
+## Available Tools (15)
 - **list_attending_events**: Requires authentication.
 
 List events the authenticated user is attending
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `decentraland-virtual-world-content-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `decentraland-virtual-world-content-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Decentraland (Virtual World Content API)** tools.
 
 **Configuration:**

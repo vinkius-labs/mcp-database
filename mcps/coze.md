@@ -34,7 +34,7 @@ Connect your AI agents to **Coze** (扣子), the advanced bot orchestration plat
 - **System Integrators** — build complex AI workflows that require dynamic knowledge base management
 
 
-## Available Tools
+## Available Tools (11)
 - **create_chat**: Send a message to a Coze bot and get a response
 - **list_bots**: List published bots in a specific Coze Space
 - **list_datasets**: List knowledge base datasets in a Coze Space
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coze** tools.
 
 **Configuration:**

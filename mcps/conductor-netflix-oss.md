@@ -33,7 +33,7 @@ Connect your **Netflix Conductor** instance to any AI agent to orchestrate compl
 - **System Architects** — visualize and query the structure of complex distributed processes via natural language
 
 
-## Available Tools
+## Available Tools (49)
 - **add_task_log**: Add a log entry to a task
 - **bulk_pause**: Bulk pause workflows
 - **bulk_remove**: Bulk remove workflows
@@ -145,7 +145,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `conductor-netflix-oss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `conductor-netflix-oss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Conductor (Netflix OSS)** tools.
 
 **Configuration:**

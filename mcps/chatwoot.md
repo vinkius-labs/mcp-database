@@ -35,7 +35,7 @@ Connect your **Chatwoot** account to any AI agent and take full control of your 
 - **Developers** — automate message routing and contact synchronization
 
 
-## Available Tools
+## Available Tools (8)
 - **get_contact_details**: Get detailed information for a specific customer contact
 - **get_conversation_details**: Get detailed information for a specific conversation
 - **list_support_agents**: List all support agents in the account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chatwoot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chatwoot` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chatwoot** tools.
 
 **Configuration:**

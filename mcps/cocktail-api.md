@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire mixology research and recipe au
 - **Operations Leads** — automate recipe data querying to orchestrate cross-functional hospitality teams smoothly.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_cocktails_by_ingredients**: Find cocktail recipes by specific ingredients
 - **get_classic_margaritas**: Get classic Margarita variations
 - **get_classic_martinis**: Get classic Martini variations
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cocktail-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cocktail-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cocktail API** tools.
 
 **Configuration:**

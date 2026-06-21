@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire literary research and quote aud
 - **Operations Leads** — automate literary data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the Quotable API service is operational
 - **get_author_details**: Get full details and biography for a specific author by slug
 - **get_random_quote**: Get a random quote with optional tag or author filters
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `quotable-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `quotable-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Quotable API** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ Connect your **Openscreen** account to empower your AI agents with smart QR code
 3. Start managing your smart interactions from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (9)
 - **create_asset_with_qr**: Create an asset and its QR code
 - **get_asset**: Get asset details
 - **get_project**: Get project details
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openscreen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openscreen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Openscreen** tools.
 
 **Configuration:**

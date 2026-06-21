@@ -13,7 +13,7 @@ Identify pet life stages and generate customized veterinary and lifestyle protoc
 The Pet Senior Care Planner helps owners manage the aging process of their pets. By using `identify_pet_life_stage`, you can determine if a pet is in the Adult, Senior, or Geriatric phase based on species, breed, and age. Once the stage is identified, use `get_veterinary_protocol` to find recommended checkup frequencies and diagnostic tests, and `get_lifestyle_recommendations` to discover necessary dietary and exercise adjustments for optimal health during aging.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_lifestyle_recommendations**: Provides lifestyle recommendations based on life stage
 - **get_veterinary_protocol**: Provides veterinary monitoring requirements for a life stage
 - **identify_pet_life_stage**: Determines the current biological life stage of a pet
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-senior-care-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-senior-care-planner` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Senior Care Planner** tools.
 
 **Configuration:**

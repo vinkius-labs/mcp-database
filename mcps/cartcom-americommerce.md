@@ -34,7 +34,7 @@ Connect your **AmeriCommerce (Cart.com)** store to your AI agent to unlock profe
 - **Operations Specialists** — retrieve daily sales reports and synchronize data with external tools
 
 
-## Available Tools
+## Available Tools (10)
 - **list_products**: Supports pagination.
 
 List store products
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cartcom-americommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cartcom-americommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cart.com (AmeriCommerce)** tools.
 
 **Configuration:**

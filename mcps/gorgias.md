@@ -34,7 +34,7 @@ Your AI agent acts as a junior support representative, capable of summarizing lo
 - **E-commerce Managers** — quickly look up a customer's support history before reaching out for a sales call
 
 
-## Available Tools
+## Available Tools (12)
 - **create_customer**: Create a new customer profile
 - **create_message**: Add a message (reply or internal note) to a ticket
 - **create_ticket**: Create a new ticket
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gorgias` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gorgias` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gorgias** tools.
 
 **Configuration:**

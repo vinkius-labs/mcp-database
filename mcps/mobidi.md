@@ -21,7 +21,7 @@ Connect your **MOBIDI** platform to any AI agent and manage business intelligenc
 - **System Services** — View available platform services
 
 
-## Available Tools
+## Available Tools (12)
 - **check_mobidi_status**: Verify API connectivity
 - **create_record**: Create a record
 - **delete_record**: Delete a record
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mobidi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mobidi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MOBIDI** tools.
 
 **Configuration:**

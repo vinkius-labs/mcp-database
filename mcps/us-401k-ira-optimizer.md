@@ -13,7 +13,7 @@ Optimize your retirement contributions using tax arbitrage strategies.
 This MCP server provides a specialized engine for maximizing retirement wealth through strategic tax arbitrage. By analyzing your current marginal tax rate against your projected future tax rate, the `determine_optimal_sequence` tool identifies the most efficient order of funding across accounts like 401k, HSA, and IRA. Additionally, you can use `calculate_tax_savings` to quantify the tax shield benefits and `project_wealth_growth` to forecast long-term portfolio balances based on your contribution plan.
 
 
-## Available Tools
+## Available Tools (3)
 - **determine_optimal_sequence**: Determine the optimal order of account contributions
 - **calculate_tax_savings**: Calculate estimated annual and cumulative tax savings
 - **project_wealth_growth**: Project future growth of retirement assets
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-401k-ira-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-401k-ira-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US 401k & IRA Optimizer** tools.
 
 **Configuration:**

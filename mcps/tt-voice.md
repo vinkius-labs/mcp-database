@@ -36,7 +36,7 @@ Connect your AI agents to **LiveKit**, the open-source framework and cloud platf
 - **Game Developers** — create dynamic voice channels tied to game state and matchmaking
 
 
-## Available Tools
+## Available Tools (10)
 - **create_room**: Participants can join it via access tokens.
 
 Create a new LiveKit room with specified settings
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tt-voice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tt-voice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LiveKit Real-Time Rooms** tools.
 
 **Configuration:**

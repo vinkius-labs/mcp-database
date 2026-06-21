@@ -36,7 +36,7 @@ Eliminate the daily grind of refreshing seller dashboards. Your AI agent now pro
 - **E-commerce Analysts** — pull product performance data and return rates for optimization decisions directly from the AI workspace
 
 
-## Available Tools
+## Available Tools (12)
 - **create_ship_order**: Uses the v2 ship order creation API.
 
 Create a shipping order to fulfill a delivery
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `temu-seller-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `temu-seller-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Temu Seller Hub** tools.
 
 **Configuration:**

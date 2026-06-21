@@ -32,7 +32,7 @@ Integrate **Epsilon3**, the leading software platform for aerospace and complex 
 - **Safety & Quality Teams** — Monitor compliance with safety protocols and organizational operational metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_latest_procedure_executions**: Identify the most recently started or completed procedure runs
 - **get_run_execution_telemetry**: Get detailed execution data and telemetry for a specific procedure run
 - **list_successfully_completed_runs**: Identify procedure runs that have reached a "Completed" status
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epsilon3-aerospace-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epsilon3-aerospace-operations` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Epsilon3 Aerospace Operations** tools.
 
 **Configuration:**

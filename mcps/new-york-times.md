@@ -34,7 +34,7 @@ The NYTimes API is free for development use, providing a generous limit of reque
 - **Cinephiles** — Explore the Paper of Record's vast collection of film criticism
 
 
-## Available Tools
+## Available Tools (9)
 - **get_archive**: Get all articles for a specific month
 - **get_book_lists**: "list_name_encoded" is the list slug (e.g., "hardcover-fiction"). Optional date is YYYY-MM-DD.
 
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `new-york-times` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `new-york-times` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **New York Times** tools.
 
 **Configuration:**

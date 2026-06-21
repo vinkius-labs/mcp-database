@@ -36,7 +36,7 @@ No more manual exporting of transaction CSVs. Your AI assistant acts as a dedica
 - **Financial Officers** — automate the oversight of payments and subscriptions across multiple associations.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_checkout_intent**: Pass the amount in cents (EUR) and other required fields as a JSON string in "body_json". Returns a redirect URL for the payer.
 
 Generate a checkout link to receive a payment
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `helloasso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `helloasso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HelloAsso** tools.
 
 **Configuration:**

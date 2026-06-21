@@ -28,7 +28,7 @@ Connect your AI agent to **Kontak** to automate your customer communications and
 4. Start managing your communications via chat
 
 
-## Available Tools
+## Available Tools (10)
 - **list_kontak_messages**: List all sent and received messages
 - **get_message_details**: Get details for a specific message
 - **list_kontak_contacts**: List all contacts
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kontak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kontak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kontak** tools.
 
 **Configuration:**

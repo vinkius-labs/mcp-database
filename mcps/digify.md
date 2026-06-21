@@ -32,7 +32,7 @@ Integrate **Digify**, the leading document security and virtual data room (VDR) 
 - **Corporate Development** — Manage virtual data rooms and track participant activity during M&A or fundraising.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_security_account_metadata**: Retrieve metadata and usage limits for your Digify account
 - **get_dataroom_details**: Get detailed settings and member lists for a specific data room
 - **get_secure_file_details**: Get detailed information and security settings for a specific file
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `digify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `digify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Digify** tools.
 
 **Configuration:**

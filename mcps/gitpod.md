@@ -32,7 +32,7 @@ Connect your **Gitpod** account to any AI agent to orchestrate your cloud develo
 - **Engineering Leads** — Monitor workspace usage and audit logs to maintain security and cost efficiency.
 
 
-## Available Tools
+## Available Tools (26)
 - **create_and_start_workspace**: Create and start a new Gitpod workspace
 - **create_configuration**: Create a new repository configuration in Gitpod
 - **create_environment_variable**: Create an environment variable for a repository configuration
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gitpod` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gitpod` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gitpod** tools.
 
 **Configuration:**

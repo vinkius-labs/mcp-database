@@ -34,7 +34,7 @@ No more searching through endless lists manually. Your AI acts as a gaming scout
 - **Developers** — analyze market trends and category distributions in the free-to-play market.
 
 
-## Available Tools
+## Available Tools (3)
 - **filter_games**: g., 3d.mmorpg.fantasy.pvp) and platform constraints.
 
 Filter games using multiple tags
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freetogame` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freetogame` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FreeToGame** tools.
 
 **Configuration:**

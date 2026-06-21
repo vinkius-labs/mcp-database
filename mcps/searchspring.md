@@ -32,7 +32,7 @@ Connect your **Searchspring** store (now part of Athos Commerce) to any AI agent
 - **Customer Support** — quickly lookup an exact SKU to confirm pricing and specs without leaving the chat interface when responding to a customer
 
 
-## Available Tools
+## Available Tools (10)
 - **search_brand**: Lists products from a specific brand
 - **search_category**: g., "Mens>Shoes").
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `searchspring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `searchspring` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Searchspring** tools.
 
 **Configuration:**

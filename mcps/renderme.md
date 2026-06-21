@@ -35,7 +35,7 @@ No more manual editing or complex media processing. Your AI acts as a dedicated 
 - **Operations Teams** — streamline the management of cloud assets and monitor organizational media health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify RenderMe API connectivity
 - **get_template_details**: Get details for a specific video template
 - **get_render_job_status**: Check status of a render job
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `renderme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `renderme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **RenderMe** tools.
 
 **Configuration:**

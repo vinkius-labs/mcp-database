@@ -32,7 +32,7 @@ Integrate **DebtPayPro**, the specialized CRM for the debt settlement and financ
 - **Sales Managers** — Monitor lead pipelines and team task completion during planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_new_contact**: Persists a new contact record with the provided name and email, returning the newly generated system ID.
 
 Add a new contact to the DebtPayPro database
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `debtpaypro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `debtpaypro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DebtPayPro** tools.
 
 **Configuration:**

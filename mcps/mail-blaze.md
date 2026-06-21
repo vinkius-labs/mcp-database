@@ -33,7 +33,7 @@ Connect your **Mail Blaze** account to any AI agent to automate your email marke
 - **Developers** — Integrate email automation logic and subscriber management into your custom internal tools
 
 
-## Available Tools
+## Available Tools (9)
 - **add_subscriber_to_list**: Requires a list UID and subscriber data.
 
 Add a new subscriber to a list
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mail-blaze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mail-blaze` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mail Blaze** tools.
 
 **Configuration:**

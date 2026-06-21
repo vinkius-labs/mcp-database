@@ -11,7 +11,7 @@ Connect Honeywell Home to any AI agent via MCP.
 
 
 
-## Available Tools
+## Available Tools (10)
 - **get_air_quality**: Returns data such as PM2.5 particulate levels, VOC (volatile organic compounds) index, CO2 concentration, humidity, and overall air quality rating. Use this to assess whether ventilation or air purification is needed.
 
 Get air quality readings from a Honeywell Home device
@@ -69,7 +69,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `honeywell-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `honeywell-home` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Honeywell Home** tools.
 
 **Configuration:**

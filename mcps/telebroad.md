@@ -34,7 +34,7 @@ Connect your **Telebroad** business communication account to any AI agent and si
 - **Business Owners** — maintain an organized record of business communications and faxes via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_profile**: Get the current Telebroad user profile
 - **get_sms_messages**: Get messages from a specific SMS conversation
 - **hangup_call**: Hang up an active call
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telebroad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telebroad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telebroad** tools.
 
 **Configuration:**

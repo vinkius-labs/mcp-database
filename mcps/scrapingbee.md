@@ -35,7 +35,7 @@ No more managing browser clusters or rotating proxy pools. Your AI acts as a ded
 - **Data Analysts** — streamline the conversion of dynamic web pages into structured datasets directly within the chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **extract_data**: Extract structured data from a page
 - **get_usage**: Get current API usage and remaining credits
 - **extract_data_with_ai**: Extract JSON data using natural language
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scrapingbee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scrapingbee` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ScrapingBee** tools.
 
 **Configuration:**

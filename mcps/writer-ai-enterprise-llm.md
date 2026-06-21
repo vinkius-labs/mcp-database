@@ -32,7 +32,7 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 - **Data Engineers** — Manage document pipelines and knowledge graphs directly through AI conversation.
 
 
-## Available Tools
+## Available Tools (24)
 - **add_file_to_graph**: Add an uploaded file to a Knowledge Graph
 - **analyze_vision**: Analyze images or documents using a prompt
 - **ask_question**: Ask a question against one or more Knowledge Graphs (RAG)
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `writer-ai-enterprise-llm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `writer-ai-enterprise-llm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Writer (AI Enterprise LLM)** tools.
 
 **Configuration:**

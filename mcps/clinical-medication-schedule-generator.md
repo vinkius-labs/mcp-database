@@ -18,7 +18,7 @@ Autonomous health agents demand uncompromising accuracy. When standard LLMs atte
 - **Algorithmic Consistency:** Built for Health-Tech AI workflows, it guarantees the 42nd dose of an antibiotic regimen is mapped with the exact same millisecond precision as the very first.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_dose_overlap**: Crucial for detecting drug interactions.
 
 Cross-references two medication schedules to detect simultaneous or dangerously close dosing times
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clinical-medication-schedule-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clinical-medication-schedule-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clinical Medication Schedule Generator** tools.
 
 **Configuration:**

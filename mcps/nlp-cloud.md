@@ -34,7 +34,7 @@ Integrate **NLP Cloud** into your AI workflows to leverage state-of-the-art Natu
 - **Customer Support Leads** — Analyze sentiment and categorize incoming tickets at scale.
 
 
-## Available Tools
+## Available Tools (6)
 - **perform_asr**: Provide the required JSON payload as per NLP Cloud docs.
 
 Extract text from audio or video files (ASR)
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nlp-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nlp-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NLP Cloud** tools.
 
 **Configuration:**

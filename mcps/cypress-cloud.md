@@ -35,7 +35,7 @@ Connect your **Cypress Cloud** enterprise account to any AI agent and take full 
 - **Engineering Managers** — monitor overall project quality and maintainability through automated enterprise reports
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: Useful for finding the `project_id`.
 
 List all projects on Cypress Cloud. Cypress is the leading JavaScript E2E testing framework. Returns project names, IDs, and org info via the Enterprise Data Extract API
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cypress-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cypress-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cypress Cloud** tools.
 
 **Configuration:**

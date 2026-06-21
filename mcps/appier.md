@@ -34,7 +34,7 @@ Connect your **Appier** environment to any AI agent and bring the power of AI-dr
 - **E-commerce Teams** — track recent high-value conversions dynamically based on predictive segments
 
 
-## Available Tools
+## Available Tools (8)
 - **list_campaigns**: List all AI marketing campaigns in Appier
 - **get_campaign**: Get specific marketing campaign details
 - **list_audiences**: List all target audiences
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `appier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `appier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Appier** tools.
 
 **Configuration:**

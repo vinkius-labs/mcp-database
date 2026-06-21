@@ -33,7 +33,7 @@ Populate your applications and prototypes with realistic user data instantly. Th
 - **Product Designers** — create high-fidelity mockups with diverse and realistic user profiles
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_users**: Supports filtering by gender, nationality, and pagination via seed.
 
 Generate random user data
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `random-user-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `random-user-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Random User Generator** tools.
 
 **Configuration:**

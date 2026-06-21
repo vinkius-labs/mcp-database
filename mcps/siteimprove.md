@@ -35,7 +35,7 @@ Stop digging through separate Siteimprove dashboards to figure out why your DCI 
 - **Front-end Developers** — ask your assistant to pull broken links and accessibility errors while you're coding to fix them proactively
 
 
-## Available Tools
+## Available Tools (9)
 - **list_sites**: Lists all monitored websites in Siteimprove
 - **get_site_details**: Retrieves details for a specific site
 - **get_site_summary**: Retrieves the Digital Certainty Index (DCI) overview for a site
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `siteimprove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `siteimprove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Siteimprove** tools.
 
 **Configuration:**

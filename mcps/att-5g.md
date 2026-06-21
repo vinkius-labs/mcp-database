@@ -38,7 +38,7 @@ No more writing custom HTTP clients to hit the AT&T Developer Portal. Your AI ag
 - **IoT Operators** -- guarantee connectivity for critical deployments with dedicated slice isolation
 
 
-## Available Tools
+## Available Tools (9)
 - **check_roaming_status**: Use this to apply correct billing rates, trigger roaming alerts, or optimize routing for international travelers.
 
 Check if a device is currently roaming on a foreign network
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `att-5g` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `att-5g` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AT&T 5G** tools.
 
 **Configuration:**

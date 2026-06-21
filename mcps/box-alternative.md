@@ -35,7 +35,7 @@ No more manual searching through browser tabs to find specific documents or chec
 - **IT & Admin Leads** — automate organizational file auditing and collaboration oversight through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **create_collaboration**: Requires the folder ID, the user's email (login), and an assigned role (e.g., "editor", "viewer", "previewer").
 
 Share a folder with a collaborator
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `box-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `box-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Box** tools.
 
 **Configuration:**

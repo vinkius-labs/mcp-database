@@ -21,7 +21,7 @@ The **FCC Geo MCP Server** connects your AI agent directly to the United States 
 Ideal for real estate analysts, logistics AI systems, urban planners, and spectrum licensing researchers needing instantaneous conversion from coordinates to official US government zones.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_census_block_by_lat_lon**: Essential for mapping physical spaces to regulatory regions.
 
 Convert exact geographic coordinates into US Census Blocks, Counties, and FIPS codes
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fcc-geo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fcc-geo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FCC Geo** tools.
 
 **Configuration:**

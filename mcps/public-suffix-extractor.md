@@ -18,7 +18,7 @@ When an analytics agent processes URLs, it cannot guess that in `app.vinkius.co.
 - **Complex TLDs:** Correctly handles .co.uk, .com.br, .org.au, .amazonaws.com, and 9,000+ other suffixes.
 
 
-## Available Tools
+## Available Tools (1)
 - **extract_domain**: The AI cannot reliably determine that the TLD of "app.vinkius.co.uk" is ".co.uk" (not ".uk"). This engine uses the official Mozilla Public Suffix List to fragment hostnames with 100% accuracy.
 
 Extracts the true root domain, TLD, subdomain, and SLD from any hostname using the official Mozilla Public Suffix List. Handles complex TLDs like .co.uk, .com.br correctly
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `public-suffix-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `public-suffix-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Public Suffix Extractor** tools.
 
 **Configuration:**

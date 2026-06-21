@@ -32,7 +32,7 @@ Connect your **WorkAdventure** virtual world to any AI agent and simplify how yo
 - **Developers & Designers** — query map metadata and test room variables directly from your workspace via AI.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_member**: Add a new member to the world
 - **delete_member**: Remove a member from the world
 - **get_map_details**: Get details of a specific map
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `workadventure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `workadventure` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WorkAdventure** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Biconomy** developer account to any AI agent to streamline Web3 o
 - **DeFi Power Users** — Execute multi-step transactions with optimized gas and simplified signing.
 
 
-## Available Tools
+## Available Tools (3)
 - **execute_supertx**: Requires the full quote object with signatures added to payloadToSign.
 
 Execute a signed Supertransaction
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `biconomy-account-abstraction` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `biconomy-account-abstraction` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Biconomy (Account Abstraction)** tools.
 
 **Configuration:**

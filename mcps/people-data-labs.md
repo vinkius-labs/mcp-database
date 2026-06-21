@@ -33,7 +33,7 @@ Connect **People Data Labs** to your AI agent to access one of the most comprehe
 - **Data Engineers** — Perform complex dataset queries and cleaning operations using SQL through an AI interface.
 
 
-## Available Tools
+## Available Tools (14)
 - **pdl_autocomplete**: Get autocomplete suggestions for Search API query values
 - **pdl_bulk_enrich_company**: Bulk enrich up to 100 companies
 - **pdl_bulk_enrich_person**: Bulk enrich up to 100 persons
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `people-data-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `people-data-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **People Data Labs** tools.
 
 **Configuration:**

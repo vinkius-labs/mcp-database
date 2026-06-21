@@ -13,7 +13,7 @@ Calculate a lead's conversion readiness score instantly using configurable firmo
 **How to Assess Lead Value in Minutes.**Finding high-potential leads is difficult. Traditional methods rely on guesswork or simple demographic matching, leading teams to waste time nurturing cold contacts. The core problem is accurately quantifying a lead's readiness for sales handoff.**The Solution: Weighted Predictive Scoring.** This calculator provides an objective score (0-100) based on measurable data. It operates in three steps:1. **Gather Profile Data:** We first use `query_lead_profile_data` to collect foundational attributes like company size, industry sector, and job title.2. **Retrieve Weights:** Next, we call `query_scoring_configuration` to fetch the latest scoring weights and qualification thresholds (e.g., what constitutes an MQL vs. SQL).3. **Calculate Score:** Finally, `calculate_converted_score` executes the weighted algorithm using all gathered data and configuration parameters, returning a composite score, classification status, and estimated conversion probability.**Key Advantage:** This system moves beyond simple lead counting. It provides actionable intelligence--a definitive status (Cold, Warm, Hot, MQL, SQL)--allowing sales teams to prioritize outreach based on calculated value, maximizing efficiency for the entire pipeline.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_converted_score**: Returns total score, qualification status (Cold/Warm/Hot/MQL/SQL), and estimated conversion probability.
 
 Calculate composite lead score with qualification status and conversion probability
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lead-scoring-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lead-scoring-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lead Scoring Calculator** tools.
 
 **Configuration:**

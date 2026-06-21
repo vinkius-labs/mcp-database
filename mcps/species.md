@@ -32,7 +32,7 @@ Connect to the **GBIF Backbone Taxonomy**, the most comprehensive database of bi
 - **Developers** — Integrate reliable species data into environmental or biological applications.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_species_children**: List child taxa for a specific taxon
 - **get_species_descriptions**: Retrieve text descriptions for a specific taxon
 - **get_species**: Retrieve detailed information for a specific taxon
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `species` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `species` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Species** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Generate exact SAC and Price (French) amortization schedules for real estate lit
 Challenging a bank's abusive interest rates in court requires presenting a flawless mathematical counter-schedule. Language models fail entirely when attempting to recursively generate 120-month Price or SAC amortization tables. This engine computes institutional-grade loan schedules entirely local. It isolates principal, interest, and exact monthly payments for every single period, allowing your legal agent to detect overcharging and construct unassailable litigation arguments.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_amortization**: Provide principal, months, and annual rate.
 
 Generates exact PRICE (French) or SAC (Constant Amortization) payment schedules
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `interest-amortization-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `interest-amortization-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Interest Amortization Engine** tools.
 
 **Configuration:**

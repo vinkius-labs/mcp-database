@@ -13,7 +13,7 @@ Team communication and project management.
 The Mela MCP server connects your AI agent directly to your workspace. Send channel messages, query project status, and summarize daily team updates without ever leaving your editor.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_activity**: Create a new job site or activity
 - **get_accounting_data**: Retrieve cost and accounting data for an activity
 - **get_activity**: Retrieve details for a specific activity
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mela` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mela` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mela** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **ngrok** account to any AI agent and take full control of your ing
 - **Security Teams** — monitor IP restrictions and vault usage to maintain compliance and secure access
 
 
-## Available Tools
+## Available Tools (7)
 - **list_api_keys**: List ngrok API keys
 - **list_endpoints**: List ngrok endpoints
 - **list_https_edges**: List ngrok HTTPS edges
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ngrok` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ngrok` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ngrok** tools.
 
 **Configuration:**

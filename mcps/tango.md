@@ -34,7 +34,7 @@ Connect your **Tango (formerly Tango Card)** reward platform account to any AI a
 - **Operations Leads** — monitor order histories and manage customer group funding via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_account**: Create a new funding account
 - **create_customer**: Create a new customer
 - **create_order**: Place a reward order
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tango` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tango` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tango** tools.
 
 **Configuration:**

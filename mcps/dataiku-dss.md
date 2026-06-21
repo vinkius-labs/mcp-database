@@ -35,7 +35,7 @@ Connect your **Dataiku DSS** instance to any AI agent and take full control of y
 - **Analytics Managers** — audit project metadata and data connections across the organization
 
 
-## Available Tools
+## Available Tools (14)
 - **list_projects**: List all DSS projects accessible to the API key
 - **get_project**: Get project metadata, settings, and tags
 - **list_datasets**: List all datasets in a project
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dataiku-dss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dataiku-dss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dataiku DSS** tools.
 
 **Configuration:**

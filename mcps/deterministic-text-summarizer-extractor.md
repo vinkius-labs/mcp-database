@@ -19,7 +19,7 @@ Large Language Models generate 'Abstractive' summaries (they write new text base
 - **Zero-Dependency Architecture:** Pure Javascript runtime execution guarantees absolute speed without bloated NLP packages.
 
 
-## Available Tools
+## Available Tools (3)
 - **extract_top_bigrams**: Extracts the top N most frequent two-word phrases (bigrams). Excellent for SEO topic modeling
 - **extract_top_keywords**: Extracts the top N most frequent keywords from a text (TF algorithm), ignoring stop words
 - **extractive_summary**: Performs algorithmic extractive summarization. It selects the most mathematically important sentences based on Term Frequency (TF)
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-text-summarizer-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-text-summarizer-extractor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Text Summarizer & Extractor** tools.
 
 **Configuration:**

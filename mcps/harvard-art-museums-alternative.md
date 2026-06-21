@@ -34,7 +34,7 @@ Connect to the **Harvard Art Museums API** and turn your AI agent into a sophist
 - **Curators & Educators** — Access exhibition histories and gallery layouts to plan educational content or tours.
 
 
-## Available Tools
+## Available Tools (35)
 - **get_annotation**: Get specific annotation details
 - **get_audio**: Get specific audio details
 - **get_exhibition**: Get specific exhibition details
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `harvard-art-museums-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `harvard-art-museums-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Harvard Art Museums** tools.
 
 **Configuration:**

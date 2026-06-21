@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to kick off complex wor
 - **Absolute Containment:** Because this is strictly a sending tool (Push only), the agent cannot read your Zapier account, cannot edit your Zaps, and cannot access other webhooks. It is a secure, one-way trigger.
 
 
-## Available Tools
+## Available Tools (1)
 - **trigger_zapier_webhook**: Provide the data you want to send in the "payloadJson" parameter as a valid JSON string. The Zap will receive this data and process it.
 
 Send a JSON payload to a Zapier Webhook (Catch Hook) to trigger an automation Zap
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zapier-webhook-trigger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zapier-webhook-trigger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zapier Webhook Trigger** tools.
 
 **Configuration:**

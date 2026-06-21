@@ -35,7 +35,7 @@ Connect AI agents to the Alpic platform for complete MCP server lifecycle manage
 Essential for **MCP server developers**, **DevOps engineers**, **platform teams**, **AI infrastructure managers**, and **SaaS companies** deploying MCP servers. Let AI agents handle continuous deployments, environment variable management, deployment debugging, and infrastructure monitoring. Perfect for teams managing 5+ MCP server environments who want to eliminate manual deployment steps, accelerate iteration cycles, and enable AI-driven infrastructure operations.
 
 
-## Available Tools
+## Available Tools (18)
 - **add_variable**: Use this to set API keys, database URLs, feature flags, or any configuration needed by your MCP server. Requires project ID, environment ID, variable key, and value. Variable values are stored securely.
 
 Add a new environment variable to an Alpic environment
@@ -152,7 +152,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `alpic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `alpic` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Alpic** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Manage schedules, timesheets, accruals, and time-off requests via UKG Pro WFM.
 The UKG Pro Workforce Management (WFM) MCP Server provides AI agents with direct access to UKG Dimensions/WFM APIs, allowing them to retrieve employee schedules, managing time-off, querying timesheets, and fetching accrual balances across the workforce.
 
 
-## Available Tools
+## Available Tools (4)
 - **accruals**: List accrual balances (e.g. sick leave, PTO)
 - **schedules**: List schedules for employees
 - **timeoff**: List time off requests for employees
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ukg-pro-workforce-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ukg-pro-workforce-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UKG Pro Workforce Management** tools.
 
 **Configuration:**

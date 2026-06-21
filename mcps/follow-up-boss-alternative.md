@@ -35,7 +35,7 @@ No more manual status checking or digging through CRM lists on the go. Your AI a
 - **Inside Sales Agents (ISAs)** — automate lead triaging and task management through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **log_lead_activity**: Log a new activity event
 - **add_internal_note**: Add a note to a lead profile
 - **create_new_lead**: Requires essential details like email or name.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `follow-up-boss-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `follow-up-boss-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Follow Up Boss** tools.
 
 **Configuration:**

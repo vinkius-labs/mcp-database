@@ -35,7 +35,7 @@ No more manual toggling between CRM tabs or digging through paper policy files. 
 - **Operations Leads** — automate the oversight of corporate client directories and task management through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Berg System API status
 - **create_new_company**: Add a new business client
 - **create_new_customer**: Supports forceAdd to bypass duplicates.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `berg-system-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `berg-system-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Berg System CRM** tools.
 
 **Configuration:**

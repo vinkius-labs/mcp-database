@@ -35,7 +35,7 @@ Your AI acts as a virtual operator, capable of spinning up meeting rooms for sup
 - **Product Managers** — automate the creation of unique meeting links for specific project workflows or client calls.
 
 
-## Available Tools
+## Available Tools (50)
 - **buy_phone_number**: Purchase a specific or random number
 - **create_batch_job**: Submit a batch processor job
 - **create_meeting_token**: Create a meeting token
@@ -152,7 +152,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dailyco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dailyco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Daily.co** tools.
 
 **Configuration:**

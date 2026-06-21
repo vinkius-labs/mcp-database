@@ -33,7 +33,7 @@ Connect your **Ziflow** account to any AI agent to automate your creative review
 - **Production Teams** — track asset versions and generate review links without leaving the project workspace.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_proof**: Create a new proof
 - **create_webhook**: created.
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ziflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ziflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ziflow** tools.
 
 **Configuration:**

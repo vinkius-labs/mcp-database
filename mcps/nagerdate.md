@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire public holiday and global event
 - **Operations Leads** — automate global event querying to orchestrate cross-functional international teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_country_details**: Get additional details for a specific country
 - **is_holiday_today**: Check if today is a public holiday in a country
 - **get_next_holidays_worldwide**: Get the next public holidays occurring worldwide
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nagerdate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nagerdate` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nager.Date** tools.
 
 **Configuration:**

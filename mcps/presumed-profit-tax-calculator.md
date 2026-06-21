@@ -13,7 +13,7 @@ Calculate Corporate Income Tax (CIT) and Social Contribution (SCLL) using the Pr
 This MCP server provides specialized tools for calculating Brazilian corporate taxes under the 'Presumed Profit' regime. It allows AI agents to determine the taxable base by applying activity-specific presumption rates (8%, 16%, or 32%), calculate the breakdown of Corporate Income Tax (CIT) including the monthly surcharge, and compute Social Contribution on Net Profit (SCLL). Using tools like `get_taxable_base`, `calculate_cit_breakdown`, `calculate_scll_liability`, and `generate_tax_summary_report`, agents can automate complex tax estimations for different business activities.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_cit_breakdown**: Calculate the breakdown of Corporate Income Tax (CIT)
 - **calculate_scll_liability**: Calculate the Social Contribution on Net Profit (SCLL) liability
 - **generate_tax_summary_report**: Generate a complete, consolidated tax summary report
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `presumed-profit-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `presumed-profit-tax-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Presumed Profit Tax Calculator** tools.
 
 **Configuration:**

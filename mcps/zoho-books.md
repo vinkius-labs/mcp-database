@@ -33,7 +33,7 @@ Connect your **Zoho Books** account to any AI agent to streamline your cloud acc
 - **Developers** — Integrate accounting data and billing automation into your daily development workflow
 
 
-## Available Tools
+## Available Tools (7)
 - **list_books_contacts**: List all contacts (customers/vendors)
 - **create_new_invoice**: Requires a JSON body with invoice details.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-books` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-books` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho Books** tools.
 
 **Configuration:**

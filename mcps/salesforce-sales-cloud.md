@@ -27,7 +27,7 @@ Connect **Salesforce Sales Cloud** to any AI agent — instant access to your CR
 - **Account Executives** — Update opportunities and log activities on-the-go
 
 
-## Available Tools
+## Available Tools (10)
 - **sf_create_lead**: lastName and company are required fields in Salesforce. Status defaults to "Open - Not Contacted". Once qualified, leads can be converted to Contact + Account + Opportunity in the Salesforce UI. Returns the created lead with its 18-character Salesforce ID.
 
 Create a new lead in Salesforce Sales Cloud with name, company, email, phone, title, and initial status
@@ -145,7 +145,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `salesforce-sales-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `salesforce-sales-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Salesforce Sales Cloud** tools.
 
 **Configuration:**

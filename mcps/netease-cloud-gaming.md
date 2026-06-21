@@ -34,7 +34,7 @@ Connect your AI agents to **NetEase Cloud Gaming (网易云游戏)**, the leadin
 - **Platform Integrators** — build custom cloud gaming portals using NetEase infrastructure
 
 
-## Available Tools
+## Available Tools (10)
 - **add_user_quota**: Add cloud play time to a user account
 - **create_session**: Initialize a new NetEase cloud gaming session
 - **get_cluster_info**: Get detailed info for a specific cluster
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `netease-cloud-gaming` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `netease-cloud-gaming` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NetEase Cloud Gaming** tools.
 
 **Configuration:**

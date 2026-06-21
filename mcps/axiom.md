@@ -33,7 +33,7 @@ Connect your **Axiom** account to any AI agent to streamline your observability 
 - **Data Analysts** — ingest and analyze large datasets using Axiom's powerful processing language through simple natural language prompts.
 
 
-## Available Tools
+## Available Tools (31)
 - **create_annotation**: Create a new annotation
 - **create_dashboard**: Create a new dashboard
 - **create_dataset**: Create a new dataset
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `axiom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `axiom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Axiom** tools.
 
 **Configuration:**

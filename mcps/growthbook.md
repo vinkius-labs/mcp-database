@@ -33,7 +33,7 @@ Connect your **GrowthBook** account to any AI agent to streamline your experimen
 - **DevOps Engineers** — audit environment configurations and project structures via simple natural language queries
 
 
-## Available Tools
+## Available Tools (15)
 - **create_environment**: Create a new GrowthBook environment
 - **create_feature**: Create a new GrowthBook feature flag (v2)
 - **create_project**: Create a new GrowthBook project
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `growthbook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `growthbook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GrowthBook** tools.
 
 **Configuration:**

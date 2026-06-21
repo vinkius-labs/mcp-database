@@ -35,7 +35,7 @@ Connect your **Marketplacer** instance to any AI agent and take full control of 
 - **Dropshipping Operations** — audit shipment statuses and track cross-vendor invoices efficiently to maintain high fulfillment standards
 
 
-## Available Tools
+## Available Tools (9)
 - **list_adverts**: Use this tool to list product items.
 
 List Marketplacer adverts (products)
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `marketplacer-enterprise-marketplace-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `marketplacer-enterprise-marketplace-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Marketplacer (Enterprise Marketplace Platform)** tools.
 
 **Configuration:**

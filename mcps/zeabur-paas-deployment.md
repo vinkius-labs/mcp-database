@@ -33,7 +33,7 @@ Connect your **Zeabur** account to any AI agent to automate your cloud infrastru
 - **Backend Teams** — integrate transactional email sending and container file management into automated workflows.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_upload_stage**: Create an upload stage for deploying pre-packaged applications
 - **deploy_template**: Deploy a service using a template specification YAML
 - **download_file**: Download a file from a service container
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zeabur-paas-deployment` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zeabur-paas-deployment` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zeabur (PaaS Deployment)** tools.
 
 **Configuration:**

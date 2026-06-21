@@ -32,7 +32,7 @@ Integrate **Documo**, the next-generation digital fax and document workflow plat
 - **IT Administrators** — Audit assigned fax lines and user access permissions instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_documo_account_metadata**: Retrieve metadata and usage limits for your Documo account
 - **get_fax_details**: Get detailed information and status for a specific fax
 - **quick_fax_volume_audit**: Retrieve a high-level summary of fax transmissions and success rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `documo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `documo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Documo** tools.
 
 **Configuration:**

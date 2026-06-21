@@ -33,7 +33,7 @@ Connect your **Dribbble** account to any AI agent to streamline your creative wo
 - **Marketing Teams** — quickly retrieve assets and metadata for social media or campaign planning.
 
 
-## Available Tools
+## Available Tools (15)
 - **create_attachment**: Requires upload scope and Pro/Team membership.
 
 Create an attachment for a shot
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dribbble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dribbble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dribbble** tools.
 
 **Configuration:**

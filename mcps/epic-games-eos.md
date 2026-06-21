@@ -32,7 +32,7 @@ Integrate your AI agent with **Epic Online Services (EOS)**, the high-performanc
 - **Gaming Enthusiasts** — interact with their Epic social graph using AI
 
 
-## Available Tools
+## Available Tools (3)
 - **get_account_info**: Retrieve public account information for one or more Epic Account IDs
 - **get_friends_list**: Retrieve the friends list for a specific Epic account
 - **search_store_catalog**: Search the Epic Games Store catalog (Note: Requires valid Sandbox/Deployment IDs)
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epic-games-eos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epic-games-eos` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Epic Games EOS** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Automate LLM regression analyses effortlessly. Rather than scrolling tables, you
 - **Data Scientists** — construct massive matrices and evaluate test runs without pulling script queries
 
 
-## Available Tools
+## Available Tools (10)
 - **create_experiment**: Establish a new historical experiment trace to record LLM pipeline tests
 - **create_project**: Create a new project environment for tracking AI evaluations and datasets
 - **list_datasets**: List isolated Ground Truth text banks used for automated evaluation scoring
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `braintrust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `braintrust` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Braintrust** tools.
 
 **Configuration:**

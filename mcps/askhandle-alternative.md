@@ -33,7 +33,7 @@ Connect your **AskHandle** account to any AI agent to manage your conversational
 - **Marketing Teams** — export and analyze lead lists captured through AI chat interactions for campaign follow-ups.
 
 
-## Available Tools
+## Available Tools (18)
 - **create_lead**: Manually create a new lead
 - **create_message**: Send a new message and get an AI response
 - **create_room**: Create a new chat room
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `askhandle-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `askhandle-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AskHandle** tools.
 
 **Configuration:**

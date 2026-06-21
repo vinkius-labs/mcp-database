@@ -33,7 +33,7 @@ Connect your **Buildium** account to any AI agent and orchestrate your property 
 - **Maintenance Coordinators** — monitor work orders and vendor lists using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_company_info**: Retrieve core company information
 - **get_property**: Get details of a specific property
 - **get_tenant**: Get details of a specific tenant
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buildium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buildium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buildium** tools.
 
 **Configuration:**

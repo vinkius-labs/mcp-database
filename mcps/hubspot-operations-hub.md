@@ -28,7 +28,7 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **Managers** — Full CRM visibility through conversation
 
 
-## Available Tools
+## Available Tools (6)
 - **hs_create_property**: Create a custom property (field) on a HubSpot CRM object to extend the data model with business-specific fields
 - **hs_list_all_pipelines**: Returns pipeline name, stage labels, internal stage IDs, and display order. Pipelines define the process stages for deals (sales process) or tickets (support process). Use when configuring automations, setting up deal/ticket routing, or when the user needs pipeline/stage IDs for creating records.
 
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-operations-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-operations-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot Operations Hub** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk.
 The CPF/CNPJ Batch Processor is a specialized utility for handling Brazilian identification numbers. Using the `validate_batch` tool, you can verify if a list of identifiers are officially valid or duplicates. The `format_batch` tool applies standard masks (dots and dashes) to make them human-readable, while `clean_batch` strips all non-numeric characters for database readiness.
 
 
-## Available Tools
+## Available Tools (3)
 - **clean_batch**: Clean a batch of identifiers
 - **format_batch**: 000.000-00 or 00.000.000/0000-00).
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cpfcnpj-batch-processor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cpfcnpj-batch-processor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CPF/CNPJ Batch Processor** tools.
 
 **Configuration:**

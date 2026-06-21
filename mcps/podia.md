@@ -32,7 +32,7 @@ Connect your **Podia** account to any AI agent to streamline your digital storef
 - **Support Teams** — look up customer details and subscription statuses to provide faster assistance.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_customer**: Create a new Podia customer
 - **get_customer**: Get details for a specific Podia customer
 - **get_product**: Get details for a specific Podia product
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `podia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `podia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Podia** tools.
 
 **Configuration:**

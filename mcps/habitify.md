@@ -36,7 +36,7 @@ No more manual data entry in the mobile app. Your AI assistant acts as a dedicat
 - **Self-Improvement Seekers** — integrate habit tracking into your daily digital workflow for better consistency.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_habit_log**: g., number of reps, minutes, or completion) to a habit.
 
 Record progress for a specific habit
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `habitify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `habitify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Habitify** tools.
 
 **Configuration:**

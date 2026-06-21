@@ -35,7 +35,7 @@ No more switching between mobile apps and desktop browsers to check the status o
 - **Specialty Contractors** — Update task progress and review site comments to stay aligned with the general contractor's schedule.
 
 
-## Available Tools
+## Available Tools (17)
 - **add_aws_post_tokens**: Generate AWS POST tokens for uploading files
 - **batch_move_floorplans**: Move floorplans to collections
 - **batch_update_statuses**: Batch create, update, or delete task statuses
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fieldwire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fieldwire` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fieldwire** tools.
 
 **Configuration:**

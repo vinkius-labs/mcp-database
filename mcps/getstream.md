@@ -33,7 +33,7 @@ Connect **GetStream** to your AI agent to orchestrate complex social architectur
 - **Community Managers** — manage social graphs and moderate feed content through natural conversation.
 
 
-## Available Tools
+## Available Tools (23)
 - **add_activity_to_feed**: Add an activity to a feed
 - **add_to_collection**: Add objects to a collection
 - **batch_delete_collections**: Batch delete collections
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `getstream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `getstream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GetStream** tools.
 
 **Configuration:**

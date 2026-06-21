@@ -33,7 +33,7 @@ Connect your **Strava** account to any AI agent to automate your athletic perfor
 - **Data Analysts** — streamline the retrieval of workout metadata and monitor segment performance directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_manual_activity**: Add manual workout
 - **get_activity_details**: Get activity info
 - **get_athlete_profile**: Get your info
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `strava` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `strava` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Strava** tools.
 
 **Configuration:**

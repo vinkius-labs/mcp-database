@@ -32,7 +32,7 @@ Integrate **DigitalOcean**, the leading cloud infrastructure provider, directly 
 - **System Administrators** — Audit cloud projects and firewall rules during maintenance or incident response.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_metadata**: Retrieve metadata and limits for your DigitalOcean account
 - **get_droplet_details**: Get detailed information for a specific Droplet
 - **list_app_platform_services**: List all applications deployed on DigitalOcean App Platform
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `digitalocean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `digitalocean` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DigitalOcean** tools.
 
 **Configuration:**

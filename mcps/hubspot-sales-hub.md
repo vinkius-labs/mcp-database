@@ -28,7 +28,7 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **Managers** — Full CRM visibility through conversation
 
 
-## Available Tools
+## Available Tools (9)
 - **hs_create_deal**: dealname is required. Specify pipeline and dealstage by their IDs (use hs_list_pipelines to find). Amount is a string representing monetary value. closedate is ISO format. If no pipeline is specified, the deal goes to the default pipeline at its first stage.
 
 Create a new deal/opportunity in the HubSpot sales pipeline with name, stage, amount, and expected close date
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hubspot-sales-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hubspot-sales-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HubSpot Sales Hub** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual logging to check if a message was delivered. Your AI acts as a de
 - **Developers** — integrate real-time SMS capabilities and balance tracking directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **check_api_connectivity**: Verify API connectivity
 - **get_gateway_settings**: Get current API and gateway configuration
 - **get_credit_balance**: Check remaining SMS credits
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onewaysms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onewaysms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OneWaySMS** tools.
 
 **Configuration:**

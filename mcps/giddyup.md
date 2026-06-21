@@ -35,7 +35,7 @@ No more manual toggling between project spreadsheets. Your AI acts as your dedic
 - **Operations Leaders** — monitor the entire construction pipeline and identify bottlenecks through automated queries
 
 
-## Available Tools
+## Available Tools (13)
 - **check_giddyup_status**: Verify connectivity
 - **create_job**: Create a job
 - **create_lead**: Create a lead
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `giddyup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `giddyup` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Giddyup** tools.
 
 **Configuration:**

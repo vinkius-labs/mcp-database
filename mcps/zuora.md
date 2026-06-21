@@ -38,7 +38,7 @@ No more manual navigation through complex billing dashboards to verify a charge.
 - **Developers** — test Zuora Order payloads and verify product catalog configurations rapidly
 
 
-## Available Tools
+## Available Tools (10)
 - **create_account**: Create a new billing account
 - **create_order**: Create a Zuora unified Order
 - **get_account**: Get account details
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zuora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zuora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zuora** tools.
 
 **Configuration:**

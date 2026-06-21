@@ -33,7 +33,7 @@ Seamlessly integrate your **Storybook** design system into your conversational A
 - **Technical Writers** — Extract existing Storybook documentation pathways automatically to maintain consistent, up-to-date design system guidelines.
 
 
-## Available Tools
+## Available Tools (6)
 - **extract_docs_guidance**: Get guidance on how to read documentation for a component
 - **get_preview_url**: Generate the preview URL for a component sandbox
 - **get_story_args**: Get metadata and default arguments for a specific component
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `storybook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `storybook` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Storybook** tools.
 
 **Configuration:**

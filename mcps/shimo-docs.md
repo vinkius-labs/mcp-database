@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your collaborative workflow with **Shimo Do
 - **Enterprise Leaders** — get real-time insights into organization-wide collaboration and document audit trails.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_file**: Create a new Shimo file
 - **export_file**: Export a Shimo file
 - **get_file**: Get file details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shimo-docs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shimo-docs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shimo Docs** tools.
 
 **Configuration:**

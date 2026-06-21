@@ -31,7 +31,7 @@ Connect your AI assistant to **Common Room**, the intelligent community growth p
 - **Growth Teams** — Build targeted segments and monitor community signal data in real time.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_contact_to_segment**: Manually add a contact to a specific segment
 - **get_contact_by_email**: Retrieve detailed information about a member by their email
 - **get_contact_tags**: Get tags associated with a specific member
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `common-room` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `common-room` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Common Room** tools.
 
 **Configuration:**

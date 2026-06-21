@@ -33,7 +33,7 @@ Connect your AI agent to the **Brazilian Ministry of Agriculture and Livestock (
 - **Policy Makers** — retrieve official government records to support decision-making and reporting
 
 
-## Available Tools
+## Available Tools (8)
 - **get_organization**: Get details for a specific organization
 - **get_package**: Get metadata for a specific dataset (package)
 - **get_resource**: Get metadata for a specific resource
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mapa-agricultura` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mapa-agricultura` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MAPA (Agricultura)** tools.
 
 **Configuration:**

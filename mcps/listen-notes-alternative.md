@@ -33,7 +33,7 @@ Connect your AI agent to **Listen Notes**, the premier search engine for podcast
 - **Developers** — integrate podcast discovery and audio metadata into your AI workflows
 
 
-## Available Tools
+## Available Tools (14)
 - **batch_episodes**: Batch fetch metadata for multiple episodes using their IDs
 - **batch_podcasts**: Batch fetch metadata for multiple podcasts
 - **create_playlist**: Create or update a playlist
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `listen-notes-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `listen-notes-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Listen Notes** tools.
 
 **Configuration:**

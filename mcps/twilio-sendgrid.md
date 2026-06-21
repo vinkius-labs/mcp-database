@@ -32,7 +32,7 @@ Unleash your AI agent over **Twilio SendGrid's** trusted enterprise email platfo
 - **Marketing Integrators** — query the global subscriber list numbers daily alongside other metrics completely through chat
 
 
-## Available Tools
+## Available Tools (16)
 - **delete_spam_report**: Use with caution — sending to users who report spam can damage your sender reputation.
 
 Remove an email from the spam report suppression list
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `twilio-sendgrid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `twilio-sendgrid` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Twilio SendGrid** tools.
 
 **Configuration:**

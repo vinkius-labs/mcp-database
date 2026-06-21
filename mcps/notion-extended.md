@@ -13,7 +13,7 @@ Manage your Notion workspace, databases, and pages via AI.
 Connect your Notion workspace to your AI agent. Search across databases, fetch page contents, update block properties, and create new knowledge entries directly from your chat without opening the Notion app.
 
 
-## Available Tools
+## Available Tools (12)
 - **append_block_children**: Append child blocks to an existing block or page
 - **create_page**: You must provide the parent object and properties (schema based on parent type).
 
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `notion-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `notion-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Notion** tools.
 
 **Configuration:**

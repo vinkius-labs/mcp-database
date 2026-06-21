@@ -30,7 +30,7 @@ Take complete proxy logistics control explicitly handling 1P Walmart Supplier st
 Specifically built for **1P Suppliers**, **Drop Ship Vendors**, and large scalable **Fulfillment Nodes**.
 
 
-## Available Tools
+## Available Tools (8)
 - **dsv_cancel_lines**: Cancel DSV explicitly parsing unfulfilled constraints isolating cleanly 1P seller structures natively
 - **dsv_check_node_status**: Poll safely logical Node arrays checking completely if the 1P distribution centers bounds are running efficiently
 - **dsv_get_orders**: Extract actively explicitly created Drop Ship Vendor orders resolving native structured logs inherently cleanly
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `walmart-drop-ship-vendor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `walmart-drop-ship-vendor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Walmart Drop Ship Vendor** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate US asset depreciation using MACRS, Section 179, and Bonus Depreciation
 This MCP server provides AI agents with specialized tools to calculate complex US tax depreciation. Using `get_asset_class_info`, agents can retrieve recovery periods for different asset classes like vehicles or buildings. The `calculate_depreciation_schedule` tool generates a full year-by-year breakdown of expenses, accounting for Section 179 expensing and Bonus Depreciation. Additionally, `calculate_expensing_impact` allows agents to compare the immediate tax benefits of accelerated expensing methods against standard MACRS depreciation.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_depreciation_schedule**: Generate a year-by-year depreciation schedule
 - **calculate_expensing_impact**: Compare the impact of Section 179 and Bonus Depreciation against standard MACRS
 - **get_asset_class_info**: g., car, residential, commercial).
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-depreciation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-depreciation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Depreciation Calculator** tools.
 
 **Configuration:**

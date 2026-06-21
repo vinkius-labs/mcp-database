@@ -33,7 +33,7 @@ Connect your **lemon.markets** account to any AI agent to automate your stock tr
 - **Developers** — Integrate stock trading and market data retrieval into custom trading bots or applications
 
 
-## Available Tools
+## Available Tools (8)
 - **get_brokerage_account**: markets trading account.
 
 Get trading account information
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lemonmarkets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lemonmarkets` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **lemon.markets** tools.
 
 **Configuration:**

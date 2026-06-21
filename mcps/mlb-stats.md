@@ -33,7 +33,7 @@ Connect the **MLB Stats** server to your AI agent to access the most comprehensi
 - **Developers** — Integrate professional sports data into your coding environment for testing or hobby projects.
 
 
-## Available Tools
+## Available Tools (13)
 - **list_divisions**: List all divisions
 - **list_game_status**: g., Final, In Progress).
 
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mlb-stats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mlb-stats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MLB Stats** tools.
 
 **Configuration:**

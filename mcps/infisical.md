@@ -33,7 +33,7 @@ Connect **Infisical** to your AI agent and manage your secrets infrastructure th
 - **Platform Engineers** — automate secret rotation and environment configuration workflows
 
 
-## Available Tools
+## Available Tools (9)
 - **create_secret**: The key must not already exist at that path. Use this to provision new configuration values or credentials.
 
 Create a new secret in the Infisical project
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `infisical` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `infisical` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Infisical** tools.
 
 **Configuration:**

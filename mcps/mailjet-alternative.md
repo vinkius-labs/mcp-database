@@ -34,7 +34,7 @@ Connect your **Mailjet** account to any AI agent and manage email operations thr
 - **Operations** — monitor deliverability and sender reputation
 
 
-## Available Tools
+## Available Tools (12)
 - **subscribe_to_list**: Add contact to list
 - **create_new_contact**: Add email to contacts
 - **get_campaign_performance**: ) for a specific campaign ID.
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailjet-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailjet-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailjet** tools.
 
 **Configuration:**

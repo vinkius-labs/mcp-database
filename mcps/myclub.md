@@ -26,7 +26,7 @@ Connect your **myClub** account to empower your AI agents with club management c
 3. Start managing your sports club directly from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_event**: Get details for a specific event
 - **get_invoice**: Get details for a specific invoice
 - **get_member**: Get details for a specific member
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `myclub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `myclub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **myClub** tools.
 
 **Configuration:**

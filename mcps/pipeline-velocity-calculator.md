@@ -13,7 +13,7 @@ Calculate sales pipeline velocity ($/day) and identify which operational metric 
 **Hook:** Your current sales forecast might feel vague. You know you need more revenue, but don't know where the gap is--the funnel size, the win rate, or the deal value.
 
 
-## Available Tools
+## Available Tools (3)
 - **project_revenue_and_sensitivity**: Also calculates how much revenue would change if each individual variable improved by a given percentage, helping identify which lever has the biggest impact.
 
 Project revenue for a period and analyze sensitivity to variable improvements
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipeline-velocity-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipeline-velocity-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipeline Velocity Calculator** tools.
 
 **Configuration:**

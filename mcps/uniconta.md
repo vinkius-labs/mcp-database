@@ -34,7 +34,7 @@ No digging into complicated Uniconta visual reports to pull a customer's address
 - **Account Executives** — call down 'get_debtor_details' immediately before meetings checking exactly if their previous invoices remain unpaid
 
 
-## Available Tools
+## Available Tools (8)
 - **get_debtor_details**: Retrieves details for a specific debtor
 - **list_gl_accounts**: Lists all General Ledger (GL) accounts in Uniconta
 - **list_creditors**: Lists all creditors (vendors) registered in the ERP
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uniconta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uniconta` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Uniconta** tools.
 
 **Configuration:**

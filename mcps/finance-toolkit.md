@@ -19,7 +19,7 @@ Financial mathematics require absolute deterministic precision. A single halluci
 - **Absolute Privacy (Local):** Sensitive financial planning data, loan principals, and proprietary rates never leave your local infrastructure.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_amortization**: Rate must be periodic decimal (e.g. monthly rate). Type must be "SAC" or "PRICE".
 
 Generates a summarized amortization schedule (SAC or PRICE table)
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `finance-toolkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `finance-toolkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Finance Toolkit** tools.
 
 **Configuration:**

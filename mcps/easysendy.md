@@ -35,7 +35,7 @@ No more manual subscriber management or complex CSV exports in the dashboard. Yo
 - **Business Owners** — monitor audience growth and manage subscriber lifecycles through simple AI commands
 
 
-## Available Tools
+## Available Tools (11)
 - **add_multiple_subscribers**: Input should be an array of subscriber objects.
 
 Add multiple subscribers to a list
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `easysendy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `easysendy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EasySendy** tools.
 
 **Configuration:**

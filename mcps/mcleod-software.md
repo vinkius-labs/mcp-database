@@ -26,7 +26,7 @@ Connect your **McLeod Software** LoadMaster or PowerBroker instance to any AI ag
 3. Start managing your logistics operations from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_dispatch_details**: Get details for a specific dispatch
 - **get_order**: Get details for a specific order
 - **list_carriers**: List master carrier records
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mcleod-software` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mcleod-software` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **McLeod Software** tools.
 
 **Configuration:**

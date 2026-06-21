@@ -31,7 +31,7 @@ Connect **Pagar.me** to any AI agent and unlock a powerful Brazilian payment inf
 - **Developers** — Integrate Pagar.me orders into complex AI workflows
 
 
-## Available Tools
+## Available Tools (11)
 - **create_boleto_order**: Create an order paid via Boleto
 - **cancel_order**: Cancel an order
 - **capture_order**: Capture an authorized order
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pagarme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pagarme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pagar.me** tools.
 
 **Configuration:**

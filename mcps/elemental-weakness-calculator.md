@@ -13,7 +13,7 @@ Calculate combat effectiveness and identify elemental imbalances using an intera
 This MCP server provides a specialized engine for managing and analyzing elemental interaction matrices. It allows AI agents to calculate precise damage multipliers, identify optimal and suboptimal combat matchups, and audit the stability of an entire elemental ecosystem. Using tools like `calculate_effective_damage`, `get_type_matchup_extremes`, and `analyze_matrix_stability`, developers can ensure balanced gameplay mechanics for RPGs or strategy games.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_matrix_stability**: Provides a high-level audit of the elemental system to identify potential gameplay imbalances
 - **calculate_effective_damage**: Returns effective damage and multiplier used.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elemental-weakness-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elemental-weakness-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elemental Weakness Calculator** tools.
 
 **Configuration:**

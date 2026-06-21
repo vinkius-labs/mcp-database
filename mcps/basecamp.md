@@ -35,7 +35,7 @@ Keep your work centralized and allow your AI agent to fetch updates or summarize
 - **Agency Owners** — monitor client project health, list overdue tasks, and track assignee distributions globally
 
 
-## Available Tools
+## Available Tools (7)
 - **list_projects**: List active Basecamp projects
 - **get_project**: Get a specific Basecamp project
 - **list_todolists**: List Basecamp todolists inside a todoset
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `basecamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `basecamp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Basecamp** tools.
 
 **Configuration:**

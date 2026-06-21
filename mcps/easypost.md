@@ -32,7 +32,7 @@ Integrate **EasyPost**, the leading shipping API for e-commerce, directly into y
 - **Customer Support** — Research specific tracking codes and delivery events to assist customers instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_easypost_account_metadata**: Retrieve metadata and usage limits for your EasyPost account
 - **list_carrier_accounts**: List all connected carrier accounts (e.g. UPS, FedEx, USPS)
 - **quick_delivery_health_audit**: Retrieve a high-level summary of shipment activity and delivery success rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `easypost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `easypost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EasyPost** tools.
 
 **Configuration:**

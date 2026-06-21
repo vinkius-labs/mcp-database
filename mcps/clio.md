@@ -36,7 +36,7 @@ Connect your **Clio** account to any AI agent and take full control of your lega
 - **Law Firm Ops** — verify matter structures and monitor user roles
 
 
-## Available Tools
+## Available Tools (23)
 - **list_matters**: Filter by status: open, closed, pending. Includes case number, description, client, and dates.
 
 List legal cases/matters
@@ -176,7 +176,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clio** tools.
 
 **Configuration:**

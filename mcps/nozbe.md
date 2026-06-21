@@ -13,7 +13,7 @@ Task management and team productivity.
 The Nozbe MCP server brings your team's task management directly to your AI agent. List projects, assign tasks, update priorities, and track team collaboration fluidly without navigating away from your chat interface.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_project**: Create a new project
 - **create_task**: Create a new task
 - **delete_task**: Permanently remove a task
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nozbe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nozbe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nozbe** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ The Natural Light Estimator addresses this gap by providing a structured workflo
 The system synthesizes these calculations using `generateRoomSpecificationReport` to produce a single, comprehensive report. This report gives architects and builders not just theoretical minimums, but concrete, dimensioned window specifications that meet code while remaining physically feasible for construction.
 
 
-## Available Tools
+## Available Tools (3)
 - **classify_lighting**: Classify a lux level into dark, dim, adequate, or bright category
 - **estimate_light_level**: Estimate natural light level in a room based on window area, room area, and latitude
 - **recommend_improvements**: Recommend improvements for a given lighting category
@@ -93,7 +93,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `natural-light-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `natural-light-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Natural Light Estimator** tools.
 
 **Configuration:**

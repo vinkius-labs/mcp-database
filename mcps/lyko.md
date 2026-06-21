@@ -43,7 +43,7 @@ No more navigating multiple transit operator websites or manually parsing schedu
 - **MaaS Developers** — integrate booking and trip planning into mobility applications
 
 
-## Available Tools
+## Available Tools (12)
 - **get_arrivals**: Returns list of arriving services with line names and numbers, origins, scheduled and real-time arrival times (ETA), platform or bay information, delay indicators, and operator details. Essential for passenger pickup coordination, arrival monitoring, transit hub management, and real-time arrival boards. AI agents use this when users ask "when does the next train arrive at X", "show incoming services at this station", or need to track arriving services for passenger coordination.
 
 Get upcoming arrivals at a specific transit stop
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lyko` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lyko` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lyko** tools.
 
 **Configuration:**

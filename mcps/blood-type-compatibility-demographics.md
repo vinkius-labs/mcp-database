@@ -13,7 +13,7 @@ Check blood and plasma transfusion compatibility, pregnancy risks, and regional 
 This MCP server provides specialized tools for medical and demographic inquiries regarding blood types. Use `get_rbc_compatibility` to determine if red blood cells can be safely transfused between donors and recipients. Use `get_plasma_rag_compatibility` (wait, checking tool name... it's `get_plasma_compatibility`) to check plasma transfusion safety. The `analyze_pregnancy_risk` tool evaluates Rh incompatibility risks for expectant mothers, while `get_population_distribution` provides statistical data on blood type prevalence in specific regions.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_plasma_compatibility**: Determines if a donor blood type can safely provide plasma to a recipient
 - **get_population_distribution**: Retrieves the blood type distribution for a specific region
 - **analyze_pregnancy_risk**: Evaluates the risk of Rh incompatibility between two partners
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blood-type-compatibility-demographics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blood-type-compatibility-demographics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blood Type Compatibility & Demographics** tools.
 
 **Configuration:**

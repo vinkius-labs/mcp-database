@@ -31,7 +31,7 @@ Connect AI agents to the American Airlines API for real-time flight tracking and
 Essential for **frequent travelers**, **travel agents**, **airport staff**, and **flight enthusiasts**. Let AI agents monitor flight delays, plan trips by comparing schedules, and provide terminal information. Perfect for anyone flying American Airlines who wants instant status updates and schedule visibility through natural language.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_airport_info**: Useful for checking terminal layouts or finding specific amenities at a hub airport.
 
 Get information about an airport served by American Airlines
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `american-airlines` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `american-airlines` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **American Airlines** tools.
 
 **Configuration:**

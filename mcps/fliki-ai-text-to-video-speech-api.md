@@ -33,7 +33,7 @@ No more manual video editing for simple social media clips or voiceovers. Your A
 - **Developers** — integrate automated video and speech generation into your existing AI-driven workflows.
 
 
-## Available Tools
+## Available Tools (3)
 - **generate_video**: Provide the script content and optional voice, aspect ratio, and background music.
 
 Generate a video based on a provided script or text
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fliki-ai-text-to-video-speech-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fliki-ai-text-to-video-speech-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fliki (AI Text-to-Video & Speech API)** tools.
 
 **Configuration:**

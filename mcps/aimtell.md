@@ -34,7 +34,7 @@ Connect your **Aimtell** account to your AI agent to unlock professional web pus
 - **Developers** — verify API campaign configurations and inspect subscriber metadata using simple commands
 
 
-## Available Tools
+## Available Tools (10)
 - **list_sites**: List managed websites
 - **list_subscribers**: List site subscribers
 - **get_subscriber_details**: Get subscriber metadata
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aimtell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aimtell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aimtell** tools.
 
 **Configuration:**

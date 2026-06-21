@@ -32,7 +32,7 @@ Integrate the powerful tracking of the **Structured** daily planner directly int
 - **Software Engineers** — Bind your daily agenda directly into your IDE conversational AI securely tracking progress locally.
 
 
-## Available Tools
+## Available Tools (9)
 - **list_plans**: Lists all structured plans
 - **get_plan_details**: Retrieves details for a specific plan
 - **create_plan**: Creates a new plan
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `structured` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `structured` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Structured** tools.
 
 **Configuration:**

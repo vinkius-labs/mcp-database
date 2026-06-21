@@ -21,7 +21,7 @@ The **ultimate ECB Mega-Server** — 14 tools across 4 domains.
 ### No API Key Required
 
 
-## Available Tools
+## Available Tools (14)
 - **list_dataflows**: Each dataflow has a code (e.g., EXR, FM, BSI) and description. Use these codes with the generic query tool to access any ECB data.
 
 List all available ECB statistical dataflows
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ecb-full-complete-eurozone-financial-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ecb-full-complete-eurozone-financial-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ECB Full — Complete Eurozone Financial Intelligence** tools.
 
 **Configuration:**

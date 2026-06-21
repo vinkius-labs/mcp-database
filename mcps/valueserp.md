@@ -35,7 +35,7 @@ Your AI agent becomes a robust, unblockable search intelligence engine.
 - **AI Developers** — augment your agent's knowledge with live, real-time Google Search results seamlessly.
 
 
-## Available Tools
+## Available Tools (10)
 - **custom_serp_search**: Provide parameters as a JSON object.
 
 Executes a highly customized Google search with advanced parameters
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `valueserp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `valueserp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ValueSERP** tools.
 
 **Configuration:**

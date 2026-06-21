@@ -32,7 +32,7 @@ Connect to the comprehensive **Pokemon TCG API** and turn your AI agent into a m
 - **Developers** — integrate real-time TCG data into your workflow or applications
 
 
-## Available Tools
+## Available Tools (8)
 - **get_card**: Get details for a specific Pokemon card by ID
 - **get_set**: Get details for a specific Pokemon card set by ID
 - **list_cards**: Use the "q" parameter to search (e.g., "name:charizard").
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pokemon-tcg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pokemon-tcg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pokemon TCG** tools.
 
 **Configuration:**

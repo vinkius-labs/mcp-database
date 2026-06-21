@@ -34,7 +34,7 @@ Equip your AI agent with the wonders of the universe through the **NASA Open Dat
 - **Content Creators** — source stunning official NASA imagery for various digital media.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_astronomy_picture**: Get the NASA Astronomy Picture of the Day (APOD)
 - **get_coronal_mass_ejections**: Get records of Coronal Mass Ejections (CME) from the Space Weather Database
 - **get_solar_flares**: Get records of Solar Flares from the Space Weather Database
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-open-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA Open Data** tools.
 
 **Configuration:**

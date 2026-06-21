@@ -35,7 +35,7 @@ No more context-switching between tools to check if a customer was replied to. Y
 - **Customer Success Leads** — ensure high-priority threads are tagged and assigned to the right account managers in seconds
 
 
-## Available Tools
+## Available Tools (12)
 - **create_shared_draft**: Draft team reply
 - **get_api_status**: Check connection
 - **get_conversation_details**: Read email thread
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hiver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hiver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hiver** tools.
 
 **Configuration:**

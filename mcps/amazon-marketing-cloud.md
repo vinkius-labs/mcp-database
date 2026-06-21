@@ -34,7 +34,7 @@ Connect your **Amazon Marketing Cloud (AMC)** instance to your AI agent to unloc
 - **Advertising Strategists** — request complex analytics reports via simple chat commands for external visualization
 
 
-## Available Tools
+## Available Tools (10)
 - **list_workflows**: List AMC workflows
 - **create_workflow**: Create an AMC workflow
 - **get_workflow_details**: Get workflow details
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazon-marketing-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazon-marketing-cloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazon Marketing Cloud** tools.
 
 **Configuration:**

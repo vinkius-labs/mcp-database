@@ -22,7 +22,7 @@ This MCP uses the official WCAG 2.1 relative luminance formula to calculate the 
 - **Exact Ratio:** The precise contrast ratio to 2 decimal places, not a guess.
 
 
-## Available Tools
+## Available Tools (1)
 - **check_color_contrast**: Pass foreground and background colors in any format (HEX, RGB, HSL, CSS name). Returns the exact contrast ratio, WCAG AA/AAA pass/fail for both normal and large text, and a human-readable verdict. AI cannot reliably calculate contrast ratios — this engine uses the official WCAG 2.1 relative luminance formula.
 
 Checks WCAG 2.1 color contrast ratio between foreground and background. Returns AA/AAA compliance for normal and large text
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `color-contrast-checker-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `color-contrast-checker-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Color Contrast Checker** tools.
 
 **Configuration:**

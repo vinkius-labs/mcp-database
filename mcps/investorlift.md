@@ -32,7 +32,7 @@ Connect your **InvestorLift** account to any AI agent to streamline your real es
 - **Investment Analysts** — pull property data into your analysis tools via AI conversation
 
 
-## Available Tools
+## Available Tools (5)
 - **list_deals**: List available deals in the marketplace
 - **get_buy_box**: Get your current buy box criteria
 - **get_deal**: Get detailed information about a specific deal
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `investorlift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `investorlift` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **InvestorLift** tools.
 
 **Configuration:**

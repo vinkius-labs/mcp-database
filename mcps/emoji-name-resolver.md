@@ -19,7 +19,7 @@ When a Martech agent crafts messages for Slack, Discord, and GitHub, each platfo
 - **1,800+ Emojis:** Complete database covering all standard Unicode emojis.
 
 
-## Available Tools
+## Available Tools (1)
 - **resolve_emoji**: Pass the input text and direction ("name-to-emoji" to convert :shortcodes: to emojis, or "emoji-to-name" to convert emojis back to :shortcodes:). Works on full strings with multiple emojis.
 
 Converts emoji shortcodes to Unicode emojis (:rocket: -> 🚀) and vice versa (🚀 -> :rocket:). Essential for cross-platform compatibility between Slack, Discord, and GitHub
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `emoji-name-resolver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `emoji-name-resolver` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Emoji Name Resolver** tools.
 
 **Configuration:**

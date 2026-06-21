@@ -33,7 +33,7 @@ Connect your **Zixflow** workspace to any AI agent to automate your sales and CR
 - **Operations Teams** — Monitor wallet usage and maintain CRM hygiene via simple natural language instructions
 
 
-## Available Tools
+## Available Tools (7)
 - **list_collections**: List all collections (People, Company, etc.)
 - **create_collection_record**: g., a person or company) to a specific Zixflow collection.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zixflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zixflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zixflow** tools.
 
 **Configuration:**

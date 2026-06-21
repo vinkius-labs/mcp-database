@@ -35,7 +35,7 @@ No more manual exporting of data to spreadsheet tools just to see a trend. Your 
 - **Developers** — test chart configurations and styles during the prototyping phase
 
 
-## Available Tools
+## Available Tools (2)
 - **generate_chart_url**: Best for standard charts with data under 2KB.
 
 Generate a GET URL for an Image-Charts chart
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `image-charts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `image-charts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Image-Charts** tools.
 
 **Configuration:**

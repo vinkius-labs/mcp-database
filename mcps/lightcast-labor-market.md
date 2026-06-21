@@ -32,7 +32,7 @@ Integrate **Lightcast** (formerly Emsi Burning Glass), the global leader in labo
 - **Educational Institutions** — Map curriculum to official skill taxonomies and occupation demands instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_lightcast_api_metadata**: Retrieve metadata and authorization status for your Lightcast API connection
 - **quick_labor_market_audit**: Retrieve a high-level summary of skills and occupations in the index
 - **get_labor_market_region_summary**: Get a high-level labor market summary for a specific economic region
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lightcast-labor-market` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lightcast-labor-market` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lightcast Labor Market** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Connect your **Fastly** account to any AI agent and take full control of your ed
 - **Frontend Developers** — verify CDN configurations and test edge routing logic directly from the IDE or chat
 
 
-## Available Tools
+## Available Tools (12)
 - **activate_service_version**: Activate a specific configuration version for a service
 - **create_service**: Create a new Fastly service
 - **delete_service**: Delete a specific Fastly service
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fastly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fastly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fastly** tools.
 
 **Configuration:**

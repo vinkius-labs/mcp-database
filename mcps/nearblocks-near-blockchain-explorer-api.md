@@ -32,7 +32,7 @@ Connect to the **Nearblocks API** to inspect the Near Protocol blockchain. This 
 - **DeFi Users** — Check your portfolio and transaction history through natural conversation.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_account_details**: Get basic information about a specific Near account
 - **get_account_inventory**: Get NFTs owned by a Near account
 - **get_account_tokens**: Get tokens owned by a Near account
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nearblocks-near-blockchain-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nearblocks-near-blockchain-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nearblocks (Near Blockchain Explorer API)** tools.
 
 **Configuration:**

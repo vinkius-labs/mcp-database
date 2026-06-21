@@ -35,7 +35,7 @@ No more manual data entry into the live chat dashboard. Your AI acts as your ded
 - **Operations Managers** — manage database hygiene and privacy compliance through automated contact deletion queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_formilla_status**: Verify connectivity
 - **delete_contact**: Delete a contact
 - **get_contact_by_email**: Get contact by email
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `formilla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `formilla` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Formilla** tools.
 
 **Configuration:**

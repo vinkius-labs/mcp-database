@@ -35,7 +35,7 @@ Connect your **Cleared (ClearedIn)** account to any AI agent and take full contr
 - **Operations Teams** — verify signature completion and session health
 
 
-## Available Tools
+## Available Tools (8)
 - **get_cleared_account_info**: Retrieve core account and user metadata
 - **get_screening_details**: Get detailed results for a specific screening
 - **get_signature_details**: Get detailed status for a specific signature request
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cleared-clearedin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cleared-clearedin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cleared (ClearedIn)** tools.
 
 **Configuration:**

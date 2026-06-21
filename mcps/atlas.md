@@ -28,7 +28,7 @@ The **Atlas MCP Server** provides a seamless natural language interface to your 
 - **Customer Success Managers** — Retrieve customer history and help articles to provide better assistance during client interactions.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_ticket**: Create a new support ticket
 - **get_account_check**: Verify Atlas account connection
 - **get_customer**: Get details for a specific customer
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `atlas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `atlas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Atlas** tools.
 
 **Configuration:**

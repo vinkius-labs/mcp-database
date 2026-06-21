@@ -13,7 +13,7 @@ Manage intranet people, content, and groups via Interact Software API.
 Empower your AI agents to interact with your corporate intranet using Interact Software. This MCP server allows you to list people, retrieve content and news, manage groups and departments, and search across your organization directly through the Interact API. Ideal for automating internal communications and knowledge retrieval.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_analytics**: Retrieves intranet usage analytics
 - **get_person**: Retrieves details for a specific person
 - **list_content**: Lists intranet content items
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `interact-software` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `interact-software` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Interact Software** tools.
 
 **Configuration:**

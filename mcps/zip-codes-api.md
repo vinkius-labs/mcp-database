@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire geographic research and ZIP cod
 - **Operations Leads** — automate geographic data querying to orchestrate cross-functional regional teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **find_zips_by_city**: Find all ZIP codes associated with a city and state
 - **find_zips_by_county**: Find all ZIP codes in a specific county
 - **find_zips_by_state**: Find all ZIP codes in a specific state
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zip-codes-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zip-codes-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZIP Codes API** tools.
 
 **Configuration:**

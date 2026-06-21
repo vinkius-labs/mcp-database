@@ -17,7 +17,7 @@ LLMs summarize differences rather than showing them exactly. This MCP uses the `
 - **Exact Patches:** See exactly which characters or lines were added or removed.
 
 
-## Available Tools
+## Available Tools (1)
 - **compare_texts**: Pass the original and modified versions and receive a structured diff with additions, deletions, and unchanged lines.
 
 Performs an exact line-by-line diff comparison between two strings
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `text-diff-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `text-diff-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Text Diff Engine** tools.
 
 **Configuration:**

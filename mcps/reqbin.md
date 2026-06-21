@@ -31,7 +31,7 @@ Connect to **ReqBin** to validate your API request structures and verify JSON pa
 - **Integrators** — ensure that payload structures match expected schemas during the development of complex tool-calling workflows.
 
 
-## Available Tools
+## Available Tools (1)
 - **echo_post_json**: Echo JSON data back from ReqBin
 
 
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `reqbin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `reqbin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ReqBin** tools.
 
 **Configuration:**

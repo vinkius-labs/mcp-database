@@ -13,7 +13,7 @@ Porter and Lancaster local text stemming. Reduce vocabulary size exactly and det
 Stemming reduces words to their root or base form (e.g., 'running' to 'run'). This is critical for preparing text for vector search, RAG, or topic modeling. Rather than asking an LLM to manually stem thousands of words (which wastes tokens and risks semantic alteration), this engine applies mathematically proven Porter or Lancaster algorithms natively local to clean and reduce your entire text corpus in one fast operation.
 
 
-## Available Tools
+## Available Tools (1)
 - **stem_text_corpus**: Applies Porter or Lancaster stemming algorithms to tokenize and stem text
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stemmer-lemmatizer-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stemmer-lemmatizer-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stemmer & Lemmatizer Engine** tools.
 
 **Configuration:**

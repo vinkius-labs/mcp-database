@@ -33,7 +33,7 @@ Connect your **Pixelfed** account to any AI agent to manage your decentralized p
 - **Fediverse Enthusiasts** — stay connected to the decentralized web through a unified AI interface
 
 
-## Available Tools
+## Available Tools (17)
 - **create_status**: Supports text content, media IDs, and visibility settings.
 
 Create a new post (status)
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pixelfed-instagram-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pixelfed-instagram-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pixelfed (Instagram Alternative)** tools.
 
 **Configuration:**

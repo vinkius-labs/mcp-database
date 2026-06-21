@@ -32,7 +32,7 @@ Connect your **WakaTime** account to any AI agent to analyze your coding habits,
 - **Data Enthusiasts** — analyze coding patterns and heartbeats to optimize your workflow.
 
 
-## Available Tools
+## Available Tools (14)
 - **create_external_duration**: Create activity from an external app
 - **create_heartbeat**: Create a raw coding activity ping
 - **get_all_time_since_today**: Get total time logged since account creation
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wakatime-coding-stats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wakatime-coding-stats` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WakaTime (Coding Stats)** tools.
 
 **Configuration:**

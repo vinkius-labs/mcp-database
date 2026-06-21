@@ -24,7 +24,7 @@ Explore FRED like a library. The Categories server lets your AI agent navigate t
 Data explorers, researchers discovering what data FRED has, and AI agents that need structured navigation of economic indicators.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_category**: Root category is 0. Major categories: 32991 (Money, Banking, & Finance), 10 (Population, Employment, & Labor Markets), 32992 (National Accounts), 1 (Production & Business Activity), 32455 (Prices).
 
 Get a FRED category by ID
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fred-categories-economic-data-taxonomy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fred-categories-economic-data-taxonomy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FRED Categories — Economic Data Taxonomy** tools.
 
 **Configuration:**

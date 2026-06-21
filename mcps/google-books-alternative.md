@@ -33,7 +33,7 @@ Connect your **Google Books** library to any AI agent to explore millions of tit
 - **Content Creators** — Verify book details, authors, and publication dates instantly during the writing process.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_volume_to_my_bookshelf**: 0 access token.
 
 Add a volume to a bookshelf
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `google-books-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `google-books-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Google Books** tools.
 
 **Configuration:**

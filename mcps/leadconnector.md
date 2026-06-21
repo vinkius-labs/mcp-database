@@ -30,7 +30,7 @@ Unleash the full potential of your **LeadConnector** (GoHighLevel) CRM straight 
 - **Sales Development** — fetch the phone or address string of a lead without interrupting flow and jump immediately to calling procedures naturally efficiently
 
 
-## Available Tools
+## Available Tools (3)
 - **list_appointments**: List calendar appointments
 - **list_contacts**: List contacts in LeadConnector
 - **list_opportunities**: List opportunities across pipelines
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `leadconnector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `leadconnector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LeadConnector** tools.
 
 **Configuration:**

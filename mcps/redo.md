@@ -36,7 +36,7 @@ Connect your **Redo** account to any AI agent to automate your returns managemen
 - **Logistics Managers** — automate the retrieval of shipping rates and monitor protection coverage levels.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_internal_note**: Post a return comment
 - **approve_return_claim**: Approve a request
 - **verify_api_connection**: Check connection
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `redo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `redo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Redo** tools.
 
 **Configuration:**

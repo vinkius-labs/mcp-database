@@ -13,7 +13,7 @@ Calculate K-factor, growth status, and project user base expansion through viral
 The Viral Coefficient Calculator is a specialized tool for analyzing product virality. By using the `evaluate_virality` tool, you can determine your K-factor and growth classification (Sub-critical, Critical, or Viral). Use `estimate_doubling_period` to find out how many cycles are needed to double your user base, and `forecast_growth_trajectory` to project population expansion over multiple future cycles. This MCP connects AI agents directly to precise viral growth modeling.
 
 
-## Available Tools
+## Available Tools (3)
 - **estimate_doubling_period**: Estimate the number of viral cycles needed to double the user base
 - **evaluate_virality**: Classifies as Sub-critical, Critical, or Viral.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `viral-coefficient-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `viral-coefficient-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Viral Coefficient Calculator** tools.
 
 **Configuration:**

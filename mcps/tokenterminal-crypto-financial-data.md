@@ -32,7 +32,7 @@ Connect **Token Terminal** to your AI agent to unlock deep financial insights in
 - **Developers** — integrate financial data into your workflow to build data-driven Web3 applications.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_market_metrics**: Get aggregated market data metrics
 - **get_project_metrics**: g., revenue, tvl, active_users) for a project.
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tokenterminal-crypto-financial-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tokenterminal-crypto-financial-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TokenTerminal (Crypto Financial Data)** tools.
 
 **Configuration:**

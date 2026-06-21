@@ -33,7 +33,7 @@ Integrate **Lorem Picsum** into your AI workflows to instantly generate placehol
 - **Content Managers** — find high-quality open-source images and their author credits for attribution
 
 
-## Available Tools
+## Available Tools (6)
 - **get_image_info**: Get metadata for a specific image ID
 - **get_random_image_url**: Can be customized with dimensions, grayscale, blur, and file extensions.
 
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lorem-picsum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lorem-picsum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lorem Picsum** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the official **USAJOBS** (Office of Personnel Management) database to
 - **Data Analysts** — Analyze federal hiring trends using historic JOA data and occupational series codes.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_announcement_text**: for historic JOAs.
 
 Retrieve long text fields for current and past job postings
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `usajobs-opm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `usajobs-opm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USAJOBS (OPM)** tools.
 
 **Configuration:**

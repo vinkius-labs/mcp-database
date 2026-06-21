@@ -31,7 +31,7 @@ Connect your AI assistant to **Conda** (Anaconda.org), the open-source package a
 - **DevOps Teams** — Audit which package versions are available before updating environment specs.
 
 
-## Available Tools
+## Available Tools (8)
 - **search_conda_forge**: Quickly search for packages in the conda-forge channel
 - **get_latest_package_version**: Retrieve the latest version string for a specific package
 - **get_package_details**: Retrieve detailed information about a specific package
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `conda-anacondaorg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `conda-anacondaorg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Conda (Anaconda.org)** tools.
 
 **Configuration:**

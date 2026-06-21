@@ -41,7 +41,7 @@ No more manually checking toll authority websites or estimating trip costs. Your
 - **Travel Budgeters** — get comprehensive cost breakdowns for any road trip with toll, fuel, and time costs
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_toll_multi_stop**: Returns detailed breakdown of tolls at each plaza along the complete route, fuel costs, and optional driver costs. Supports waypoint optimization to minimize total toll costs. Essential for delivery route planning, multi-stop trip budgeting, and logistics optimization. AI agents should use this when users need toll calculations for routes with multiple stops, such as "calculate tolls from Chicago to Detroit with stops in Toledo and Ann Arbor" or "what are the toll costs for my delivery route with 5 waypoints".
 
 Calculate tolls for a multi-stop route with multiple waypoints
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tollguru` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tollguru` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TollGuru** tools.
 
 **Configuration:**

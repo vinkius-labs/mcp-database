@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire media research and news auditin
 - **Operations Leads** — automate news data querying to orchestrate cross-functional research teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the WorldNews service is operational
 - **extract_news_from_url**: Extract article content and metadata from a specific news URL
 - **get_top_world_news**: Get top news headlines for a specific country and language
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `worldnewsapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `worldnewsapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WorldNewsAPI** tools.
 
 **Configuration:**

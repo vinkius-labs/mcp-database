@@ -35,7 +35,7 @@ Connect your **FreshBooks** account to any AI agent to automate your small busin
 - **Freelancers** — track projects, tasks, and time entries while focused on delivery in your primary workspace.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_info**: Get business info
 - **get_client_details**: Get client metadata
 - **get_invoice_details**: Get invoice metadata
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freshbooks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freshbooks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FreshBooks** tools.
 
 **Configuration:**

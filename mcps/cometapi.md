@@ -35,7 +35,7 @@ No more manual toggling between dozens of provider dashboards or managing multip
 - **Product Leads** — monitor AI model performance and costs across the entire organization through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **create_ai_chat_completion**: Supports GPT-4, Claude, Gemini, etc.
 
 Generate AI text response
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cometapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cometapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CometAPI** tools.
 
 **Configuration:**

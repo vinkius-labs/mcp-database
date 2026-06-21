@@ -32,7 +32,7 @@ Bring the legendary humor of **Chuck Norris** to your AI workspace. This MCP ser
 - **AI Enthusiasts** — A simple and reliable way to explore how MCP servers fetch external data.
 
 
-## Available Tools
+## Available Tools (3)
 - **list_categories**: Retrieve all available joke categories
 - **get_random_joke**: Can optionally be filtered by a specific category.
 
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chuck-norris` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chuck-norris` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chuck Norris** tools.
 
 **Configuration:**

@@ -27,7 +27,7 @@ The **Appcues MCP Server** empowers your AI agent to interact directly with your
 - **Customer Success** — View user profiles and segment membership to provide better support and guidance.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_account_details**: Verify Appcues account connection
 - **get_flow**: Get details for a specific flow
 - **get_segment**: Get details for a specific segment
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `appcues` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `appcues` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Appcues** tools.
 
 **Configuration:**

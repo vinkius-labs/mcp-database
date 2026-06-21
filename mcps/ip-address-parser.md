@@ -22,7 +22,7 @@ This MCP uses ipaddr.js (30M+ weekly downloads) — the exact same library that 
 - **IPv4↔IPv6 Conversion:** Convert `192.168.1.1` to its IPv4-mapped IPv6 representation `::ffff:192.168.1.1` and back.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_ip_address**: The engine uses ipaddr.js (30M+ downloads) which is the standard IP parsing library used by Express.js and Koa.
 
 Validates and parses IPv4/IPv6 addresses. Supports CIDR notation, range detection, and IPv4↔IPv6 conversion
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ip-address-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ip-address-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IP Address Parser** tools.
 
 **Configuration:**

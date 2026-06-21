@@ -34,7 +34,7 @@ Connect your **Feedly** account to any AI agent and take full control of your ne
 - **Knowledge Workers** — stay updated on curated feeds without leaving your primary productivity workspace
 
 
-## Available Tools
+## Available Tools (12)
 - **get_board_contents**: Retrieve articles from a specific board
 - **get_entry**: Get details for a specific article entry
 - **get_profile**: Get current Feedly user profile
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `feedly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `feedly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Feedly** tools.
 
 **Configuration:**

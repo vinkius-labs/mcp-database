@@ -13,7 +13,7 @@ Estimate your timeline and capital requirements for Financial Independence, Reti
 The FIRE Calculator is a specialized financial modeling tool designed to help you navigate the path to Financial Independence. By using tools like `calculate_milestones`, `get_lifestyle_targets`, and `simulate_contribution_impact`, you can project your retirement date, determine the net worth required for different lifestyle tiers (Lean, Standard, Fat, or Barista FIRE), and see how changes in your monthly savings rate will impact your timeline. It uses the 4% rule to provide realistic targets based on your expected real rate of return.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_milestones**: Calculate FIRE milestones
 - **get_lifestyle_targets**: Get FIRE lifestyle targets
 - **simulate_contribution_impact**: Simulate contribution impact
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fire-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fire-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FIRE Calculator** tools.
 
 **Configuration:**

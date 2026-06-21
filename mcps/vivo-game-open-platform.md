@@ -35,7 +35,7 @@ Connect your AI agents to the **Vivo Game Open Platform** (vivo 开放平台), t
 - **Backend Engineers** — integrate Vivo platform features into centralized game management dashboards
 
 
-## Available Tools
+## Available Tools (9)
 - **get_app_config**: Retrieve application configuration from Vivo platform
 - **get_server_time**: Synchronize with Vivo platform server time
 - **get_user_info**: Retrieve basic profile data for a Vivo user
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vivo-game-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vivo-game-open-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vivo Game Open Platform** tools.
 
 **Configuration:**

@@ -38,7 +38,7 @@ Your AI agent becomes a molecular biology research assistant with direct access 
 - **Bioinformaticians** — programmatically access proteomes, taxonomy, and genome coordinate mappings for pipeline integration
 
 
-## Available Tools
+## Available Tools (16)
 - **get_antigen**: These are peptide regions used for antibody generation, indicating experimentally validated protein expression targets. Useful for immunology and antibody-based research.
 
 Get antigen sequences from Human Protein Atlas
@@ -149,7 +149,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ebi-proteins-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ebi-proteins-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EBI Proteins API** tools.
 
 **Configuration:**

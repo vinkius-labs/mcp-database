@@ -18,7 +18,7 @@ LLMs lack entropy. If you ask an AI to generate 50 unique UUIDs for a database i
 - **ULID Support:** Need IDs that are lexicographically sortable by time? Generate ULIDs instantly to optimize your database indexing.
 
 
-## Available Tools
+## Available Tools (2)
 - **generate_ulid**: Returns a time-ordered, Crockford Base32 encoded ID ideal for database primary keys that need chronological sorting.
 
 Generates a time-sortable ULID (Universally Unique Lexicographically Sortable Identifier)
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uuid-ulid-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uuid-ulid-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UUID & ULID Generator** tools.
 
 **Configuration:**

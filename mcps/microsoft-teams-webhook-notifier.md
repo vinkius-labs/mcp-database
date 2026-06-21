@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to drop critical alerts
 - **Absolute Containment:** Because it's just a webhook, the agent cannot read your corporate emails, cannot snoop on other Teams channels, and cannot cause chaos. It is the purest, safest way to give your AI a megaphone in the enterprise world.
 
 
-## Available Tools
+## Available Tools (1)
 - **send_teams_message**: Provide the fallback text in the "text" parameter. Optionally, provide a rich UI element via the "cardJson" string.
 
 Send a notification or message to a Microsoft Teams channel via Webhook
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `microsoft-teams-webhook-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `microsoft-teams-webhook-notifier` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Microsoft Teams Webhook Notifier** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your AI agent to **DBpedia**, the structured heart of Wikipedia. This se
 - **AI Engineers** — provide agents with a factual grounding source for general knowledge and real-time events
 
 
-## Available Tools
+## Available Tools (8)
 - **retrieve_live_articles**: Extract recent data for a list of resource names
 - **get_live_changes**: List change events from the DBpedia Live Sync API
 - **get_live_resource**: Retrieve the most recent data for a specific Wikipedia page
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dbpedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dbpedia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DBpedia** tools.
 
 **Configuration:**

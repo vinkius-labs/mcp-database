@@ -33,7 +33,7 @@ Connect your AI agent to MapQuest, one of the pioneers in online mapping. This i
 - **Local Researchers** — find businesses and services in any specific area
 
 
-## Available Tools
+## Available Tools (5)
 - **geocode_address**: Convert an address into geographic coordinates (latitude and longitude)
 - **get_directions**: Get driving, walking, or cycling directions between two locations
 - **get_static_map_url**: Generate a static map image URL for a specific location
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mapquest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mapquest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MapQuest** tools.
 
 **Configuration:**

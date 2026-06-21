@@ -31,7 +31,7 @@ Connect **Spotify** to any AI agent and turn your voice or text prompts into mus
 - **Data Geeks** — Explore the audio features of songs to understand what makes a track 'danceable' or 'energetic'
 
 
-## Available Tools
+## Available Tools (13)
 - **get_album**: Get information about a specific album
 - **get_artist**: Get information about a specific artist
 - **get_current_track**: Returns empty if nothing is playing.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `spotify-music` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `spotify-music` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Spotify Music** tools.
 
 **Configuration:**

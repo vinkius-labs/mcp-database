@@ -30,7 +30,7 @@ Otreeba provides an open, transparent database of cannabis products and lab test
 - **Industry Analysts** -- Access open data for market research and product analysis
 
 
-## Available Tools
+## Available Tools (6)
 - **get_flower_lab_data**: ) and terpene data for a specific strain.
 
 Get lab test results for cannabis flower
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `otreeba-cannabis-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `otreeba-cannabis-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Otreeba Cannabis API** tools.
 
 **Configuration:**

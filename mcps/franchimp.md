@@ -35,7 +35,7 @@ Connect your **Franchimp** account to any AI agent to automate your franchise ma
 - **Business Consultants** — automate the gathering of FDD metadata and franchise stats for client advisory reports.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_info**: Get account attributes
 - **get_fdd_metadata**: Get FDD information
 - **get_investment_stats**: Get investment data
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `franchimp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `franchimp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Franchimp** tools.
 
 **Configuration:**

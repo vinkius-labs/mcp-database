@@ -18,7 +18,7 @@ When an AI Agent in logistics needs to generate a scannable barcode for a shippi
 - **Pure SVG:** No native image dependencies. Returns clean SVG markup embeddable in any HTML.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_barcode**: Pass the text to encode and the format (CODE128, EAN13, UPC, CODE39, ITF14, etc.). The engine returns valid SVG markup that can be embedded directly in HTML or printed. Never attempt to draw barcode patterns yourself.
 
 Generates mathematically exact 1D barcodes (Code128, EAN-13, UPC, ITF, Codabar) as pure SVG vectors for shipping labels, inventory tags, and retail products
@@ -73,7 +73,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jsbarcode-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jsbarcode-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSBarcode Generator** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Lob** account to any AI agent and manage direct mail through natu
 - **Operations** — verify addresses and track mail delivery
 
 
-## Available Tools
+## Available Tools (9)
 - **autocomplete_address**: Suggest address completions
 - **create_check**: Send a physical check
 - **create_letter**: Supports certified mail and custom inserts.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lob-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lob-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lob** tools.
 
 **Configuration:**

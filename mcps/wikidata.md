@@ -34,7 +34,7 @@ Connect to **Wikidata**, the central storage for structured data of Wikimedia pr
 - **Developers** — find entity IDs and property schemas to integrate into applications or automate data enrichment.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_statement**: Requires OAuth 2.0 Access Token.
 
 Create a new statement for an Item
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wikidata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wikidata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wikidata** tools.
 
 **Configuration:**

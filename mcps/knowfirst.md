@@ -27,7 +27,7 @@ Connect your AI agent to **KnowFirst**, the leading provider of real-time data i
 3. Start extracting data intelligence using natural language commands
 
 
-## Available Tools
+## Available Tools (10)
 - **search_intelligence_entities**: Returns unique entity IDs.
 
 Search for specific entities in the intelligence database
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `knowfirst` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `knowfirst` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **KnowFirst** tools.
 
 **Configuration:**

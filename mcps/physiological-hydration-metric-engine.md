@@ -19,7 +19,7 @@ Generic AI prompts telling users to 'drink 8 glasses of water' represent outdate
 - **Zero-Dependency Native Execution:** Bypasses external health APIs, ensuring sensitive biological inputs are processed strictly on local infrastructure.
 
 
-## Available Tools
+## Available Tools (5)
 - **calculate_full_hydration_plan**: Requires weightKg, and accepts optional physical/climate/time modifiers.
 
 Computes optimal physiological hydration targets and synthesizes a complete circadian fluid distribution schedule in one step
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `physiological-hydration-metric-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `physiological-hydration-metric-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Physiological Hydration Metric Engine** tools.
 
 **Configuration:**

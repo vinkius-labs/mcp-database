@@ -13,7 +13,7 @@ Manage recruitment, jobs, and candidates via Jobtoolz API.
 Empower your AI agents with Jobtoolz's recruitment management platform. This MCP server allows you to list jobs, track candidates, manage pipeline stages, and view departments and locations directly through the Jobtoolz API. Ideal for automating hiring workflows and candidate engagement.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_candidate**: Returns contact details, application history, and custom field values. Use this for deep-dive vetting of an applicant.
 
 Retrieves details for a specific candidate
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jobtoolz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jobtoolz` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jobtoolz** tools.
 
 **Configuration:**

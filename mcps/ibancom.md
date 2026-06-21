@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire financial auditing and banking 
 - **Operations Leads** — automate banking data querying to orchestrate cross-functional global finance teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **calculate_iban**: Calculate an IBAN from local account details
 - **get_api_balance**: Check remaining API request balance
 - **get_bank_details**: Get detailed bank information from an IBAN
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ibancom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ibancom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IBAN.com** tools.
 
 **Configuration:**

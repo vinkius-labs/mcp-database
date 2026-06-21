@@ -35,7 +35,7 @@ Connect your **Frame.io** account to any AI agent to automate your video collabo
 - **Post-Production Managers** — automate the retrieval of asset metadata and feedback threads for audit and reporting.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_comment**: Post a new comment
 - **get_asset_details**: Get asset metadata
 - **get_my_profile**: Get current user profile
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `frameio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `frameio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Frame.io** tools.
 
 **Configuration:**

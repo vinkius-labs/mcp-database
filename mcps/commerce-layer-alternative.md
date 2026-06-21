@@ -35,7 +35,7 @@ No more manual status checking or digging through complex JSON API tables. Your 
 - **Customer Success Teams** — track shipping status and customer order history through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **create_order**: Create a new draft order
 - **get_order**: Get order details
 - **list_addresses**: List organization addresses
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `commerce-layer-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `commerce-layer-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Commerce Layer** tools.
 
 **Configuration:**

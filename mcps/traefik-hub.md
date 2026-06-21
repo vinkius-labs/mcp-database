@@ -32,7 +32,7 @@ Establish explicit logic bounds running native API management utilizing the Trae
 Explicitly targeted bridging **Cloud Infrastructure Teams**, **Kubernetes Operators**, and **Backend Platform Admins** desiring API orchestration analytics outside manual CRD manipulations.
 
 
-## Available Tools
+## Available Tools (8)
 - **traefik_approve_subscription**: Deploy a manual accept bridging logic tokens successfully granting ingress traversal
 - **traefik_get_agent_health**: Evaluate the operational execution limits testing liveness probes across ingress hubs
 - **traefik_get_api_metrics**: Observe structured execution telemetries aggregating error traces and explicit API latencies
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `traefik-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `traefik-hub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Traefik Hub** tools.
 
 **Configuration:**

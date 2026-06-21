@@ -33,7 +33,7 @@ Connect your **ShipStation** account to any AI agent and take full control of yo
 - **Support Teams** — instantly retrieve customer order history and shipping details to provide faster assistance.
 
 
-## Available Tools
+## Available Tools (28)
 - **add_funds**: Add funds to a carrier account
 - **add_tag_to_order**: Add a tag to an order
 - **create_label_for_order**: Create a shipping label for an order
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shipstation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shipstation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ShipStation** tools.
 
 **Configuration:**

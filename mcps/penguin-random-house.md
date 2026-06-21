@@ -33,7 +33,7 @@ Connect the **Penguin Random House** Open Service to your AI agent to explore on
 - **Book Enthusiasts** — find upcoming releases, award-winning titles, and author tour dates through simple chat.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_author**: Get details for a specific author
 - **get_category_hierarchy**: Get category hierarchy view
 - **get_series**: Get details for a specific series
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `penguin-random-house` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `penguin-random-house` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Penguin Random House** tools.
 
 **Configuration:**

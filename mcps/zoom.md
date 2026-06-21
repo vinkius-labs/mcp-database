@@ -38,7 +38,7 @@ No more manual navigation through complex meeting dashboards to find a join link
 - **HR Managers** — lookup team member profiles and manage organizational user lists efficiently
 
 
-## Available Tools
+## Available Tools (14)
 - **list_webinars**: List scheduled webinars
 - **update_meeting**: Update meeting topic
 - **get_meeting_participants**: List participants of a past meeting
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoom` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoom** tools.
 
 **Configuration:**

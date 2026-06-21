@@ -38,7 +38,7 @@ No more manual logging into the WP-Admin dashboard to fix a typo. Your AI agent 
 - **Web Developers** — test REST API responses and verify content structure for headless WordPress applications
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_cms_post**: Set force to true for permanent deletion, otherwise it goes to Trash.
 
 Permanently deletes a WordPress post
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wordpress` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wordpress` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WordPress** tools.
 
 **Configuration:**

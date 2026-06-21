@@ -38,7 +38,7 @@ No more navigating the Aikido dashboard for every security review. Your AI acts 
 - **Engineering Managers** — export security reports and track remediation progress across teams
 
 
-## Available Tools
+## Available Tools (16)
 - **export_all_issues**: This provides a comprehensive snapshot of your organization's security posture.
 Use this for compliance reporting, audit preparation, or bulk analysis of vulnerabilities.
 
@@ -171,7 +171,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aikido-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aikido-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aikido Security** tools.
 
 **Configuration:**

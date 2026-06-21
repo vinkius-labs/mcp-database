@@ -13,7 +13,7 @@ Calculate ENEM performance metrics and simulate university admission possibiliti
 This MCP server provides specialized tools to quantify student performance in the ENEM exam. Use `calculate_area_averages` to determine the arithmetic mean of objective exam areas. You can also use `calculate_weighted_score` to compute a final score based on specific subject weights, and `simulate_admission_possity` to compare your results against historical cutoff scores for various courses and universities.
 
 
-## Available Tools
+## Available Tools (3)
 - **simulate_admission_possibility**: Compare a student's score against historical data to predict admission success
 - **calculate_area_averages**: Calculate the arithmetic mean of the four objective exam areas
 - **calculate_weighted_score**: Calculate the final performance score based on custom importance weights
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `enem-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `enem-score-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ENEM Score Calculator** tools.
 
 **Configuration:**

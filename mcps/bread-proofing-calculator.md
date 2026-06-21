@@ -13,7 +13,7 @@ Predict fermentation durations for bulk and final proofing based on yeast concen
 This MCP server provides precise estimation tools for bakers to manage fermentation schedules. Using `get_bulk_fermentation_duration`, you can predict the first rise time based on yeast percentage and ambient heat. The `get_final_proof_duration` tool estimates the second rise after shaping. For cold-retarding techniques, `calculate_cold_delay` determines the extra time needed when moving dough to a refrigerator. Finally, use `validate_fermentation_environment` to check if your yeast and temperature settings are within optimal baking parameters.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_bulk_fermentation_duration**: Estimates the time required for bulk fermentation
 - **calculate_cold_delay**: Calculates the additional time required when moving dough to a refrigerator
 - **get_final_proof_duration**: Estimates the time required for final proofing
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bread-proofing-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bread-proofing-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bread Proofing Calculator** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **GPTBots** account to your AI agent and manage your enterprise AI 
 - **Operations Teams** — seamlessly integrate GPTBots automated workflows into your existing daily processes
 
 
-## Available Tools
+## Available Tools (8)
 - **list_databases**: List tables in the platform database
 - **create_knowledge_document**: Upload or create a document in the Knowledge Base
 - **get_conversation**: Get details and history of a specific conversation
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gptbots` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gptbots` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GPTBots** tools.
 
 **Configuration:**

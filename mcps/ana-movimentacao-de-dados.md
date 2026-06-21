@@ -33,7 +33,7 @@ Connect to the **ANA (Agência Nacional de Águas e Saneamento Básico)** data m
 - **Data Scientists** — Automate the collection of hydrometeorological time series for climate and impact analysis.
 
 
-## Available Tools
+## Available Tools (18)
 - **create_serie_chuva**: Inclusion of Rainfall (Chuva) Series data
 - **create_serie_cota**: Inclusion of Stage/Level (Cota) Series data
 - **create_serie_perfil_transversal**: Inclusion of Cross-Section Profile Series (Série Perfil Transversal) data
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ana-movimentacao-de-dados` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ana-movimentacao-de-dados` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ANA (Movimentação de Dados)** tools.
 
 **Configuration:**

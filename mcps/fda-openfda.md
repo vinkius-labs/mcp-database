@@ -34,7 +34,7 @@ Connect to the **openFDA** public database through any AI agent and gain instant
 - **Data Researchers** — pull aggregated public health metrics directly into your AI-powered analysis workflow
 
 
-## Available Tools
+## Available Tools (12)
 - **get_drug_shortages**: Get current and resolved drug shortages
 - **get_usage**: Get current API usage and rate limit info
 - **search_device_adverse_events**: Search for adverse event reports for medical devices
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fda-openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fda-openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FDA (openFDA)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Stop clicking through countless profiles on the SmartHR platform just to find ou
 - **Security Teams** — check office locations and active employee sublists via the physical `list_establishments` tools
 
 
-## Available Tools
+## Available Tools (8)
 - **list_crews**: Lists all employees (crews) in SmartHR
 - **get_crew_details**: Retrieves details for a specific employee
 - **list_departments**: Lists all organizational departments
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `smarthr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `smarthr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SmartHR** tools.
 
 **Configuration:**

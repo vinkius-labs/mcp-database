@@ -35,7 +35,7 @@ No more manual record logging or digging through complex compliance tables in th
 - **Developers & Ops** — integrate automated privacy right handling and data mapping into custom internal tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **archive_dsr**: Archive a DSR
 - **create_breach**: Create a new data breach record
 - **create_dsr**: Create a new Data Subject Request
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dastra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dastra` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dastra** tools.
 
 **Configuration:**

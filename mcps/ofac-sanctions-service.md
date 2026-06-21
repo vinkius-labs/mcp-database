@@ -35,7 +35,7 @@ Connect to the **OFAC Sanctions List Service (SLS)** API through your AI agent a
 - **Risk Analysts** — automate the retrieval of version metadata and entry counts for compliance reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_sls_about**: Get SLS API info
 - **get_delta_version_metadata**: Get delta version metadata
 - **get_entity_details**: Get specific entity metadata
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ofac-sanctions-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ofac-sanctions-service` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OFAC Sanctions Service** tools.
 
 **Configuration:**

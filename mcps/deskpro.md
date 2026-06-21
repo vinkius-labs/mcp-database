@@ -35,7 +35,7 @@ No more manual ticket shuffling or digging through help center folders. Your AI 
 - **Operations Leads** — automate knowledgebase access and verify system connectivity through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify Deskpro API connectivity
 - **create_new_helpdesk_ticket**: Requires a subject, person email, and initial message.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deskpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deskpro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deskpro** tools.
 
 **Configuration:**

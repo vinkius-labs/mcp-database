@@ -20,7 +20,7 @@ Connect your **Retable** account to any AI agent and manage your spreadsheet dat
 - **Health Check** — Verify API connectivity
 
 
-## Available Tools
+## Available Tools (10)
 - **check_retable_status**: Verify API connectivity
 - **create_record**: Create a new record
 - **delete_record**: Delete a record
@@ -93,7 +93,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `retable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `retable` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Retable** tools.
 
 **Configuration:**

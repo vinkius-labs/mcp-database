@@ -33,7 +33,7 @@ Connect to **Corescan**, the premier block explorer for the Core DAO network, an
 - **Crypto Enthusiasts** — Keep track of your portfolio balances and transaction history through natural conversation.
 
 
-## Available Tools
+## Available Tools (15)
 - **get_account_balance_multi**: Get CORE balance for multiple addresses
 - **get_account_balance**: Get CORE balance for a single address
 - **get_block_countdown**: Get estimated block countdown time
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `corescan-core-dao-blockchain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `corescan-core-dao-blockchain-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Corescan (Core DAO Blockchain Explorer)** tools.
 
 **Configuration:**

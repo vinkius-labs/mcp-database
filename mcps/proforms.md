@@ -13,7 +13,7 @@ Online form builder and data collection.
 The Proforms MCP server allows your AI agent to query form responses, retrieve submission data, and list active forms natively. Analyze your collected data immediately through conversation without downloading CSV files.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_job**: Push a new job to a field worker
 - **get_asset**: Retrieve details for a specific asset
 - **get_form**: Retrieve details for a specific form
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `proforms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `proforms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Proforms** tools.
 
 **Configuration:**

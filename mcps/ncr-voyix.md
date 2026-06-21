@@ -34,7 +34,7 @@ Connect your **NCR Voyix** (formerly NCR) commerce account to your AI agent and 
 - **Catalog Managers** — verify product details and catalog structures through natural language commands.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_loyalty_programs**: List loyalty programs
 - **get_order**: Get specific order info
 - **get_product**: Get specific product details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ncr-voyix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ncr-voyix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NCR Voyix** tools.
 
 **Configuration:**

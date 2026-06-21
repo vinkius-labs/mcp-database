@@ -32,7 +32,7 @@ Integrate **Easyship**, the leading global shipping platform for e-commerce, dir
 - **Customer Support** — Research specific tracking details and delivery events to assist customers instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_easyship_account_metadata**: Retrieve metadata and limits for your Easyship account
 - **quick_shipping_volume_audit**: Retrieve a high-level summary of shipment activity and success rates
 - **get_shipment_details**: Get detailed information and tracking for a specific shipment
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `easyship` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `easyship` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Easyship** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect to the **Valencia Open Data portal (Gobierno Abierto)** to explore publi
 - **Citizens & Researchers** — explore municipal transparency data and public records through simple questions
 
 
-## Available Tools
+## Available Tools (5)
 - **search_datastore**: Search for data within a specific resource
 - **list_groups**: List dataset groups (categories)
 - **show_package**: Get metadata for a specific dataset
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gobierno-abierto-valencia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gobierno-abierto-valencia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gobierno Abierto Valencia** tools.
 
 **Configuration:**

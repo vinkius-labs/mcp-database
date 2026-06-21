@@ -33,7 +33,7 @@ Connect your **AbstractAPI** account to your AI agent and unlock a powerful suit
 - **Financial Operators** — validate B2B EU VAT numbers and ask for real-time exchange rates in a single prompt
 
 
-## Available Tools
+## Available Tools (10)
 - **geolocate_ip**: abstractapi.com. Pass an IPv4 or IPv6 address. Returns country, city, region, ISP, timezone, and currency data. Validates the key is for Geolocation.
 
 Geolocate an IP address
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `abstractapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `abstractapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AbstractAPI** tools.
 
 **Configuration:**

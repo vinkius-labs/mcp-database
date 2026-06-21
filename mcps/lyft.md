@@ -35,7 +35,7 @@ Connect AI agents to the Lyft platform for complete ride automation:
 Perfect for **frequent travelers**, **urban commuters**, **executive assistants**, **travel coordinators**, and **corporate teams** managing business transportation. Let AI agents handle ride booking, expense tracking via ride history, and location management. Ideal for professionals taking 10+ Lyft rides monthly who want streamlined booking workflows, instant price comparisons, and automated ride tracking.
 
 
-## Available Tools
+## Available Tools (9)
 - **cancel_ride**: Cancellation policies vary based on ride status - cancellations after driver assignment may incur fees. Use this to cancel rides that were booked by mistake or are no longer needed.
 
 Cancel an existing Lyft ride request
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lyft` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lyft` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lyft** tools.
 
 **Configuration:**

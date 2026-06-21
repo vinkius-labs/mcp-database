@@ -13,7 +13,7 @@ Calculate minimum legal notice periods and effective termination dates for vario
 This MCP server provides a precise engine to determine the mandatory minimum notice periods and calculate exact termination dates. By using tools like `get_notice_requirement`, you can retrieve legal requirements for employment, commercial leases, and service agreements across specific US states and European nations. Additionally, use `calculate_effective_date` to find the final day of a contract based on your notice date, or `check_jurisdiction_validity` to verify if a region is within the supported regulatory scope.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_notice_requirement**: Retrieves the mandatory minimum notice period and its associated legal description
 - **calculate_effective_date**: Determines the exact date a contract will end
 - **check_jurisdiction_validity**: Validates if a provided location is within the supported legal scope
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contract-notice-period-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contract-notice-period-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contract Notice Period Calculator** tools.
 
 **Configuration:**

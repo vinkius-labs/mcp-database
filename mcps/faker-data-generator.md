@@ -22,7 +22,7 @@ This MCP uses @faker-js/faker (5M+ weekly downloads) to generate contextually ri
 - **Cryptographic Quality:** Uses secure randomness — each call produces unique, non-repeating data.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_fake_data**: Categories: person, internet, company, address, finance, commerce, lorem, date, image, phone. Each category returns multiple related fields. Set count (max 50) for batch generation. Locale changes names/addresses to match the target country (e.g. "pt_BR" for Brazilian names).
 
 Generates realistic fake data: names, emails, addresses, companies, products, finances, lorem ipsum, dates, and more. Supports 60+ locales
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `faker-data-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `faker-data-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Faker Data Generator** tools.
 
 **Configuration:**

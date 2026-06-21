@@ -33,7 +33,7 @@ Connect your **Workast** account to any AI agent to streamline your project mana
 - **Agile Teams** — quickly update task statuses and manage backlogs using simple natural language commands.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_space**: Create a new space
 - **create_task**: Create a new task
 - **delete_task**: Delete a task
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `workast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `workast` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Workast** tools.
 
 **Configuration:**

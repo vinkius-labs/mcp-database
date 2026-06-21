@@ -34,7 +34,7 @@ Connect your **Mercado Libre** seller account to any AI agent to streamline your
 - **Logistics Coordinators** — keep track of shipment deadlines and SLA compliance in real-time
 
 
-## Available Tools
+## Available Tools (17)
 - **answer_question**: Answer a buyer question
 - **create_item**: Requires title, category_id, price, currency_id, available_quantity, buying_mode, condition, listing_type_id, and pictures.
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mercado-libre` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mercado-libre` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mercado Libre** tools.
 
 **Configuration:**

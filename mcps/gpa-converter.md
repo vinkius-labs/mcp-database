@@ -13,7 +13,7 @@ Convert academic grades between different scales and calculate weighted averages
 This MCP server provides specialized tools for academic grade conversion. Use `convert_grade` to transform a numerical grade from one scale (e.g., 4.0) to another (e.g., 10.0). You can also use `calculate_weighted_average` to compute your cumulative GPA by providing course grades and credits, or `get_grade_category` to determine if a specific score falls into high achievement, satisfactory, or unsatisfactory tiers.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_weighted_average**: Calculates the weighted average of grades based on course credits
 - **convert_grade**: Converts a grade from one scale to another
 - **get_grade_category**: Classifies a grade into performance tiers
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gpa-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gpa-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GPA Converter** tools.
 
 **Configuration:**

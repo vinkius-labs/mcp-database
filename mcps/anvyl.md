@@ -32,7 +32,7 @@ The **Anvyl MCP Server** brings visibility and automation to your supply chain o
 - **Operations Leads** — Keep a high-level view of production health and logistics without manually navigating through dashboards.
 
 
-## Available Tools
+## Available Tools (10)
 - **confirm_milestone**: Confirm a milestone for a purchase order
 - **delay_milestone**: Delay a milestone for a purchase order
 - **get_part**: Get details for a specific part
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `anvyl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `anvyl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Anvyl** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **OKX** trading account to any AI agent to monitor markets and mana
 - **Portfolio Managers** — get quick summaries of balances and risk exposure across different asset classes using natural language queries.
 
 
-## Available Tools
+## Available Tools (6)
 - **amend_order**: Requires instrument ID and either order ID or client order ID.
 
 Amend an existing incomplete order
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `okx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `okx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OKX** tools.
 
 **Configuration:**

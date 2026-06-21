@@ -22,7 +22,7 @@ This MCP delegates outlier detection to `simple-statistics`. The engine calculat
 - **High Performance:** Scans thousands of rows instantly on your local machine.
 
 
-## Available Tools
+## Available Tools (1)
 - **detect_outliers**: Deterministically identify statistical outliers in datasets using Z-Score or IQR methods
 
 
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `outlier-detection-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `outlier-detection-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Outlier Detection Engine** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **FreeScout** helpdesk to any AI agent to streamline your customer 
 - **Developers** — integrate support data into your workflow to track bugs and customer feedback directly.
 
 
-## Available Tools
+## Available Tools (16)
 - **add_note**: Add an internal note to a conversation
 - **add_reply**: Send a reply to the customer in a conversation
 - **list_conversations**: List conversations in a mailbox
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `freescout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `freescout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FreeScout** tools.
 
 **Configuration:**

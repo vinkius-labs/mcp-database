@@ -32,7 +32,7 @@ Extend the reach of your **Tactile CRM** databases directly into your AI convers
 - **Customer Success Managers** — Assess real-time organizational footprints logging activities verifying specific company details via simple conversational text evaluations.
 
 
-## Available Tools
+## Available Tools (9)
 - **list_companies**: Lists all companies (organizations) in the Tactile CRM
 - **get_company_details**: Retrieves details for a specific company
 - **list_contacts**: Lists all individual contacts (people) in the CRM
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tactile-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tactile-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tactile CRM** tools.
 
 **Configuration:**

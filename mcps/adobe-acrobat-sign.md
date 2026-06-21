@@ -34,7 +34,7 @@ Connect your **Adobe Acrobat Sign** account to any AI agent and manage your enti
 - **Procurement** — Get vendor agreements signed quickly and maintain compliance records
 
 
-## Available Tools
+## Available Tools (10)
 - **adobe_agreement_members**: Returns each member email, role (SIGNER/APPROVER/ACCEPTOR/FORM_FILLER/DELEGATE_TO_SIGNER/CC), and their signing status. Use to check who has signed, who is pending, or to review the signing workflow.
 
 Get all participants (signers, approvers, CC recipients) in a specific Adobe Sign agreement with their roles and status
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adobe-acrobat-sign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adobe-acrobat-sign` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adobe Acrobat Sign** tools.
 
 **Configuration:**

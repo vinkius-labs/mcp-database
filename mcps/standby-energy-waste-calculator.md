@@ -13,7 +13,7 @@ Calculate the energy waste, financial cost, and carbon footprint of electronics 
 This MCP server provides tools to quantify 'vampire power' consumption. Use `fetch_device_catalog` to browse available devices and their wattage, `calculate_single_device_waste` to find the monthly impact of a specific appliance, or `generate_aggregate_waste_report` to calculate the total energy waste, cost, and CO2 emissions for a list of all your standby electronics.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_single_device_waste**: Calculates energy waste for a specific device
 - **fetch_device_catalog**: Returns device names and standby wattage.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `standby-energy-waste-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `standby-energy-waste-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Standby Energy Waste Calculator** tools.
 
 **Configuration:**

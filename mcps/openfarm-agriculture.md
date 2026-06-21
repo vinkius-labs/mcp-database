@@ -32,7 +32,7 @@ Connect your AI agent to **OpenFarm**, the world's most comprehensive open-sourc
 - **Agricultural Researchers** — explore a vast database of crowdsourced plant data
 
 
-## Available Tools
+## Available Tools (4)
 - **get_species_details**: Critical for precision agriculture and biodiversity assessments.
 
 Get detailed taxonomic and growing data for a specific species
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openfarm-agriculture` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openfarm-agriculture` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenFarm Agriculture** tools.
 
 **Configuration:**

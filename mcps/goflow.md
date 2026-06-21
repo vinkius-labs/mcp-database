@@ -35,7 +35,7 @@ No more jumping between browser tabs to check if a specific SKU is in stock or i
 - **E-commerce Operations** — audit listings across multiple channels and monitor daily sales volume effortlessly
 
 
-## Available Tools
+## Available Tools (12)
 - **get_customer**: Get detailed info for a specific customer
 - **get_inventory**: Check stock levels in Goflow
 - **get_order**: Get details for a specific Goflow order
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `goflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `goflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Goflow** tools.
 
 **Configuration:**

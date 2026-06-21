@@ -31,7 +31,7 @@ Connect your **Redis** database (equipped with the RediSearch module) to your AI
 - **Data Architects** — Validate your Redis vector environments interactively. Explore dimension structures and index readiness confirming architecture viability for RAG (Retrieval-Augmented Generation) applications.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_vector_index**: Specify the name and vector dimensions.
 
 Creates a new RediSearch vector index
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `redis-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `redis-vector` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Redis Vector** tools.
 
 **Configuration:**

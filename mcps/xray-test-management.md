@@ -38,7 +38,7 @@ No more manual filtering through complex Jira issue lists to find a test result.
 - **Developers** — lookup test steps and preconditions for failed executions to rapidly debug issues
 
 
-## Available Tools
+## Available Tools (9)
 - **get_xray_settings**: Retrieves Xray project configuration and field mappings
 - **get_execution_details**: Retrieves granular results for a specific test execution
 - **get_test_plan_details**: Retrieves details for a specific test plan
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `xray-test-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `xray-test-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Xray (Test Management)** tools.
 
 **Configuration:**

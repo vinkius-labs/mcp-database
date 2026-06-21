@@ -17,7 +17,7 @@ This service solves that problem by providing a structured, multi-step calculati
 The final step is combining these inputs with the total built area via the `estimate_total_cost_range` tool. This function doesn't just give a single number; it applies industry-standard contingency buffers to deliver a safe minimum and maximum cost bracket, giving you a clear picture of the entire financial scope.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_region_cost_index**: Retrieve the baseline construction cost index rate for a specified geographical region and reference month
 - **calculate_standard_multiplier**: Convert a construction standard into a quantitative multiplier factor
 - **estimate_total_cost_range**: Calculate the estimated total cost range for a construction project
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `construction-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `construction-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Construction Cost Estimator** tools.
 
 **Configuration:**

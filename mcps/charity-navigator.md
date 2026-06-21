@@ -34,7 +34,7 @@ Connect to **Charity Navigator** and access ratings for over 175,000 US nonprofi
 - **Philanthropists** — search by cause area, location and rating to find vetted organizations
 
 
-## Available Tools
+## Available Tools (6)
 - **get_all_advisories**: Useful for identifying charities with governance, financial or operational concerns.
 
 Get all organizations with active advisories
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `charity-navigator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `charity-navigator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Charity Navigator** tools.
 
 **Configuration:**

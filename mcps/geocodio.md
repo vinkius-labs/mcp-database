@@ -36,7 +36,7 @@ Connect your **Geocodio** account to any AI agent and take full control of your 
 - **Campaign & Compliance Managers** — verify congressional districts and state legislative boundaries for large datasets in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **batch_enriched_geocode**: Inspect deep internal arrays mitigating specific Timezone pipelines
 - **batch_geocode_addresses**: Identify precise active arrays spanning native Location geometries
 - **batch_enriched_reverse**: Dispatch an automated validation check routing explicit Census models
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `geocodio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `geocodio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Geocodio** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect **Santiment** to your AI agent to unlock institutional-grade crypto mark
 - **Web3 Developers** — Track development activity and network health of protocols directly from your IDE.
 
 
-## Available Tools
+## Available Tools (4)
 - **filter_projects_by_metric**: g., top 10 projects with DAA > 1000).
 
 Filter projects based on a specific metric threshold
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `santiment-on-chain-social-dev-metrics-for-crypto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `santiment-on-chain-social-dev-metrics-for-crypto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Santiment (On-chain, Social & Dev Metrics for Crypto)** tools.
 
 **Configuration:**

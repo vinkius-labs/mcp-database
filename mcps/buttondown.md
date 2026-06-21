@@ -34,7 +34,7 @@ Connect your **Buttondown** account to any AI agent and orchestrate your newslet
 - **Developers** — integrate newsletter subscription and campaign steps into their environment using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_email**: Create a new email or draft
 - **create_subscriber**: Add a new subscriber to the newsletter
 - **get_account_info**: Retrieve core account/profile settings
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buttondown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buttondown` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buttondown** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect to the **CrossRef API** — the authoritative source for DOI metadata an
 - **Bibliometricians** — large-scale publication analytics
 
 
-## Available Tools
+## Available Tools (16)
 - **get_citations_count**: The "is-referenced-by-count" is the number of times other works cite this DOI. The "references-count" is how many references this work cites. Quick way to assess a paper's impact.
 
 Get citation count for a DOI
@@ -146,7 +146,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stanford-crossref` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stanford-crossref` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stanford CrossRef** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ AI Agents that generate PDF contracts, event tickets, or Pix billing codes often
 - **Vector Scalability:** Returns an SVG string that can be safely embedded into HTML emails, PDFs, or React components.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_qr**: Pass the content string and receive a complete SVG markup ready for embedding in HTML or saving.
 
 Generates vector SVG QR Codes instantly offline. Prevents data leakage of sensitive Pix keys or tokens to public API generators
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qr-code-svg-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qr-code-svg-generator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **QR Code SVG Generator** tools.
 
 **Configuration:**

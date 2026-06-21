@@ -33,7 +33,7 @@ Connect to **Bitquery** to access comprehensive Web3 data through a unified Grap
 - **Security Researchers** — Audit historical transactions and track fund movements across multiple protocols.
 
 
-## Available Tools
+## Available Tools (3)
 - **generate_token**: The returned token should be used as the BITQUERY_ACCESS_TOKEN credential.
 
 Generate an OAuth2 access token using Client ID and Secret
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bitquery-web3-blockchain-graphql-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bitquery-web3-blockchain-graphql-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bitquery (Web3 Blockchain GraphQL APIs)** tools.
 
 **Configuration:**

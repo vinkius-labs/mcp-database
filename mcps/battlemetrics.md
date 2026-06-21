@@ -36,7 +36,7 @@ Empower your AI agent to operate as a real-time intelligence layer over the glob
 - **Game Developers** — monitor live server health, player retention, and community activity across multiple titles.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_ban**: Returns the ban reason, banned player identifier, timestamps, expiry date, scope (server-level or organization-wide), and the administrator who issued the ban. Requires appropriate ban:read scope on the API token. Use this after identifying a ban ID from list_bans.
 
 Get details for a specific ban
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `battlemetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `battlemetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BattleMetrics** tools.
 
 **Configuration:**

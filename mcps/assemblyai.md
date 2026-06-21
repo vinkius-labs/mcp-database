@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire audio intelligence and transcri
 - **AI Developers** — automate audio data querying to orchestrate cross-functional media intelligence teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **delete_transcript**: Delete a transcription record
 - **get_transcript_paragraphs**: Get the transcript broken down by paragraphs
 - **get_transcript_sentences**: Get the transcript broken down by sentences
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `assemblyai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `assemblyai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AssemblyAI** tools.
 
 **Configuration:**

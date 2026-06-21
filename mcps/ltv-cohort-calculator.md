@@ -13,7 +13,7 @@ Calculate Customer Lifetime Value (LTV) for any acquisition cohort, projecting f
 **[Hook]** Understanding the true value of a customer group is critical to sustainable business growth. But raw revenue data doesn't tell the full story.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_cumulative_ltv**: Milestones are specified as months after acquisition.
 
 Calculate total accumulated LTV at fixed milestones for a cohort
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ltv-cohort-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ltv-cohort-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LTV Cohort Calculator** tools.
 
 **Configuration:**

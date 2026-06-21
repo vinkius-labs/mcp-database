@@ -34,7 +34,7 @@ Connect your **Canix** account to any AI agent and orchestrate your cannabis cul
 - **Sales Teams** — monitor order progress and inventory availability using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_info**: Retrieve core account information
 - **get_non_cannabis_product**: Get details of a specific non-cannabis product
 - **get_package_details**: Get details of a specific cannabis package
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `canix-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `canix-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Canix ERP** tools.
 
 **Configuration:**

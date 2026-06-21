@@ -34,7 +34,7 @@ Connect your **Katalon TestOps** account to any AI agent and take full control o
 - **DevOps Engineers** — audit execution environments and verify build quality results to ensure CI/CD pipeline integrity
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: Returns project names, IDs, and descriptions.
 
 List all projects on Katalon TestOps
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `katalon-testops-ai-test-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `katalon-testops-ai-test-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Katalon TestOps (AI Test Management)** tools.
 
 **Configuration:**

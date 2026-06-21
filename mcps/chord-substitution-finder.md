@@ -13,7 +13,7 @@ Identify harmonic substitutions and analyze tension in chord progressions.
 The Chord Substitution Finder is a music theory engine that identifies various substitution patterns for single chords or entire progressions. Using tools like `find_substitutions`, `analyze_progression_tension`, and `get_substitution_detail`, you can explore Tritone, Relative, Parallel, Diatonic, and Chromatic Mediant substitutions. The engine evaluates how each change affects harmonic tension and voice leading motion, providing a deep analysis of musical movement.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_progression_tension**: Analyze the tension arc of a chord progression
 - **get_substitution_detail**: Get detailed information about a specific chord substitution
 - **find_substitutions**: Find available chord substitutions for a given chord
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chord-substitution-finder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chord-substitution-finder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chord Substitution Finder** tools.
 
 **Configuration:**

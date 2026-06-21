@@ -13,7 +13,7 @@ Calculate precise dimensions for horizontal and vertical solar shading devices.
 This MCP server provides specialized tools for architectural thermal comfort. Use `get_solar_position` to determine the sun's altitude and azimuth, then use `calculate_horizontal_depth` to find the minimum projection required for horizontal louvers or `calculate_vertical_width` for vertical fins. You can also audit existing structures using `validate_compliance` to ensure they meet your target solar cutoff angles.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_vertical_width**: Calculate minimum width for vertical fins
 - **validate_compliance**: Validate shading device compliance
 - **calculate_horizontal_depth**: Calculate minimum depth for horizontal louvers
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shading-device-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shading-device-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shading Device Calculator** tools.
 
 **Configuration:**

@@ -21,7 +21,7 @@ Connect **Hostaway** to any AI agent — the leading vacation rental channel man
 - **Financials** — Revenue breakdown with commissions and payouts
 
 
-## Available Tools
+## Available Tools (8)
 - **list_listings**: List vacation rental listings
 - **get_listing**: Get listing details
 - **list_reservations**: List reservations
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hostaway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hostaway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hostaway** tools.
 
 **Configuration:**

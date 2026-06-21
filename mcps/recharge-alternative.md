@@ -33,7 +33,7 @@ Connect your **Recharge** account to any AI agent to streamline your subscriptio
 - **Operations Leads** — analyze customer lists and credit summaries to monitor business health.
 
 
-## Available Tools
+## Available Tools (70)
 - **activate_subscription**: Reactivate a cancelled subscription
 - **add_async_batch_tasks**: Add tasks to an async batch
 - **apply_charge_discount**: Apply a discount to a queued charge
@@ -168,7 +168,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `recharge-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `recharge-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Recharge** tools.
 
 **Configuration:**

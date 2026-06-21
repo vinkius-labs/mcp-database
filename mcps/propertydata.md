@@ -33,7 +33,7 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **Real Estate Professionals** — Generate instant valuations and floor area reports for client properties.
 
 
-## Available Tools
+## Available Tools (68)
 - **account_credits**: API account credits used/remaining
 - **account_documents**: Summary of previous document purchases
 - **address_match_uprn**: Match an address to its closest UPRN
@@ -164,7 +164,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `propertydata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `propertydata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PropertyData** tools.
 
 **Configuration:**

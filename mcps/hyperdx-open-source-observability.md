@@ -34,7 +34,7 @@ No more jumping between tabs to correlate logs with alerts. Your AI acts as an o
 - **Developers** — fetch logs for specific services or trace IDs while staying in the flow of coding
 
 
-## Available Tools
+## Available Tools (7)
 - **list_alerts**: Returns a list of all configured alert rules
 - **create_alert**: Create a new alert rule
 - **list_dashboards**: Retrieve all dashboards in the organization
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hyperdx-open-source-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hyperdx-open-source-observability` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HyperDX (Open Source Observability)** tools.
 
 **Configuration:**

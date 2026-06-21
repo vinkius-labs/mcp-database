@@ -37,7 +37,7 @@ Stop clicking through the Railway dashboard to check deployment status or manage
 - **Team Leads** — monitor project health, environment segregation and variable security across services
 
 
-## Available Tools
+## Available Tools (11)
 - **delete_variable**: Provide the service_id, environment_id and variable name. WARNING: the variable will no longer be available to deployments after deletion.
 
 Delete an environment variable from a Railway service
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `railway-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `railway-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Railway** tools.
 
 **Configuration:**

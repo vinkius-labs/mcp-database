@@ -27,7 +27,7 @@ Connect **Missive** to your AI agent and manage your team's communication effici
 3. Start collaborating with Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contact**: Create a new contact
 - **create_draft**: Create an email draft
 - **create_post**: Can also trigger actions like closing, assigning, or labeling.
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `missive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `missive` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Missive** tools.
 
 **Configuration:**

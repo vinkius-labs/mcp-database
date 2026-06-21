@@ -35,7 +35,7 @@ Connect your **Nifty** account to any AI agent and take full control of your aut
 - **Product Teams** — manage project portfolios and retrieve rapid summaries of sprint progress to maintain high-speed execution
 
 
-## Available Tools
+## Available Tools (10)
 - **create_task**: Create a new task in Nifty
 - **list_project_docs**: List documents in a project
 - **get_project**: Get detailed boundaries for a specific project
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nifty-all-in-one-project-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nifty-all-in-one-project-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nifty (All-in-One Project Management)** tools.
 
 **Configuration:**

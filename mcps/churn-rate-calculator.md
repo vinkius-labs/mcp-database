@@ -17,7 +17,7 @@ Finding out why customers leave or why revenue shrinks is critical for business 
 **Advantage:** Instead of just knowing *that* you lost customers, you know *how much* that loss costs and whether your expansion efforts are enough to offset contraction. The result is an actionable health score (World-Class, Healthy, or Needs Improvement).
 
 
-## Available Tools
+## Available Tools (4)
 - **analyze_churn_health**: Analyze churn health against industry benchmarks
 - **customer_churn_rate_calculator**: Requires start and end customer counts.
 
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `churn-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `churn-rate-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Churn Rate Calculator** tools.
 
 **Configuration:**

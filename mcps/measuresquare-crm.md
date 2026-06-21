@@ -22,7 +22,7 @@ Connect your **MeasureSquare** account to any AI agent and manage flooring estim
 - **PDF Reports** — Get downloadable project reports
 
 
-## Available Tools
+## Available Tools (11)
 - **check_measuresquare_status**: Verify API connectivity
 - **get_client**: Get client details
 - **get_estimation**: Get project estimation
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `measuresquare-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `measuresquare-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MeasureSquare CRM** tools.
 
 **Configuration:**

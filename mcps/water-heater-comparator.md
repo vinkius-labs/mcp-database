@@ -13,7 +13,7 @@ Compare the operational costs and carbon footprint of electric, gas, and solar t
 This MCP server provides analytical tools to quantify the financial and environmental impact of different water heating technologies. Use `evaluate_electric_system` to calculate costs and CO2 emissions for electric showers, `evaluate_gas_system` to determine the footprint of gas-powered heaters, or `evaluate_solar_thermal_system` to estimate the efficiency and backup energy needs of solar thermal setups based on your specific usage profile.
 
 
-## Available Tools
+## Available Tools (3)
 - **evaluate_electric_system**: Calculate cost and emissions for an electric shower setup
 - **evaluate_gas_system**: Calculate cost and emissions for a gas-powered water heater
 - **evaluate_solar_thermal_system**: Calculate cost and emissions for a solar thermal system
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `water-heater-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `water-heater-comparator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Water Heater Comparator** tools.
 
 **Configuration:**

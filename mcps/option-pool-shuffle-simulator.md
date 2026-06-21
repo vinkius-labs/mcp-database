@@ -13,7 +13,7 @@ Analyze the dilution impact of option pool timing during VC investment rounds.
 This simulator helps founders understand the true cost of the 'Option Pool Shuffle'. By comparing `compute_pre_money_scenario` and `compute_post_money_scenario`, you can see exactly how much equity is lost when an ESOP is negotiated as post-money versus pre-money. Use `compare_shuffle_impact` to calculate the precise percentage delta and monetary value loss in your next funding round.
 
 
-## Available Tools
+## Available Tools (3)
 - **compute_post_money_scenario**: Calculates ownership when the option pool is created post-investment
 - **compare_shuffle_impact**: Compares pre-money vs post-money scenarios to reveal the cost of the shuffle
 - **compute_pre_money_scenario**: Calculates ownership when the option pool is part of the pre-money valuation
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `option-pool-shuffle-simulator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `option-pool-shuffle-simulator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Option Pool Shuffle Simulator** tools.
 
 **Configuration:**

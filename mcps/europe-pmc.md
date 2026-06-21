@@ -32,7 +32,7 @@ Connect to **Europe PMC**, the comprehensive database for biomedical and life sc
 - **Data Analysts** — gather publication and grant data for bibliometric analysis.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_article_fields**: Get available search fields for articles
 - **search_articles**: Search Europe PMC articles
 - **search_grants**: Search Europe PMC grants (Grist API)
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `europe-pmc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `europe-pmc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Europe PMC** tools.
 
 **Configuration:**

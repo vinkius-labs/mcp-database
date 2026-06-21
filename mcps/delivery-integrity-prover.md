@@ -37,7 +37,7 @@ Delivery Integrity Prover validates completion status against 5 critical Decisio
 - **Empirical evidence.** Demanding command execution outputs and logs stops the agent from guessing that code compiles.
 
 
-## Available Tools
+## Available Tools (1)
 - **verify_delivery**: "I think I am done" is not proof — only evidence is proof. You must: (1) state the OBJECTIVE — what was the user's actual request? Quote, do not interpret, (2) CHECKLIST every requirement — each requirement from the prompt mapped to a specific file change or action taken. "Addressed all requirements" is not a checklist. If the user asked for 5 things, show 5 mappings, (3) list MODIFIED FILES — exact paths with line ranges. "Updated the code" is not traceability. "src/auth.ts:L47-52 — fixed token refresh logic" is traceability, (4) provide VERIFICATION LOGS — compilation output, test results, build logs, or script output. Must prove execution happened. "It should work" and placeholder assertions are rejected, (5) expose REMAINING GAPS — outstanding tasks, out-of-scope items, assumptions, manual checks. "No gaps" without explicit audit means you have not looked. Every delivery has something left, (6) commit to your VERDICT — if the pivots say incomplete, the verdict must say incomplete. Optimistic verdicts with failing pivots are rejected. If rejected, fix the highlighted issue before declaring the task finished.
 
 Structured validation tool to prove delivery integrity at task completion. Forces the agent to MAP every user requirement to a specific file change, SUPPLY execution logs as evidence, and EXPOSE remaining gaps — not "I think I am done" but provable completion. Catches Incomplete Requirements (declaring done when 3 of 5 requirements are addressed — the agent satisfies the "spirit" of the request while missing explicit sub-tasks), Unmodified Artifacts (claiming changes without specifying which files at which lines — "updated the code" is not traceability), Unverified Changes (no compilation logs, no test output, no build results — "it should work" is not evidence. If you did not run it, you did not verify it), Gap Blindness (assuming 100% completion without listing outstanding work, assumptions, or manual verification steps — "no gaps" without explicit audit means you have not looked), and Delivery Flaws (placeholders, TODOs, stub implementations, or commented-out code left in committed files — incomplete code presented as complete). Call at the end of EVERY task execution
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `delivery-integrity-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `delivery-integrity-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Delivery Integrity Prover** tools.
 
 **Configuration:**

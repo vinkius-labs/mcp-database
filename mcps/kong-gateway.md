@@ -36,7 +36,7 @@ No more manual cURL commands or navigating complex dashboards to check a route c
 - **API Architects** — audit consumer access and plugin configurations to ensure security and compliance across the organization.
 
 
-## Available Tools
+## Available Tools (40)
 - **create_certificate**: Create a new Kong Certificate
 - **create_consumer**: Create a new Kong Consumer
 - **create_plugin**: Create a new Kong Plugin
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kong-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kong-gateway` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kong Gateway** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Sproof** account to any AI agent to automate your European-compli
 - **Administrative Leads** — streamline the management of signed documents and monitor contact metadata directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **cancel_signature_request**: Cancel a pending signature request
 - **create_contact**: Create a new contact for signing
 - **create_signature_request**: Pass data as a JSON string.
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sproof` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sproof` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sproof** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **OneSignal** account to any AI agent and take full control of your
 - **Developers** — test notification payloads and verify device registrations directly from your development environment.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_notification**: Cancel a scheduled notification
 - **create_notification**: Send a OneSignal notification
 - **delete_player**: Delete a registered device
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onesignal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onesignal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OneSignal** tools.
 
 **Configuration:**

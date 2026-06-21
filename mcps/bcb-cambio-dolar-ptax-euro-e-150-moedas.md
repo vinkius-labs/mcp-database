@@ -22,7 +22,7 @@ Official FX rates from Brazil.
 ### No API Key Required
 
 
-## Available Tools
+## Available Tools (5)
 - **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
 
 Obter a cotação do dólar americano (PTAX) em uma data específica
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bcb-cambio-dolar-ptax-euro-e-150-moedas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bcb-cambio-dolar-ptax-euro-e-150-moedas` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas** tools.
 
 **Configuration:**

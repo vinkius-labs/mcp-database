@@ -22,7 +22,7 @@ Direct SQL-like access to NASA's Exoplanet Archive — the world's most comprehe
 The Exoplanet Archive TAP service is completely open.
 
 
-## Available Tools
+## Available Tools (4)
 - **query_confirmed_planets**: Filter by planet name, discovery method (Transit, Radial Velocity, Imaging, Microlensing), discovery facility (Kepler, TESS, Keck), or year. Returns orbital period, radius, mass, equilibrium temperature.
 
 Search confirmed exoplanets by name, discovery method, facility, or year
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-exoplanets-worlds-beyond-our-solar-system` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-exoplanets-worlds-beyond-our-solar-system` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA Exoplanets — Worlds Beyond Our Solar System** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **NCREIF** account to your AI agent and gain authoritative insights
 - **Investment Researchers** — automate the retrieval of complex real estate data series for reporting and modeling.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_fund_performance**: Get specific fund performance
 - **get_index_data**: Get specific index data
 - **get_property_returns**: Get property-level returns
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ncreif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ncreif` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NCREIF** tools.
 
 **Configuration:**

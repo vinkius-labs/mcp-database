@@ -36,7 +36,7 @@ Connect your **Datadog** account to any AI agent and take full control of your o
 - **On-Call Engineers** — triage incidents, search error logs, and check host health during outages via natural language
 
 
-## Available Tools
+## Available Tools (16)
 - **check_datadog_status**: Verify connectivity
 - **create_event**: Create an event
 - **get_dashboard**: Get dashboard details
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datadog-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datadog-extended` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Datadog** tools.
 
 **Configuration:**

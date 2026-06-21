@@ -28,7 +28,7 @@ The **Apple Search Ads MCP Server** empowers your AI agent to directly manage yo
 - **Product Teams** — Understand user intent by analyzing the search queries that lead to app installs.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_check**: Verify Apple Search Ads account connection
 - **get_campaign_report**: Get performance report at the campaign level
 - **get_campaign**: Get details for a specific campaign
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apple-search-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apple-search-ads` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Apple Search Ads** tools.
 
 **Configuration:**

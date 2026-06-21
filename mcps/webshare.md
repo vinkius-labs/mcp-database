@@ -38,7 +38,7 @@ No more manual logging into the Webshare dashboard to whitelist an IP or cycle a
 - **Security Researchers** — audit authorized IPs and cycle proxy endpoints for enhanced anonymity and bypass
 
 
-## Available Tools
+## Available Tools (10)
 - **authorize_new_ip**: Whitelists a new IP address for proxy access
 - **export_proxy_list**: Generates a temporary token to download the entire proxy list in a single request
 - **get_account_profile**: Retrieves Webshare user profile, including plan limits and bandwidth quotas
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Webshare** tools.
 
 **Configuration:**

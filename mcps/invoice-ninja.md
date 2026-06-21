@@ -24,7 +24,7 @@ Manage clients, invoices, and products directly through AI.
 Freelancers, small businesses, and agencies who need a powerful, automated way to handle invoicing and client management directly from their AI assistant.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_client**: Create a new client
 - **create_invoice**: Create a new invoice
 - **create_product**: Create a new product
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `invoice-ninja` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `invoice-ninja` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Invoice Ninja** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Generate rigorous, leak-proof cross-validation indices for train and test splits
 Data leakage is the silent killer of predictive models. Entrusting an LLM to randomly partition large arrays into training and testing sets is highly inefficient and risky due to context limitations. This dedicated split engine deterministically generates exact K-Fold cross-validation indices. By handling the intensive shuffling and partitioning logic natively, it ensures your data remains completely untainted and mathematically robust, providing a safe foundation for automated model validation.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_kfold**: Generates exact K-Fold cross-validation indices for train/test splits
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `k-fold-split-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `k-fold-split-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **K-Fold Split Engine** tools.
 
 **Configuration:**

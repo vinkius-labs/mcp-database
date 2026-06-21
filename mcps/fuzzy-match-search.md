@@ -18,7 +18,7 @@ Asking an LLM to find the closest match to a misspelled name in an array of 5,00
 - **Typo Tolerance:** Easily finds 'Jonnathon' when the target array contains 'Jonathan'. Includes exact match highlighting.
 
 
-## Available Tools
+## Available Tools (1)
 - **fuzzy_match**: Pass a query and a JSON array of target strings. The engine uses fuzzy algorithms to find and rank the closest matches by similarity score.
 
 Performs lightning-fast fuzzy string matching (Levenshtein-like) across an array of targets to find the closest matches to a query
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fuzzy-match-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fuzzy-match-search` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fuzzy Match Search** tools.
 
 **Configuration:**

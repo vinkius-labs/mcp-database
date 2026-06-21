@@ -31,7 +31,7 @@ Connect your Vinkius agents directly to **Dify.AI**, the leading open-source LLM
 - **Product Teams** — Monitor interactions and automate RLHF pipelines via feedback endpoints
 
 
-## Available Tools
+## Available Tools (14)
 - **delete_conversation**: Delete a Dify conversation
 - **submit_feedback**: Submit feedback (like/dislike) for a message
 - **get_suggested_questions**: Use after receiving a chat response.
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `difyai-sdk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `difyai-sdk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dify.AI SDK** tools.
 
 **Configuration:**

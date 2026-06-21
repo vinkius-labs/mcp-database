@@ -34,7 +34,7 @@ Connect your **Kargo** logistics account to your AI agent and optimize your supp
 - **IT & Supply Chain Managers** — automate data synchronization and audit payload logs through natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_carrier_info**: Get carrier contact info
 - **get_device_status**: Get specific device status
 - **get_order**: Get specific order details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kargo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kargo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kargo** tools.
 
 **Configuration:**

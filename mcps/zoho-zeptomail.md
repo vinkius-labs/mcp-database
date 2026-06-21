@@ -33,7 +33,7 @@ Connect your **Zoho ZeptoMail** account to any AI agent to automate your transac
 - **Support Teams** — track email delivery status and check suppression lists to resolve customer communication issues quickly.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_log_details**: Get details for a specific email log
 - **list_domains**: List all verified domains
 - **list_logs**: List email logs
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoho-zeptomail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoho-zeptomail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zoho ZeptoMail** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your AI agent directly to the DEFRA and UK Environment Agency open data 
 - **Civic Tech Devs** — build dashboard alerts directly from the IDE
 
 
-## Available Tools
+## Available Tools (9)
 - **get_flood**: Get a specific flood warning
 - **get_hydrology_station**: Retrieve explicit parameters for a hydrology trace
 - **get_measure**: Fetch targeted measurement configuration details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uk-environment-agency` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uk-environment-agency` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UK Environment Agency** tools.
 
 **Configuration:**

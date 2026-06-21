@@ -35,7 +35,7 @@ No more SSH-ing into your controller just to check if a node is online or to gen
 - **Privacy-Conscious Teams** — maintain full control over your self-hosted Tailscale alternative with an AI-powered interface
 
 
-## Available Tools
+## Available Tools (18)
 - **create_api_key**: Create a new API key
 - **create_preauth_key**: Create a new pre-auth key
 - **create_user**: Create a new user in Headscale
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `headscale-tailscale-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `headscale-tailscale-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Headscale (Tailscale Alternative)** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **Crelate**, the specialized recruiting CRM and applicant tracking sys
 - **Agency Owners** — Get a quick overview of agency-wide activities and job statuses via chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contact**: Add a new candidate or contact to the database
 - **get_contact_notes**: List internal notes for a specific contact
 - **get_contact_details**: Get detailed profile for a specific candidate or contact
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crelate-talent-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crelate-talent-crm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Crelate Talent CRM** tools.
 
 **Configuration:**

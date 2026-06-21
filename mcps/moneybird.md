@@ -35,7 +35,7 @@ Connect your **Moneybird** administration to your AI agent and take full control
 - **Sales Teams** — verify estimate statuses and customer information during the sales cycle.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contact**: Create a new contact in Moneybird
 - **get_invoice**: Get specific invoice details
 - **list_contacts**: List Moneybird contacts
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moneybird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moneybird` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moneybird** tools.
 
 **Configuration:**

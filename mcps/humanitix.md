@@ -13,7 +13,7 @@ Manage events, tickets, and attendees via Humanitix API.
 Connect your AI agents to Humanitix, the humane ticketing platform. This MCP server allows you to list events, track ticket sales, manage attendee lists, and view organization data directly through the Humanitix API. Ideal for automating event logistics and community management while supporting social impact.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_event**: Retrieves details for a specific event
 - **get_me**: Gets current authenticated user info
 - **list_attendees**: Lists attendees for a specific event
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `humanitix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `humanitix` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Humanitix** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more switching to the Pulumi Console to check deployment status or review sta
 - **Developers** — discover available stacks, review exported endpoints and verify resource provisioning via conversation
 
 
-## Available Tools
+## Available Tools (11)
 - **create_stack**: A stack is an isolated, independently configurable instance of your Pulumi program. Requires the org name, project name and stack name (e.g. "staging", "prod"). Returns the created stack with its URL.
 
 Create a new Pulumi stack
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pulumi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pulumi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pulumi** tools.
 
 **Configuration:**

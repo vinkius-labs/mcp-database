@@ -35,7 +35,7 @@ No more manual leaderboard exports or subscriber hunting. Your AI acts as a dedi
 - **Customer Success Teams** — streamline the retrieval of subscriber metadata and monitor referral history directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_points**: Add points to a subscriber
 - **add_subscriber**: Add a new subscriber to a campaign
 - **delete_subscriber**: Remove a subscriber from a campaign
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `referralhero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `referralhero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ReferralHero** tools.
 
 **Configuration:**

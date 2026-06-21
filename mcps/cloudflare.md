@@ -37,7 +37,7 @@ Connect AI agents to Cloudflare's platform for comprehensive edge infrastructure
 Essential for **edge application developers**, **serverless architects**, **DevOps engineers**, **full-stack developers**, and **platform teams** using Cloudflare's ecosystem. Let AI agents handle continuous Worker deployments, secret rotation, KV data management, D1 database queries, production debugging, and infrastructure monitoring. Perfect for teams running production workloads on Cloudflare who want to eliminate manual Wrangler steps, accelerate deployment cycles, and enable AI-driven edge operations.
 
 
-## Available Tools
+## Available Tools (25)
 - **create_deployment**: Strategy can be immediate (100% traffic immediately) or gradual (percentage-based rollout). Requires script name, version ID, and deployment strategy. Use this to roll out new features, rollback to previous versions, or perform canary deployments.
 
 Deploy a specific Worker version to traffic
@@ -175,7 +175,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudflare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudflare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudflare** tools.
 
 **Configuration:**

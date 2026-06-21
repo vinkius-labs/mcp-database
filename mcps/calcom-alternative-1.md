@@ -33,7 +33,7 @@ Connect your **Cal.com** account to any AI agent to streamline your scheduling w
 - **Developers** — integrate scheduling logic into automated workflows or custom AI agents.
 
 
-## Available Tools
+## Available Tools (20)
 - **cancel_booking**: Cancel a booking
 - **charge_credits**: Charge credits
 - **create_booking**: Requires either eventTypeId OR (eventTypeSlug + username).
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calcom-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calcom-alternative-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cal.com** tools.
 
 **Configuration:**

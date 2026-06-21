@@ -13,7 +13,7 @@ Data search and RAG optimization platform.
 The GroundX MCP server enables your AI agent to search across enterprise data stores and manage RAG (Retrieval-Augmented Generation) pipelines, retrieving highly relevant document chunks seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_bucket**: Create a new bucket
 - **create_group**: Create a new group
 - **get_customer_info**: Retrieve account and customer details
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `groundx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `groundx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GroundX** tools.
 
 **Configuration:**

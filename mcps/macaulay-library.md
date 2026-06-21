@@ -32,7 +32,7 @@ Connect to the **Macaulay Library** at the Cornell Lab of Ornithology. This MCP 
 - **Birders & Enthusiasts** — explore recent sightings and study species vocalizations and plumages directly through an AI assistant.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_asset**: Retrieve detailed metadata for a specific media asset
 - **get_recent_media**: Retrieve the most recently uploaded media assets
 - **search_media**: Search for media assets in the Macaulay Library
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `macaulay-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `macaulay-library` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Macaulay Library** tools.
 
 **Configuration:**

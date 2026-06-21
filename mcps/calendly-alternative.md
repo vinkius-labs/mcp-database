@@ -37,7 +37,7 @@ No more switching to the Calendly app to check who booked what or review upcomin
 - **Managers** — review team availability, track meeting volume and manage webhook integrations via conversation
 
 
-## Available Tools
+## Available Tools (12)
 - **create_scheduling_link**: Requires the event type URI and the owner type ("EventType" or "User"). Returns a booking URL that invitees can use to schedule a meeting directly via the API.
 
 Create a scheduling link for direct booking
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calendly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calendly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Calendly** tools.
 
 **Configuration:**

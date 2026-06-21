@@ -13,7 +13,7 @@ Calculate the precise boiling time for eggs based on size, temperature, and desi
 This MCP server provides precise culinary calculations to determine exactly how long to boil an egg. By using tools like `calculate_boiling_time`, `get_texture_descriptions`, and `validate_egg_parameters`, AI agents can account for variables such as egg size (small, medium, large), starting temperature (refrigerated vs ambient), and the target protein coagulation level (soft, jammy, or hard). This ensures perfect results every time, whether you are aiming for a liquid yolk or a fully set center.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_boiling_time**: Calculate the required boiling time for an egg
 - **get_texture_descriptions**: Get culinary descriptions for egg donness levels
 - **validate_egg_parameters**: Validate egg cooking parameters
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `egg-boiling-timer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `egg-boiling-timer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Egg Boiling Timer** tools.
 
 **Configuration:**

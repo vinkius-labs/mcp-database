@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your visual content production with **Banne
 - **Developers** — integrate dynamic media generation capabilities into automated notification or marketing flows.
 
 
-## Available Tools
+## Available Tools (9)
 - **generate_image**: Convenience tool to generate a static image from a project
 - **generate_media**: Generate an image or video from a template
 - **generate_video**: Convenience tool to generate a video from a project
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bannerbite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bannerbite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BannerBite** tools.
 
 **Configuration:**

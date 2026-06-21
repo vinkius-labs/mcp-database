@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your visual documentation with **ProcessOn*
 - **Operations Managers** — get real-time insights into organization-wide visual documentation and collaborative audit trails.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_file**: Create a new diagram
 - **delete_file**: Delete a diagram
 - **export_file**: Export a diagram
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `processon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `processon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ProcessOn** tools.
 
 **Configuration:**

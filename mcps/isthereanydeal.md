@@ -29,7 +29,7 @@ Connect your AI agent to **IsThereAnyDeal** to access real-time gaming commerce 
 Your AI acts as a personal shopping assistant for your gaming library, helping you optimize your budget and find the best time to buy.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_deals**: Get current best deals
 - **get_historical_low**: Get historical lowest price for games
 - **get_plain_id**: Get the ITAD Plain ID for a game
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `isthereanydeal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `isthereanydeal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IsThereAnyDeal** tools.
 
 **Configuration:**

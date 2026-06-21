@@ -27,7 +27,7 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 - **RevOps** — Full CRM visibility and reporting
 
 
-## Available Tools
+## Available Tools (12)
 - **pd_create_deal**: Title is required. Use pd_list_pipelines and pd_list_stages to find pipeline_id and stage_id. Link to existing contacts via person_id and org_id (use search tools to find these). Expected close date uses YYYY-MM-DD format.
 
 Create a new deal in Pipedrive with title, value, currency, expected close date, and pipeline/stage placement
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pipedrive-deals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pipedrive-deals` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pipedrive Deals** tools.
 
 **Configuration:**

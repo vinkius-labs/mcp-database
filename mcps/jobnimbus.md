@@ -13,7 +13,7 @@ Manage contacts, jobs, and tasks via JobNimbus CRM API.
 Empower your AI agents with JobNimbus's specialized CRM for contractors. This MCP server allows you to list and retrieve contacts and jobs, manage tasks and workflows, track payments, and view organization users directly through the JobNimbus API. Ideal for automating field service operations and project management.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_contact**: Returns addresses, phone numbers, email, and custom fields. Use this for deep intelligence on a customer before an interaction.
 
 Retrieves details for a specific contact
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jobnimbus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jobnimbus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JobNimbus** tools.
 
 **Configuration:**

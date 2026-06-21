@@ -32,7 +32,7 @@ NewsCatcher uses AI to normalize and cluster news from diverse sources, making i
 - **Brand Managers** — Track mentions across global media in real-time
 
 
-## Available Tools
+## Available Tools (4)
 - **get_news_clusters**: Get grouped news stories (clusters)
 - **get_latest_news**: Use "q" for keywords, "topic" (e.g., "sports"), "countries" (e.g., "US"), or "sources" (e.g., "cnn.com").
 
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `newscatcher` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `newscatcher` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NewsCatcher** tools.
 
 **Configuration:**

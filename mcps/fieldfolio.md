@@ -31,7 +31,7 @@ Fieldfolio is a leading B2B wholesale marketplace. This MCP server allows your A
 - **Sales Reps** — quickly look up product availability and customer history through simple natural language queries
 
 
-## Available Tools
+## Available Tools (12)
 - **get_customer**: Get details for a specific retail customer
 - **get_me**: Get details for the authorized seller account
 - **get_order**: Get details for a specific wholesale order
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fieldfolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fieldfolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fieldfolio** tools.
 
 **Configuration:**

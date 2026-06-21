@@ -33,7 +33,7 @@ Connect your **Convai** account to any AI agent to orchestrate lifelike conversa
 - **AI Researchers** — Evaluate conversation quality and manage knowledge banks for specialized conversational agents.
 
 
-## Available Tools
+## Available Tools (25)
 - **list_chat_sessions**: List chat sessions for a character
 - **list_knowledge_bank**: List Knowledge Bank status
 - **list_languages**: Returns supported languages
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `convai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `convai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Convai** tools.
 
 **Configuration:**

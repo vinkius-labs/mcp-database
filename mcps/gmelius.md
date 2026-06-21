@@ -36,7 +36,7 @@ No more manual status updates or jumping between shared inboxes. Your AI acts as
 - **Operations Managers** — analyze collaborative workflows and monitor sequence performance through simple AI queries
 
 
-## Available Tools
+## Available Tools (9)
 - **create_gmelius_card**: Add a new card to a board
 - **get_gmelius_board**: Get details for a specific board
 - **get_gmelius_conversation**: Get details for a specific conversation
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gmelius` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gmelius` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gmelius** tools.
 
 **Configuration:**

@@ -18,7 +18,7 @@ When an AI Agent attempts to generate a JSON payload containing an attachment (l
 - **Bidirectional Conversion:** Can also decode Base64 strings back to readable JSON or raw strings.
 
 
-## Available Tools
+## Available Tools (1)
 - **encode_binary**: Choose the direction (encode/decode) and format (base64, hex, base64url). Essential for preparing data for API calls that require encoded payloads.
 
 Encodes or decodes strings to Base64, Base64URL, or Hex formats safely without data loss
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `base64-binary-encoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `base64-binary-encoder` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Base64 & Binary Encoder** tools.
 
 **Configuration:**

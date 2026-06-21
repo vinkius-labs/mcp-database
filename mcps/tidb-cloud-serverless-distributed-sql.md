@@ -32,7 +32,7 @@ Connect your **TiDB Cloud** account to any AI agent and manage your distributed 
 - **DevOps Teams** — automate the discovery of cloud resources for documentation or status reporting.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_project**: Retrieve details for a specific project
 - **list_clusters**: Retrieve all Dedicated clusters within a project
 - **list_instances**: Retrieve all TiDB X instances within a project
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tidb-cloud-serverless-distributed-sql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tidb-cloud-serverless-distributed-sql` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TiDB Cloud (Serverless Distributed SQL)** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire identity infrastructure with **
 - **Authing Power Users** — integrate your existing identity workflows into your AI-driven daily routines to maintain peak operational efficiency.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_user**: Create a new user
 - **get_audit_logs**: Get security audit logs
 - **get_security_settings**: Get pool security settings
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `authing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `authing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Authing** tools.
 
 **Configuration:**

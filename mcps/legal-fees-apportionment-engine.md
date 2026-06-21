@@ -13,7 +13,7 @@ Split judicial awards and attorney fees across multiple parties with exact, audi
 Multi-party litigation often results in shared condemnations where the award must be split proportionally among plaintiffs while deducting attorney fees. Language models consistently fumble these calculations, producing rounding errors and incorrect ratios that can invalidate settlement agreements. This engine performs strict, deterministic weighted division with high-precision decimal output, ensuring that every cent is accounted for and the total always reconciles perfectly.
 
 
-## Available Tools
+## Available Tools (1)
 - **apportion_legal_fees**: Deterministically splits a judicial award among multiple parties with exact fee deduction
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `legal-fees-apportionment-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `legal-fees-apportionment-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Legal Fees Apportionment Engine** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ Epic is the world's most widely used electronic health record system, serving ov
 - **Health IT Developers** — prototype FHIR-based workflows and validate API responses interactively
 
 
-## Available Tools
+## Available Tools (10)
 - **search_patients**: Returns patient demographics including name, DOB, gender, address, and identifiers.
 
 Search patients by name, DOB, or MRN
@@ -143,7 +143,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epic-fhir` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epic-fhir` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Epic Fhir** tools.
 
 **Configuration:**

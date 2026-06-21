@@ -27,7 +27,7 @@ Connect your **Megaventory** account to any AI agent and take full control of yo
 3. Start managing your inventory from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_product**: Get details for a specific product SKU
 - **get_purchase_order**: Get details for a specific purchase order
 - **get_sales_order**: Get details for a specific sales order
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `megaventory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `megaventory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Megaventory** tools.
 
 **Configuration:**

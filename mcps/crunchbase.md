@@ -35,7 +35,7 @@ Connect AI agents to the Crunchbase API for comprehensive business intelligence 
 Essential for **venture capitalists**, **startup founders**, **business development professionals**, **market researchers**, **investment bankers**, **corporate strategists**, and **journalists**. Let AI agents perform company due diligence, track competitor funding activity, identify potential acquisition targets, research investor backgrounds, and map ecosystem relationships. Perfect for professionals who need to answer questions like 'Who invested in Stripe's Series B?', 'What companies has Google acquired since 2020?', or 'Which VCs are most active in AI/ML startups?'
 
 
-## Available Tools
+## Available Tools (10)
 - **get_acquisition_details**: Use this after list_acquisitions to understand the full context of a specific M&A deal.
 
 Get complete details of a specific acquisition transaction
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crunchbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crunchbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Crunchbase** tools.
 
 **Configuration:**

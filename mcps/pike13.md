@@ -27,7 +27,7 @@ Connect your **Pike13** studio to any AI agent and manage your fitness business 
 Pike13 uniquely offers a **Reporting API** with deep analytics — making it the best choice for data-driven studio owners who want AI-powered business intelligence. Combined with the Core API and Webhooks, it provides the most comprehensive data access in the fitness industry.
 
 
-## Available Tools
+## Available Tools (9)
 - **list_events**: Filter by date range. Follows JSON:API 1.0 spec.
 
 List scheduled classes/events
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pike13` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pike13` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pike13** tools.
 
 **Configuration:**

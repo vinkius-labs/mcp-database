@@ -32,7 +32,7 @@ Integrate **Documint**, the versatile document generation and automation platfor
 - **Developers** — Audit template variables and test document generation logic instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_new_generation**: Generate a new document using a specific template and data object
 - **get_documint_account_metadata**: Retrieve metadata and usage limits for your Documint account
 - **get_generation_details**: Get the current status and download URL for a specific generated document
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `documint` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `documint` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Documint** tools.
 
 **Configuration:**

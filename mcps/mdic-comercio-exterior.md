@@ -32,7 +32,7 @@ Connect to the **MDIC (Ministry of Development, Industry, Trade and Services)** 
 - **Business Intelligence Leads** — integrate official Brazilian trade statistics into automated reports and dashboards
 
 
-## Available Tools
+## Available Tools (5)
 - **get_package**: Get detailed metadata for a specific dataset (package)
 - **get_resource**: Get metadata for a specific resource (data file)
 - **list_packages**: List all datasets (packages) available in the MDIC portal
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mdic-comercio-exterior` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mdic-comercio-exterior` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MDIC (Comércio Exterior)** tools.
 
 **Configuration:**

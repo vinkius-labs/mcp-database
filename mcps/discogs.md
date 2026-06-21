@@ -37,7 +37,7 @@ Unlock the power of the **Discogs** music database — the most comprehensive ca
 - **Record Store Owners** — price inventory, check demand, and source rare items.
 
 
-## Available Tools
+## Available Tools (13)
 - **get_artist**: Returns the artist name, real name, profile/biography, members (for groups), URLs, and images. Use this after identifying an artist ID from search results.
 
 Get detailed information about a specific artist
@@ -139,7 +139,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `discogs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `discogs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Discogs** tools.
 
 **Configuration:**

@@ -20,7 +20,7 @@ U.S. Treasury debt data.
 ### Zero Auth
 
 
-## Available Tools
+## Available Tools (5)
 - **get_national_debt**: S. national debt (Total Public Debt Outstanding) updated daily by the Treasury Department. Breaks down into Debt Held by the Public (marketable securities) and Intragovernmental Holdings (trust funds like Social Security). As of 2026, the national debt exceeds $39 trillion.
 
 Get the U.S. national debt to the penny — updated daily
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-treasury-debt-national-debt-interest-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-treasury-debt-national-debt-interest-rates` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **U.S. Treasury Debt — National Debt & Interest Rates** tools.
 
 **Configuration:**

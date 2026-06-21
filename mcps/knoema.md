@@ -33,7 +33,7 @@ Connect your AI agent to **Knoema**, the most comprehensive source of global dec
 - **Scientific Research** — find environmental and social datasets for academic or professional studies
 
 
-## Available Tools
+## Available Tools (10)
 - **search_datasets**: Returns dataset IDs and metadata. Use this to find the correct data source for your statistics.
 
 Search for datasets in Knoema
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `knoema` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `knoema` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Knoema** tools.
 
 **Configuration:**

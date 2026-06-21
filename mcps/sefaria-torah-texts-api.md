@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire religious research and textual 
 - **Operations Leads** — automate theological data querying to orchestrate cross-functional educational teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the Sefaria service is operational
 - **get_daily_reading_calendar**: Get the daily reading schedule (Parashah, Daf Yomi, etc.)
 - **get_sacred_text**: Get a specific sacred text by reference (e.g., Genesis 1:1, Pirkei Avot 1:1)
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sefaria-torah-texts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sefaria-torah-texts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sefaria Torah Texts API** tools.
 
 **Configuration:**

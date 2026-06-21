@@ -35,7 +35,7 @@ Stop guessing if a package is safe. Let your AI agent use Socket's industry-lead
 - **DevOps Teams** — Integrate dependency scanning into the conversation to quickly triage security reports.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_scan**: Provide manifest files data (e.g., package.json, requirements.txt).
 
 Create a new scan by uploading manifest files
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `socketdev-dependency-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `socketdev-dependency-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Socket.dev (Dependency Security)** tools.
 
 **Configuration:**

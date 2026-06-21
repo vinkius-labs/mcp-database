@@ -33,7 +33,7 @@ Connect to **Monster API** to leverage high-performance AI models without managi
 - **Product Teams** — Rapidly prototype AI-powered features like automated transcription or image editing.
 
 
-## Available Tools
+## Available Tools (5)
 - **generate_image_to_image**: Returns a process_id to poll for status.
 
 Modify an existing image based on a prompt
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `monster-api-serverless-gpu-ai-model-hosting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `monster-api-serverless-gpu-ai-model-hosting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Monster API (Serverless GPU & AI Model Hosting)** tools.
 
 **Configuration:**

@@ -22,7 +22,7 @@ DONKI (Database Of Notifications, Knowledge, Information) is NASA's comprehensiv
 - 📡 All Notifications (unified feed)
 
 
-## Available Tools
+## Available Tools (7)
 - **get_cme**: CMEs are massive bursts of solar wind and magnetic fields from the Sun. Earth-directed CMEs cause geomagnetic storms and aurora. Default: last 30 days.
 
 Get Coronal Mass Ejection (CME) events from NASA DONKI
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nasa-donki-space-weather-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nasa-donki-space-weather-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NASA DONKI — Space Weather Intelligence** tools.
 
 **Configuration:**

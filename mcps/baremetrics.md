@@ -34,7 +34,7 @@ Unlock the pulse of your subscription business with **Baremetrics**, the leading
 - **Operations Leads** — verify data sources and plan configurations across the entire Baremetrics tenant.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_account_check**: Verify Baremetrics connection
 - **get_active_customers**: Convenience tool to get active customer count
 - **get_churn_rate**: Convenience tool to get user churn rate
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `baremetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `baremetrics` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Baremetrics** tools.
 
 **Configuration:**

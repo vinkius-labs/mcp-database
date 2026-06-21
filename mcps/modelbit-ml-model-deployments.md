@@ -33,7 +33,7 @@ Connect your **Modelbit** workspace to any AI agent to run production-grade mach
 - **Product Teams** — prototype AI features that rely on custom proprietary machine learning logic
 
 
-## Available Tools
+## Available Tools (1)
 - **get_inference**: Use this to pass data to your ML models and receive the computed output.
 
 Call a deployed Modelbit machine learning model
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `modelbit-ml-model-deployments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `modelbit-ml-model-deployments` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Modelbit (ML Model Deployments)** tools.
 
 **Configuration:**

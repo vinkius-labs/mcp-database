@@ -32,7 +32,7 @@ Integrate **EventMobi**, the comprehensive event experience platform, directly i
 - **Operations Teams** — Monitor app updates and organizational event metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_eventmobi_account_metadata**: Retrieve metadata and limits for your EventMobi account
 - **get_event_engagement_analytics**: Get high-level engagement analytics for a specific event
 - **get_event_detailed_data**: Get detailed settings and information for a specific event
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eventmobi-experience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eventmobi-experience` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EventMobi Experience** tools.
 
 **Configuration:**

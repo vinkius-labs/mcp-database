@@ -33,7 +33,7 @@ Connect your **Zakeke** account to any AI agent to streamline your visual produc
 - **Developers** — Integrate visual customization data and 3D configuration logic into custom applications effortlessly
 
 
-## Available Tools
+## Available Tools (9)
 - **get_cart_info**: Get cart information for a 3D configuration
 - **list_compositions**: List all 3D product configurations
 - **get_design_print_files**: Get ZIP file of print-ready outputs for a design
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zakeke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zakeke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zakeke** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Your AI acts as a dedicated marketing assistant, ready to sync leads or pull cam
 - **Founders** — automate CRM cross-referencing by letting the agent query your active contacts
 
 
-## Available Tools
+## Available Tools (10)
 - **create_contact**: Create a new contact (subscriber)
 - **create_list**: Create a new subscriber list
 - **delete_contact**: Delete a contact
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `get-a-newsletter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `get-a-newsletter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Get a Newsletter** tools.
 
 **Configuration:**

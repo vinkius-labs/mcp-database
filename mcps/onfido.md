@@ -33,7 +33,7 @@ Connect your **Onfido** account to any AI agent to streamline your KYC (Know You
 - **Operations Teams** — automate the creation of applicants and trigger verification workflows as part of user onboarding.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_applicant**: Create a new Onfido applicant
 - **create_check**: Create a new Check (Legacy/Classic)
 - **create_workflow_run**: Create a new Workflow Run
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `onfido` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `onfido` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Onfido** tools.
 
 **Configuration:**

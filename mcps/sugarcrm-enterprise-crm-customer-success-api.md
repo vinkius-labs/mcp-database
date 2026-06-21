@@ -33,7 +33,7 @@ Connect your **SugarCRM** instance to any AI agent to streamline your customer s
 - **Data Analysts** — query and count records across modules for rapid reporting
 
 
-## Available Tools
+## Available Tools (10)
 - **bulk_request**: Execute multiple API calls in a single request
 - **count_records**: Count records matching a filter in a module
 - **create_record**: Create a new record in a SugarCRM module
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sugarcrm-enterprise-crm-customer-success-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sugarcrm-enterprise-crm-customer-success-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SugarCRM (Enterprise CRM & Customer Success API)** tools.
 
 **Configuration:**

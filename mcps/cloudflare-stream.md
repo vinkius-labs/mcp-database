@@ -33,7 +33,7 @@ Connect your **Cloudflare Stream** account to any AI agent to manage your video 
 - **Live Streamers** — monitor live inputs and configure simulcast destinations on the fly.
 
 
-## Available Tools
+## Available Tools (26)
 - **copy_audio_track**: Add an audio track via URL
 - **create_live_input**: Can specify metadata and recording options.
 
@@ -130,7 +130,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudflare-stream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudflare-stream` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudflare Stream** tools.
 
 **Configuration:**

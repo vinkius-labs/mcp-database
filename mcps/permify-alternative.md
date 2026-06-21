@@ -33,7 +33,7 @@ Connect your **Permify** instance to any AI agent to orchestrate complex authori
 - **DevOps Teams** — Automate tenant provisioning and policy bundle deployments through the agent
 
 
-## Available Tools
+## Available Tools (21)
 - **bulk_check_permissions**: Check multiple permissions in a single request
 - **check_permission**: Perform a resource-based authorization check
 - **create_tenant**: Create a new Permify tenant
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `permify-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `permify-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Permify** tools.
 
 **Configuration:**

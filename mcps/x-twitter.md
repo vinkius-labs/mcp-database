@@ -36,7 +36,7 @@ No need to scrape HTML or fiddle with complex Postman queries. Your AI agent bec
 - **Marketing Teams** — audit influencers' engagement by checking exact follower counts and most prominent tweets in seconds
 
 
-## Available Tools
+## Available Tools (6)
 - **get_tweet_details**: Retrieve the text and engagement metrics of a specific Tweet by its numeric ID
 - **get_tweet_volume**: Returns time-series buckets showing how many tweets match a query. Great for spotting spikes in brand mentions or trending topics.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `x-twitter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `x-twitter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **X (Twitter)** tools.
 
 **Configuration:**

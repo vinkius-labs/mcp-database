@@ -33,7 +33,7 @@ Connect your **Open WebUI** instance to any AI agent and take full control of yo
 - **DevOps Teams** — monitor local Ollama instances and manage model availability across the organization.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_file_to_collection**: Add a file to a knowledge collection
 - **chat_completed**: Run outlet filters for completed chat
 - **chat_completions**: OpenAI-compatible chat completion
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-webui` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-webui` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open WebUI** tools.
 
 **Configuration:**

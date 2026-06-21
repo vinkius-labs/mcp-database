@@ -13,7 +13,7 @@ Precise cooking time, resting duration, and carryover temperature predictions fo
 The Roast Calculator MCP server provides specialized culinary computations for professional and home roasting. By connecting AI agents to precise thermal models, it enables accurate predictions of cooking duration using `calculate_cooking_duration`, recommended resting periods via `calculate_rest_duration`, and temperature shifts during the rest phase with `estimate_carrylag_impact`.
 
 
-## Available Tools
+## Available Tools (3)
 - **estimate_carryover_impact**: Estimate the temperature increase due to carryover cooking
 - **calculate_cooking_duration**: Calculate the estimated total cooking time for a roast
 - **calculate_rest_duration**: Calculate the recommended resting time for a roast
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `roast-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `roast-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Roast Calculator** tools.
 
 **Configuration:**

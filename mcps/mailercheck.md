@@ -33,7 +33,7 @@ Connect your **MailerCheck** account to any AI agent to automate your email hygi
 - **Growth Engineers** — Integrate email validation logic and batch monitoring directly into your development tools
 
 
-## Available Tools
+## Available Tools (5)
 - **get_account_info**: Get account details and credit balance
 - **get_batch_results**: Retrieve the results for a specific batch
 - **list_verification_batches**: List all recent verification batches
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailercheck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailercheck` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MailerCheck** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect any **Blockscout** explorer instance to your AI agent for deep on-chain 
 - **Crypto Power Users** — Monitor wallet balances and portfolio movements without leaving your chat interface.
 
 
-## Available Tools
+## Available Tools (14)
 - **get_account_balance**: Get native balance for an address (Etherscan API)
 - **get_account_internal_transactions**: Get internal transactions by address (Etherscan API)
 - **get_account_transactions**: Get transactions by address (Etherscan API)
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blockscout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blockscout` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blockscout** tools.
 
 **Configuration:**

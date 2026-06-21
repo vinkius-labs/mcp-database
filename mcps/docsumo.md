@@ -32,7 +32,7 @@ Integrate **DocSumo**, the advanced Intelligent Document Processing (IDP) platfo
 - **Operations Leads** — Monitor document processing health and success rates across the organizational pipeline.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_docsumo_account_metadata**: Retrieve metadata and usage limits for your DocSumo account
 - **get_document_extraction_data**: Get the structured data extracted from a specific document
 - **quick_idp_health_audit**: Retrieve a high-level summary of document processing activity and success rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `docsumo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `docsumo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DocSumo** tools.
 
 **Configuration:**

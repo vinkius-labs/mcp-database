@@ -23,7 +23,7 @@ Our system solves this by treating focus sessions as part of an adaptive biologi
 This tracker doesn't just count minutes; it manages your energy. By enforcing structured recovery and monitoring performance integrity, you can maintain peak focus safely, ensuring that the quality of your work remains high day after day.
 
 
-## Available Tools
+## Available Tools (4)
 - **suggest_load_adjustment**: Provide prescriptive advice regarding schedule changes based on fatigue indicators
 - **calculate_required_break**: Calculate the required type and minimum duration of a pause
 - **query_session_status**: Determine current position within the planned working sequence
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pomodoro-mental-health-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pomodoro-mental-health-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pomodoro Mental Health Tracker** tools.
 
 **Configuration:**

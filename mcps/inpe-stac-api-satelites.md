@@ -32,7 +32,7 @@ Connect to the **INPE Brazil Data Cube** and explore high-resolution satellite i
 - **GIS Developers** — Integrate satellite metadata discovery and asset retrieval directly into your development workflow.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_collection_items**: List items within a specific collection
 - **get_collection**: Get detailed metadata for a specific collection
 - **list_collections**: g., CBERS4-WFI-16D-2, S2-16D-2).
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inpe-stac-api-satelites` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inpe-stac-api-satelites` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **INPE (STAC API - Satélites)** tools.
 
 **Configuration:**

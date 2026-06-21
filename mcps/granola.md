@@ -38,7 +38,7 @@ Connect your **Granola.ai** account to any AI agent and take full control of you
 - **Operations Teams** — monitor organizational knowledge and verify meeting results in real-time through natural conversation
 
 
-## Available Tools
+## Available Tools (12)
 - **list_documents**: List all meeting documents in the Granola workspace with pagination
 - **get_metadata**: Retrieve metadata for a specific meeting document
 - **get_transcript**: Retrieve the full transcript of a meeting with speaker detection
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `granola` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `granola` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Granola** tools.
 
 **Configuration:**

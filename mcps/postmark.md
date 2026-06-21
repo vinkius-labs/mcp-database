@@ -34,7 +34,7 @@ Forget logging into dashboards to copy-paste trace IDs. Ask the model to 'find t
 - **QA Testers** — effortlessly trigger test templates and read precise delivery confirmation metrics
 
 
-## Available Tools
+## Available Tools (10)
 - **delete_template**: Delete an email template
 - **update_server_config**: Update server name
 - **get_bounce_logs**: Get raw SMTP logs for a bounce
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `postmark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `postmark` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Postmark** tools.
 
 **Configuration:**

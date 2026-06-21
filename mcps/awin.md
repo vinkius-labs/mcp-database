@@ -34,7 +34,7 @@ Orchestrate your affiliate marketing performance with **Awin**, the world's lead
 - **Operations Leads** — audit account connectivity and verify transaction statuses across multiple publisher accounts.
 
 
-## Available Tools
+## Available Tools (10)
 - **generate_tracking_link**: Generate an Awin tracking link for a destination URL
 - **get_account_check**: Verify Awin connection and list available accounts
 - **get_aggregated_report**: Get aggregated performance reports
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `awin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `awin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Awin** tools.
 
 **Configuration:**

@@ -29,7 +29,7 @@ Connect your **ClassPass** venue to any AI agent and manage your marketplace pre
 - **Multi-location** — Compare ClassPass performance across all locations
 
 
-## Available Tools
+## Available Tools (7)
 - **list_schedule**: Filter by date range.
 
 List ClassPass schedule
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `classpass` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `classpass` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ClassPass** tools.
 
 **Configuration:**

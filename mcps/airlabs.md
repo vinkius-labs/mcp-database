@@ -43,7 +43,7 @@ No more navigating flight tracking websites or manually parsing aviation data fe
 - **Airport Operators** — monitor flight activity, delay trends, and operational efficiency
 
 
-## Available Tools
+## Available Tools (12)
 - **get_aircraft**: Returns aircraft registration number, ICAO type code, manufacturer and model, owner/operator, registration country, year built, engine type and count, and current operational status. The hex code is a unique identifier assigned to each aircraft transponder and can be found in flight tracking data. Essential for aviation enthusiasts, aircraft tracking, fleet verification, and detailed aircraft research. AI agents use this when users have an aircraft hex code from flight tracking data and need to look up the full aircraft registration and specifications.
 
 Get information about a specific aircraft by hex code
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `airlabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `airlabs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AirLabs** tools.
 
 **Configuration:**

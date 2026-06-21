@@ -36,7 +36,7 @@ No more manual status checking of individual proposals or missing high-intent bu
 - **Finance Teams** — monitor the transition from proposal to active checkout through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **create_proposal**: Pass data as a JSON string.
 
 Create a new sales proposal
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cacheflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cacheflow` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cacheflow** tools.
 
 **Configuration:**

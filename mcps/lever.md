@@ -33,7 +33,7 @@ Connect your **Lever** account to any AI agent to streamline your recruitment an
 - **HR Operations** — Automate the creation of job drafts and maintain clean recruitment data effortlessly
 
 
-## Available Tools
+## Available Tools (10)
 - **archive_hiring_opportunity**: Archive a candidate opportunity
 - **create_hiring_opportunity**: Requires a JSON body with opportunity details.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lever` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lever` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lever** tools.
 
 **Configuration:**

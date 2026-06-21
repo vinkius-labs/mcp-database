@@ -31,7 +31,7 @@ Connect your **Getform** account to any AI agent to streamline your data collect
 - **Support Teams** — Automate the logging of customer inquiries into your form backend.
 
 
-## Available Tools
+## Available Tools (2)
 - **getform_list_submissions**: Requires Protected Mode (API Key).
 
 List submissions for a specific form
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `getform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `getform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Getform** tools.
 
 **Configuration:**

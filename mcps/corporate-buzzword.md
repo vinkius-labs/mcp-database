@@ -31,7 +31,7 @@ Elevate your corporate communication with the **Corporate Buzzword** MCP server.
 - **Teams** — wanting to add a bit of humor to their internal tools or Slack bots.
 
 
-## Available Tools
+## Available Tools (1)
 - **get_random_buzzword**: Ideal for adding corporate speak to applications.
 
 Get a random corporate buzzword or phrase
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `corporate-buzzword` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `corporate-buzzword` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Corporate Buzzword** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Turn your **OpenCart** e-commerce backend into an AI-powered command center. Bro
 - **Fulfillment ops** — update order statuses in bulk by talking to your AI agent instead of clicking through forms
 
 
-## Available Tools
+## Available Tools (10)
 - **list_products**: Fetches active products, retrieving metadata such as prices, stock status, and basic SEO tags mapped inside the OpenCart product repository.
 
 List OpenCart products using the native OpenCart API
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opencart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opencart` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenCart** tools.
 
 **Configuration:**

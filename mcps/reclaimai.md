@@ -33,7 +33,7 @@ Connect your **Reclaim.ai** intelligent scheduling assistant directly to your AI
 - **Developers (Deep Work)** — Dynamically review assigned sprints and generate unbreakable focus blocks via the `create_task` directive directly from IDE terminals.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_task**: Specify title, duration in minutes, due date, and priority (P1 to P4).
 
 Creates a new task to be auto-scheduled by Reclaim.ai
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `reclaimai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `reclaimai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Reclaim.ai** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect to **Overpass API** (OpenStreetMap) and query the world's largest free g
 - **Developers** — integrate OpenStreetMap data into location-based applications
 
 
-## Available Tools
+## Available Tools (16)
 - **custom_query**: The query should be valid Overpass QL syntax. The output format is automatically set to JSON. If no out statement is included, "out geom;" is appended automatically. Example: `node["amenity"="cafe"](51.5,-0.15,51.51,-0.14); out geom;`
 
 Execute a custom Overpass QL query
@@ -149,7 +149,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `overpass-openstreetmap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `overpass-openstreetmap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Overpass (OpenStreetMap)** tools.
 
 **Configuration:**

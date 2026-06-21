@@ -32,7 +32,7 @@ Integrate **DevCycle**, the modern feature flag and experimentation platform, di
 - **DevOps & SREs** — Audit environment settings and flag statuses during incident response.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_environment_sdk_keys**: List SDK keys for all environments in a project
 - **get_feature_flag_details**: Get full configuration and targeting rules for a specific feature flag
 - **get_project_details**: Get detailed information for a specific DevCycle project
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `devcycle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `devcycle` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DevCycle** tools.
 
 **Configuration:**

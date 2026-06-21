@@ -35,7 +35,7 @@ Connect your **Moz API** account to any AI agent and take full control of your s
 - **Content Strategists** — identify top-performing pages and analyze anchor text distributions efficiently to guide content production
 
 
-## Available Tools
+## Available Tools (10)
 - **get_url_metrics**: 0 metrics defining explicitly domain rankings and literal link equity boundaries.
 
 Get Moz API V3 Domain Authority (DA) Page Authority (PA) spam scoring and mapped exact link counts
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moz-seo-metrics-link-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moz-seo-metrics-link-research` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moz (SEO Metrics & Link Research)** tools.
 
 **Configuration:**

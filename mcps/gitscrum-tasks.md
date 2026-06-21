@@ -34,7 +34,7 @@ Your agent handles the complete task lifecycle so you never need to context-swit
 - **Product managers** — filter and review task progress across multiple dimensions instantly
 
 
-## Available Tools
+## Available Tools (28)
 - **assign_member**: Assign a user to a task
 - **create_checklist_item**: Use parent_id to create sub-items.
 
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gitscrum-tasks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gitscrum-tasks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GitScrum Tasks** tools.
 
 **Configuration:**

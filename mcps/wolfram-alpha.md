@@ -32,7 +32,7 @@ Wolfram Alpha is the standard for computational knowledge, used by millions of s
 - **Science Teams** -- Retrieve verified chemical and astronomical data quickly
 
 
-## Available Tools
+## Available Tools (5)
 - **astronomical_data**: Retrieve astronomical data and celestial positions
 - **chemical_data**: Get chemical properties and data for a substance
 - **solve_math**: Wolfram Alpha will solve it and show steps if available.
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wolfram-alpha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wolfram-alpha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wolfram Alpha** tools.
 
 **Configuration:**

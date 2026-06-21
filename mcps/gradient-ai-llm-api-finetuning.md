@@ -33,7 +33,7 @@ Connect to **Gradient AI** to leverage enterprise-grade LLM infrastructure. This
 - **Developers** — integrate advanced LLM capabilities into applications with minimal friction.
 
 
-## Available Tools
+## Available Tools (19)
 - **analyze_sentiment**: Analyze the sentiment of a document
 - **answer_question**: Answer a question based on a source document
 - **complete_model**: Generate a completion for a given prompt
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gradient-ai-llm-api-finetuning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gradient-ai-llm-api-finetuning` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gradient AI (LLM API & Finetuning)** tools.
 
 **Configuration:**

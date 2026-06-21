@@ -33,7 +33,7 @@ Connect your **AppTweak** account to your AI agent to unlock enterprise-grade Ap
 - **Founders** — get a morning digest of your current category ranking and keyword efficiencies across your target markets
 
 
-## Available Tools
+## Available Tools (9)
 - **get_app_metadata**: Provide either the Apple App Store numeric ID or the Google Play Store package name. Identifies core app properties and performance indicators.
 
 Get complete app metadata from AppTweak including title, developer, rating, reviews, category, and version
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `apptweak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `apptweak` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AppTweak** tools.
 
 **Configuration:**

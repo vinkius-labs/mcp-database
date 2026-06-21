@@ -33,7 +33,7 @@ Connect to **Meteostat** to empower your AI agent with one of the largest databa
 - **Developers** — integrate weather context into applications without building complex scrapers or data pipelines.
 
 
-## Available Tools
+## Available Tools (10)
 - **point_daily**: Get historical daily point data
 - **point_hourly**: Get historical hourly point data
 - **point_monthly**: Get historical monthly point data
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meteostat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meteostat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Meteostat** tools.
 
 **Configuration:**

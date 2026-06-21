@@ -34,7 +34,7 @@ Connect your **Cedar AI** railway management account to any AI agent and simplif
 - **Fleet Managers** — track railcar statuses and conditions to optimize equipment availability via the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **arrive_train**: Record train arrival
 - **depart_train**: Record train departure
 - **get_railcar_details**: Get details for a specific railcar
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cedar-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cedar-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cedar AI** tools.
 
 **Configuration:**

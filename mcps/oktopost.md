@@ -35,7 +35,7 @@ Connect your **Oktopost** account to your AI agent and streamline your B2B socia
 - **Marketing Analysts** — automate the retrieval of social analytics reports for performance tracking.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_analytics_report**: Get social analytics report
 - **get_campaign_details**: Get specific campaign info
 - **get_message_details**: Get specific message details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oktopost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oktopost` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Oktopost** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Affinda** account to your AI agent to unlock powerful intelligent
 - **Compliance Officers** — retrieve parsed identity documents for risk assessment and verification
 
 
-## Available Tools
+## Available Tools (5)
 - **list_documents**: Retrieve all parsed documents in an Affinda workspace with their processing status
 - **get_document**: Retrieve the fully structured JSON data and status for a specific processed document in Affinda
 - **create_document**: Defaults to synchronous waiting for the output.
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `affinda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `affinda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Affinda** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Equip your AI agent with professional-grade tactical intelligence for **Clash Ro
 - **Data Enthusiasts** — perform deep audits of global card usage and player rankings directly from your workflow
 
 
-## Available Tools
+## Available Tools (13)
 - **get_battle_log**: Get recent match history for a player
 - **get_upcoming_chests**: Get the next chests in a player's rotation
 - **get_clan_details**: Get full profile for a Clash Royale clan
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clash-royale-tactical-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clash-royale-tactical-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clash Royale Tactical Intelligence** tools.
 
 **Configuration:**

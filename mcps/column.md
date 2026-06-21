@@ -30,7 +30,7 @@ The **Column MCP Server** effectively bypasses standard FinTech wrappers and tie
 - **Property / Payroll Managers** — Rapidly push independent paper checks leveraging address endpoints via chat interfaces.
 
 
-## Available Tools
+## Available Tools (12)
 - **column_create_ach_transfer**: Fire an ACH to an external routing/account number
 - **column_create_bank_account**: Establish a DDA (Demand Deposit Account)
 - **column_create_check**: Very useful for legacy vendor systems.
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `column` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `column` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Column** tools.
 
 **Configuration:**

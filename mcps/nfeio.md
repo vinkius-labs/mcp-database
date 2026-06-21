@@ -34,7 +34,7 @@ Connect your AI agents to **NFe.io**, the leading Brazilian platform for fiscal 
 - **Accountants & Finance Teams** — quickly retrieve monthly invoice summaries and XML files via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_service_invoice**: Cancel an issued Service Invoice (NFS-e)
 - **create_company**: Register a new company (issuer) in NFe.io
 - **get_company_details**: Get detailed info for a specific company issuer
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nfeio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nfeio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NFe.io** tools.
 
 **Configuration:**

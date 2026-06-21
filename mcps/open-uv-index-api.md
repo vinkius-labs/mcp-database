@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire environmental safety and UV aud
 - **Operations Leads** — automate environmental data querying to orchestrate cross-functional safety teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the Open UV service is operational
 - **get_uv_forecast**: Get UV Index forecast for a specific location
 - **get_uv_protection_guide**: Get sun protection recommendations based on UV Index
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-uv-index-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-uv-index-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open UV Index API** tools.
 
 **Configuration:**

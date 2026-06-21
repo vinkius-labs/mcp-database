@@ -37,7 +37,7 @@ No more logging into multiple vendor portals or manually updating menus. Your AI
 - **Delivery Coordinators** — fetch order details and history directly from your workflow to optimize dispatching
 
 
-## Available Tools
+## Available Tools (13)
 - **add_catalog_products**: Add products to chain catalog on Foodpanda
 - **get_catalog_job**: Get catalog job status on Foodpanda
 - **export_catalog**: Export vendor catalog on Foodpanda
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `foodpanda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `foodpanda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Foodpanda** tools.
 
 **Configuration:**

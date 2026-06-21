@@ -36,7 +36,7 @@ No more manual deal logging or digging through complex matter tables in the port
 - **Legal Tech Developers** — integrate automated matter tracking and expense reporting into custom workflows through simple AI queries
 
 
-## Available Tools
+## Available Tools (23)
 - **create_contact**: Provide first and last name for persons. For companies, set type to "Company" and use first_name as the company name.
 
 Create a new contact
@@ -173,7 +173,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clio-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clio** tools.
 
 **Configuration:**

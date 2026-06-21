@@ -35,7 +35,7 @@ No more manual keyword-based searching or messy scraping scripts. Your AI acts a
 - **Content Analysts** — automate the extraction of highlights and clean text from technical blogs and news without leaving your workspace
 
 
-## Available Tools
+## Available Tools (12)
 - **advanced_custom_search**: Complex search query
 - **find_similar_pages**: Find matches for a URL
 - **get_api_status**: Check connection
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exa-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exa-ai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Exa AI** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate essential financial health indicators including liquidity, solvency, a
 This MCP server provides specialized tools to quantify a company's financial stability. Use `get_short_term_liquidity_ratios` to determine how well a business can meet upcoming debt obligations using current assets and inventories. You can also use `get_long_term_solvency_ratios` to evaluate long-term capital structure through general liquidity and debt-to-equity ratios, or `get_interest_coverage_ratio` to assess the ability to service interest expenses from operating profits.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_interest_coverage_ratio**: Calculate interest coverage ratio
 - **get_short_term_liquidity_ratios**: Calculate short-term liquidity ratios
 - **get_long_term_solvency_ratios**: Calculate long-term solvency ratios
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `financial-ratios-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `financial-ratios-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Financial Ratios Calculator** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate player Lifetime Value (LTV), Breakeven CAC, and retention impact.
 An analytical engine for mobile gaming economics. Use `get_segment_economics` to find the maximum allowable acquisition cost, `get_revenue_distribution` to see segment revenue splits based on the 80/20 rule, and `get_retention_impact` to quantify the financial benefit of reducing churn.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_retention_impact**: 01 reduction in churn.
 
 Calculate the value of improving player retention by 1%
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `player-spending-ltv-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `player-spending-ltv-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Player Spending LTV Calculator** tools.
 
 **Configuration:**

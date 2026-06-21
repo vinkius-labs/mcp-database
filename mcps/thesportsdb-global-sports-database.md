@@ -32,7 +32,7 @@ Equip your AI agent with the most comprehensive sports intelligence available vi
 - **Content Creators** — automate the retrieval of high-quality team badges and player artwork for media production
 
 
-## Available Tools
+## Available Tools (16)
 - **list_events_by_day**: List all sports events for a specific date
 - **list_last_events_by_team**: List recent match results for a specific team
 - **list_next_events_by_team**: List upcoming matches for a specific team
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thesportsdb-global-sports-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thesportsdb-global-sports-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TheSportsDB Global Sports Database** tools.
 
 **Configuration:**

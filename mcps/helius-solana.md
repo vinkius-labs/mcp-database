@@ -33,7 +33,7 @@ Connect your **Helius** account to any AI agent to interact with the Solana bloc
 - **NFT Collectors** — Manage and inspect compressed NFTs and collections with ease.
 
 
-## Available Tools
+## Available Tools (14)
 - **get_asset_batch**: Get multiple assets in one call
 - **get_asset_proof**: Get Merkle proof for compressed NFTs
 - **get_asset**: Get detailed data for a specific Solana asset
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `helius-solana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `helius-solana` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Helius (Solana)** tools.
 
 **Configuration:**

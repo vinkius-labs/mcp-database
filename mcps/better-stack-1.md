@@ -35,7 +35,7 @@ Stop switching context between your terminal and incident dashboards during crit
 - **Backend Developers** — rapidly debug failing cron heartbeats while simultaneously patching code
 
 
-## Available Tools
+## Available Tools (10)
 - **list_monitors**: List all monitors on Better Stack (Better Uptime)
 - **get_monitor**: Get full details of a specific Better Stack monitor
 - **list_incidents**: List all explicit incidents on Better Stack
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `better-stack-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `better-stack-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Better Stack** tools.
 
 **Configuration:**

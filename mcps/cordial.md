@@ -32,7 +32,7 @@ Integrate **Cordial**, the cross-channel marketing platform, directly into your 
 - **Marketing Operations** — Audit automation workflows and supplementary data tables.
 
 
-## Available Tools
+## Available Tools (10)
 - **upsert_subscriber**: Creates or updates a profile with identity properties, channel preferences, and custom attributes.
 
 Create or update a subscriber profile
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cordial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cordial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cordial** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **ProofHub** domain to any AI agent to streamline project managemen
 - **Remote Teams** — create quick to-dos and check shared files seamlessly from your AI chat
 
 
-## Available Tools
+## Available Tools (10)
 - **list_projects**: ProofHub is a collaboration tool with tasks, discussions, and files.
 
 Lists all projects in ProofHub
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `proofhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `proofhub` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ProofHub** tools.
 
 **Configuration:**

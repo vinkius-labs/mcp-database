@@ -33,7 +33,7 @@ Connect your **Beagle Security** account to any AI agent and integrate automated
 - **DevSecOps Teams** — integrate security testing into automated CI/CD summaries and agent-led workflows.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_application_details**: Get details of an application
 - **get_project_details**: Get details of a specific project
 - **get_test_results**: Retrieve security test results
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `beagle-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `beagle-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Beagle Security** tools.
 
 **Configuration:**

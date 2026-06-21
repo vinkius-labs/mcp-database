@@ -38,7 +38,7 @@ Estimation Prover uses 5 Decision Pivots to evaluate and validate estimates:
 - **Reference Class Forecasting.** By grounding estimates in historical data, it shifts the focus from optimistic predictions to historical reality. Past overruns are used as warning metrics for new tasks.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_estimation**: The Planning Fallacy (Kahneman 1979) proves humans systematically underestimate by 25-50% — even when they KNOW about the bias. The only defense is structured estimation. You must: (1) DECOMPOSE scope into units ≤2 days each — each with its own estimate. A single estimate for a multi-day task is a guess. Decomposition forces specificity, (2) MAP unknowns — technical risks, knowledge gaps, dependency uncertainties. For each: name, likelihood (low/med/high), impact on timeline if it materializes. The unknowns will blow the estimate, not the knowns, (3) cite a SPECIFIC historical precedent — not "based on experience." Reference Class Forecasting (Flyvbjerg 2006): name the project, how long it took, how accurate the original estimate was, and how THIS task compares, (4) apply a CONTINGENCY buffer with a NUMBER — ≥20% for familiar work, 40-60% for novel work with unknowns. The Cone of Uncertainty (McConnell) shows early estimates are 4x off. A buffer without a number is not a buffer, (5) state EVERY assumption — team availability, scope stability, API reliability, reviewer responsiveness, infrastructure readiness. "No assumptions" means you have not examined. If rejected, your estimate has a blind spot.
 
 Structured reflection tool for project estimation — forces decomposition, unknown mapping, historical grounding, contingency buffers, and explicit assumptions BEFORE committing to a timeline. Based on Reference Class Forecasting (Kahneman/Flyvbjerg), Cone of Uncertainty (McConnell), and Planning Fallacy research (universal 25-50% underestimation). Catches Scope Vague ("auth work" instead of "migrate JWT to OAuth 2.1 with refresh token rotation, update 3 API endpoints, update React auth context, write migration tests" — vague scope produces vague estimates), Unknowns Hidden (estimating without mapping technical risks, knowledge gaps, and dependency uncertainties — the things you do not know will blow the timeline, not the things you do know), No Precedent ("based on experience" instead of "the auth migration at Company X took 3 sprints, estimated at 1.5 sprints, because OAuth discovery flow testing took 2x longer than expected" — Reference Class Forecasting requires SPECIFIC historical precedent), No Buffer (estimates without contingency — Kahneman proved humans underestimate by 25-50%. A buffer is not padding — it is correcting for a known cognitive bias), and Assumptions Implicit ("2 weeks" without stating that this assumes full-time allocation, stable scope, available API documentation, responsive code reviewers, and working CI pipeline). Call once per estimation
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `estimation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `estimation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Estimation Prover** tools.
 
 **Configuration:**

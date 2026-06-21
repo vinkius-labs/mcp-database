@@ -34,7 +34,7 @@ Connect your natural language AI directly to the **Boeing Developer Tools (BDT)*
 - **Aircraft Engineers** — find precise parts inventory and structural metrics without leaving the development workflow
 
 
-## Available Tools
+## Available Tools (10)
 - **get_runway_monitor**: Real-time airport runway congestion monitor
 - **check_part_availability**: Check Boeing part stock availability & pricing
 - **get_aerodrome_details**: Get thorough Jeppesen data for an airport/aerodrome
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `boeing-developer-tools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `boeing-developer-tools` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Boeing Developer Tools** tools.
 
 **Configuration:**

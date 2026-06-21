@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire music data ecosystem with **Las
 - **Operations Leads** — automate music querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_album_info**: Get metadata for an album
 - **get_artist_info**: Get metadata for an artist
 - **get_loved_tracks**: Get the loved tracks for a user
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lastfm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lastfm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Last.fm** tools.
 
 **Configuration:**

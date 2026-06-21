@@ -32,7 +32,7 @@ Connect your **BlazeMeter** API credentials to any AI agent and integrate enterp
 - **DevOps Engineers** — abruptly stop rogue master runs securely via natural language, safely isolating operational networks.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_workspaces**: Identify bounded Workspace records inside the Headless BlazeMeter Platform
 - **list_projects**: Perform structural extraction of Projects bounded to a Workspace
 - **list_tests**: Provision a highly-available JSON Payload extracting bound Tests
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blazemeter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blazemeter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BlazeMeter** tools.
 
 **Configuration:**

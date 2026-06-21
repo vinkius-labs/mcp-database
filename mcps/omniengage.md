@@ -35,7 +35,7 @@ No more manual status checking in the portal. Your AI acts as a dedicated sales 
 - **Account Executives** — streamline the retrieval of lead metadata and monitor account engagement directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_prospect**: Pass data as a JSON string.
 
 Add a new prospect
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `omniengage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `omniengage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OmniEngage** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire economic research and labor aud
 - **Operations Leads** — automate statistical data querying to orchestrate cross-functional research teams smoothly.
 
 
-## Available Tools
+## Available Tools (2)
 - **check_api_status**: Check if the BLS Public Data service is operational
 - **get_bls_timeseries_data**: Provide series IDs as a comma-separated string (e.g., "CUUR0000SA0,LNS14000000").
 
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bls-public-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bls-public-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BLS Public Data API** tools.
 
 **Configuration:**

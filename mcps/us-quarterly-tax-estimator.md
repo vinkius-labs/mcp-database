@@ -13,7 +13,7 @@ Calculate exact US federal quarterly estimated tax payments and deadlines using 
 This MCP server provides AI agents with the tools to calculate precise US federal quarterly estimated tax payments (Form 1040-ES). By inputting projected annual income and prior year tax liability, agents can use `estimate_quarterly_payments` to generate a complete schedule of four payment amounts and their respective deadlines. Additionally, the `evaluate_safe_harbor_compliance` tool allows for checking if current withholdings meet the 90% or 110% Safe Harbor thresholds, while `calculate_marginal_tax_bracket` identifies applicable tax rates based on income levels.
 
 
-## Available Tools
+## Available Tools (3)
 - **evaluate_safe_harbor_compliance**: Check if current tax payments meet Safe Harbor requirements
 - **estimate_quarterly_payments**: Calculate required US quarterly tax payments
 - **calculate_marginal_tax_bracket**: Calculate the marginal tax rate for a given income
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `us-quarterly-tax-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `us-quarterly-tax-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **US Quarterly Tax Estimator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Access one of the world's most impressive art collections directly through your 
 - **Art Historians** — Query specific collection subsets and retrieve technical manifests without manual API calls.
 
 
-## Available Tools
+## Available Tools (31)
 - **get_agent**: Get details for a specific agent (artist)
 - **get_article**: Get details for a specific article
 - **get_artwork_manifest**: Get IIIF Manifest for a specific artwork
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `art-institute-of-chicago` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `art-institute-of-chicago` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Art Institute of Chicago** tools.
 
 **Configuration:**

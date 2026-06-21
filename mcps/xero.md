@@ -38,7 +38,7 @@ No more manual navigation through complex accounting dashboards to check if a bi
 - **Finance Analysts** — quickly surface balance sheet data and reconcile payments through conversation
 
 
-## Available Tools
+## Available Tools (9)
 - **get_organisation_info**: Retrieves details about the Xero organization
 - **get_balance_sheet**: Returns assets, liabilities, and equity totals.
 
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `xero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `xero` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Xero** tools.
 
 **Configuration:**

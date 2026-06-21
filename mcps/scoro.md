@@ -32,7 +32,7 @@ Connect your **Scoro** workspace to any AI agent to interact with your business 
 - **Agency Founders** — get a bird's-eye view of recent unbilled invoices or total registered expenses without navigating the full software suite
 
 
-## Available Tools
+## Available Tools (12)
 - **get_contact**: Retrieves details for a specific contact
 - **list_activities**: Lists recent activities and audit logs
 - **list_calendar_events**: Lists all events on the Scoro calendar
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `scoro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `scoro` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Scoro** tools.
 
 **Configuration:**

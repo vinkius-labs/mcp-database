@@ -36,7 +36,7 @@ Connect your **Fantastical** account to any AI agent and take full control of yo
 - **Power Users** — audit unified schedules and manage reminders across different services through a single AI assistant
 
 
-## Available Tools
+## Available Tools (10)
 - **list_events**: Requires start and end dates.
 
 List all calendar events in Fantastical within a date range
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fantastical` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fantastical` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fantastical** tools.
 
 **Configuration:**

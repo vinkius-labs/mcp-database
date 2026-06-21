@@ -32,7 +32,7 @@ Integrate **Culture Amp**, the leading employee experience platform, directly in
 - **Internal Communications** — Identify engagement gaps and plan outreach based on real-time survey status.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_employee_record**: Resolves newly created user IDs and verification status. Mutates the employee directory state.
 
 Add a new employee to the Culture Amp platform
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `culture-amp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `culture-amp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Culture Amp** tools.
 
 **Configuration:**

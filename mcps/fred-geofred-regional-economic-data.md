@@ -24,7 +24,7 @@ Compare economic performance across U.S. regions. GeoFRED turns national time se
 Real estate analysts, location intelligence platforms, regional economists, policy makers, and anyone building geographic economic dashboards.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_regional_data**: Use get_series_group first to find the series_group ID for a FRED series. Region types: state, county, msa, bea, frb, necta, country, censusregion.
 
 Get cross-sectional regional economic data
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fred-geofred-regional-economic-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fred-geofred-regional-economic-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FRED GeoFRED — Regional Economic Data** tools.
 
 **Configuration:**

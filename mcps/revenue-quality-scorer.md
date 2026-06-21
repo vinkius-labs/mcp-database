@@ -13,7 +13,7 @@ Analyze revenue stability, concentration risk, and market diversification.
 The Revenue Quality Scorer provides a deep analytical dive into the health of your revenue streams. By evaluating six critical dimensions--including recurring revenue ratio, customer concentration (HHI index), expansion vs new logo mix, contractual stability, geographic diversification, and product diversity--it delivers actionable scores from 0-100. Use `summarize_revenue_quality` for a high-level overview, `analyze_concentration_risk` to identify dependency on large clients, `analyze_contractual_stability` to assess contract longevity, and `analyze_market_breadth` to measure global and product spread.
 
 
-## Available Tools
+## Available Tools (4)
 - **summarize_revenue_quality**: Summarize revenue quality for a given fiscal year
 - **analyze_market_breadth**: Analyze market breadth and diversification
 - **analyze_concentration_risk**: Analyze revenue concentration risk
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `revenue-quality-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `revenue-quality-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Revenue Quality Scorer** tools.
 
 **Configuration:**

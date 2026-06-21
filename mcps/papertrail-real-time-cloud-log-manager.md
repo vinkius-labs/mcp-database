@@ -33,7 +33,7 @@ Connect **Papertrail** to your AI agent for instant visibility into your cloud i
 - **System Administrators** — manage log groups and destinations to maintain a clean and organized logging infrastructure
 
 
-## Available Tools
+## Available Tools (6)
 - **create_destination**: Create a new log destination
 - **create_group**: Create a new log group
 - **list_destinations**: List log destinations
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `papertrail-real-time-cloud-log-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `papertrail-real-time-cloud-log-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Papertrail (Real-time Cloud Log Manager)** tools.
 
 **Configuration:**

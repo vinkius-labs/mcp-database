@@ -35,7 +35,7 @@ Connect your **Clearstory** account to any AI agent and take full control of you
 - **General Contractors** — verify change order volumes and supply chain risk across projects
 
 
-## Available Tools
+## Available Tools (8)
 - **get_cor_details**: Get detailed information for a specific COR
 - **get_project_construction_details**: Get detailed information for a specific project
 - **list_change_order_requests**: List all Change Order Requests (CORs)
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clearstory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clearstory` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clearstory** tools.
 
 **Configuration:**

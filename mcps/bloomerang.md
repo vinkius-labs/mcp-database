@@ -33,7 +33,7 @@ Connect your **Bloomerang** donor management system to any AI agent and orchestr
 - **Non-Profit Ops** — verify transaction details and fund allocations using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_constituent**: Create a new individual constituent
 - **get_constituent**: Get details of a specific constituent
 - **get_transaction**: Get specific transaction details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bloomerang` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bloomerang` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bloomerang** tools.
 
 **Configuration:**

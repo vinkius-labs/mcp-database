@@ -35,7 +35,7 @@ Your AI agent acts as a dedicated research assistant, capable of instantly locat
 - **Policy Analysts** — monitor daily government publications and discover related documents for comprehensive policy tracking
 
 
-## Available Tools
+## Available Tools (8)
 - **get_collection**: Get packages within a collection by date range
 - **get_granule_summary**: Get summary metadata for a specific granule
 - **get_package_summary**: Get summary metadata for a specific package
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `govinfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `govinfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GovInfo** tools.
 
 **Configuration:**

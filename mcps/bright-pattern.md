@@ -33,7 +33,7 @@ Connect your **Bright Pattern** contact center account to any AI agent and orche
 - **Ops Engineers** — verify tenant configurations and user settings using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_tenant_config**: Retrieve core tenant configuration
 - **get_interaction_details**: Get metadata for a specific interaction
 - **get_realtime_stats**: Get real-time contact center statistics
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bright-pattern` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bright-pattern` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bright Pattern** tools.
 
 **Configuration:**

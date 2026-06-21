@@ -35,7 +35,7 @@ No more manual toggling between dialer tabs or digging through complex lead tabl
 - **Business Developers** — automate the ingestion of new leads into specialized outreach campaigns through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **add_contact_to_campaign**: Add a new contact to a campaign
 - **get_campaign_details**: Get details for a specific campaign
 - **list_campaigns**: List Adversus campaigns
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adversus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adversus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adversus** tools.
 
 **Configuration:**

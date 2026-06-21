@@ -39,7 +39,7 @@ No more bouncing between the AT&T Messaging dashboard and your CRM. Your AI agen
 - **Compliance Officers** -- audit full message history with timestamps, directions, and content snippets
 
 
-## Available Tools
+## Available Tools (9)
 - **create_shortcode**: Returns provisioning status and activation timeline. Use for new marketing campaigns or service alerts.
 
 Provision a new messaging shortcode with a keyword
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `att-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `att-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AT&T Messaging** tools.
 
 **Configuration:**

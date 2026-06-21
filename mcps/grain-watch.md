@@ -42,7 +42,7 @@ No more manual temperature cable readings or climbing silos for inspections. You
 - **Agricultural Consultants** — provide data-driven storage management recommendations to clients
 
 
-## Available Tools
+## Available Tools (12)
 - **get_alerts**: Returns alert type, severity (critical, warning, info), affected silo, timestamp, and recommended actions. Essential for comprehensive operational monitoring, issue detection, and management response. AI agents should use this when users ask "show me all active alerts", "what warnings have been triggered for silo 3", or need alert data for operational monitoring. Optional silo_id filters alerts for a specific silo.
 
 Get all active alerts for temperature, humidity, and sensor issues
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grain-watch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grain-watch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Grain Watch** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Syncthing** instance to any AI agent and take full control of you
 - **Data Managers** — verify that specific files have synced across the network by browsing remote directories through the AI.
 
 
-## Available Tools
+## Available Tools (28)
 - **system_browse**: List directories matching a path
 - **system_connections**: Get configured devices and connection status
 - **get_db_completion**: Get folder/device completion status
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `syncthing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `syncthing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Syncthing** tools.
 
 **Configuration:**

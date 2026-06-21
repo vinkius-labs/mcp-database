@@ -30,7 +30,7 @@ Connect your **WellnessLiving** studio to any AI agent and manage your fitness b
 - **Multi-location Chains** — Consolidated reporting across all branches
 
 
-## Available Tools
+## Available Tools (9)
 - **list_schedule**: List class schedule
 - **search_clients**: Returns profile, memberships, and visit history.
 
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wellnessliving` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wellnessliving` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WellnessLiving** tools.
 
 **Configuration:**

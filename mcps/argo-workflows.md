@@ -34,7 +34,7 @@ No more wrestling with `kubectl` CLI tools or constantly refreshing the Argo Web
 - **SREs** — quickly query the health of the Argo server and retrieve historical archiving metrics
 
 
-## Available Tools
+## Available Tools (6)
 - **list_workflows**: List workflows in a Kubernetes namespace
 - **get_workflow**: Get detailed resource tree and status for an Argo workflow
 - **list_workflow_templates**: List workflow templates defined in a namespace
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `argo-workflows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `argo-workflows` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Argo Workflows** tools.
 
 **Configuration:**

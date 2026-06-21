@@ -13,7 +13,7 @@ Calculate thermal lag, amplitude damping, and U-value for wall structures based 
 This MCP server provides specialized tools to quantify the thermal performance of building envelopes. Use `get_material_properties` to retrieve conductivity, density, and specific heat for materials like brick or concrete. Use `calculate_u_value` to determine thermal transmittance based on wall thickness. You can also use `estimate_thermal_behavior` to project how much temperature fluctuations are reduced (damping) and the time delay (lag) of heat moving through a structure.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_u_value**: Calculates the thermal transmittance (U-value) for a single layer of material
 - **estimate_thermal_behavior**: Estimates the thermal lag and amplitude damping factor for a wall layer
 - **get_material_properties**: Retrieves the fundamental thermal properties for a specific building material
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thermal-mass-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thermal-mass-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Thermal Mass Estimator** tools.
 
 **Configuration:**

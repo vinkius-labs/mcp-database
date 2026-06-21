@@ -35,7 +35,7 @@ Connect your **Withings** account to any AI agent to unlock deep insights into y
 - **Medical Researchers** — analyze physiological trends and adherence across study participants
 
 
-## Available Tools
+## Available Tools (10)
 - **get_activity**: Get daily activity summaries (steps, calories)
 - **get_heart_rate**: Get specific heart rate measurements
 - **get_intraday_activity**: Get high-frequency intraday activity data
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `withings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `withings` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Withings** tools.
 
 **Configuration:**

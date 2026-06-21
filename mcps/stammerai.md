@@ -33,7 +33,7 @@ Connect your **Stammer.ai** account to any AI agent to automate your white-label
 - **Customer Success Teams** — streamline the retrieval of conversational logs and monitor user engagement directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **add_qa**: Add a Q&A pair to knowledge base
 - **add_url**: Add a URL to scrape for knowledge base
 - **create_chatbot**: Create a new AI chatbot
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stammerai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stammerai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stammer.ai** tools.
 
 **Configuration:**

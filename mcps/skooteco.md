@@ -29,7 +29,7 @@ Take control of your corporate sustainability targets by connecting SkootEco to 
 Crucial for ESG managers, sustainability officers, and environmentally conscious businesses looking to accurately track, offset, and report on their carbon emissions.
 
 
-## Available Tools
+## Available Tools (18)
 - **add_emission**: Log an emission
 - **check_skooteco_status**: Verify connectivity
 - **get_account**: Get account info
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `skooteco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `skooteco` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SkootEco** tools.
 
 **Configuration:**

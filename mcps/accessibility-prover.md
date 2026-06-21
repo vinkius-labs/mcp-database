@@ -39,7 +39,7 @@ Accessibility Prover validates UI specifications using 5 Decision Pivots. Each p
 - **AI agent guardrail.** When AI coding agents generate front-end code, they default to div-based layouts with decorative styling. Accessibility Prover intercepts the specification and forces semantic HTML, ARIA attributes, and contrast verification before the code is written.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_accessibility**: You must: (1) map LANDMARKS using semantic HTML5 elements — <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>. Never use <div> with click handlers in place of <button>. Never use <a> for actions that do not navigate, (2) specify KEYBOARD navigation — tab order (tabindex="0" for custom elements), focus-visible indicators (ban outline:none), modal focus traps (inert on background), roving tabindex for composite widgets, (3) cite NUMERICAL contrast ratios — 4.5:1 minimum for normal text (<18pt/24px), 3:1 minimum for large text (≥18pt/24px or ≥14pt bold). Include hover/focus state ratios, (4) define SCREEN READER context — descriptive alt texts (not "image of"), aria-label on icon-only buttons, explicit <label for="id"> on form inputs, aria-describedby for validation, aria-live for dynamic content, (5) define MOTION safety — prefers-reduced-motion CSS overrides for all transitions and animations, pause controls on auto-playing media, no content-conveying-only-through-motion. If the tool rejects, your UI design contains accessibility barriers — fix them before building.
 
 Structured reflection tool for accessibility compliance (WCAG 2.2 AA / EAA 2025 / Section 508). Forces the agent to validate semantic HTML landmarks, keyboard navigation specs, text/background contrast ratios, screen reader ARIA annotations, and motion media queries BEFORE building a component. Catches Div Soup (no semantic landmarks), Keyboard Traps (unreachable interactive elements), Contrast Failures (ratios below 4.5:1), Screen Reader Blindness (missing alt/aria-label/form associations), and Motion Hostility (no prefers-reduced-motion). Call once per UI view or complex component
@@ -163,7 +163,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accessibility-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accessibility-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Accessibility Prover** tools.
 
 **Configuration:**

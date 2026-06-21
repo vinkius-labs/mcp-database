@@ -19,7 +19,7 @@ This engine performs a local security audit. It auto-detects password columns, c
 - **Actionable Report:** Weak, duplicate, and empty passwords identified instantly.
 
 
-## Available Tools
+## Available Tools (1)
 - **analyze_password_export**: The tool analyzes password strength and duplicates WITHOUT ever transmitting real passwords.
 
 Analyze a password manager CSV export (Bitwarden, LastPass, 1Password) for security vulnerabilities. NEVER sends actual passwords to the AI — only aggregate statistics
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `password-manager-export-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `password-manager-export-analyzer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Password Manager Export Analyzer** tools.
 
 **Configuration:**

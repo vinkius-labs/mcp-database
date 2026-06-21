@@ -32,7 +32,7 @@ Connect to **DeepInfra** to access a massive library of open-source models inclu
 - **Data Engineers** — build semantic search pipelines using serverless embedding endpoints.
 
 
-## Available Tools
+## Available Tools (4)
 - **create_embedding**: Create embeddings for text via DeepInfra
 - **generate_image**: Generate an image from a text prompt via DeepInfra
 - **create_chat_completion**: Provide model name (e.g., deepseek-ai/DeepSeek-V3) and messages array.
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deepinfra-serverless-llm-inference` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deepinfra-serverless-llm-inference` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DeepInfra (Serverless LLM Inference)** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **Coassemble** account to any AI agent and take full control of you
 - **Ops Teams** — verify enrolment status and monitor training throughput
 
 
-## Available Tools
+## Available Tools (8)
 - **enroll_member_in_course**: Enroll a specific member into a course or group
 - **get_course_training_details**: Get detailed information for a specific course
 - **get_member_group_associations**: Get all groups a specific member belongs to
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coassemble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coassemble` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Coassemble** tools.
 
 **Configuration:**

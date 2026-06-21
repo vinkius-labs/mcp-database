@@ -33,7 +33,7 @@ Connect your **Mitto** account to any AI agent to handle global communication wo
 - **Marketing Teams** — manage bulk SMS campaigns and track conversion rates directly
 
 
-## Available Tools
+## Available Tools (27)
 - **add_masked_number**: Add a masked number
 - **add_masking_participant**: Add a masking participant
 - **cancel_2fa**: Cancel a 2FA OTP request
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mitto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mitto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mitto** tools.
 
 **Configuration:**

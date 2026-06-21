@@ -29,7 +29,7 @@ Integrate the power of Amazing Marvin directly into your favorite AI Agents. Thi
 This integration is perfect for founders, developers, and project managers who want to automate their daily workflow, offload task management to AI, and never miss a beat when it comes to time tracking and organizing their Amazing Marvin workspace.
 
 
-## Available Tools
+## Available Tools (9)
 - **add_category**: Add a new category to Amazing Marvin
 - **add_project**: Add a new project to Amazing Marvin
 - **add_task**: You can optionally specify a parent category/project ID and a date (YYYY-MM-DD) for when the task is scheduled.
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazing-marvin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazing-marvin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazing Marvin** tools.
 
 **Configuration:**

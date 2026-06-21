@@ -34,7 +34,7 @@ Drop PHP dependency injection debugging just to update a node value. You describ
 - **Web Architects** — confirm internal route stability extracting pure JSON rendering on top-priority pages to find syntax breaks
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_entity**: Provide the entity name and data as a JSON object.
 
 Creates a new TYPO3 Extbase entity or content element
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `typo3-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `typo3-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TYPO3 CMS** tools.
 
 **Configuration:**

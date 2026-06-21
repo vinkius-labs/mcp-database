@@ -33,7 +33,7 @@ Connect your AI agent to the world's largest travel platform. The TripAdvisor Co
 - **Data Analysts** — explore travel trends and location-based sentiment
 
 
-## Available Tools
+## Available Tools (5)
 - **get_location_details**: Get comprehensive details for a specific location using its ID
 - **get_location_photos**: Retrieve professional and user photos for a specific location
 - **get_location_reviews**: Retrieve the latest user reviews for a specific location
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tripadvisor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tripadvisor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TripAdvisor** tools.
 
 **Configuration:**

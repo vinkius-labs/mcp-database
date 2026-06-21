@@ -32,7 +32,7 @@ Integrate **Degreed**, the leading upskilling and learning experience platform (
 - **Team Leads** — Monitor team learning goals and pathway completions during planning.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_content_details**: Resolves detailed descriptions, associated skill tags, and duration metadata.
 
 Get detailed metadata for a specific learning item
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `degreed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `degreed` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Degreed** tools.
 
 **Configuration:**

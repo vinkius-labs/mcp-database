@@ -35,7 +35,7 @@ Connect your **CrewAI Platform** (AMP) account to any AI agent and take full con
 - **DevOps Teams** — monitor active crew executions and manage webhook integrations across environments
 
 
-## Available Tools
+## Available Tools (3)
 - **get_inputs**: Identify bounded inputs required to kickoff a crew
 - **get_status**: Retrieve explicit execution state tracing limits
 - **kickoff_crew**: Provision a highly-available JSON Payload generating hard execution bindings
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `crewai-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `crewai-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CrewAI Platform** tools.
 
 **Configuration:**

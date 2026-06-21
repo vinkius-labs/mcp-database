@@ -32,7 +32,7 @@ Connect **ZoomInfo** to your AI agent and access the world's largest B2B contact
 - **Marketing Teams** — Build targeted account lists based on firmographic criteria and buying intent signals.
 
 
-## Available Tools
+## Available Tools (8)
 - **search_contacts**: Search contacts
 - **search_companies**: Search companies
 - **enrich_contact**: Enrich contact
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zoominfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zoominfo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ZoomInfo** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure
 - **DevOps Engineers** — monitor network height and chain connectivity through simple natural language commands.
 
 
-## Available Tools
+## Available Tools (24)
 - **aptos_get_account_modules**: Get all Move modules for a specific Aptos account
 - **aptos_get_account_resources**: Get all resources for a specific Aptos account
 - **aptos_get_account**: Get high-level information about an Aptos account
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nodereal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nodereal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nodereal** tools.
 
 **Configuration:**

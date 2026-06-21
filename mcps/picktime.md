@@ -32,7 +32,7 @@ Connect your **Picktime** organization account to your AI agent and turn complex
 - **Tech Teams** — test availability integrations structurally from your terminal building enterprise webhook handlers.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_locations**: List all business locations configured in Picktime. Each location operates independently with its own services, staff, working hours, and booking pages. Multi-location businesses manage branches separately
 - **get_location**: Used to resolve workspace boundaries before hitting schedules.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `picktime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `picktime` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Picktime** tools.
 
 **Configuration:**

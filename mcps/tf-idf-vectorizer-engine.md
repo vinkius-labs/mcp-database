@@ -13,7 +13,7 @@ Exact Term Frequency-Inverse Document Frequency scores. Stop LLMs from guessing 
 Large Language Models often hallucinate when asked to perform statistical text analysis like TF-IDF (Term Frequency-Inverse Document Frequency). They simply guess which keywords seem 'important'. This engine calculates mathematically perfect TF-IDF scores across arrays of documents deterministically local, using the Node.js V8 engine. It allows agents to rank documents objectively by true term relevance.
 
 
-## Available Tools
+## Available Tools (1)
 - **calculate_tf_idf**: Calculates the exact TF-IDF scores for an array of terms across an array of documents
 
 
@@ -77,7 +77,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tf-idf-vectorizer-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tf-idf-vectorizer-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TF-IDF Vectorizer Engine** tools.
 
 **Configuration:**

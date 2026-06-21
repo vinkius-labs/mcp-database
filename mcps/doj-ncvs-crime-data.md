@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire public safety research workflow
 - **Operations Leads** — automate public safety data querying to orchestrate cross-functional community teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **check_api_status**: Check if the DOJ NCVS API is operational
 - **get_crime_by_region**: Get crime statistics for a specific US region
 - **get_crime_by_year**: Get all crime statistics for a specific year
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `doj-ncvs-crime-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `doj-ncvs-crime-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DOJ NCVS Crime Data** tools.
 
 **Configuration:**

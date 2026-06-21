@@ -33,7 +33,7 @@ Connect to the **EPA Envirofacts** database to query a wealth of environmental i
 - **Developers & Data Scientists** — integrate official government environmental data into applications via GraphQL or REST
 
 
-## Available Tools
+## Available Tools (6)
 - **graphql_query**: Query EPA Envirofacts using GraphQL
 - **rest_query**: Use program.table format (e.g., tri.tri_facility).
 
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `epa-envirofacts-environmental-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `epa-envirofacts-environmental-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **EPA Envirofacts (Environmental Data)** tools.
 
 **Configuration:**

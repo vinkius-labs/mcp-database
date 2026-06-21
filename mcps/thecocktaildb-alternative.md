@@ -34,7 +34,7 @@ Equip your AI agent with the most comprehensive cocktail intelligence available 
 - **Party Organizers** — quickly compile themed drink lists by filtering categories or alcoholic filters.
 
 
-## Available Tools
+## Available Tools (12)
 - **filter_by_category**: Filter cocktails by category
 - **filter_by_ingredient**: Filter cocktails by ingredient
 - **list_alcoholic_filters**: g., Alcoholic, Non-Alcoholic).
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `thecocktaildb-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `thecocktaildb-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TheCocktailDB** tools.
 
 **Configuration:**

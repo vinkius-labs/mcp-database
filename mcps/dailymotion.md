@@ -35,7 +35,7 @@ Connect your **Dailymotion** account to any AI agent and take full control of yo
 - **Social Media Managers** — search for public content and audit channel performance in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **list_videos**: List your uploaded Dailymotion videos. Returns video IDs, titles, channels, durations, view counts, and thumbnail URLs
 - **get_video**: Get full details of a Dailymotion video. Returns title, description, channel, tags, duration, views, and stream URLs
 - **search_videos**: Search all public Dailymotion videos by keyword. Returns matching videos with metadata
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dailymotion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dailymotion` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dailymotion** tools.
 
 **Configuration:**

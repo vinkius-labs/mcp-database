@@ -13,7 +13,7 @@ Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Lin
 This MCP server provides professional financial engineering tools to calculate asset depreciation schedules in compliance with IFRS/IAS 16 standards. It supports three primary methods: Straight-Line, Units of Production, and Sum-of-the-Years'-Digits (SYD). Use `get_straight_line_schedule` for even distribution over time, `get_units_production_schedule` to calculate depreciation based on physical output, and `get_syd_depreciation_schedule` for accelerated depreciation patterns. The server provides detailed monthly or annual breakdowns including period-specific P&L impact and remaining book value.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_syd_depreciation_schedule**: Calculates accelerated depreciation using the Sum-of-the-Years-Digits method
 - **get_straight_line_schedule**: Calculates the monthly depreciation schedule using the straight-line method
 - **get_units_production_schedule**: Calculates depreciation based on production volumes
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ifrs-depreciation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ifrs-depreciation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IFRS Depreciation Calculator** tools.
 
 **Configuration:**

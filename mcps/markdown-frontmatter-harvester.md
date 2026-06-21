@@ -22,7 +22,7 @@ When you ask Claude, 'Which of my notes are marked as drafts and never published
 - **100% Air-Gapped Privacy:** Your private journal entries and business notes never leave your machine.
 
 
-## Available Tools
+## Available Tools (1)
 - **harvest_markdown_frontmatter**: Provide the absolute directory path.
 
 Scan a local directory of Markdown files (Obsidian/Hugo) and extract all YAML frontmatter tags, dates, and metadata
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `markdown-frontmatter-harvester` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `markdown-frontmatter-harvester` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Markdown Frontmatter Harvester** tools.
 
 **Configuration:**

@@ -30,7 +30,7 @@ Connect your **InnoVint** winery to any AI agent and transform how your cellar t
 - **Vineyard Owners** — Production overview, vintage comparison, and quality metrics
 
 
-## Available Tools
+## Available Tools (10)
 - **search_lots**: Returns lot details including volume, vessel assignment, varietal composition, and current status. Essential for tracking individual batches through the winemaking process — from harvest intake to bottling.
 
 Search wine lots
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `innovint` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `innovint` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **InnoVint** tools.
 
 **Configuration:**

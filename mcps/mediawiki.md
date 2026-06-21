@@ -33,7 +33,7 @@ Connect your AI agent to any **MediaWiki** site (like Wikipedia or a private cor
 - **Developers** — check documentation and site configurations straight from the code editor
 
 
-## Available Tools
+## Available Tools (13)
 - **list_all_pages**: Enumerate all pages on the wiki
 - **list_category_members**: List all pages in a category
 - **create_account**: Requires a createaccount token fetched via get_tokens.
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mediawiki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mediawiki` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MediaWiki** tools.
 
 **Configuration:**

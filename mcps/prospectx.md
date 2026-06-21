@@ -28,7 +28,7 @@ Accelerate your real estate investing with an AI agent connected directly to Pro
 Designed for real estate investors, wholesalers, and acquisitions teams looking to automate their lead generation and outreach at scale.
 
 
-## Available Tools
+## Available Tools (17)
 - **check_prospectx_status**: Verify connectivity
 - **create_lead**: Create a lead
 - **create_property_list**: Create a list
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `prospectx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `prospectx` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ProspectX** tools.
 
 **Configuration:**

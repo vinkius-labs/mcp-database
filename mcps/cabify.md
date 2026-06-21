@@ -35,7 +35,7 @@ Connect AI agents to the Cabify Business platform for enterprise mobility manage
 Perfect for **business travelers**, **corporate assistants**, **travel managers**, **HR coordinators**, and **companies** using Cabify Empresas in Spain, Portugal, and Latin America. Let AI agents handle employee transportation, manage business travel expenses via ride history, and coordinate executive mobility. Ideal for companies with 10+ monthly corporate rides who want streamlined booking workflows, centralized expense tracking, and automated ride management across multiple offices.
 
 
-## Available Tools
+## Available Tools (9)
 - **add_saved_location**: Common use cases: save office addresses, frequent client locations, hotels, airports. Returns the saved location details including the new location ID. Use this to build a library of frequently used destinations for faster ride booking.
 
 Save a new location for the Cabify account
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cabify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cabify` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cabify** tools.
 
 **Configuration:**

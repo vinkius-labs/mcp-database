@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire entertainment research and fact
 - **Operations Leads** — automate entertainment data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (2)
 - **check_api_status**: Check if the Random Facts service is operational
 - **get_random_fact**: Get a random interesting fact from the database
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `random-facts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `random-facts-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Random Facts API** tools.
 
 **Configuration:**

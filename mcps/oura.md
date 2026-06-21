@@ -34,7 +34,7 @@ Connect your **Oura Ring** to any AI agent and access your personal health data 
 - **Biohackers** — correlate tags (mood, energy, behaviors) with sleep and readiness scores
 
 
-## Available Tools
+## Available Tools (7)
 - **get_activity**: Supports date range filtering.
 
 Get your Oura activity data
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oura` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oura` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Oura** tools.
 
 **Configuration:**

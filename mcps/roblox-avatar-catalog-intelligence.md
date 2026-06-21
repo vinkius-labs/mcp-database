@@ -32,7 +32,7 @@ Equip your AI agent with deep intelligence for the **Roblox Avatar Shop** and vi
 - **Analytical Gamers** — track your inventory progress and collection value with precision.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_asset_thumbnails**: Get high-resolution thumbnails for one or more assets
 - **get_avatar_bundle_details**: Get details for a specific avatar bundle
 - **get_bundle_recommendations**: Get recommended bundles similar to a given one
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `roblox-avatar-catalog-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `roblox-avatar-catalog-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Roblox Avatar & Catalog Intelligence** tools.
 
 **Configuration:**

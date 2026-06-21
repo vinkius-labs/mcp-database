@@ -35,7 +35,7 @@ Your AI agent becomes the direct line to your massive vector knowledge base.
 - **Backend Developers** — quickly purge corrupted vectors or update legacy records bypassing native database terminals.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_engine_info**: Retrieves operational information and health of the Vald engine
 - **get_vector_details**: Retrieves the raw vector data for a specific ID
 - **insert_vector**: Provide a unique ID and the vector as a JSON array.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vald` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vald` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vald** tools.
 
 **Configuration:**

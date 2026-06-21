@@ -34,7 +34,7 @@ No clunky network portals or messy CURL commands. Your AI agent becomes your cor
 - **Media Content Owners** — track files deep within origin edge storages seamlessly routing video uploads
 
 
-## Available Tools
+## Available Tools (10)
 - **add_pull_zone**: Returns the new Pull Zone ID and default b-cdn.net domain.
 
 Provision a radically fast new CDN reverse proxy domain
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bunnynet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bunnynet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bunny.net** tools.
 
 **Configuration:**

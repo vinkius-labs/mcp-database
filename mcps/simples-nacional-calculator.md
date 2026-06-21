@@ -13,7 +13,7 @@ Calculate effective tax rates, Fator R eligibility, and monthly DAS amounts for 
 This MCP server provides a precise calculation engine for the Brazilian Simples Nacional taxation system. It allows AI agents to determine complex tax variables by accessing tools like `get_bracket_parameters`, `calculate_effective_rate`, `evaluate_factor_r`, and `compute_monthly_tax_amount`. The server handles progressive revenue tiers across Annexes I through V, calculating the dynamic effective rate based on accumulated revenue (RBT12) and fixed deductions. It also evaluates Fator R eligibility by comparing payroll expenses to gross revenue, enabling accurate estimation of monthly tax liabilities (DAS).
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_effective_rate**: Calculate the dynamic effective tax rate
 - **compute_monthly_tax_amount**: Calculate the final tax amount due
 - **evaluate_factor_r**: Check eligibility for Annex III via Fator R
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simples-nacional-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simples-nacional-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Simples Nacional Calculator** tools.
 
 **Configuration:**

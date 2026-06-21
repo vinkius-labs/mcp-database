@@ -35,7 +35,7 @@ Connect your **Checkout Champ** account to any AI agent and take full control of
 - **Support Staff** — verify customer order history and transaction details for resolving inquiries
 
 
-## Available Tools
+## Available Tools (8)
 - **get_champ_customer_details**: Get detailed information for a specific customer
 - **get_champ_order_details**: Get detailed information for a specific order
 - **list_champ_campaigns**: List configured marketing campaigns
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `checkout-champ` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `checkout-champ` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Checkout Champ** tools.
 
 **Configuration:**

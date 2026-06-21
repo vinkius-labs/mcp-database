@@ -34,7 +34,7 @@ Connect your **7shifts** account to your AI agent to streamline restaurant workf
 - **Operations Leads** — automate staffing reports and schedule notifications
 
 
-## Available Tools
+## Available Tools (6)
 - **list_employees**: Retrieve all employees registered in the 7shifts company account
 - **create_employee**: Requires name and email.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `7shifts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `7shifts` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **7shifts** tools.
 
 **Configuration:**

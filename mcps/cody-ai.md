@@ -31,7 +31,7 @@ Connect your AI to **Cody AI**, the business AI assistant that can be trained on
 - **Developers** — Integrate Cody AI bots into automated workflows.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_conversation**: Create a new conversation session with a specific bot
 - **get_bot_details**: Retrieve detailed information about a specific bot
 - **get_document_status**: Check the syncing status of a document to see if the AI has finished learning it
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cody-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cody-ai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cody AI** tools.
 
 **Configuration:**

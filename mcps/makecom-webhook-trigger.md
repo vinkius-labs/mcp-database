@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to kick off complex wor
 - **Absolute Containment:** Because this is strictly a sending tool (Push only), the agent cannot read your Make.com account, cannot edit your scenarios, and cannot access other webhooks. It is a secure, one-way trigger.
 
 
-## Available Tools
+## Available Tools (1)
 - **trigger_make_webhook**: com scenario. Provide the data you want to send in the "payloadJson" parameter as a valid JSON string. The Make scenario will receive this data and process it.
 
 Send a JSON payload to a Make.com (Integromat) Custom Webhook to trigger an automation scenario
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `makecom-webhook-trigger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `makecom-webhook-trigger` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Make.com Webhook Trigger** tools.
 
 **Configuration:**

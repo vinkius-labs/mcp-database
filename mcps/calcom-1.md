@@ -34,7 +34,7 @@ No more context-switching between tools dragging your windows around visually se
 - **Project Managers** — map custom internal event classes ensuring the main link works properly directly within organizational communication lines easily securely natively correctly universally immediately efficiently natively
 
 
-## Available Tools
+## Available Tools (10)
 - **get_me**: Get the authenticated Cal.com user profile including name, email, timezone, default schedule, avatar, and organization info
 - **list_bookings**: Standardizes attendee listings, temporal slots, statuses ("accepted" [confirmed], "pending", "cancelled", "rejected"), and spatial links.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `calcom-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `calcom-1` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cal.com** tools.
 
 **Configuration:**

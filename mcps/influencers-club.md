@@ -34,7 +34,7 @@ Connect your **Influencers Club** account to any AI agent and discover creators 
 - **Brand Managers** — evaluate partnerships through audience overlap analysis
 
 
-## Available Tools
+## Available Tools (8)
 - **enrich_by_email**: Convert an email address into a full social profile
 - **enrich_by_handle**: Get full profile data using a social media handle
 - **get_audience_overlap**: Analyze shared audiences between different creators
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `influencers-club` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `influencers-club` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Influencers Club** tools.
 
 **Configuration:**

@@ -42,7 +42,7 @@ No more navigating multiple transit operator websites or manually parsing GTFS f
 - **MaaS Developers** — integrate journey planning and real-time transit data into mobility applications
 
 
-## Available Tools
+## Available Tools (11)
 - **get_arrivals**: Returns list of arriving services with line names and codes, origins, scheduled and real-time arrival times, platform information, delay indicators, and mode types. Essential for passenger pickup coordination, arrival monitoring, connection planning, and real-time arrival boards. AI agents use this when users ask "when does the next train arrive at this station", "show incoming services at stop X", or need to track arriving services for passenger coordination. Supports both theoretical schedules and real-time arrival predictions when operator data feeds are available.
 
 Get upcoming arrivals at a specific transit stop
@@ -138,7 +138,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `navitia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `navitia` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Navitia** tools.
 
 **Configuration:**

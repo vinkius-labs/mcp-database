@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire postal logistics and address au
 - **Operations Leads** — automate postal data querying to orchestrate cross-functional shipping teams smoothly.
 
 
-## Available Tools
+## Available Tools (8)
 - **calculate_domestic_rate**: Calculate USPS domestic shipping rates
 - **calculate_international_rate**: Calculate USPS international shipping rates
 - **get_delivery_commitments**: Get USPS service delivery commitments and estimates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `usps-developer-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `usps-developer-portal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **USPS Developer Portal** tools.
 
 **Configuration:**

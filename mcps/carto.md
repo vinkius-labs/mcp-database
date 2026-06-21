@@ -33,7 +33,7 @@ Connect your **CARTO** platform to any AI agent and take full control of your cl
 - **Data Engineers** — Trigger raw data imports and handle heavy dataset syncs without opening the graphical workspace.
 
 
-## Available Tools
+## Available Tools (10)
 - **calculate_isoline**: The range parameter is in seconds for time-based isolines. Returns a GeoJSON polygon representing the reachable area. Use for service area analysis, store catchment zones, and logistics planning.
 
 Generate travel-time or travel-distance isoline polygons from a center point using the CARTO LDS Isolines API, producing reachability contours showing areas accessible within a specified time or distance threshold
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `carto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `carto` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CARTO** tools.
 
 **Configuration:**

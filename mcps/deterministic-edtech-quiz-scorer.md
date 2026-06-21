@@ -19,7 +19,7 @@ Building custom assessment pipelines usually involves writing bloated scripts to
 - **Zero-Dependency Architecture:** Pure JS runtime execution guarantees absolute microsecond speed without any massive external EdTech NPM dependencies. Perfect for real-time agentic evaluation workflows.
 
 
-## Available Tools
+## Available Tools (1)
 - **score_quiz**: You must provide the answerKeyStr and userAnswersStr as stringified JSON arrays. Optionally provide totalTimeSeconds to calculate time metrics.
 
 Automatically cross-references a user's quiz answers against a weighted answer key, generating granular EdTech performance metrics and categorical accuracy percentages
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-edtech-quiz-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-edtech-quiz-scorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic EdTech Quiz Scorer** tools.
 
 **Configuration:**

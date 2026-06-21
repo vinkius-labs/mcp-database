@@ -34,7 +34,7 @@ Connect your **Mailinator** account to any AI agent and manage email testing thr
 - **DevOps** — monitor email infrastructure and routing
 
 
-## Available Tools
+## Available Tools (12)
 - **remove_message**: Delete an email
 - **list_message_attachments**: Get email attachments
 - **get_domain_details**: Get domain metadata
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailinator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailinator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mailinator** tools.
 
 **Configuration:**

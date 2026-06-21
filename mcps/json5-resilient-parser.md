@@ -18,7 +18,7 @@ LLMs consistently generate JSON with trailing commas, inline comments, and singl
 - **Strict Output:** Always returns valid RFC 8259 JSON that any parser can consume without modification.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_json5**: parse(). The engine accepts any JSON5-compliant string and returns strict RFC 8259 JSON. Essential for cleaning LLM-generated configs.
 
 Parses malformed JSON with trailing commas, comments, single quotes, and unquoted keys — then outputs perfect strict JSON. Powered by JSON5 (32M+ weekly downloads)
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `json5-resilient-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `json5-resilient-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **JSON5 Resilient Parser** tools.
 
 **Configuration:**

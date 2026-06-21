@@ -17,7 +17,7 @@ This MCP server provides specialized tools to calculate Air Changes per Hour (AC
 `ventilation.compute_ach`, `ventilation.get_requirements`, `ventilation.verify_compliance`
 
 
-## Available Tools
+## Available Tools (1)
 - **ventilation**: Calculate Air Changes per Hour (ACH)
 
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `natural-ventilation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `natural-ventilation-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Natural Ventilation Calculator** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **MRPLN** account to any AI agent to streamline your marketing auto
 - **Sales Teams** — qualify leads and maintain high-touch engagement across different channels
 
 
-## Available Tools
+## Available Tools (10)
 - **create_customer**: Create a new customer/lead
 - **get_customer**: Get details for a specific customer
 - **get_tactic_performance**: Get performance analytics for a tactic
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mrpln` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mrpln` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MRPLN** tools.
 
 **Configuration:**

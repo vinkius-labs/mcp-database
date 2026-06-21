@@ -35,7 +35,7 @@ Connect your **D-ID** account to any AI agent and take full control of your AI v
 - **Developers** — test and debug D-ID video generation pipelines and presenter mappings directly from the chat
 
 
-## Available Tools
+## Available Tools (10)
 - **create_talk**: Create a talking avatar video using D-ID. An AI avatar speaks your text with lip-sync and natural expressions
 - **create_talk_audio**: Create a D-ID talking avatar from a pre-recorded audio file. Avatar lip-syncs to your audio
 - **get_talk**: Wait for creation to finish.
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `d-id` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `d-id` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **D-ID** tools.
 
 **Configuration:**

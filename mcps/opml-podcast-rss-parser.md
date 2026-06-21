@@ -22,7 +22,7 @@ This MCP uses a fast, deterministic XML parser to flatten the OPML hierarchy int
 - **Assistant Ready:** Turn Claude into your personal entertainment and news curator.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_opml_feeds**: Provide the absolute file path.
 
 Parse an OPML file (Podcast or RSS feed export) into a clean JSON list of subscriptions
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opml-podcast-rss-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opml-podcast-rss-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OPML Podcast & RSS Parser** tools.
 
 **Configuration:**

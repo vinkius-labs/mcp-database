@@ -32,7 +32,7 @@ Connect the power of **Huddle01's Web3 Video SDK** to your AI agent. This server
 - **Product Teams** — Automate the creation of meeting rooms and track platform usage metrics through conversational AI.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_room**: You must specify if the room is locked.
 
 Create a new Huddle01 meeting room
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `huddle01-web3-video-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `huddle01-web3-video-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Huddle01 (Web3 Video API)** tools.
 
 **Configuration:**

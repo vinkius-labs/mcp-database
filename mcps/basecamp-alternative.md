@@ -34,7 +34,7 @@ Connect your **Basecamp** account to any AI agent and take full control of your 
 - **Remote Teams** — stay synchronized by querying project states and to-do progress directly from the workspace.
 
 
-## Available Tools
+## Available Tools (17)
 - **complete_todo**: This is separate from archiving or trashing — a completed to-do remains active but is marked as done. Use uncomplete_todo to reverse this action.
 
 Mark a to-do item as completed
@@ -144,7 +144,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `basecamp-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `basecamp-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Basecamp** tools.
 
 **Configuration:**

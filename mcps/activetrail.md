@@ -34,7 +34,7 @@ Connect your **ActiveTrail** account to your AI agent to unlock professional ema
 - **Small Business Owners** — manage their entire digital marketing presence using simple commands
 
 
-## Available Tools
+## Available Tools (5)
 - **list_contacts**: Retrieve the full directory of subscribers from the ActiveTrail account
 - **create_contact**: Email is required.
 
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `activetrail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `activetrail` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ActiveTrail** tools.
 
 **Configuration:**

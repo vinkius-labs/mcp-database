@@ -33,7 +33,7 @@ Connect **Descope** to your AI agent to manage and test user authentication flow
 - **Product Managers** — Quickly inspect how different auth providers and methods are configured in your project.
 
 
-## Available Tools
+## Available Tools (33)
 - **mgmt_create_access_key**: Create a new access key (M2M)
 - **mgmt_create_permission**: Create a new permission
 - **mgmt_create_role**: Create a new role
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `descope-auth-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `descope-auth-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Descope (Auth Platform)** tools.
 
 **Configuration:**

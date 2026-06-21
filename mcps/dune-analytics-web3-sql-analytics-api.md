@@ -32,7 +32,7 @@ Connect your **Dune Analytics** account to any AI agent to query and analyze rea
 - **Crypto Researchers** — automate the gathering of ecosystem growth data and market trends for reports.
 
 
-## Available Tools
+## Available Tools (4)
 - **cancel_execution**: Interrupt an ongoing query execution
 - **execute_query**: Returns an execution_id to track status.
 
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dune-analytics-web3-sql-analytics-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dune-analytics-web3-sql-analytics-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dune Analytics (Web3 SQL Analytics API)** tools.
 
 **Configuration:**

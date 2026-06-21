@@ -13,7 +13,7 @@ Manage ideas, missions, and innovation workspaces via Ideanote API.
 Empower your AI agents to manage your innovation pipeline with Ideanote. This MCP server allows you to list submitted ideas, track innovation missions, manage workspaces, and view user engagement directly through the Ideanote API. Ideal for automating idea management and fostering a culture of innovation.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_ideas**: Lists all ideas
 - **list_missions**: Lists all missions
 - **list_phases**: Lists idea phases
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ideanote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ideanote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ideanote** tools.
 
 **Configuration:**

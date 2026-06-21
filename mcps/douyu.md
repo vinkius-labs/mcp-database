@@ -33,7 +33,7 @@ Say goodbye to massive dashboard fatigue crossing international barriers; comman
 - **Sponsorship Liaisons** — quickly prove audience legitimacy fetching raw engagement pulses guaranteeing investment viability across brand interactions seamlessly executed over chat terminal nodes
 
 
-## Available Tools
+## Available Tools (10)
 - **follow_streamer**: Automatically follow a streamer using OAuth token
 - **get_danmu_config**: Get WebSocket parameters to connect to live chat (Danmu)
 - **get_gift_list**: Get the list of active virtual gifts available in a room
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `douyu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `douyu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Douyu** tools.
 
 **Configuration:**

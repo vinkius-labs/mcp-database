@@ -17,7 +17,7 @@ This tool solves that by providing end-to-end marketing performance analysis. It
 The advantage is clear: you move from guessing where to spend money to executing a proven, optimized plan for measurable growth.
 
 
-## Available Tools
+## Available Tools (3)
 - **rank_channel_efficiency**: Rank marketing channels by composite efficiency score
 - **propose_budget_reallocation**: Propose budget reallocation to maximize conversions within total budget
 - **calculate_channel_metrics**: Calculate efficiency metrics (CPL, CPA, ROAS) for a marketing channel
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `media-mix-efficiency-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `media-mix-efficiency-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Media Mix Efficiency Calculator** tools.
 
 **Configuration:**

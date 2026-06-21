@@ -34,7 +34,7 @@ Connect your **ezyVet** Practice Management account to any AI agent and take ful
 - **Vet Technicians** — access patient records and product info straight from your workflow
 
 
-## Available Tools
+## Available Tools (12)
 - **get_animal**: Get a specific ezyVet animal by ID
 - **get_appointment**: Get a specific ezyVet appointment by ID
 - **get_consult**: Get a specific ezyVet consult by ID
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ezyvet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ezyvet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ezyVet** tools.
 
 **Configuration:**

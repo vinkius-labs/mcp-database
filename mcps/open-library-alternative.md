@@ -34,7 +34,7 @@ Equip your AI agent with access to one of the world's largest open book database
 - **Book Collectors** — use ISBN lookups to manage and identify physical or digital collections.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_author_works**: Get all works by an author
 - **get_book_by_isbn**: Get book details by ISBN
 - **search_books**: Search for books by title or keyword
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-library-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-library-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Library** tools.
 
 **Configuration:**

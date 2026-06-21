@@ -38,7 +38,7 @@ Your AI agent becomes your HR command center — no more navigating tens of Fior
 - **CHROs & VP People** — get real-time workforce analytics on headcount, attrition, and compensation trends
 
 
-## Available Tools
+## Available Tools (9)
 - **list_workers**: Use the search parameter to filter by name, employee ID, or other attributes.
 
 List or search Workday workers
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `workday` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `workday` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Workday** tools.
 
 **Configuration:**

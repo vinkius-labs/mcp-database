@@ -26,7 +26,7 @@ Connect your **Microsoft Store** developer account to automate app management ta
 3. Start managing your store presence from Claude, Cursor, or any MCP client
 
 
-## Available Tools
+## Available Tools (8)
 - **get_addon**: Get details for a specific add-on
 - **get_application**: Get details for a specific application
 - **get_flight**: Get details for a specific package flight
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `microsoft-app-store` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `microsoft-app-store` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Microsoft App Store** tools.
 
 **Configuration:**

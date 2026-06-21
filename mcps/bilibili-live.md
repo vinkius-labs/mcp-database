@@ -34,7 +34,7 @@ Say goodbye to missing massive interactions under heavy traffic. You now possess
 - **Esports Broadcasters** — retrieve room stability metrics logging heavy influxes safely generating historical reports directly to executives via terminal
 
 
-## Available Tools
+## Available Tools (10)
 - **get_danmu_config**: Get WebSockets configuration for Danmu (bullet chat)
 - **get_fans_medal_info**: Check a users fan medal level in the current room
 - **get_gift_history**: View recent virtual items gifted in the room
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bilibili-live` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bilibili-live` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bilibili Live** tools.
 
 **Configuration:**

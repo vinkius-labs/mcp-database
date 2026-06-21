@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire cinematic research and media au
 - **Operations Leads** — automate media data querying to orchestrate cross-functional creative teams smoothly.
 
 
-## Available Tools
+## Available Tools (4)
 - **check_api_status**: Check if the IMDB service is operational
 - **get_imdb_cast_details**: Get the full cast and crew list for a specific IMDB title
 - **get_imdb_movie_details**: g., tt1234567).
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `imdb-api-unofficial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `imdb-api-unofficial` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IMDB API (Unofficial)** tools.
 
 **Configuration:**

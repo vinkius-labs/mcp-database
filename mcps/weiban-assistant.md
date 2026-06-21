@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your customer relationship within the WeCom
 - **WeCom Power Users** — integrate your existing Weiban CRM workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_lead**: Create a new lead
 - **get_customer_details**: Get customer details
 - **get_group_chat**: Get group chat details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `weiban-assistant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `weiban-assistant` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Weiban Assistant** tools.
 
 **Configuration:**

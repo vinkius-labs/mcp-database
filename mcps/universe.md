@@ -33,7 +33,7 @@ Connect your **Universe** host account to any AI agent to streamline event opera
 - **Marketing Teams** — analyze attendee data and order history to optimize future event listings
 
 
-## Available Tools
+## Available Tools (7)
 - **create_access_key**: Manage access keys for private tickets
 - **check_in**: Mark a ticket as checked-in
 - **get_events**: Get list of events for a host
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `universe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `universe` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Universe** tools.
 
 **Configuration:**

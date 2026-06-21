@@ -31,7 +31,7 @@ Intertwine the open-source **Verba** (by Weaviate) ecosystem natively into your 
 - **Open Source Hobbyists** — orchestrate your personal Weaviate/Verba RAG stacks strictly through the programmatic conversational layer.
 
 
-## Available Tools
+## Available Tools (6)
 - **add_knowledge_document**: Provide the document content and optional metadata JSON.
 
 Ingests a new document into the Verba knowledge base
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `verba` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `verba` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Verba** tools.
 
 **Configuration:**

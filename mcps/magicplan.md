@@ -34,7 +34,7 @@ Connect your **Magicplan** workspace to any AI agent to automate your architectu
 - **Real Estate Professionals** — Automate the extraction of spatial metadata and floor plan statistics effortlessly
 
 
-## Available Tools
+## Available Tools (10)
 - **list_project_estimates**: List all financial estimates for a project
 - **list_available_forms**: List all data collection forms (checklists)
 - **get_estimate_details**: Get full financial breakdown for an estimate
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `magicplan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `magicplan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Magicplan** tools.
 
 **Configuration:**

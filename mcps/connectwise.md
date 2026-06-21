@@ -31,7 +31,7 @@ Empower your conversational AI with deep integration into **ConnectWise Manage (
 - **MSP Owners** — Pull immediate reports on client profitability or check current active incidents directly from a mobile chat.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_ticket**: Create a new service ticket in ConnectWise Manage
 - **get_company**: Returns name, contact info, territory, and status.
 
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `connectwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `connectwise` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ConnectWise** tools.
 
 **Configuration:**

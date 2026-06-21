@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your business intelligence and due diligenc
 - **Qichacha Power Users** — integrate your existing industrial research workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **fuzzy_search**: Enterprise fuzzy search
 - **get_account_status**: Get OpenAPI account status
 - **get_basic_info**: Get enterprise basic info
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qichacha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qichacha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qichacha / 企查查** tools.
 
 **Configuration:**

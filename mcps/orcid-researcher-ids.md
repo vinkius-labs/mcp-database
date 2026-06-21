@@ -33,7 +33,7 @@ Connect the **ORCID** registry to your AI agent to seamlessly navigate the globa
 - **Grant Officers** — verify researcher credentials and funding history directly within your workflow
 
 
-## Available Tools
+## Available Tools (14)
 - **add_item**: Requires Member API access token with /activities/update or /person/update scope.
 
 Add a new item to an ORCID record (Member API only)
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `orcid-researcher-ids` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `orcid-researcher-ids` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ORCID (Researcher IDs)** tools.
 
 **Configuration:**

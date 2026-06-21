@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire maritime research and tidal aud
 - **Operations Leads** — automate oceanographic data querying to orchestrate cross-functional maritime teams smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the NOAA Tides & Currents service is operational
 - **get_air_temperature**: Get real-time air temperature data for a specific NOAA station
 - **get_tide_predictions**: Get high and low tide predictions for a specific NOAA station
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `noaa-tides-currents-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `noaa-tides-currents-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NOAA Tides & Currents API** tools.
 
 **Configuration:**

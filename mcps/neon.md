@@ -36,7 +36,7 @@ No more clicking through the Neon console to provision a branch or grab a connec
 - **DBAs** — create roles, manage databases across branches and track PostgreSQL version upgrades via conversation
 
 
-## Available Tools
+## Available Tools (17)
 - **get_connection_uri**: Optionally specify a branch_id to get the URI for a specific branch (defaults to the primary branch). The URI includes the host, database name, role and password. Use this to connect psql, ORM tools or application clients.
 
 Get a PostgreSQL connection URI for a Neon project
@@ -153,7 +153,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `neon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `neon` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Neon** tools.
 
 **Configuration:**

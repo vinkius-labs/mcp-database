@@ -35,7 +35,7 @@ Connect your **Motion** account to any AI agent and take full control of your AI
 - **Knowledge Workers** — track high-priority deadlines and retrieve rapid summaries of your daily schedule to maintain high-speed productivity
 
 
-## Available Tools
+## Available Tools (10)
 - **list_tasks**: Optional status filters narrow the scope.
 
 List all tasks in a Motion workspace filtering by current lifecycle status
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `motion-ai-calendar-task-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `motion-ai-calendar-task-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Motion (AI Calendar & Task Management)** tools.
 
 **Configuration:**

@@ -31,7 +31,7 @@ Connect your **Domo** instance to any AI agent to streamline user administration
 - **IT Operations** — Automate user lifecycle management within the Domo ecosystem.
 
 
-## Available Tools
+## Available Tools (6)
 - **add_user_to_group**: Add a user to a Domo group
 - **create_group**: Create a new Domo group
 - **create_user**: Optionally sends an invite email.
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `domo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `domo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Domo** tools.
 
 **Configuration:**

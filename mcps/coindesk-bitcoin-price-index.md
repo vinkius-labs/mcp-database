@@ -31,7 +31,7 @@ Equip your AI agent with real-time cryptocurrency intelligence through the **Coi
 - **Fintech Developers** — integrate official Bitcoin pricing into their AI applications.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_bitcoin_price_global**: Get current Bitcoin price for globally recognized currencies (BPI)
 - **get_bitcoin_price_custom**: g. BRL, JPY, CNY).
 
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `coindesk-bitcoin-price-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `coindesk-bitcoin-price-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CoinDesk Bitcoin Price Index** tools.
 
 **Configuration:**

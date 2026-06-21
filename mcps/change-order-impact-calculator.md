@@ -13,7 +13,7 @@ Quantify the financial and schedule consequences of scope changes in constructio
 This MCP server provides essential tools for construction and project managers to manage scope creep. Use `calculate_change_order_prce` to determine the total price impact of a single change by applying overhead and profit margins to direct costs. With `calculate_cumulative_impact`, you can track how multiple changes affect the overall contract value and project timeline. Additionally, use `assess_project_risk_level` to identify if scope drift has pushed your project into high-risk territory based on cumulative change order volume.
 
 
-## Available Tools
+## Available Tools (3)
 - **assess_project_risk_level**: Categorizes the financial health of the project based on scope drift
 - **calculate_change_order_price**: Determines the total price charged to the client for a single specific scope change
 - **calculate_cumulative_impact**: Calculates the total financial and schedule impact on a project
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `change-order-impact-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `change-order-impact-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Change Order Impact Calculator** tools.
 
 **Configuration:**

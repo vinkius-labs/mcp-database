@@ -21,7 +21,7 @@ Access **84 years of continuous weather records** from 1940 to today for any loc
 Climate researchers, agricultural analysts, insurance underwriters, real estate developers, and data scientists studying long-term weather patterns.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_historical_weather**: Provide latitude, longitude, start_date and end_date in YYYY-MM-DD format. Covers 84 years of global data.
 
 Get historical weather for any date range (1940–present)
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-meteo-historical-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-meteo-historical-weather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open-Meteo Historical Weather** tools.
 
 **Configuration:**

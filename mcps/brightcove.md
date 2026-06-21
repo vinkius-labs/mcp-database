@@ -33,7 +33,7 @@ Connect your **Brightcove Video Cloud** account to any AI agent and orchestrate 
 - **Developers** — verify API integrations and asset processing using natural language.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_playlist**: Create a new playlist
 - **delete_video**: Delete a video permanently
 - **get_folder_videos**: List videos within a specific folder
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brightcove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brightcove` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Brightcove** tools.
 
 **Configuration:**

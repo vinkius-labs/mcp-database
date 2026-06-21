@@ -32,7 +32,7 @@ FirstQuadrant is an advanced platform for AI-driven outreach and campaign manage
 - **Developers** — Integrate FirstQuadrant capabilities into custom AI agents for automated lead generation.
 
 
-## Available Tools
+## Available Tools (59)
 - **archive_contact**: Archive a contact
 - **count_contacts**: Count contacts
 - **create_api_key**: Create a new API key
@@ -154,7 +154,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `firstquadrant-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `firstquadrant-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FirstQuadrant** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Adzuna** developer account to your AI agent to unlock a powerful 
 - **Career Coaches** — support clients with real-time job market data and geographic salary insights
 
 
-## Available Tools
+## Available Tools (4)
 - **search_jobs**: You must provide a valid 2-letter country code.
 
 Search for thousands of job vacancies across multiple countries using keywords, Postcodes, and categories
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adzuna` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adzuna` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adzuna** tools.
 
 **Configuration:**

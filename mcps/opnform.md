@@ -35,7 +35,7 @@ No more manual dashboard navigation for simple status checks. Your AI acts as a 
 - **Developers** — integrate real-time form management and data ingestion directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_form**: Create a new Optform form
 - **delete_form**: Delete an Optform form
 - **delete_submission**: Delete a form submission
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opnform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opnform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpnForm** tools.
 
 **Configuration:**

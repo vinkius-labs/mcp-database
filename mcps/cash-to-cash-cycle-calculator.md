@@ -13,7 +13,7 @@ Calculate and optimize your Cash Conversion Cycle (C2C) to improve liquidity.
 This MCP server provides essential tools for financial analysis of the Cash Conversion Cycle (C2C). Use `calculate_cycle_metrics` to compute your current cycle time and see how a one-day reduction in DSO, DIO, or DPO impacts your cash flow. You can also use `lookup_industry_standard` to find benchmarks for sectors like Retail or Manufacturing, and `evaluate_operational_health` to compare your performance against these standards.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_cycle_metrics**: Calculate Cash Conversion Cycle (C2C) and efficiency impact
 - **evaluate_operational_health**: Evaluate company C2C health against industry benchmark
 - **lookup_industry_standard**: Lookup industry benchmark for C2C
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cash-to-cash-cycle-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cash-to-cash-cycle-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cash-to-Cash Cycle Calculator** tools.
 
 **Configuration:**

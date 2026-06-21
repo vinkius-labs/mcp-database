@@ -34,7 +34,7 @@ Connect your **Aircall** account to your AI agent to unlock professional voice o
 - **Customer Success** — quickly look up call recordings and participant details to resolve complex inquiries
 
 
-## Available Tools
+## Available Tools (10)
 - **list_calls**: List call logs
 - **get_call_details**: Get call technical details
 - **list_contacts**: List Aircall contacts
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aircall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aircall` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aircall** tools.
 
 **Configuration:**

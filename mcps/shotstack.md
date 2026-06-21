@@ -35,7 +35,7 @@ No more manual status checking or template hunting. Your AI acts as a dedicated 
 - **Operations Teams** — streamline the management of cloud assets and monitor production usage directly within the chat.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_video_template**: Save an edit as a reusable template
 - **get_hosted_asset_details**: Get details for a hosted file
 - **get_render_status**: Check the status of a render job
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `shotstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `shotstack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Shotstack** tools.
 
 **Configuration:**

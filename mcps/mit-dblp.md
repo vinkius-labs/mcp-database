@@ -32,7 +32,7 @@ Connect to the **DBLP Computer Science Bibliography** — the most comprehensive
 - **Hiring Committees** — evaluate candidate publication records
 
 
-## Available Tools
+## Available Tools (16)
 - **get_author**: The PID can be found in DBLP URLs (e.g. for "https://dblp.org/pid/b/YoshuaBengio" the PID is "b/YoshuaBengio").
 
 Get author profile by DBLP PID
@@ -137,7 +137,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mit-dblp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mit-dblp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MIT DBLP** tools.
 
 **Configuration:**

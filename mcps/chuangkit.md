@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your creative workflows with **Chuangkit** 
 - **Chuangkit Power Users** — integrate your existing design workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_asset_url**: Get asset download URL
 - **get_design_detail**: Get user design detail
 - **get_template**: Get template details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chuangkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chuangkit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Chuangkit / 创客贴** tools.
 
 **Configuration:**

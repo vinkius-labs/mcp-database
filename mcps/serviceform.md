@@ -35,7 +35,7 @@ No more manual logging or data exports. Your AI acts as a dedicated marketing an
 - **Customer Support Managers** — streamline the retrieval of chat histories and monitor service spaces directly within the chat.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_lead**: Get lead details
 - **get_space_items**: Get items for a specific space
 - **list_chatbots**: List all configured chatbots
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `serviceform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `serviceform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Serviceform** tools.
 
 **Configuration:**

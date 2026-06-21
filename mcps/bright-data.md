@@ -35,7 +35,7 @@ Your AI now acts as a data engineer, capable of retrieving real-time web informa
 - **Market Researchers** — Extract structured SERP data to track rankings and competitor movements via simple conversation.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_all_zones**: Get all zones
 - **get_dataset_progress**: Monitor dataset snapshot progress
 - **get_dataset_snapshot**: Download a dataset snapshot
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bright-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bright-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bright Data** tools.
 
 **Configuration:**

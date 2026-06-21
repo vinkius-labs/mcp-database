@@ -35,7 +35,7 @@ Equip your AI agent with the most comprehensive art intelligence available via *
 - **Interior Designers** — search for artworks by style and movement to complement their projects.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_artist_details**: Get artist details
 - **get_artwork_details**: Get artwork details
 - **get_gene_details**: Get gene details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `artsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `artsy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Artsy** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **CleverTap** account to any AI agent and take full control of your
 - **Marketing Ops** — verify data ingestion and monitor campaign delivery health
 
 
-## Available Tools
+## Available Tools (8)
 - **get_campaign_performance_report**: Retrieve detailed performance metrics for a specific campaign
 - **get_user_profile_details**: Get detailed information for a specific user identity
 - **get_real_time_usage_stats**: Retrieve real-time user counts and event statistics
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clevertap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clevertap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CleverTap** tools.
 
 **Configuration:**

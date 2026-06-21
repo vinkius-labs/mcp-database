@@ -33,7 +33,7 @@ Connect your **Gridscale** account to any AI agent to manage your cloud infrastr
 - **System Administrators** — Monitor resource metrics and manage network configurations through simple conversation.
 
 
-## Available Tools
+## Available Tools (17)
 - **create_server**: Create a new cloud server
 - **get_server_metrics**: Get metrics for a specific server
 - **get_server_power**: Get the power status of a specific server
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gridscale-iaas-paas-cloud-hosting-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gridscale-iaas-paas-cloud-hosting-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gridscale (IaaS & PaaS Cloud Hosting API)** tools.
 
 **Configuration:**

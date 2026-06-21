@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your product intelligence and user behavior
 - **TalkingData Power Users** — integrate your existing big data workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_active_users**: Get active user statistics
 - **get_app_info**: Get application configuration info
 - **get_app_summary**: Get application performance summary
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `talkingdata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `talkingdata` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TalkingData** tools.
 
 **Configuration:**

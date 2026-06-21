@@ -31,7 +31,7 @@ Integrate your AI closely with **Tuputech** (图普科技), one of the internet'
 - **Live App Managers** — Intercept NSFW avatars uploaded via HTTP swiftly before reaching CDNs
 
 
-## Available Tools
+## Available Tools (10)
 - **scan_audio_stream**: Initiate an asynchronous audio scan
 - **scan_image_ad**: Detect advertisements disguised inside images
 - **scan_image_porn**: Scan an image for NSFW or pornographic content
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tuputech-moderation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tuputech-moderation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tuputech Moderation** tools.
 
 **Configuration:**

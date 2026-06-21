@@ -38,7 +38,7 @@ No more manual digging through complex iPaaS dashboards to check if a recipe ran
 - **Support Teams** — lookup recipe details and job statuses to troubleshoot integration issues rapidly
 
 
-## Available Tools
+## Available Tools (7)
 - **get_api_collections**: Lists all API collections exposed by Workato
 - **get_recipe_details**: Retrieves details for a specific Workato recipe
 - **list_app_connections**: Lists all application connections configured in Workato
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `workato` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `workato` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Workato** tools.
 
 **Configuration:**

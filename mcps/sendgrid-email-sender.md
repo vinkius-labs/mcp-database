@@ -21,7 +21,7 @@ Your AI agent gains the immediate, zero-friction ability to drop rich HTML repor
 - **Absolute Containment:** Because this is strictly a sending tool using the `mail/send` endpoint, the agent cannot read your inbox, cannot manage your contacts, and cannot alter your SendGrid domain settings. It is the purest, safest way to give your AI email superpowers.
 
 
-## Available Tools
+## Available Tools (1)
 - **send_sendgrid_email**: Provide the destination email in the "to" parameter, the subject, and the body content. You can set the "isHtml" boolean parameter to true to send rich HTML emails.
 
 Send an email using the Twilio SendGrid API v3
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sendgrid-email-sender` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sendgrid-email-sender` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SendGrid Email Sender** tools.
 
 **Configuration:**

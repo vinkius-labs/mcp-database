@@ -13,7 +13,7 @@ Estimate the monthly financial commitment for pet care based on species, size, a
 The Pet Monthly Cost Estimator provides detailed breakdowns of the recurring expenses required to maintain a pet. Using tools like `estimate_food_expenses`, `estimate_maintenance_expenses`, and `estimate_risk_and_leisure_expenses`, you can calculate costs for nutrition, health, hygiene, enrichment, and emergency reserves. The estimates adjust dynamically based on species (Dog, Cat, Small Mammal), size tier (Small, Medium, Large), and geographic economic context (Urban or Rural).
 
 
-## Available Tools
+## Available Tools (3)
 - **estimate_food_expenses**: Calculate the monthly expenditure required for nutritional upkeep
 - **estimate_maintenance_expenses**: Calculate monthly costs for health-related care and hygiene services
 - **estimate_risk_and_leisure_expenses**: Calculate costs for pet enrichment and the mandatory emergency veterinary fund
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pet-monthly-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pet-monthly-cost-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pet Monthly Cost Estimator** tools.
 
 **Configuration:**

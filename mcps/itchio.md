@@ -32,7 +32,7 @@ Connect your **itch.io** account to any AI agent and explore your indie game lib
 - **Curators** — explore collections and organize your game recommendations
 
 
-## Available Tools
+## Available Tools (4)
 - **get_collection_games**: io collection by its collection ID. Returns game titles, URLs, cover images, prices and developer info.
 
 Get games in a specific itch.io collection
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `itchio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `itchio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **itch.io** tools.
 
 **Configuration:**

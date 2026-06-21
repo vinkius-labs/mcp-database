@@ -32,7 +32,7 @@ Connect your **Vinsight** operation to any AI agent and manage your entire bever
 - **Finance** — Revenue tracking, purchase costs, and margin analysis
 
 
-## Available Tools
+## Available Tools (12)
 - **search_stock_items**: Returns product details including SKU, description, unit of measure, price, tax code, and current stock level. Works for wine, beer, spirits, and raw materials.
 
 Search wine/beer/spirit products
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vinsight` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vinsight` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vinsight** tools.
 
 **Configuration:**

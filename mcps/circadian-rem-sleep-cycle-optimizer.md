@@ -19,7 +19,7 @@ Managing sleep debt requires biological precision. Artificial Intelligence model
 - **Zero-Dependency Native Code:** The mathematical projection happens securely within the V8 engine, maintaining high-speed responsiveness for health-tech AI workflows.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_circadian_rhythm**: Maps out energy peaks and troughs throughout the day based on wake time
 - **calculate_nap_times**: Requires wake-up time in HH:mm.
 
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `circadian-rem-sleep-cycle-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `circadian-rem-sleep-cycle-optimizer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Circadian REM Sleep Cycle Optimizer** tools.
 
 **Configuration:**

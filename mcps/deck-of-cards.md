@@ -35,7 +35,7 @@ No more manual randomization or complex state management for card games. Your AI
 - **Hobbyists & Educators** — play simple card games or teach probability and statistics with interactive examples
 
 
-## Available Tools
+## Available Tools (13)
 - **add_to_pile**: Add cards to a pile
 - **create_new_deck**: Create a brand new deck in standard order
 - **create_partial_deck**: Create a partial deck with specific cards
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deck-of-cards` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deck-of-cards` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deck of Cards** tools.
 
 **Configuration:**

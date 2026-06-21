@@ -34,7 +34,7 @@ Connect your **GRIN** Creator Management account to any AI agent and take full c
 - **Social Media Teams** — quickly look up creator handles and verify partnership statuses through the chat interface synchronously
 
 
-## Available Tools
+## Available Tools (12)
 - **get_campaign**: Get details for a specific campaign
 - **get_contact**: Get details for a specific creator
 - **get_me**: Get details for the current GRIN account
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grin` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GRIN** tools.
 
 **Configuration:**

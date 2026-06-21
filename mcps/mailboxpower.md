@@ -33,7 +33,7 @@ Connect your **MailboxPower** account to any AI agent and manage direct mail mar
 - **Customer Success** — send thank-you cards and retention gifts
 
 
-## Available Tools
+## Available Tools (9)
 - **add_contact_to_automation**: Start an automation for a contact
 - **add_contact_to_group**: Add a contact to a group
 - **create_contact**: Create a new contact
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mailboxpower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mailboxpower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MailboxPower** tools.
 
 **Configuration:**

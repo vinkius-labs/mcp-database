@@ -33,7 +33,7 @@ Connect to the **Ayuntamiento de Zaragoza** (Zaragoza City Council) Open Data pl
 - **Tourists** — find monuments, restaurants, and points of interest with real-time city data.
 
 
-## Available Tools
+## Available Tools (17)
 - **book_appointment**: Requires authentication.
 
 Book an appointment (Cita Previa)
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ayuntamiento-de-zaragoza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ayuntamiento-de-zaragoza` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ayuntamiento de Zaragoza** tools.
 
 **Configuration:**

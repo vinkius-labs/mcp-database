@@ -32,7 +32,7 @@ The **BEA (Bureau of Economic Analysis)** MCP server provides a direct bridge to
 - **Data Scientists** — Automate the ingestion of government-verified economic signals for machine learning projects.
 
 
-## Available Tools
+## Available Tools (4)
 - **get_dataset_list**: g., NIPA, Regional, GDPByIndustry).
 
 List available BEA datasets
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bea-bureau-of-economic-analysis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bea-bureau-of-economic-analysis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BEA (Bureau of Economic Analysis)** tools.
 
 **Configuration:**

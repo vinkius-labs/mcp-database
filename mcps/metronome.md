@@ -33,7 +33,7 @@ Connect your **Metronome** account to any AI agent to streamline your usage-base
 - **Engineering Teams** — verify event ingestion and monitor billing services directly from the terminal.
 
 
-## Available Tools
+## Available Tools (31)
 - **add_custom_field_key**: Create a custom field key
 - **add_rate**: Add a rate to a rate card
 - **archive_customer**: Voids invoices and archives contracts.
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `metronome` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `metronome` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Metronome** tools.
 
 **Configuration:**

@@ -25,7 +25,7 @@ Accident Investigation Prover enforces NTSB/ICAO Annex 13 investigation rigor ac
 ICAO Annex 13, 3.1: 'The sole objective shall be the prevention of accidents. It is NOT the purpose to apportion blame or liability.'
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_accident_investigation**: Before reaching any investigation conclusion, call this tool. You must: (1) CORRELATE EVIDENCE — FDR 88 parameters with timestamps, CVR transcript correlation, ATC radar track and clearances, maintenance logs (MEL, AD compliance, component TSN/TSO), wreckage analysis (fracture type: fatigue vs overload, fire pattern, impact signatures). Cross-reference ALL sources — narrative without data is speculation, (2) CONSTRUCT CAUSAL CHAIN — probable cause + contributing factors (NTSB format: "Probable cause was [X], contributing to which were [Y, Z, W]"). Apply 5-Whys to reach systemic causes. Map to Reason's Model: latent conditions + active failures + defense gaps, (3) CLASSIFY via HFACS — every factor at its correct level: Level 1 (unsafe acts: decision/skill/perceptual errors, routine/exceptional violations), Level 2 (preconditions: environment, individual condition, CRM), Level 3 (supervision: inadequate, planned inappropriate, failed to correct, supervisory violations), Level 4 (organizational: resources, climate, process). If all factors cluster at Level 1, you have not investigated deeply enough, (4) ANALYZE ORGANIZATIONAL factors — scheduling pressure, training budget, maintenance economics, regulatory oversight gaps, financial pressure on safety decisions. The pilot is the LAST link in a chain that starts with organizational decisions months or years before, (5) WRITE ACTIONABLE RECOMMENDATIONS — specific (what action), measurable (success criteria), addressed (to named authority), tracked (response timeline + verification), evidence-linked (to which finding). "Improve training" is a wish — not a recommendation. If rejected, your investigation has a structural deficiency — deepen the analysis.
 
 Structured reflection tool for ICAO Annex 13/NTSB-standard accident investigation. Forces the agent to construct multi-causal, evidence-correlated, taxonomy-classified investigation analyses before reaching any conclusion. Catches Evidence Gaps (narrative without FDR/CVR cross-reference), Single Cause Fallacy (blaming one factor instead of Reason's Swiss Cheese Model), HFACS Blindness (labeling "human error" without 4-level taxonomy classification), Organizational Amnesia (ignoring scheduling, training, maintenance, and regulatory systemic pressures), and Recommendation Theater (vague "improve training" instead of specific, measurable, addressed, tracked, evidence-linked actions). Call once per investigation analysis
@@ -91,7 +91,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accident-investigation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accident-investigation-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Accident Investigation Prover** tools.
 
 **Configuration:**

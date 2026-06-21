@@ -22,7 +22,7 @@ Brazilian economic data.
 - **SGS** — Any of 20,000+ time series
 
 
-## Available Tools
+## Available Tools (7)
 - **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
 
 Obter o PIB mensal do Brasil — variação percentual
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bcb-economia-pib-divida-reservas-pix-e-sgs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bcb-economia-pib-divida-reservas-pix-e-sgs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BCB Economia — PIB, Dívida, Reservas, PIX e SGS** tools.
 
 **Configuration:**

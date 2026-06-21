@@ -33,7 +33,7 @@ Equip your AI agent with real-time personal finance intelligence through the **M
 - **Busy Professionals** — get quick summaries of their financial status without opening an app.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_monzo_accounts**: List all Monzo accounts
 - **get_monzo_balance**: Get balance for a Monzo account
 - **get_monzo_transactions**: Get recent transactions
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `monzo-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `monzo-banking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Monzo Banking** tools.
 
 **Configuration:**

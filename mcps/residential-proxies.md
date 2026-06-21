@@ -35,7 +35,7 @@ No more manual copy-pasting of proxy strings or missing connectivity drops. Your
 - **Growth Leads** — integrate high-speed residential proxy data into custom data extraction pipelines through simple AI queries
 
 
-## Available Tools
+## Available Tools (10)
 - **check_proxy_status**: Verify Residential Proxies API connectivity
 - **get_proxy_count**: Get the total number of available proxies
 - **get_br_proxies**: Get Brazil residential proxies
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `residential-proxies` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `residential-proxies` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Residential Proxies** tools.
 
 **Configuration:**

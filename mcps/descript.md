@@ -32,7 +32,7 @@ Connect **Descript** to your AI agent and manage your video and podcast producti
 - **Marketing Teams** — Access video project data and transcripts to fuel multi-channel content strategies from a single interface.
 
 
-## Available Tools
+## Available Tools (8)
 - **list_projects**: List all Descript projects
 - **get_project**: Get project details
 - **list_drives**: List team drives
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `descript` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `descript` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Descript** tools.
 
 **Configuration:**

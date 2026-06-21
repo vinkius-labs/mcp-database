@@ -34,7 +34,7 @@ Connect your **Mollie** merchant account to your AI agent and take control of yo
 - **Finance Teams** — automate the retrieval of payment and refund lists for reconciliation and reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_payment**: Create a new Mollie payment
 - **get_customer**: g., cst_8wmqcHMN4U).
 
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mollie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mollie` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mollie** tools.
 
 **Configuration:**

@@ -36,7 +36,7 @@ No more navigating the Rebrickable website to find set details or parts inventor
 - **Collectors** — track sets by year, find specific editions and discover theme collections
 
 
-## Available Tools
+## Available Tools (11)
 - **get_minifig**: g. "sw0001-1"). Returns the minifig name, theme, year, piece count and image URLs.
 
 Get details for a specific LEGO minifigure
@@ -135,7 +135,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rebrickable-lego` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rebrickable-lego` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rebrickable LEGO** tools.
 
 **Configuration:**

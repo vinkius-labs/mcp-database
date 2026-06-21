@@ -32,7 +32,7 @@ Connect to the **CityBikes** API through your AI agent to retrieve live micromob
 - **Developers** — integrate live transport data into custom dashboards or travel assistants.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_network**: Get detailed information about a specific bike-sharing network
 - **list_networks**: List all bike-sharing networks
 
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `citybikes-bike-sharing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `citybikes-bike-sharing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CityBikes (Bike Sharing)** tools.
 
 **Configuration:**

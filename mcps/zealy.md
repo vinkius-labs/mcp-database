@@ -33,7 +33,7 @@ Connect your **Zealy** community to any AI agent to streamline your Web3 and com
 - **Web3 Developers** — integrate community data and membership checks directly into your development workflow.
 
 
-## Available Tools
+## Available Tools (23)
 - **get_review**: Retrieve a specific review by ID
 - **get_user**: Fetch user details by Zealy ID
 - **list_modules**: List all modules (categories) in a community
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zealy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zealy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zealy** tools.
 
 **Configuration:**

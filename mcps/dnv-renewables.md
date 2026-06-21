@@ -43,7 +43,7 @@ Your AI becomes a renewable energy analyst, helping you assess sites, estimate y
 - **Investors** — evaluate renewable energy project potential with professional-grade data
 
 
-## Available Tools
+## Available Tools (11)
 - **check_data_availability**: Returns available datasets, time periods, and variables. Essential first step before ordering data.
 
 Check data availability for wind and solar at a specific location
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dnv-renewables` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dnv-renewables` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DNV Renewables** tools.
 
 **Configuration:**

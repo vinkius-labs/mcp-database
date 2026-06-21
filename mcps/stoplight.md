@@ -32,7 +32,7 @@ Integrate the industry-leading API design and documentation capabilities of **St
 - **Backend Engineers** — Resolve integration dependencies efficiently by querying endpoint models across independent Stoplight projects precisely and securely.
 
 
-## Available Tools
+## Available Tools (7)
 - **get_node_details**: Retrieves details for a specific documentation node
 - **get_project_details**: Retrieves details for a specific Stoplight project
 - **list_workspace_activity**: Lists recent activity logs for a Stoplight workspace
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stoplight` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stoplight` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stoplight** tools.
 
 **Configuration:**

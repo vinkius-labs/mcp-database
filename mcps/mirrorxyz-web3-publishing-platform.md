@@ -33,7 +33,7 @@ No more manual searching through block explorers or decentralized gateways to fi
 - **Developers** — fetch technical documentation and dev-logs stored on Arweave directly into your coding environment.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_entries**: Fetch entries for a Mirror publication
 - **get_entry**: Fetch a single Mirror entry by digest
 
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mirrorxyz-web3-publishing-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mirrorxyz-web3-publishing-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mirror.xyz (Web3 Publishing Platform)** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your AI agent to the **Hyrule Compendium** and explore the vast world of
 - **Developers** — test MCP tool-calling capabilities with a clean, structured, and fun dataset.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_all_entries**: Get all entries in the Hyrule Compendium
 - **get_category**: Get all entries within a specific category
 - **get_entry**: g., 1 or silver_lynel).
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hyrule-compendium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hyrule-compendium` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hyrule Compendium** tools.
 
 **Configuration:**

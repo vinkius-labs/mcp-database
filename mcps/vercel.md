@@ -32,7 +32,7 @@ Embed your **Vercel** continuous integration ecosystem into the mind of your AI 
 - **Quality Assurance** — instantly pull the most recent Preview URL generated from the target branch staging deployments without hunting for the Vercel notification link.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_active_build**: Aborts an ongoing Vercel compilation pipeline
 - **trigger_github_deployment**: Provide the project name and Git ref.
 
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vercel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vercel` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vercel** tools.
 
 **Configuration:**

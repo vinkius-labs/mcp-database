@@ -32,7 +32,7 @@ Equip intelligent LLM models explicitly executing boundaries isolating **Pexels 
 - **Marketing Analysts** — orchestrate queries resolving trending motion graphs gracefully parsing native video arrays safely checking seamlessly safely cleanly successfully cleanly beautifully effectively seamlessly tightly perfectly nicely smoothly securely nicely.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_collection_media**: Get all media in a specific collection
 - **get_curated_photos**: Get hand-picked curated photos
 - **get_featured_collections**: Get featured collections curated by Pexels
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pexels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pexels` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pexels** tools.
 
 **Configuration:**

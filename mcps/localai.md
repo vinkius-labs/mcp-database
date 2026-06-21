@@ -34,7 +34,7 @@ Connect your **LocalAI** instance to any AI agent and leverage powerful multimod
 - **DevOps Engineers** — Integrate local AI capabilities into internal tools and automated pipelines.
 
 
-## Available Tools
+## Available Tools (19)
 - **anthropic_messages**: Generate messages (Anthropic compatible)
 - **apply_model**: Install a model from the gallery
 - **chat_completions**: Generate chat completions (OpenAI compatible)
@@ -120,7 +120,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `localai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `localai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **LocalAI** tools.
 
 **Configuration:**

@@ -19,7 +19,7 @@ You copied something important 3 days ago — a phone number, a URL, a code snip
 - **Token-Safe:** Shows up to 200 clips to prevent context overflow.
 
 
-## Available Tools
+## Available Tools (1)
 - **search_clipboard_history**: Supports both JSON and plain text formats.
 
 Parse an exported clipboard history file (JSON or TXT from Ditto, CopyQ, Maccy) and make it searchable by your AI
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `clipboard-history-searcher` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `clipboard-history-searcher` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Clipboard History Searcher** tools.
 
 **Configuration:**

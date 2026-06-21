@@ -24,7 +24,7 @@ Collect and manage customer reviews effortlessly with Repuso AI agents.
 Perfect for customer success teams, marketing professionals, and community managers who want to automate review collection and reputation management using AI agents.
 
 
-## Available Tools
+## Available Tools (14)
 - **bulk_create_invite_requests**: Bulk create invite requests
 - **create_invite_request**: Create a new invite request
 - **create_subaccount**: Create a new sub account
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `repuso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `repuso` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Repuso** tools.
 
 **Configuration:**

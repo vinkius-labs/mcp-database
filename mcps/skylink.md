@@ -29,7 +29,7 @@ Empower your AI agents to completely manage your real estate pipeline using the 
 Specifically built for real estate brokerages, property managers, and high-volume sales teams needing intelligent CRM automation and telephony integration.
 
 
-## Available Tools
+## Available Tools (22)
 - **check_skylink_status**: Verify connectivity
 - **create_contact**: Create a contact
 - **create_deal**: Create a deal
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `skylink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `skylink` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Skylink** tools.
 
 **Configuration:**

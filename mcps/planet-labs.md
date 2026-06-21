@@ -43,7 +43,7 @@ No more manual satellite catalog browsing or complex GIS workflows. Your AI acts
 - **GIS Professionals** — discover, evaluate, and download satellite imagery for mapping projects
 
 
-## Available Tools
+## Available Tools (12)
 - **list_asset_types**: Returns asset type IDs, display names, and descriptions. Essential for selecting the appropriate data product for specific use cases (visual for visualization, analytic for NDVI calculation, UDM for quality filtering). AI agents should reference this when users ask "what asset types can I download", "difference between analytic and visual assets", or need to understand available data products for analysis.
 
 List all available asset types (visual, analytic, UDM, etc.) and their properties
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `planet-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `planet-labs` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Planet Labs** tools.
 
 **Configuration:**

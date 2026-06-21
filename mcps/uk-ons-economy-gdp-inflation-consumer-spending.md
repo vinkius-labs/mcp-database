@@ -23,7 +23,7 @@ Official UK economic statistics from the ONS.
 Completely open and unrestricted.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_gdp**: Main datasets: regional-gdp-by-quarter (quarterly), regional-gdp-by-year (annual). Covers England, Wales, and 9 English regions. Use time=* for the full time series.
 
 Get UK GDP data — quarterly and annual, by region and sector
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uk-ons-economy-gdp-inflation-consumer-spending` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uk-ons-economy-gdp-inflation-consumer-spending` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **UK ONS Economy — GDP, Inflation & Consumer Spending** tools.
 
 **Configuration:**

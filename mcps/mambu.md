@@ -13,7 +13,7 @@ Manage clients, loans, deposits, and tasks on Mambu Cloud Banking Platform.
 The Mambu MCP server allows you to interact with your Mambu tenant. You can list and get details for clients, loan accounts, deposit accounts, transactions, tasks, activities, and communications. This integration uses the Mambu v2 REST API to provide a seamless experience for managing your banking operations. Your token is encrypted at rest and injected securely at runtime.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_client**: Get details for a specific Mambu client
 - **get_deposit_account**: Get details for a specific Mambu deposit account
 - **get_loan_account**: Get details for a specific Mambu loan account
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mambu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mambu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mambu** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual status checking or template searching. Your AI acts as a dedicate
 - **Operations Teams** — streamline the retrieval of document metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_document**: Requires a JSON string containing "template_uuid" and "recipients" list. Use this to initiate the document creation process.
 
 Create a new PandaDoc document
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pandadoc-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pandadoc-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PandaDoc** tools.
 
 **Configuration:**

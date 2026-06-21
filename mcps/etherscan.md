@@ -33,7 +33,7 @@ Connect your **Etherscan** API key to any AI agent and gain instant access to on
 - **DeFi Users** — Monitor your portfolio balances and transaction history through a simple chat interface.
 
 
-## Available Tools
+## Available Tools (19)
 - **get_address_token_balance**: Get address portfolio (PRO)
 - **get_balance_multi**: Get native token balances for multiple addresses
 - **get_balance**: Get native token balance for an address
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `etherscan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `etherscan` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Etherscan** tools.
 
 **Configuration:**

@@ -29,7 +29,7 @@ Connect your **eCellar** winery to any AI agent and manage your premium DTC oper
 - **Operations** — Multi-location inventory and fulfillment tracking
 
 
-## Available Tools
+## Available Tools (10)
 - **search_customers**: Returns profile, lifetime spend, wine club membership, tasting room visits, and purchase history. Core CRM data for personalized wine recommendations.
 
 Search wine customers
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ecellar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ecellar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **eCellar** tools.
 
 **Configuration:**

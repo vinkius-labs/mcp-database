@@ -32,7 +32,7 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 - **Dealership & Fleet Managers** — query precise vehicle configurations, engine types, and equipment lists
 
 
-## Available Tools
+## Available Tools (41)
 - **calculate_new_tmv**: Get TMV price for a new car
 - **calculate_typically_equipped_used_tmv**: Get TMV price for a typically equipped used car
 - **calculate_used_tmv**: Get TMV price for a used car
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `edmunds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `edmunds` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Edmunds** tools.
 
 **Configuration:**

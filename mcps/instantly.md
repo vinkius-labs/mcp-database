@@ -32,7 +32,7 @@ Connect **Instantly** to your AI agent and manage your high-volume cold email pl
 - **Growth Hackers** — Automate high-volume cold outreach with AI-driven campaign management.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_leads**: Add leads to a campaign
 - **get_account_stats**: Get account summary stats
 - **get_campaign**: Get campaign details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `instantly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `instantly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Instantly** tools.
 
 **Configuration:**

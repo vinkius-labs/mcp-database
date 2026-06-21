@@ -32,7 +32,7 @@ Integrate **Evisort**, the AI-powered contract management and intelligence platf
 - **Compliance Teams** — Monitor organizational contract metadata and audit logs instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_evisort_account_metadata**: Retrieve metadata and limits for your Evisort account
 - **get_document_detailed_intelligence**: Get detailed settings and AI-extracted data for a specific contract
 - **list_upcoming_contract_expirations**: Retrieve a list of contracts that are approaching their expiration date
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `evisort-contract-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `evisort-contract-intelligence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Evisort Contract Intelligence** tools.
 
 **Configuration:**

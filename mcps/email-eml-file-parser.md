@@ -22,7 +22,7 @@ This MCP acts as your high-speed email distillation engine. Operating 100% local
 - **Executive Assistant Mode:** Ask the AI to draft replies, extract action items, or summarize 50-email long threads instantly.
 
 
-## Available Tools
+## Available Tools (1)
 - **parse_eml_file**: eml). Do not attempt to read the file manually as it contains unreadable raw MIME and base64. Provide the absolute file path.
 
 Parse a local .eml email file into clean text, stripping away HTML, headers, and encoding. Returns a clean JSON with sender, recipient, date, subject, and text body
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `email-eml-file-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `email-eml-file-parser` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Email (.eml) File Parser** tools.
 
 **Configuration:**

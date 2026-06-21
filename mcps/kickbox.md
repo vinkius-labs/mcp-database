@@ -32,7 +32,7 @@ Connect **Kickbox** to your AI agent to ensure your email lists are clean, deliv
 - **Sales Operations** — Ensure CRM data is accurate and outreach reaches the intended inbox.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_batch_status**: Check the status of a batch verification job
 - **start_batch_verification**: Returns a Job ID to check status later.
 
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kickbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kickbox` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kickbox** tools.
 
 **Configuration:**

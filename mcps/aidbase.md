@@ -35,7 +35,7 @@ No more manual logging into support portals to update FAQs or check bot logs. Yo
 - **Developers** — integrate high-speed AI support intelligence into custom internal tools through simple AI queries
 
 
-## Available Tools
+## Available Tools (11)
 - **add_aidbase_faq_item**: Add FAQ to knowledge base
 - **add_aidbase_website_knowledge**: Add a website to knowledge base
 - **check_aidbase_status**: Check API Status
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aidbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aidbase` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aidbase** tools.
 
 **Configuration:**

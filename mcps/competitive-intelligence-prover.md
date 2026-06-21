@@ -35,7 +35,7 @@ AI competitive analysis fails on six axes:
 6. **metricsAttached** — Leading/lagging indicators + kill criteria with deadlines?
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_competitive_intel**: You must: (1) EVIDENCE: every claim about a competitor cites a VERIFIABLE source — their website, G2/Capterra reviews (with IDs), GitHub issues, Reddit threads, Crunchbase, your own testing. ZERO "approximately", "reportedly", "sources suggest", fabricated numbers. (2) SPECIFIC WEAKNESSES: measurable, observable, cited. "Bad UX" is opinion. "14-step onboarding, 23-min setup, G2 review #12345 confirms" is intelligence. (3) FEASIBLE STRATEGY: executable with current resources. Define WHO, TIMELINE, COST, DEPENDENCIES. (4) SELF-AWARE: acknowledge YOUR weaknesses and THEIR strengths. How would THEY attack you? (5) DIFFERENTIATED: exploit a SPECIFIC competitive gap only YOU can attack. (6) METRICS: leading indicators, lagging indicators, kill criteria with deadlines.
 
 Validates competitive intelligence analysis for fact-grounded, anti-hallucination strategic planning. Forces every competitor claim to cite a VERIFIABLE source (pricing pages, G2 reviews, Crunchbase, your own testing). Eliminates vague weaknesses, fantasy strategies, self-deception, and generic playbooks. Ensures attack strategies are feasible with current resources (WHO/WHEN/COST) and include measurable success metrics with kill criteria
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `competitive-intelligence-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `competitive-intelligence-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Competitive Intelligence Prover** tools.
 
 **Configuration:**

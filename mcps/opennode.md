@@ -25,7 +25,7 @@ Connect your **OpenNode** account to any AI agent to seamlessly integrate Bitcoi
 3. Start managing Bitcoin payments and payouts from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (22)
 - **get_account_balance**: Get account balance
 - **list_activity**: List account activity
 - **create_address**: Create a static on-chain address
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opennode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opennode` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenNode** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect to **Blockchair**, the most advanced universal blockchain search engine,
 - **Crypto Enthusiasts** — Track wallet balances and monitor network congestion through simple natural language prompts.
 
 
-## Available Tools
+## Available Tools (11)
 - **filter_blocks**: Example q: time(2023-01-01..2023-01-02),transaction_count(100..)
 
 Query blocks using SQL-like filters
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `blockchair-universal-blockchain-search-engine-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `blockchair-universal-blockchain-search-engine-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Blockchair (Universal Blockchain Search Engine & API)** tools.
 
 **Configuration:**

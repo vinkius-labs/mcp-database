@@ -21,7 +21,7 @@ Your AI agent gains the immediate ability to act as a ghostwriter. You can brain
 - **Absolute Containment:** Because the code is strictly hardcoded to `status: 'draft'`, the agent is physically incapable of publishing content live to your audience. You maintain 100% editorial control. It is a completely secure, one-way funnel.
 
 
-## Available Tools
+## Available Tools (1)
 - **create_wordpress_draft**: Provide the title and the content (can be HTML or plain text). The post will strictly be saved as a Draft, never published live.
 
 Creates a new Draft post in WordPress with the provided content
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wordpress-post-drafter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wordpress-post-drafter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WordPress Post Drafter** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **Everhour**, the powerful time tracking and project management softwa
 - **Operations Teams** — Monitor running timers and organizational productivity metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_everhour_user_metadata**: Retrieve metadata and profile information for the current Everhour user
 - **get_project_detailed_data**: Get detailed settings and budget information for a specific project
 - **quick_time_tracking_audit**: Retrieve a high-level summary of recent time entries and active projects
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `everhour-time-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `everhour-time-tracking` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Everhour Time Tracking** tools.
 
 **Configuration:**

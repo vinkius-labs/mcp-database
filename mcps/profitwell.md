@@ -35,7 +35,7 @@ No more manual exporting of CSV results for basic churn checks. Your AI acts as 
 - **Customer Success Managers** — streamline the retrieval of customer history and monitor account health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **churn_subscription**: Mark churn event
 - **create_subscription**: Add new subscriber
 - **get_customer_history**: Get billing history
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `profitwell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `profitwell` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ProfitWell** tools.
 
 **Configuration:**

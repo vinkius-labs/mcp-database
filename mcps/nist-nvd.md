@@ -34,7 +34,7 @@ Connect to the **National Vulnerability Database (NVD)** API through your AI age
 - **Compliance Officers** — automate the gathering of vulnerability data for security audits and reporting.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_cpe_by_id**: Get CPE dictionary entry by UUID
 - **get_cve_by_id**: g. CVE-2023-1234).
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nist-nvd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nist-nvd` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **NIST NVD** tools.
 
 **Configuration:**

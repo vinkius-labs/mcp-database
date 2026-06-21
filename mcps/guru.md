@@ -35,7 +35,7 @@ Connect your **Guru** (Getguru) workspace to any AI agent to automate your knowl
 - **Internal Operations** — automate the retrieval of company policies and project boards seamlessly.
 
 
-## Available Tools
+## Available Tools (12)
 - **verify_api_connection**: Check connection
 - **create_knowledge_card**: Create new card
 - **delete_knowledge_card**: Remove a card
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `guru` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `guru` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Guru** tools.
 
 **Configuration:**

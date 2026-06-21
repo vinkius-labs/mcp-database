@@ -26,7 +26,7 @@ The system uses these tools to maintain rigorous adherence to established baking
 **Advantage:** Stop guessing with recipes. Use this connector to transform any set of ingredient weights into standardized professional proportions or scale them precisely for commercial use.
 
 
-## Available Tools
+## Available Tools (3)
 - **check_flour_base**: Calculate the flour base weight from a known ingredient weight and its Baker's percentage
 - **recipe_to_baker_percentage**: Convert ingredient weights to Baker's percentages relative to flour weight
 - **scale_baker_percentage_to_weights**: Scale Baker's percentages to absolute weights using a scaling factor
@@ -92,7 +92,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `baker-percentage-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `baker-percentage-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Baker Percentage Calculator** tools.
 
 **Configuration:**

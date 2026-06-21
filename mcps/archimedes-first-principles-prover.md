@@ -50,7 +50,7 @@ LLMs commit five first-principles failures:
 - **Semantic traps detect lazy reasoning.** 'Obviously,' 'works in all cases,' 'everything is equally important,' and 'the whole system' trigger automatic rejection.
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_archimedes_first_principles**: Think like Archimedes — "Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." You must: (1) EXAMINE AXIOMS — state every foundational claim your reasoning depends on. For each axiom: what is the source (measurement, theory, assumption, convention)? Could it be wrong? What changes if it is? Analogies ("Company X does Y, so we should too") are NOT axioms — they are pattern matches, not proofs, (2) DECOMPOSE TO FUNDAMENTALS — break the complex problem into irreducible components. Archimedes decomposed curved areas into infinitesimal segments. Each component must be independently analyzable. Map how components interact — does changing one affect another? What is the simplest possible version of each component? (3) DERIVE PROOF — show the logical chain from axioms to conclusion. Each step must follow necessarily from the previous. "Obviously," "clearly," and "it follows that" are assertions, not proofs. Archimedes: "We suppose... therefore it follows..." — each step is shown, never assumed, (4) TEST BOUNDARIES — find where the principle starts working, stops working, and breaks. Archimedes bounded pi between 3+10/71 and 3+10/70 — BOTH above and below. "Works in all cases" is an unbounded claim. What is the minimum input where it starts working? The maximum input where it fails? (5) FIND LEVERAGE — identify the single variable where small input produces disproportionate output. "Everything is equally important" means no lever has been found. Archimedes moved ships with levers. Where is YOUR fulcrum? If rejected, your reasoning has a structural gap — deepen the analysis.
 
 Structured reflection tool for Archimedean first-principles reasoning. Forces the agent to examine axioms with sources, decompose to irreducible components, derive conclusions logically from foundations, test boundary conditions, and identify the leverage point where minimal input produces disproportionate output. Catches Axiom Blindness (reasoning from unexamined assumptions or analogies-as-axioms), Decomposition Absence (treating complex problems as monoliths), Proof Gaps (assertions disguised as derivations — "obviously" and "clearly"), Boundary Ignorance (unbounded claims that "work in all cases"), and Leverage Blindness ("everything is equally important" — no point of disproportionate returns identified). Call once per strategic, architectural, or analytical reasoning task
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `archimedes-first-principles-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `archimedes-first-principles-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Archimedes First Principles Prover** tools.
 
 **Configuration:**

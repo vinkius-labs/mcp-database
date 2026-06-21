@@ -32,7 +32,7 @@ Connect to the **Podcast Index** to tap into a massive, independent database of 
 - **Podcast Enthusiasts** — discover new shows and stay updated on the latest releases through natural conversation.
 
 
-## Available Tools
+## Available Tools (16)
 - **get_episode_by_guid**: Get a specific episode by its GUID
 - **get_episodes_by_feed_id**: List episodes for a specific feed ID
 - **get_episodes_by_feed_url**: List episodes for a specific feed URL
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `podcast-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `podcast-index` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Podcast Index** tools.
 
 **Configuration:**

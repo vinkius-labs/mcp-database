@@ -27,7 +27,7 @@ Connect AI agents to the **DHL Express Enterprise API** for global supply chain 
 3. Start managing your logistics operations natively via LLM
 
 
-## Available Tools
+## Available Tools (6)
 - **create_shipment**: Requires shipper/recipient details, package weight, and service type. Use this to generate labels for outbound shipments. Returns the tracking number and label document URL.
 
 Create a DHL shipment and generate a shipping label
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dhl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dhl` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DHL** tools.
 
 **Configuration:**

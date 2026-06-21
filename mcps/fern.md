@@ -33,7 +33,7 @@ Connect to the **Fern** ecosystem to supercharge your documentation workflows. T
 - **Developers** — programmatically manage access keys and verify user permissions.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_jwt**: Get JWT from Fern API key
 - **get_recent_queries**: Get recent queries and analytics
 - **get_search_key**: Get Algolia search credentials
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fern` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fern` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fern** tools.
 
 **Configuration:**

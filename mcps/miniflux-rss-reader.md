@@ -32,7 +32,7 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **Content Curators** — quickly filter, search, and bookmark relevant articles for newsletters or social media.
 
 
-## Available Tools
+## Available Tools (46)
 - **create_api_key**: Create a new API key
 - **create_category**: Create a category
 - **create_feed**: Create a new feed
@@ -141,7 +141,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `miniflux-rss-reader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `miniflux-rss-reader` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Miniflux (RSS Reader)** tools.
 
 **Configuration:**

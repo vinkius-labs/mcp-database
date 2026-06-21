@@ -21,7 +21,7 @@ The **Japan e-Stat MCP Server** connects your AI agent to the official Portal of
 Free API key required (instant registration at e-stat.go.jp). Japan publishes some of the most detailed and reliable economic statistics in the world, making this an essential resource for global macro analysis, trade research, and market intelligence.
 
 
-## Available Tools
+## Available Tools (2)
 - **get_japan_stats_data**: Use search_japan_statistics first to find the correct table ID. Returns category-classified data with time periods, areas, and values.
 
 Retrieve statistical data from a specific Japanese Government e-Stat table
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `japan-e-stat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `japan-e-stat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Japan e-Stat** tools.
 
 **Configuration:**

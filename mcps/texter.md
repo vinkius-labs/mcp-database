@@ -34,7 +34,7 @@ Connect your **Texter** account to any AI agent and simplify how you manage cust
 - **Operations Managers** — monitor chat volume and verify channel connectivity without leaving the workspace.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_label_to_texter_chat**: Assign a label to a chat
 - **get_texter_chat_details**: Get chat details
 - **list_texter_channels**: ).
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `texter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `texter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Texter** tools.
 
 **Configuration:**

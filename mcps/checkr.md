@@ -35,7 +35,7 @@ Connect your **Checkr** account to any AI agent and take full control of your ba
 - **Operations Teams** — quickly check the status of pending invitations and candidate profiles
 
 
-## Available Tools
+## Available Tools (8)
 - **create_new_candidate**: Create a new candidate profile
 - **start_background_check**: Initiate a background check for a candidate
 - **get_candidate_details**: Get detailed information for a specific candidate
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `checkr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `checkr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Checkr** tools.
 
 **Configuration:**

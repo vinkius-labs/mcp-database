@@ -34,7 +34,7 @@ Stop digging through the SonarCloud UI just to see why an automated test or qual
 - **Team Leads** — gather accurate metrics like lines of code or code coverage directly via textual prompts without opening analytical dashboards
 
 
-## Available Tools
+## Available Tools (9)
 - **get_issue_details**: Retrieves details for a specific issue
 - **get_project_measures**: Requires project key and comma-separated metric keys.
 
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sonarcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sonarcloud` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SonarCloud** tools.
 
 **Configuration:**

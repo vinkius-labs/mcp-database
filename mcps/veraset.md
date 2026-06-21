@@ -32,7 +32,7 @@ Bind the massive scale of **Veraset** geolocation data directly to your preferre
 - **Retail Strategy Leads** — ask your assistant to fetch quick summaries of competitive POI foot-traffic anomalies without digging into AWS architectures.
 
 
-## Available Tools
+## Available Tools (10)
 - **cancel_running_query**: Immediately aborts a currently executing SQL task
 - **execute_sql_query**: Provide a dataset ID and ANSI SQL. Returns a query ID.
 
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `veraset` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `veraset` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Veraset** tools.
 
 **Configuration:**

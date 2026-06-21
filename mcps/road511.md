@@ -40,7 +40,7 @@ No more navigating multiple state 511 websites or manually checking traffic came
 - **Traffic Analysts** — study incident trends, resolution metrics, and traffic pattern analytics
 
 
-## Available Tools
+## Available Tools (8)
 - **get_clearance**: Returns average resolution times by incident type, severity, jurisdiction, and time period. Essential for operational efficiency analysis, resource planning, performance benchmarking, and understanding how quickly traffic incidents are resolved in different regions. AI agents should use this when users ask "what is the median resolution time for incidents in California", "how long do major incidents take to clear in Texas", or need performance metrics for traffic incident management analysis.
 
 Get incident resolution time metrics (P50/P95) for operational analysis
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `road511` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `road511` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Road511** tools.
 
 **Configuration:**

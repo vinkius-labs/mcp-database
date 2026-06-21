@@ -34,7 +34,7 @@ Connect your AI agents to **Lingyi Wanwu** (01.AI), the high-performance AI lab 
 - **System Integrators** — bridge enterprise platforms with the efficient and powerful Yi foundation models
 
 
-## Available Tools
+## Available Tools (4)
 - **list_models**: List available Yi models
 - **chat_completions**: Send a message to a Yi model
 - **check_moderation**: Check content for policy violations
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lingyi-wanwu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lingyi-wanwu` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lingyi Wanwu** tools.
 
 **Configuration:**

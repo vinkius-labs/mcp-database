@@ -32,7 +32,7 @@ Connect your **Firebase** project to any AI agent to manage your backend infrast
 - **Product Managers** — Query live data for quick status checks or user verification without needing a custom admin dashboard.
 
 
-## Available Tools
+## Available Tools (14)
 - **auth_lookup**: Get user data from Firebase Auth
 - **auth_sign_in**: Sign in a user with email and password
 - **auth_sign_up**: Sign up a new user or sign in anonymously
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `firebase-rest-admin-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `firebase-rest-admin-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Firebase (REST & Admin APIs)** tools.
 
 **Configuration:**

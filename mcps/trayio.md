@@ -33,7 +33,7 @@ Connect your AI agent exclusively to your **Tray.io** (or Tray.ai) integration w
 - **Support Teams** — Read the recent log failures (Executions) to troubleshoot bugs when client software instances fail to sync safely
 
 
-## Available Tools
+## Available Tools (6)
 - **get_authenticated_user**: Retrieves details for the currently authenticated user
 - **get_workflow_details**: Retrieves details for a specific Tray.io workflow
 - **list_available_connectors**: g., Salesforce, Slack) can be integrated.
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `trayio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `trayio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tray.io** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your AI agent to the **GamerPower** database to automate your discovery 
 - **Deal Hunters** — automate the monitoring of high-value game giveaways and beta access opportunities.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_giveaway_details**: Get giveaway metadata
 - **get_giveaway_worth**: Get worth statistics
 - **list_all_giveaways**: List all giveaways
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gamerpower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gamerpower` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GamerPower** tools.
 
 **Configuration:**

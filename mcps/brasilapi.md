@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire Brazilian institutional researc
 - **Operations Leads** — automate national data querying to orchestrate cross-functional teams in Brazil smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **list_brazilian_banks**: List all banks operating in Brazil
 - **get_cep_details**: Get address details for a Brazilian CEP
 - **get_cnpj_details**: Get company details for a Brazilian CNPJ
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `brasilapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `brasilapi` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BrasilAPI** tools.
 
 **Configuration:**

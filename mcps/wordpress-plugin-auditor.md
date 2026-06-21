@@ -19,7 +19,7 @@ Managing dozens of WordPress sites for clients? Give your AI agent the power to 
 - **Zero-Trust Safety:** This is a purely read-only tool. The AI can list the plugins, but it cannot deactivate, delete, or install new ones. It uses native WordPress Application Passwords for strict scoping.
 
 
-## Available Tools
+## Available Tools (1)
 - **audit_wordpress_plugins**: It will return the name, version, author, and status (active/inactive) for each plugin. Very useful for security and maintenance checks.
 
 Lists all installed WordPress plugins along with their current status and version
@@ -68,7 +68,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wordpress-plugin-auditor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wordpress-plugin-auditor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WordPress Plugin Auditor** tools.
 
 **Configuration:**

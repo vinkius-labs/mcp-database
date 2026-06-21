@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your cloud storage and asset management wit
 - **Aliyun Power Users** — integrate your existing OSS workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **copy_object**: Uses x-oss-copy-source header.
 
 Copy an object within the bucket
@@ -117,7 +117,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aliyun-oss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aliyun-oss` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aliyun OSS / 阿里云对象存储** tools.
 
 **Configuration:**

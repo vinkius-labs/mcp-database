@@ -38,7 +38,7 @@ No more manual navigation through meeting dashboards to create a room. Your AI a
 - **Marketing Managers** — audit meeting recordings and verify room branding for webinars and events
 
 
-## Available Tools
+## Available Tools (10)
 - **create_meeting_room**: Provide an ISO 8601 end date and room mode (normal or group).
 
 Creates a new transient video meeting room with a specific end date
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `whereby` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `whereby` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Whereby** tools.
 
 **Configuration:**

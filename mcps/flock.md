@@ -36,7 +36,7 @@ Connect your **Flock** bot to any AI agent and take full control of your team co
 - **Ops Teams** — monitor public channels and manage private team communication in real-time
 
 
-## Available Tools
+## Available Tools (10)
 - **channels_get_info**: Retrieve explicit Channel descriptions and banner logic mappings
 - **channels_list_public**: Enumerate explicitly attached `public` channels active within Flock
 - **channels_list_members**: Identify explicit Active UUIDs directly attached evaluating Channel ingress
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `flock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `flock` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Flock** tools.
 
 **Configuration:**

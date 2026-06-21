@@ -35,7 +35,7 @@ Your AI acts as a 24/7 Security Operations Center (SOC) assistant, helping you t
 - **Developers** — scan code for secrets before committing and check incident statuses without switching to the GitGuardian dashboard.
 
 
-## Available Tools
+## Available Tools (49)
 - **assign_secret_incident**: Assign a secret incident
 - **bulk_prefix_lookup**: Bulk lookup for honeytoken HMSL hashes
 - **create_custom_tag**: Create a custom tag
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gitguardian` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gitguardian` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **GitGuardian** tools.
 
 **Configuration:**

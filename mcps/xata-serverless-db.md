@@ -34,7 +34,7 @@ No more switching between your IDE and the Xata dashboard to check schema or run
 - **Data Analysts** — quickly explore organizational data and project structures through natural language.
 
 
-## Available Tools
+## Available Tools (30)
 - **create_branch**: Create a new database branch
 - **create_organization**: Create a new organization
 - **create_project**: Create a new project
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `xata-serverless-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `xata-serverless-db` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Xata (Serverless DB)** tools.
 
 **Configuration:**

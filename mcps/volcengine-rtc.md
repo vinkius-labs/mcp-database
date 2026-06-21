@@ -31,7 +31,7 @@ Empower your Agent with **Volcengine RTC**, the exact same Real-Time Communicati
 - **Network Analysts** — Analyze dropped frame rates to determine poor connectivity in a specific node purely from prompt traces
 
 
-## Available Tools
+## Available Tools (10)
 - **get_active_rooms**: List all active RTC rooms in Volcengine
 - **get_quality_metrics**: Get deep dive metrics of an RTC room
 - **get_room_users**: Get list of users in a Volcengine room
@@ -94,7 +94,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `volcengine-rtc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `volcengine-rtc` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Volcengine RTC** tools.
 
 **Configuration:**

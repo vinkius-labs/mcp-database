@@ -27,7 +27,7 @@ Empower your AI with direct connectivity to **SafeGraph**, the foundational geos
 4. Input that key securely. Chat instantly: "Find all coffee shop POIs located within a 500-meter radius around longitude -122.33, latitude 47.60."
 
 
-## Available Tools
+## Available Tools (10)
 - **batch_lookup_placekeys**: Provide them as a JSON array.
 
 Performs multiple Placekey lookups in a single request
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `safegraph` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `safegraph` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SafeGraph** tools.
 
 **Configuration:**

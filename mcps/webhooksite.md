@@ -33,7 +33,7 @@ Connect **Webhook.site** to your AI agent to instantly create, manage, and inspe
 - **DevOps Teams** — monitor incoming alerts and automate response triggers via AI-driven actions.
 
 
-## Available Tools
+## Available Tools (17)
 - **create_action**: Create a custom action for a token
 - **create_global_variable**: Create a global variable
 - **create_token**: Create a new Webhook.site token (URL)
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `webhooksite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `webhooksite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Webhook.site** tools.
 
 **Configuration:**

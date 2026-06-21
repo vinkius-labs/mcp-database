@@ -33,7 +33,7 @@ Connect to the **Data.gov Catalog** to explore the comprehensive repository of U
 - **Developers** — integrate public data sources into applications using structured GeoJSON and DCAT-US metadata
 
 
-## Available Tools
+## Available Tools (8)
 - **get_location_geometry**: Retrieve the GeoJSON boundary for a specific location ID
 - **get_harvest_record_raw**: Retrieve original unmodified source payload for a harvest record
 - **get_harvest_record**: Retrieve metadata about how a dataset was ingested
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `datagov-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `datagov-catalog` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Data.gov Catalog** tools.
 
 **Configuration:**

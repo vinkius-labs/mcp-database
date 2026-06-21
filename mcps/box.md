@@ -29,7 +29,7 @@ Connect your **Box** enterprise account to any AI agent and manage cloud content
 - **Knowledge Workers** — find and share content without navigating the Box UI
 
 
-## Available Tools
+## Available Tools (7)
 - **list_folder_items**: Use folder ID "0" for the root. Returns names, sizes, types, and modified dates.
 
 List items in a Box folder
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `box` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `box` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Box** tools.
 
 **Configuration:**

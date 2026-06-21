@@ -33,7 +33,7 @@ Connect your **Liveblocks** account to any AI agent to orchestrate real-time col
 - **Support Teams** — Quickly identify active users in a room and verify room configurations to assist customers in real-time.
 
 
-## Available Tools
+## Available Tools (19)
 - **list_active_users**: List users currently in the room
 - **authorize_user**: Obtain an access token with specific permissions
 - **broadcast_event**: Broadcast a JSON event to a room
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `liveblocks-collaborative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `liveblocks-collaborative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Liveblocks (Collaborative)** tools.
 
 **Configuration:**

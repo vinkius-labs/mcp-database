@@ -33,7 +33,7 @@ Accounting & Audit Prover uses 5 Decision Pivots grounded in US accounting pract
 5. **evidenceGrounded** — Is the conclusion grounded in specific, sufficient, and appropriate evidence requirements?
 
 
-## Available Tools
+## Available Tools (1)
 - **validate_accounting_audit**: You must: (1) define the AUDIT SCOPE — specific financial statement area, account balance, or transaction class. "Revenue" is too broad — "Revenue recognition for multi-year SaaS contracts under ASC 606" is a scope, (2) cite the APPLICABLE STANDARD — exact FASB ASC topic or PCAOB auditing standard with reference number. "GAAP principles" and "standard practices" are not citations — "ASC 606-10-25" and "PCAOB AS 2315" are, (3) quantify MATERIALITY — specific dollar thresholds or percentage benchmarks. "5% of pre-tax income = $2.3M overall materiality, $1.7M performance materiality" — not "significant amount", (4) assess ROMM — identify what could go wrong (inherent risk), evaluate control design and operating effectiveness (control risk), and determine the nature, timing, and extent of substantive procedures that respond to the assessed risks, (5) detail PROCEDURES — name specific substantive or analytical tests: vouching to third-party invoices, recalculating depreciation schedules, confirming balances with banks, performing cut-off testing, analytical procedures comparing current to prior period with expectation and threshold, (6) specify EVIDENCE — the exact documentary proof relied upon: bank confirmations, third-party invoices, signed contracts, board minutes, external legal counsel letters, management representations, (7) state the AUDIT CONCLUSION — unmodified/qualified/adverse opinion basis, or specific accounting treatment conclusion with ASC reference. If the tool rejects, your accounting/audit reasoning has a structural deficiency. Fix it before advising.
 
 Structured reflection tool for US accounting and audit reasoning (GAAP/FASB ASC/PCAOB/AICPA). Forces the agent to construct rigorous, standard-grounded financial analysis before concluding. Catches Standard Blindness (vague "GAAP rules" without citing ASC/PCAOB codification), Unquantified Materiality (no numerical thresholds — "significant" is not a number), Ignored ROMM (proposing procedures without assessing Risk of Material Misstatement or internal controls), Vague Procedures ("we will audit" without naming substantive or analytical tests), and Ungrounded Evidence (concluding without citing specific documentary proof). Call once per accounting issue or audit engagement area
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accounting-audit-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accounting-audit-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Accounting & Audit Prover** tools.
 
 **Configuration:**

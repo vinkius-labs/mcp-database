@@ -33,7 +33,7 @@ Connect to **ElectricityMap** to empower your AI agent with global grid transpar
 - **Data Analysts** — Correlate energy production trends with climate data or market pricing.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_carbon_intensity_forecast**: Get forecasted carbon intensity for a zone
 - **get_carbon_intensity_history**: Get historical carbon intensity for a zone
 - **get_carbon_intensity_latest**: Get latest carbon intensity for a zone
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `electricitymap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `electricitymap` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ElectricityMap** tools.
 
 **Configuration:**

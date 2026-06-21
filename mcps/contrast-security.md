@@ -31,7 +31,7 @@ Connect your **Contrast Security** platform to any AI agent and bring powerful A
 - **DevOps Leads** — Audit the operational status of Contrast sensors across fleet applications automatically through the AI.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_application_details**: Get detailed information about a specific application
 - **get_organization_info**: Get metadata about the current Contrast organization
 - **get_vulnerability_details**: Get full technical details for a specific vulnerability trace
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `contrast-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `contrast-security` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Contrast Security** tools.
 
 **Configuration:**

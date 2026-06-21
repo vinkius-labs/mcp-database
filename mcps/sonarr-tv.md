@@ -33,7 +33,7 @@ Connect your **Sonarr** instance to any AI agent to take full control of your TV
 - **Automation Fans** — integrate your media server workflows into your daily AI assistant routines
 
 
-## Available Tools
+## Available Tools (18)
 - **add_series**: Adds a new series to the library
 - **delete_episode_file**: Deletes an episode file from disk
 - **delete_queue_item**: Removes an item from the queue
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sonarr-tv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sonarr-tv` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sonarr (TV)** tools.
 
 **Configuration:**

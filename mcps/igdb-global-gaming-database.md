@@ -32,7 +32,7 @@ Empower your AI agent with the ultimate gaming intelligence via **IGDB**. This u
 - **Curators & Collectors** — automate the retrieval of metadata and high-quality artwork for gaming catalogs
 
 
-## Available Tools
+## Available Tools (12)
 - **get_artworks**: Get official artworks for a game
 - **list_collections**: Get details for a game collection or series
 - **search_covers**: Get cover art for a game
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `igdb-global-gaming-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `igdb-global-gaming-database` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **IGDB Global Gaming Database** tools.
 
 **Configuration:**

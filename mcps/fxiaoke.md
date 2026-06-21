@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your sales operations with **Fxiaoke** (纷
 - **Fxiaoke Power Users** — integrate your existing CRM workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_lead**: Create a new Fxiaoke lead
 - **create_opportunity**: Create a new Fxiaoke opportunity
 - **get_approval_details**: Get approval details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fxiaoke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fxiaoke` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fxiaoke** tools.
 
 **Configuration:**

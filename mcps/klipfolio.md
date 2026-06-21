@@ -32,7 +32,7 @@ Connect your **Klipfolio** account to any AI agent and manage analytics dashboar
 - **Marketing** — check campaign metrics and performance Klips
 
 
-## Available Tools
+## Available Tools (6)
 - **get_dashboard_details**: Get details for a specific dashboard
 - **list_account_clients**: List sub-clients
 - **list_dashboards**: List Klipfolio dashboards
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `klipfolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `klipfolio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Klipfolio** tools.
 
 **Configuration:**

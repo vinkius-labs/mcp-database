@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (7)
 - **odoo_create_ticket**: ticket record. The name is the ticket subject. Optionally provide the customer email (partner_email), team assignment (team_id from odoo_list_helpdesk_teams), linked customer (partner_id), description, and priority (0=Low, 1=Medium, 2=High, 3=Urgent). The ticket enters the first kanban stage of the assigned team. Use when the user wants to log a support request, report an issue, or create a task for the helpdesk team.
 
 Create a new helpdesk ticket in Odoo for a customer issue with subject, email, team, and priority
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-helpdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-helpdesk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo Helpdesk** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect to the **MusicBrainz** database to empower your AI agent with comprehens
 - **Music Enthusiasts** — organize personal collections and discover new music through deep metadata exploration.
 
 
-## Available Tools
+## Available Tools (10)
 - **add_collection_items**: Add items to a collection (Requires Auth)
 - **browse_entities**: g., all releases for an artist).
 
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `musicbrainz-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `musicbrainz-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MusicBrainz** tools.
 
 **Configuration:**

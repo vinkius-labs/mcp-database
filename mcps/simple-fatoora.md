@@ -35,7 +35,7 @@ No more manual ZATCA reporting or spreadsheet billing. Your AI acts as a dedicat
 - **Operations Managers** — streamline the management of client records and track item availability directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **create_client**: Create a new client
 - **create_item**: Create a new item
 - **create_simplified_invoice**: Pass items as a JSON string.
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simple-fatoora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simple-fatoora` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Simple Fatoora** tools.
 
 **Configuration:**

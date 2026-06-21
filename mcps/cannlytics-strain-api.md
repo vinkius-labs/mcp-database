@@ -30,7 +30,7 @@ Cannlytics provides an open API for transparent cannabis data, serving consumers
 - **Researchers** -- Access structured cannabis data for studies and market analysis
 
 
-## Available Tools
+## Available Tools (5)
 - **get_effects**: Get reported effects for a specific strain
 - **get_flavors**: g., earthy, sweet, citrus) for the strain.
 
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cannlytics-strain-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cannlytics-strain-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cannlytics Strain API** tools.
 
 **Configuration:**

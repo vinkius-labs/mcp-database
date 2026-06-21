@@ -32,7 +32,7 @@ Bring **Parseur Document Extraction** arrays directly into your AI workflows. By
 - **Developers** — route manual document loads simulating continuous AI logic mapping testing integrations on webhook bounds
 
 
-## Available Tools
+## Available Tools (10)
 - **create_mailbox**: The type determines the parsing engine (e.g., "pdf", "email", "attachment"). Once created, you can configure templates and forward documents to the mailbox for automatic extraction.
 
 Create a new Parseur mailbox for document parsing
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `parseur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `parseur` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Parseur** tools.
 
 **Configuration:**

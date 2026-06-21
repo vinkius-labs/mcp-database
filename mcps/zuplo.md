@@ -38,7 +38,7 @@ No more manual navigation through complex cloud consoles to whitelist a consumer
 - **Security Architects** — audit API key consumers and manage gateway authentication policies rapidly
 
 
-## Available Tools
+## Available Tools (10)
 - **list_consumers**: List API key consumers
 - **create_consumer**: Create API key consumer
 - **create_deployment**: Create a new deployment
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `zuplo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `zuplo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Zuplo** tools.
 
 **Configuration:**

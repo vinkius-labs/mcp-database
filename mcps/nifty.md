@@ -35,7 +35,7 @@ No more manual status checking or context switching. Your AI acts as a dedicated
 - **Operations Teams** — streamline the retrieval of portfolio metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **mark_task_as_complete**: Finish a task
 - **create_project_milestone**: Add new milestone
 - **create_new_task**: Add new task
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `nifty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `nifty` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Nifty** tools.
 
 **Configuration:**

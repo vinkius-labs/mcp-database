@@ -37,7 +37,7 @@ No more manual uploading of address lists. Your AI assistant acts as a dedicated
 - **E-commerce Owners** — track the effectiveness of direct mail by reporting transactions back for attribution.
 
 
-## Available Tools
+## Available Tools (11)
 - **add_to_audience**: Add a recipient to a specific audience list
 - **add_to_suppression_list**: Add a recipient to the global "Do Not Mail" list
 - **get_api_profile**: Get information about the authenticated account
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `poplar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `poplar` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Poplar** tools.
 
 **Configuration:**

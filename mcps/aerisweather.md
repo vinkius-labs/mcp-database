@@ -33,7 +33,7 @@ Connect your **AerisWeather** account to any AI agent and access professional-gr
 - **Data Analysts** — Access historical and real-time weather datasets for environmental research or business intelligence.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_alerts**: Get active weather warnings, watches, and advisories
 - **get_batch**: Action is usually a location ID. Provide a comma-separated list of requests (e.g., /observations,/forecasts,/alerts). Max 31 requests.
 
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aerisweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aerisweather` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AerisWeather** tools.
 
 **Configuration:**

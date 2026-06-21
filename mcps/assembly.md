@@ -23,7 +23,7 @@ The Assembly MCP Server allows AI agents to interact with your Assembly platform
 Connect your Assembly account via your API Key to manage your professional service data dynamically.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_client**: Get details for a specific client
 - **get_company**: Get details for a specific company
 - **get_note**: Get a specific note
@@ -96,7 +96,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `assembly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `assembly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Assembly** tools.
 
 **Configuration:**

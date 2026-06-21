@@ -33,7 +33,7 @@ Connect your **Assertible** account to any AI agent to streamline your API testi
 - **Backend Developers** — Validate JSON schemas and sync API specifications as soon as code changes are made.
 
 
-## Available Tools
+## Available Tools (7)
 - **create_deployment**: Create a deployment and trigger tests
 - **get_service_status_badge**: Get the status badge URL and markdown for a service
 - **get_test_status_badge**: Get the status badge URL and markdown for a specific test
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `assertible` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `assertible` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Assertible** tools.
 
 **Configuration:**

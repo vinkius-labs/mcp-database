@@ -35,7 +35,7 @@ No more manual logging into individual project portals or missing critical propo
 - **Business Owners** — monitor financial performance and organizational metadata through simple AI queries
 
 
-## Available Tools
+## Available Tools (12)
 - **check_api_health**: Verify ArborNote API connectivity
 - **create_arbornote_client**: Create a new client
 - **get_arbornote_client**: Get specific client
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arbornote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arbornote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ArborNote** tools.
 
 **Configuration:**

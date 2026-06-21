@@ -34,7 +34,7 @@ Connect your AI agent to **Kelley Blue Book (KBB)**, the most trusted resource f
 - **Financial Analysts** — monitor automotive market trends and depreciation via AI assistance
 
 
-## Available Tools
+## Available Tools (10)
 - **get_vehicle_by_vin**: Lookup vehicle information using a VIN
 - **get_market_trends**: Retrieve current market trends and pricing shifts
 - **get_vehicle_valuation**: Retrieve the estimated market value for a specific vehicle
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kelley-blue-book-valuation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kelley-blue-book-valuation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kelley Blue Book Valuation** tools.
 
 **Configuration:**

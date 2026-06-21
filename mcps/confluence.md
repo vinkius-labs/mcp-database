@@ -31,7 +31,7 @@ Connect your **Atlassian Confluence** workspace to your AI assistant. Easily que
 - **Human Resources** — Look up and reference company policies inside conversational threads to assist employees.
 
 
-## Available Tools
+## Available Tools (12)
 - **add_label**: Labels help organize and filter wiki content.
 
 Add a label to a Confluence page
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `confluence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `confluence` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Confluence** tools.
 
 **Configuration:**

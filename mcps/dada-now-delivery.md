@@ -30,7 +30,7 @@ Integrate **Dada Now (达达快送)**, one of the leading on-demand delivery pla
 - **Operations Teams** — Give non-technical logistics staff the ability to control Dada dashboards via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **add_complaint**: Submit a complaint about a driver
 - **add_order**: Create a new Dada delivery order
 - **add_shop**: Register a new Store/Shop to pick up from
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dada-now-delivery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dada-now-delivery` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dada Now Delivery** tools.
 
 **Configuration:**

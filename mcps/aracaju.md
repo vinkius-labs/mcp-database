@@ -33,7 +33,7 @@ Connect to the **Aracaju Transparency Portal** to audit and analyze public data 
 - **Legal & Compliance Professionals** — verify public contracts and bidding processes without manual portal navigation.
 
 
-## Available Tools
+## Available Tools (5)
 - **list_bids**: List public tenders and bids (licitações)
 - **list_contracts**: List signed contracts (contratos)
 - **list_expenses**: List municipality expenses (despesas)
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aracaju` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aracaju` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aracaju** tools.
 
 **Configuration:**

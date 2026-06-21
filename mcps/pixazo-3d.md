@@ -43,7 +43,7 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 - **3D Printers** — convert 2D designs into printable 3D models with clean topology
 
 
-## Available Tools
+## Available Tools (12)
 - **convert_3d_format**: Preserves geometry, textures, materials, and rigging data during conversion. Essential for pipeline integration, platform compatibility, and format standardization. AI agents should use this when users ask "convert this GLB model to FBX", "change this 3D file to USDZ for AR", or need 3D format conversion for specific platform or software requirements.
 
 Convert 3D models between different file formats
@@ -142,7 +142,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pixazo-3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pixazo-3d` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pixazo 3D** tools.
 
 **Configuration:**

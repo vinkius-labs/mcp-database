@@ -39,7 +39,7 @@ Stop clicking through the Cloudflare dashboard to check a DNS record or audit fi
 - **Full-Stack Developers** — read/write KV data for Workers, check Pages deployments and inspect load balancer health
 
 
-## Available Tools
+## Available Tools (15)
 - **get_zone_analytics**: Use to audit CDN performance, identify traffic spikes and review threat mitigation.
 
 Get analytics data for a Cloudflare zone
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `cloudflare-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `cloudflare-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Cloudflare** tools.
 
 **Configuration:**

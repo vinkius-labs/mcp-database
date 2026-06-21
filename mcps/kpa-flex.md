@@ -28,7 +28,7 @@ Connect your AI agent to **KPA Flex** to maintain a safe and compliant workplace
 4. Start managing your EHS data via natural language
 
 
-## Available Tools
+## Available Tools (10)
 - **list_ehs_inspections**: List all safety inspections
 - **get_inspection_details**: Get details for an inspection
 - **list_flex_employees**: List employees in the system
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kpa-flex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kpa-flex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **KPA Flex** tools.
 
 **Configuration:**

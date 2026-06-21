@@ -33,7 +33,7 @@ Integrate **Pangea** into your AI workflows to provide a robust security layer f
 - **Compliance Officers** — Quickly search and verify audit trails using natural language queries.
 
 
-## Available Tools
+## Available Tools (40)
 - **ai_guard_prompt**: Analyze and redact content in LLM inputs/outputs
 - **ai_guard_text**: Scan text for PII, malicious content, and prompt injections
 - **aidr_chat_completions**: Guard LLM chat completions with integrated logging and tracing
@@ -136,7 +136,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pangea-security-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pangea-security-apis` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pangea (Security APIs)** tools.
 
 **Configuration:**

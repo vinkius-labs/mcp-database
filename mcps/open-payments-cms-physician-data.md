@@ -33,7 +33,7 @@ The **Open Payments** MCP server provides direct access to the Centers for Medic
 - **Healthcare Analysts** — aggregate payment data to understand market influence and provider relationships.
 
 
-## Available Tools
+## Available Tools (5)
 - **list_datasets**: List all available datasets in the Open Payments system
 - **get_dataset**: Get detailed metadata for a specific dataset
 - **query_dataset**: Search records within a specific dataset
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-payments-cms-physician-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-payments-cms-physician-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open Payments (CMS Physician Data)** tools.
 
 **Configuration:**

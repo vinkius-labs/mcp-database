@@ -19,7 +19,7 @@ Empower your AI agents to solve customer friction in real-time. Instead of havin
 - **Flexible Logic:** Supports percentage discounts, fixed cart discounts, usage limits (e.g., single-use), and expiration dates, giving the AI fine-grained control over the offer.
 
 
-## Available Tools
+## Available Tools (1)
 - **create_woocommerce_coupon**: Ideal for automated customer support, retention offers, or marketing campaigns.
 
 Creates a new discount coupon in WooCommerce
@@ -63,7 +63,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `woocommerce-coupon-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `woocommerce-coupon-creator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WooCommerce Coupon Creator** tools.
 
 **Configuration:**

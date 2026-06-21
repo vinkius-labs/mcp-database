@@ -21,7 +21,7 @@ Instead of manual calculations, ask your AI assistant: *"What is the frequency o
 Connects through Vinkius Edge -- one URL, one token, no API keys to manage.
 
 
-## Available Tools
+## Available Tools (3)
 - **compute_harmonic_series**: Generates a list of frequencies representing the harmonic series for a given base frequency
 - **get_note_frequency**: Calculates the absolute frequency in Hertz for a specific musical note and octave
 - **match_solfeggio_resonance**: Identifies which Solfeggio frequency is numerically closest to a provided target frequency
@@ -87,7 +87,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sound-frequency-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sound-frequency-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Sound Frequency Calculator** tools.
 
 **Configuration:**

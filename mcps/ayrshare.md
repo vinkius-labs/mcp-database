@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire social media presence with **Ay
 - **Growth Hackers** — integrate social media capabilities into AI-driven marketing workflows for rapid experimentation.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_post**: Publish a post immediately to social media platforms
 - **create_profile**: Create a new user profile
 - **delete_auto_schedule**: Delete auto-schedule for a platform
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ayrshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ayrshare` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ayrshare** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Eversign** account to any AI agent to streamline your document si
 - **Developers** — test e-signature integrations using the sandbox mode and inspect business structures via API
 
 
-## Available Tools
+## Available Tools (2)
 - **create_document**: Can also be used to create reusable templates or generate documents from templates.
 
 Create a new document, create a template, or use an existing template
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eversign-cloud-electronic-signature` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eversign-cloud-electronic-signature` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eversign (Cloud Electronic Signature)** tools.
 
 **Configuration:**

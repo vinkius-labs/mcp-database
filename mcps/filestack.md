@@ -33,7 +33,7 @@ Connect your **Filestack** account to any AI agent to handle complex file workfl
 - **Data Engineers** — Extract structured text from scanned documents and images using OCR for downstream processing.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_image_tags**: Detect objects and features in an image
 - **get_metadata**: Get metadata for a Filestack file
 - **get_ocr**: Extract printed or handwritten text (OCR)
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `filestack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `filestack` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FileStack** tools.
 
 **Configuration:**

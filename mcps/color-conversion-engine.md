@@ -19,7 +19,7 @@ AI agents frequently struggle with visual engineering. When asked to convert a C
 - **Zero Friction:** Operates instantly at the edge without needing external APIs or complex image processing libraries.
 
 
-## Available Tools
+## Available Tools (1)
 - **color_conversion_convert**: Pass the color value, the source format (rgb, hex, hsl, cmyk), and the desired target format. The engine performs exact mathematical matrix conversion.
 
 Converts colors between different formats mathematically (HEX, RGB, HSL, CMYK)
@@ -85,7 +85,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `color-conversion-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `color-conversion-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Color Conversion Engine** tools.
 
 **Configuration:**

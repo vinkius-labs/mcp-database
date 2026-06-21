@@ -33,7 +33,7 @@ Connect your **Fitbit** account to any AI agent and gain deep insights into your
 - **Data Analysts** — export and inspect raw activity telemetry (TCX) for deeper personal health research.
 
 
-## Available Tools
+## Available Tools (51)
 - **create_activity_goal**: Create Activity Goal
 - **create_activity_log**: Create Activity Log
 - **create_alarm**: Create Alarm
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fitbit-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fitbit-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fitbit** tools.
 
 **Configuration:**

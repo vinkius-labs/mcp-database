@@ -13,7 +13,7 @@ Estimate aerobic capacity using Cooper, Rockport, Step, and YMCA Bike protocols.
 This MCP server provides specialized tools to estimate VO2max (maximal oxygen uptake) through four standardized physical fitness protocols: `calculate_cooper` for the 12-minute run, `calculate_rockport` for the one-mile walk test, `calculate_step_test` for cardiovascular recovery analysis, and `calculate_ymca_bike` for steady-state cycling assessments. Each tool calculates oxygen uptake in ml/kg/min and provides an ACSM fitness classification based on age and sex.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_rockport**: Estimate VO2max using the Rockport Walk Test
 - **calculate_step_test**: Estimate VO2max using the Step Test
 - **calculate_ymca_bike**: Estimate VO2max using the YMCA Bike Test
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vo2max-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vo2max-estimator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VO2max Estimator** tools.
 
 **Configuration:**

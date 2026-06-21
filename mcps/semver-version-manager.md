@@ -19,7 +19,7 @@ LLMs hallucinate software versions. They constantly fail to evaluate complex sem
 - **Zero Dependency Hell:** Runs natively on the edge. By preventing AI from guessing version bumps, your automated CI/CD agents become mathematically perfect.
 
 
-## Available Tools
+## Available Tools (2)
 - **check_semver_compatibility**: Checks if a specific version satisfies a SemVer range (e.g. ^1.4.2)
 - **sort_semver_list**: Pass both versions and receive the comparison result (greater, lesser, equal). Essential for dependency resolution.
 
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `semver-version-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `semver-version-manager` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SemVer Version Manager** tools.
 
 **Configuration:**

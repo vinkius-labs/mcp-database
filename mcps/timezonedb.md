@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire global time and timezone resear
 - **App Developers** — automate timezone data querying to orchestrate cross-functional global services smoothly.
 
 
-## Available Tools
+## Available Tools (5)
 - **check_api_status**: Check if the TimezoneDB API is operational
 - **get_dst_status**: Check if daylight saving time is currently active for a zone
 - **get_time_by_location**: Get current time for specific geographic coordinates
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `timezonedb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `timezonedb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TimezoneDB** tools.
 
 **Configuration:**

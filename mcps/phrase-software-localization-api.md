@@ -32,7 +32,7 @@ Connect your **Phrase** account to any AI agent to streamline your software loca
 - **Product Teams** — Automate the creation of new localization projects for new features.
 
 
-## Available Tools
+## Available Tools (20)
 - **create_key**: Create a new translation key
 - **create_locale**: Create a new locale in a project
 - **create_project**: Create a new localization project
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `phrase-software-localization-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `phrase-software-localization-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Phrase (Software Localization API)** tools.
 
 **Configuration:**

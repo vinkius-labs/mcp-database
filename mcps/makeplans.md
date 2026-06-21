@@ -34,7 +34,7 @@ Connect your **MakePlans** account to any AI agent to automate your scheduling a
 - **Developers** — Integrate scheduling logic and slot availability into your custom internal dashboards
 
 
-## Available Tools
+## Available Tools (8)
 - **list_appointments**: Use optional params for filtering.
 
 List all bookings/appointments
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `makeplans` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `makeplans` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MakePlans** tools.
 
 **Configuration:**

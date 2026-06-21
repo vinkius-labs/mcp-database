@@ -32,7 +32,7 @@ Connect your **InflatableOffice** account to any AI agent and manage your party 
 - **Operations** — monitor inventory availability and scheduled deliveries
 
 
-## Available Tools
+## Available Tools (6)
 - **create_new_lead**: Register a new lead
 - **get_lead_details**: Get details for a specific lead
 - **list_customers**: List InflatableOffice customers
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `inflatableoffice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `inflatableoffice` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **InflatableOffice** tools.
 
 **Configuration:**

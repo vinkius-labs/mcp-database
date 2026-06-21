@@ -35,7 +35,7 @@ No more searching for placeholder services or manually creating empty boxes in d
 - **Product Managers** — visualize content blocks and banner placements during requirement gathering.
 
 
-## Available Tools
+## Available Tools (1)
 - **generate_image**: Returns the generated image URL.
 
 Generate a dummy image URL
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dummyimage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dummyimage` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DummyImage** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Kontent.ai** project to any AI agent and take full control of you
 - **Frontend Developers** — introspect content types and verify asset identifiers to ensure accurate mapping in your downstream applications
 
 
-## Available Tools
+## Available Tools (10)
 - **get_item**: Retrieve metadata for a specific Kontent.ai item by codename
 - **get_taxonomy**: Get details and nested terms for a specific Taxonomy group
 - **get_content_type**: Retrieve the exact structural fields of a specific Content Type
@@ -113,7 +113,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kontentai-enterprise-headless-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kontentai-enterprise-headless-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kontent.ai (Enterprise Headless CMS)** tools.
 
 **Configuration:**

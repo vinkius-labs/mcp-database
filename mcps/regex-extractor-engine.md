@@ -19,7 +19,7 @@ LLMs often struggle with strict pattern matching, hallucinating data that isn't 
 - **Native Speed:** Runs natively on the V8 engine at the edge.
 
 
-## Available Tools
+## Available Tools (1)
 - **regex_extractor_extract**: You provide the text and the regex, and this tool returns an exact array of matches without hallucinating or dropping items.
 
 Extracts exact string matches from a large text using Regular Expressions (Regex)
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `regex-extractor-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `regex-extractor-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Regex Extractor Engine** tools.
 
 **Configuration:**

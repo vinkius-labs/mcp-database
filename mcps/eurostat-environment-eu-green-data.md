@@ -21,7 +21,7 @@ Track the EU Green Deal progress with official environmental and energy statisti
 - **Agriculture** — Crop production, livestock (CAP data)
 
 
-## Available Tools
+## Available Tools (6)
 - **get_emissions**: Units: tonnes of CO2 equivalent. Breakdown by source sector (energy, agriculture, transport, industry, waste). Essential for EU Green Deal and Paris Agreement tracking.
 
 Get EU greenhouse gas emissions by country and sector
@@ -127,7 +127,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `eurostat-environment-eu-green-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `eurostat-environment-eu-green-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Eurostat Environment — EU Green Data** tools.
 
 **Configuration:**

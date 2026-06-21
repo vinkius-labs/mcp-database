@@ -32,7 +32,7 @@ Bring **DigitalOcean Paperspace Cloud Insights** directly into your AI workflows
 - **ML Researchers** — track specific AI lab setups investigating Jupyter limits and RAM boundaries instantly
 
 
-## Available Tools
+## Available Tools (6)
 - **list_machines**: Identify bounded Compute resources inside the Headless Paperspace limits
 - **get_machine_details**: Perform structural extraction of properties driving active Instance logic
 - **list_deployments**: Retrieve explicit Cloud logging tracing explicit Deploy targets
@@ -101,7 +101,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paperspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paperspace` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Paperspace** tools.
 
 **Configuration:**

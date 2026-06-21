@@ -31,7 +31,7 @@ Connect your AI agent to **Exa** — the semantic search engine built from the g
 - **Content Teams** — discover competitors, alternatives, and related content at scale
 
 
-## Available Tools
+## Available Tools (3)
 - **exa_find_similar**: Useful for finding competitors, related articles, or alternative sources on the same subject.
 
 Find web pages semantically similar to a given URL. Perfect for competitive analysis and content discovery
@@ -126,7 +126,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `exa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `exa` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Exa** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Postmark** server to any AI agent to fully orchestrate and analyz
 - **System Admins** — Quickly query delivery analytics and trace email endpoints for quick operational overviews.
 
 
-## Available Tools
+## Available Tools (9)
 - **get_bounces_overview**: Get bounce overview analytics
 - **get_server**: Get Postmark server details
 - **get_template**: Get a specific Postmark template details
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `postmark-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `postmark-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Postmark** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your **CHATFLY** account to any AI agent and take full control of your c
 - **Business Owners** — audit total conversations and monitor AI resource usage
 
 
-## Available Tools
+## Available Tools (8)
 - **list_uploaded_documents**: List all files uploaded to the knowledge base
 - **get_chatbot_details**: Get detailed information for a specific chatbot
 - **get_conversation_history**: Retrieve the message history for a specific conversation
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `chatfly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `chatfly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CHATFLY** tools.
 
 **Configuration:**

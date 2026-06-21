@@ -35,7 +35,7 @@ No more manual typing or list exporting. Your AI acts as a dedicated marketing m
 - **Operations Teams** — streamline the management of contact segments and monitor list growth directly within the chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_subscriber**: Add new contact
 - **remove_subscriber**: Delete contact
 - **get_api_status**: Check connection
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `simpletexting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `simpletexting` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SimpleTexting** tools.
 
 **Configuration:**

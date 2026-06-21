@@ -35,7 +35,7 @@ Vertiv Environet provides real-time infrastructure optimization, ensuring your c
 - **NOC Teams** — integrate environmental alerts into centralized monitoring dashboards via AI agent automation
 
 
-## Available Tools
+## Available Tools (10)
 - **acknowledge_alert**: Requires the alertId and the userId of the operator acknowledging it. Acknowledged alerts are removed from the "active" list and moved to history. Essential for audit trails and shift handovers.
 
 Acknowledge an active alarm to indicate it is being investigated
@@ -128,7 +128,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vertiv-environet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vertiv-environet` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vertiv Environet** tools.
 
 **Configuration:**

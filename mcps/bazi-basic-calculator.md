@@ -13,7 +13,7 @@ Calculate the Four Pillars of Destiny (BaZi) using birth date and time.
 This MCP server provides tools to calculate the Four Pillars of Destiny (BaZi). Use `calculate_four_pillars` to derive the Heavenly Stems and Earthly Branches for a specific birth date. You can also use `identify_elemental_interaction` to understand how elements interact, or `lookup_component_properties` to find the element and polarity of any Stem or Branch.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_four_pillars**: Derive the complete Four Pillars (Stem and Branch for each) from a specific birth date and time
 - **lookup_component_properties**: Find the elemental nature and polarity of a specific Heavenly Stem or Earthly Branch
 - **identify_elemental_interaction**: Determine the relationship between two different elemental components
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bazi-basic-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bazi-basic-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BaZi Basic Calculator** tools.
 
 **Configuration:**

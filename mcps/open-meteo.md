@@ -37,7 +37,7 @@ No API key required — completely free and open-source.
 - **Outdoor Planners** — check UV index, wind speed and precipitation for events
 
 
-## Available Tools
+## Available Tools (5)
 - **get_air_quality**: 5, PM10, nitrogen dioxide, ozone, sulphur dioxide, carbon monoxide, dust, pollen and UV index. Requires latitude and longitude. Returns hourly data for up to 7 days. Common variables: pm2_5, pm10, nitrogen_dioxide, ozone, sulphur_dioxide, carbon_monoxide, dust, uv_index, alder_pollen, grass_pollen.
 
 Get air quality forecast for a location
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `open-meteo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `open-meteo` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Open-Meteo** tools.
 
 **Configuration:**

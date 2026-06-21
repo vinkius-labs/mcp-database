@@ -33,7 +33,7 @@ Connect your **Tumblr** account to any AI agent and simplify how you manage your
 - **Data Analysts** — retrieve post histories and analyze engagement levels across different Tumblr blogs.
 
 
-## Available Tools
+## Available Tools (5)
 - **get_blog_avatar**: Get the avatar URL for a blog
 - **get_blog_info**: g., "officialtumblr").
 
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tumblr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tumblr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tumblr** tools.
 
 **Configuration:**

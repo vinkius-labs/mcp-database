@@ -38,7 +38,7 @@ Connect to the **OpenAlex API** — the fully open catalog of the global researc
 - **Academic Librarians** — explore journal metrics and open access availability
 
 
-## Available Tools
+## Available Tools (16)
 - **get_author**: Returns name, affiliations, paper count, citation count, h-index, i10-index, 2-year mean citedness, top research concepts, and publication trends by year. The definitive tool for assessing academic impact.
 
 Get author profile with h-index, citations, and impact metrics
@@ -147,7 +147,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `stanford-openalex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `stanford-openalex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Stanford OpenAlex** tools.
 
 **Configuration:**

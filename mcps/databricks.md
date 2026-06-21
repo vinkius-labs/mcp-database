@@ -35,7 +35,7 @@ Connect your **Databricks** workspace to any AI agent and take full control of y
 - **MLOps Engineers** — track model training jobs and verify compute cluster configurations through natural language
 
 
-## Available Tools
+## Available Tools (8)
 - **list_clusters**: List all clusters from Databricks
 - **get_cluster**: Get cluster details from Databricks
 - **list_jobs**: List all jobs from Databricks
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `databricks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `databricks` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Databricks** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **DigitalChalk**, the comprehensive learning management system (LMS), 
 - **Hiring & Onboarding Teams** — Monitor progress of new hire certification plans instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_lms_account_metadata**: Retrieve metadata and settings for your DigitalChalk account
 - **list_high_performing_learners**: Identify enrollments with a grade above a certain percentage (mock logic)
 - **get_offering_details**: Get detailed settings and information for a specific course offering
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `digitalchalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `digitalchalk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **DigitalChalk** tools.
 
 **Configuration:**

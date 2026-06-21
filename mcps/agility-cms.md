@@ -33,7 +33,7 @@ Connect your **Agility CMS** instance to your AI agent and turn it into the ulti
 - **SEO Specialists** — analyze the flat site router graph natively to map out content opportunities
 
 
-## Available Tools
+## Available Tools (10)
 - **get_page_layout**: Retrieve the layout and structural modules of a single Page
 - **get_site_flat_router**: Retrieve the exact flat list of all CMS routes/pages
 - **count_reference_items**: Get the total size/count of items in a specific Reference List
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `agility-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `agility-cms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Agility CMS** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **ReadMe** documentation hub directly to your AI agent. Enabling th
 - **Software Engineers** — Instantly pull your company's official API documentation into your IDE to ensure your code aligns with published standards.
 
 
-## Available Tools
+## Available Tools (10)
 - **list_categories**: Lists all documentation categories on ReadMe
 - **get_category**: Retrieves details for a specific documentation category
 - **get_category_docs**: Lists all documentation pages under a specific category
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `readme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `readme` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **ReadMe** tools.
 
 **Configuration:**

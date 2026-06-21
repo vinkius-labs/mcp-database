@@ -32,7 +32,7 @@ Connect the **Rick and Morty** database to your AI agent and explore the entire 
 - **Content Creators** — gather accurate lore and metadata for scripts or articles
 
 
-## Available Tools
+## Available Tools (9)
 - **get_character**: Get a single Rick and Morty character by ID
 - **get_episode**: Get a single Rick and Morty episode by ID
 - **get_location**: Get a single Rick and Morty location by ID
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `rick-and-morty-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `rick-and-morty-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Rick and Morty** tools.
 
 **Configuration:**

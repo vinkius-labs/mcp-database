@@ -32,7 +32,7 @@ Connect your **Polar.sh** account to any AI agent to manage your open-source mon
 - **Developer Relations** — grant product benefits and free subscriptions to community contributors instantly.
 
 
-## Available Tools
+## Available Tools (36)
 - **confirm_checkout_client**: Confirm a session from the client
 - **create_benefit**: Create a benefit
 - **create_checkout**: Create a checkout session
@@ -133,7 +133,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `polarsh-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `polarsh-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Polar.sh** tools.
 
 **Configuration:**

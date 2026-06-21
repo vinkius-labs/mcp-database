@@ -35,7 +35,7 @@ No more manual logging into dashboards to check post status. Your AI acts as a d
 - **Developers** — integrate real-time social scheduling data and media management directly within the chat.
 
 
-## Available Tools
+## Available Tools (11)
 - **ai_generate_content**: Generate post content using AI
 - **create_draft**: Create a post draft
 - **create_schedule**: Create a new scheduled post
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `planly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `planly` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Planly** tools.
 
 **Configuration:**

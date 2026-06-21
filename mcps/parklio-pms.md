@@ -33,7 +33,7 @@ Parklio is a forward-looking company dedicated to developing smart parking hardw
 - **Security Staff** — Review activity logs to audit unauthorized access or barrier overrides
 
 
-## Available Tools
+## Available Tools (10)
 - **create_gateway**: Requires lot_id, name, and type (e.g., entry_barrier, exit_camera, lpr_reader). Use this when installing new physical hardware.
 
 Register a new hardware gateway (barrier, reader) to a parking lot
@@ -124,7 +124,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `parklio-pms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `parklio-pms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Parklio PMS** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Connect your **Accela** civic platform to any AI agent to streamline government 
 - **Data Analysts** — retrieve parcel and address data for jurisdictional reporting and planning.
 
 
-## Available Tools
+## Available Tools (13)
 - **create_contact**: Add a new contact to the system
 - **create_record**: Create a new record (e.g., a permit application)
 - **get_parcels**: Retrieve land parcel information
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `accela` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `accela` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Accela** tools.
 
 **Configuration:**

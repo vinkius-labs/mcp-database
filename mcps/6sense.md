@@ -34,7 +34,7 @@ Connect your **6sense** enterprise account to your AI agent to unlock deep accou
 - **Sales Leaders** — monitor pipeline health and target account journey progress
 
 
-## Available Tools
+## Available Tools (4)
 - **identify_company**: Identify a company via visitor IP address
 - **enrich_company**: g. microsoft.com).
 
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `6sense` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `6sense` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **6sense** tools.
 
 **Configuration:**

@@ -21,7 +21,7 @@ By strictly scoping access, your AI can safely manage structured data, store cha
 - **Plug & Play Database:** Instantly gives your agent a scalable NoSQL database to store structured memories and application state.
 
 
-## Available Tools
+## Available Tools (5)
 - **delete_item**: Delete an item from the DynamoDB table
 - **get_item**: Get an item from the DynamoDB table
 - **put_item**: Put an item into the DynamoDB table
@@ -89,7 +89,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `amazon-dynamodb-table` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `amazon-dynamodb-table` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Amazon DynamoDB Table** tools.
 
 **Configuration:**

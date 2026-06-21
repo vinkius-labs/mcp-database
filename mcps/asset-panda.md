@@ -28,7 +28,7 @@ The **Asset Panda MCP Server** provides a flexible natural language interface to
 - **Finance Teams** — Retrieve asset data for depreciation reporting and audit compliance without manual exports.
 
 
-## Available Tools
+## Available Tools (8)
 - **create_object**: Create a new object (asset) in a group
 - **get_account_check**: Verify Asset Panda account connection
 - **get_group**: Get metadata for a specific asset group
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `asset-panda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `asset-panda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Asset Panda** tools.
 
 **Configuration:**

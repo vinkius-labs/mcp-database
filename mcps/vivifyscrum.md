@@ -33,7 +33,7 @@ Connect your **VivifyScrum** account to any AI agent and simplify how you manage
 - **Product Owners** — monitor project progress and organization structure directly from the AI assistant.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_item**: Create a new task/story
 - **get_account_info**: Get account details
 - **get_board**: Get board details
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vivifyscrum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vivifyscrum` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **VivifyScrum** tools.
 
 **Configuration:**

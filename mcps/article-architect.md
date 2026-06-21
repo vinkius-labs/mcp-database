@@ -45,7 +45,7 @@ The best technical blog posts are ARGUMENTS, not tutorials. Tutorials belong in 
 Article Architect works for technical articles in any language. The pivots are universal: every language has theses, tradeoffs, code evidence, production grounding, and reader transformations.
 
 
-## Available Tools
+## Available Tools (1)
 - **architect_article**: You must: (1) state a THESIS — a debatable position, NOT a description. "X is a framework" is Wikipedia. "X reduced our deploy time by 73% but tripled debugging complexity" is a thesis. (2) expose TRADEOFFS — when does this approach FAIL? What do you sacrifice? Engineers distrust one-sided advocacy. (3) plan CODE that PROVES the thesis — not hello-world, not boilerplate from the docs. Before/after comparisons, benchmarks, failing tests, performance traces. (4) ground it in PRODUCTION — at least one concrete detail: a metric, a failure, a surprise. "We hit X after 72 hours in production" transforms theory into authority. (5) define the TRANSFORMATION — after reading, what can the reader DO? Not "understand X" — an action: "run this benchmark", "apply this migration pattern", "use this decision framework". If the tool rejects, your article will read as AI-generated tutorial filler. Fix the architecture.
 
 Structured reflection tool for architecting technical blog articles that argue, prove, and transform — not just describe. The agent must commit to a debatable thesis, expose honest tradeoffs, plan code blocks that serve as evidence, ground the argument in production experience, and define a concrete reader transformation. The tool validates logical consistency: if the thesis is a definition, it rejects. If tradeoffs are dismissive, it rejects. If code is boilerplate, it rejects. If experience is generic, it rejects
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `article-architect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `article-architect` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Article Architect** tools.
 
 **Configuration:**

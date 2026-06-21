@@ -34,7 +34,7 @@ Connect your **HashiCorp Nomad** cluster to your AI agent and take control of yo
 - **Infrastructure Managers** — automate the retrieval of node and workload data for reporting and monitoring.
 
 
-## Available Tools
+## Available Tools (10)
 - **fail_deployment**: Mark a deployment as failed
 - **get_allocation**: Get specific allocation details
 - **get_deployment**: Get specific deployment details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hashicorp-nomad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hashicorp-nomad` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HashiCorp Nomad** tools.
 
 **Configuration:**

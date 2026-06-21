@@ -19,7 +19,7 @@ String manipulation is one of the weakest aspects of LLM generation. When tasked
 - **Zero-Dependency Architecture:** Pure JS runtime execution guarantees absolute microsecond speed without any external NPM packages. Perfect for edge-runtime agentic deployments.
 
 
-## Available Tools
+## Available Tools (4)
 - **html_entities_codec**: Encode raw user input into HTML entities, or decode HTML entities back to raw text.
 
 Encodes or decodes malicious HTML characters (<, >, &, ") into safe entity formats
@@ -90,7 +90,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `deterministic-codec-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `deterministic-codec-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Deterministic Codec Engine** tools.
 
 **Configuration:**

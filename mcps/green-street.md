@@ -34,7 +34,7 @@ Connect your **Green Street** account to any AI agent and take full control of y
 - **Commercial Brokers** — retrieve historical transaction summaries and market news directly through the chat interface
 
 
-## Available Tools
+## Available Tools (12)
 - **get_company_summary**: Get financial summary for a specific company by symbol
 - **get_earnings_metrics**: Get FFO/FAD earnings data for a company
 - **get_forecast_scenarios**: Retrieve forward-looking market and sector projections
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `green-street` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `green-street` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Green Street** tools.
 
 **Configuration:**

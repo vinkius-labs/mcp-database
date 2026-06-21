@@ -27,7 +27,7 @@ Connect your **MeetingPulse** account to any AI agent and take full control of y
 3. Start managing your audience engagement from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_info**: Get account information
 - **get_meeting**: Get details for a specific meeting
 - **get_meeting_analytics**: Get meeting analytics
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `meetingpulse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `meetingpulse` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MeetingPulse** tools.
 
 **Configuration:**

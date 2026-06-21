@@ -28,7 +28,7 @@ Connect to **OKLink**, the leading multi-chain data provider, to empower your AI
 No more manually searching through multiple block explorers. Your AI acts as a dedicated blockchain analyst, providing instant data for developers, traders, and researchers.
 
 
-## Available Tools
+## Available Tools (12)
 - **get_address_summary**: Get summary information for a specific address
 - **get_address_transactions**: Get a list of transactions for a specific address
 - **get_block_detail**: Get detailed information about a specific block
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `oklink-multi-chain-web3-blockchain-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `oklink-multi-chain-web3-blockchain-data-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OKLink (Multi-chain Web3 Blockchain Data API)** tools.
 
 **Configuration:**

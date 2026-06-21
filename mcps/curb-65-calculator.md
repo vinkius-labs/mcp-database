@@ -13,7 +13,7 @@ Calculate the CURB-65 score to assess pneumonia severity and treatment needs.
 The CURB-65 calculator is a clinical decision support tool designed to evaluate the severity of Community-Acquired Pneumonia (CAP). By analyzing five key clinical indicators--Confusion, Urea/BUN, Respiratory Rate, Blood Pressure, and Age--it computes a total score that helps healthcare professionals determine the appropriate care setting. Use `calculate_curb65_score` to compute the score from vital signs, `get_clinical_recommendation` to interpret mortality risk and treatment settings, and `get_clinical_reference_guide` for parameter definitions.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_curb65_score**: Calculate the CURB-65 score
 - **get_clinical_recommendation**: Get clinical recommendation based on score
 - **get_clinical_reference_guide**: Get clinical reference guide
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `curb-65-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `curb-65-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **CURB-65 Calculator** tools.
 
 **Configuration:**

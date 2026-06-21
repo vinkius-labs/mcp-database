@@ -34,7 +34,7 @@ Unlock the full potential of WhatsApp automation with **2Chat**, the programmabl
 - **Community Managers** — manage large WhatsApp communities and announcements with ease
 
 
-## Available Tools
+## Available Tools (5)
 - **list_numbers**: Use this to identify which "from_number" to use in subsequent sending actions.
 
 List all WhatsApp phone numbers connected to your 2Chat account
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `2chat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `2chat` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **2Chat** tools.
 
 **Configuration:**

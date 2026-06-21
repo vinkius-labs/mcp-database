@@ -32,7 +32,7 @@ Connect your **Aventri** (now Stova) account to any AI agent to streamline your 
 - **Executive Assistants** — retrieve event details and speaker bios for briefings using simple conversational queries.
 
 
-## Available Tools
+## Available Tools (13)
 - **add_contact**: Add a new contact to the account or database
 - **add_pre_approved**: Add contacts to a pre-approved list
 - **add_pre_load**: Add pre-load registrant data
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `aventri` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `aventri` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Aventri** tools.
 
 **Configuration:**

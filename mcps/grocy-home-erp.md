@@ -35,7 +35,7 @@ No more manual entry on a small screen. Your AI acts as your personal home manag
 - **Self-Hosters** — leverage your existing Grocy data within your favorite AI tools and IDEs.
 
 
-## Available Tools
+## Available Tools (21)
 - **add_product_stock**: Add a specific amount of a product to stock
 - **add_shopping_list_item**: Add an item to the shopping list
 - **charge_battery**: Mark a battery as charged
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `grocy-home-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `grocy-home-erp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Grocy (Home ERP)** tools.
 
 **Configuration:**

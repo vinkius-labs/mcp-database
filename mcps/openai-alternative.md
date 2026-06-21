@@ -35,7 +35,7 @@ No more switching to the OpenAI dashboard to check fine-tune status or manage ba
 - **Product Teams** — discover available models, inspect Assistant configurations and review resource usage
 
 
-## Available Tools
+## Available Tools (13)
 - **cancel_batch**: Partially completed requests may still be processed. Provide the batch ID.
 
 Cancel a running batch job
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openai-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenAI** tools.
 
 **Configuration:**

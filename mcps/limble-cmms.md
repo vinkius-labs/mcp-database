@@ -33,7 +33,7 @@ Connect your **Limble CMMS** account to any AI agent and manage maintenance oper
 - **Operations** — monitor parts inventory and maintenance costs
 
 
-## Available Tools
+## Available Tools (9)
 - **get_asset_details**: Get details for a specific asset
 - **list_labor_entries**: List labor logs for tasks
 - **list_asset_part_relations**: List parts linked to assets
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `limble-cmms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `limble-cmms` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Limble CMMS** tools.
 
 **Configuration:**

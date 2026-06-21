@@ -34,7 +34,7 @@ Connect your **Teller** enrollment to any AI agent and manage your financial dat
 - **Personal Finance Users** — interact with your own bank data using natural language to track spending or verify account details.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_account_balances**: Get real-time ledger and available balances
 - **get_account_details**: Get account and routing numbers
 - **list_accounts**: List all accounts for the enrollment
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `teller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `teller` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Teller** tools.
 
 **Configuration:**

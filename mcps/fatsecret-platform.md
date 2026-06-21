@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your entire nutritional research workflow w
 - **Operations Leads** — automate nutritional data querying to orchestrate cross-functional wellness teams smoothly.
 
 
-## Available Tools
+## Available Tools (6)
 - **get_food_by_barcode**: Get food details by barcode (UPC/EAN)
 - **get_food_details**: Get detailed nutrient information for a specific food ID
 - **get_recipe_details**: Get full details for a specific recipe ID
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fatsecret-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fatsecret-platform` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FatSecret Platform** tools.
 
 **Configuration:**

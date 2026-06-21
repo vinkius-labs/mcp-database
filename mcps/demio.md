@@ -32,7 +32,7 @@ Integrate **Demio**, the modern webinar platform built for marketing, directly i
 - **Event Coordinators** — Manage webinar lists and register participants via chat instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_metadata**: Retrieve metadata and limits for your Demio account
 - **get_webinar_details**: Get detailed settings and information for a specific webinar
 - **get_webinar_report**: Retrieve performance metrics and attendance reports for a webinar
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `demio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `demio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Demio** tools.
 
 **Configuration:**

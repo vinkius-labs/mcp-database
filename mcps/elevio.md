@@ -32,7 +32,7 @@ Integrate **Elevio**, the leading customer education and knowledge management pl
 - **Operations Teams** — Monitor content updates and organizational knowledge metadata instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_elevio_account_metadata**: Retrieve metadata and limits for your Elevio account
 - **get_article_details**: Get detailed settings and full content for a specific article
 - **quick_content_health_audit**: Retrieve a high-level summary of article and category volumes
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `elevio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `elevio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Elevio** tools.
 
 **Configuration:**

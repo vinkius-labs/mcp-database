@@ -34,7 +34,7 @@ Empower your AI agent to navigate the complex landscape of civic engagement with
 - **News & Media** — quickly retrieve accurate, nonpartisan election data for reporting and fact-checking.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account_check**: Verify BallotReady connection
 - **get_ballot_measures**: Retrieve ballot measures for a specific election
 - **get_candidate**: Get detailed profile for a specific candidate
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ballotready` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ballotready` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BallotReady** tools.
 
 **Configuration:**

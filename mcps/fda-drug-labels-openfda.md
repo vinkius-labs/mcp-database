@@ -32,7 +32,7 @@ Connect your AI agent to the official **openFDA** database to retrieve comprehen
 - **Developers** — integrate real-time, official FDA data into health-tech applications and research tools.
 
 
-## Available Tools
+## Available Tools (2)
 - **count_drug_labels**: Count unique values of a field in FDA drug labels
 - **search_drug_labels**: Use the search parameter to filter by fields like openfda.brand_name, warnings, etc.
 
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fda-drug-labels-openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fda-drug-labels-openfda` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FDA Drug Labels (openFDA)** tools.
 
 **Configuration:**

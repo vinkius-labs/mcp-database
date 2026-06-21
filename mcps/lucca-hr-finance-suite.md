@@ -34,7 +34,7 @@ Connect your **Lucca** instance to any AI agent and take full control of your HR
 - **Team Leads** — monitor team availability and timesheet logs to optimize project planning and workload distribution efficiently
 
 
-## Available Tools
+## Available Tools (8)
 - **list_users**: List all employees in the Lucca HR directory
 - **get_user**: Get detailed data mapping a target explicit employee UUID
 - **list_departments**: List all departments inside the enterprise company
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `lucca-hr-finance-suite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `lucca-hr-finance-suite` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Lucca (HR & Finance Suite)** tools.
 
 **Configuration:**

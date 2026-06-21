@@ -35,7 +35,7 @@ No more wrestling with hundreds of open browser tabs to find out who is assigned
 - **Operations & Agency Leads** — automate client workspace querying to orchestrate cross-functional teams smoothly
 
 
-## Available Tools
+## Available Tools (11)
 - **create_task**: Create a new Asana task
 - **get_task**: Get details for a specific Asana task
 - **list_stories**: List activity feed (stories) for a task
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `asana-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `asana-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Asana Alternative** tools.
 
 **Configuration:**

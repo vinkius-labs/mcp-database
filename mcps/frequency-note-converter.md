@@ -13,7 +13,7 @@ Convert between musical frequencies and notes with precision.
 A high-precision utility for musicians and audio engineers to bridge the gap between Hertz (Hz) and musical pitch. This MCP server provides tools like `frequency_to_note` to identify notes from frequencies, `note_to_frequency` for exact frequency calculation, `calculate_harmonics` for harmonic series generation, and `get_pitch_depth` to measure distance from the A0 baseline. Supports both 440Hz and 432Hz tuning standards.
 
 
-## Available Tools
+## Available Tools (4)
 - **calculate_harmonics**: Calculate the fundamental harmonic series for a frequency
 - **hz_to_note**: Convert frequency in Hz to the nearest musical note
 - **note_to_hz**: Convert a musical note and octave to frequency in Hz
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `frequency-note-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `frequency-note-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Frequency & Note Converter** tools.
 
 **Configuration:**

@@ -19,7 +19,7 @@ Stop manually copying numbers from your ERP or supplier PDFs into WooCommerce. T
 - **Zero-Trust Safety:** The AI can only update the `stock_quantity`. It cannot change prices, delete products, or alter descriptions. A surgical tool for a specific job.
 
 
-## Available Tools
+## Available Tools (1)
 - **update_woocommerce_inventory**: You must provide the numeric productId and the new stockQuantity. If it is a variable product, you must also provide the variationId.
 
 Updates the inventory (stock quantity) of a WooCommerce product or variation
@@ -63,7 +63,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `woocommerce-inventory-updater` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `woocommerce-inventory-updater` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **WooCommerce Inventory Updater** tools.
 
 **Configuration:**

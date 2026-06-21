@@ -28,7 +28,7 @@ The **Arrivy MCP Server** empowers your AI agent to coordinate field operations 
 - **Customer Success** — Retrieve job history and ETAs instantly to provide accurate updates to clients.
 
 
-## Available Tools
+## Available Tools (9)
 - **create_customer**: Create a new customer record
 - **create_task**: Create a new service task in Arrivy
 - **get_account_check**: Verify Arrivy account connection
@@ -100,7 +100,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `arrivy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `arrivy` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Arrivy** tools.
 
 **Configuration:**

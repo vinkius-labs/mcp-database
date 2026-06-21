@@ -32,7 +32,7 @@ Connect your **Logz.io** observability platform to any AI agent to streamline yo
 - **Security Analysts** — audit logs and security rules through a conversational interface to speed up investigations.
 
 
-## Available Tools
+## Available Tools (31)
 - **create_alert**: Create a new alert
 - **create_deployment_markers**: Add deployment markers to annotate Exception graphs in Kibana
 - **create_lookup_list**: g., blacklisted IPs) for use in SIEM rules.
@@ -134,7 +134,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `logzio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `logzio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Logz.io** tools.
 
 **Configuration:**

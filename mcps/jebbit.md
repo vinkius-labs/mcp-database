@@ -13,7 +13,7 @@ Access interactive experiences and zero-party data via Jebbit API.
 Empower your AI agents with Jebbit's interactive experience platform. This MCP server allows you to list experiences, retrieve consumer attributes, manage audience segments, and track reporting jobs directly through the Jebbit API. Ideal for leveraging zero-party data and automating marketing insights.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_account**: Use to verify account status.
 
 Retrieves account details
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jebbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jebbit` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jebbit** tools.
 
 **Configuration:**

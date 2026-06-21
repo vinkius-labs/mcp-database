@@ -32,7 +32,7 @@ Gupshup is a leading conversational messaging platform used by enterprises to co
 - **Developers** -- Automate WhatsApp notifications and alerts via AI
 
 
-## Available Tools
+## Available Tools (6)
 - **get_template_info**: Get information about a specific template
 - **send_interactive_message**: Provide up to 3 buttons in a JSON array.
 
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `gupshup-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `gupshup-messaging` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Gupshup Messaging** tools.
 
 **Configuration:**

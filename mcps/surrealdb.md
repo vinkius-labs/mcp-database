@@ -33,7 +33,7 @@ Connect your **SurrealDB** database to any AI agent and take full control of you
 - **Product Managers** — query business metrics directly from the database using SurrealQL.
 
 
-## Available Tools
+## Available Tools (16)
 - **create_specific_record**: Create a specific record
 - **delete_all**: Delete all records in a table
 - **delete_record**: Delete a specific record
@@ -114,7 +114,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `surrealdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `surrealdb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SurrealDB** tools.
 
 **Configuration:**

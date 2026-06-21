@@ -31,7 +31,7 @@ Fig Finance is an AI-powered embedded finance platform for emerging markets. Thi
 - **Operations Teams** — automate loan tracking and customer assessment through simple natural language queries
 
 
-## Available Tools
+## Available Tools (12)
 - **apply_for_loan**: Apply for a loan on behalf of a customer
 - **create_customer**: Register a new customer for lending
 - **disburse_funds**: Trigger fund disbursement for an approved loan
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fig-finance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fig-finance` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fig Finance** tools.
 
 **Configuration:**

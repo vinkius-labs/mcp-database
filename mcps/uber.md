@@ -33,7 +33,7 @@ Connect your AI agents to the Uber platform for seamless ride management and tri
 Perfect for **frequent travelers**, **executive assistants**, **travel planners**, and **corporate teams** managing business transportation. Let AI agents handle ride planning, expense tracking via trip history, and location management. Ideal for professionals taking 10+ Uber rides monthly who want streamlined booking workflows and cost comparison automation.
 
 
-## Available Tools
+## Available Tools (9)
 - **add_saved_place**: Requires alias name, latitude, and longitude. Optionally include a full address string. The alias can be home, work, or any custom string. Returns the saved place details.
 
 Save a new place for the authenticated Uber user
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `uber` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `uber` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Uber** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ No more manual editing for repetitive tasks. Your AI acts as a video engineer, h
 - **Marketing Teams** — scale content production by generating localized or personalized videos from templates
 
 
-## Available Tools
+## Available Tools (3)
 - **create_render**: The project definition includes width, height, and layers (video, text, etc.).
 
 Initiates the rendering process for a project
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `kapwing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `kapwing` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Kapwing** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your knowledge base with **Wolai**, the ver
 - **Alibaba Ecosystem Users** — integrate your Wolai workflow into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_database_row**: Add row to database
 - **create_page**: Create a new Wolai page
 - **get_database**: Get database schema
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `wolai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `wolai` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Wolai** tools.
 
 **Configuration:**

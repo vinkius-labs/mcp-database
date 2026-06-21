@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your business intelligence and due diligenc
 - **Tianyancha Power Users** — integrate your existing industrial research workflows into your AI-driven daily routines.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_contact_info**: Get enterprise contact info
 - **get_full_details**: Get full enterprise details
 - **list_branches**: List company branches
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tianyancha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tianyancha` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Tianyancha / 天眼查** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ No more manual searching on web explorers. Your AI acts as a blockchain analyst,
 - **Data Analysts** — Extract on-chain metrics and block history for research and reporting.
 
 
-## Available Tools
+## Available Tools (17)
 - **get_address_balance**: Get balance for a Dogecoin address
 - **get_address_received**: Get total received amount for an address
 - **get_address_sent**: Get total sent amount for an address
@@ -119,7 +119,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dogechain-explorer-dogechain-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dogechain-explorer-dogechain-block-explorer-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dogechain Explorer (Dogechain Block Explorer API)** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Bannerbear** account to any AI agent and automate your design and
 - **Content Creators** — quickly produce thumbnails and headers by simply describing the text and template you want to use.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_collection**: Create multiple images at once as a collection
 - **create_image**: Create an image based on a template
 - **create_video**: Create a video based on a video template
@@ -102,7 +102,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bannerbear-image-gen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bannerbear-image-gen` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bannerbear (Image Gen)** tools.
 
 **Configuration:**

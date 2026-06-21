@@ -32,7 +32,7 @@ Integrate **Duoplane**, the leading multi-vendor e-commerce automation platform,
 - **Operations Teams** — Research specific order details and organizational fulfillment metadata instantly.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_duoplane_account_metadata**: Retrieve metadata for the current Duoplane subdomain
 - **get_order_details**: Get detailed information and status for a specific customer order
 - **get_purchase_order_details**: Get detailed information for a specific purchase order
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `duoplane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `duoplane` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Duoplane** tools.
 
 **Configuration:**

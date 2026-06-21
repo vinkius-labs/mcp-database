@@ -34,7 +34,7 @@ Connect your **folk** CRM account to any AI agent and simplify how you manage yo
 - **Recruiters** — track candidate pipelines and monitor interview notes via the AI assistant.
 
 
-## Available Tools
+## Available Tools (6)
 - **create_contact**: Create a new contact
 - **get_contact_details**: Get details for a specific contact
 - **list_contacts**: Optionally filter by group ID.
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `folk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `folk` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **folk** tools.
 
 **Configuration:**

@@ -32,7 +32,7 @@ Integrate **Ebby**, the powerful automatic transcription and subtitling platform
 - **Operations Teams** — Monitor transcription volumes and remaining account balances instantly.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_ebby_account_metadata**: Retrieve metadata and usage limits for your Ebby account
 - **get_transcription_text**: Retrieve the transcribed text content for a specific file
 - **quick_transcription_volume_audit**: Retrieve a high-level summary of transcription activity and processing rates
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `ebby` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `ebby` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Ebby** tools.
 
 **Configuration:**

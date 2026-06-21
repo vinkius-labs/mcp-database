@@ -26,7 +26,7 @@ The definitive **Mega-Server** for AI-driven statistical research. Why choose on
 Power users, multi-disciplinary analysts, data scientists, and anyone building Omni-capable big data AI agents.
 
 
-## Available Tools
+## Available Tools (30)
 - **get_indicator_data**: g. SP.POP.TOTL) and country code (e.g. BRA, WLD).
 
 Get any World Bank indicator for any country/region
@@ -156,7 +156,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `world-bank-full-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `world-bank-full-access` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **World Bank Full Access** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Command your sales terminal directly without logging into complex control panels
 - **Customer Support** — locate explicit order problems, verify exact shipping details, and pull underlying customer data in seconds
 
 
-## Available Tools
+## Available Tools (10)
 - **list_products**: List paginated BigCommerce catalog products
 - **get_order**: Retrieve the exact payload for a BigCommerce native order
 - **list_customers**: List paginated explicitly registered BigCommerce customers
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bigcommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bigcommerce` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **BigCommerce** tools.
 
 **Configuration:**

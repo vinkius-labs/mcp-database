@@ -34,7 +34,7 @@ Empower your AI agent to orchestrate your team's productivity with **Teambition*
 - **Enterprise Leaders** — get real-time insights into organization-wide project activity and team member coordination.
 
 
-## Available Tools
+## Available Tools (10)
 - **create_task**: Create a new Teambition task
 - **get_org_info**: Get organization details
 - **get_project**: Get Teambition project details
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `teambition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `teambition` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Teambition** tools.
 
 **Configuration:**

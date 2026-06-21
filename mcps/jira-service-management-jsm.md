@@ -13,7 +13,7 @@ Manage service desks, customer requests, and queues via Jira JSM API.
 Empower your AI agents with Jira Service Management's leading ITSM platform. This MCP server allows you to list service desks, retrieve customer requests, manage organizations and queues, and access knowledge base articles directly through the Jira JSM API. Ideal for automating IT support and service delivery workflows.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_info**: Use for system health monitoring.
 
 Retrieves system information for the JSM instance
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `jira-service-management-jsm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `jira-service-management-jsm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Jira Service Management (JSM)** tools.
 
 **Configuration:**

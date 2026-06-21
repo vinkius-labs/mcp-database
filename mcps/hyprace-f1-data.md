@@ -36,7 +36,7 @@ Whether you are settling a debate about Senna vs. Schumacher or tracking the lat
 - **Content Creators & Journalists** — quickly pull verified stats and facts for race previews and reviews
 
 
-## Available Tools
+## Available Tools (12)
 - **get_driver**: Get detailed information for a specific F1 driver
 - **get_grand_prix**: Get detailed information for a specific Grand Prix event
 - **get_qualifying_results**: Retrieve Formula 1 qualifying session results
@@ -111,7 +111,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hyprace-f1-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hyprace-f1-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Hyprace F1 Data** tools.
 
 **Configuration:**

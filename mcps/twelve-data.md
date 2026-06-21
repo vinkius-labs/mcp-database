@@ -28,7 +28,7 @@ Connect **Twelve Data** financial API to any AI agent and access real-time stock
 3. Start analyzing markets from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (16)
 - **convert_currency**: Convert an amount between currencies
 - **get_bollinger_bands**: Price touching upper band may indicate overbought, lower may indicate oversold.
 
@@ -129,7 +129,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `twelve-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `twelve-data` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Twelve Data** tools.
 
 **Configuration:**

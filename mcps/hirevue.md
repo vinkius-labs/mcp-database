@@ -32,7 +32,7 @@ Connect your **HireVue** account to any AI agent to automate and manage your hir
 - **HR Operations** — Automate the creation of candidate records and interview invitations across the organization
 
 
-## Available Tools
+## Available Tools (8)
 - **cancel_interview**: Cancel an interview
 - **create_candidate**: Create a new candidate profile
 - **create_interview**: Create an interview invitation
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hirevue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hirevue` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HireVue** tools.
 
 **Configuration:**

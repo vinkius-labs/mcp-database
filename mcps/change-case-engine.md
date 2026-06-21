@@ -18,7 +18,7 @@ When an AI Agent generates code for a Python backend, it needs `snake_case`. Whe
 - **Battle-Tested:** Powered by the `change-case` package with 60M+ weekly downloads — the undisputed industry standard.
 
 
-## Available Tools
+## Available Tools (1)
 - **change_case**: Available formats: camelCase, capitalCase, constantCase, dotCase, kebabCase, noCase, pascalCase, pascalSnakeCase, pathCase, sentenceCase, snakeCase, trainCase.
 
 Transforms text between naming conventions (camelCase, snake_case, PascalCase, kebab-case, CONSTANT_CASE, and 8 more). 60M+ weekly downloads
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `change-case-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `change-case-engine` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Change Case Engine** tools.
 
 **Configuration:**

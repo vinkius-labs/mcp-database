@@ -13,7 +13,7 @@ Calculates key Heart Rate Variability (HRV) metrics (RMSSD, SDNN) to classify ca
 **The Problem:** Understanding heart rate variability (HRV) is critical for assessing the body's autonomic nervous system balance. Raw measurements of successive R-R intervals can be complex to interpret, especially when determining if the overall cardiovascular system coherence is optimal or reduced.
 
 
-## Available Tools
+## Available Tools (3)
 - **classify_coherence_level**: Classify cardiorespiratory coherence level based on HRV metrics
 - **calculate_rmssd**: Requires at least 3 readings.
 
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `hrv-coherence-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `hrv-coherence-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **HRV Coherence Calculator** tools.
 
 **Configuration:**

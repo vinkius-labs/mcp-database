@@ -28,7 +28,7 @@ Empower your sales and data teams by integrating People Data Labs directly into 
 Ideal for sales teams, marketers, and developers looking to clean and enrich B2B contact lists instantly.
 
 
-## Available Tools
+## Available Tools (12)
 - **autocomplete**: Autocomplete field values
 - **bulk_enrich_people**: Bulk enrich people
 - **clean_company**: Clean a company name
@@ -103,7 +103,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `peopledb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `peopledb` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PeopleDB** tools.
 
 **Configuration:**

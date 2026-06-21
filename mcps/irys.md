@@ -33,7 +33,7 @@ Connect to **Irys**, the provenance layer for permanent data storage. This MCP s
 - **DevOps Engineers** — automate the monitoring of Irys node balances and funding status.
 
 
-## Available Tools
+## Available Tools (8)
 - **get_balance**: Get balance for a specific address
 - **fund_account**: Submit a funding transaction receipt
 - **get_transaction**: Retrieve metadata for a specific transaction ID
@@ -106,7 +106,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `irys` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `irys` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Irys** tools.
 
 **Configuration:**

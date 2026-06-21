@@ -38,7 +38,7 @@ Your AI agent becomes your blockchain operations center, handling contract deplo
 - **Product Teams** — Query blockchain data for dApps without writing boilerplate API integration code
 
 
-## Available Tools
+## Available Tools (10)
 - **deploy_contract**: Requires the contract bytecode (compiled bytecode in hex format) and optionally the ABI (Application Binary Interface) for interaction. Returns the deployed contract address and deployment transaction details. The contract will be available under the specified name.
 
 Deploy a smart contract on AntChain
@@ -131,7 +131,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `antchain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `antchain` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **AntChain** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect AI agents to the FedEx API suite for end-to-end logistics management:
 Essential for **e-commerce businesses**, **warehouse managers**, **shipping coordinators**, **customer support teams**, and **logistics professionals**. Let AI agents automate tracking updates, compare shipping costs, validate customer addresses, and find drop-off locations. Perfect for businesses shipping 10+ packages daily who want to eliminate manual tracking, streamline label generation, and reduce delivery exceptions through automated address validation.
 
 
-## Available Tools
+## Available Tools (9)
 - **check_service_availability**: Includes service names, transit times, and availability status. Use this to verify if Express, Ground, or Freight services operate between specific postal codes before quoting or booking shipments.
 
 Check if FedEx shipping services are available between two locations
@@ -125,7 +125,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fedex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fedex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FedEx** tools.
 
 **Configuration:**

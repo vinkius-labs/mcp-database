@@ -25,7 +25,7 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **Odoo Administrators** — Query any module through natural conversation
 
 
-## Available Tools
+## Available Tools (9)
 - **odoo_create_leave**: leave record in "draft" state. Requires the employee ID (from odoo_search_employees), leave type ID (from odoo_list_leave_types), and date range in format "YYYY-MM-DD HH:MM:SS". The request goes through the standard approval workflow. Use when the user wants to request time off for an employee.
 
 Submit a leave request for an employee with specific leave type, start date, and end date
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `odoo-hr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `odoo-hr` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Odoo HR** tools.
 
 **Configuration:**

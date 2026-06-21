@@ -13,7 +13,7 @@ Quantify demand amplification and identify instability patterns in supply chains
 The Bullwhip Effect Calculator allows you to measure how demand fluctuations increase as they move upstream through the supply chain. Using tools like `get_segment_amplification`, you can calculate the amplification ratio between specific stages. You can also use `assess_chain_severity` to evaluate overall health (Low, Medium, or Severe) and `identify_instability_source` to pinpoint which tier--Retailer, Distributor, or Manufacturer--is driving variance increases.
 
 
-## Available Tools
+## Available Tools (3)
 - **assess_chain_severity**: Evaluates the overall health of the supply chain by classifying the total cumulative amplification
 - **get_segment_amplification**: If downstream <= upstream, ratio is 1.
 
@@ -81,7 +81,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bullwhip-effect-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bullwhip-effect-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bullwhip Effect Calculator** tools.
 
 **Configuration:**

@@ -34,7 +34,7 @@ Connect your **Make** account to any AI agent and take full control of your visu
 - **Developers** — inspect data store contents and retrieve scenario metadata directly from your workspace for rapid debugging
 
 
-## Available Tools
+## Available Tools (7)
 - **list_scenarios**: Check the list of organizations if org_id is unknown.
 
 List Make scenarios
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `make-workflow-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `make-workflow-automation` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Make (Workflow Automation)** tools.
 
 **Configuration:**

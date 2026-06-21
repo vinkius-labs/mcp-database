@@ -34,7 +34,7 @@ Connect your **Later** account to any AI agent and take full control of your vis
 - **Digital Agencies** — audit global content calendars and manage social profiles for multiple clients efficiently
 
 
-## Available Tools
+## Available Tools (10)
 - **get_me**: Get authenticated Later user info and workspace details
 - **list_profiles**: List connected Later social profiles (Instagram, TikTok, Pinterest, etc)
 - **list_media**: Takes standard page index pagination.
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `later-social-media-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `later-social-media-management` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Later (Social Media Management)** tools.
 
 **Configuration:**

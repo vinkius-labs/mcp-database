@@ -35,7 +35,7 @@ No more jumping between your ATS and assessment platform to check if a candidate
 - **Talent Operations** — manage large cohorts and assessment versions with simple natural language commands.
 
 
-## Available Tools
+## Available Tools (20)
 - **archive_assessment**: Archive an assessment
 - **cancel_invitation**: Cancel an assessment invitation
 - **create_assessment_result_review**: Create a review for an assessment result
@@ -118,7 +118,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `qualifiedio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `qualifiedio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Qualified.io** tools.
 
 **Configuration:**

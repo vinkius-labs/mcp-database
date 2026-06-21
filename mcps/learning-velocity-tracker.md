@@ -13,7 +13,7 @@ Analyze study efficiency and predict completion timelines by correlating time in
 The Learning Velocity Tracker is a specialized metric engine designed to quantify your learning pace. By analyzing the relationship between time spent on topics and mastery rates, it identifies bottleneck subjects and provides data-driven projections for your study curriculum. Use `analyze_subject_mastery` to check proficiency in specific areas, `identify_low_yield_topics` to find inefficient study patterns, `calculate_global_velocity` for an aggregate view of your progress, and `predict_completion_timeline` to estimate when you will finish your subjects.
 
 
-## Available Tools
+## Available Tools (4)
 - **analyze_subject_mastery**: Analyzes proficiency level for a specific subject
 - **calculate_global_velocity**: Calculates overall learning pace
 - **predict_completion_timeline**: Predicts completion date for the curriculum
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `learning-velocity-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `learning-velocity-tracker` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Learning Velocity Tracker** tools.
 
 **Configuration:**

@@ -13,7 +13,7 @@ Calculate precise nutrient dosages and fertilizer costs based on soil analysis a
 This MCP server provides specialized tools for agricultural planning. Use `analyze_soil_chemistry` to interpret pH, P, K, Ca, and Mg levels to determine soil fertility status. Use `compute_nutrient_demands` to calculate the required kilograms per hectare of N, P₂O₅, and K₂O based on regional standards like IAC-SP, EMBRAPA, or CFSEMG. Finally, use `generate_fertilizer_plan` to convert these nutrient requirements into a concrete application plan with specific commercial products and total cost estimates.
 
 
-## Available Tools
+## Available Tools (3)
 - **analyze_soil_chemistry**: Provides a qualitative interpretation of the soil health based on chemical laboratory results
 - **compute_nutrient_demands**: Calculates the specific kilograms per hectare of N, P2O5, and K2O needed to achieve a target productivity
 - **generate_fertilizer_plan**: Converts nutrient requirements into physical product weights and total cost estimates
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fertilizer-requirement-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fertilizer-requirement-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Fertilizer Requirement Calculator** tools.
 
 **Configuration:**

@@ -35,7 +35,7 @@ Connect your AI agents to the **Telekom Malaysia (TM) Open Innovation Platform (
 - **Network Ops** — monitor real-time usage and incident reports for multiple organizational accounts smoothly
 
 
-## Available Tools
+## Available Tools (10)
 - **check_service_availability**: Verify broadband availability for a specific address
 - **create_service_order**: Place a new service order for broadband or mobile
 - **get_account_billing**: Get billing and account details for a customer
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `telekom-malaysia-tm-oip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `telekom-malaysia-tm-oip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Telekom Malaysia (TM) OIP** tools.
 
 **Configuration:**

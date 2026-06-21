@@ -36,7 +36,7 @@ Connect to **OpenFDA** and explore the FDA's open data platform through natural 
 - **Patients** — find information about drug side effects, device recalls and food safety alerts
 
 
-## Available Tools
+## Available Tools (8)
 - **search_animal_events**: Returns reports of adverse events in animals from drug exposure. Use search syntax: animal.species="dog" or drug.active_ingredient="ivermectin".
 
 Search animal and veterinary adverse event reports
@@ -123,7 +123,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `openfda-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `openfda-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenFDA** tools.
 
 **Configuration:**

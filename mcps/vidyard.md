@@ -37,7 +37,7 @@ No more manual browsing through complex video dashboards. Your AI agent becomes 
 - **Support Engineers** — find relevant tutorial videos and manage player branding for knowledge base articles
 
 
-## Available Tools
+## Available Tools (10)
 - **create_empty_player**: Creates a new, empty video player container
 - **delete_video_player**: Note that the original video assets are not deleted.
 
@@ -116,7 +116,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `vidyard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `vidyard` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Vidyard** tools.
 
 **Configuration:**

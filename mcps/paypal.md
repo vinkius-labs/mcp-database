@@ -32,7 +32,7 @@ Equip your generative intelligent instances with strict orchestration boundaries
 - **Customer Success** — query dynamic user bounds inspecting exactly whether a recurring subscription object is logistically 'Active' locally directly inside chat
 
 
-## Available Tools
+## Available Tools (10)
 - **authorize_order**: Authorize payment for an order
 - **capture_order**: Capture payment for an order
 - **create_order**: Create a new PayPal checkout order
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `paypal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `paypal` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **PayPal** tools.
 
 **Configuration:**

@@ -33,7 +33,7 @@ Connect your **Moonscan** API key to any AI agent to explore the Moonbeam Networ
 - **Crypto Enthusiasts** — Monitor wallet activity and token movements through natural language.
 
 
-## Available Tools
+## Available Tools (26)
 - **get_block_countdown**: Get Estimated Block Countdown Time
 - **get_block_number_by_time**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards
@@ -122,7 +122,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `moonscan-moonbeam-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `moonscan-moonbeam-network-explorer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Moonscan (Moonbeam Network Explorer)** tools.
 
 **Configuration:**

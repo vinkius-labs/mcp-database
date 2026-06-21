@@ -27,7 +27,7 @@ By chaining these tools, your agent can perform a complete, multi-faceted feasib
 **The Advantage:** You get instant, quantitative compliance checks against complex municipal codes. This moves development planning from guesswork to guaranteed calculation support.
 
 
-## Available Tools
+## Available Tools (3)
 - **max_site_coverage**: Takes plot area and maximum site coverage percentage as inputs.
 
 Calculate the maximum allowable ground footprint area for building construction based on site coverage limits
@@ -99,7 +99,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `floor-area-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `floor-area-ratio-calculator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Floor Area Ratio Calculator** tools.
 
 **Configuration:**

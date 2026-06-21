@@ -13,7 +13,7 @@ Calculate baking pan volumes and find perfect shape or size substitutions.
 The Pan Size Converter MCP server provides AI agents with precise tools to manage baking consistency. By using `calculate_volume`, agents can determine the exact capacity of any pan shape. The `find_equivalent_pan` tool allows for intelligent substitutions, suggesting alternative pans that maintain the same volume within a specified tolerance. Additionally, `validate_dimensions` ensures all input measurements are physically plausible and compatible with the chosen geometry.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_volume**: Calculates the total volumetric capacity of a specific pan
 - **find_equivalent_pan**: Identifies alternative pan shapes and sizes with near-identical volume
 - **validate_dimensions**: Verifies that a set of pan dimensions is physically plausible
@@ -79,7 +79,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `pan-size-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `pan-size-converter` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Pan Size Converter** tools.
 
 **Configuration:**

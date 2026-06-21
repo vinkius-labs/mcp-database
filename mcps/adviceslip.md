@@ -31,7 +31,7 @@ Connect to the **Adviceslip** API to empower your AI agent with a massive databa
 - **Daily Users** — Seeking a bit of perspective or a quick mental break during their workflow.
 
 
-## Available Tools
+## Available Tools (3)
 - **adviceslip_get_by_id**: Get a specific advice slip by ID
 - **adviceslip_get_random**: Get a random piece of advice
 - **adviceslip_search**: Search for advice slips containing a specific term
@@ -97,7 +97,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `adviceslip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `adviceslip` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Adviceslip** tools.
 
 **Configuration:**

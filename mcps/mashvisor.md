@@ -29,7 +29,7 @@ Connect **Mashvisor** real estate analytics to any AI agent and analyze investme
 3. Start analyzing real estate investments from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools
+## Available Tools (10)
 - **get_airbnb_listings**: Get Airbnb rental listings and metrics
 - **get_airbnb_property**: Get detailed Airbnb listing information
 - **get_city_listings**: Filter by status, days on market, price history, and property attributes.
@@ -112,7 +112,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `mashvisor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `mashvisor` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Mashvisor** tools.
 
 **Configuration:**

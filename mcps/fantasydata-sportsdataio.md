@@ -33,7 +33,7 @@ Connect your **FantasyData (SportsDataIO)** account to any AI agent and take ful
 - **Betting Enthusiasts** — monitor real-time scores and team availability directly within your AI-powered workflow
 
 
-## Available Tools
+## Available Tools (12)
 - **get_mlb_player_details**: Get details for a specific MLB player
 - **get_mlb_schedule**: Get the MLB schedule for a specific season
 - **get_mlb_scores**: Get MLB scores for a specific date
@@ -108,7 +108,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `fantasydata-sportsdataio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `fantasydata-sportsdataio` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **FantasyData (SportsDataIO)** tools.
 
 **Configuration:**

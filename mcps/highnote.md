@@ -36,7 +36,7 @@ No more manual querying of complex GraphQL schemas for simple account lookups. Y
 - **Product Managers** — monitor card issuance volume and program activity in real-time.
 
 
-## Available Tools
+## Available Tools (11)
 - **get_financial_account**: Get detailed balance and metadata for a specific financial account
 - **get_api_profile**: Retrieve information about the authenticated API user
 - **get_payment_card_details**: Get detailed information for a specific card
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `highnote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `highnote` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Highnote** tools.
 
 **Configuration:**

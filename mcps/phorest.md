@@ -33,7 +33,7 @@ Connect your **Phorest** account to any AI agent to streamline your salon or spa
 - **Business Analysts** — trigger CSV exports and gather staff performance data for reporting.
 
 
-## Available Tools
+## Available Tools (17)
 - **checkin_appointment**: Check-in a client for an appointment
 - **confirm_appointments**: Confirm one or more appointments
 - **create_break**: Create a staff break
@@ -115,7 +115,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `phorest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `phorest` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Phorest** tools.
 
 **Configuration:**

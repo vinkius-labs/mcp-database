@@ -35,7 +35,7 @@ No more manual chasing of missing time cards or digging through complex shift ta
 - **Payroll Specialists** — automate the collection of structured time entry data for internal reporting through simple AI queries
 
 
-## Available Tools
+## Available Tools (6)
 - **create_employee**: Create a new employee
 - **list_employees**: List all employees
 - **list_pay_periods**: List pay periods
@@ -104,7 +104,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `buddy-punch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `buddy-punch` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Buddy Punch** tools.
 
 **Configuration:**

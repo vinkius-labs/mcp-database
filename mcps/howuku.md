@@ -13,7 +13,7 @@ Analyze user behavior via Howuku — track projects, recordings, and heatmaps.
 Empower your AI agents to analyze user behavior on your websites. This MCP server connects to Howuku (now part of VWO) to list projects, retrieve session recordings, view heatmaps, and monitor user feedback and surveys. Perfect for UX researchers and product managers.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_me**: Gets current authenticated user info
 - **get_project**: Retrieves details for a specific project
 - **list_events**: Lists custom tracking events for a project
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `howuku` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `howuku` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Howuku** tools.
 
 **Configuration:**

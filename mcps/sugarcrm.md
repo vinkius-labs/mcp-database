@@ -13,7 +13,7 @@ Intelligent CRM platform for sales and marketing.
 The SugarCRM MCP server links your AI agent to your enterprise sales ecosystem. Query customer records, manage opportunities, and log call notes instantly without breaking your conversational flow.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_account**: Create a new account
 - **get_account**: Retrieve details for a specific account
 - **get_contact**: Retrieve details for a specific contact
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `sugarcrm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `sugarcrm` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SugarCRM** tools.
 
 **Configuration:**

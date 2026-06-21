@@ -13,7 +13,7 @@ Online survey software and data analysis.
 The SurveyMethods MCP server empowers your AI agent to manage surveys directly. Query response rates, fetch specific user feedback, and orchestrate automated polls efficiently through your chat.
 
 
-## Available Tools
+## Available Tools (12)
 - **create_collector**: Create a new collector for a survey
 - **create_contact**: Add a new contact
 - **create_survey**: Create a new survey
@@ -88,7 +88,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `surveymethods` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `surveymethods` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **SurveyMethods** tools.
 
 **Configuration:**

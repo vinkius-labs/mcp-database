@@ -28,7 +28,7 @@ Integrate the world-class **Remove.bg** AI into your workflow to handle image pr
 Perfect for e-commerce managers, designers, and developers who need to automate high-volume image editing without leaving their workspace.
 
 
-## Available Tools
+## Available Tools (3)
 - **get_account**: bg account.
 
 Get Remove.bg account info and credit balance
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `removebg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `removebg` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Remove.bg** tools.
 
 **Configuration:**

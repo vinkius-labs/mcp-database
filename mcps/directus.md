@@ -36,7 +36,7 @@ Connect your **Directus** instance to any AI agent and take full control of your
 - **Content Editors** — manage headless content and digital assets through natural language conversation
 
 
-## Available Tools
+## Available Tools (10)
 - **create_cms_record**: Provision a highly-available JSON Payload writing Directus Rows
 - **wipe_cms_record**: Irreversibly vaporize explicit App nodes dropping live Rows
 - **get_collection_details**: Perform structural extraction of properties driving active Tables
@@ -109,7 +109,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `directus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `directus` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Directus** tools.
 
 **Configuration:**

@@ -20,7 +20,7 @@ Mechanism: This MCP connects your agents to core physiological rhythm tracking. 
 The advantage is a reliable, guided practice that allows you to focus entirely on the breath, knowing the timing structure is flawless.
 
 
-## Available Tools
+## Available Tools (3)
 - **calculate_single_cycle_duration**: Calculate the total duration of one full breathing cycle for a given technique
 - **query_breathing_parameters**: Query the default timing parameters for a breathing technique
 - **generate_breathing_schedule**: Generate a structured breathing schedule for a given total duration
@@ -86,7 +86,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `breathing-timer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `breathing-timer` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Breathing Timer** tools.
 
 **Configuration:**

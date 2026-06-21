@@ -35,7 +35,7 @@ No more manual toggling between complex planning boards or digging through task 
 - **Operations Leads** — track scheduled equipment and maintain board organization through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **get_job**: Get job details
 - **list_appointments**: List all appointments on the planning board
 - **list_categories**: List all planning categories
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `dimescheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `dimescheduler` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Dime.Scheduler** tools.
 
 **Configuration:**

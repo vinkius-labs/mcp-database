@@ -32,7 +32,7 @@ Connect the **Semgrep** AppSec platform directly to your AI agent to radically a
 - **Software Developers** — let Cursor fetch the specific `finding_id` blocking your PR, explain what the vulnerability means, and draft the exact semantic fix to pass the scan
 
 
-## Available Tools
+## Available Tools (10)
 - **create_rule**: Allows developers to forbid project-specific bad patterns securely and continuously across the enterprise repositories.
 
 Create a customized Semgrep security rule within the platform
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `semgrep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `semgrep` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Semgrep** tools.
 
 **Configuration:**

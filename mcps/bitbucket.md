@@ -34,7 +34,7 @@ Connect your **Bitbucket Cloud** account to any AI agent and orchestrate your so
 - **Team Leads** — retrieve summaries of recent commits and open issues for daily standups.
 
 
-## Available Tools
+## Available Tools (10)
 - **get_pull_request**: Get details of a specific pull request
 - **list_commits**: List commits for a repository
 - **get_repository**: Get details of a specific repository
@@ -107,7 +107,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `bitbucket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `bitbucket` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Bitbucket** tools.
 
 **Configuration:**

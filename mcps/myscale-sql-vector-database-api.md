@@ -33,7 +33,7 @@ Connect your **MyScale** cluster to any AI agent to manage high-performance vect
 - **Backend Developers** — perform database maintenance and schema updates using natural language commands
 
 
-## Available Tools
+## Available Tools (6)
 - **check_index_status**: vector_indices table to monitor the build status of vector indices (Built, InProgress, Error).
 
 Check the status of vector indices
@@ -110,7 +110,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `myscale-sql-vector-database-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `myscale-sql-vector-database-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **MyScale (SQL Vector Database API)** tools.
 
 **Configuration:**

@@ -29,8 +29,8 @@ Explore the open database of **talk-to-me** Model Context Protocol (MCP) servers
 | [Slack](../mcps/slack.md) | Automate Slack messaging — send messages, search conversations, list channels and users directly from any AI agent. |
 | [Slack Bot](../mcps/slack-bot.md) | Control and manage your Slack workspace — audit channels, messages, and users via AI. |
 | [Slack Webhook Notifier](../mcps/slack-webhook-notifier.md) | This MCP does exactly one thing: it sends messages to your Slack channels. That's its only function, and nothing else. Zero bloat, incredible for giving your AI agents a voice. |
-| [Telegram Bot](../mcps/telegram-bot.md) | Control Telegram bots programmatically — send messages, photos, documents, and manage chats via AI. |
 | [Telegram Bot](../mcps/telegram-bot-alternative.md) | Control and manage your Telegram bots — send messages, photos, and audit chats via AI. |
+| [Telegram Bot](../mcps/telegram-bot.md) | Control Telegram bots programmatically — send messages, photos, documents, and manage chats via AI. |
 | [Telegram Bot API](../mcps/telegram-bot-api.md) | Connect your AI natively to Telegram. Read user messages, administrate chats, send push notifications, and automate media distribution directly from the prompt. |
 | [Telegram Bot Notifier](../mcps/telegram-bot-notifier.md) | This MCP does exactly one thing: it sends messages to your Telegram chats. That's its only function, and nothing else. Incredible for giving your AI agents a voice on mobile. |
 | [Twilio](../mcps/twilio.md) | Automate communication workflows via Twilio — manage SMS messaging, voice calls, call recordings, and account usage directly from any AI agent. |

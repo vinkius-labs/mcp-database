@@ -33,7 +33,7 @@ Connect your AI agent to the **Volvo Cars Connected Vehicle API**. This integrat
 - **Tech Enthusiasts** — build automated workflows based on real-time vehicle telemetry
 
 
-## Available Tools
+## Available Tools (10)
 - **get_battery_status**: Retrieve the current battery level and charging status
 - **get_doors_status**: Check if doors are locked or unlocked
 - **get_engine_status**: Check the current state of the engine
@@ -95,7 +95,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `volvo-cars-connected` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `volvo-cars-connected` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Volvo Cars Connected** tools.
 
 **Configuration:**

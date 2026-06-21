@@ -38,7 +38,7 @@ Connect to **OpenDota** and explore the world's most comprehensive Dota 2 match 
 - **Researchers** — access MMR distributions, game mode data and match statistics
 
 
-## Available Tools
+## Available Tools (18)
 - **get_benchmarks**: Compare any player's stats against the broader player base. Requires a hero ID (from list_heroes).
 
 Get hero performance benchmarks
@@ -158,7 +158,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `opendota` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `opendota` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **OpenDota** tools.
 
 **Configuration:**

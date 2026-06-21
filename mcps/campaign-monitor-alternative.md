@@ -35,7 +35,7 @@ No more manual scrubbing through subscriber exports or slow UI navigation. Your 
 - **Agency Leads** — orchestrate email operations across multiple client accounts through simple AI queries
 
 
-## Available Tools
+## Available Tools (7)
 - **add_subscriber**: Create or update a subscriber
 - **get_campaign_analytics**: Get campaign performance
 - **get_list_statistics**: Get subscriber list health
@@ -105,7 +105,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `campaign-monitor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `campaign-monitor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Campaign Monitor** tools.
 
 **Configuration:**

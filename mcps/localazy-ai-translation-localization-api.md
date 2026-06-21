@@ -33,7 +33,7 @@ Connect your **Localazy** account to any AI agent to automate your localization 
 - **Product Owners** — Ensure multi-language support is on track by querying project statistics and language coverage.
 
 
-## Available Tools
+## Available Tools (23)
 - **create_glossary_term**: Create a new glossary term
 - **create_project**: Create a new project inside the given organization
 - **delete_glossary_term**: Delete a glossary term
@@ -121,7 +121,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `localazy-ai-translation-localization-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `localazy-ai-translation-localization-api` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **Localazy (AI Translation & Localization API)** tools.
 
 **Configuration:**

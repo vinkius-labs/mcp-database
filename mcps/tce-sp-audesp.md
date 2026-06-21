@@ -32,7 +32,7 @@ Connect to the **TCE-SP Audesp** system to audit and analyze public spending acr
 - **Citizens & Activists** — promote transparency by easily accessing how public resources are being allocated
 
 
-## Available Tools
+## Available Tools (3)
 - **list_despesas**: List expenses for a specific municipality, year, and month
 - **list_municipios**: List all municipalities under TCE-SP jurisdiction
 - **list_receitas**: List revenues for a specific municipality, year, and month
@@ -98,7 +98,7 @@ Follow the steps below to connect in seconds.
 
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
-3. Set Type to "SSE", enter `tce-sp-audesp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+3. Set Type to "SSE" (or "streamable HTTP"), enter `tce-sp-audesp` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
 4. Click **Save** — Cursor will connect and list all **TCE-SP (Audesp)** tools.
 
 **Configuration:**
